@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CleanPro — Professional Cleaning Services</title>
+  <meta name="description" content="Professional cleaning — fast, safe & reliable. Keep your home fresh and healthy with our expert cleaning solutions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER / MENU ========== -->
+  <header class="main-header" id="header">
+    <nav class="main-menu">
+      <!-- Top bar -->
+      <div class="main-menu__top">
+        <div class="main-menu__top-inner container-wide">
+          <ul class="main-menu__contact-list">
+            <li>
+              <span class="icon"><i class="fas fa-envelope"></i></span>
+              <span class="text"><p><a href="mailto:info@cleanpro.com">info@cleanpro.com</a></p></span>
+            </li>
+            <li>
+              <span class="icon"><i class="fas fa-phone-alt"></i></span>
+              <span class="text"><p><a href="tel:+15559990153">+1 555-9990-153</a></p></span>
+            </li>
+            <li>
+              <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+              <span class="text"><p>88 Brooklyn Street, New York</p></span>
+            </li>
+          </ul>
+          <p class="main-menu__top-welcome-text">Welcome to CleanPro Cleaning Services</p>
+          <div class="main-menu__top-right">
+            <span class="main-menu__social-title">Follow Us On:</span>
+            <div class="main-menu__social">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main navigation -->
+      <div class="main-menu__wrapper">
+        <div class="main-menu__wrapper-inner container-wide">
+          <div class="main-menu__left">
+            <a href="#home" class="main-menu__logo">
+              <img src="images/logo.svg" alt="CleanPro" width="160" height="48">
+            </a>
+          </div>
+
+          <div class="main-menu__main-menu-box">
+            <button class="mobile-nav__toggler" id="menuToggler" aria-label="Toggle menu">
+              <span></span><span></span><span></span>
+            </button>
+            <ul class="main-menu__list" id="mainMenu">
+              <li class="current"><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li class="dropdown">
+                <a href="#services">Services</a>
+                <ul>
+                  <li><a href="#services">House Cleaning</a></li>
+                  <li><a href="#services">Office Cleaning</a></li>
+                  <li><a href="#services">Deep Cleaning</a></li>
+                  <li><a href="#services">Window Cleaning</a></li>
+                </ul>
+              </li>
+              <li><a href="#process">Process</a></li>
+              <li><a href="#testimonials">Reviews</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="main-menu__right">
+            <div class="main-menu__call">
+              <div class="main-menu__call-icon"><i class="fas fa-phone-alt"></i></div>
+              <div class="main-menu__call-content">
+                <p class="main-menu__call-sub-title">Call Anytime</p>
+                <p class="main-menu__call-number"><a href="tel:+15559990153">+1 555-9990-153</a></p>
+              </div>
+            </div>
+            <div class="main-menu__nav-sidebar-icon">
+              <button class="navSidebar-button" aria-label="Sidebar">
+                <span class="icon-dots-menu-one"></span>
+                <span class="icon-dots-menu-two"></span>
+                <span class="icon-dots-menu-three"></span>
+              </button>
+            </div>
+            <div class="main-menu__btn-box">
+              <a href="#contact" class="thm-btn">
+                Get a Quote
+                <span class="hover-btn hover-bx"></span>
+                <span class="hover-btn hover-bx2"></span>
+                <span class="hover-btn hover-bx3"></span>
+                <span class="hover-btn hover-bx4"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Sticky header clone -->
+  <div class="stricky-header" id="stickyHeader">
+    <div class="main-menu__wrapper">
+      <div class="main-menu__wrapper-inner container-wide">
+        <div class="main-menu__left">
+          <a href="#home" class="main-menu__logo">
+            <img src="images/logo.svg" alt="CleanPro" width="160" height="48">
+          </a>
+        </div>
+        <div class="main-menu__main-menu-box">
+          <ul class="main-menu__list">
+            <li class="current"><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="main-menu__right">
+          <div class="main-menu__call">
+            <div class="main-menu__call-icon"><i class="fas fa-phone-alt"></i></div>
+            <div class="main-menu__call-content">
+              <p class="main-menu__call-sub-title">Call Anytime</p>
+              <p class="main-menu__call-number"><a href="tel:+15559990153">+1 555-9990-153</a></p>
+            </div>
+          </div>
+          <div class="main-menu__btn-box">
+            <a href="#contact" class="thm-btn">
+              Get a Quote
+              <span class="hover-btn hover-bx"></span>
+              <span class="hover-btn hover-bx2"></span>
+              <span class="hover-btn hover-bx3"></span>
+              <span class="hover-btn hover-bx4"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ========== HERO ========== -->
+    <section class="main-slider" id="home">
+      <div class="main-slider__slide active" data-slide="0">
+        <div class="main-slider__bg" style="background-image: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1920&q=80');"></div>
+        <div class="container">
+          <div class="main-slider__content">
+            <p class="main-slider__sub-title">Spotless Home, Happy You</p>
+            <h1 class="main-slider__title">Professional cleaning <span>fast, safe & reliable.</span></h1>
+            <p class="main-slider__text">Keep your home fresh and healthy with our expert cleaning solutions. From kitchens to bathrooms, we provide deep cleaning that restores shine and comfort.</p>
+            <div class="main-slider__btn-and-review-box">
+              <div class="main-slider__btn-box">
+                <a href="#services" class="thm-btn">
+                  Discover More
+                  <span class="hover-btn hover-bx"></span>
+                  <span class="hover-btn hover-bx2"></span>
+                  <span class="hover-btn hover-bx3"></span>
+                  <span class="hover-btn hover-bx4"></span>
+                </a>
+              </div>
+              <div class="main-slider__review">
+                <div class="main-slider__review-stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <p><strong>4.8</strong> (15k Reviews) — Customer Satisfied</p>
+              </div>
+            </div>
+          </div>
+          <div class="main-slider__discount-box">
+            <h3>50%</h3>
+            <p>Discount</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-slider__slide" data-slide="1">
+        <div class="main-slider__bg" style="background-image: url('https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=1920&q=80');"></div>
+        <div class="container">
+          <div class="main-slider__content">
+            <p class="main-slider__sub-title">Premium Cleaning Service</p>
+            <h1 class="main-slider__title">Trusted experts ensuring <span>spotless results.</span></h1>
+            <p class="main-slider__text">Keep your home fresh and healthy with our expert cleaning solutions. From kitchens to bathrooms, we provide deep cleaning that restores shine and comfort.</p>
+            <div class="main-slider__btn-and-review-box">
+              <div class="main-slider__btn-box">
+                <a href="#contact" class="thm-btn">
+                  Get Free Quote
+                  <span class="hover-btn hover-bx"></span>
+                  <span class="hover-btn hover-bx2"></span>
+                  <span class="hover-btn hover-bx3"></span>
+                  <span class="hover-btn hover-bx4"></span>
+                </a>
+              </div>
+              <div class="main-slider__review">
+                <div class="main-slider__review-stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <p><strong>4.8</strong> (15k Reviews) — Customer Satisfied</p>
+              </div>
+            </div>
+          </div>
+          <div class="main-slider__discount-box">
+            <h3>50%</h3>
+            <p>Discount</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-slider__nav">
+        <button class="main-slider__arrow prev" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+        <div class="main-slider__dots"></div>
+        <button class="main-slider__arrow next" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section class="services-section section-padding" id="services">
+      <div class="container">
+        <div class="section-title text-center">
+          <span class="section-title__tagline">Services</span>
+          <h2 class="section-title__title">Our Cleaning Services</h2>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-card__icon"><i class="fas fa-building"></i></div>
+            <h3>Commercial</h3>
+            <h4>Hygiene for Workspaces</h4>
+            <p>Professional cleaning for offices, restaurants and commercial areas.</p>
+            <a href="#contact" class="service-card__link">Read More <i class="fas fa-arrow-right"></i></a>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon"><i class="fas fa-home"></i></div>
+            <h3>Residential</h3>
+            <h4>Home Cleaning Made Simple</h4>
+            <p>Safe, detailed cleaning for a spotless home you can enjoy every day.</p>
+            <a href="#contact" class="service-card__link">Read More <i class="fas fa-arrow-right"></i></a>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon"><i class="fas fa-spray-can"></i></div>
+            <h3>Specialised</h3>
+            <h4>Deep & Targeted Cleaning</h4>
+            <p>Expert cleaning for bathrooms, sofas, kitchens, glass and more.</p>
+            <a href="#contact" class="service-card__link">Read More <i class="fas fa-arrow-right"></i></a>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon"><i class="fas fa-calendar-check"></i></div>
+            <h3>Event Venues</h3>
+            <h4>Clean Spaces for Moments</h4>
+            <p>Perfectly cleaned and polished venues ready for any special event.</p>
+            <a href="#contact" class="service-card__link">Read More <i class="fas fa-arrow-right"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="about-section section-padding" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-grid__images">
+            <div class="about-grid__img-main">
+              <img src="https://images.unsplash.com/photo-1563453392217-320c3277c3dc?w=600&q=80" alt="Professional cleaner at work">
+            </div>
+            <div class="about-grid__experience">
+              <span class="about-grid__experience-num">10+</span>
+              <span class="about-grid__experience-text">Years Of Experience</span>
+            </div>
+          </div>
+          <div class="about-grid__content">
+            <div class="section-title">
+              <span class="section-title__tagline">About Us</span>
+              <h2 class="section-title__title">Focused by Care, Crafted for Perfection</h2>
+            </div>
+            <p>At CleanPro we believe a clean space is the first step to a clear mind. From tough stains to everyday dust, our solutions combine efficiency, safety, and eco-friendliness.</p>
+            <ul class="about-list">
+              <li><i class="fas fa-check-circle"></i> Non-toxic & hypoallergenic products</li>
+              <li><i class="fas fa-check-circle"></i> Time-saving, easy-to-use solutions</li>
+              <li><i class="fas fa-check-circle"></i> Healthier, more comfortable spaces</li>
+              <li><i class="fas fa-check-circle"></i> Certified & award-winning service</li>
+            </ul>
+            <div class="about-stats">
+              <div class="about-stat">
+                <span class="about-stat__num" data-count="50">0</span><span>+</span>
+                <p>Active Staff</p>
+              </div>
+              <div class="about-stat">
+                <span class="about-stat__num" data-count="15">0</span><span>k</span>
+                <p>Happy Customers</p>
+              </div>
+            </div>
+            <a href="#contact" class="thm-btn">
+              More About Us
+              <span class="hover-btn hover-bx"></span>
+              <span class="hover-btn hover-bx2"></span>
+              <span class="hover-btn hover-bx3"></span>
+              <span class="hover-btn hover-bx4"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== WHY CHOOSE US ========== -->
+    <section class="why-section section-padding">
+      <div class="container">
+        <div class="why-grid">
+          <div class="why-grid__content">
+            <div class="section-title">
+              <span class="section-title__tagline">Why Choose us?</span>
+              <h2 class="section-title__title">Delivering Cleanliness With Care & Consistency</h2>
+            </div>
+            <p>We go beyond cleaning — we care about your comfort, health, and satisfaction. Our mission is to create spotless spaces that inspire confidence and peace of mind.</p>
+            <ul class="why-list">
+              <li><i class="fas fa-users"></i> Experienced & Trained Team</li>
+              <li><i class="fas fa-leaf"></i> High-Quality Cleaning Products</li>
+              <li><i class="fas fa-cogs"></i> Customized Cleaning Solutions</li>
+              <li><i class="fas fa-clock"></i> Reliable & On-Time Service</li>
+              <li><i class="fas fa-tag"></i> Affordable & Transparent Pricing</li>
+              <li><i class="fas fa-heart"></i> Commitment to Cleanliness & Care</li>
+            </ul>
+            <a href="#contact" class="thm-btn thm-btn--outline">
+              Discover Why
+              <span class="hover-btn hover-bx"></span>
+              <span class="hover-btn hover-bx2"></span>
+              <span class="hover-btn hover-bx3"></span>
+              <span class="hover-btn hover-bx4"></span>
+            </a>
+          </div>
+          <div class="why-grid__image">
+            <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc458?w=600&q=80" alt="Cleaning team">
+            <div class="why-grid__badge">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <span>Need assistance?</span>
+                <a href="tel:+15559990153">+1 555-9990-153</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROCESS ========== -->
+    <section class="process-section section-padding" id="process">
+      <div class="container">
+        <div class="section-title text-center">
+          <span class="section-title__tagline">Our Cleaning Process</span>
+          <h2 class="section-title__title">Transparent & Effective Steps</h2>
+        </div>
+        <div class="process-grid">
+          <div class="process-card">
+            <div class="process-card__num">01</div>
+            <h3>Apply Now</h3>
+            <p>Enjoy a hassle-free booking process with our user-friendly platform.</p>
+          </div>
+          <div class="process-card">
+            <div class="process-card__num">02</div>
+            <h3>Fix The Date</h3>
+            <p>We provide customized cleaning solutions that address your unique needs.</p>
+          </div>
+          <div class="process-card">
+            <div class="process-card__num">03</div>
+            <h3>Starting Cleaning</h3>
+            <p>Our trained professionals arrive on time with modern equipment.</p>
+          </div>
+          <div class="process-card">
+            <div class="process-card__num">04</div>
+            <h3>Final Inspection</h3>
+            <p>Before we leave, we inspect every corner to ensure your full satisfaction.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="testimonials-section section-padding" id="testimonials">
+      <div class="container">
+        <div class="section-title text-center">
+          <span class="section-title__tagline">Testimonials</span>
+          <h2 class="section-title__title">Our Customer's Feedback</h2>
+        </div>
+        <div class="testimonials-grid">
+          <blockquote class="testimonial-card">
+            <div class="testimonial-card__stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p>"Our clients are at the heart of everything we do. From residential homes to corporate offices, each project leaves behind a trail of satisfaction and trust."</p>
+            <footer>
+              <strong>Adam Smith</strong>
+              <span>Chicago</span>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial-card testimonial-card--featured">
+            <div class="testimonial-card__stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p>"CleanPro transformed our office space. Professional, punctual, and incredibly thorough. We couldn't be happier with the results every single time."</p>
+            <footer>
+              <strong>Daniel Smith</strong>
+              <span>San Antonio</span>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            <div class="testimonial-card__stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p>"The deep cleaning service was outstanding. Every corner of our home sparkles. Highly recommend for anyone who values quality and care."</p>
+            <footer>
+              <strong>Felicia Roth</strong>
+              <span>Los Angeles</span>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA / CONTACT ========== -->
+    <section class="cta-section section-padding" id="contact">
+      <div class="container">
+        <div class="cta-grid">
+          <div class="cta-grid__content">
+            <div class="section-title">
+              <span class="section-title__tagline">Get Your Free Estimate!</span>
+              <h2 class="section-title__title">Contact Us Today</h2>
+            </div>
+            <ul class="cta-contact-list">
+              <li><i class="fas fa-map-marker-alt"></i> 254, North City, Bulex Center, New York</li>
+              <li><i class="fas fa-envelope"></i> <a href="mailto:info@cleanpro.com">info@cleanpro.com</a></li>
+              <li><i class="fas fa-phone-alt"></i> <a href="tel:+15559990153">+1 555-9990-153</a></li>
+            </ul>
+            <div class="cta-features">
+              <span><i class="fas fa-headset"></i> 24/7 Customer Service</span>
+              <span><i class="fas fa-smile"></i> 100% Satisfied Customer</span>
+              <span><i class="fas fa-tools"></i> Modern Cleaning Equipments</span>
+            </div>
+          </div>
+          <form class="cta-form" id="quoteForm">
+            <h3>Request a Free Quote</h3>
+            <div class="form-row">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="form-row">
+              <input type="tel" name="phone" placeholder="Phone Number">
+              <select name="service" required>
+                <option value="">Choose a Service</option>
+                <option>House Cleaning</option>
+                <option>Office Cleaning</option>
+                <option>Deep Cleaning</option>
+                <option>Window Cleaning</option>
+                <option>Commercial Cleaning</option>
+              </select>
+            </div>
+            <textarea name="message" rows="4" placeholder="Your Message"></textarea>
+            <button type="submit" class="thm-btn thm-btn--full">
+              Submit Now
+              <span class="hover-btn hover-bx"></span>
+              <span class="hover-btn hover-bx2"></span>
+              <span class="hover-btn hover-bx3"></span>
+              <span class="hover-btn hover-bx4"></span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="site-footer__top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-widget">
+            <a href="#home" class="footer-widget__logo">
+              <img src="images/logo-white.svg" alt="CleanPro" width="160" height="48">
+            </a>
+            <p class="footer-widget__text">Sustainable Cleaning Excellence. We create spotless spaces that inspire confidence and peace of mind.</p>
+            <div class="footer-widget__social">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-widget">
+            <h4 class="footer-widget__title">Quick Links</h4>
+            <ul class="footer-widget__links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#process">Our Process</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-widget">
+            <h4 class="footer-widget__title">Our Services</h4>
+            <ul class="footer-widget__links">
+              <li><a href="#services">House Cleaning</a></li>
+              <li><a href="#services">Office Cleaning</a></li>
+              <li><a href="#services">Deep Cleaning</a></li>
+              <li><a href="#services">Window Cleaning</a></li>
+              <li><a href="#services">Commercial Cleaning</a></li>
+            </ul>
+          </div>
+          <div class="footer-widget">
+            <h4 class="footer-widget__title">Contact Info</h4>
+            <ul class="footer-widget__contact">
+              <li><i class="fas fa-map-marker-alt"></i> 88 Brooklyn Street, New York</li>
+              <li><i class="fas fa-phone-alt"></i> <a href="tel:+15559990153">+1 555-9990-153</a></li>
+              <li><i class="fas fa-envelope"></i> <a href="mailto:info@cleanpro.com">info@cleanpro.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <div class="container">
+        <p>&copy; 2026 CleanPro. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

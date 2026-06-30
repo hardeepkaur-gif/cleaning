@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary: #0e5e5b;
+  --primary-dark: #0a4644;
+  --cta: #e26a4c;
+  --sand: #f0ebe3;
+  --tint: #eaf3f2;
+  --white: #ffffff;
+  --gray: #595752;
+  --font: "Poppins", sans-serif;
+  --font-two: "Rubik", sans-serif;
+  --radius: 10px;
+  --shadow: 0 10px 40px rgba(10, 70, 68, 0.1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--gray);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+}
+
+/* Placeholder hero so menu displays correctly */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: var(--primary-dark);
+  padding-top: 180px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(10, 70, 68, 0.95) 0%,
+    rgba(14, 94, 91, 0.85) 100%
+  );
+  z-index: 0;
+}
+
+.heroInner {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px 120px;
+}
+
+.heroTag {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--cta);
+  margin-bottom: 20px;
+  padding-left: 55px;
+  position: relative;
+}
+
+.heroTag::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 45px;
+  height: 2px;
+  background: var(--cta);
+  transform: translateY(-50%);
+}
+
+.heroTitle {
+  font-family: var(--font-two);
+  font-size: clamp(32px, 5vw, 58px);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.15;
+  margin-bottom: 25px;
+  max-width: 650px;
+}
+
+.heroTitle span {
+  color: var(--cta);
+}
+
+.heroText {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
+  margin-bottom: 35px;
+}
+
+.section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section:nth-child(even) {
+  background: var(--sand);
+}
+
+.sectionTitle {
+  font-family: var(--font-two);
+  font-size: 32px;
+  color: var(--primary-dark);
+  margin-bottom: 16px;
+}
+
+.section p {
+  font-size: 16px;
+  max-width: 700px;
+}
