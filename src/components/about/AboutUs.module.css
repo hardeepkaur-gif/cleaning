@@ -1,0 +1,265 @@
+/* About section — Cleanon index3 about-three layout, brand colors */
+
+.about {
+  position: relative;
+  display: block;
+  padding: 70px 0;
+  background: var(--white);
+  z-index: 1;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 3vw, 24px);
+}
+
+.title {
+  font-family: var(--font-two);
+  font-size: clamp(30px, 3.4vw, 44px);
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin: 0 auto clamp(20px, 2.5vw, 28px);
+  max-width: 900px;
+  text-align: center;
+}
+
+.intro {
+  font-size: clamp(15px, 1.4vw, 17px);
+  line-height: 1.75;
+  color: var(--gray);
+  margin: 0 auto clamp(40px, 5vw, 56px);
+  max-width: 900px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 5vw, 60px);
+  align-items: start;
+}
+
+/* ---- Left column ---- */
+
+.left {
+  position: relative;
+  margin-right: clamp(0px, 10vw, 180px);
+  padding-bottom: 0;
+  overflow: visible;
+}
+
+.imgBox {
+  position: relative;
+  overflow: visible;
+  margin-bottom: 20px;
+}
+
+.imgMain {
+  position: relative;
+  z-index: 1;
+}
+
+.imgMain img {
+  width: 100%;
+  display: block;
+  border-radius: var(--radius);
+}
+
+.imgSecondary {
+  position: absolute;
+  bottom: -120px;
+  right: -70px;
+  z-index: 0;
+  max-width: min(280px, 42vw);
+}
+
+.imgSecondary img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+}
+
+.experienceBox {
+  position: absolute;
+  top: 30px;
+  right: -60px;
+  z-index: 2;
+  background: var(--sand);
+  border-radius: var(--radius);
+  padding: 30px;
+  max-width: 170px;
+  width: 100%;
+  border-top: 2px solid var(--cta);
+  border-right: 2px solid var(--cta);
+  box-shadow: var(--shadow);
+}
+
+.experienceBox::before {
+  content: "";
+  position: absolute;
+  bottom: -52px;
+  right: 0;
+  border-left: 28px solid var(--sand);
+  border-bottom: 28px solid transparent;
+  border-top: 30px solid var(--sand);
+  border-right: 30px solid transparent;
+}
+
+.experienceCount {
+  display: flex;
+  align-items: center;
+}
+
+.experienceNum,
+.experiencePlus {
+  font-family: var(--font-two);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--primary-dark);
+}
+
+.experiencePlus {
+  color: var(--cta);
+}
+
+.experienceText {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--gray);
+}
+
+.guarantee {
+  position: relative;
+  max-width: 175px;
+  padding: 30px 30px 25px;
+  text-align: center;
+  background: var(--primary);
+  border-radius: var(--radius);
+  clip-path: polygon(0 0, 73% 0, 100% 21%, 100% 100%, 0 100%, 0 50%);
+  margin-top: 0;
+  z-index: 1;
+}
+
+.guaranteeBg {
+  position: absolute;
+  inset: 0;
+  opacity: 0.6;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--radius);
+  z-index: -1;
+}
+
+.guaranteeIcon img {
+  width: auto;
+  height: 48px;
+}
+
+.guarantee h4 {
+  font-family: var(--font-two);
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--white);
+  margin: 17px 0 2px;
+}
+
+.guarantee p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 14px;
+  margin: 0;
+}
+
+/* ---- Right column ---- */
+
+.right {
+  position: relative;
+  margin-left: -20px;
+}
+
+.text p {
+  font-size: clamp(15px, 1.4vw, 17px);
+  line-height: 1.75;
+  color: var(--gray);
+  margin: 0 0 16px;
+}
+
+.text p:last-child {
+  margin-bottom: 0;
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 1199px) {
+  .left {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .right {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .right {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .left {
+    margin-right: 0;
+    padding-bottom: 0;
+  }
+
+  .imgSecondary {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    max-width: 100%;
+    margin: 30px 0 0 auto;
+  }
+
+  .imgSecondary img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .guarantee {
+    clip-path: none;
+    max-width: 100%;
+  }
+
+  .experienceBox {
+    position: relative;
+    top: auto;
+    right: auto;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .experienceBox::before {
+    display: none;
+  }
+
+  .experienceCount {
+    justify-content: center;
+  }
+}

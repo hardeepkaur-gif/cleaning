@@ -1,0 +1,317 @@
+/* Services tabs — Cleanon index2 services-three layout, brand colors */
+
+.services {
+  position: relative;
+  display: block;
+  padding: 70px 0;
+  background: var(--white);
+  z-index: 1;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 3vw, 24px);
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: clamp(32px, 4vw, 40px);
+}
+
+.taglineBox {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 6px;
+}
+
+.taglineIcon {
+  display: inline-flex;
+  color: var(--cta);
+  font-size: 14px;
+}
+
+.tagline {
+  color: var(--cta);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  font-family: var(--font-two);
+  letter-spacing: 0.04em;
+}
+
+.title {
+  font-family: var(--font-two);
+  font-size: clamp(30px, 3.4vw, 44px);
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin: 0;
+}
+
+.inner {
+  position: relative;
+}
+
+.tabButtonsBox {
+  margin: 0 auto 30px;
+}
+
+.tabButtons {
+  list-style: none;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  padding: 0;
+}
+
+.tabButtons li {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.tabBtn {
+  display: block;
+  width: 100%;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+.tabBtnInner {
+  position: relative;
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  padding: 30px 20px 25px;
+  max-width: 240px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 12px;
+  background: #f7f4f1;
+  transition: color 0.3s ease;
+  z-index: 1;
+}
+
+.tabBtnInner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 0;
+  background: var(--primary);
+  transition: height 0.3s ease;
+  z-index: -1;
+}
+
+.tabBtnActive .tabBtnInner::before {
+  height: 100%;
+}
+
+.tabIcon {
+  display: inline-block;
+  font-size: clamp(36px, 4vw, 52px);
+  color: var(--cta);
+  transition: color 0.3s ease;
+}
+
+.tabBtnActive .tabIcon {
+  color: var(--white);
+}
+
+.tabBtnInner span {
+  display: block;
+  text-align: center;
+  font-size: clamp(16px, 1.6vw, 20px);
+  line-height: 1.5;
+  color: var(--primary-dark);
+  font-weight: 600;
+  font-family: var(--font-two);
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.tabBtnActive .tabBtnInner span {
+  color: var(--white);
+}
+
+.tabContent {
+  position: relative;
+}
+
+.tabPanel {
+  display: none;
+  transform: translateX(35px);
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  opacity: 0;
+}
+
+.tabPanelActive {
+  display: block;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.contentBox {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.tabBgImage {
+  flex: 1;
+  position: relative;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.tabLeft {
+  position: relative;
+  flex: 0 0 56%;
+  max-width: 56%;
+  text-align: center;
+  margin-right: -90px;
+  padding: clamp(32px, 4vw, 41px) clamp(24px, 7vw, 90px) clamp(40px, 5vw, 50px);
+  clip-path: circle(76.6% at 33% 45%);
+  background: linear-gradient(270deg, var(--primary-dark) 0%, var(--primary) 100%);
+  z-index: 1;
+}
+
+.tabLeftBg {
+  position: absolute;
+  inset: 0;
+  opacity: 0.6;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.shape1 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: auto;
+  z-index: -1;
+  animation: bobY 3s ease-in-out infinite;
+}
+
+.shape2 {
+  position: absolute;
+  bottom: 90px;
+  right: 80px;
+  width: auto;
+  opacity: 0.6;
+  z-index: -1;
+  animation: bobX 4s ease-in-out infinite;
+}
+
+.tabTitle {
+  font-family: var(--font-two);
+  font-size: clamp(22px, 2.4vw, 28px);
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--white);
+  margin: 0;
+}
+
+.tabText {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: clamp(15px, 1.4vw, 16px);
+  line-height: 1.75;
+  margin: 15px 0 25px;
+}
+
+.btnBox {
+  margin-top: 30px;
+}
+
+.btnBox :global(.thmBtn) {
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 32px;
+  font-size: 15px;
+}
+
+@keyframes bobY {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes bobX {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+@media (max-width: 991px) {
+  .tabButtons {
+    justify-content: center;
+  }
+
+  .tabButtons li {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .tabLeft {
+    flex: none;
+    max-width: 100%;
+    margin-right: 0;
+    clip-path: none;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .tabBgImage {
+    flex: none;
+    width: 100%;
+    height: 240px;
+  }
+
+  .contentBox {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 767px) {
+  .tabButtons li {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .tabLeft {
+    padding: 32px 20px 40px;
+  }
+
+  .shape1,
+  .shape2 {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .btnBox :global(.thmBtn) {
+    width: 100%;
+    justify-content: center;
+  }
+}

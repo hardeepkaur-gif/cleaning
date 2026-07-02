@@ -5,11 +5,22 @@ type ThmButtonProps = {
   href: string;
   children: ReactNode;
   className?: string;
+  hoverVariant?: "dark" | "white";
+  variant?: "primary" | "secondary";
 };
 
-export default function ThmButton({ href, children, className = "" }: ThmButtonProps) {
+export default function ThmButton({
+  href,
+  children,
+  className = "",
+  hoverVariant = "dark",
+  variant = "primary",
+}: ThmButtonProps) {
   return (
-    <a href={href} className={`${styles.thmBtn} ${className}`}>
+    <a
+      href={href}
+      className={`${styles.thmBtn} ${variant === "secondary" ? styles.thmBtnSecondary : ""} ${hoverVariant === "white" ? styles.thmBtnHoverWhite : ""} ${className}`}
+    >
       {children}
       <span className={`${styles.hoverBtn} ${styles.hoverBx}`} />
       <span className={`${styles.hoverBtn} ${styles.hoverBx2}`} />

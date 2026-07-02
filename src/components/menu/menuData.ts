@@ -6,27 +6,16 @@ export type NavItem = {
 
 export const navItems: NavItem[] = [
   { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  {
-    label: "Services",
-    href: "#services",
-    children: [
-      { label: "House Cleaning", href: "#services" },
-      { label: "Office Cleaning", href: "#services" },
-      { label: "Deep Cleaning", href: "#services" },
-      { label: "Window Cleaning", href: "#services" },
-    ],
-  },
-  { label: "Process", href: "#process" },
-  { label: "Reviews", href: "#testimonials" },
-  { label: "Contact", href: "#contact" },
+  { label: "About Us", href: "#about" },
+  { label: "Services", href: "#services" },
+  { label: "Contact Us", href: "#contact" },
 ];
 
 export const contactInfo = {
-  email: "info@cleanpro.com",
-  phone: "+1 555-9990-153",
-  phoneHref: "tel:+15559990153",
-  address: "88 Brooklyn Street, New York",
+  email: "info@cleaninglondon.co.uk",
+  phone: "+44 12 3456 7890",
+  phoneHref: "tel:+441234567890",
+  address: "London, UK",
 };
 
 export const socialLinks = [
@@ -34,4 +23,17 @@ export const socialLinks = [
   { label: "Twitter", href: "#", icon: "twitter" as const },
   { label: "Instagram", href: "#", icon: "instagram" as const },
   { label: "LinkedIn", href: "#", icon: "linkedin" as const },
+];
+
+export const footerQuickLinks = [
+  { label: "Home", href: "#home" },
+  { label: "About Us", href: "#about" },
+  { label: "Services", href: "#services" },
+  { label: "Contact Us", href: "#contact" },
+];
+
+export const footerLegalLinks = [
+  { label: "Terms of Service", href: "#" },
+  { label: "Privacy Policy", href: "#" },
+  { label: "Support", href: "#contact" },
 ];

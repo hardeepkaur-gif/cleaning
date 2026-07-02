@@ -1,22 +1,10 @@
 import type { Metadata } from "next";
-import { Poppins, Rubik } from "next/font/google";
 import Header from "@/components/menu/Header";
+import Footer from "@/components/footer/Footer";
 import "./globals.css";
 
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-poppins",
-});
-
-const rubik = Rubik({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-rubik",
-});
-
 export const metadata: Metadata = {
-  title: "CleanPro — Professional Cleaning Services",
+  title: "Cleaning Services London — Professional Cleaning",
   description:
     "Professional cleaning — fast, safe & reliable. Keep your home fresh and healthy with our expert cleaning solutions.",
 };
@@ -28,9 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} ${rubik.variable}`}>
+      <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

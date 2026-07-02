@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import {
   FaEnvelope,
@@ -97,7 +96,16 @@ function MenuBar({
       <div className={styles.wrapperInner}>
         <div className={styles.left}>
           <Link href="/#home" className={styles.logo} onClick={() => setMobileOpen(false)}>
-            <Image src="/images/logo.svg" alt="CleanPro" width={160} height={48} priority />
+            <img
+              src="/images/logo.png"
+              alt="Cleaning Services London"
+              className={styles.logoImg}
+              width={220}
+              height={56}
+              onError={(e) => {
+                e.currentTarget.src = "/images/logo-dark.svg";
+              }}
+            />
           </Link>
         </div>
 
@@ -224,8 +232,6 @@ export default function Header() {
                   </span>
                 </li>
               </ul>
-
-              <p className={styles.welcomeText}>Welcome to CleanPro Cleaning Services</p>
 
               <div className={styles.topRight}>
                 <span className={styles.socialTitle}>Follow Us On:</span>
