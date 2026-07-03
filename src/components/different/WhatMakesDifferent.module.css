@@ -1,0 +1,129 @@
+/* What makes us different — same card layout as services showcase screenshot */
+
+.section {
+  position: relative;
+  padding: 70px 0;
+  background: var(--white);
+  z-index: 1;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 3vw, 24px);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: clamp(40px, 5vw, 56px);
+}
+
+.taglineBox {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 6px;
+}
+
+.taglineIcon {
+  display: inline-flex;
+  color: var(--cta);
+  font-size: 14px;
+}
+
+.tagline {
+  color: var(--cta);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  font-family: var(--font-two);
+  letter-spacing: 0.04em;
+}
+
+.title {
+  font-family: var(--font-two);
+  font-size: clamp(30px, 3.4vw, 44px);
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin: 0 0 clamp(18px, 2.5vw, 24px);
+}
+
+.intro {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: clamp(15px, 1.4vw, 17px);
+  line-height: 1.75;
+  color: var(--gray);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;
+  border: 2px solid #ded8cf;
+  border-radius: var(--radius);
+  background: var(--white);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  border-color: #d0c9bf;
+  box-shadow: 0 12px 32px rgba(10, 70, 68, 0.08);
+}
+
+.imgWrap {
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.imgWrap img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius);
+  transition: transform 0.6s ease;
+}
+
+.card:hover .imgWrap img {
+  transform: scale(1.04);
+}
+
+.cardTitle {
+  margin: 18px 10px 0;
+  font-family: var(--font-two);
+  font-size: clamp(17px, 1.6vw, 22px);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--primary-dark);
+}
+
+.cardText {
+  margin: 8px 10px 12px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--gray);
+}
+
+@media (max-width: 991px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

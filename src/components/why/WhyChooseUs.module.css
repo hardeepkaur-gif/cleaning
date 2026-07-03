@@ -1,0 +1,314 @@
+/* Why Choose Us — problem vs solution split layout */
+
+.why {
+  position: relative;
+  padding: 70px 0;
+  background: var(--white);
+  z-index: 1;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 3vw, 24px);
+}
+
+.header {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto clamp(40px, 5vw, 56px);
+}
+
+.taglineBox {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 6px;
+}
+
+.taglineIcon {
+  display: inline-flex;
+  color: var(--cta);
+  font-size: 14px;
+}
+
+.tagline {
+  color: var(--cta);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  font-family: var(--font-two);
+  letter-spacing: 0.04em;
+}
+
+.title {
+  font-family: var(--font-two);
+  font-size: clamp(28px, 3.2vw, 42px);
+  line-height: 1.25;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin: 0 0 clamp(16px, 2vw, 20px);
+}
+
+.intro {
+  font-size: clamp(15px, 1.4vw, 17px);
+  line-height: 1.75;
+  color: var(--gray);
+  margin: 0;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: clamp(20px, 2.5vw, 28px);
+  align-items: stretch;
+}
+
+.problems,
+.solutions {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100%;
+  border-radius: 16px;
+  padding: clamp(28px, 3vw, 36px);
+  background: var(--white);
+  border: 1px solid #e8e2da;
+  box-shadow: 0 8px 28px rgba(10, 70, 68, 0.06);
+}
+
+.panelHead {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 52px;
+  margin-bottom: clamp(20px, 2.5vw, 24px);
+  padding-bottom: 18px;
+  border-bottom: 1px solid #ebe6df;
+}
+
+.panelIconProblems,
+.panelIconSolutions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  font-size: 22px;
+  box-shadow: 0 6px 16px rgba(10, 70, 68, 0.08);
+}
+
+.panelIconProblems {
+  background: linear-gradient(145deg, #fff 0%, rgba(226, 106, 76, 0.12) 100%);
+  border: 1px solid rgba(226, 106, 76, 0.2);
+  color: var(--cta);
+}
+
+.panelIconSolutions {
+  background: linear-gradient(145deg, #fff 0%, rgba(14, 94, 91, 0.1) 100%);
+  border: 1px solid rgba(14, 94, 91, 0.18);
+  color: var(--primary);
+}
+
+.panelTitle {
+  font-family: var(--font-two);
+  font-size: clamp(16px, 1.7vw, 19px);
+  line-height: 1.35;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin: 0;
+  padding-top: 0;
+}
+
+.problemList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.problemList li {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: #f7f4f1;
+  border: 1px solid #ebe6df;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.problemList li:hover {
+  background: var(--white);
+  border-color: #e0d9d0;
+}
+
+.problemIcon,
+.solutionIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  font-size: 26px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.problemIcon {
+  background: linear-gradient(145deg, #ffffff 0%, rgba(226, 106, 76, 0.12) 100%);
+  border: 1px solid rgba(226, 106, 76, 0.2);
+  color: var(--cta);
+  box-shadow:
+    0 8px 18px rgba(226, 106, 76, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.problemIcon svg {
+  filter: drop-shadow(0 2px 5px rgba(226, 106, 76, 0.22));
+}
+
+.problemList li:hover .problemIcon {
+  transform: scale(1.08) rotate(-3deg);
+  box-shadow: 0 10px 22px rgba(226, 106, 76, 0.2);
+}
+
+.solutionIcon {
+  background: linear-gradient(145deg, #ffffff 0%, rgba(14, 94, 91, 0.1) 100%);
+  border: 1px solid rgba(14, 94, 91, 0.18);
+  color: var(--primary);
+  box-shadow:
+    0 8px 18px rgba(14, 94, 91, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.solutionIcon svg {
+  filter: drop-shadow(0 2px 5px rgba(14, 94, 91, 0.18));
+}
+
+.solutionList li:hover .solutionIcon {
+  transform: scale(1.08) rotate(3deg);
+  box-shadow: 0 10px 22px rgba(14, 94, 91, 0.18);
+}
+
+.problemList h4 {
+  font-family: var(--font-two);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin: 0 0 6px;
+  line-height: 1.35;
+}
+
+.problemList p {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--gray);
+  margin: 0;
+}
+
+.divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px 0;
+}
+
+.dividerLine {
+  flex: 1;
+  width: 2px;
+  min-height: 40px;
+  background: linear-gradient(180deg, transparent, #ded8cf, transparent);
+  border-radius: 2px;
+}
+
+.dividerBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 2px solid #ded8cf;
+  font-family: var(--font-two);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary);
+  box-shadow: 0 6px 16px rgba(10, 70, 68, 0.08);
+}
+
+.solutionList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.solutionList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: #f7f4f1;
+  border: 1px solid #ebe6df;
+  font-size: 13px;
+  line-height: 1.55;
+  font-weight: 500;
+  color: var(--primary-dark);
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.solutionList li:hover {
+  background: var(--white);
+  border-color: #e0d9d0;
+}
+
+@media (max-width: 991px) {
+  .split {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .divider {
+    flex-direction: row;
+    padding: 20px 0;
+  }
+
+  .dividerLine {
+    flex: 1;
+    width: auto;
+    height: 2px;
+    min-height: 0;
+    background: linear-gradient(90deg, transparent, #ded8cf, transparent);
+  }
+}
+
+@media (max-width: 575px) {
+  .problems,
+  .solutions {
+    padding: 20px 18px;
+  }
+
+  .panelHead {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .panelTitle {
+    padding-top: 0;
+  }
+}

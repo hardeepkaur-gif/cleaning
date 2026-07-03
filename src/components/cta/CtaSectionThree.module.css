@@ -1,0 +1,359 @@
+/* CTA three — split hero with cleaning-themed floating widgets */
+
+.cta {
+  position: relative;
+  padding: 70px 0;
+  background: var(--white);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.blobCoral,
+.blobTeal {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.blobCoral {
+  top: 10%;
+  left: -5%;
+  width: clamp(280px, 35vw, 420px);
+  height: clamp(280px, 35vw, 420px);
+  background: rgba(226, 106, 76, 0.16);
+}
+
+.blobTeal {
+  top: 20%;
+  right: -8%;
+  width: clamp(300px, 38vw, 460px);
+  height: clamp(300px, 38vw, 460px);
+  background: rgba(14, 94, 91, 0.12);
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 3vw, 24px);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  align-items: stretch;
+  gap: clamp(32px, 5vw, 56px);
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 520px;
+}
+
+.title {
+  font-family: var(--font-two);
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin: 0 0 20px;
+  letter-spacing: -0.02em;
+}
+
+.highlightText {
+  color: var(--cta);
+}
+
+.text {
+  font-size: clamp(15px, 1.45vw, 17px);
+  line-height: 1.75;
+  color: var(--gray);
+  margin: 0 0 32px;
+  max-width: 460px;
+}
+
+.btnBox {
+  margin-top: 4px;
+}
+
+.ctaBtn:global(.thmBtn) {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 30px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 999px;
+  box-shadow: 0 14px 30px rgba(226, 106, 76, 0.32);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ctaBtn:global(.thmBtn:hover) {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 36px rgba(226, 106, 76, 0.4);
+}
+
+.visual {
+  position: relative;
+  height: 100%;
+  min-height: 0;
+}
+
+.visualStage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 3 / 2;
+  animation: ctaFloat 5s ease-in-out infinite;
+}
+
+.decorIcon {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--tint);
+  border: 1px solid rgba(14, 94, 91, 0.15);
+  color: var(--primary);
+  font-size: 26px;
+  box-shadow: 0 8px 20px rgba(10, 70, 68, 0.08);
+}
+
+.decorIcon:first-of-type {
+  top: 6%;
+  right: 4%;
+  z-index: 3;
+}
+
+.floatCard {
+  position: absolute;
+  z-index: 2;
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(10, 70, 68, 0.1);
+  border: 1px solid rgba(14, 94, 91, 0.08);
+}
+
+.bookingCard {
+  top: 0;
+  right: 0;
+  width: min(100%, 260px);
+  padding: 18px 18px 16px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 55%, #0c524f 100%);
+  color: var(--white);
+  border: none;
+}
+
+.cardIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  font-size: 22px;
+}
+
+.cardLabel {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  opacity: 0.85;
+  margin-bottom: 8px;
+}
+
+.cardName {
+  display: block;
+  font-family: var(--font-two);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.cardNumber {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  opacity: 0.9;
+  margin-bottom: 14px;
+}
+
+.cardFooter {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.cardFooter small {
+  display: block;
+  font-size: 10px;
+  opacity: 0.75;
+  margin-bottom: 2px;
+}
+
+.cardFooter span {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.chartCard {
+  bottom: 0;
+  left: 0;
+  top: auto;
+  width: 140px;
+  padding: 14px;
+}
+
+.chartHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 12px;
+  color: var(--gray);
+}
+
+.chartHead strong {
+  font-size: 18px;
+  color: var(--primary-dark);
+}
+
+.chartBars {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  height: 52px;
+  margin-bottom: 10px;
+}
+
+.chartBars span {
+  flex: 1;
+  border-radius: 4px 4px 0 0;
+  background: linear-gradient(180deg, var(--primary), var(--primary-dark));
+  opacity: 0.85;
+}
+
+.chartBars span:nth-child(even) {
+  background: linear-gradient(180deg, var(--cta), #c95a3f);
+  opacity: 0.75;
+}
+
+.chartTabs {
+  display: flex;
+  gap: 8px;
+  font-size: 10px;
+  color: #999;
+}
+
+.chartTabActive {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.peopleCard {
+  top: 0;
+  left: 0;
+  padding: 12px 14px;
+}
+
+.peopleLabel {
+  display: block;
+  font-size: 11px;
+  color: var(--gray);
+  margin-bottom: 10px;
+}
+
+.avatarRow {
+  display: flex;
+  align-items: center;
+}
+
+.avatar,
+.avatarPlus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin-left: -8px;
+  border-radius: 50%;
+  border: 2px solid var(--white);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.avatar:first-child {
+  margin-left: 0;
+}
+
+.avatar {
+  background: linear-gradient(135deg, var(--primary), #3d9e99);
+}
+
+.avatarPlus {
+  background: var(--tint);
+  color: var(--primary);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@keyframes ctaFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@media (max-width: 991px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .copy {
+    max-width: none;
+    text-align: center;
+  }
+
+  .text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .visual {
+    min-height: 300px;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .bookingCard {
+    right: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .visual {
+    min-height: 280px;
+  }
+
+  .ctaBtn:global(.thmBtn) {
+    width: 100%;
+    justify-content: center;
+  }
+}

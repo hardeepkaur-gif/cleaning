@@ -1,4 +1,3 @@
-import { FaPlay } from "react-icons/fa";
 import ThmButton from "@/components/menu/ThmButton";
 import styles from "./HeroCoreclean.module.css";
 
@@ -6,7 +5,7 @@ const imgBase = "/images/hero/coreclean";
 
 export default function HeroCoreclean() {
   return (
-    <section className={styles.hero} aria-label="Coreclean style cleaning hero">
+    <section className={styles.hero} id="home" aria-label="Coreclean style cleaning hero">
       <div className={styles.heroBody}>
         <div
           className={styles.bgShape}
@@ -78,21 +77,11 @@ export default function HeroCoreclean() {
               <div className={styles.bottomBtn}>
                 <ThmButton href="#contact">Request a Quote</ThmButton>
               </div>
-              <a
-                href="https://www.youtube.com/watch?v=Get7rqXYrbQ"
-                className={styles.videoLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Watch our cleaning service video"
-              >
-                <div className={styles.videoBtn}>
-                  <div className={styles.videoInner}>
-                    <div className={styles.videoIcon}>
-                      <FaPlay />
-                    </div>
-                  </div>
-                </div>
-              </a>
+              <div className={styles.bottomBtn}>
+                <ThmButton href="#services" variant="secondary">
+                  Find Your Cleaner
+                </ThmButton>
+              </div>
             </div>
           </div>
 

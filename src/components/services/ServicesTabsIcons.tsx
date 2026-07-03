@@ -9,15 +9,18 @@ import {
   servicesTabsTagline,
   servicesTabsTitle,
 } from "./servicesData";
-import styles from "./ServicesTabs.module.css";
+import styles from "./ServicesTabsIcons.module.css";
 
 const shapeBase = "/images/services/cleanon-tabs";
 
-export default function ServicesTabs() {
+export default function ServicesTabsIcons() {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <section className={styles.services} aria-labelledby="services-tabs-title">
+    <section
+      className={styles.services}
+      aria-labelledby="services-tabs-icons-title"
+    >
       <div className={styles.container}>
         <div className={styles.sectionTitle}>
           <div className={styles.taglineBox}>
@@ -26,7 +29,7 @@ export default function ServicesTabs() {
             </span>
             <span className={styles.tagline}>{servicesTabsTagline}</span>
           </div>
-          <h2 className={styles.title} id="services-tabs-title">
+          <h2 className={styles.title} id="services-tabs-icons-title">
             {servicesTabsTitle}
           </h2>
           <p className={styles.intro}>{servicesTabsIntro}</p>
@@ -37,23 +40,26 @@ export default function ServicesTabs() {
             <ul className={styles.tabButtons} role="tablist">
               {servicesList.map((service, index) => {
                 const isActive = activeTab === index;
+                const Icon = service.tabIcon;
                 return (
                   <li key={service.title} role="presentation">
                     <button
                       type="button"
                       role="tab"
                       aria-selected={isActive}
-                      aria-controls={`service-tab-panel-${index}`}
-                      id={`service-tab-${index}`}
+                      aria-controls={`service-icons-tab-panel-${index}`}
+                      id={`service-icons-tab-${index}`}
                       className={`${styles.tabBtn} ${isActive ? styles.tabBtnActive : ""}`}
                       onClick={() => setActiveTab(index)}
                     >
                       <span className={styles.tabBtnInner}>
-                        <span className={styles.tabImgWrap}>
-                          <img src={service.image} alt="" />
-                          <span className={styles.tabOverlay} aria-hidden />
-                          <span className={styles.tabHeading}>{service.title}</span>
+                        <span className={styles.tabIconWrap} aria-hidden>
+                          <Icon className={styles.tabIconMain} />
+                          <span className={styles.tabIconStar}>
+                            <FaStar />
+                          </span>
                         </span>
+                        <span className={styles.tabHeading}>{service.title}</span>
                       </span>
                     </button>
                   </li>
@@ -68,9 +74,9 @@ export default function ServicesTabs() {
               return (
                 <div
                   key={service.title}
-                  id={`service-tab-panel-${index}`}
+                  id={`service-icons-tab-panel-${index}`}
                   role="tabpanel"
-                  aria-labelledby={`service-tab-${index}`}
+                  aria-labelledby={`service-icons-tab-${index}`}
                   hidden={!isActive}
                   className={`${styles.tabPanel} ${isActive ? styles.tabPanelActive : ""}`}
                 >
