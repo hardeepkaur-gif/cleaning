@@ -1,0 +1,215 @@
+.section {
+  position: relative;
+  padding: clamp(70px, 9vw, 100px) 0;
+  background: var(--white);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 3vw, 24px);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: clamp(40px, 5vw, 80px);
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* ===== Left Content ===== */
+.copy {
+  max-width: 460px;
+}
+
+.tagline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-two);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--cta);
+  margin-bottom: 14px;
+}
+
+.tagline svg {
+  font-size: 13px;
+}
+
+.title {
+  font-family: var(--font-two);
+  font-size: clamp(28px, 3.6vw, 46px);
+  line-height: 1.3;
+  font-weight: 800;
+  color: var(--primary-dark);
+  margin: 0 0 clamp(16px, 2vw, 20px);
+}
+
+.intro {
+  font-size: clamp(15px, 1.4vw, 18px);
+  line-height: 1.75;
+  color: var(--gray);
+  margin: 0 0 28px;
+}
+
+.btnMain:global(.thmBtn) {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: var(--radius);
+}
+
+/* ===== Right Map Area ===== */
+.mapArea {
+  position: relative;
+  min-height: 380px;
+}
+
+.mapImg {
+  width: 100%;
+  height: auto;
+  opacity: 0.85;
+}
+
+/* Pins */
+.pins {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.pin {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: pinDrop 0.5s ease forwards;
+}
+
+@keyframes pinDrop {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pinIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), #2a9d8f);
+  color: var(--white);
+  font-size: 16px;
+  box-shadow: 0 6px 18px rgba(14, 94, 91, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pin:hover .pinIcon {
+  transform: scale(1.2);
+  box-shadow: 0 10px 28px rgba(14, 94, 91, 0.35);
+}
+
+.pinLabel {
+  font-family: var(--font-two);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--primary-dark);
+  background: var(--white);
+  padding: 2px 8px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  white-space: nowrap;
+}
+
+
+/* ===== Bottom Note ===== */
+.note {
+  font-size: clamp(14px, 1.3vw, 16px);
+  line-height: 1.7;
+  color: var(--gray);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+/* ===== Scrolling Ticker ===== */
+.ticker {
+  overflow: hidden;
+  border-top: 1px solid rgba(14, 94, 91, 0.08);
+  border-bottom: 1px solid rgba(14, 94, 91, 0.08);
+  padding: 14px 0;
+}
+
+.tickerTrack {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+  animation: tickerScroll 20s linear infinite;
+}
+
+.tickerTrack:hover {
+  animation-play-state: paused;
+}
+
+@keyframes tickerScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.tickerItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-two);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-dark);
+  white-space: nowrap;
+}
+
+.tickerItem svg {
+  color: var(--cta);
+  font-size: 12px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 991px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .mapArea {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 575px) {
+  .mapArea {
+    min-height: 260px;
+  }
+
+  .pinIcon {
+    width: 32px;
+    height: 32px;
+    font-size: 13px;
+  }
+
+  .pinLabel {
+    font-size: 9px;
+  }
+}

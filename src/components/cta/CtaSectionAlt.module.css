@@ -131,9 +131,9 @@
 
 .title {
   font-family: var(--font-two);
-  font-size: clamp(30px, 3.8vw, 46px);
-  line-height: 1.15;
-  font-weight: 700;
+  font-size: clamp(28px, 3.6vw, 46px);
+  line-height: 1.3;
+  font-weight: 800;
   color: var(--primary-dark);
   margin: 0 0 18px;
 }
@@ -156,8 +156,8 @@
 }
 
 .text {
-  font-size: clamp(15px, 1.4vw, 17px);
-  line-height: 1.8;
+  font-size: clamp(15px, 1.4vw, 18px);
+  line-height: 1.75;
   color: var(--gray);
   margin: 0;
   max-width: 520px;

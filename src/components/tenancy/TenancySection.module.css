@@ -1,0 +1,212 @@
+/* End of Tenancy — attractive split layout */
+
+.section {
+  position: relative;
+  padding: 80px 0;
+  background: #f7f4f1;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  right: -80px;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: rgba(14, 94, 91, 0.06);
+  pointer-events: none;
+}
+
+.section::after {
+  content: "";
+  position: absolute;
+  bottom: -80px;
+  left: -60px;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: rgba(226, 106, 76, 0.06);
+  pointer-events: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 3vw, 24px);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  align-items: center;
+  gap: clamp(32px, 5vw, 64px);
+}
+
+.media {
+  position: relative;
+}
+
+.imgWrap {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 48px rgba(10, 70, 68, 0.12);
+}
+
+.imgWrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  border: 3px solid var(--primary);
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.imgWrap img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.section:hover .imgWrap img {
+  transform: scale(1.03);
+}
+
+.floatingBadge {
+  position: absolute;
+  bottom: -20px;
+  right: -16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  background: var(--white);
+  border-radius: 14px;
+  box-shadow: 0 12px 32px rgba(10, 70, 68, 0.12);
+  border: 1px solid rgba(14, 94, 91, 0.08);
+  z-index: 2;
+}
+
+.badgeStar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--cta), #c95a3f);
+  color: var(--white);
+  font-size: 16px;
+}
+
+.floatingBadge strong {
+  display: block;
+  font-family: var(--font-two);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.floatingBadge span {
+  font-size: 12px;
+  color: var(--gray);
+}
+
+.copy {
+  max-width: 560px;
+}
+
+.tagline {
+  display: inline-block;
+  color: var(--cta);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+  font-family: var(--font-two);
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-family: var(--font-two);
+  font-size: clamp(28px, 3.6vw, 46px);
+  line-height: 1.3;
+  font-weight: 800;
+  color: var(--primary-dark);
+  margin: 0 0 20px;
+}
+
+.text {
+  font-size: clamp(15px, 1.4vw, 18px);
+  line-height: 1.75;
+  color: var(--gray);
+  margin: 0 0 16px;
+}
+
+.text:last-of-type {
+  margin-bottom: 24px;
+}
+
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.btnMain:global(.thmBtn) {
+  display: inline-block;
+  width: auto;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: var(--radius);
+}
+
+.learnMore {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary);
+  font-style: italic;
+}
+
+@media (max-width: 991px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .media {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .copy {
+    max-width: none;
+  }
+
+  .floatingBadge {
+    right: 10px;
+    bottom: -16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .btnMain:global(.thmBtn) {
+    width: auto;
+  }
+
+  .imgWrap img {
+    aspect-ratio: 3 / 4;
+  }
+}

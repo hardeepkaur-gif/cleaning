@@ -1,0 +1,135 @@
+"use client";
+
+import { useState } from "react";
+import { FaPlus, FaMinus } from "react-icons/fa";
+import styles from "./FaqSection.module.css";
+
+const faqs = [
+  {
+    q: "What cleaning services in London do you offer?",
+    a: "We provide domestic cleaning, carpet cleaning, end of tenancy cleaning, and gutter cleaning services for homes, rental properties, offices, and commercial premises across London.",
+  },
+  {
+    q: "Are your cleaners DBS checked?",
+    a: "Yes, every cleaner undergoes DBS screening, identity verification, and right-to-work checks before attending customer properties.",
+  },
+  {
+    q: "Are you fully insured?",
+    a: "Yes, Cleaning Services London operates as a fully insured cleaning company, providing additional reassurance for homeowners, tenants, landlords, and businesses.",
+  },
+  {
+    q: "Do you offer fixed pricing?",
+    a: "Yes, wherever possible, we provide fixed pricing rather than relying solely on hourly estimates, helping customers avoid unexpected charges.",
+  },
+  {
+    q: "Can I request the same cleaner each time?",
+    a: "Yes, for recurring domestic cleaning services, we aim to provide the same cleaner whenever scheduling allows.",
+  },
+  {
+    q: "What is included in a professional clean?",
+    a: "Most professional cleans include kitchen cleaning, bathroom cleaning, dusting, vacuuming, mopping, high-touch surfaces, bin emptying, and general tidying. Tasks vary depending on the service booked.",
+  },
+  {
+    q: "Do I need to tidy before the cleaner arrives?",
+    a: "No, however, removing personal items and clutter can help cleaners work more efficiently and focus on cleaning rather than organising.",
+  },
+  {
+    q: "Do you provide end of tenancy cleaning?",
+    a: "Yes, our End of Tenancy Cleaning London service helps tenants, landlords, and letting agents prepare properties for inspections, handovers, and new occupants.",
+  },
+  {
+    q: "Do you provide carpet cleaning?",
+    a: "Yes, we provide professional carpet cleaning services designed to remove stains, refresh fibres, and improve the appearance of high-traffic areas.",
+  },
+  {
+    q: "Do you provide gutter cleaning?",
+    a: "Yes, our gutter cleaning service removes debris and blockages to help maintain effective drainage and reduce the risk of water-related property issues.",
+  },
+  {
+    q: "Which areas of London do you cover?",
+    a: "We primarily serve East London, including Canning Town, Stratford, Plaistow, East Ham, Dagenham, Beckton, Barking, Canary Wharf, and Docklands, with wider coverage available depending on the service.",
+  },
+  {
+    q: "How quickly can I book a cleaner?",
+    a: "Availability varies by location and service type. In many cases, appointments can be arranged within a few days of your enquiry.",
+  },
+  {
+    q: "What happens if I am not satisfied?",
+    a: "If you have concerns following a completed service, our team will review the issue and work towards a fair resolution in line with our satisfaction-focused approach.",
+  },
+];
+
+export default function FaqSection() {
+  const [openLeft, setOpenLeft] = useState<number | null>(0);
+  const [openRight, setOpenRight] = useState<number | null>(0);
+
+  const half = Math.ceil(faqs.length / 2);
+  const leftCol = faqs.slice(0, half);
+  const rightCol = faqs.slice(half);
+
+  return (
+    <section className={styles.section} aria-labelledby="faq-title">
+      <div className={styles.container}>
+        <div className={styles.topHeader}>
+          <span className={styles.tagline}>FAQ</span>
+          <h2 className={styles.title} id="faq-title">
+            Frequently Asked Questions
+          </h2>
+        </div>
+
+        <div className={styles.columns}>
+          <div className={styles.col}>
+            {leftCol.map((faq, i) => {
+              const isOpen = openLeft === i;
+              return (
+                <div
+                  key={i}
+                  className={`${styles.item} ${isOpen ? styles.itemOpen : ""}`}
+                >
+                  <button
+                    className={styles.question}
+                    onClick={() => setOpenLeft(isOpen ? null : i)}
+                    aria-expanded={isOpen}
+                  >
+                    <span className={styles.qText}>{faq.q}</span>
+                    <span className={styles.qIcon}>
+                      {isOpen ? <FaMinus /> : <FaPlus />}
+                    </span>
+                  </button>
+                  <div className={styles.answer} aria-hidden={!isOpen}>
+                    <p>{faq.a}</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+          <div className={styles.col}>
+            {rightCol.map((faq, i) => {
+              const isOpen = openRight === i;
+              return (
+                <div
+                  key={i}
+                  className={`${styles.item} ${isOpen ? styles.itemOpen : ""}`}
+                >
+                  <button
+                    className={styles.question}
+                    onClick={() => setOpenRight(isOpen ? null : i)}
+                    aria-expanded={isOpen}
+                  >
+                    <span className={styles.qText}>{faq.q}</span>
+                    <span className={styles.qIcon}>
+                      {isOpen ? <FaMinus /> : <FaPlus />}
+                    </span>
+                  </button>
+                  <div className={styles.answer} aria-hidden={!isOpen}>
+                    <p>{faq.a}</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

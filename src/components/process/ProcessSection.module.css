@@ -1,0 +1,193 @@
+.section {
+  position: relative;
+  padding: clamp(70px, 9vw, 110px) 0;
+  background: #f7f4f1;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 3vw, 24px);
+}
+
+/* Header */
+.topHeader {
+  text-align: center;
+  margin-bottom: clamp(50px, 6vw, 70px);
+}
+
+.tagline {
+  display: inline-block;
+  font-family: var(--font-two);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--cta);
+  margin-bottom: 12px;
+}
+
+.title {
+  font-family: var(--font-two);
+  font-size: clamp(28px, 3.6vw, 46px);
+  line-height: 1.3;
+  font-weight: 800;
+  color: var(--primary-dark);
+  margin: 0;
+}
+
+/* Row */
+.row {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(20px, 3vw, 36px);
+  margin-bottom: 60px;
+}
+
+.rowBottom {
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
+/* Horizontal connector line */
+.connectorLine {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  right: 60px;
+  height: 2px;
+  border-top: 2px dashed rgba(14, 94, 91, 0.25);
+  z-index: 0;
+}
+
+/* Step */
+.step {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+/* Icon outer ring */
+.iconOuter {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  border: 2px solid rgba(14, 94, 91, 0.15);
+  background: transparent;
+  transition: border-color 0.4s ease;
+}
+
+.step:hover .iconOuter {
+  border-color: var(--primary);
+}
+
+/* Icon inner circle */
+.iconInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: var(--white);
+  font-size: 36px;
+  box-shadow: 0 8px 24px rgba(14, 94, 91, 0.2);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.step:hover .iconInner {
+  background: var(--cta);
+  transform: scale(1.08);
+  box-shadow: 0 12px 32px rgba(226, 106, 76, 0.25);
+}
+
+/* Number badge */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: var(--white);
+  font-family: var(--font-two);
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  transition: background 0.3s ease;
+}
+
+.step:hover .badge {
+  background: var(--cta);
+}
+
+/* Title */
+.stepTitle {
+  font-family: var(--font-two);
+  font-size: clamp(16px, 1.5vw, 19px);
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin: 0 0 8px;
+  transition: color 0.3s ease;
+}
+
+.step:hover .stepTitle {
+  color: var(--cta);
+}
+
+/* Text */
+.stepText {
+  font-size: clamp(13px, 1.2vw, 15px);
+  line-height: 1.7;
+  color: var(--gray);
+  margin: 0 auto;
+  max-width: 240px;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 30px;
+  }
+
+  .rowBottom {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: none;
+  }
+
+  .connectorLine {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .row,
+  .rowBottom {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .iconOuter {
+    width: 100px;
+    height: 100px;
+  }
+
+  .iconInner {
+    width: 72px;
+    height: 72px;
+    font-size: 28px;
+  }
+}
