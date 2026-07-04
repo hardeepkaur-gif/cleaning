@@ -47,20 +47,20 @@ export default function AreasSection() {
               className={styles.mapImg}
             />
 
-            {/* Location pins — positioned at actual East London locations */}
+            {/* Location pins — positioned at actual East London locations on the borough map */}
             <div className={styles.pins}>
               {areas.map((area, i) => {
                 const positions = [
-                  { top: "42%", left: "62%" },   // Canning Town
-                  { top: "25%", left: "82%" },   // Ilford
-                  { top: "30%", left: "68%" },   // Stratford
-                  { top: "45%", left: "67%" },   // Plaistow
-                  { top: "38%", left: "75%" },   // East Ham
-                  { top: "42%", left: "88%" },   // Dagenham
-                  { top: "48%", left: "72%" },   // Beckton
-                  { top: "50%", left: "82%" },   // Barking
-                  { top: "48%", left: "56%" },   // Canary Wharf
-                  { top: "50%", left: "62%" },   // Docklands
+                  { top: "40%", left: "66%" },   // Canning Town (Newham south)
+                  { top: "24%", left: "74%" },   // Ilford (Redbridge)
+                  { top: "33%", left: "63%" },   // Stratford (Newham north)
+                  { top: "37%", left: "68%" },   // Plaistow (Newham center)
+                  { top: "35%", left: "72%" },   // East Ham (Newham east)
+                  { top: "32%", left: "84%" },   // Dagenham (Barking & Dagenham east)
+                  { top: "42%", left: "71%" },   // Beckton (Newham south-east)
+                  { top: "30%", left: "79%" },   // Barking (Barking borough)
+                  { top: "40%", left: "57%" },   // Canary Wharf (Tower Hamlets by Thames)
+                  { top: "42%", left: "62%" },   // Docklands (Newham/TH border)
                 ];
                 const pos = positions[i];
                 return (

@@ -7,7 +7,6 @@ import {
   PiCameraFill,
   PiSealCheckFill,
 } from "react-icons/pi";
-import { FaArrowRight } from "react-icons/fa";
 import styles from "./ProcessSectionCircle.module.css";
 
 const steps = [
@@ -76,9 +75,6 @@ export default function ProcessSectionCircle() {
               </div>
               <h3 className={styles.cardTitle}>{step.title}</h3>
               <p className={styles.cardText}>{step.text}</p>
-              <span className={styles.cardLink}>
-                View More <FaArrowRight />
-              </span>
             </div>
           ))}
         </div>
