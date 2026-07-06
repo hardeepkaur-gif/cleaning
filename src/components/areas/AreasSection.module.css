@@ -70,13 +70,23 @@
 /* ===== Right Map Area ===== */
 .mapArea {
   position: relative;
-  min-height: 380px;
+}
+
+.mapFrame {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+  background: #111;
+  border-radius: 14px;
+  padding: 12px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
 }
 
 .mapImg {
   width: 100%;
   height: auto;
-  opacity: 0.85;
+  display: block;
+  border-radius: 8px;
 }
 
 /* Pins */
@@ -84,23 +94,24 @@
   position: absolute;
   inset: 0;
   z-index: 2;
+  pointer-events: none;
 }
 
 .pin {
   position: absolute;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 4px;
+  justify-content: center;
+  pointer-events: auto;
   opacity: 0;
-  transform: translateY(-10px);
-  animation: pinDrop 0.5s ease forwards;
+  transform: translate(-50%, -50%) scale(0.85);
+  animation: pinDrop 0.45s ease forwards;
 }
 
 @keyframes pinDrop {
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 
@@ -108,31 +119,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--primary), #2a9d8f);
   color: var(--white);
-  font-size: 16px;
-  box-shadow: 0 6px 18px rgba(14, 94, 91, 0.25);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 15px;
+  box-shadow: 0 4px 14px rgba(14, 94, 91, 0.35);
+  border: 2px solid var(--white);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
 }
 
 .pin:hover .pinIcon {
-  transform: scale(1.2);
-  box-shadow: 0 10px 28px rgba(14, 94, 91, 0.35);
-}
-
-.pinLabel {
-  font-family: var(--font-two);
-  font-size: 11px;
-  font-weight: 600;
-  color: var(--primary-dark);
-  background: var(--white);
-  padding: 2px 8px;
-  border-radius: 4px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  white-space: nowrap;
+  transform: scale(1.15);
+  background: var(--cta);
+  box-shadow: 0 8px 22px rgba(226, 106, 76, 0.4);
 }
 
 
@@ -199,17 +200,9 @@
 }
 
 @media (max-width: 575px) {
-  .mapArea {
-    min-height: 260px;
-  }
-
   .pinIcon {
-    width: 32px;
-    height: 32px;
-    font-size: 13px;
-  }
-
-  .pinLabel {
-    font-size: 9px;
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
   }
 }
