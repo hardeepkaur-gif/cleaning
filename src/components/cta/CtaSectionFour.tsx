@@ -1,3 +1,4 @@
+import { FaCalendarCheck, FaCheckCircle, FaShieldAlt } from "react-icons/fa";
 import {
   PiCalendarCheckFill,
   PiHouseLineFill,
@@ -7,42 +8,52 @@ import {
 import ThmButton from "@/components/menu/ThmButton";
 import styles from "./CtaSectionFour.module.css";
 
+const trustPoints = ["DBS-checked", "Fully insured", "Trained cleaners"];
+
 export default function CtaSectionFour() {
   return (
     <section className={styles.cta} aria-labelledby="cta-four-title">
       <div className={styles.container}>
         <div className={styles.banner}>
           <div className={styles.bannerInner}>
-            {/* Left — title + button + arrow */}
+            <div className={styles.blobTeal} aria-hidden />
+            <div className={styles.blobCoral} aria-hidden />
+
             <div className={styles.copy}>
+              <span className={styles.badge}>
+                <FaShieldAlt aria-hidden />
+                Trusted Cleaning Services
+              </span>
+
               <h2 className={styles.title} id="cta-four-title">
                 Looking for a Cleaning Company You Can Trust?
               </h2>
+
+              <p className={styles.text}>
+                Leave the mundane chores to us whilst our DBS-checked, insured,
+                and trained cleaners take care of your property with structure,
+                care, and accountability.
+              </p>
+
+              <ul className={styles.trustList}>
+                {trustPoints.map((item) => (
+                  <li key={item}>
+                    <FaCheckCircle aria-hidden />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+
               <div className={styles.actionRow}>
-                <ThmButton href="#contact" className={styles.ctaBtn}>
-                  Request a Quote
-                </ThmButton>
-                <svg
-                  className={styles.curveArrow}
-                  viewBox="0 0 120 50"
-                  aria-hidden
-                >
-                  <path
-                    d="M8,42 C35,42 55,18 85,18 C100,18 110,24 114,28"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                  />
-                  <path
-                    d="M108,22 L116,28 L108,34"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+                <div className={styles.btnWrap}>
+                  <ThmButton href="#contact" className={styles.ctaBtn}>
+                    <FaCalendarCheck aria-hidden />
+                    Request a Quote
+                  </ThmButton>
+                  <span className={styles.btnNote}>
+                    Free quote · No obligation
+                  </span>
+                </div>
               </div>
             </div>
 

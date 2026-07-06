@@ -27,30 +27,32 @@ export default function AreasSection() {
 
           <div className={styles.mapArea}>
             <div className={styles.mapFrame}>
-              <img
-                src="/images/london-map.png"
-                alt="Map of Greater London showing East London service coverage"
-                className={styles.mapImg}
-              />
+              <div className={styles.mapInner}>
+                <img
+                  src="/images/london-map.png"
+                  alt="Map of Greater London showing East London service coverage"
+                  className={styles.mapImg}
+                />
 
-              <div className={styles.pins}>
-                {areaPins.map((pin, i) => (
-                  <div
-                    key={pin.name}
-                    className={styles.pin}
-                    style={{
-                      top: `${pin.top}%`,
-                      left: `${pin.left}%`,
-                      animationDelay: `${i * 0.12}s`,
-                    }}
-                    title={pin.name}
-                    aria-label={pin.name}
-                  >
-                    <span className={styles.pinIcon}>
-                      <FaMapMarkerAlt aria-hidden />
-                    </span>
-                  </div>
-                ))}
+                <div className={styles.pins}>
+                  {areaPins.map((pin, i) => (
+                    <div
+                      key={pin.name}
+                      className={styles.pin}
+                      style={{
+                        top: `${pin.top}%`,
+                        left: `${pin.left}%`,
+                        animationDelay: `${i * 0.12}s`,
+                      }}
+                      title={pin.name}
+                      aria-label={pin.name}
+                    >
+                      <span className={styles.pinIcon}>
+                        <FaMapMarkerAlt aria-hidden />
+                      </span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

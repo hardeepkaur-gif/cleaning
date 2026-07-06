@@ -18,10 +18,9 @@ import VettedSection from "@/components/vetted/VettedSection";
 import ProcessSection from "@/components/process/ProcessSection";
 import ProcessSectionAlt from "@/components/process/ProcessSectionAlt";
 import ProcessSectionCircle from "@/components/process/ProcessSectionCircle";
+import ProcessSectionFour from "@/components/process/ProcessSectionFour";
 import AreasSection from "@/components/areas/AreasSection";
 import FaqSection from "@/components/faq/FaqSection";
-
-export const dynamic = "force-dynamic";
 
 export default function HomePage() {
   return (
@@ -46,6 +45,7 @@ export default function HomePage() {
       <ProcessSection />
       <ProcessSectionAlt />
       <ProcessSectionCircle />
+      <ProcessSectionFour />
       <AreasSection />
       <FaqSection />
     </main>

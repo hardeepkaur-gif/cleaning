@@ -75,10 +75,15 @@
 .mapFrame {
   position: relative;
   width: 100%;
-  line-height: 0;
   background: var(--white);
   border-radius: 14px;
   padding: 12px;
+}
+
+.mapInner {
+  position: relative;
+  width: 100%;
+  line-height: 0;
 }
 
 .mapImg {
@@ -86,8 +91,6 @@
   height: auto;
   display: block;
   border-radius: 8px;
-  /* Black-bg map → white background with visible borough outlines */
-  filter: invert(1) contrast(1.05);
 }
 
 /* Pins */

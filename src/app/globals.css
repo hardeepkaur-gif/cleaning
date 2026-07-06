@@ -59,3 +59,82 @@ a {
   font-size: 16px;
   max-width: 700px;
 }
+
+/* Global theme button — used site-wide via ThmButton */
+.thmBtn {
+  position: relative;
+  display: inline-block;
+  color: var(--white);
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  background-color: var(--cta);
+  border-radius: var(--radius);
+  padding: 12px 30px;
+  overflow: hidden;
+  font-family: var(--font);
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  z-index: 1;
+  text-decoration: none;
+}
+
+.thmBtn:hover {
+  color: var(--white);
+}
+
+.hoverBtn {
+  background-color: var(--primary-dark);
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transition: all 0.5s ease;
+  width: 26%;
+  z-index: -1;
+}
+
+.hoverBx {
+  left: 0;
+  transition-delay: 0.105s;
+  border-radius: 5px 0 0 5px;
+}
+
+.hoverBx2 {
+  left: 25%;
+  transition-delay: 0.105s;
+}
+
+.hoverBx3 {
+  left: 50%;
+  transition-delay: 0.105s;
+}
+
+.hoverBx4 {
+  left: 75%;
+  transition-delay: 0s;
+  border-radius: 0 5px 5px 0;
+}
+
+.thmBtn:hover .hoverBtn {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.thmBtnHoverWhite:hover {
+  color: var(--primary-dark);
+}
+
+.thmBtnHoverWhite .hoverBtn {
+  background-color: var(--white);
+}
+
+.thmBtnSecondary {
+  background-color: var(--primary-dark);
+}
+
+.thmBtnSecondary .hoverBtn {
+  background-color: var(--cta);
+}
