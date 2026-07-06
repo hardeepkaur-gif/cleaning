@@ -86,7 +86,8 @@
   height: auto;
   display: block;
   border-radius: 8px;
-  mix-blend-mode: lighten;
+  /* Black-bg map → white background with visible borough outlines */
+  filter: invert(1) contrast(1.05);
 }
 
 /* Pins */
