@@ -1,12 +1,19 @@
 import Link from "next/link";
 import {
+  FaArrowRight,
+  FaArrowUp,
+  FaClock,
   FaEnvelope,
   FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
   FaMapMarkerAlt,
   FaPhoneAlt,
+  FaPoundSign,
+  FaShieldAlt,
+  FaStar,
   FaTwitter,
+  FaUserShield,
 } from "react-icons/fa";
 import ThmButton from "@/components/menu/ThmButton";
 import {
@@ -25,13 +32,57 @@ const socialIconMap = {
   linkedin: FaLinkedinIn,
 } as const;
 
+const trustBadges = [
+  { icon: FaUserShield, label: "DBS-Checked Cleaners" },
+  { icon: FaShieldAlt, label: "Fully Insured" },
+  { icon: FaPoundSign, label: "Fixed, Upfront Pricing" },
+  { icon: FaStar, label: "Satisfaction Focused" },
+];
+
 const currentYear = new Date().getFullYear();
 
 export default function Footer() {
   return (
     <footer className={styles.footer} id="contact">
-      <div className={styles.accentBar} aria-hidden />
+      {/* Top CTA banner */}
+      <div className={styles.ctaBanner}>
+        <div className={styles.ctaBannerInner}>
+          <div className={styles.ctaBannerText}>
+            <h2>Ready for a spotless space?</h2>
+            <p>
+              Book trusted, DBS-checked cleaners in London — get your free,
+              no-obligation quote today.
+            </p>
+          </div>
+          <div className={styles.ctaBannerActions}>
+            <a href={contactInfo.phoneHref} className={styles.callLink}>
+              <FaPhoneAlt aria-hidden />
+              <span>
+                <small>Call us anytime</small>
+                <span className={styles.callNumber}>{contactInfo.phone}</span>
+              </span>
+            </a>
+            <ThmButton href="#contact" className={styles.bannerBtn}>
+              Request a Quote
+              <FaArrowRight aria-hidden />
+            </ThmButton>
+          </div>
+        </div>
+      </div>
+
       <div className={styles.container}>
+        {/* Trust strip */}
+        <div className={styles.trust}>
+          {trustBadges.map(({ icon: Icon, label }) => (
+            <div key={label} className={styles.trustItem}>
+              <span className={styles.trustIcon} aria-hidden>
+                <Icon />
+              </span>
+              <span>{label}</span>
+            </div>
+          ))}
+        </div>
+
         <div className={styles.grid}>
           <div className={styles.about}>
             <Link href="/#home" className={styles.logo}>
@@ -68,7 +119,10 @@ export default function Footer() {
             <ul className={styles.links}>
               {footerQuickLinks.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href}>{link.label}</a>
+                  <a href={link.href}>
+                    <FaArrowRight className={styles.linkArrow} aria-hidden />
+                    {link.label}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -79,14 +133,17 @@ export default function Footer() {
             <ul className={styles.links}>
               {servicesList.map((service) => (
                 <li key={service.title}>
-                  <a href={service.href}>{service.label} Cleaning</a>
+                  <a href={service.href}>
+                    <FaArrowRight className={styles.linkArrow} aria-hidden />
+                    {service.label} Cleaning
+                  </a>
                 </li>
               ))}
             </ul>
           </div>
 
           <div className={styles.column}>
-            <h3 className={styles.title}>Contact Us</h3>
+            <h3 className={styles.title}>Get in Touch</h3>
             <ul className={styles.contactList}>
               <li>
                 <span className={styles.contactIcon} aria-hidden>
@@ -106,11 +163,13 @@ export default function Footer() {
                 </span>
                 <a href={contactInfo.phoneHref}>{contactInfo.phone}</a>
               </li>
+              <li>
+                <span className={styles.contactIcon} aria-hidden>
+                  <FaClock />
+                </span>
+                <span>Mon – Sun: 8:00 AM – 8:00 PM</span>
+              </li>
             </ul>
-            <div className={styles.ctaBox}>
-              <p>Need a reliable cleaner in London?</p>
-              <ThmButton href="#contact">Request a Quote</ThmButton>
-            </div>
           </div>
         </div>
       </div>
@@ -127,6 +186,9 @@ export default function Footer() {
               </li>
             ))}
           </ul>
+          <a href="#home" className={styles.toTop} aria-label="Back to top">
+            <FaArrowUp aria-hidden />
+          </a>
         </div>
       </div>
     </footer>

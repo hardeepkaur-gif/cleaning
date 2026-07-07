@@ -1,4 +1,3 @@
-import ThmButton from "@/components/menu/ThmButton";
 import styles from "./VettedSection.module.css";
 
 const points = [
@@ -48,10 +47,6 @@ export default function VettedSection() {
                 </li>
               ))}
             </ul>
-
-            <ThmButton href="#contact" className={styles.btnMain}>
-              Get More
-            </ThmButton>
           </div>
 
           {/* Right image */}

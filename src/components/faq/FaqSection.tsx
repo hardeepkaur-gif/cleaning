@@ -8,54 +8,62 @@ const faqs = [
   {
     q: "What cleaning services in London do you offer?",
     a: "We provide domestic cleaning, carpet cleaning, end of tenancy cleaning, and gutter cleaning services for homes, rental properties, offices, and commercial premises across London.",
+    img: "/images/services/cleanon/services-2-1.jpg",
   },
   {
     q: "Are your cleaners DBS checked?",
     a: "Yes, every cleaner undergoes DBS screening, identity verification, and right-to-work checks before attending customer properties.",
+    img: "/images/why/cleanon/why-choose-one-img-1.jpg",
   },
   {
     q: "Are you fully insured?",
     a: "Yes, Cleaning Services London operates as a fully insured cleaning company, providing additional reassurance for homeowners, tenants, landlords, and businesses.",
+    img: "/images/why/cleanon/why-choose-one-img-2.jpg",
   },
   {
     q: "Do you offer fixed pricing?",
     a: "Yes, wherever possible, we provide fixed pricing rather than relying solely on hourly estimates, helping customers avoid unexpected charges.",
+    img: "/images/services/cleanon/services-2-2.jpg",
   },
   {
     q: "Can I request the same cleaner each time?",
     a: "Yes, for recurring domestic cleaning services, we aim to provide the same cleaner whenever scheduling allows.",
+    img: "/images/about/cleanon/about-three-img-1.jpg",
   },
   {
     q: "What is included in a professional clean?",
     a: "Most professional cleans include kitchen cleaning, bathroom cleaning, dusting, vacuuming, mopping, high-touch surfaces, bin emptying, and general tidying. Tasks vary depending on the service booked.",
-  },
-  {
-    q: "Do I need to tidy before the cleaner arrives?",
-    a: "No, however, removing personal items and clutter can help cleaners work more efficiently and focus on cleaning rather than organising.",
+    img: "/images/services/cleanon-tabs/services-three-tab-img-1.jpg",
   },
   {
     q: "Do you provide end of tenancy cleaning?",
     a: "Yes, our End of Tenancy Cleaning London service helps tenants, landlords, and letting agents prepare properties for inspections, handovers, and new occupants.",
+    img: "/images/services/cleanon-tabs/services-three-tab-img-2.jpg",
   },
   {
     q: "Do you provide carpet cleaning?",
     a: "Yes, we provide professional carpet cleaning services designed to remove stains, refresh fibres, and improve the appearance of high-traffic areas.",
+    img: "/images/services/cleanon-tabs/services-three-tab-img-3.jpg",
   },
   {
     q: "Do you provide gutter cleaning?",
     a: "Yes, our gutter cleaning service removes debris and blockages to help maintain effective drainage and reduce the risk of water-related property issues.",
+    img: "/images/services/cleanon-tabs/services-three-tab-img-4.jpg",
   },
   {
     q: "Which areas of London do you cover?",
     a: "We primarily serve East London, including Canning Town, Stratford, Plaistow, East Ham, Dagenham, Beckton, Barking, Canary Wharf, and Docklands, with wider coverage available depending on the service.",
+    img: "/images/services/cleanon/services-2-3.jpg",
   },
   {
     q: "How quickly can I book a cleaner?",
     a: "Availability varies by location and service type. In many cases, appointments can be arranged within a few days of your enquiry.",
+    img: "/images/why/cleanon/why-choose-one-img-3.jpg",
   },
   {
     q: "What happens if I am not satisfied?",
     a: "If you have concerns following a completed service, our team will review the issue and work towards a fair resolution in line with our satisfaction-focused approach.",
+    img: "/images/services/cleanon/services-2-4.jpg",
   },
 ];
 
@@ -97,7 +105,17 @@ export default function FaqSection() {
                     </span>
                   </button>
                   <div className={styles.answer} aria-hidden={!isOpen}>
-                    <p>{faq.a}</p>
+                    <div className={styles.answerInner}>
+                      <div className={styles.answerImg}>
+                        <img
+                          src={faq.img}
+                          alt=""
+                          loading="lazy"
+                          aria-hidden
+                        />
+                      </div>
+                      <p>{faq.a}</p>
+                    </div>
                   </div>
                 </div>
               );
@@ -122,7 +140,17 @@ export default function FaqSection() {
                     </span>
                   </button>
                   <div className={styles.answer} aria-hidden={!isOpen}>
-                    <p>{faq.a}</p>
+                    <div className={styles.answerInner}>
+                      <div className={styles.answerImg}>
+                        <img
+                          src={faq.img}
+                          alt=""
+                          loading="lazy"
+                          aria-hidden
+                        />
+                      </div>
+                      <p>{faq.a}</p>
+                    </div>
                   </div>
                 </div>
               );

@@ -1,69 +1,95 @@
+"use client";
+
 import type { CSSProperties } from "react";
-import type { IconType } from "react-icons";
-import {
-  PiCalendarCheckFill,
-  PiCameraFill,
-  PiChatCircleTextFill,
-  PiCurrencyGbpFill,
-  PiHouseLineFill,
-  PiSealCheckFill,
-  PiSprayBottleFill,
-} from "react-icons/pi";
+import { useEffect, useState } from "react";
 import styles from "./ProcessSectionFour.module.css";
 
 type ProcessStep = {
-  icon: IconType;
   title: string;
   text: string;
-  color: string;
+  img: string;
+  /* position of the circle centre on the road, in % of the road canvas */
+  left: number;
+  top: number;
+  /* where the text sits relative to the circle */
+  labelSide?: "bottom" | "right";
+  /* keep the title on a single line */
+  wideTitle?: boolean;
 };
+
+/* Row Y positions (% of the road canvas) */
+const ROW_TOP = 24;
+const ROW_BOTTOM = 72;
 
 const steps: ProcessStep[] = [
   {
-    icon: PiChatCircleTextFill,
     title: "Request a Quote",
     text: "Tell us about your property, service requirements, and preferred appointment date.",
-    color: "#1e3d5a",
+    img: "/images/services/cleanon/services-2-1.jpg",
+    left: 27,
+    top: ROW_TOP,
   },
   {
-    icon: PiHouseLineFill,
     title: "Confirm Property Details",
     text: "We review the property size, condition, and cleaning requirements before preparing your quotation.",
-    color: "#9bb8c9",
+    img: "/images/why/cleanon/why-choose-one-img-1.jpg",
+    left: 47,
+    top: ROW_TOP,
+    wideTitle: true,
   },
   {
-    icon: PiCurrencyGbpFill,
     title: "Receive Fixed Pricing",
     text: "A clear fixed-price quotation is provided before any booking is confirmed.",
-    color: "#0e5e5b",
+    img: "/images/services/cleanon/services-2-2.jpg",
+    left: 67,
+    top: ROW_TOP,
   },
   {
-    icon: PiCalendarCheckFill,
     title: "Book Your Appointment",
     text: "Choose a suitable date and time for your cleaning service.",
-    color: "#e26a4c",
+    img: "/images/about/cleanon/about-three-img-1.jpg",
+    left: 81,
+    top: 48,
+    labelSide: "right",
   },
   {
-    icon: PiSprayBottleFill,
     title: "Professional Cleaning Visit",
     text: "Our trained cleaners attend the property and complete the agreed cleaning checklist.",
-    color: "#7a2e3f",
+    img: "/images/services/cleanon-tabs/services-three-tab-img-1.jpg",
+    left: 67,
+    top: ROW_BOTTOM,
   },
   {
-    icon: PiCameraFill,
     title: "Completion Photos and Quality Check",
     text: "Completed work is reviewed against service standards and supported with completion photography where applicable.",
-    color: "#1a5c4a",
+    img: "/images/services/cleanon/services-2-3.jpg",
+    left: 47,
+    top: ROW_BOTTOM,
   },
   {
-    icon: PiSealCheckFill,
     title: "Customer Approval",
     text: "We confirm that the service has been completed to the agreed standard before closing the job.",
-    color: "#3d4a6b",
+    img: "/images/why/cleanon/why-choose-one-img-2.jpg",
+    left: 27,
+    top: ROW_BOTTOM,
   },
 ];
 
 export default function ProcessSectionFour() {
+  /* Sequence: 0 = START, 1..steps.length = steps, steps.length + 1 = FINISH */
+  const total = steps.length + 2;
+  const [active, setActive] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setActive((prev) => (prev + 1) % total);
+    }, 1500);
+    return () => clearInterval(id);
+  }, [total]);
+
+  const startActive = active === 0;
+  const finishActive = active === steps.length + 1;
+
   return (
     <section className={styles.section} aria-labelledby="process-four-title">
       <div className={styles.container}>
@@ -74,69 +100,72 @@ export default function ProcessSectionFour() {
           </h2>
         </div>
 
-        <div className={styles.flow}>
+        <div className={styles.roadWrap}>
+          {/* Winding road — two rows */}
           <svg
-            className={styles.zigzag}
-            viewBox="0 0 1000 400"
+            className={styles.road}
+            viewBox="0 0 1000 420"
             preserveAspectRatio="none"
             aria-hidden
           >
             <path
-              d="M 71,118 L 214,282 L 357,118 L 500,282 L 643,118 L 786,282 L 929,118"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeDasharray="7 9"
-              strokeLinecap="round"
+              className={styles.roadBase}
+              d="M 70,100 L 750,100 C 830,100 830,302 750,302 L 70,302"
+            />
+            <path
+              className={styles.roadLine}
+              d="M 70,100 L 750,100 C 830,100 830,302 750,302 L 70,302"
             />
           </svg>
 
-          {steps.map((step, i) => {
-            const isTop = i % 2 === 0;
-            const Icon = step.icon;
-            const accentStyle = { "--step-color": step.color } as CSSProperties;
+          {/* START cap */}
+          <div
+            className={`${styles.cap} ${styles.capStart} ${
+              startActive ? styles.capActive : ""
+            }`}
+            style={{ left: "7%", top: "24%" }}
+          >
+            <span>Start</span>
+          </div>
 
-            return (
-              <div
-                key={step.title}
-                className={`${styles.node} ${isTop ? styles.nodeTop : styles.nodeBottom}`}
-              >
-                {isTop ? (
-                  <>
-                    <div className={styles.circleWrap} style={accentStyle}>
-                      <span className={styles.circleOuter} aria-hidden />
-                      <div className={styles.circleInner}>
-                        <Icon aria-hidden />
-                      </div>
-                    </div>
-                    <h3
-                      className={styles.stepTitle}
-                      style={{ color: step.color }}
-                    >
-                      {step.title}
-                    </h3>
-                    <p className={styles.stepText}>{step.text}</p>
-                  </>
-                ) : (
-                  <>
-                    <h3
-                      className={styles.stepTitle}
-                      style={{ color: step.color }}
-                    >
-                      {step.title}
-                    </h3>
-                    <p className={styles.stepText}>{step.text}</p>
-                    <div className={styles.circleWrap} style={accentStyle}>
-                      <span className={styles.circleOuter} aria-hidden />
-                      <div className={styles.circleInner}>
-                        <Icon aria-hidden />
-                      </div>
-                    </div>
-                  </>
-                )}
+          {/* FINISH cap */}
+          <div
+            className={`${styles.cap} ${styles.capFinish} ${
+              finishActive ? styles.capActive : ""
+            }`}
+            style={{ left: "7%", top: "72%" }}
+          >
+            <span>Finish</span>
+          </div>
+
+          {/* Step nodes */}
+          {steps.map((step, i) => (
+            <div
+              key={step.title}
+              className={`${styles.node} ${
+                step.labelSide === "right" ? styles.nodeRight : ""
+              } ${step.wideTitle ? styles.nodeWide : ""} ${
+                active === i + 1 ? styles.nodeActive : ""
+              }`}
+              style={
+                {
+                  left: `${step.left}%`,
+                  top: `${step.top}%`,
+                } as CSSProperties
+              }
+            >
+              <span className={styles.badge}>
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <div className={styles.circle}>
+                <img src={step.img} alt="" loading="lazy" aria-hidden />
               </div>
-            );
-          })}
+              <div className={styles.label}>
+                <h3 className={styles.stepTitle}>{step.title}</h3>
+                <p className={styles.stepText}>{step.text}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

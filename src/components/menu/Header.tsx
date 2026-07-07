@@ -144,16 +144,6 @@ function MenuBar({
             </div>
           </div>
 
-          {!sticky && (
-            <div className={styles.sidebarIcon}>
-              <button type="button" className={styles.navSidebarButton} aria-label="Sidebar">
-                <span className={styles.dotsOne} />
-                <span className={styles.dotsTwo} />
-                <span className={styles.dotsThree} />
-              </button>
-            </div>
-          )}
-
           <div className={styles.btnBox}>
             <ThmButton href="#contact">Get a Quote</ThmButton>
           </div>
