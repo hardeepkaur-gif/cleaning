@@ -16,6 +16,8 @@ export type DifferentItem = {
 
 export const differentList: DifferentItem[] = [
   {
+    title: "DBS Checked Cleaners",
+    text: "Each cleaner completes identity verification, right to work checks and DBS screening prior to going on to a rented property, commercial or office premises or home.",
     image: `${differentImgBase}/dbs-checked-cleaners.png`,
   },
   {
