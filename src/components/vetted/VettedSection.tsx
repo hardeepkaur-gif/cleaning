@@ -53,7 +53,7 @@ export default function VettedSection() {
           <div className={styles.visual}>
             <div className={styles.imgWrap}>
               <img
-                src="/images/services/cleanon/services-2-1.jpg"
+                src="/images/vetted/vetted-cleaner-property.png"
                 alt="Professional cleaner vetted and verified"
               />
             </div>
