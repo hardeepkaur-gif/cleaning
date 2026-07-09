@@ -52,7 +52,6 @@ export default function ProcessSectionAlt() {
     <section className={styles.section} aria-labelledby="process-alt-title">
       <div className={styles.container}>
         <div className={styles.topHeader}>
-          <span className={styles.tagline}>Our Cleaning Process</span>
           <h2 className={styles.title} id="process-alt-title">
             How Our Cleaning Service Works
           </h2>

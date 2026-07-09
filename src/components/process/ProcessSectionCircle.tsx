@@ -52,7 +52,6 @@ export default function ProcessSectionCircle() {
     <section className={styles.section} aria-labelledby="process-circle-title">
       <div className={styles.container}>
         <div className={styles.topHeader}>
-          <span className={styles.tagline}>Our Cleaning Process</span>
           <h2 className={styles.title} id="process-circle-title">
             How Our Cleaning Service Works
           </h2>

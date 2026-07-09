@@ -1,10 +1,9 @@
 import HeroCoreclean from "@/components/hero/HeroCoreclean";
-import TrustBar from "@/components/trust/TrustBar";
+import HeroLeadForm from "@/components/hero/HeroLeadForm";
+import HeroCorecleanForm from "@/components/hero/HeroCorecleanForm";
 import AboutUs from "@/components/about/AboutUs";
 import ServicesTabsIcons from "@/components/services/ServicesTabsIcons";
-import WhyChooseUs from "@/components/why/WhyChooseUs";
 import WhyChooseUsAlt from "@/components/why/WhyChooseUsAlt";
-import CtaSection from "@/components/cta/CtaSection";
 import CtaSectionThree from "@/components/cta/CtaSectionThree";
 import WhatMakesDifferent from "@/components/different/WhatMakesDifferent";
 import ProfessionalClean from "@/components/included/ProfessionalClean";
@@ -23,12 +22,11 @@ export default function HomePage() {
   return (
     <main>
       <HeroCoreclean />
-      <TrustBar />
+      <HeroLeadForm />
+      <HeroCorecleanForm />
       <AboutUs />
       <ServicesTabsIcons />
-      <CtaSection />
       <CtaSectionThree />
-      <WhyChooseUs />
       <WhyChooseUsAlt />
       <WhatMakesDifferent />
       <ProfessionalClean />

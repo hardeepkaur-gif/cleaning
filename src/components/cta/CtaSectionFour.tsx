@@ -1,4 +1,4 @@
-import { FaCalendarCheck, FaCheckCircle, FaShieldAlt } from "react-icons/fa";
+import { FaCalendarCheck, FaCheckCircle } from "react-icons/fa";
 import {
   PiCalendarCheckFill,
   PiHouseLineFill,
@@ -20,11 +20,6 @@ export default function CtaSectionFour() {
             <div className={styles.blobCoral} aria-hidden />
 
             <div className={styles.copy}>
-              <span className={styles.badge}>
-                <FaShieldAlt aria-hidden />
-                Trusted Cleaning Services
-              </span>
-
               <h2 className={styles.title} id="cta-four-title">
                 Looking for a Cleaning Company You Can Trust?
               </h2>

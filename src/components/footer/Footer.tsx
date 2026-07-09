@@ -48,20 +48,18 @@ export default function Footer() {
       <div className={styles.ctaBanner}>
         <div className={styles.ctaBannerInner}>
           <div className={styles.ctaBannerText}>
-            <h2>Ready for a spotless space?</h2>
+            <span className={styles.ctaBadge}>Trusted London Cleaners</span>
+            <h2>
+              Book Professional Cleaning Services{" "}
+              <span>London</span>
+            </h2>
             <p>
-              Book trusted, DBS-checked cleaners in London — get your free,
-              no-obligation quote today.
+              Need reliable cleaners for your home, rental property or business?
+              Speak to Cleaning Services London for DBS-checked, insured cleaning
+              professionals, fixed pricing and a service built around trust.
             </p>
           </div>
           <div className={styles.ctaBannerActions}>
-            <a href={contactInfo.phoneHref} className={styles.callLink}>
-              <FaPhoneAlt aria-hidden />
-              <span>
-                <small>Call us anytime</small>
-                <span className={styles.callNumber}>{contactInfo.phone}</span>
-              </span>
-            </a>
             <ThmButton href="#contact" className={styles.bannerBtn}>
               Request a Quote
               <FaArrowRight aria-hidden />

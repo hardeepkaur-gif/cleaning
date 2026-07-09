@@ -9,7 +9,6 @@ export default function AboutUs() {
 
       <div className={styles.container}>
         <div className={styles.header}>
-          <span className={styles.eyebrow}>About Cleaning Services London</span>
           <h2 className={styles.title} id="about-title">
             Professional Cleaning Services for Homes and Businesses
           </h2>
@@ -22,8 +21,8 @@ export default function AboutUs() {
               <span className={styles.frameAccent} aria-hidden />
               <div className={styles.imgMain}>
                 <img
-                  src={`${imgBase}/about-three-img-1.jpg`}
-                  alt="Professional cleaner at work"
+                  src={`${imgBase}/about-three-img-1.png`}
+                  alt="Professional cleaners at work in a modern office"
                   loading="lazy"
                 />
               </div>

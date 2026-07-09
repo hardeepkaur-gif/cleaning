@@ -124,6 +124,19 @@
   max-width: 560px;
 }
 
+.taglineBox {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.taglineIcon {
+  display: inline-flex;
+  color: var(--cta);
+  font-size: 14px;
+}
+
 .tagline {
   display: inline-block;
   color: var(--cta);
@@ -133,7 +146,6 @@
   line-height: 1;
   font-family: var(--font-two);
   letter-spacing: 0.04em;
-  margin-bottom: 10px;
 }
 
 .title {

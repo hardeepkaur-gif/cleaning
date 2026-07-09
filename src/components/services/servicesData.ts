@@ -65,8 +65,8 @@ export const servicesList: ServiceData[] = [
     href: "#contact",
     icon: FaKey,
     tabIcon: PiKeyDuotone,
-    image: `${imgBase}/services-2-3.jpg`,
-    tabImage: `${tabImgBase}/services-three-tab-img-3.jpg`,
+    image: `${imgBase}/services-2-3.png`,
+    tabImage: `${tabImgBase}/services-three-tab-img-3.png`,
     tabLines: ["End of Tenancy", "Cleaning"],
   },
   {
@@ -76,8 +76,8 @@ export const servicesList: ServiceData[] = [
     href: "#contact",
     icon: FaWater,
     tabIcon: PiCloudRainDuotone,
-    image: `${imgBase}/services-2-4.jpg`,
-    tabImage: `${tabImgBase}/services-three-tab-img-4.jpg`,
+    image: `${imgBase}/services-2-4.png`,
+    tabImage: `${tabImgBase}/services-three-tab-img-4.png`,
     tabLines: ["Gutter", "Cleaning"],
   },
 ];

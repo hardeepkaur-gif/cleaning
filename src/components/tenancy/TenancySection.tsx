@@ -13,14 +13,13 @@ export default function TenancySection() {
           <div className={styles.media}>
             <div className={styles.imgWrap}>
               <img
-                src="/images/services/cleanon/services-2-3.jpg"
+                src="/images/tenancy/end-of-tenancy-deposit-concerns.png"
                 alt="End of tenancy cleaning in progress"
               />
             </div>
           </div>
 
           <div className={styles.copy}>
-            <span className={styles.tagline}>End of Tenancy</span>
             <h2 className={styles.title} id="tenancy-title">
               End of Tenancy Cleaning and Deposit Concerns
             </h2>

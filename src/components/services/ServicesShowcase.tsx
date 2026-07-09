@@ -2,7 +2,6 @@ import { FaLongArrowAltRight, FaStar } from "react-icons/fa";
 import {
   servicesIntro,
   servicesList,
-  servicesTagline,
   servicesTitle,
 } from "./servicesData";
 import styles from "./ServicesShowcase.module.css";
@@ -12,12 +11,6 @@ export default function ServicesShowcase() {
     <section className={styles.services} aria-labelledby="services-showcase-title">
       <div className={styles.container}>
         <div className={styles.sectionTitle}>
-          <div className={styles.taglineBox}>
-            <span className={styles.taglineIcon} aria-hidden>
-              <FaStar />
-            </span>
-            <span className={styles.tagline}>{servicesTagline}</span>
-          </div>
           <h2 className={styles.title} id="services-showcase-title">
             {servicesTitle}
           </h2>

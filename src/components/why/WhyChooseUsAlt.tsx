@@ -1,10 +1,8 @@
-import { FaStar } from "react-icons/fa";
 import {
   whyIntro,
   whyProblems,
   whySolutions,
   whySolutionsTitle,
-  whyTagline,
   whyTitle,
 } from "./whyData";
 import styles from "./WhyChooseUsAlt.module.css";
@@ -18,12 +16,6 @@ export default function WhyChooseUsAlt() {
     >
       <div className={styles.container}>
         <div className={styles.header}>
-          <div className={styles.taglineBox}>
-            <span className={styles.taglineIcon} aria-hidden>
-              <FaStar />
-            </span>
-            <span className={styles.tagline}>{whyTagline}</span>
-          </div>
           <h2 className={styles.title} id="why-us-alt-title">
             {whyTitle}
           </h2>

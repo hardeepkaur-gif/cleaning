@@ -32,7 +32,6 @@ export default function CtaSectionAlt() {
           </div>
 
           <div className={styles.copy}>
-            <p className={styles.eyebrow}>Free quote · No hidden fees</p>
             <h2 className={styles.title} id="cta-alt-title">
               {ctaTitle.replace("London?", "")}
               <span>London?</span>

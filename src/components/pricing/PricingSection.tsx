@@ -1,4 +1,4 @@
-import { FaCheckCircle, FaPhoneAlt, FaStar } from "react-icons/fa";
+import { FaCheckCircle, FaPhoneAlt } from "react-icons/fa";
 import {
   PiBroomDuotone,
   PiCurrencyGbpDuotone,
@@ -46,12 +46,6 @@ export default function PricingSection() {
       <div className={styles.bgDots} aria-hidden />
       <div className={styles.container}>
         <div className={styles.header}>
-          <div className={styles.taglineBox}>
-            <span className={styles.taglineIcon} aria-hidden>
-              <FaStar />
-            </span>
-            <span className={styles.tagline}>Pricing</span>
-          </div>
           <h2 className={styles.title} id="pricing-title">
             How Much Do Cleaning Services Cost in London?
           </h2>

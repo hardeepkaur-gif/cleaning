@@ -1,8 +1,6 @@
-import { FaStar } from "react-icons/fa";
 import {
   differentIntro,
   differentList,
-  differentTagline,
   differentTitle,
 } from "./differentData";
 import styles from "./WhatMakesDifferent.module.css";
@@ -16,12 +14,6 @@ export default function WhatMakesDifferent() {
     >
       <div className={styles.container}>
         <div className={styles.header}>
-          <div className={styles.taglineBox}>
-            <span className={styles.taglineIcon} aria-hidden>
-              <FaStar />
-            </span>
-            <span className={styles.tagline}>{differentTagline}</span>
-          </div>
           <h2 className={styles.title} id="different-title">
             {differentTitle}
           </h2>

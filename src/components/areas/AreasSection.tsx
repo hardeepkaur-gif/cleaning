@@ -9,9 +9,6 @@ export default function AreasSection() {
       <div className={styles.container}>
         <div className={styles.grid}>
           <div className={styles.copy}>
-            <span className={styles.tagline}>
-              <FaMapMarkerAlt /> Our Coverage
-            </span>
             <h2 className={styles.title} id="areas-title">
               Areas We Cover in East London
             </h2>

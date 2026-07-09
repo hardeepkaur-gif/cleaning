@@ -52,7 +52,6 @@ export default function ProcessSection() {
     <section className={styles.section} aria-labelledby="process-title">
       <div className={styles.container}>
         <div className={styles.topHeader}>
-          <span className={styles.tagline}>Our Cleaning Process</span>
           <h2 className={styles.title} id="process-title">
             How Our Cleaning Service Works
           </h2>

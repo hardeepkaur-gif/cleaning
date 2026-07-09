@@ -1,4 +1,4 @@
-import { FaCalendarCheck, FaCheckCircle, FaStar } from "react-icons/fa";
+import { FaCalendarCheck, FaCheckCircle } from "react-icons/fa";
 import ThmButton from "@/components/menu/ThmButton";
 import { ctaButtonLabel, ctaText, ctaTitle } from "./ctaData";
 import styles from "./CtaSection.module.css";
@@ -22,10 +22,6 @@ export default function CtaSection() {
 
           <div className={styles.grid}>
             <div className={styles.copy}>
-              <span className={styles.badge}>
-                <FaStar aria-hidden />
-                Get Started Today
-              </span>
               <h2 className={styles.title} id="cta-title">
                 Looking For Professional
                 <br />

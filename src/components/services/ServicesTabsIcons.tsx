@@ -6,7 +6,6 @@ import ThmButton from "@/components/menu/ThmButton";
 import {
   servicesList,
   servicesTabsIntro,
-  servicesTabsTagline,
   servicesTabsTitle,
 } from "./servicesData";
 import styles from "./ServicesTabsIcons.module.css";
@@ -23,12 +22,6 @@ export default function ServicesTabsIcons() {
     >
       <div className={styles.container}>
         <div className={styles.sectionTitle}>
-          <div className={styles.taglineBox}>
-            <span className={styles.taglineIcon} aria-hidden>
-              <FaStar />
-            </span>
-            <span className={styles.tagline}>{servicesTabsTagline}</span>
-          </div>
           <h2 className={styles.title} id="services-tabs-icons-title">
             {servicesTabsTitle}
           </h2>

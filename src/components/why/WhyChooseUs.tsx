@@ -1,10 +1,9 @@
-import { FaCheck, FaExclamationTriangle, FaStar } from "react-icons/fa";
+import { FaCheck, FaExclamationTriangle } from "react-icons/fa";
 import {
   whyIntro,
   whyProblems,
   whySolutions,
   whySolutionsTitle,
-  whyTagline,
   whyTitle,
 } from "./whyData";
 import styles from "./WhyChooseUs.module.css";
@@ -14,12 +13,6 @@ export default function WhyChooseUs() {
     <section className={styles.why} id="why-us" aria-labelledby="why-us-title">
       <div className={styles.container}>
         <div className={styles.header}>
-          <div className={styles.taglineBox}>
-            <span className={styles.taglineIcon} aria-hidden>
-              <FaStar />
-            </span>
-            <span className={styles.tagline}>{whyTagline}</span>
-          </div>
           <h2 className={styles.title} id="why-us-title">
             {whyTitle}
           </h2>

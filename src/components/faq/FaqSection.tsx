@@ -79,7 +79,6 @@ export default function FaqSection() {
     <section className={styles.section} aria-labelledby="faq-title">
       <div className={styles.container}>
         <div className={styles.topHeader}>
-          <span className={styles.tagline}>FAQ</span>
           <h2 className={styles.title} id="faq-title">
             Frequently Asked Questions
           </h2>

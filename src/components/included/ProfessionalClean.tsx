@@ -1,10 +1,9 @@
-import { FaCheck, FaStar } from "react-icons/fa";
+import { FaCheck } from "react-icons/fa";
 import {
   includedExtra,
   includedImages,
   includedIntro,
   includedPoints,
-  includedTagline,
   includedTitle,
 } from "./includedData";
 import styles from "./ProfessionalClean.module.css";
@@ -18,12 +17,6 @@ export default function ProfessionalClean() {
     >
       <div className={styles.container}>
         <div className={styles.topHeader}>
-          <div className={styles.taglineBox}>
-            <span className={styles.taglineIcon} aria-hidden>
-              <FaStar />
-            </span>
-            <span className={styles.tagline}>{includedTagline}</span>
-          </div>
           <h2 className={styles.title} id="included-title">
             {includedTitle}
           </h2>

@@ -10,7 +10,7 @@
   display: none;
 }
 
-/* ===== Floating CTA card ===== */
+/* ===== Floating CTA card — white & premium ===== */
 .ctaBanner {
   position: relative;
   max-width: 1180px;
@@ -25,139 +25,115 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 28px;
-  padding: clamp(30px, 3.6vw, 46px) clamp(28px, 4vw, 56px);
-  border-radius: 22px;
-  background:
-    radial-gradient(circle at 88% -10%, rgba(255, 255, 255, 0.16) 0%, transparent 45%),
-    linear-gradient(120deg, var(--primary-dark) 0%, var(--primary) 100%);
-  box-shadow: 0 26px 60px rgba(10, 70, 68, 0.28);
+  flex-wrap: nowrap;
+  gap: clamp(28px, 4vw, 48px);
+  padding: clamp(32px, 3.8vw, 50px) clamp(28px, 4vw, 56px);
+  border-radius: 26px;
+  background: #ffffff;
+  border: 1px solid #ebe6df;
+  box-shadow:
+    0 28px 64px rgba(10, 70, 68, 0.1),
+    0 8px 20px rgba(10, 70, 68, 0.04);
   overflow: hidden;
+  isolation: isolate;
+}
+
+.ctaBannerInner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(
+    135deg,
+    rgba(14, 94, 91, 0.45) 0%,
+    rgba(226, 106, 76, 0.35) 45%,
+    rgba(14, 94, 91, 0.12) 100%
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
 }
 
 .ctaBannerInner::after {
   content: "";
   position: absolute;
-  right: -40px;
-  bottom: -60px;
-  width: 220px;
-  height: 220px;
+  right: -70px;
+  top: -70px;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
-  background: rgba(226, 106, 76, 0.22);
-  filter: blur(10px);
+  background: radial-gradient(circle, rgba(226, 106, 76, 0.1) 0%, transparent 68%);
   pointer-events: none;
 }
 
 .ctaBannerText {
   position: relative;
   z-index: 1;
-  flex: 1 1 300px;
+  flex: 1 1 auto;
   min-width: 0;
+}
+
+.ctaBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-family: var(--font-two);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--primary);
+  background: var(--tint);
+  border: 1px solid rgba(14, 94, 91, 0.14);
+}
+
+.ctaBadge::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--cta);
+  box-shadow: 0 0 0 4px rgba(226, 106, 76, 0.18);
 }
 
 .ctaBannerText h2 {
   font-family: var(--font-two);
-  font-size: clamp(22px, 2.6vw, 32px);
-  font-weight: 600;
+  font-size: clamp(24px, 2.8vw, 36px);
+  font-weight: 800;
   line-height: 1.2;
-  color: var(--white);
-  margin: 0 0 10px;
+  color: var(--primary-dark);
+  margin: 0 0 14px;
+  max-width: 680px;
+}
+
+.ctaBannerText h2 span {
+  color: var(--cta);
 }
 
 .ctaBannerText p {
   margin: 0;
-  font-size: 15px;
+  font-size: clamp(14px, 1.35vw, 16px);
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.82);
-  max-width: 520px;
+  color: var(--gray);
+  max-width: 720px;
 }
 
 .ctaBannerActions {
   position: relative;
   z-index: 1;
   display: flex;
-  align-items: stretch;
-  gap: 18px;
-  flex-shrink: 0;
-  flex-wrap: wrap;
-}
-
-.callLink {
-  display: inline-flex;
+  flex: 0 0 auto;
   align-items: center;
-  gap: 14px;
-  min-height: 66px;
-  box-sizing: border-box;
-  padding: 8px 22px 8px 10px;
-  border-radius: 999px;
-  color: var(--white);
-  text-decoration: none;
-  font-family: var(--font-two);
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(4px);
-  transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
-}
-
-.callLink:hover {
-  background: rgba(255, 255, 255, 0.14);
-  border-color: rgba(255, 255, 255, 0.4);
-  transform: translateY(-2px);
-}
-
-.callLink svg {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 46px;
-  height: 46px;
-  padding: 14px;
-  border-radius: 50%;
-  background: var(--cta);
-  color: var(--white);
-  font-size: 16px;
-  box-shadow: 0 0 0 0 rgba(226, 106, 76, 0.55);
-  animation: callPulse 2s ease-out infinite;
-}
-
-@keyframes callPulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(226, 106, 76, 0.55);
-  }
-  70% {
-    box-shadow: 0 0 0 12px rgba(226, 106, 76, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(226, 106, 76, 0);
-  }
-}
-
-.callLink span {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.25;
-}
-
-.callLink small {
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.callNumber {
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--white);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .callLink svg {
-    animation: none;
-  }
+  justify-content: flex-end;
+  align-self: center;
+  margin-left: auto;
 }
 
 .bannerBtn:global(.thmBtn) {
@@ -165,27 +141,28 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  min-height: 66px;
+  min-height: 62px;
   box-sizing: border-box;
-  padding: 0 34px;
+  padding: 0 30px;
   font-size: 15px;
   font-weight: 600;
   border-radius: 999px;
-  background: var(--white);
-  color: var(--primary-dark);
+  background: var(--cta);
+  color: var(--white);
+  box-shadow: 0 12px 28px rgba(226, 106, 76, 0.32);
 }
 
 .bannerBtn:global(.thmBtn svg) {
   font-size: 12px;
 }
 
-/* Hover: orange brand background + white text */
 .bannerBtn:global(.thmBtn) :global(.hoverBtn) {
-  background-color: var(--cta);
+  background-color: var(--primary);
 }
 
 .bannerBtn:global(.thmBtn):hover {
   color: var(--white);
+  box-shadow: 0 14px 28px rgba(10, 70, 68, 0.22);
 }
 
 /* ===== Main container ===== */
@@ -288,8 +265,8 @@
 }
 
 .socialLink:hover {
-  background: var(--primary);
-  border-color: var(--primary);
+  background: var(--cta);
+  border-color: var(--cta);
   color: var(--white);
   transform: translateY(-3px);
 }
@@ -487,7 +464,18 @@
 @media (max-width: 767px) {
   .ctaBannerInner {
     flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  .ctaBannerText {
+    max-width: 100%;
+  }
+
+  .ctaBannerActions {
+    width: 100%;
+    margin-left: 0;
+    justify-content: flex-start;
   }
 }
 
@@ -513,16 +501,6 @@
 }
 
 @media (max-width: 575px) {
-  .ctaBannerActions {
-    width: 100%;
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .callLink {
-    justify-content: center;
-  }
-
   .bannerBtn:global(.thmBtn) {
     width: 100%;
     justify-content: center;
