@@ -45,7 +45,7 @@ export default function TenancySection() {
               <p className={styles.learnMore}>
                 Learn More About Our End of Tenancy Cleaning London Service
               </p>
-              <ThmButton href="#contact" className={styles.btnMain}>
+              <ThmButton href="/end-of-tenancy-cleaning" className={styles.btnMain}>
                 View End of Tenancy Cleaning
               </ThmButton>
             </div>

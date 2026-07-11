@@ -110,6 +110,10 @@
   margin: 0;
 }
 
+.text p + p {
+  margin-top: 1em;
+}
+
 .bottom {
   display: flex;
   align-items: center;
