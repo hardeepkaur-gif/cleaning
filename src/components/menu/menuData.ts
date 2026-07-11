@@ -7,7 +7,16 @@ export type NavItem = {
 export const navItems: NavItem[] = [
   { label: "Home", href: "#home" },
   { label: "About Us", href: "#about" },
-  { label: "Services", href: "#services" },
+  {
+    label: "Services",
+    href: "#services",
+    children: [
+      {
+        label: "End of Tenancy Cleaning",
+        href: "/end-of-tenancy-cleaning",
+      },
+    ],
+  },
   { label: "Contact Us", href: "#contact" },
 ];
 
@@ -29,6 +38,7 @@ export const footerQuickLinks = [
   { label: "Home", href: "#home" },
   { label: "About Us", href: "#about" },
   { label: "Services", href: "#services" },
+  { label: "End of Tenancy Cleaning", href: "/end-of-tenancy-cleaning" },
   { label: "Contact Us", href: "#contact" },
 ];
 
