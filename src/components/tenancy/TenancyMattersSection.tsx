@@ -1,22 +1,9 @@
 import {
+  tenancyMattersHeaders,
   tenancyMattersRows,
   tenancyMattersTitle,
-  type TenancyComparisonItem,
 } from "./tenancyMattersData";
 import styles from "./TenancyMattersSection.module.css";
-
-function ComparisonPoint({ item }: { item: TenancyComparisonItem }) {
-  return (
-    <div className={styles.cell}>
-      <span className={styles.chevron} aria-hidden>
-        »»
-      </span>
-      <p className={styles.cellText}>
-        <strong>{item.title}</strong> {item.text}
-      </p>
-    </div>
-  );
-}
 
 export default function TenancyMattersSection() {
   return (
@@ -31,35 +18,36 @@ export default function TenancyMattersSection() {
         </h2>
 
         <div className={styles.tableWrap}>
-          <div className={styles.headerRow}>
-            <div className={styles.headerCell}>Why It Matters</div>
-            <div className={styles.headerCell}>How It Helps</div>
-          </div>
-
-          {tenancyMattersRows.map((row) => (
-            <div
-              className={styles.bodyRow}
-              key={`${row.why.title}-${Array.isArray(row.how) ? row.how.map((item) => item.title).join("-") : row.how.title}`}
-            >
-              <ComparisonPoint item={row.why} />
-              {Array.isArray(row.how) ? (
-                <div className={`${styles.cell} ${styles.cellStack}`}>
-                  {row.how.map((item) => (
-                    <div key={item.title} className={styles.cellInner}>
+          <table className={styles.table}>
+            <thead>
+              <tr>
+                <th scope="col">{tenancyMattersHeaders.left}</th>
+                <th scope="col">{tenancyMattersHeaders.right}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {tenancyMattersRows.map((row) => (
+                <tr key={row.left}>
+                  <td data-label={tenancyMattersHeaders.left}>
+                    <div className={styles.cell}>
                       <span className={styles.chevron} aria-hidden>
                         »»
                       </span>
-                      <p className={styles.cellText}>
-                        <strong>{item.title}</strong> {item.text}
-                      </p>
+                      <span className={styles.cellTitle}>{row.left}</span>
                     </div>
-                  ))}
-                </div>
-              ) : (
-                <ComparisonPoint item={row.how} />
-              )}
-            </div>
-          ))}
+                  </td>
+                  <td data-label={tenancyMattersHeaders.right}>
+                    <div className={styles.cell}>
+                      <span className={styles.chevron} aria-hidden>
+                        »»
+                      </span>
+                      <p className={styles.cellText}>{row.right}</p>
+                    </div>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
     </section>

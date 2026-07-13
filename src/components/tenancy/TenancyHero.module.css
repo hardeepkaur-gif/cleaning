@@ -1,0 +1,195 @@
+/* End of Tenancy hero — Tidytouch layout, homepage typography */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: var(--primary-dark);
+  min-height: clamp(520px, 72vh, 720px);
+}
+
+.item {
+  position: relative;
+  min-height: inherit;
+  overflow: hidden;
+}
+
+.bg {
+  position: absolute;
+  inset: 0;
+}
+
+.bgInner {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center right;
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.82) 0%,
+    rgba(0, 0, 0, 0.78) 42%,
+    rgba(0, 0, 0, 0.5) 62%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+}
+
+.container {
+  position: relative;
+  z-index: 3;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: clamp(56px, 7vw, 88px) clamp(16px, 3vw, 24px);
+  min-height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  max-width: 780px;
+  width: min(100%, 62%);
+}
+
+.bottomShape {
+  position: absolute;
+  left: 13px;
+  bottom: 67px;
+  z-index: 2;
+  width: clamp(90px, 10vw, 140px);
+  height: auto;
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+.mainImg {
+  position: absolute;
+  right: clamp(0px, 4vw, 40px);
+  bottom: 0;
+  z-index: 2;
+  width: min(42vw, 500px);
+  pointer-events: none;
+}
+
+.mainImg img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: clamp(420px, 52vw, 680px);
+  object-fit: contain;
+  object-position: right bottom;
+}
+
+@media (max-width: 1199px) {
+  .content {
+    width: min(100%, 72%);
+  }
+
+  .content :global(.bottom) {
+    gap: 14px;
+  }
+
+  .mainImg {
+    width: min(38vw, 420px);
+  }
+}
+
+@media (max-width: 991px) {
+  .hero {
+    min-height: auto;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: auto;
+  }
+
+  .container {
+    order: 1;
+    align-items: flex-start;
+    width: 100%;
+    padding-top: clamp(48px, 7vw, 72px);
+    padding-bottom: clamp(24px, 4vw, 40px);
+  }
+
+  .content {
+    max-width: none;
+    width: 100%;
+  }
+
+  .bottomShape {
+    display: none;
+  }
+
+  .mainImg {
+    order: 2;
+    position: relative;
+    right: auto;
+    width: min(100%, 380px);
+    margin: 0 auto clamp(32px, 5vw, 48px);
+  }
+
+  .mainImg img {
+    max-height: 380px;
+    margin: 0 auto;
+  }
+
+  .overlay {
+    background: rgba(0, 0, 0, 0.78);
+  }
+
+  .bgInner {
+    background-position: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-top: clamp(40px, 6vw, 56px);
+  }
+
+  .overlay {
+    background: rgba(0, 0, 0, 0.82);
+  }
+
+  .mainImg {
+    width: min(100%, 320px);
+  }
+
+  .mainImg img {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding-top: 36px;
+    padding-bottom: 20px;
+  }
+
+  .mainImg {
+    width: 100%;
+    margin-bottom: 28px;
+  }
+
+  .mainImg img {
+    max-height: 260px;
+  }
+}
+
+@media (max-width: 399px) {
+  .mainImg img {
+    max-height: 220px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bgInner {
+    transform: none;
+  }
+}

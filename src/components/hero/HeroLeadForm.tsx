@@ -41,7 +41,7 @@ export default function HeroLeadForm() {
   };
 
   return (
-    <section className={styles.hero} aria-labelledby="hero-lead-title">
+    <section className={styles.hero} id="home" aria-labelledby="hero-lead-title">
       <div className={styles.bgLayer} aria-hidden>
         <img
           className={styles.bgImage}

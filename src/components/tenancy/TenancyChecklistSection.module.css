@@ -1,0 +1,597 @@
+/* Checklist section — homepage ServicesTabsIcons layout, tenancy variant */
+
+.section {
+  position: relative;
+  display: block;
+  padding: clamp(70px, 8vw, 100px) 0;
+  background: var(--white);
+  z-index: 1;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 3vw, 24px);
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: clamp(32px, 4vw, 40px);
+}
+
+.title {
+  font-family: var(--font-two);
+  font-size: clamp(28px, 3.6vw, 46px);
+  line-height: 1.3;
+  font-weight: 800;
+  color: var(--primary-dark);
+  margin: 0 0 clamp(16px, 2vw, 20px);
+}
+
+.intro {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: clamp(15px, 1.4vw, 18px);
+  line-height: 1.75;
+  color: var(--gray);
+}
+
+.inner {
+  position: relative;
+}
+
+.tabButtonsBox {
+  margin: 0 auto 30px;
+}
+
+.tabButtons {
+  list-style: none;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin: 0 -8px;
+  padding: 0;
+}
+
+.tabButtons li {
+  flex: 0 0 20%;
+  max-width: 20%;
+  padding: 0 8px;
+  margin-bottom: 16px;
+  display: flex;
+}
+
+.tabBtn {
+  display: block;
+  width: 100%;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+}
+
+.tabBtnInner {
+  display: flex;
+  align-items: center;
+  gap: clamp(10px, 1.5vw, 14px);
+  width: 100%;
+  height: 100%;
+  min-height: clamp(72px, 8vw, 88px);
+  padding: clamp(12px, 1.5vw, 16px) clamp(14px, 1.8vw, 18px);
+  border-radius: var(--radius);
+  background: #f7f4f1;
+  border: 2px solid #ded8cf;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.tabBtn:hover .tabBtnInner {
+  transform: translateY(-3px);
+}
+
+.tabBtnActive .tabBtnInner {
+  background: var(--white);
+  border-color: var(--cta);
+  box-shadow: 0 12px 32px rgba(226, 106, 76, 0.2);
+}
+
+.tabIconWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: clamp(50px, 5.5vw, 58px);
+  height: clamp(50px, 5.5vw, 58px);
+  border-radius: 14px;
+  background: linear-gradient(145deg, #ffffff 0%, var(--tint) 100%);
+  border: 2px solid rgba(14, 94, 91, 0.14);
+  box-shadow:
+    0 8px 18px rgba(14, 94, 91, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  transition:
+    background 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease,
+    transform 0.35s ease;
+}
+
+.tabIconMain {
+  display: inline-flex;
+  font-size: clamp(24px, 2.6vw, 30px);
+  color: var(--primary);
+  filter: drop-shadow(0 2px 4px rgba(14, 94, 91, 0.15));
+  transition: color 0.35s ease, transform 0.35s ease;
+}
+
+.tabIconBadge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--white);
+  color: var(--primary);
+  font-size: 9px;
+  box-shadow: 0 4px 10px rgba(14, 94, 91, 0.25);
+  transition:
+    transform 0.35s ease,
+    background 0.35s ease,
+    color 0.35s ease;
+}
+
+.tabBtn:hover .tabIconWrap {
+  transform: scale(1.06);
+  border-color: rgba(226, 106, 76, 0.35);
+}
+
+.tabBtn:hover .tabIconMain {
+  transform: scale(1.05);
+}
+
+.tabBtn:hover .tabIconBadge {
+  transform: rotate(12deg) scale(1.1);
+}
+
+.tabBtnActive .tabIconWrap {
+  background: linear-gradient(145deg, var(--primary) 0%, var(--primary-dark) 100%);
+  border-color: transparent;
+  box-shadow: 0 12px 28px rgba(14, 94, 91, 0.28);
+}
+
+.tabBtnActive .tabIconMain {
+  color: var(--white);
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.2));
+}
+
+.tabBtnActive .tabIconBadge {
+  background: var(--cta);
+  color: var(--white);
+}
+
+.tabHeading {
+  flex: 1;
+  min-width: 0;
+  font-family: var(--font-two);
+  font-size: clamp(12px, 1vw, 14px);
+  line-height: 1.35;
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+.tabContent {
+  position: relative;
+}
+
+.tabPanel {
+  display: none;
+  transform: translateX(35px);
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  opacity: 0;
+}
+
+.tabPanelActive {
+  display: block;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.contentBox {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 58%) minmax(0, 42%);
+  align-items: stretch;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #f7f4f1;
+  border: 1px solid #e8e2da;
+  box-shadow:
+    0 4px 6px rgba(10, 70, 68, 0.04),
+    0 20px 50px rgba(10, 70, 68, 0.1);
+  --contentPad: clamp(28px, 3.5vw, 40px);
+}
+
+.contentBox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--cta), var(--primary), var(--cta));
+  z-index: 3;
+}
+
+.tabLeftBg {
+  position: absolute;
+  inset: 0;
+  opacity: 0.35;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.shape1 {
+  position: relative;
+  display: block;
+  width: clamp(70px, 9vw, 110px);
+  height: auto;
+  margin-top: 20px;
+  opacity: 0.85;
+  pointer-events: none;
+  mix-blend-mode: lighten;
+  animation: bobY 3s ease-in-out infinite;
+}
+
+.shape2 {
+  position: absolute;
+  bottom: clamp(100px, 14vw, 130px);
+  right: clamp(48px, 7vw, 80px);
+  width: clamp(64px, 8vw, 96px);
+  height: auto;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 4;
+  mix-blend-mode: lighten;
+  filter: sepia(1) saturate(6) hue-rotate(352deg) brightness(1.2);
+  animation: bobX 4s ease-in-out infinite;
+}
+
+.tabLeft {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+  padding: var(--contentPad);
+  background: transparent;
+  z-index: 2;
+}
+
+.tabLeftInner {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  background: transparent;
+  z-index: 1;
+}
+
+.tabLabel {
+  display: inline-block;
+  font-family: var(--font-two);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--cta);
+  padding: 6px 14px;
+  border-radius: 5px;
+  margin-bottom: 16px;
+}
+
+.tabTitle {
+  font-family: var(--font-two);
+  font-size: clamp(22px, 2.5vw, 30px);
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--primary-dark);
+  margin: 0 0 18px;
+}
+
+.checklist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 20px;
+  max-height: 340px;
+  overflow-y: auto;
+  padding-right: 8px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(14, 94, 91, 0.35) transparent;
+}
+
+.checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: clamp(14px, 1.3vw, 16px);
+  line-height: 1.55;
+  color: var(--gray);
+}
+
+.checkIcon {
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: var(--primary);
+  font-size: 14px;
+}
+
+.tabBgImage {
+  position: relative;
+  display: flex;
+  align-self: stretch;
+  height: 100%;
+  min-height: 0;
+  padding: var(--contentPad);
+  background: transparent;
+  z-index: 2;
+}
+
+.imageBadge {
+  position: absolute;
+  top: calc(var(--contentPad) + 8px);
+  right: calc(var(--contentPad) + 8px);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 52px;
+  height: 52px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: var(--primary);
+  color: var(--white);
+  font-family: var(--font-two);
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 0 8px 20px rgba(14, 94, 91, 0.3);
+}
+
+.tabBgImage img {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 14px;
+  transition: transform 0.6s ease;
+}
+
+.tabPanelActive .tabBgImage img {
+  animation: tabImageIn 0.7s ease forwards;
+}
+
+.note {
+  margin: clamp(28px, 4vw, 36px) auto 0;
+  max-width: 900px;
+  text-align: center;
+  font-size: clamp(14px, 1.3vw, 16px);
+  line-height: 1.7;
+  color: var(--gray);
+  font-style: italic;
+}
+
+@keyframes tabImageIn {
+  from {
+    transform: scale(1.06);
+    opacity: 0.85;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes bobY {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes bobX {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+@media (max-width: 1199px) {
+  .tabButtons li {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+}
+
+@media (max-width: 991px) {
+  .section {
+    padding: clamp(56px, 8vw, 80px) 0;
+  }
+
+  .tabButtonsBox {
+    margin-bottom: 20px;
+    margin-left: calc(-1 * clamp(16px, 3vw, 24px));
+    margin-right: calc(-1 * clamp(16px, 3vw, 24px));
+    padding: 0 clamp(16px, 3vw, 24px);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  .tabButtons {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: max-content;
+    min-width: 100%;
+    margin: 0;
+    padding-bottom: 4px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .tabButtons li {
+    flex: 0 0 auto;
+    max-width: none;
+    width: min(260px, 78vw);
+    scroll-snap-align: start;
+    margin-bottom: 0;
+  }
+
+  .tabBtnInner {
+    min-height: 72px;
+  }
+
+  .tabLeft {
+    padding: 20px;
+  }
+
+  .contentBox {
+    --contentPad: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .tabBgImage {
+    order: -1;
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    max-height: 260px;
+    padding: 20px;
+  }
+
+  .tabBgImage img {
+    height: 100%;
+    min-height: 180px;
+    max-height: 220px;
+  }
+
+  .checklist {
+    max-height: none;
+  }
+
+  .shape1,
+  .shape2 {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: clamp(24px, 6vw, 32px);
+  }
+
+  .checklist {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .tabLeft {
+    padding: 16px;
+  }
+
+  .contentBox {
+    --contentPad: 16px;
+    border-radius: 14px;
+  }
+
+  .tabBgImage {
+    padding: 16px;
+    min-height: 180px;
+    max-height: 220px;
+  }
+
+  .tabBgImage img {
+    min-height: 160px;
+    max-height: 200px;
+    border-radius: 12px;
+  }
+
+  .tabTitle {
+    font-size: clamp(20px, 5vw, 24px);
+  }
+
+  .note {
+    text-align: left;
+  }
+}
+
+@media (max-width: 575px) {
+  .tabButtons li {
+    width: min(240px, 85vw);
+  }
+
+  .tabBtnInner {
+    min-height: 64px;
+    padding: 12px 14px;
+  }
+
+  .tabIconWrap {
+    width: 46px;
+    height: 46px;
+  }
+
+  .tabIconMain {
+    font-size: 22px;
+  }
+
+  .tabHeading {
+    font-size: 13px;
+  }
+
+  .imageBadge {
+    min-width: 40px;
+    height: 40px;
+    font-size: 13px;
+    top: calc(var(--contentPad) + 6px);
+    right: calc(var(--contentPad) + 6px);
+  }
+
+  .shape1 {
+    display: none;
+  }
+}
+
+@media (max-width: 399px) {
+  .tabButtons li {
+    width: min(220px, 88vw);
+  }
+
+  .tabLabel {
+    font-size: 11px;
+    padding: 5px 12px;
+  }
+}

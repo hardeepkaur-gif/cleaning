@@ -1,6 +1,6 @@
 .section {
   position: relative;
-  padding: clamp(70px, 9vw, 110px) 0;
+  padding: 0 0 clamp(70px, 9vw, 110px);
   background: var(--white);
   overflow: hidden;
 }
