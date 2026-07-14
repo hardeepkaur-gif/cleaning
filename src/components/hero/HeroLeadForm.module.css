@@ -29,7 +29,7 @@
   z-index: 1;
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
-  align-items: center;
+  align-items: stretch;
   gap: clamp(28px, 4vw, 56px);
   max-width: 1240px;
   margin: 0 auto;
@@ -37,11 +37,17 @@
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: 620px;
 }
 
 .subTitle {
   display: inline-block;
+  align-self: flex-start;
+  width: fit-content;
+  max-width: 100%;
   border-radius: 5px;
   background: var(--primary);
   padding: 8px 20px;
@@ -145,19 +151,168 @@
 .formWrap {
   display: flex;
   justify-content: flex-end;
+  align-self: stretch;
+  min-height: 100%;
+}
+
+.formFrame {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 536px;
+  height: 100%;
+  padding: clamp(18px, 2.5vw, 28px);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 24px 56px rgba(0, 0, 0, 0.18);
 }
 
 .formCard {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   width: 100%;
-  max-width: 480px;
+  max-width: none;
+  min-height: 100%;
   padding: clamp(24px, 3vw, 32px);
-  border-radius: 22px;
+  border-radius: 18px;
   background: var(--white);
-  border: 1px solid rgba(14, 94, 91, 0.16);
-  border-top: 4px solid var(--cta);
-  box-shadow:
-    0 28px 64px rgba(0, 0, 0, 0.22),
-    0 0 0 1px rgba(14, 94, 91, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.formCardTransparent {
+  background: rgba(255, 255, 255, 0.42);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.14);
+}
+
+.formCardWithImage {
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.2);
+  min-height: 100%;
+  height: 100%;
+}
+
+.formCardWithImage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--form-bg-image);
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.formCardWithImage::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.52);
+  z-index: 1;
+}
+
+.formCardTransparent.formCardWithImage {
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.formCardWithImage > * {
+  position: relative;
+  z-index: 2;
+}
+
+.formCardTransparent .formHeader {
+  border-bottom-color: rgba(255, 255, 255, 0.22);
+}
+
+.formCardTransparent .formHeader h3 {
+  color: var(--white);
+}
+
+.formCardTransparent .formHeader p {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.formCardTransparent .field label {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.formCardTransparent .formNote {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.formCardTransparent .formHeader {
+  text-align: center;
+}
+
+.formCardTransparent .formHeader h3::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formCardTransparent .submitBtn {
+  display: flex;
+  align-self: center;
+  width: auto;
+  min-width: 220px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formCard:not(.formCardTransparent) .formHeader {
+  text-align: center;
+}
+
+.formCard:not(.formCardTransparent) .formHeader h3::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formCard:not(.formCardTransparent) .formHeader h3 {
+  color: #000000;
+}
+
+.formCard:not(.formCardTransparent) .formHeader p {
+  color: #000000;
+}
+
+.formCard:not(.formCardTransparent) .field label {
+  color: #000000;
+}
+
+.formCard:not(.formCardTransparent) .field input,
+.formCard:not(.formCardTransparent) .field select {
+  color: #000000;
+}
+
+.formCard:not(.formCardTransparent) .field input::placeholder {
+  color: #333333;
+}
+
+.formCard:not(.formCardTransparent) .formNote {
+  color: #000000;
+}
+
+.formCard:not(.formCardTransparent) .submitBtn {
+  display: flex;
+  align-self: center;
+  width: auto;
+  min-width: 220px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .formHeader {
@@ -194,6 +349,7 @@
 .form {
   display: flex;
   flex-direction: column;
+  flex: 1;
   gap: 16px;
 }
 
@@ -293,6 +449,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  flex: 1;
   text-align: center;
   padding: clamp(20px, 3vw, 32px) 12px;
   border-radius: 16px;
@@ -336,14 +494,33 @@
   .container {
     grid-template-columns: 1fr;
     gap: 32px;
+    align-items: start;
+  }
+
+  .content {
+    justify-content: flex-start;
   }
 
   .formWrap {
     justify-content: stretch;
+    align-self: auto;
+    min-height: auto;
+  }
+
+  .formFrame {
+    max-width: none;
+    height: auto;
   }
 
   .formCard {
     max-width: none;
+    min-height: auto;
+    height: auto;
+  }
+
+  .formCardWithImage {
+    min-height: auto;
+    height: auto;
   }
 }
 

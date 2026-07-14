@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import TenancyHero from "@/components/tenancy/TenancyHero";
 import TenancyProfessionalSection from "@/components/tenancy/TenancyProfessionalSection";
+import TenancyMattersTableSection from "@/components/tenancy/TenancyMattersTableSection";
 import TenancyMattersSection from "@/components/tenancy/TenancyMattersSection";
+import TenancyMattersTimelineSection from "@/components/tenancy/TenancyMattersTimelineSection";
 import TenancyIncludedSection from "@/components/tenancy/TenancyIncludedSection";
 import TenancyChecklistSection from "@/components/tenancy/TenancyChecklistSection";
 
@@ -16,7 +18,9 @@ export default function EndOfTenancyCleaningPage() {
     <main>
       <TenancyHero />
       <TenancyProfessionalSection />
+      <TenancyMattersTableSection />
       <TenancyMattersSection />
+      <TenancyMattersTimelineSection />
       <TenancyIncludedSection />
       <TenancyChecklistSection />
     </main>

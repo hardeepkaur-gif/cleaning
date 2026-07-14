@@ -60,10 +60,7 @@ export default function Footer() {
             </p>
           </div>
           <div className={styles.ctaBannerActions}>
-            <ThmButton href="#contact" className={styles.bannerBtn}>
-              Request a Quote
-              <FaArrowRight aria-hidden />
-            </ThmButton>
+            <ThmButton href="#contact">Request a Quote</ThmButton>
           </div>
         </div>
       </div>

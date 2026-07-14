@@ -1,4 +1,5 @@
 import HeroLeadForm from "@/components/hero/HeroLeadForm";
+import HeroLeadFormSecond from "@/components/hero/HeroLeadFormSecond";
 import AboutUs from "@/components/about/AboutUs";
 import ServicesTabsIcons from "@/components/services/ServicesTabsIcons";
 import WhyChooseUsAlt from "@/components/why/WhyChooseUsAlt";
@@ -17,6 +18,7 @@ export default function HomePage() {
   return (
     <main>
       <HeroLeadForm />
+      <HeroLeadFormSecond />
       <AboutUs />
       <ServicesTabsIcons />
       <CtaSectionThree />

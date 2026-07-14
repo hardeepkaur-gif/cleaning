@@ -1,10 +1,32 @@
+import type { IconType } from "react-icons";
+import {
+  FaClipboardCheck,
+  FaClock,
+  FaExclamationTriangle,
+  FaHandshake,
+  FaHome,
+  FaSearchPlus,
+  FaShieldAlt,
+} from "react-icons/fa";
+
 export type TenancyComparisonRow = {
   left: string;
   right: string;
 };
 
+export type TenancyMattersItem = {
+  title: string;
+  text: string;
+  icon: IconType;
+};
+
+export const tenancyMattersTagline = "Before You Move Out";
+
 export const tenancyMattersTitle =
   "Why End of Tenancy Cleaning Matters Before Moving Out";
+
+export const tenancyMattersIntro =
+  "A thorough move-out clean helps protect your deposit, meet landlord expectations, and hand over the property with confidence.";
 
 export const tenancyMattersHeaders = {
   left: "Why It Matters",
@@ -46,5 +68,43 @@ export const tenancyMattersRows: TenancyComparisonRow[] = [
     left: "Stress-Free Handover",
     right:
       "A structured cleaning checklist helps reduce last-minute issues before keys are returned.",
+  },
+];
+
+export const tenancyMattersItems: TenancyMattersItem[] = [
+  {
+    title: "Inventory Inspections",
+    text: "Landlords and letting agents often compare the property's condition against the original inventory report before releasing deposits.",
+    icon: FaClipboardCheck,
+  },
+  {
+    title: "Cleaning Disputes",
+    text: "Cleaning remains one of the most common causes of tenancy deposit disputes in the UK.",
+    icon: FaExclamationTriangle,
+  },
+  {
+    title: "Time Savings",
+    text: "Moving house is demanding. Professional cleaners handle the deep cleaning while you focus on the move.",
+    icon: FaClock,
+  },
+  {
+    title: "Hard-to-Reach Areas",
+    text: "Ovens, skirting boards, cupboards, appliance seals and internal windows are often missed during regular cleaning.",
+    icon: FaSearchPlus,
+  },
+  {
+    title: "Better Presentation",
+    text: "A professionally cleaned property creates a better impression during handover and viewings.",
+    icon: FaHome,
+  },
+  {
+    title: "Landlord Expectations",
+    text: "A detailed move-out clean helps ensure the property is presented to a high standard for its next occupants.",
+    icon: FaShieldAlt,
+  },
+  {
+    title: "Stress-Free Handover",
+    text: "A structured cleaning checklist helps reduce last-minute issues before keys are returned.",
+    icon: FaHandshake,
   },
 ];

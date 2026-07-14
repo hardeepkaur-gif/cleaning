@@ -1,6 +1,7 @@
 import {
-  tenancyMattersHeaders,
-  tenancyMattersRows,
+  tenancyMattersIntro,
+  tenancyMattersItems,
+  tenancyMattersTagline,
   tenancyMattersTitle,
 } from "./tenancyMattersData";
 import styles from "./TenancyMattersSection.module.css";
@@ -13,41 +14,33 @@ export default function TenancyMattersSection() {
       aria-labelledby="tenancy-matters-title"
     >
       <div className={styles.container}>
-        <h2 className={styles.title} id="tenancy-matters-title">
-          {tenancyMattersTitle}
-        </h2>
+        <header className={styles.header}>
+          <p className={styles.tagline}>{tenancyMattersTagline}</p>
+          <h2 className={styles.title} id="tenancy-matters-title">
+            {tenancyMattersTitle}
+          </h2>
+          <p className={styles.intro}>{tenancyMattersIntro}</p>
+        </header>
 
-        <div className={styles.tableWrap}>
-          <table className={styles.table}>
-            <thead>
-              <tr>
-                <th scope="col">{tenancyMattersHeaders.left}</th>
-                <th scope="col">{tenancyMattersHeaders.right}</th>
-              </tr>
-            </thead>
-            <tbody>
-              {tenancyMattersRows.map((row) => (
-                <tr key={row.left}>
-                  <td data-label={tenancyMattersHeaders.left}>
-                    <div className={styles.cell}>
-                      <span className={styles.chevron} aria-hidden>
-                        »»
-                      </span>
-                      <span className={styles.cellTitle}>{row.left}</span>
-                    </div>
-                  </td>
-                  <td data-label={tenancyMattersHeaders.right}>
-                    <div className={styles.cell}>
-                      <span className={styles.chevron} aria-hidden>
-                        »»
-                      </span>
-                      <p className={styles.cellText}>{row.right}</p>
-                    </div>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+        <div className={styles.grid}>
+          {tenancyMattersItems.map((item, index) => {
+            const Icon = item.icon;
+
+            return (
+              <article key={item.title} className={styles.card}>
+                <div className={styles.cardTop}>
+                  <span className={styles.iconBox} aria-hidden>
+                    <Icon />
+                  </span>
+                  <span className={styles.number} aria-hidden>
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                </div>
+                <h3 className={styles.cardTitle}>{item.title}</h3>
+                <p className={styles.cardText}>{item.text}</p>
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>
