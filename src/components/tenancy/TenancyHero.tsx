@@ -57,15 +57,15 @@ export default function TenancyHero() {
           </div>
         </div>
 
-        <img
-          className={styles.bottomShape}
-          src={`${imgBase}/main-slider-img-shape-1.png`}
-          alt=""
-          aria-hidden
-        />
-
         <div className={styles.mainImg}>
           <img
+            className={styles.bottomShape}
+            src={`${imgBase}/main-slider-img-shape-1.png`}
+            alt=""
+            aria-hidden
+          />
+          <img
+            className={styles.mainImgPerson}
             src={`${imgBase}/main-slider-img-1-1.png`}
             alt="Professional end of tenancy cleaner in London"
             fetchPriority="high"

@@ -56,12 +56,12 @@
 
 .bottomShape {
   position: absolute;
-  left: 13px;
-  bottom: 67px;
-  z-index: 2;
-  width: clamp(90px, 10vw, 140px);
+  left: -12%;
+  bottom: 18%;
+  z-index: 1;
+  width: clamp(80px, 9vw, 130px);
   height: auto;
-  opacity: 0.85;
+  opacity: 0.9;
   pointer-events: none;
 }
 
@@ -74,7 +74,9 @@
   pointer-events: none;
 }
 
-.mainImg img {
+.mainImgPerson {
+  position: relative;
+  z-index: 2;
   display: block;
   width: 100%;
   height: auto;
@@ -123,7 +125,9 @@
   }
 
   .bottomShape {
-    display: none;
+    left: -8%;
+    bottom: 14%;
+    width: clamp(70px, 18vw, 110px);
   }
 
   .mainImg {
@@ -134,7 +138,7 @@
     margin: 0 auto clamp(32px, 5vw, 48px);
   }
 
-  .mainImg img {
+  .mainImgPerson {
     max-height: 380px;
     margin: 0 auto;
   }
@@ -161,7 +165,7 @@
     width: min(100%, 320px);
   }
 
-  .mainImg img {
+  .mainImgPerson {
     max-height: 300px;
   }
 }
@@ -177,13 +181,13 @@
     margin-bottom: 28px;
   }
 
-  .mainImg img {
+  .mainImgPerson {
     max-height: 260px;
   }
 }
 
 @media (max-width: 399px) {
-  .mainImg img {
+  .mainImgPerson {
     max-height: 220px;
   }
 }
