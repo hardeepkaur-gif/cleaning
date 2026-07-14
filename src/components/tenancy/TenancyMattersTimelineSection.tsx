@@ -15,10 +15,43 @@ const highlights = [
   "Clear handover checklist",
 ];
 
+const DESKTOP_QUERY = "(min-width: 1201px)";
+
 export default function TenancyMattersTimelineSection() {
   const [activeIndex, setActiveIndex] = useState(0);
   const itemRefs = useRef<(HTMLLIElement | null)[]>([]);
   const scrollPanelRef = useRef<HTMLDivElement | null>(null);
+  const asideCardRef = useRef<HTMLDivElement | null>(null);
+  const scrollWrapRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const asideCard = asideCardRef.current;
+    const scrollWrap = scrollWrapRef.current;
+    if (!asideCard || !scrollWrap) return;
+
+    const syncColumnHeights = () => {
+      if (!window.matchMedia(DESKTOP_QUERY).matches) {
+        scrollWrap.style.height = "";
+        scrollWrap.style.maxHeight = "";
+        return;
+      }
+
+      const matchedHeight = asideCard.offsetHeight;
+      scrollWrap.style.height = `${matchedHeight}px`;
+      scrollWrap.style.maxHeight = `${matchedHeight}px`;
+    };
+
+    syncColumnHeights();
+
+    const resizeObserver = new ResizeObserver(syncColumnHeights);
+    resizeObserver.observe(asideCard);
+    window.addEventListener("resize", syncColumnHeights);
+
+    return () => {
+      resizeObserver.disconnect();
+      window.removeEventListener("resize", syncColumnHeights);
+    };
+  }, []);
 
   useEffect(() => {
     const nodes = itemRefs.current.filter(Boolean) as HTMLLIElement[];
@@ -39,7 +72,7 @@ export default function TenancyMattersTimelineSection() {
       {
         root,
         threshold: [0.35, 0.55, 0.75],
-        rootMargin: "-10% 0px -35% 0px",
+        rootMargin: "-8% 0px -40% 0px",
       }
     );
 
@@ -47,12 +80,12 @@ export default function TenancyMattersTimelineSection() {
     return () => observer.disconnect();
   }, []);
 
-  const scrollToItem = (index: number) => {
+  const selectItem = (index: number) => {
+    setActiveIndex(index);
     itemRefs.current[index]?.scrollIntoView({
       behavior: "smooth",
       block: "nearest",
     });
-    setActiveIndex(index);
   };
 
   return (
@@ -64,7 +97,7 @@ export default function TenancyMattersTimelineSection() {
       <div className={styles.container}>
         <div className={styles.layout}>
           <aside className={styles.aside}>
-            <div className={styles.asideCard}>
+            <div className={styles.asideCard} ref={asideCardRef}>
               <p className={styles.tagline}>{tenancyMattersTagline}</p>
               <h2 className={styles.title} id="tenancy-matters-timeline-title">
                 {tenancyMattersTitle}
@@ -107,7 +140,7 @@ export default function TenancyMattersTimelineSection() {
                     key={item.title}
                     type="button"
                     className={`${styles.chip} ${activeIndex === index ? styles.chipActive : ""}`}
-                    onClick={() => scrollToItem(index)}
+                    onClick={() => selectItem(index)}
                     aria-current={activeIndex === index ? "true" : undefined}
                   >
                     {String(index + 1).padStart(2, "0")}
@@ -117,7 +150,7 @@ export default function TenancyMattersTimelineSection() {
             </div>
           </aside>
 
-          <div className={styles.scrollWrap}>
+          <div className={styles.scrollWrap} ref={scrollWrapRef}>
             <div className={styles.scrollPanel} ref={scrollPanelRef}>
               <ol className={styles.timeline}>
                 {tenancyMattersItems.map((item, index) => {

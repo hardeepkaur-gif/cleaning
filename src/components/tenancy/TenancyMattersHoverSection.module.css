@@ -236,6 +236,25 @@
   color: rgba(226, 106, 76, 0.12);
 }
 
+@media (max-width: 1200px) {
+  .item {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .right {
+    border-left: none;
+    padding-left: 0;
+    padding-top: 4px;
+    border-top: 1px solid rgba(14, 94, 91, 0.08);
+  }
+
+  .itemText {
+    padding-left: 0;
+    padding-top: 12px;
+  }
+}
+
 @media (max-width: 991px) {
   .item {
     grid-template-columns: 1fr;

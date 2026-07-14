@@ -6,6 +6,7 @@ import TenancyMattersSection from "@/components/tenancy/TenancyMattersSection";
 import TenancyMattersTimelineSection from "@/components/tenancy/TenancyMattersTimelineSection";
 import TenancyMattersHoverSection from "@/components/tenancy/TenancyMattersHoverSection";
 import TenancyIncludedSection from "@/components/tenancy/TenancyIncludedSection";
+import TenancyDepositSection from "@/components/tenancy/TenancyDepositSection";
 import TenancyChecklistSection from "@/components/tenancy/TenancyChecklistSection";
 import TenancyChecklistAltSection from "@/components/tenancy/TenancyChecklistAltSection";
 
@@ -25,6 +26,7 @@ export default function EndOfTenancyCleaningPage() {
       <TenancyMattersTimelineSection />
       <TenancyMattersHoverSection />
       <TenancyIncludedSection />
+      <TenancyDepositSection />
       <TenancyChecklistSection />
       <TenancyChecklistAltSection />
     </main>

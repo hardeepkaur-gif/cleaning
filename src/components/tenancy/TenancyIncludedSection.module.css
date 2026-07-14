@@ -292,6 +292,14 @@
   .bgInner {
     display: none;
   }
+
+  .itemHeader {
+    padding: 11px 58px 11px 62px;
+  }
+
+  .itemInner {
+    padding: 22px 24px 22px 90px;
+  }
 }
 
 @media (max-width: 991px) {

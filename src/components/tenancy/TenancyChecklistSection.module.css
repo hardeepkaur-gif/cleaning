@@ -436,6 +436,45 @@
     flex: 0 0 33.333%;
     max-width: 33.333%;
   }
+
+  .contentBox {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  .checklist {
+    grid-template-columns: 1fr;
+    max-height: 280px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .tabButtons li {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .tabHeading {
+    font-size: 13px;
+  }
+
+  .contentBox {
+    grid-template-columns: 1fr;
+  }
+
+  .tabBgImage {
+    order: -1;
+    min-height: 200px;
+    max-height: 240px;
+  }
+
+  .tabBgImage img {
+    min-height: 180px;
+    max-height: 220px;
+  }
+
+  .checklist {
+    max-height: none;
+  }
 }
 
 @media (max-width: 991px) {

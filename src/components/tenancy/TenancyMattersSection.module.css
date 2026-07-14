@@ -157,9 +157,15 @@
   color: var(--gray);
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 991px) {
+  .grid {
+    grid-template-columns: 1fr;
   }
 }
 
