@@ -32,15 +32,18 @@
 
 .table {
   width: 100%;
+  table-layout: fixed;
   border-collapse: separate;
   border-spacing: 0;
   overflow: hidden;
   border-radius: 10px;
   background: var(--white);
+  box-shadow:
+    0 16px 40px rgba(10, 70, 68, 0.14),
+    0 6px 16px rgba(10, 70, 68, 0.08);
 }
 
 .table thead th {
-  width: 50%;
   padding: clamp(16px, 2.5vw, 22px) clamp(18px, 3vw, 28px);
   font-family: var(--font-two);
   font-size: clamp(16px, 1.8vw, 20px);
@@ -50,6 +53,16 @@
   color: var(--white);
   background: var(--primary);
   border: none;
+}
+
+.table thead th:first-child,
+.table tbody td:first-child {
+  width: 32%;
+}
+
+.table thead th:last-child,
+.table tbody td:last-child {
+  width: 68%;
 }
 
 .table thead th + th {
@@ -86,9 +99,9 @@
 
 .cellTitle {
   font-family: var(--font-two);
-  font-size: clamp(15px, 1.4vw, 18px);
+  font-size: clamp(14px, 1.3vw, 17px);
   font-weight: 700;
-  line-height: 1.6;
+  line-height: 1.5;
   color: var(--primary-dark);
 }
 
