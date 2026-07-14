@@ -4,8 +4,10 @@ import TenancyProfessionalSection from "@/components/tenancy/TenancyProfessional
 import TenancyMattersTableSection from "@/components/tenancy/TenancyMattersTableSection";
 import TenancyMattersSection from "@/components/tenancy/TenancyMattersSection";
 import TenancyMattersTimelineSection from "@/components/tenancy/TenancyMattersTimelineSection";
+import TenancyMattersHoverSection from "@/components/tenancy/TenancyMattersHoverSection";
 import TenancyIncludedSection from "@/components/tenancy/TenancyIncludedSection";
 import TenancyChecklistSection from "@/components/tenancy/TenancyChecklistSection";
+import TenancyChecklistAltSection from "@/components/tenancy/TenancyChecklistAltSection";
 
 export const metadata: Metadata = {
   title: "End of Tenancy Cleaning London | Cheap Move-Out Cleaning",
@@ -21,8 +23,10 @@ export default function EndOfTenancyCleaningPage() {
       <TenancyMattersTableSection />
       <TenancyMattersSection />
       <TenancyMattersTimelineSection />
+      <TenancyMattersHoverSection />
       <TenancyIncludedSection />
       <TenancyChecklistSection />
+      <TenancyChecklistAltSection />
     </main>
   );
 }
