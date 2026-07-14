@@ -45,23 +45,10 @@ export default function TenancyIncludedSection() {
         loading="lazy"
       />
 
-      <div className={styles.questionBox} aria-hidden>
-        <span className={styles.questionMark}>?</span>
-      </div>
-
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.secTitle}>
-            <div className={styles.secTop}>
-              <img
-                className={styles.secShape}
-                src={`${faqImgBase}/sec-title-shape-1-1.png`}
-                alt=""
-                aria-hidden
-                loading="lazy"
-              />
-              <p className={styles.tagline}>{tenancyIncludedTagline}</p>
-            </div>
+            <p className={styles.tagline}>{tenancyIncludedTagline}</p>
             <h2 className={styles.title} id="tenancy-included-title">
               {tenancyIncludedTitle}
             </h2>

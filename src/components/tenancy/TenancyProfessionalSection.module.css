@@ -178,21 +178,6 @@
   margin-bottom: 0;
 }
 
-.actions {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 16px;
-  margin-top: clamp(24px, 3vw, 32px);
-}
-
-.actions :global(.thmBtn) {
-  display: inline-flex;
-  align-items: center;
-  padding: 12px 30px;
-  font-size: 15px;
-}
-
 @media (max-width: 991px) {
   .grid {
     grid-template-columns: 1fr;
@@ -262,16 +247,6 @@
 
   .experienceText {
     font-size: 12px;
-  }
-
-  .actions {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .actions :global(.thmBtn) {
-    justify-content: center;
-    width: 100%;
   }
 }
 

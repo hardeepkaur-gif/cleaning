@@ -2,7 +2,7 @@
 
 .section {
   position: relative;
-  padding: clamp(70px, 8vw, 100px) 0;
+  padding: 0 0 clamp(70px, 8vw, 100px);
   background: var(--white);
 }
 
@@ -162,7 +162,7 @@
 
 @media (max-width: 575px) {
   .section {
-    padding: clamp(56px, 8vw, 70px) 0;
+    padding: 0 0 clamp(56px, 8vw, 70px);
   }
 
   .tableWrap {

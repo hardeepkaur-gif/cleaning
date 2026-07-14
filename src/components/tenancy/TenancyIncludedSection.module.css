@@ -41,43 +41,6 @@
   pointer-events: none;
 }
 
-.questionBox {
-  position: absolute;
-  top: 50px;
-  right: 48px;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 159px;
-  height: 159px;
-  border-radius: 50px;
-  background: var(--white);
-  pointer-events: none;
-}
-
-.questionBox::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: calc(100% - 26px);
-  height: calc(100% - 26px);
-  transform: translate(-50%, -50%);
-  border: 1px dashed var(--primary);
-  border-radius: inherit;
-}
-
-.questionMark {
-  position: relative;
-  z-index: 1;
-  font-family: var(--font-two);
-  font-size: clamp(72px, 8vw, 100px);
-  font-weight: 700;
-  line-height: 1;
-  color: var(--cta);
-}
-
 .container {
   position: relative;
   z-index: 1;
@@ -94,21 +57,8 @@
   margin-bottom: 18px;
 }
 
-.secTop {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 12px;
-}
-
-.secShape {
-  width: 18px;
-  height: auto;
-  flex-shrink: 0;
-}
-
 .tagline {
-  margin: 0;
+  margin: 0 0 12px;
   font-family: var(--font-two);
   font-size: clamp(12px, 1.2vw, 14px);
   font-weight: 600;
@@ -342,24 +292,9 @@
   .bgInner {
     display: none;
   }
-
-  .questionBox {
-    width: 140px;
-    height: 140px;
-    top: 30px;
-    right: 30px;
-  }
-
-  .questionMark {
-    font-size: 72px;
-  }
 }
 
 @media (max-width: 991px) {
-  .questionBox {
-    display: none;
-  }
-
   .content {
     max-width: none;
   }
@@ -459,10 +394,6 @@
 }
 
 @media (max-width: 399px) {
-  .secTop {
-    flex-wrap: wrap;
-  }
-
   .itemTitle {
     font-size: 15px;
     line-height: 1.4;

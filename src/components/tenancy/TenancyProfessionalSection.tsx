@@ -1,4 +1,3 @@
-import ThmButton from "@/components/menu/ThmButton";
 import styles from "./TenancyProfessionalSection.module.css";
 
 const imgBase = "/images/about/cleanon";
@@ -67,13 +66,6 @@ export default function TenancyProfessionalSection() {
               appliance cleaning are all given the attention they require to help
               achieve a smooth property handover.
             </p>
-
-            <div className={styles.actions}>
-              <ThmButton href="/#contact">Request a Quote</ThmButton>
-              <ThmButton href="/#services" variant="secondary">
-                View All Services
-              </ThmButton>
-            </div>
           </div>
         </div>
       </div>
