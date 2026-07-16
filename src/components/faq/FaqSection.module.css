@@ -96,6 +96,7 @@
   color: var(--primary-dark);
   line-height: 1.4;
   transition: color 0.3s ease;
+  min-width: 0;
 }
 
 .item:hover .qText,
@@ -185,7 +186,7 @@
 }
 
 /* ===== Responsive ===== */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .columns {
     grid-template-columns: 1fr;
   }
@@ -208,5 +209,24 @@
 
   .itemOpen .answer {
     max-height: 460px;
+  }
+}
+
+@media (max-width: 575px) {
+  .topHeader {
+    text-align: left;
+  }
+
+  .question {
+    padding: 16px 18px;
+  }
+
+  .itemOpen .answer {
+    padding: 0 18px 16px;
+    max-height: 520px;
+  }
+
+  .answer {
+    padding: 0 18px;
   }
 }

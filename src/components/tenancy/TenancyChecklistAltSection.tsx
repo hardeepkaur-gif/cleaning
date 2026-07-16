@@ -77,39 +77,40 @@ export default function TenancyChecklistAltSection() {
             className={styles.panel}
             key={animateKey}
           >
-            <div className={styles.media}>
-              <img src={active.image} alt="" loading="lazy" aria-hidden />
-              <div className={styles.mediaGlow} aria-hidden />
-              <div className={styles.mediaBadge}>
-                <ActiveIcon aria-hidden />
-                <div>
+            <div className={styles.panelTop}>
+              <div className={styles.media}>
+                <img src={active.image} alt="" loading="lazy" aria-hidden />
+                <div className={styles.mediaGlow} aria-hidden />
+                <div className={styles.content}>
+                  <div className={styles.mediaBadge}>
+                    <ActiveIcon aria-hidden />
+                    <strong>{active.shortLabel}</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div className={styles.contentMobile}>
+                <div className={styles.mediaBadge}>
+                  <ActiveIcon aria-hidden />
                   <strong>{active.shortLabel}</strong>
-                  <span>{active.items.length} checklist items</span>
                 </div>
               </div>
             </div>
 
-            <div className={styles.content}>
-              <div className={styles.contentHead}>
-                <h3>{active.title}</h3>
-                <p>Inspection-focused points for this area of the property.</p>
-              </div>
-
-              <ul className={styles.checklist}>
-                {active.items.map((item, index) => (
-                  <li
-                    key={item}
-                    className={styles.checkItem}
-                    style={{ animationDelay: `${index * 45}ms` }}
-                  >
-                    <span className={styles.checkMark} aria-hidden>
-                      <FaCheck />
-                    </span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <ul className={styles.checklist}>
+              {active.items.map((item, index) => (
+                <li
+                  key={item}
+                  className={styles.checkItem}
+                  style={{ animationDelay: `${index * 45}ms` }}
+                >
+                  <span className={styles.checkMark} aria-hidden>
+                    <FaCheck />
+                  </span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 

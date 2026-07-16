@@ -1,0 +1,295 @@
+/* Checklist pro — accordion walkthrough (distinct from tabs / rail / mosaic) */
+
+.section {
+  position: relative;
+  padding: clamp(70px, 8vw, 100px) 0;
+  background: #f7f4f1;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 3vw, 24px);
+}
+
+.header {
+  margin-bottom: clamp(28px, 4vw, 40px);
+  text-align: left;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  font-family: var(--font-two);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cta);
+}
+
+.title {
+  margin: 0 0 14px;
+  font-family: var(--font-two);
+  font-size: clamp(28px, 3.6vw, 44px);
+  line-height: 1.25;
+  font-weight: 800;
+  color: var(--primary-dark);
+}
+
+.intro {
+  margin: 0;
+  max-width: 62ch;
+  font-size: clamp(15px, 1.4vw, 18px);
+  line-height: 1.75;
+  color: var(--gray);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.item {
+  border-radius: 18px;
+  background: var(--white);
+  border: 1px solid rgba(14, 94, 91, 0.1);
+  box-shadow: 0 8px 24px rgba(10, 70, 68, 0.05);
+  overflow: hidden;
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.itemOpen {
+  border-color: rgba(14, 94, 91, 0.22);
+  box-shadow: 0 16px 40px rgba(10, 70, 68, 0.1);
+}
+
+.trigger {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: clamp(12px, 2vw, 18px);
+  width: 100%;
+  padding: clamp(16px, 2.2vw, 22px) clamp(16px, 2.4vw, 24px);
+  border: none;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+}
+
+.num {
+  font-family: var(--font-two);
+  font-size: clamp(22px, 2.5vw, 28px);
+  font-weight: 800;
+  line-height: 1;
+  color: rgba(14, 94, 91, 0.18);
+}
+
+.triggerMain {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.triggerIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: #f7f4f1;
+  color: var(--primary);
+  font-size: 22px;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.itemOpen .triggerIcon {
+  background: linear-gradient(145deg, var(--primary), var(--primary-dark));
+  color: var(--white);
+}
+
+.triggerCopy {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.triggerTitle {
+  font-family: var(--font-two);
+  font-size: clamp(16px, 1.8vw, 20px);
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--primary-dark);
+}
+
+.triggerMeta {
+  font-size: 13px;
+  color: var(--gray);
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #f7f4f1;
+  color: var(--primary-dark);
+  font-size: 12px;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.itemOpen .toggle {
+  background: var(--cta);
+  color: var(--white);
+  transform: rotate(180deg);
+}
+
+.panel {
+  border-top: 1px solid rgba(14, 94, 91, 0.08);
+}
+
+.panelInner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr);
+  gap: clamp(16px, 2.5vw, 24px);
+  padding: clamp(16px, 2.4vw, 24px);
+  animation: openIn 0.35s ease;
+}
+
+.media {
+  position: relative;
+  height: 220px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.checklist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  align-content: start;
+  max-height: 220px;
+  overflow-y: auto;
+  padding-right: 6px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(14, 94, 91, 0.3) transparent;
+}
+
+.checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #f7f4f1;
+  font-size: clamp(14px, 1.3vw, 15px);
+  line-height: 1.5;
+  color: var(--gray);
+}
+
+.check {
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: var(--primary);
+  font-size: 12px;
+}
+
+.note {
+  margin: clamp(28px, 4vw, 36px) 0 0;
+  max-width: 70ch;
+  font-size: clamp(14px, 1.3vw, 16px);
+  line-height: 1.7;
+  color: var(--gray);
+  font-style: italic;
+}
+
+@keyframes openIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .panelInner {
+    animation: none;
+  }
+
+  .itemOpen .toggle {
+    transform: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    text-align: left;
+  }
+
+  .panelInner {
+    grid-template-columns: 1fr;
+  }
+
+  .media {
+    height: 180px;
+  }
+
+  .checklist {
+    max-height: none;
+    overflow: visible;
+    padding-right: 0;
+  }
+
+  .trigger {
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+  }
+
+  .triggerMeta {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 575px) {
+  .section {
+    padding: clamp(56px, 8vw, 70px) 0;
+  }
+
+  .triggerIcon {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .item {
+    border-radius: 14px;
+  }
+}

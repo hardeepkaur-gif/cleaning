@@ -115,10 +115,6 @@
 }
 
 @media (max-width: 1199px) {
-  .table {
-    min-width: 680px;
-  }
-
   .cell {
     padding: clamp(14px, 2vw, 20px) clamp(14px, 2.2vw, 22px);
   }
@@ -135,10 +131,13 @@
 @media (max-width: 991px) {
   .tableWrap {
     padding: 16px;
+    overflow-x: visible;
   }
-}
 
-@media (max-width: 767px) {
+  .table {
+    min-width: 0;
+  }
+
   .title {
     text-align: left;
     margin-bottom: 24px;

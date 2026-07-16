@@ -1,0 +1,392 @@
+/* Checklist rooms — alternating photo + checklist blocks (site brand) */
+
+.section {
+  position: relative;
+  padding: clamp(70px, 8vw, 100px) 0;
+  background: #f7f4f1;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 3vw, 24px);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: clamp(36px, 5vw, 50px);
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(226, 106, 76, 0.12);
+  font-family: var(--font-two);
+  font-size: clamp(12px, 1.2vw, 13px);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cta);
+}
+
+.title {
+  margin: 0 0 14px;
+  font-family: var(--font-two);
+  font-size: clamp(28px, 3.6vw, 46px);
+  line-height: 1.3;
+  font-weight: 800;
+  color: var(--primary-dark);
+}
+
+.intro {
+  margin: 0 auto;
+  max-width: 62ch;
+  font-size: clamp(15px, 1.4vw, 18px);
+  line-height: 1.75;
+  color: var(--gray);
+}
+
+.roomList {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.roomBlock {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--white);
+  border: 1px solid rgba(14, 94, 91, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 3px 16px rgba(10, 70, 68, 0.05);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: blockIn 0.6s ease forwards;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.roomBlock:hover {
+  box-shadow: 0 16px 36px rgba(10, 70, 68, 0.1);
+}
+
+.roomBlockReverse .roomPhoto {
+  order: 2;
+}
+
+.roomBlockReverse .roomInfo {
+  order: 1;
+}
+
+.roomPhoto {
+  position: relative;
+  overflow: hidden;
+  min-height: 280px;
+}
+
+.roomPhoto img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.roomBlock:hover .roomPhoto img {
+  transform: scale(1.07);
+}
+
+.roomPhotoTag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px 7px 9px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.roomPhotoIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  background: rgba(226, 106, 76, 0.12);
+  color: var(--cta);
+  font-size: 14px;
+}
+
+.roomPhotoTag span:last-child {
+  font-family: var(--font-two);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.roomInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(22px, 3vw, 30px);
+}
+
+.roomTitle {
+  margin: 0 0 4px;
+  font-family: var(--font-two);
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--primary-dark);
+}
+
+.roomCount {
+  margin: 0 0 16px;
+  font-size: 12.5px;
+  color: rgba(89, 87, 82, 0.75);
+}
+
+.progressTrack {
+  height: 5px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  background: rgba(14, 94, 91, 0.1);
+  overflow: hidden;
+}
+
+.progressFill {
+  display: block;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(90deg, var(--cta), #f09478);
+  transition: width 0.4s ease;
+}
+
+.taskGrid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 14px;
+  align-items: start;
+}
+
+.taskGridSplit {
+  grid-template-rows: repeat(var(--split-rows, 5), auto);
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+}
+
+.taskRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  width: 100%;
+  padding: 6px;
+  border: none;
+  border-radius: 9px;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+  opacity: 0;
+  transform: translateY(5px);
+  animation: rowIn 0.35s ease forwards;
+  transition: background 0.15s ease;
+}
+
+.taskRow:hover {
+  background: #f7f4f1;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  margin-top: 1px;
+  border: 2px solid rgba(14, 94, 91, 0.18);
+  border-radius: 5px;
+  background: var(--white);
+  color: var(--white);
+  font-size: 8px;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.checkbox svg {
+  opacity: 0;
+  transform: scale(0.5);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.taskText {
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--primary-dark);
+  transition:
+    color 0.2s ease,
+    text-decoration 0.2s ease;
+}
+
+.taskRowChecked .checkbox {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.taskRowChecked .checkbox svg {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.taskRowChecked .taskText {
+  color: var(--gray);
+  text-decoration: line-through;
+}
+
+.footerBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+  padding: 16px 24px;
+  border-radius: 16px;
+  background: var(--white);
+  border: 1px solid rgba(14, 94, 91, 0.1);
+  box-shadow: 0 2px 12px rgba(10, 70, 68, 0.04);
+}
+
+.footerText {
+  margin: 0;
+  font-size: 14px;
+  color: var(--gray);
+}
+
+.footerText strong {
+  color: var(--primary-dark);
+  font-family: var(--font-two);
+}
+
+.resetBtn {
+  padding: 9px 18px;
+  border: 1px solid rgba(14, 94, 91, 0.14);
+  border-radius: 9px;
+  background: #f7f4f1;
+  color: var(--gray);
+  font-family: var(--font-two);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+.resetBtn:hover {
+  border-color: var(--cta);
+  color: var(--cta);
+  background: rgba(226, 106, 76, 0.1);
+}
+
+@keyframes blockIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rowIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .roomBlock,
+  .taskRow {
+    animation: none !important;
+  }
+
+  .roomBlock {
+    opacity: 1;
+    transform: none;
+  }
+
+  .taskRow {
+    opacity: 1;
+    transform: none;
+  }
+
+  .roomBlock:hover .roomPhoto img {
+    transform: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    text-align: left;
+  }
+
+  .intro {
+    margin: 0;
+  }
+
+  .roomBlock,
+  .roomBlockReverse {
+    grid-template-columns: 1fr;
+  }
+
+  .roomBlockReverse .roomPhoto {
+    order: 1;
+  }
+
+  .roomBlockReverse .roomInfo {
+    order: 2;
+  }
+
+  .roomPhoto {
+    min-height: 200px;
+  }
+
+  .taskGrid,
+  .taskGridSplit {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    grid-auto-flow: row;
+    grid-auto-columns: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .section {
+    padding: clamp(56px, 8vw, 70px) 0;
+  }
+
+  .roomBlock {
+    border-radius: 16px;
+  }
+
+  .footerBar {
+    padding: 14px 16px;
+  }
+}

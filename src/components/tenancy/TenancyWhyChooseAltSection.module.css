@@ -1,0 +1,46 @@
+.section {
+  background: #f7f4f1;
+}
+
+.grid {
+  grid-template-columns: repeat(5, 1fr);
+  margin-bottom: 0;
+}
+
+.card {
+  background: var(--white) !important;
+}
+
+/* Hover: coral → green (primary) */
+.card:hover .icon {
+  color: var(--primary) !important;
+  background: linear-gradient(
+    145deg,
+    #ffffff 0%,
+    rgba(14, 94, 91, 0.12) 100%
+  ) !important;
+  border-color: rgba(14, 94, 91, 0.22) !important;
+  box-shadow: 0 14px 28px rgba(14, 94, 91, 0.18) !important;
+}
+
+.card:hover .icon svg {
+  filter: drop-shadow(0 2px 6px rgba(14, 94, 91, 0.22)) !important;
+}
+
+@media (max-width: 1199px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 991px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

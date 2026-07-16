@@ -1,0 +1,15 @@
+/* 4 cards — same WhatMakesDifferent card styles, 2×2 on desktop */
+
+.gridFour {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 991px) {
+  .gridFour {
+    grid-template-columns: 1fr;
+    max-width: none;
+  }
+}

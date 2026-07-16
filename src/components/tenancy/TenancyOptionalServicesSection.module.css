@@ -1,0 +1,278 @@
+/* Services showcase — Cleanon index.html services-two layout, brand colors */
+
+.services {
+  position: relative;
+  display: block;
+  padding: 70px 0;
+  background: var(--white);
+  z-index: 1;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 3vw, 24px);
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: clamp(40px, 5vw, 56px);
+}
+
+.taglineBox {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 6px;
+}
+
+.taglineIcon {
+  display: inline-flex;
+  color: var(--cta);
+  font-size: 14px;
+}
+
+.tagline {
+  color: var(--cta);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  font-family: var(--font-two);
+  letter-spacing: 0.04em;
+}
+
+.title {
+  font-family: var(--font-two);
+  font-size: clamp(28px, 3.6vw, 46px);
+  line-height: 1.3;
+  font-weight: 800;
+  color: var(--primary-dark);
+  margin: 0 0 clamp(18px, 2.5vw, 24px);
+}
+
+.intro {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: clamp(15px, 1.4vw, 18px);
+  line-height: 1.75;
+  color: var(--gray);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 2px solid #ded8cf;
+  padding: 10px;
+  border-radius: var(--radius);
+  background: var(--white);
+}
+
+.imgBox {
+  position: relative;
+  display: block;
+}
+
+.imgWrap {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.imgWrap::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background: var(--primary-dark);
+  transition: opacity 0.5s ease;
+  z-index: 1;
+}
+
+.card:hover .imgWrap::before {
+  opacity: 0.5;
+}
+
+.imgWrap img {
+  width: 100%;
+  display: block;
+  border-radius: var(--radius);
+  transform: scale(1);
+  transition: transform 1.5s ease;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.card:hover .imgWrap img {
+  transform: scale(1.05);
+}
+
+.content {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px 10px;
+  margin-top: 20px;
+  border-left: 2px solid var(--cta);
+  border-bottom: 2px solid var(--cta);
+  border-radius: var(--radius);
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 31px;
+  overflow: hidden;
+  min-height: 200px;
+}
+
+.cardTitle {
+  font-family: var(--font-two);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.cardTitle a {
+  color: var(--primary-dark);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.cardTitle a:hover {
+  color: var(--cta);
+}
+
+.cardText {
+  flex: 1;
+  margin: 8px 0 17px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--gray);
+}
+
+.btnBox {
+  margin-top: auto;
+}
+
+.btnBox a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-two);
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--cta);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.btnBox a:hover {
+  color: var(--primary);
+}
+
+.iconWrap {
+  position: absolute;
+  bottom: -2px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  border: 2px solid var(--cta);
+  border-bottom: 0;
+  border-radius: 50%;
+  border-top-right-radius: 35px;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+}
+
+.iconWrap::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -2px;
+  width: 10px;
+  height: 41px;
+  background: var(--white);
+}
+
+.iconWrap::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: -2px;
+  width: 30px;
+  height: 10px;
+  background: var(--white);
+}
+
+.iconMain {
+  display: inline-flex;
+  font-size: 28px;
+  color: var(--primary);
+}
+
+.iconStar {
+  position: absolute;
+  left: -9px;
+  top: 17px;
+  display: inline-flex;
+  font-size: 18px;
+  color: var(--cta);
+}
+
+.card:hover .iconMain {
+  animation: iconWobble 1s ease-in-out 1;
+}
+
+@keyframes iconWobble {
+  16.65% {
+    transform: translateX(6px);
+  }
+  33.3% {
+    transform: translateX(-4px);
+  }
+  49.95% {
+    transform: translateX(3px);
+  }
+  66.6% {
+    transform: translateX(-2px);
+  }
+  83.25% {
+    transform: translateX(1px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 1199px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 991px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .content {
+    min-height: auto;
+  }
+
+  .cardTitle {
+    font-size: 20px;
+  }
+}

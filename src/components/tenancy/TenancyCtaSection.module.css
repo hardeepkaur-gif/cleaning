@@ -1,0 +1,225 @@
+/* Tenancy CTA visual — laptop mockup with contact message */
+
+.stage {
+  aspect-ratio: auto;
+  min-height: 260px;
+  animation: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.laptopWrap {
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.laptop {
+  position: relative;
+  animation: laptopFloat 5s ease-in-out infinite;
+}
+
+.laptop::before {
+  content: "";
+  position: absolute;
+  inset: -12px -16px -6px;
+  border-radius: 20px;
+  background: radial-gradient(
+    circle,
+    rgba(14, 94, 91, 0.14) 0%,
+    transparent 72%
+  );
+  z-index: -1;
+  animation: laptopGlow 5s ease-in-out infinite;
+}
+
+.laptopBezel {
+  position: relative;
+  padding: 10px 10px 8px;
+  border-radius: 14px 14px 8px 8px;
+  background: linear-gradient(
+    165deg,
+    var(--primary-dark) 0%,
+    #083836 55%,
+    var(--primary) 100%
+  );
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 8px 24px rgba(10, 70, 68, 0.24),
+    0 24px 48px rgba(10, 70, 68, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.laptopCam {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.22);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.laptopScreen {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 210px;
+  padding: 16px;
+  border-radius: 8px;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f7f4f1 100%
+  );
+  box-shadow: inset 0 0 0 1px rgba(14, 94, 91, 0.08);
+}
+
+.screenBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgba(226, 106, 76, 0.12);
+  color: var(--cta);
+  font-family: var(--font-two);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.screenBadge svg {
+  font-size: 12px;
+}
+
+.screenTitle {
+  margin: 0;
+  font-family: var(--font-two);
+  font-size: clamp(15px, 1.5vw, 17px);
+  line-height: 1.35;
+  font-weight: 800;
+  color: var(--primary-dark);
+}
+
+.screenText {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--gray);
+}
+
+.screenList {
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.screenList li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: rgba(14, 94, 91, 0.06);
+  border: 1px solid rgba(14, 94, 91, 0.08);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+.screenList li svg {
+  flex-shrink: 0;
+  color: var(--cta);
+  font-size: 12px;
+}
+
+.screenBtn:global(.thmBtn) {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 11px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 999px;
+  box-shadow: 0 8px 20px rgba(226, 106, 76, 0.24);
+}
+
+.laptopBase {
+  position: relative;
+  height: 12px;
+  margin: 0 -14px;
+  border-radius: 0 0 14px 14px;
+  background: linear-gradient(
+    180deg,
+    #0a4644 0%,
+    #083836 100%
+  );
+  box-shadow: 0 10px 24px rgba(10, 70, 68, 0.2);
+}
+
+.laptopTrack {
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18%;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+@keyframes laptopFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes laptopGlow {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.03);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .laptop,
+  .laptop::before {
+    animation: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .stage {
+    min-height: auto;
+  }
+
+  .laptopWrap {
+    max-width: 340px;
+  }
+}
+
+@media (max-width: 575px) {
+  .laptopScreen {
+    min-height: 200px;
+  }
+}

@@ -314,6 +314,20 @@
   }
 }
 
+@media (max-width: 991px) {
+  .right {
+    min-height: 400px;
+  }
+
+  .visualStage {
+    min-height: 400px;
+  }
+
+  .rightShape {
+    display: none;
+  }
+}
+
 @media (max-width: 767px) {
   .img2 {
     left: -20px;

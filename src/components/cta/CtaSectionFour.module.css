@@ -393,10 +393,15 @@
 }
 
 /* Responsive */
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .bannerInner {
     grid-template-columns: 1fr;
     min-height: auto;
+  }
+
+  .ctaBtn:global(.thmBtn) {
+    white-space: normal;
+    text-align: center;
   }
 
   .copy {

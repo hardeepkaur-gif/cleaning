@@ -1,0 +1,293 @@
+/* Tenancy pricing — fixed price table, site brand typography */
+
+.section {
+  position: relative;
+  padding: clamp(70px, 8vw, 100px) 0;
+  background: var(--white);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 3vw, 24px);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: clamp(32px, 4vw, 44px);
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(226, 106, 76, 0.12);
+  font-family: var(--font-two);
+  font-size: clamp(12px, 1.2vw, 13px);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cta);
+}
+
+.title {
+  margin: 0 0 16px;
+  font-family: var(--font-two);
+  font-size: clamp(26px, 3.2vw, 42px);
+  line-height: 1.3;
+  font-weight: 800;
+  color: var(--primary-dark);
+  white-space: nowrap;
+}
+
+.intro {
+  margin: 0 0 1em;
+  max-width: none;
+  font-size: clamp(15px, 1.4vw, 18px);
+  line-height: 1.75;
+  color: var(--gray);
+}
+
+.intro:last-of-type {
+  margin-bottom: 0;
+}
+
+.tableCard {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 22px;
+  background: #f7f4f1;
+  border: 1px solid rgba(14, 94, 91, 0.1);
+  box-shadow: 0 18px 44px rgba(10, 70, 68, 0.08);
+  overflow: hidden;
+}
+
+.tableHead {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: clamp(20px, 2.5vw, 26px) clamp(20px, 2.8vw, 28px);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: var(--white);
+}
+
+.tableHeadIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.16);
+  font-size: 26px;
+}
+
+.tableHeadTitle {
+  margin: 0 0 4px;
+  font-family: var(--font-two);
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.tableHeadText {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.tableWrap {
+  padding: clamp(14px, 2vw, 18px);
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  border-radius: 14px;
+  background: var(--white);
+  box-shadow: 0 8px 24px rgba(10, 70, 68, 0.06);
+}
+
+.table thead th {
+  padding: 16px 22px;
+  font-family: var(--font-two);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--primary-dark);
+  background: rgba(14, 94, 91, 0.06);
+  border-bottom: 1px solid rgba(14, 94, 91, 0.1);
+}
+
+.table thead th:last-child {
+  text-align: right;
+}
+
+.thIcon {
+  display: inline-flex;
+  vertical-align: middle;
+  margin-right: 8px;
+  color: var(--primary);
+  font-size: 16px;
+}
+
+.table tbody td {
+  padding: 18px 22px;
+  font-size: clamp(15px, 1.4vw, 17px);
+  font-weight: 600;
+  color: var(--primary-dark);
+  border-bottom: 1px solid rgba(14, 94, 91, 0.08);
+  vertical-align: middle;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.table tbody tr:hover td {
+  background: rgba(14, 94, 91, 0.03);
+}
+
+.table tbody td:last-child {
+  text-align: right;
+}
+
+.price {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 72px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: rgba(226, 106, 76, 0.1);
+  font-family: var(--font-two);
+  font-size: clamp(16px, 1.6vw, 20px);
+  font-weight: 800;
+  color: var(--cta);
+  letter-spacing: 0.02em;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  max-width: 800px;
+  margin: clamp(24px, 3vw, 32px) auto 0;
+  padding: 18px 22px;
+  border-radius: 16px;
+  background: #f7f4f1;
+  border: 1px solid rgba(14, 94, 91, 0.1);
+}
+
+.footerText {
+  margin: 0;
+  max-width: 48ch;
+  font-size: clamp(14px, 1.3vw, 16px);
+  line-height: 1.6;
+  color: var(--gray);
+}
+
+.ctaBtn:global(.thmBtn) {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 991px) {
+  .title {
+    white-space: normal;
+  }
+
+  .table thead th,
+  .table tbody td {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    text-align: left;
+  }
+
+  .tableCard {
+    max-width: none;
+  }
+
+  .table,
+  .table thead,
+  .table tbody,
+  .table tr,
+  .table th,
+  .table td {
+    display: block;
+    width: 100%;
+  }
+
+  .table thead {
+    display: none;
+  }
+
+  .table tbody tr {
+    padding: 14px 16px;
+    border-bottom: 1px solid rgba(14, 94, 91, 0.08);
+  }
+
+  .table tbody tr:last-child {
+    border-bottom: none;
+  }
+
+  .table tbody td {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 6px 0;
+    border-bottom: none;
+    text-align: left;
+  }
+
+  .table tbody td:last-child {
+    text-align: left;
+  }
+
+  .table tbody td::before {
+    content: attr(data-label);
+    font-family: var(--font-two);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--gray);
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 575px) {
+  .section {
+    padding: clamp(56px, 8vw, 70px) 0;
+  }
+
+  .tableCard {
+    border-radius: 16px;
+  }
+
+  .tableHead {
+    align-items: flex-start;
+  }
+}
