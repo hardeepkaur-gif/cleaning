@@ -3,6 +3,15 @@ import { includedImages } from "@/components/included/includedData";
 import styles from "@/components/included/ProfessionalClean.module.css";
 import local from "./TenancyPrepareSection.module.css";
 
+const prepareImgBase = "/images/tenancy/prepare";
+
+const prepareImages = {
+  main: `${prepareImgBase}/main.png`,
+  img2: `${prepareImgBase}/img-2.png`,
+  img3: `${prepareImgBase}/img-3.png`,
+  img4: `${prepareImgBase}/img-4.png`,
+};
+
 const preparePoints = [
   "Remove personal belongings and packed boxes where possible.",
   "Empty kitchen cupboards, wardrobes and storage areas that need cleaning.",
@@ -52,7 +61,7 @@ export default function TenancyPrepareSection() {
               <div className={styles.imgBox}>
                 <div className={styles.mainImg}>
                   <img
-                    src={includedImages.main}
+                    src={prepareImages.main}
                     alt="Preparing a London property for end of tenancy cleaning"
                   />
                 </div>
@@ -71,13 +80,13 @@ export default function TenancyPrepareSection() {
               </div>
 
               <div className={styles.img2}>
-                <img src={includedImages.img2} alt="" aria-hidden />
+                <img src={prepareImages.img2} alt="" aria-hidden />
               </div>
               <div className={styles.img3}>
-                <img src={includedImages.img3} alt="" aria-hidden />
+                <img src={prepareImages.img3} alt="" aria-hidden />
               </div>
               <div className={styles.img4}>
-                <img src={includedImages.img4} alt="" aria-hidden />
+                <img src={prepareImages.img4} alt="" aria-hidden />
               </div>
             </div>
           </div>

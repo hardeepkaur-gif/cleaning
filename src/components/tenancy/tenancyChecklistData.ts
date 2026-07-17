@@ -34,7 +34,7 @@ export const tenancyChecklistTabs: TenancyChecklistTab[] = [
     shortLabel: "Kitchen",
     label: "Kitchen",
     icon: PiCookingPotDuotone,
-    image: `${tabImgBase}/services-three-tab-img-1.jpg`,
+    image: "/images/tenancy/kitchen-checklist.png",
     items: [
       "Clean and degrease kitchen worktops",
       "Wipe and sanitise cupboard doors",
@@ -58,7 +58,7 @@ export const tenancyChecklistTabs: TenancyChecklistTab[] = [
     shortLabel: "Bathroom",
     label: "Bathroom",
     icon: PiBathtubDuotone,
-    image: `${tabImgBase}/services-three-tab-img-2.jpg`,
+    image: "/images/tenancy/bathroom-checklist.png",
     items: [
       "Clean and disinfect toilets",
       "Clean baths and shower trays",
@@ -80,7 +80,7 @@ export const tenancyChecklistTabs: TenancyChecklistTab[] = [
     shortLabel: "Bedroom",
     label: "Bedroom",
     icon: PiBedDuotone,
-    image: `${tabImgBase}/services-three-tab-img-3.jpg`,
+    image: "/images/tenancy/bedroom-checklist.png",
     items: [
       "Dust accessible surfaces",
       "Wipe wardrobes and storage units",
@@ -100,7 +100,7 @@ export const tenancyChecklistTabs: TenancyChecklistTab[] = [
     shortLabel: "Living Room",
     label: "Living Room",
     icon: PiCouchDuotone,
-    image: `${tabImgBase}/services-three-tab-img-4.jpg`,
+    image: "/images/tenancy/living-room-checklist.png",
     items: [
       "Dust furniture and accessible surfaces",
       "Clean tables, shelving and storage units",
@@ -120,7 +120,7 @@ export const tenancyChecklistTabs: TenancyChecklistTab[] = [
     shortLabel: "Hallway",
     label: "Hallway",
     icon: PiDoorDuotone,
-    image: "/images/tenancy/end-of-tenancy-deposit-concerns.png",
+    image: "/images/tenancy/hallway-checklist.png",
     items: [
       "Clean entrance doors and frames",
       "Wipe skirting boards",

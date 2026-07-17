@@ -2,7 +2,7 @@ import ThmButton from "@/components/menu/ThmButton";
 import heroStyles from "@/components/hero/HeroLeadForm.module.css";
 import styles from "./TenancyHero.module.css";
 
-const imgBase = "/images/hero/cleanon";
+const imgBase = "/images/hero/clean360";
 
 export default function TenancyHero() {
   return (
@@ -11,7 +11,7 @@ export default function TenancyHero() {
         <div className={styles.bg} aria-hidden>
           <div
             className={styles.bgInner}
-            style={{ backgroundImage: `url('${imgBase}/slider-1-1.jpg')` }}
+            style={{ backgroundImage: `url('${imgBase}/slide1.jpg')` }}
           />
         </div>
         <div className={styles.overlay} aria-hidden />
@@ -55,21 +55,6 @@ export default function TenancyHero() {
               </div>
             </div>
           </div>
-        </div>
-
-        <div className={styles.mainImg}>
-          <img
-            className={styles.bottomShape}
-            src={`${imgBase}/main-slider-img-shape-1.png`}
-            alt=""
-            aria-hidden
-          />
-          <img
-            className={styles.mainImgPerson}
-            src={`${imgBase}/main-slider-img-1-1.png`}
-            alt="Professional end of tenancy cleaner in London"
-            fetchPriority="high"
-          />
         </div>
       </div>
     </section>

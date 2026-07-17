@@ -2,7 +2,7 @@
 
 .section {
   position: relative;
-  padding: clamp(70px, 8vw, 100px) 0;
+  padding-bottom: 0 !important;
   background: var(--white);
   overflow: hidden;
 }
@@ -280,7 +280,7 @@
 
 @media (max-width: 575px) {
   .section {
-    padding: clamp(56px, 8vw, 70px) 0;
+    padding-bottom: 0 !important;
   }
 
   .tableCard {

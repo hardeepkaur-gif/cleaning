@@ -23,8 +23,8 @@ export default function TenancyChecklistAltSection() {
   return (
     <section
       className={styles.section}
-      id="tenancy-checklist-alt"
-      aria-labelledby="tenancy-checklist-alt-title"
+      id="tenancy-checklist"
+      aria-labelledby="tenancy-checklist-title"
     >
       <div className={styles.orbOne} aria-hidden />
       <div className={styles.orbTwo} aria-hidden />
@@ -32,7 +32,7 @@ export default function TenancyChecklistAltSection() {
       <div className={styles.container}>
         <header className={styles.header}>
           <p className={styles.tagline}>Room-by-Room Guide</p>
-          <h2 className={styles.title} id="tenancy-checklist-alt-title">
+          <h2 className={styles.title} id="tenancy-checklist-title">
             {tenancyChecklistTitle}
           </h2>
           <p className={styles.intro}>{tenancyChecklistIntro}</p>

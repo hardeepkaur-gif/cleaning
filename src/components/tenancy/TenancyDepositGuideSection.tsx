@@ -1,19 +1,20 @@
 import styles from "@/components/about/AboutUs.module.css";
 
 const imgBase = "/images/about/cleanon";
+const depositImgBase = "/images/tenancy/deposit";
 
 export default function TenancyDepositGuideSection() {
   return (
     <section
       className={styles.about}
-      id="tenancy-deposit-guide"
-      aria-labelledby="tenancy-deposit-guide-title"
+      id="tenancy-deposit-help"
+      aria-labelledby="tenancy-deposit-title"
     >
       <span className={styles.bgShape} aria-hidden />
 
       <div className={styles.container}>
         <div className={styles.header}>
-          <h2 className={styles.title} id="tenancy-deposit-guide-title">
+          <h2 className={styles.title} id="tenancy-deposit-title">
             Does End of Tenancy Cleaning London Help Get Your Deposit Back?
           </h2>
         </div>
@@ -24,7 +25,7 @@ export default function TenancyDepositGuideSection() {
               <span className={styles.frameAccent} aria-hidden />
               <div className={styles.imgMain}>
                 <img
-                  src={`${imgBase}/about-three-img-1.png`}
+                  src={`${depositImgBase}/main.png`}
                   alt="Professional end of tenancy cleaning in London"
                   loading="lazy"
                 />
@@ -32,7 +33,7 @@ export default function TenancyDepositGuideSection() {
 
               <div className={styles.imgSecondary}>
                 <img
-                  src={`${imgBase}/about-three-img-2.jpg`}
+                  src={`${depositImgBase}/secondary.png`}
                   alt="Cleaning team preparing for property handover"
                   loading="lazy"
                 />

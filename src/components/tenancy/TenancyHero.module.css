@@ -1,9 +1,9 @@
-/* End of Tenancy hero — Tidytouch layout, homepage typography */
+/* End of Tenancy hero — Clean360 background with black overlay */
 
 .hero {
   position: relative;
   overflow: hidden;
-  background: var(--primary-dark);
+  background: #000;
   min-height: clamp(520px, 72vh, 720px);
 }
 
@@ -22,7 +22,7 @@
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: center right;
+  background-position: center;
   transform: scale(1.05);
 }
 
@@ -32,9 +32,8 @@
   background: linear-gradient(
     90deg,
     rgba(0, 0, 0, 0.82) 0%,
-    rgba(0, 0, 0, 0.78) 42%,
-    rgba(0, 0, 0, 0.5) 62%,
-    rgba(0, 0, 0, 0.2) 100%
+    rgba(0, 0, 0, 0.72) 45%,
+    rgba(0, 0, 0, 0.55) 100%
   );
 }
 
@@ -51,111 +50,7 @@
 
 .content {
   max-width: 780px;
-  width: min(100%, 58%);
-}
-
-.mainImg {
-  position: absolute;
-  right: clamp(0px, 2vw, 32px);
-  bottom: 0;
-  z-index: 2;
-  display: flex;
-  align-items: flex-end;
-  gap: clamp(14px, 2vw, 28px);
-  width: min(42vw, 520px);
-  pointer-events: none;
-}
-
-.mainImgPerson {
-  position: relative;
-  z-index: 2;
-  flex: 1;
-  display: block;
-  width: auto;
-  max-width: min(38vw, 460px);
-  height: auto;
-  max-height: clamp(380px, 48vw, 620px);
-  object-fit: contain;
-  object-position: right bottom;
-}
-
-@media (max-width: 1366px) {
-  .content {
-    width: min(100%, 64%);
-  }
-
-  .mainImg {
-    width: min(40vw, 460px);
-  }
-
-  .mainImgPerson {
-    max-width: min(36vw, 420px);
-    max-height: clamp(340px, 44vw, 560px);
-  }
-}
-
-.bottomShape {
-  position: relative;
-  flex-shrink: 0;
-  width: clamp(80px, 9vw, 130px);
-  height: auto;
-  margin-bottom: clamp(48px, 8vw, 88px);
-  opacity: 0.9;
-  pointer-events: none;
-}
-
-@media (max-width: 1199px) {
-  .content {
-    width: min(100%, 68%);
-  }
-
-  .content :global(.bottom) {
-    flex-wrap: wrap;
-    gap: 14px;
-  }
-
-  .content :global(.bottomBtn) :global(.thmBtn) {
-    padding: 12px 24px;
-    font-size: 14px;
-  }
-
-  .mainImg {
-    width: min(38vw, 400px);
-  }
-
-  .mainImgPerson {
-    max-width: min(34vw, 360px);
-    max-height: 480px;
-  }
-
-  .bottomShape {
-    width: clamp(64px, 8vw, 100px);
-    margin-bottom: clamp(40px, 7vw, 72px);
-  }
-}
-
-@media (max-width: 1024px) {
-  .overlay {
-    background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.88) 0%,
-      rgba(0, 0, 0, 0.82) 55%,
-      rgba(0, 0, 0, 0.55) 100%
-    );
-  }
-
-  .content {
-    width: min(100%, 72%);
-  }
-
-  .mainImg {
-    width: min(36vw, 340px);
-  }
-
-  .mainImgPerson {
-    max-width: min(32vw, 300px);
-    max-height: 420px;
-  }
+  width: 100%;
 }
 
 @media (max-width: 1100px) {
@@ -164,59 +59,16 @@
   }
 
   .item {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     min-height: auto;
   }
 
   .container {
-    order: 1;
-    align-items: flex-start;
-    width: 100%;
     padding-top: clamp(48px, 7vw, 72px);
     padding-bottom: clamp(24px, 4vw, 40px);
-  }
-
-  .content {
-    max-width: none;
-    width: 100%;
-  }
-
-  .mainImg {
-    order: 2;
-    position: relative;
-    right: auto;
-    justify-content: center;
-    gap: clamp(14px, 4vw, 24px);
-    width: min(100%, 420px);
-    margin: 0 auto clamp(32px, 5vw, 48px);
-  }
-
-  .bottomShape {
-    width: clamp(70px, 18vw, 110px);
-    margin-bottom: clamp(36px, 8vw, 64px);
-  }
-
-  .mainImgPerson {
-    max-width: min(100%, 320px);
-    max-height: 380px;
-    margin: 0;
   }
 
   .overlay {
     background: rgba(0, 0, 0, 0.78);
-  }
-
-  .bgInner {
-    background-position: center;
-  }
-}
-
-@media (max-width: 991px) {
-  .container {
-    padding-top: clamp(48px, 7vw, 72px);
-    padding-bottom: clamp(24px, 4vw, 40px);
   }
 }
 
@@ -228,35 +80,12 @@
   .overlay {
     background: rgba(0, 0, 0, 0.82);
   }
-
-  .mainImg {
-    width: min(100%, 320px);
-  }
-
-  .mainImgPerson {
-    max-height: 300px;
-  }
 }
 
 @media (max-width: 575px) {
   .container {
     padding-top: 36px;
     padding-bottom: 20px;
-  }
-
-  .mainImg {
-    width: 100%;
-    margin-bottom: 28px;
-  }
-
-  .mainImgPerson {
-    max-height: 260px;
-  }
-}
-
-@media (max-width: 399px) {
-  .mainImgPerson {
-    max-height: 220px;
   }
 }
 

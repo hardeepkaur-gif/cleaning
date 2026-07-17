@@ -77,12 +77,12 @@ export default function TenancyWhyChooseAltSection() {
   return (
     <section
       className={`${styles.why} ${local.section}`}
-      id="tenancy-why-choose-alt"
-      aria-labelledby="tenancy-why-choose-alt-title"
+      id="tenancy-why-choose"
+      aria-labelledby="tenancy-why-choose-title"
     >
       <div className={styles.container}>
         <div className={styles.header}>
-          <h2 className={styles.title} id="tenancy-why-choose-alt-title">
+          <h2 className={styles.title} id="tenancy-why-choose-title">
             Why Choose Cleaning Services London
             <br />
             for End of Tenancy Cleaning
@@ -97,16 +97,13 @@ export default function TenancyWhyChooseAltSection() {
         </div>
 
         <div className={`${styles.problemGrid} ${local.grid}`}>
-          {items.map((item, index) => {
+          {items.map((item) => {
             const Icon = item.icon;
             return (
               <article
                 key={item.title}
                 className={`${styles.problemCard} ${local.card}`}
               >
-                <span className={styles.cardNum} aria-hidden>
-                  {String(index + 1).padStart(2, "0")}
-                </span>
                 <span className={`${styles.cardIcon} ${local.icon}`} aria-hidden>
                   <Icon />
                 </span>

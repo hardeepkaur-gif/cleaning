@@ -17,7 +17,7 @@ export const navItems: NavItem[] = [
       },
     ],
   },
-  { label: "Contact Us", href: "#contact" },
+  { label: "Contact Us", href: "/contact-us" },
 ];
 
 export const contactInfo = {
@@ -39,11 +39,11 @@ export const footerQuickLinks = [
   { label: "About Us", href: "#about" },
   { label: "Services", href: "#services" },
   { label: "End of Tenancy Cleaning", href: "/end-of-tenancy-cleaning" },
-  { label: "Contact Us", href: "#contact" },
+  { label: "Contact Us", href: "/contact-us" },
 ];
 
 export const footerLegalLinks = [
   { label: "Terms of Service", href: "#" },
   { label: "Privacy Policy", href: "#" },
-  { label: "Support", href: "#contact" },
+  { label: "Support", href: "/contact-us" },
 ];

@@ -15,13 +15,13 @@ export default function TenancyCtaSection() {
       <div className={styles.blobTeal} aria-hidden />
 
       <div className={styles.container}>
-        <div className={styles.grid}>
-          <div className={styles.copy}>
+        <div className={`${styles.grid} ${localStyles.grid}`}>
+          <div className={`${styles.copy} ${localStyles.copy}`}>
             <h2 className={styles.title} id="tenancy-cta-title">
               Need additional{" "}
               <span className={styles.highlightText}>services?</span>
             </h2>
-            <p className={styles.text}>
+            <p className={`${styles.text} ${localStyles.text}`}>
               Carpet cleaning, oven cleaning, deep cleaning and move-in cleaning
               can be added to your booking for a complete property handover
               solution.
@@ -34,7 +34,7 @@ export default function TenancyCtaSection() {
             </div>
           </div>
 
-          <div className={styles.visual}>
+          <div className={`${styles.visual} ${localStyles.visual}`}>
             <div className={`${styles.visualStage} ${localStyles.stage}`}>
               <div className={localStyles.laptopWrap}>
                 <div className={localStyles.laptop}>
@@ -46,13 +46,8 @@ export default function TenancyCtaSection() {
                         Add-on services
                       </span>
                       <h3 className={localStyles.screenTitle}>
-                        Need extra cleaning with your booking?
+                        Add extra cleaning to your booking
                       </h3>
-                      <p className={localStyles.screenText}>
-                        Contact our team to add carpet cleaning, oven cleaning,
-                        deep cleaning or move-in cleaning to your end of tenancy
-                        service.
-                      </p>
 
                       <ul className={localStyles.screenList}>
                         <li>
@@ -64,13 +59,6 @@ export default function TenancyCtaSection() {
                           Email your property details
                         </li>
                       </ul>
-
-                      <ThmButton
-                        href="/#contact"
-                        className={localStyles.screenBtn}
-                      >
-                        Contact Us Now
-                      </ThmButton>
                     </div>
                   </div>
                   <div className={localStyles.laptopBase} aria-hidden>

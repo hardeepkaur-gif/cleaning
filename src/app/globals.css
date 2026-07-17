@@ -34,6 +34,12 @@ body {
   background: var(--white);
 }
 
+/* Site-wide section spacing — hero (first section) excluded */
+main > section:not(:first-child) {
+  padding-top: 70px !important;
+  padding-bottom: 70px !important;
+}
+
 a {
   color: inherit;
 }
@@ -78,6 +84,7 @@ a {
   transition: all 0.3s linear;
   z-index: 1;
   text-decoration: none;
+  border: none;
 }
 
 .thmBtn:hover {
