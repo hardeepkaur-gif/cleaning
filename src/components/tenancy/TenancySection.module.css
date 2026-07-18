@@ -214,6 +214,18 @@
   }
 }
 
+@media (max-width: 767px) {
+  .section {
+    padding: 48px 0;
+  }
+
+  .floatingBadge {
+    right: 0;
+    bottom: -12px;
+    max-width: calc(100% - 20px);
+  }
+}
+
 @media (max-width: 575px) {
   .btnMain:global(.thmBtn) {
     width: auto;

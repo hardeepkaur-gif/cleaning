@@ -485,9 +485,19 @@
 }
 
 @media (max-width: 767px) {
+  .services {
+    padding: 48px 0;
+    overflow: hidden;
+  }
+
+  .tabButtons {
+    margin: 0;
+  }
+
   .tabButtons li {
     flex: 0 0 100%;
     max-width: 100%;
+    padding: 0 0 10px;
   }
 
   .tabLeft {

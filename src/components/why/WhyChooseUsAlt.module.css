@@ -248,6 +248,12 @@
   }
 }
 
+@media (max-width: 767px) {
+  .why {
+    padding: 48px 0;
+  }
+}
+
 @media (max-width: 575px) {
   .problemGrid {
     grid-template-columns: 1fr;

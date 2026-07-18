@@ -316,11 +316,13 @@
 
 @media (max-width: 991px) {
   .right {
-    min-height: 400px;
+    min-height: auto;
+    max-width: 100%;
   }
 
   .visualStage {
-    min-height: 400px;
+    min-height: auto;
+    padding-bottom: 0;
   }
 
   .rightShape {
@@ -329,12 +331,74 @@
 }
 
 @media (max-width: 767px) {
-  .img2 {
-    left: -20px;
-    bottom: -40px;
+  .section {
+    overflow: hidden;
+    padding: 48px 0;
   }
 
-  .rightShape {
+  .topHeader {
+    text-align: left;
+    margin-bottom: 28px;
+  }
+
+  .title {
+    font-size: clamp(24px, 6.2vw, 32px);
+  }
+
+  .grid {
+    gap: 28px;
+  }
+
+  .right {
+    margin-left: 0;
+    min-height: auto;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .visualStage {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    min-height: auto;
+    margin: 0 auto;
+    padding-bottom: 0;
+  }
+
+  .rightShape,
+  .img2,
+  .img3,
+  .img4,
+  .imgShape1,
+  .imgShape2,
+  .imgShape3,
+  .imgShape4 {
     display: none;
+  }
+
+  .imgBox {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+    aspect-ratio: 1;
+    border-width: 4px;
+  }
+
+  .mainImg {
+    border-width: 4px;
+  }
+}
+
+@media (max-width: 399px) {
+  .visualStage {
+    max-width: 260px;
+  }
+
+  .imgBox {
+    max-width: 240px;
   }
 }

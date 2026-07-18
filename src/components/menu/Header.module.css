@@ -503,33 +503,61 @@
     display: none;
   }
 
-  .mobileToggler {
-    display: flex;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 101;
+  .stickyHeader {
+    display: none;
+  }
+
+  .wrapperInner {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+  }
+
+  .left {
+    flex: 1;
+    min-width: 0;
   }
 
   .menuBox {
-    width: 100%;
-    order: 3;
+    width: auto;
+    order: unset;
+    flex-shrink: 0;
+    margin-left: auto;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .btnBox {
+    display: none;
+  }
+
+  .mobileToggler {
+    display: flex;
+    position: static;
+    transform: none;
+    z-index: 101;
   }
 
   .list {
     display: none;
-    position: absolute;
-    top: calc(100% + 10px);
-    right: 0;
+    position: fixed;
+    inset: 0;
+    top: 72px;
+    width: 100%;
+    min-width: 0;
+    max-width: none;
     background: var(--white);
     flex-direction: column;
-    min-width: 280px;
-    padding: 20px;
-    border-radius: var(--radius);
-    border: 1px solid rgba(14, 94, 91, 0.08);
-    box-shadow: 0 12px 40px rgba(10, 70, 68, 0.12);
-    z-index: 100;
+    align-items: stretch;
+    padding: 24px 20px 32px;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    overflow-y: auto;
+    z-index: 1000;
   }
 
   .listOpen {
@@ -569,10 +597,6 @@
   .stickyHeader .listSticky {
     display: none;
   }
-
-  .wrapperInner {
-    flex-wrap: wrap;
-  }
 }
 
 @media (max-width: 767px) {
@@ -586,5 +610,15 @@
 
   .logoImg {
     height: 42px;
+  }
+
+  .wrapperInner {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .list {
+    top: 64px;
+    padding: 20px 16px 28px;
   }
 }

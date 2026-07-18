@@ -40,6 +40,13 @@ main > section:not(:first-child) {
   padding-bottom: 70px !important;
 }
 
+@media (max-width: 767px) {
+  main > section:not(:first-child) {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+}
+
 a {
   color: inherit;
 }

@@ -292,6 +292,30 @@
   }
 }
 
+@media (max-width: 767px) {
+  .about {
+    padding: 48px 0;
+  }
+
+  .header {
+    text-align: left;
+    margin-bottom: 32px;
+  }
+
+  .grid {
+    gap: 40px;
+  }
+
+  .imgSecondary {
+    width: clamp(120px, 38%, 170px);
+  }
+
+  .seal {
+    width: 96px;
+    height: 96px;
+  }
+}
+
 @media (max-width: 480px) {
   .imgMain img {
     aspect-ratio: 4 / 4;

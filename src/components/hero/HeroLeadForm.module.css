@@ -525,9 +525,42 @@
 }
 
 @media (max-width: 767px) {
+  .hero {
+    min-height: auto;
+  }
+
+  .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
   .bottom {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .bottomBtn {
+    width: 100%;
+  }
+
+  .bottomBtn :global(.thmBtn) {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .formFrame {
+    padding: 14px;
+    border-radius: 20px;
+  }
+
+  .formCard {
+    padding: 20px 16px;
+  }
+
+  .formCardTransparent .submitBtn {
+    min-width: 0;
+    width: 100%;
   }
 }
 

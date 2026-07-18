@@ -122,8 +122,22 @@
 }
 
 @media (max-width: 767px) {
+  .section {
+    padding: 48px 0;
+    overflow: hidden;
+  }
+
   .grid {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .header {
+    text-align: left;
+    margin-bottom: 32px;
+  }
+
+  .tagline {
+    font-size: 14px;
   }
 }
