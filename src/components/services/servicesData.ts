@@ -40,7 +40,7 @@ export const servicesList: ServiceData[] = [
     label: "Domestic",
     title: "Domestic Cleaning Services London",
     text: "Available home cleaning in London for house owners, flat renters and hectic professionals. Choose regular cleaning one-off cleaning, weekly cleaning or fortnightly home cleaning to keep your property clean and tidy.",
-    href: "#contact",
+    href: "/domestic-cleaning-services",
     icon: FaHome,
     tabIcon: PiHouseLineDuotone,
     image: `${imgBase}/services-2-1.jpg`,

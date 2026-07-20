@@ -1,0 +1,11 @@
+@media (max-width: 575px) {
+  .navChips {
+    gap: 10px;
+  }
+
+  .chip {
+    width: 44px;
+    height: 44px;
+    font-size: 13px;
+  }
+}

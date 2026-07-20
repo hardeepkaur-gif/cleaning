@@ -1,0 +1,21 @@
+.imageWrap {
+  margin-bottom: 8px;
+}
+
+.imageWrap img {
+  border-radius: 8px;
+  object-fit: cover;
+  aspect-ratio: 4 / 5;
+}
+
+@media (max-width: 991px) {
+  .imageWrap img {
+    aspect-ratio: 16 / 11;
+  }
+}
+
+@media (max-width: 575px) {
+  .imageWrap img {
+    aspect-ratio: 4 / 3;
+  }
+}

@@ -1,0 +1,21 @@
+/* 8-card grid override */
+
+.cardTitle {
+  color: var(--primary-dark);
+}
+
+.grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1199px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 991px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

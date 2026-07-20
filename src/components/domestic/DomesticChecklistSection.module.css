@@ -1,0 +1,92 @@
+.panelCopy {
+
+  margin-bottom: 16px;
+
+}
+
+
+
+.panelTitle {
+
+  margin: 0 0 10px;
+
+  font-family: var(--font-two);
+
+  font-size: clamp(18px, 1.8vw, 22px);
+
+  font-weight: 700;
+
+  line-height: 1.3;
+
+  color: var(--primary-dark);
+
+}
+
+
+
+.panelIntro {
+
+  margin: 0;
+
+  font-size: clamp(14px, 1.3vw, 16px);
+
+  line-height: 1.7;
+
+  color: var(--gray);
+
+}
+
+
+
+.plusMark {
+
+  background: var(--primary);
+
+}
+
+
+
+.excludeMark {
+
+  background: var(--cta);
+
+}
+
+
+
+.excludedPanel {
+
+  border-color: rgba(226, 106, 76, 0.14);
+
+}
+
+
+
+.excludeItem {
+
+  background: rgba(226, 106, 76, 0.06);
+
+}
+
+
+
+.excludeItem:hover {
+
+  border-color: rgba(226, 106, 76, 0.18);
+
+  background: rgba(255, 255, 255, 0.92);
+
+}
+
+
+
+@media (max-width: 767px) {
+
+  .panelCopy {
+
+    margin-bottom: 14px;
+
+  }
+
+}
+

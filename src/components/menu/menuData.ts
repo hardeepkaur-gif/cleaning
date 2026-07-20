@@ -12,6 +12,10 @@ export const navItems: NavItem[] = [
     href: "#services",
     children: [
       {
+        label: "Domestic Cleaning Services",
+        href: "/domestic-cleaning-services",
+      },
+      {
         label: "End of Tenancy Cleaning",
         href: "/end-of-tenancy-cleaning",
       },
@@ -38,6 +42,7 @@ export const footerQuickLinks = [
   { label: "Home", href: "#home" },
   { label: "About Us", href: "#about" },
   { label: "Services", href: "#services" },
+  { label: "Domestic Cleaning Services", href: "/domestic-cleaning-services" },
   { label: "End of Tenancy Cleaning", href: "/end-of-tenancy-cleaning" },
   { label: "Contact Us", href: "/contact-us" },
 ];
