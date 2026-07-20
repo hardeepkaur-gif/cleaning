@@ -25,13 +25,33 @@
   margin: 0;
 }
 
-/* ===== Radial layout ===== */
-.radial {
+/* ===== Radial layout (desktop) ===== */
+.desktopRadial {
   position: relative;
   display: flex;
   flex-direction: column;
   gap: clamp(22px, 3vw, 34px);
   padding: 0;
+}
+
+.mobileFlow {
+  display: none;
+}
+
+.mobileConnectorSvg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 3;
+  overflow: visible;
+}
+
+.mobileNodeDot {
+  fill: var(--white);
+  stroke: rgba(14, 94, 91, 0.35);
+  stroke-width: 2;
 }
 
 .connectorSvg {
@@ -280,72 +300,110 @@
 
 /* ===== Responsive ===== */
 @media (max-width: 991px) {
-  .hub {
-    position: relative;
-    left: auto;
-    top: auto;
-    transform: none;
-    margin: 0 auto 8px;
-    order: -1;
-    width: 168px;
-    pointer-events: auto;
-  }
-
-  .hubRingSpin {
-    animation: none;
-  }
-
-  .radial {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-
-  .processRow {
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .sideLeft,
-  .sideRight {
-    width: 100%;
-    justify-content: stretch;
-  }
-
-  .connectorSvg {
+  .desktopRadial {
     display: none;
   }
 
-  .card,
-  .cardLeft,
-  .cardRight {
-    flex-direction: row;
-    text-align: left;
-    border-radius: 20px;
-    width: 100%;
+  .mobileFlow {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding-left: 28px;
   }
 
-  .cardLeft .stepLine {
+  .mobileFlow .card,
+  .mobileFlow .cardLeft,
+  .mobileFlow .cardRight {
+    position: relative;
+    z-index: 1;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    border-radius: 16px;
+    width: 100%;
+    padding: 16px 18px;
+    gap: 14px;
+  }
+
+  .mobileFlow .cardLeft .stepLine {
     margin-left: 0;
+  }
+
+  .mobileFlow .cardIconWrap {
+    width: 52px;
+    height: 52px;
+  }
+
+  .mobileFlow .cardIcon {
+    font-size: 24px;
+  }
+
+  .mobileFlow .stepTitle {
+    font-size: 17px;
+  }
+
+  .mobileFlow .stepText {
+    font-size: 14px;
+    line-height: 1.65;
   }
 }
 
-@media (max-width: 575px) {
-  .card {
-    flex-direction: column;
-    align-items: flex-start;
-    border-radius: 18px;
+@media (max-width: 767px) {
+  .section {
+    padding-bottom: 48px;
+    overflow: hidden;
   }
 
-  .cardLeft {
-    align-items: flex-start;
+  .topHeader {
     text-align: left;
+    margin-bottom: 28px;
+  }
+
+  .title {
+    font-size: clamp(24px, 6.2vw, 32px);
+  }
+
+  .mobileFlow {
+    gap: 12px;
+  }
+
+  .mobileFlow .card,
+  .mobileFlow .cardLeft,
+  .mobileFlow .cardRight {
+    padding: 14px 16px;
+    border-radius: 14px;
+  }
+
+  .mobileFlow .cardIconWrap {
+    width: 48px;
+    height: 48px;
+  }
+
+  .mobileFlow .cardIcon {
+    font-size: 22px;
+  }
+
+  .mobileFlow .stepTitle {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .mobileFlow .stepLine {
+    width: 28px;
+    height: 2px;
+    margin-bottom: 6px;
+  }
+
+  .mobileFlow .stepText {
+    font-size: 13px;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .hubRingSpin,
-  .connectorPathActive {
+  .connectorPathActive,
+  .mobileConnectorSvg animateMotion {
     animation: none;
   }
 }

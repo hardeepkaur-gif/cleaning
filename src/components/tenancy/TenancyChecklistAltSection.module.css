@@ -455,7 +455,24 @@
 
 @media (max-width: 991px) {
   .rail {
-    grid-template-columns: repeat(3, minmax(140px, 1fr));
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    overflow-x: visible;
+    height: auto;
+    padding: 12px;
+  }
+
+  .railBtn,
+  .railBtnActive {
+    min-width: 0;
+    min-height: auto;
+    transform: none;
+  }
+
+  .railBtn:hover,
+  .railBtnActive {
+    transform: none;
   }
 
   .content {
@@ -474,13 +491,85 @@
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .section {
-    padding: clamp(56px, 8vw, 70px) 0;
+    padding: 48px 0;
+    overflow: hidden;
   }
 
   .header {
     text-align: left;
+    margin-bottom: 28px;
+  }
+
+  .title {
+    font-size: clamp(24px, 6.2vw, 32px);
+  }
+
+  .stage {
+    gap: 14px;
+  }
+
+  .rail {
+    padding: 10px;
+    border-radius: 16px;
+  }
+
+  .railBtn,
+  .railBtnActive {
+    padding: 10px;
+    grid-template-columns: 36px 1fr auto;
+    gap: 8px;
+    border-radius: 12px;
+  }
+
+  .railIcon {
+    width: 36px;
+    height: 36px;
+    font-size: 17px;
+    border-radius: 10px;
+  }
+
+  .railLabel {
+    font-size: 13px;
+  }
+
+  .railMeta {
+    font-size: 10px;
+  }
+
+  .railIndex {
+    font-size: 12px;
+  }
+
+  .panel {
+    padding: 14px;
+    border-radius: 16px;
+  }
+
+  .media {
+    min-height: 200px;
+    height: 200px;
+    border-radius: 14px;
+  }
+
+  .checklist {
+    gap: 8px;
+  }
+
+  .checkItem {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .note {
+    text-align: left;
+  }
+}
+
+@media (max-width: 575px) {
+  .section {
+    padding: clamp(56px, 8vw, 70px) 0;
   }
 
   .intro,
@@ -492,19 +581,36 @@
 
   .panel,
   .rail {
-    border-radius: 18px;
+    border-radius: 14px;
   }
 
   .panel {
-    padding: 18px;
+    padding: 12px;
   }
 
-  .content {
-    width: 100%;
+  .railBtn,
+  .railBtnActive {
+    padding: 10px 8px;
+    grid-template-columns: 32px 1fr auto;
+    gap: 6px;
   }
 
-  .contentHead {
-    padding: 14px 16px;
-    border-radius: 16px;
+  .railIcon {
+    width: 32px;
+    height: 32px;
+    font-size: 15px;
+  }
+
+  .railLabel {
+    font-size: 12px;
+  }
+
+  .railIndex {
+    font-size: 11px;
+  }
+
+  .media {
+    min-height: 180px;
+    height: 180px;
   }
 }

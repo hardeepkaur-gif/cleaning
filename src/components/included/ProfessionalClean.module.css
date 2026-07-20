@@ -336,6 +336,10 @@
     padding: 48px 0;
   }
 
+  .section.sectionTightTop {
+    padding-top: 28px !important;
+  }
+
   .topHeader {
     text-align: left;
     margin-bottom: 28px;

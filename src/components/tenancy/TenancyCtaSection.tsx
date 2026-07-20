@@ -26,8 +26,11 @@ export default function TenancyCtaSection() {
               can be added to your booking for a complete property handover
               solution.
             </p>
-            <div className={styles.btnBox}>
-              <ThmButton href="/#contact" className={styles.ctaBtn}>
+            <div className={`${styles.btnBox} ${localStyles.btnBox}`}>
+              <ThmButton
+                href="/#contact"
+                className={`${styles.ctaBtn} ${localStyles.ctaBtn}`}
+              >
                 <FaCalendarCheck aria-hidden />
                 Request a Quote
               </ThmButton>

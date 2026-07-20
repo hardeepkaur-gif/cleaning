@@ -7,6 +7,7 @@ import {
 } from "react-icons/pi";
 import ThmButton from "@/components/menu/ThmButton";
 import styles from "@/components/cta/CtaSectionFour.module.css";
+import local from "./TenancyIncludedCtaSection.module.css";
 
 const trustPoints = [
   "DBS-checked cleaners",
@@ -49,9 +50,17 @@ export default function TenancyIncludedCtaSection() {
 
               <div className={styles.actionRow}>
                 <div className={styles.btnWrap}>
-                  <ThmButton href="/#contact" className={styles.ctaBtn}>
+                  <ThmButton
+                    href="/#contact"
+                    className={`${styles.ctaBtn} ${local.ctaBtn}`}
+                  >
                     <FaCalendarCheck aria-hidden />
-                    Book Your End of Tenancy Cleaning Today
+                    <span className={local.btnTextDesktop}>
+                      Book Your End of Tenancy Cleaning Today
+                    </span>
+                    <span className={local.btnTextMobile}>
+                      Book Tenancy Cleaning Today
+                    </span>
                   </ThmButton>
                   <span className={styles.btnNote}>
                     Free quote · No obligation

@@ -66,6 +66,15 @@ const steps: ProcessStep[] = [
   },
 ];
 
+type MobileConnector = {
+  width: number;
+  height: number;
+  lineX: number;
+  points: { y: number }[];
+  segments: LineCoords[];
+  fullPath: string;
+};
+
 const leftSteps = steps.slice(0, 3);
 const rightSteps = steps.slice(3, 6);
 
@@ -74,11 +83,13 @@ function StepCard({
   index,
   side,
   cardRef,
+  iconRef,
 }: {
   step: ProcessStep;
   index: number;
   side: "left" | "right";
   cardRef?: (el: HTMLElement | null) => void;
+  iconRef?: (el: HTMLDivElement | null) => void;
 }) {
   const Icon = step.icon;
 
@@ -93,7 +104,7 @@ function StepCard({
         } as CSSProperties
       }
     >
-      <div className={styles.cardIconWrap}>
+      <div className={styles.cardIconWrap} ref={iconRef}>
         <span className={styles.cardIconArc} aria-hidden />
         <span className={styles.cardIcon}>
           <Icon aria-hidden />
@@ -115,10 +126,61 @@ export default function ProcessSectionFour() {
   const radialRef = useRef<HTMLDivElement>(null);
   const hubRef = useRef<HTMLDivElement>(null);
   const hubRingRef = useRef<HTMLDivElement>(null);
+  const mobileFlowRef = useRef<HTMLDivElement>(null);
   const leftRefs = useRef<(HTMLElement | null)[]>([]);
   const rightRefs = useRef<(HTMLElement | null)[]>([]);
+  const mobileIconRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [lines, setLines] = useState<LineCoords[]>([]);
   const [svgSize, setSvgSize] = useState({ width: 0, height: 0 });
+  const [mobileConnector, setMobileConnector] = useState<MobileConnector | null>(
+    null,
+  );
+
+  const updateMobileConnector = () => {
+    const flow = mobileFlowRef.current;
+    if (!flow) return;
+
+    const flowRect = flow.getBoundingClientRect();
+    if (flowRect.width === 0) return;
+
+    const icons = mobileIconRefs.current.filter(Boolean) as HTMLDivElement[];
+    if (icons.length < 2) return;
+
+    const lineX = 12;
+
+    const points = icons.map((icon) => {
+      const rect = icon.getBoundingClientRect();
+      return { y: rect.top + rect.height / 2 - flowRect.top };
+    });
+
+    const segments: LineCoords[] = [];
+    for (let i = 0; i < points.length - 1; i += 1) {
+      segments.push({
+        x1: lineX,
+        y1: points[i].y,
+        x2: lineX,
+        y2: points[i + 1].y,
+      });
+    }
+
+    const forwardPath = points
+      .map((point, index) => `${index === 0 ? "M" : "L"} ${lineX} ${point.y}`)
+      .join(" ");
+    const reversePath = [...points]
+      .reverse()
+      .slice(1)
+      .map((point) => `L ${lineX} ${point.y}`)
+      .join(" ");
+
+    setMobileConnector({
+      width: flowRect.width,
+      height: flowRect.height,
+      lineX,
+      points,
+      segments,
+      fullPath: `${forwardPath} ${reversePath}`,
+    });
+  };
 
   useLayoutEffect(() => {
     const updateLines = () => {
@@ -184,6 +246,27 @@ export default function ProcessSectionFour() {
     };
   }, []);
 
+  useLayoutEffect(() => {
+    updateMobileConnector();
+    const raf = requestAnimationFrame(updateMobileConnector);
+
+    const ro = new ResizeObserver(updateMobileConnector);
+    if (mobileFlowRef.current) ro.observe(mobileFlowRef.current);
+
+    window.addEventListener("resize", updateMobileConnector);
+    return () => {
+      cancelAnimationFrame(raf);
+      ro.disconnect();
+      window.removeEventListener("resize", updateMobileConnector);
+    };
+  }, []);
+
+  const handleMobileIconRef =
+    (index: number) => (el: HTMLDivElement | null) => {
+      mobileIconRefs.current[index] = el;
+      if (el) requestAnimationFrame(updateMobileConnector);
+    };
+
   return (
     <section className={styles.section} aria-labelledby="process-four-title">
       <div className={styles.container}>
@@ -193,7 +276,7 @@ export default function ProcessSectionFour() {
           </h2>
         </div>
 
-        <div ref={radialRef} className={styles.radial}>
+        <div ref={radialRef} className={styles.desktopRadial}>
           {svgSize.width > 0 && (
             <svg
               className={styles.connectorSvg}
@@ -281,6 +364,78 @@ export default function ProcessSectionFour() {
                 />
               </div>
             </div>
+          ))}
+        </div>
+
+        <div ref={mobileFlowRef} className={styles.mobileFlow}>
+          {mobileConnector && mobileConnector.width > 0 && (
+            <svg
+              className={styles.mobileConnectorSvg}
+              width={mobileConnector.width}
+              height={mobileConnector.height}
+              aria-hidden
+            >
+              {mobileConnector.segments.map((line, i) => {
+                const lineLen = Math.hypot(
+                  line.x2 - line.x1,
+                  line.y2 - line.y1,
+                );
+                const delay = i * 0.4;
+
+                return (
+                  <g key={i}>
+                    <line
+                      x1={line.x1}
+                      y1={line.y1}
+                      x2={line.x2}
+                      y2={line.y2}
+                      className={styles.connectorPath}
+                    />
+                    <line
+                      x1={line.x1}
+                      y1={line.y1}
+                      x2={line.x2}
+                      y2={line.y2}
+                      className={styles.connectorPathActive}
+                      style={
+                        {
+                          "--line-len": lineLen,
+                          "--line-delay": `${delay}s`,
+                        } as CSSProperties
+                      }
+                    />
+                  </g>
+                );
+              })}
+
+              {mobileConnector.points.map((point, i) => (
+                <circle
+                  key={i}
+                  cx={mobileConnector.lineX}
+                  cy={point.y}
+                  r={4}
+                  className={styles.mobileNodeDot}
+                />
+              ))}
+
+              <circle r={5.5} className={styles.connectorDot}>
+                <animateMotion
+                  dur="14s"
+                  repeatCount="indefinite"
+                  path={mobileConnector.fullPath}
+                />
+              </circle>
+            </svg>
+          )}
+
+          {steps.map((step, index) => (
+            <StepCard
+              key={step.title}
+              step={step}
+              index={index}
+              side="right"
+              iconRef={handleMobileIconRef(index)}
+            />
           ))}
         </div>
       </div>

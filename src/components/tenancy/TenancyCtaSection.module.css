@@ -215,6 +215,28 @@
     gap: 32px;
   }
 
+  .copy {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .btnBox {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .copy .ctaBtn:global(.thmBtn) {
+    width: auto;
+    justify-content: center;
+    padding: 14px 28px;
+  }
+
   .visual {
     justify-content: center;
   }
@@ -233,5 +255,11 @@
 @media (max-width: 575px) {
   .laptopWrap {
     max-width: 240px;
+  }
+
+  .copy .ctaBtn:global(.thmBtn) {
+    width: auto;
+    padding: 14px 24px;
+    font-size: 14px;
   }
 }

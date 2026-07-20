@@ -199,13 +199,15 @@
     gap: 40px;
   }
 
-  .media {
-    max-width: 480px;
-    margin: 0 auto;
+  .copy {
+    order: -1;
+    max-width: none;
   }
 
-  .copy {
-    max-width: none;
+  .media {
+    order: 1;
+    max-width: 480px;
+    margin: 0 auto;
   }
 
   .floatingBadge {

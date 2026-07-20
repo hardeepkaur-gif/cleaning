@@ -63,6 +63,14 @@
   position: relative;
 }
 
+.innerDesktop {
+  display: block;
+}
+
+.innerMobile {
+  display: none;
+}
+
 .tabButtonsBox {
   margin: 0 auto 30px;
 }
@@ -309,6 +317,14 @@
   z-index: 1;
 }
 
+.tabHead {
+  position: relative;
+}
+
+.tabHeadText {
+  min-width: 0;
+}
+
 .tabLabel {
   display: inline-block;
   font-family: var(--font-two);
@@ -490,6 +506,90 @@
     overflow: hidden;
   }
 
+  .innerDesktop {
+    display: none;
+  }
+
+  .innerMobile {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .mobileItem {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .mobileItem .tabBtn {
+    width: 100%;
+  }
+
+  .mobileItem .tabBtnInner {
+    min-height: 58px;
+    padding: 10px 12px;
+    gap: 10px;
+  }
+
+  .mobileItem .tabIconWrap {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+  }
+
+  .mobileItem .tabIconMain {
+    font-size: 22px;
+  }
+
+  .mobilePanel {
+    animation: mobilePanelIn 0.35s ease forwards;
+  }
+
+  .mobilePanel .tabLeftInner {
+    padding: 0;
+  }
+
+  .mobilePanel .tabHead {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .mobilePanel .tabHeadText {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .mobilePanel .tabHead .shape2 {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    flex-shrink: 0;
+    width: 52px;
+    margin-top: 2px;
+  }
+
+  .mobilePanel .shape1 {
+    display: none;
+  }
+
+  .mobilePanel .btnBox {
+    justify-content: flex-start;
+  }
+
+  .mobilePanel .btnBox :global(.thmBtn) {
+    width: auto;
+    justify-content: flex-start;
+  }
+
+  .mobilePanel .tabLeft {
+    padding: 16px;
+  }
+
   .tabButtons {
     margin: 0;
   }
@@ -497,7 +597,8 @@
   .tabButtons li {
     flex: 0 0 100%;
     max-width: 100%;
-    padding: 0 0 10px;
+    padding: 0;
+    margin-bottom: 0;
   }
 
   .tabLeft {
@@ -523,14 +624,20 @@
   }
 }
 
-@media (max-width: 575px) {
-  .btnBox {
-    flex-wrap: wrap;
+@keyframes mobilePanelIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-  .btnBox :global(.thmBtn) {
-    width: 100%;
-    justify-content: center;
+@media (max-width: 575px) {
+  .innerDesktop .btnBox {
+    flex-wrap: wrap;
   }
 
   .imageBadge {

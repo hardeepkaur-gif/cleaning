@@ -8,7 +8,7 @@ import styles from "./WhatMakesDifferent.module.css";
 export default function WhatMakesDifferent() {
   return (
     <section
-      className={styles.section}
+      className={`${styles.section} ${styles.sectionTightTop}`}
       id="what-makes-us-different"
       aria-labelledby="different-title"
     >

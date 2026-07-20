@@ -306,11 +306,26 @@
     gap: 40px;
   }
 
+  .frame {
+    padding-left: 20px;
+    padding-right: 8px;
+  }
+
+  .frameAccent {
+    left: 0;
+    top: -12px;
+    width: 58%;
+    height: 50%;
+  }
+
   .imgSecondary {
     width: clamp(120px, 38%, 170px);
+    right: 0;
   }
 
   .seal {
+    left: 4px;
+    bottom: 8px;
     width: 96px;
     height: 96px;
   }

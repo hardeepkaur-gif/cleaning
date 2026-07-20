@@ -11,7 +11,7 @@ import styles from "./ProfessionalClean.module.css";
 export default function ProfessionalClean() {
   return (
     <section
-      className={styles.section}
+      className={`${styles.section} ${styles.sectionTightTop}`}
       id="professional-clean"
       aria-labelledby="included-title"
     >

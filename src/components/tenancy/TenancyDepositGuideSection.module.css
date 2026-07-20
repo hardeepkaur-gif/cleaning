@@ -1,0 +1,13 @@
+@media (max-width: 991px) {
+  .grid {
+    display: grid;
+  }
+
+  .content {
+    order: -1;
+  }
+
+  .media {
+    order: 1;
+  }
+}

@@ -1,4 +1,5 @@
 import styles from "@/components/about/AboutUs.module.css";
+import local from "./TenancyDepositGuideSection.module.css";
 
 const imgBase = "/images/about/cleanon";
 const depositImgBase = "/images/tenancy/deposit";
@@ -19,8 +20,8 @@ export default function TenancyDepositGuideSection() {
           </h2>
         </div>
 
-        <div className={styles.grid}>
-          <div className={styles.media}>
+        <div className={`${styles.grid} ${local.grid}`}>
+          <div className={`${styles.media} ${local.media}`}>
             <div className={styles.frame}>
               <span className={styles.frameAccent} aria-hidden />
               <div className={styles.imgMain}>
@@ -58,7 +59,7 @@ export default function TenancyDepositGuideSection() {
             </div>
           </div>
 
-          <div className={styles.content}>
+          <div className={`${styles.content} ${local.content}`}>
             <blockquote className={styles.callout}>
               <p>
                 The question is often asked by tenants and they are wondering whether

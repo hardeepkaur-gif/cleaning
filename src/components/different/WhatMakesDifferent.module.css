@@ -127,6 +127,10 @@
     overflow: hidden;
   }
 
+  .section.sectionTightTop {
+    padding-top: 28px !important;
+  }
+
   .grid {
     grid-template-columns: 1fr;
     gap: 20px;

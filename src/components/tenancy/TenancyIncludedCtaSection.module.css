@@ -1,0 +1,29 @@
+.btnTextMobile {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .btnTextDesktop {
+    display: none;
+  }
+
+  .btnTextMobile {
+    display: inline;
+  }
+
+  .ctaBtn:global(.thmBtn) {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .ctaBtn:global(.thmBtn svg) {
+    font-size: 15px;
+    flex-shrink: 0;
+  }
+}
