@@ -1,0 +1,145 @@
+.tableWrap {
+  margin-bottom: clamp(28px, 4vw, 36px);
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(14, 94, 91, 0.1);
+  background: var(--white);
+  box-shadow: 0 12px 32px rgba(10, 70, 68, 0.06);
+}
+
+.stage {
+  align-items: stretch;
+}
+
+.rail {
+  height: 100%;
+  min-height: 100%;
+  align-self: stretch;
+  gap: 8px;
+}
+
+.panel {
+  height: 100%;
+  min-height: 100%;
+  align-self: stretch;
+}
+
+.panelTop {
+  flex: 0 0 auto;
+  margin-bottom: 18px;
+}
+
+.railBtn {
+  grid-template-columns: 44px 1fr;
+  min-height: 52px;
+  padding: 10px 12px;
+  gap: 12px;
+}
+
+.railIcon {
+  width: 44px;
+  height: 44px;
+  font-size: 22px;
+}
+
+.railCopy {
+  flex-direction: row;
+  align-items: center;
+  gap: 0;
+}
+
+.panelCopy {
+  flex-shrink: 0;
+  margin-bottom: 8px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table thead {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+}
+
+.table th {
+  padding: clamp(14px, 1.8vw, 18px) clamp(16px, 2vw, 24px);
+  font-family: var(--font-two);
+  font-size: clamp(14px, 1.3vw, 16px);
+  font-weight: 700;
+  text-align: left;
+  color: var(--white);
+}
+
+.table td {
+  padding: clamp(12px, 1.6vw, 16px) clamp(16px, 2vw, 24px);
+  font-size: clamp(14px, 1.3vw, 16px);
+  line-height: 1.55;
+  color: var(--gray);
+  border-top: 1px solid rgba(14, 94, 91, 0.08);
+  vertical-align: middle;
+}
+
+.table td:first-child {
+  font-family: var(--font-two);
+  font-weight: 600;
+  color: var(--primary-dark);
+  width: 42%;
+}
+
+.tableRowActive td {
+  background: rgba(14, 94, 91, 0.05);
+}
+
+.tableBtn {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+
+.tableBtn:hover {
+  color: var(--cta);
+}
+
+.panelTitle {
+  margin: 0 0 12px;
+  font-family: var(--font-two);
+  font-size: clamp(20px, 2vw, 26px);
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--primary-dark);
+}
+
+.panelIntro {
+  margin: 0;
+  font-size: clamp(15px, 1.4vw, 17px);
+  line-height: 1.75;
+  color: var(--gray);
+}
+
+@media (max-width: 767px) {
+  .tableWrap {
+    overflow-x: auto;
+  }
+
+  .table {
+    min-width: 520px;
+  }
+
+  .panelCopy {
+    margin-bottom: 6px;
+  }
+}
+
+@media (max-width: 575px) {
+  .table th,
+  .table td {
+    padding: 12px 14px;
+  }
+}

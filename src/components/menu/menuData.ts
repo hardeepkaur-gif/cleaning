@@ -19,6 +19,10 @@ export const navItems: NavItem[] = [
         label: "End of Tenancy Cleaning",
         href: "/end-of-tenancy-cleaning",
       },
+      {
+        label: "Carpet Cleaning",
+        href: "/carpet-cleaning",
+      },
     ],
   },
   { label: "Contact Us", href: "/contact-us" },
@@ -44,6 +48,7 @@ export const footerQuickLinks = [
   { label: "Services", href: "#services" },
   { label: "Domestic Cleaning Services", href: "/domestic-cleaning-services" },
   { label: "End of Tenancy Cleaning", href: "/end-of-tenancy-cleaning" },
+  { label: "Carpet Cleaning", href: "/carpet-cleaning" },
   { label: "Contact Us", href: "/contact-us" },
 ];
 

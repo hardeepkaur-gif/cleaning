@@ -51,7 +51,7 @@ export const servicesList: ServiceData[] = [
     label: "Carpet",
     title: "Carpet Cleaning London",
     text: "Carpet cleaning London service not only helps you get rid of stains, lift embedded dirt, but at the same time it helps you protect your carpet investment, especially in high traffic areas.",
-    href: "#contact",
+    href: "/carpet-cleaning",
     icon: FaCouch,
     tabIcon: PiRugDuotone,
     image: `${imgBase}/services-2-2.jpg`,

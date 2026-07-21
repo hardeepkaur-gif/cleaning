@@ -1,0 +1,288 @@
+.section {
+  position: relative;
+  padding: clamp(70px, 8vw, 96px) 0;
+  background:
+    radial-gradient(
+      circle at 8% 20%,
+      rgba(14, 94, 91, 0.07) 0%,
+      transparent 42%
+    ),
+    radial-gradient(
+      circle at 92% 80%,
+      rgba(226, 106, 76, 0.08) 0%,
+      transparent 38%
+    ),
+    var(--white);
+  overflow: hidden;
+}
+
+.blobOne,
+.blobTwo {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.blobOne {
+  top: 10%;
+  right: 6%;
+  width: 180px;
+  height: 180px;
+  background: rgba(226, 106, 76, 0.08);
+}
+
+.blobTwo {
+  bottom: 8%;
+  left: 4%;
+  width: 140px;
+  height: 140px;
+  background: rgba(14, 94, 91, 0.07);
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 3vw, 24px);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: clamp(28px, 4vw, 40px);
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: rgba(14, 94, 91, 0.08);
+  font-family: var(--font-two);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-two);
+  font-size: clamp(28px, 3.4vw, 42px);
+  line-height: 1.25;
+  font-weight: 800;
+  color: var(--primary-dark);
+}
+
+.panel {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  gap: 0;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(14, 94, 91, 0.1);
+  box-shadow: 0 20px 56px rgba(10, 70, 68, 0.1);
+  background: var(--white);
+}
+
+.media {
+  position: relative;
+  min-height: 100%;
+  background: var(--primary-dark);
+}
+
+.imgWrap {
+  height: 100%;
+  min-height: 420px;
+}
+
+.imgWrap img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  object-fit: cover;
+}
+
+.mediaBadge {
+  position: absolute;
+  left: clamp(16px, 2vw, 24px);
+  bottom: clamp(16px, 2vw, 24px);
+  right: clamp(16px, 2vw, 24px);
+  padding: 16px 18px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(14, 94, 91, 0.1);
+  box-shadow: 0 12px 28px rgba(10, 70, 68, 0.12);
+}
+
+.mediaBadge strong {
+  display: block;
+  margin-bottom: 4px;
+  font-family: var(--font-two);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.mediaBadge span {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--gray);
+}
+
+.body {
+  padding: clamp(28px, 3.5vw, 40px) clamp(24px, 3vw, 36px);
+}
+
+.lead {
+  margin: 0 0 16px;
+  font-size: clamp(16px, 1.45vw, 18px);
+  line-height: 1.75;
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+.text {
+  margin: 0 0 24px;
+  font-size: clamp(15px, 1.35vw, 17px);
+  line-height: 1.75;
+  color: var(--gray);
+}
+
+.advantages {
+  padding: clamp(18px, 2.2vw, 24px);
+  border-radius: 18px;
+  background: linear-gradient(
+    135deg,
+    rgba(14, 94, 91, 0.05) 0%,
+    rgba(226, 106, 76, 0.05) 100%
+  );
+  border: 1px solid rgba(14, 94, 91, 0.08);
+}
+
+.advantagesIntro {
+  margin: 0 0 16px;
+  font-family: var(--font-two);
+  font-size: clamp(16px, 1.5vw, 18px);
+  font-weight: 700;
+  line-height: 1.45;
+  color: var(--primary-dark);
+}
+
+.advantageGrid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.advantageCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 100%;
+  padding: 14px 14px 14px 16px;
+  border-radius: 14px;
+  background: var(--white);
+  border: 1px solid rgba(14, 94, 91, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.advantageCard:hover {
+  transform: translateY(-3px);
+  border-color: rgba(14, 94, 91, 0.16);
+  box-shadow: 0 10px 24px rgba(10, 70, 68, 0.08);
+}
+
+.advantageNum {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  font-family: var(--font-two);
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1;
+  color: rgba(14, 94, 91, 0.1);
+}
+
+.advantageIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background: var(--primary);
+  color: var(--white);
+  font-size: 13px;
+}
+
+.advantageCard p {
+  margin: 0;
+  padding-right: 28px;
+  font-size: clamp(14px, 1.25vw, 15px);
+  line-height: 1.55;
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+.callout {
+  margin-top: 22px;
+  padding: 16px 18px;
+  border-left: 4px solid var(--cta);
+  border-radius: 0 14px 14px 0;
+  background: rgba(226, 106, 76, 0.06);
+}
+
+.callout p {
+  margin: 0;
+  font-size: clamp(14px, 1.3vw, 16px);
+  line-height: 1.75;
+  color: var(--gray);
+}
+
+@media (max-width: 991px) {
+  .panel {
+    grid-template-columns: 1fr;
+  }
+
+  .imgWrap {
+    min-height: 280px;
+  }
+
+  .advantageGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 575px) {
+  .body {
+    padding: 22px 18px;
+  }
+
+  .advantages {
+    padding: 16px;
+  }
+
+  .imgWrap {
+    min-height: 220px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .advantageCard {
+    transition: none;
+  }
+
+  .advantageCard:hover {
+    transform: none;
+  }
+}
