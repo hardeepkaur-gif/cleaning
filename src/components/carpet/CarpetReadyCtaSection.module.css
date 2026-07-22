@@ -1,0 +1,103 @@
+.cta {
+  padding: 0 0 clamp(50px, 7vw, 80px) !important;
+}
+
+.heroImg {
+  background-image: url("/images/tenancy/carpet-cleaning.png");
+}
+
+.note {
+  margin: 0 0 12px;
+  font-size: clamp(14px, 1.3vw, 16px);
+  line-height: 1.5;
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+.btnRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.ctaBtnAlt:global(.thmBtn) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 34px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  border-radius: 999px;
+  white-space: nowrap;
+  background: var(--white) !important;
+  color: var(--primary-dark) !important;
+  border: 2px solid var(--primary) !important;
+  box-shadow: 0 8px 24px rgba(10, 70, 68, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.ctaBtnAlt:global(.thmBtn:hover) {
+  transform: translateY(-3px);
+  background: var(--primary) !important;
+  color: var(--white) !important;
+  box-shadow: 0 12px 28px rgba(10, 70, 68, 0.18);
+}
+
+@media (max-width: 991px) {
+  .copy {
+    text-align: center;
+  }
+
+  .btnWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .btnRow {
+    justify-content: center;
+  }
+
+  .copy .ctaBtn:global(.thmBtn),
+  .ctaBtnAlt:global(.thmBtn) {
+    width: auto;
+    max-width: 100%;
+    justify-content: center;
+    padding: 14px 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cta {
+    padding: 0 0 48px !important;
+  }
+
+  .btnRow {
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .copy .ctaBtn:global(.thmBtn),
+  .ctaBtnAlt:global(.thmBtn) {
+    width: 100%;
+    padding: 14px 22px;
+    font-size: 14px;
+    white-space: normal;
+    text-align: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ctaBtnAlt:global(.thmBtn:hover) {
+    transform: none;
+  }
+}

@@ -38,36 +38,6 @@ export default function CarpetServicesSection() {
           <p className={styles.intro}>{carpetServicesIntro}</p>
         </header>
 
-        <div className={local.tableWrap}>
-          <table className={local.table}>
-            <thead>
-              <tr>
-                <th scope="col">Service</th>
-                <th scope="col">Best For</th>
-              </tr>
-            </thead>
-            <tbody>
-              {carpetServiceTabs.map((tab, index) => (
-                <tr
-                  key={tab.id}
-                  className={activeTab === index ? local.tableRowActive : ""}
-                >
-                  <td>
-                    <button
-                      type="button"
-                      className={local.tableBtn}
-                      onClick={() => setActiveTab(index)}
-                    >
-                      {tab.title}
-                    </button>
-                  </td>
-                  <td>{tab.bestFor}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-
         <div className={`${styles.stage} ${local.stage}`}>
           <div
             className={`${styles.rail} ${local.rail}`}
@@ -129,6 +99,10 @@ export default function CarpetServicesSection() {
 
             <div className={local.panelCopy}>
               <h3 className={local.panelTitle}>{active.title}</h3>
+              <p className={local.bestFor}>
+                <span className={local.bestForLabel}>Best For</span>
+                <span className={local.bestForText}>{active.bestFor}</span>
+              </p>
               <p className={local.panelIntro}>{active.description}</p>
             </div>
           </div>

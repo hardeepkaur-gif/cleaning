@@ -1,0 +1,18 @@
+.topHeader {
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro {
+  margin: 0;
+  font-size: clamp(15px, 1.4vw, 17px);
+  line-height: 1.75;
+  color: var(--gray);
+}
+
+@media (max-width: 767px) {
+  .topHeader {
+    text-align: left;
+  }
+}

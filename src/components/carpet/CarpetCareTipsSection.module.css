@@ -1,0 +1,13 @@
+.section {
+  padding: clamp(60px, 8vw, 100px) 0 0 !important;
+}
+
+.topHeader {
+  max-width: none;
+  width: 100%;
+}
+
+.intro {
+  max-width: none;
+  margin-bottom: 0;
+}
