@@ -23,9 +23,9 @@ import CarpetFaqSection from "@/components/carpet/CarpetFaqSection";
 import CarpetWorthItAltSection from "@/components/carpet/CarpetWorthItAltSection";
 
 export const metadata: Metadata = {
-  title: "Expert Carpet Cleaning London for Homes, Flats and Offices",
+  title: "Carpet Cleaning London In £30 | Professional Local Cleaners",
   description:
-    "Professional carpet cleaning London with deep steam cleaning and stain removal. Fixed quotations for homes, flats and offices across London.",
+    "Book carpet cleaning London with DBS-checked, insured cleaners. Steam carpet cleaning, stain removal, fixed pricing and East London coverage.",
 };
 
 export default function CarpetCleaningPage() {
