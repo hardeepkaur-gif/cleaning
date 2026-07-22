@@ -11,3 +11,17 @@
   max-width: none;
   margin-bottom: 0;
 }
+
+@media (max-width: 767px) {
+  .topHeader {
+    text-align: left;
+  }
+
+  .title {
+    font-size: clamp(24px, 6.2vw, 32px);
+  }
+
+  .intro {
+    text-align: left;
+  }
+}

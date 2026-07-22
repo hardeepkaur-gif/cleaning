@@ -8,7 +8,7 @@ export const carpetMovingParagraphs = [
   "If you are buying, renting or moving into a recently vacated property, arranging a professional carpet cleaning service before moving day is often easier and more effective than cleaning around furniture later.",
 ];
 
-export const carpetMovingImage = "/images/tenancy/tenants-moving-out.png";
+export const carpetMovingImage = "/images/carpet/clean-carpets-before-moving.webp";
 
 export const carpetMovingImageAlt =
   "Professional carpet cleaning before moving into a new London home";

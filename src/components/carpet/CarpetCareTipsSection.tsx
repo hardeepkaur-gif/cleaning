@@ -17,7 +17,10 @@ export default function CarpetCareTipsSection() {
     >
       <div className={styles.container}>
         <div className={`${styles.topHeader} ${local.topHeader}`}>
-          <h2 className={styles.title} id="carpet-care-tips-title">
+          <h2
+            className={`${styles.title} ${local.title}`}
+            id="carpet-care-tips-title"
+          >
             {carpetCareTipsTitle}
           </h2>
           <p className={`${styles.intro} ${local.intro}`}>{carpetCareTipsIntro}</p>

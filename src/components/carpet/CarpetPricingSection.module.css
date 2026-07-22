@@ -268,7 +268,7 @@
   }
 
   .table tbody tr {
-    padding: 14px 16px;
+    padding: 16px 14px;
     border-bottom: 1px solid rgba(14, 94, 91, 0.08);
   }
 
@@ -278,29 +278,86 @@
 
   .table tbody td {
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
-    gap: 16px;
-    padding: 8px 0 !important;
+    gap: 6px;
+    padding: 10px 0 !important;
     border-top: none;
     text-align: left !important;
     white-space: normal;
+    word-break: normal;
+    overflow-wrap: break-word;
   }
 
   .table tbody td::before {
     content: attr(data-label);
-    flex: 0 0 42%;
+    flex: none;
+    width: 100%;
+    max-width: 100%;
     font-family: var(--font-two);
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: var(--primary);
-    line-height: 1.45;
+    line-height: 1.4;
+  }
+
+  .table tbody td > * {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .colCardAlt .table tbody td,
+  .colCardAlt .table tbody td:first-child,
+  .colCard .table tbody td:first-child,
+  .colCard .table tbody td:last-child {
+    width: 100% !important;
+    text-align: left !important;
+    white-space: normal !important;
   }
 
   .colCardAlt .table tbody td::before {
     color: var(--cta);
+  }
+
+  .colCard {
+    padding: 16px 12px;
+  }
+
+  .price {
+    display: inline-block;
+    white-space: nowrap !important;
+  }
+
+  .title {
+    font-size: clamp(24px, 6.2vw, 32px);
+  }
+}
+
+@media (max-width: 575px) {
+  .table tbody tr {
+    padding: 14px 12px;
+  }
+
+  .table tbody td {
+    gap: 4px;
+    padding: 8px 0 !important;
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .table tbody td::before {
+    font-size: 10px;
+    margin-bottom: 2px;
+  }
+
+  .colCard {
+    padding: 14px 10px;
+  }
+
+  .note {
+    padding: 16px 18px;
   }
 }
 

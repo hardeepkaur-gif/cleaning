@@ -11,7 +11,7 @@ export const carpetCheapParagraphs = [
 export const carpetCheapClosing =
   "At Cleaning Services London, we provide fixed quotations, professional equipment and trained cleaners, thereby delivering long-lasting results without hidden costs or unnecessary shortcuts.";
 
-export const carpetCheapImage = "/images/tenancy/deep-cleaning.png";
+export const carpetCheapImage = "/images/carpet/cheap-carpet-cleaning.webp";
 
 export const carpetCheapImageAlt =
   "Professional carpet cleaning equipment used in London homes";

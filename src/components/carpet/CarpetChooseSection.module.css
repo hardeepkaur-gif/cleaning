@@ -16,3 +16,24 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 767px) {
+  .title {
+    text-align: left;
+    font-size: clamp(24px, 6.2vw, 32px);
+  }
+
+  .intro {
+    text-align: left;
+  }
+
+  .content {
+    min-height: 0;
+    padding-bottom: 24px;
+  }
+
+  .iconWrap {
+    width: 52px;
+    height: 52px;
+  }
+}

@@ -2,35 +2,37 @@
   align-items: stretch;
 }
 
-.rail {
-  height: 100%;
-  min-height: 100%;
-  align-self: stretch;
-  gap: 8px;
-}
+@media (min-width: 992px) {
+  .rail {
+    height: 100%;
+    min-height: 100%;
+    align-self: stretch;
+    gap: 8px;
+  }
 
-.panel {
-  height: 100%;
-  min-height: 100%;
-  align-self: stretch;
+  .panel {
+    height: 100%;
+    min-height: 100%;
+    align-self: stretch;
+  }
+
+  .railBtn {
+    grid-template-columns: 44px 1fr;
+    min-height: 52px;
+    padding: 10px 12px;
+    gap: 12px;
+  }
+
+  .railIcon {
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+  }
 }
 
 .panelTop {
   flex: 0 0 auto;
   margin-bottom: 18px;
-}
-
-.railBtn {
-  grid-template-columns: 44px 1fr;
-  min-height: 52px;
-  padding: 10px 12px;
-  gap: 12px;
-}
-
-.railIcon {
-  width: 44px;
-  height: 44px;
-  font-size: 22px;
 }
 
 .railCopy {
@@ -101,9 +103,21 @@
   color: var(--gray);
 }
 
+@media (max-width: 991px) {
+  .rail,
+  .panel {
+    height: auto;
+    min-height: 0;
+  }
+}
+
 @media (max-width: 767px) {
   .panelCopy {
     margin-bottom: 6px;
+  }
+
+  .panelTitle {
+    font-size: clamp(18px, 5vw, 22px);
   }
 
   .bestFor {

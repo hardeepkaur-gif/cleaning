@@ -237,6 +237,10 @@
     text-align: left;
   }
 
+  .title {
+    font-size: clamp(24px, 6.2vw, 32px);
+  }
+
   .grid {
     grid-template-columns: 1fr;
   }

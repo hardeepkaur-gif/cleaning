@@ -227,7 +227,10 @@ export default function CarpetProcessSection() {
     >
       <div className={styles.container}>
         <div className={`${styles.topHeader} ${local.topHeader}`}>
-          <h2 className={styles.title} id="carpet-process-title">
+          <h2
+            className={`${styles.title} ${local.title}`}
+            id="carpet-process-title"
+          >
             {carpetProcessTitle}
           </h2>
           <p className={local.intro}>{carpetProcessIntro}</p>

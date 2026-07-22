@@ -263,6 +263,16 @@
   }
 }
 
+@media (max-width: 767px) {
+  .header {
+    text-align: left;
+  }
+
+  .title {
+    font-size: clamp(24px, 6.2vw, 32px);
+  }
+}
+
 @media (max-width: 575px) {
   .body {
     padding: 22px 18px;

@@ -92,7 +92,10 @@ export default function CarpetBenefitsSection() {
         <div className={styles.layout}>
           <aside className={styles.aside}>
             <div className={styles.asideCard} ref={asideCardRef}>
-              <h2 className={styles.title} id="carpet-benefits-title">
+              <h2
+                className={`${styles.title} ${local.title}`}
+                id="carpet-benefits-title"
+              >
                 {carpetBenefitsTitle}
               </h2>
               <p className={styles.intro}>{carpetBenefitsIntro}</p>
@@ -141,7 +144,10 @@ export default function CarpetBenefitsSection() {
           </aside>
 
           <div className={styles.scrollWrap} ref={scrollWrapRef}>
-            <div className={styles.scrollPanel} ref={scrollPanelRef}>
+            <div
+              className={`${styles.scrollPanel} ${local.scrollPanel}`}
+              ref={scrollPanelRef}
+            >
               <ol className={styles.timeline}>
                 {carpetBenefitsItems.map((item, index) => {
                   const Icon = item.icon;

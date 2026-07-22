@@ -32,7 +32,7 @@ export const carpetServiceTabs: CarpetServiceTab[] = [
     shortLabel: "Deep Clean",
     bestFor: "Dirty, dull or heavily used carpets",
     icon: PiSparkleDuotone,
-    image: "/images/tenancy/carpet-cleaning.png",
+    image: "/images/carpet/deep-carpet-cleaning.webp",
     description:
       "For deep carpet cleaning we focus on the dirt, dust and debris that have been trapped deep within the carpet fibres that can't be removed by regular vacuuming. It can be used on heavily trafficked carpet that has become dull, discolored or worn through the use of a person.",
   },
@@ -42,7 +42,7 @@ export const carpetServiceTabs: CarpetServiceTab[] = [
     shortLabel: "Steam Clean",
     bestFor: "Hygiene, allergens and embedded dirt",
     icon: PiDropDuotone,
-    image: "/images/tenancy/faq/carpet.png",
+    image: "/images/carpet/steam-carpet-cleaning.webp",
     description:
       "When using steam carpet cleaning, the hot water is used to extract dirt, allergens and bacteria from a carpet's fibers. This is an effective way to enhance cleanliness and to revitalize the look of carpets in residences and businesses alike.",
   },
@@ -52,7 +52,7 @@ export const carpetServiceTabs: CarpetServiceTab[] = [
     shortLabel: "Stain Removal",
     bestFor: "Wine, coffee, mud, food and pet stains",
     icon: PiWarningCircleDuotone,
-    image: "/images/tenancy/deep-cleaning.png",
+    image: "/images/carpet/carpet-stain-removal.webp",
     description:
       "We remove all common stains on carpet such as food, drinks, mud and pet accidents. Each stain is treated on a case-by-case basis which enables us to choose the best methods for treating the carpet material and type of stain.",
   },
@@ -62,7 +62,7 @@ export const carpetServiceTabs: CarpetServiceTab[] = [
     shortLabel: "Tenancy Clean",
     bestFor: "Tenants and landlords",
     icon: PiKeyDuotone,
-    image: "/images/tenancy/tenants-moving-out.png",
+    image: "/images/carpet/end-of-tenancy-carpet-cleaning.webp",
     description:
       "At the end of the tenancy we offer a carpet cleaning service for tenants, landlords and letting agents to get the property ready for inspection and new tenants. Built up dirt, stains and odours are eliminated when you do a deep clean, meaning your carpet is now cleaner and more presentable.",
   },
@@ -72,7 +72,7 @@ export const carpetServiceTabs: CarpetServiceTab[] = [
     shortLabel: "Office Clean",
     bestFor: "Workplaces and commercial spaces",
     icon: PiBriefcaseDuotone,
-    image: "/images/tenancy/landlords-preparing.png",
+    image: "/images/carpet/office-carpet-cleaning.webp",
     description:
       "We clean office carpets professionally at workplaces, retail units and other commercial establishments. This frees up time for appointments, and deep cleaning makes working environments look and feel good while keeping them clean.",
   },
@@ -82,7 +82,7 @@ export const carpetServiceTabs: CarpetServiceTab[] = [
     shortLabel: "Upholstery",
     bestFor: "Sofas, rugs and carpets together",
     icon: PiCouchDuotone,
-    image: "/images/tenancy/living-room-checklist.png",
+    image: "/images/carpet/carpet-and-upholstery-cleaning.webp",
     description:
       "If you would like to have your entire home cleaned, we can attend the same day to clean the carpet and any other upholstered furniture such as sofas, armchairs, rugs, etc. Multiple packages can also minimize the disruption by having everything done at once within a single trip.",
   },

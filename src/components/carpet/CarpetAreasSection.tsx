@@ -1,6 +1,7 @@
 import { FaArrowRight, FaMapMarkerAlt } from "react-icons/fa";
 import ThmButton from "@/components/menu/ThmButton";
 import styles from "@/components/areas/AreasSection.module.css";
+import local from "./CarpetAreasSection.module.css";
 import {
   carpetAreaNames,
   carpetAreaPins,
@@ -19,20 +20,23 @@ export default function CarpetAreasSection() {
       <div className={styles.container}>
         <div className={styles.grid}>
           <div className={styles.copy}>
-            <h2 className={styles.title} id="carpet-areas-title">
+            <h2 className={`${styles.title} ${local.title}`} id="carpet-areas-title">
               {carpetAreasTitle}
             </h2>
             <p className={styles.intro}>{carpetAreasIntro}</p>
-            <ThmButton href="/#contact" className={styles.btnMain}>
+            <ThmButton
+              href="/#contact"
+              className={`${styles.btnMain} ${local.btnMain}`}
+            >
               Send Message <FaArrowRight aria-hidden />
             </ThmButton>
           </div>
 
           <div className={styles.mapArea}>
             <div className={styles.mapFrame}>
-              <div className={styles.mapInner}>
+              <div className={`${styles.mapInner} ${local.mapInner}`}>
                 <img
-                  src="/images/london-map.png"
+                  src="/images/london-map.webp"
                   alt="Map of Greater London showing carpet cleaning coverage in East London"
                   className={styles.mapImg}
                   loading="lazy"

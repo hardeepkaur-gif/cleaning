@@ -16,7 +16,10 @@ export default function CarpetChooseSection() {
     >
       <div className={styles.container}>
         <div className={styles.sectionTitle}>
-          <h2 className={styles.title} id="carpet-choose-cleaner-title">
+          <h2
+            className={`${styles.title} ${local.title}`}
+            id="carpet-choose-cleaner-title"
+          >
             {carpetChooseTitle}
           </h2>
           <p className={`${styles.intro} ${local.intro}`}>{carpetChooseIntro}</p>
@@ -33,12 +36,12 @@ export default function CarpetChooseSection() {
                     <img src={item.image} alt={item.title} loading="lazy" />
                   </div>
                 </div>
-                <div className={styles.content}>
+                <div className={`${styles.content} ${local.content}`}>
                   <h3 className={`${styles.cardTitle} ${local.cardTitle}`}>
                     {item.title}
                   </h3>
                   <p className={styles.cardText}>{item.text}</p>
-                  <div className={styles.iconWrap}>
+                  <div className={`${styles.iconWrap} ${local.iconWrap}`}>
                     <span className={styles.iconMain} aria-hidden>
                       <Icon />
                     </span>

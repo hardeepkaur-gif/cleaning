@@ -3,7 +3,17 @@
 }
 
 .heroImg {
-  background-image: url("/images/tenancy/carpet-cleaning.png");
+  background-image: url("/images/carpet/carpet-cleaning-hero.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.heroIcon {
+  display: none;
+}
+
+.screenHero {
+  height: 96px;
 }
 
 .note {
@@ -51,6 +61,10 @@
 }
 
 @media (max-width: 991px) {
+  .screenHero {
+    height: 110px;
+  }
+
   .copy {
     text-align: center;
   }

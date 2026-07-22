@@ -21,7 +21,7 @@ export const carpetStainsItems = [
   "Dust, allergens and heavy foot traffic build-up",
 ];
 
-export const carpetStainsImage = "/images/tenancy/carpet-cleaning.png";
+export const carpetStainsImage = "/images/carpet/carpet-stain-removal-section.webp";
 
 export const carpetStainsImageAlt =
   "Professional carpet stain removal service in London";

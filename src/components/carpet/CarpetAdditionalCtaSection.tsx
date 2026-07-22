@@ -3,6 +3,7 @@ import { PiRugDuotone } from "react-icons/pi";
 import ThmButton from "@/components/menu/ThmButton";
 import styles from "@/components/cta/CtaSectionThree.module.css";
 import localStyles from "@/components/tenancy/TenancyCtaSection.module.css";
+import local from "./CarpetAdditionalCtaSection.module.css";
 
 export default function CarpetAdditionalCtaSection() {
   return (
@@ -25,10 +26,10 @@ export default function CarpetAdditionalCtaSection() {
               Tell us what needs cleaning and we&apos;ll recommend the most
               suitable carpet cleaning method for your property.
             </p>
-            <div className={`${styles.btnBox} ${localStyles.btnBox}`}>
+            <div className={`${styles.btnBox} ${localStyles.btnBox} ${local.btnBox}`}>
               <ThmButton
                 href="/#contact"
-                className={`${styles.ctaBtn} ${localStyles.ctaBtn}`}
+                className={`${styles.ctaBtn} ${localStyles.ctaBtn} ${local.ctaBtn}`}
               >
                 <FaCalendarCheck aria-hidden />
                 Book Carpet Cleaning
@@ -50,6 +51,14 @@ export default function CarpetAdditionalCtaSection() {
                       <h3 className={localStyles.screenTitle}>
                         Choose the right carpet clean
                       </h3>
+
+                      <img
+                        className={local.screenImg}
+                        src="/images/carpet/deep-carpet-cleaning.webp"
+                        alt=""
+                        loading="lazy"
+                        aria-hidden
+                      />
 
                       <ul className={localStyles.screenList}>
                         <li>

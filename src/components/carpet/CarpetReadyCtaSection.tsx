@@ -82,8 +82,8 @@ export default function CarpetReadyCtaSection() {
                     <span>London · East &amp; Greater London</span>
                   </div>
 
-                  <div className={styles.screenHero}>
-                    <span className={styles.heroIcon} aria-hidden>
+                  <div className={`${styles.screenHero} ${local.screenHero}`}>
+                    <span className={`${styles.heroIcon} ${local.heroIcon}`} aria-hidden>
                       <PiRugDuotone />
                     </span>
                     <div className={`${styles.heroImg} ${local.heroImg}`} aria-hidden />

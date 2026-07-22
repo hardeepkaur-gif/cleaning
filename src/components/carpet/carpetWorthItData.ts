@@ -21,7 +21,7 @@ export const carpetWorthItPoints = [
 export const carpetWorthItClosing =
   "DIY carpet cleaning machines can remove surface dirt but may not be as effective as professional carpet cleaning machines at removing dirt from the inside. Professional carpet cleaning done at the right time can enhance the results of the cleaning, lower your long term maintenance and help maintain your investment in your floor.";
 
-export const carpetWorthItImage = "/images/tenancy/carpet-cleaning.png";
+export const carpetWorthItImage = "/images/carpet/professional-carpet-care.webp";
 
 export const carpetWorthItImageAlt =
   "Professional carpet cleaning service in a London home";

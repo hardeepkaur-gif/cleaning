@@ -76,8 +76,8 @@ export default function CarpetCtaSection() {
                     <span>Steam · Stain removal · Deep clean</span>
                   </div>
 
-                  <div className={styles.screenHero}>
-                    <span className={styles.heroIcon} aria-hidden>
+                  <div className={`${styles.screenHero} ${local.screenHero}`}>
+                    <span className={`${styles.heroIcon} ${local.heroIcon}`} aria-hidden>
                       <PiRugDuotone />
                     </span>
                     <div

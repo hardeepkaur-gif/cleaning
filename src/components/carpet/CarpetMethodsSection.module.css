@@ -253,6 +253,10 @@
     text-align: left;
   }
 
+  .title {
+    font-size: clamp(24px, 6.2vw, 32px);
+  }
+
   .compareGrid {
     grid-template-columns: 1fr;
   }
@@ -270,6 +274,10 @@
     max-width: 560px;
     margin: 0 auto;
     width: 100%;
+  }
+
+  .imgWrap img {
+    min-height: 280px;
   }
 }
 

@@ -29,6 +29,16 @@
 
 @media (max-width: 767px) {
   .header {
+    text-align: left;
     margin-bottom: clamp(24px, 4vw, 32px);
+  }
+
+  .title {
+    text-align: left;
+    font-size: clamp(24px, 6.2vw, 32px);
+  }
+
+  .intro {
+    text-align: left;
   }
 }

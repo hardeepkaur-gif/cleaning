@@ -1,8 +1,22 @@
 .heroImg {
-  background-image: url("/images/tenancy/carpet-cleaning.png");
+  background-image: url("/images/carpet/steam-carpet-cleaning.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.heroIcon {
+  display: none;
+}
+
+.screenHero {
+  height: 96px;
 }
 
 @media (max-width: 991px) {
+  .screenHero {
+    height: 110px;
+  }
+
   .copy {
     text-align: center;
   }
@@ -24,7 +38,8 @@
 
 @media (max-width: 767px) {
   .copy .ctaBtn:global(.thmBtn) {
-    width: auto;
+    width: 100%;
+    max-width: 320px;
     padding: 14px 22px;
     font-size: 14px;
     white-space: normal;

@@ -301,6 +301,10 @@
     text-align: left;
   }
 
+  .title {
+    font-size: clamp(24px, 6.2vw, 32px);
+  }
+
   .points {
     grid-template-columns: 1fr;
   }
@@ -308,25 +312,36 @@
   .visualTag {
     right: 12px;
     bottom: 8px;
+    min-width: 120px;
+    padding: 12px 14px;
+  }
+
+  .visualTag strong {
+    font-size: 18px;
+  }
+
+  .frameOuter {
+    display: none;
   }
 }
 
 @media (max-width: 575px) {
   .visual {
-    padding: 12px 12px 56px;
-    min-height: 260px;
-  }
-
-  .frameOuter {
-    inset: 0 16px 36px 0;
+    padding: 8px 8px 52px;
+    min-height: 240px;
   }
 
   .frameInner img {
-    min-height: 260px;
+    min-height: 240px;
   }
 
   .pointsWrap {
     padding: 18px;
+  }
+
+  .visualTag {
+    min-width: 110px;
+    padding: 10px 12px;
   }
 }
 

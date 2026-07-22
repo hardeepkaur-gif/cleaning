@@ -17,14 +17,12 @@ export const carpetIncludedPoints = [
   "Optional sofa, rug and upholstery cleaning during the same visit",
 ];
 
-const imgBase = "/images/tenancy";
-
 export const carpetIncludedImages = {
-  main: `${imgBase}/carpet-cleaning.png`,
-  img2: `${imgBase}/faq/carpet.png`,
-  img3: `${imgBase}/prepare/img-2.png`,
-  img4: `${imgBase}/prepare/img-3.png`,
+  main: "/images/carpet/carpet-included-1.webp",
+  img2: "/images/carpet/carpet-included-2.webp",
+  img3: "/images/carpet/carpet-included-3.webp",
+  img4: "/images/carpet/carpet-included-4.webp",
 };
 
 export const carpetIncludedMainAlt =
-  "Professional carpet cleaning service in a London home";
+  "Professional carpet cleaning in a London office";

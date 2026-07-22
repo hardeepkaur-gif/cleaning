@@ -14,7 +14,7 @@ export const carpetCareTipsPoints = [
   "Schedule professional carpet cleaning every 6 to 12 months, or more often in homes with pets, children or heavy foot traffic.",
 ];
 
-export const carpetCareTipsImage = "/images/tenancy/faq/carpet.png";
+export const carpetCareTipsImage = "/images/carpet/carpet-care-tips.webp";
 
 export const carpetCareTipsImageAlt =
   "Well-maintained carpet after professional cleaning in a London home";

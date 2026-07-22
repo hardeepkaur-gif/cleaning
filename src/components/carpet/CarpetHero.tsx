@@ -1,8 +1,9 @@
 import ThmButton from "@/components/menu/ThmButton";
 import heroStyles from "@/components/hero/HeroLeadForm.module.css";
 import styles from "@/components/tenancy/TenancyHero.module.css";
+import local from "./CarpetHero.module.css";
 
-const imgBase = "/images/hero/clean360";
+const heroImage = "/images/carpet/carpet-cleaning-hero.webp";
 
 export default function CarpetHero() {
   return (
@@ -14,8 +15,8 @@ export default function CarpetHero() {
       <div className={styles.item}>
         <div className={styles.bg} aria-hidden>
           <div
-            className={styles.bgInner}
-            style={{ backgroundImage: `url('${imgBase}/slide1.jpg')` }}
+            className={`${styles.bgInner} ${local.bgInner}`}
+            style={{ backgroundImage: `url('${heroImage}')` }}
           />
         </div>
         <div className={styles.overlay} aria-hidden />
@@ -48,11 +49,11 @@ export default function CarpetHero() {
               </p>
             </div>
 
-            <div className={heroStyles.bottom}>
-              <div className={heroStyles.bottomBtn}>
+            <div className={`${heroStyles.bottom} ${local.bottom}`}>
+              <div className={`${heroStyles.bottomBtn} ${local.bottomBtn}`}>
                 <ThmButton href="/#contact">Contact Now!</ThmButton>
               </div>
-              <div className={heroStyles.bottomBtn}>
+              <div className={`${heroStyles.bottomBtn} ${local.bottomBtn}`}>
                 <ThmButton href="/#services" variant="secondary">
                   View All Services
                 </ThmButton>

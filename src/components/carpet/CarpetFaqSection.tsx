@@ -22,7 +22,7 @@ export default function CarpetFaqSection() {
     >
       <div className={styles.container}>
         <div className={styles.topHeader}>
-          <h2 className={styles.title} id="carpet-faq-title">
+          <h2 className={`${styles.title} ${local.title}`} id="carpet-faq-title">
             {carpetFaqTitle}
           </h2>
         </div>
@@ -35,7 +35,7 @@ export default function CarpetFaqSection() {
               return (
                 <div
                   key={faq.q}
-                  className={`${styles.item} ${isOpen ? styles.itemOpen : ""}`}
+                  className={`${styles.item} ${isOpen ? styles.itemOpen : ""} ${isOpen ? local.itemOpen : ""}`}
                 >
                   <button
                     type="button"
@@ -48,7 +48,7 @@ export default function CarpetFaqSection() {
                       {isOpen ? <FaMinus /> : <FaPlus />}
                     </span>
                   </button>
-                  <div className={styles.answer} aria-hidden={!isOpen}>
+                  <div className={`${styles.answer} ${local.answer}`} aria-hidden={!isOpen}>
                     <div className={styles.answerInner}>
                       <div className={styles.answerImg}>
                         <img src={faq.img} alt="" loading="lazy" aria-hidden />
@@ -68,7 +68,7 @@ export default function CarpetFaqSection() {
               return (
                 <div
                   key={faq.q}
-                  className={`${styles.item} ${isOpen ? styles.itemOpen : ""}`}
+                  className={`${styles.item} ${isOpen ? styles.itemOpen : ""} ${isOpen ? local.itemOpen : ""}`}
                 >
                   <button
                     type="button"
@@ -81,7 +81,7 @@ export default function CarpetFaqSection() {
                       {isOpen ? <FaMinus /> : <FaPlus />}
                     </span>
                   </button>
-                  <div className={styles.answer} aria-hidden={!isOpen}>
+                  <div className={`${styles.answer} ${local.answer}`} aria-hidden={!isOpen}>
                     <div className={styles.answerInner}>
                       <div className={styles.answerImg}>
                         <img src={faq.img} alt="" loading="lazy" aria-hidden />

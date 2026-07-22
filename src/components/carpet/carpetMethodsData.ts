@@ -47,7 +47,7 @@ export const carpetMethodsGuideParagraphs = [
   "Before we begin the cleaning process at Cleaning Services London, we thoroughly inspect your carpet to ensure the proper cleaning technique is recommended for the carpet material, condition and outcomes you are looking for.",
 ];
 
-export const carpetMethodsGuideImage = "/images/tenancy/faq/carpet.png";
+export const carpetMethodsGuideImage = "/images/carpet/choose-carpet-cleaning-method.webp";
 
 export const carpetMethodsGuideImageAlt =
   "Professional carpet cleaning method inspection in London";
