@@ -36,7 +36,7 @@ export default function GutterWhyChooseSection() {
                     />
                   </div>
                 </div>
-                <div className={styles.content}>
+                <div className={`${styles.content} ${local.content}`}>
                   <h3 className={`${styles.cardTitle} ${local.cardTitle}`}>
                     {item.title}
                   </h3>

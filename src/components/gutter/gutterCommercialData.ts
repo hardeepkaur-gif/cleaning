@@ -9,7 +9,7 @@ export const gutterCommercialClosing =
   "Looking for reliable gutter cleaners for your home or business? Contact our London team today for a fixed quote and flexible booking.";
 
 export const gutterCommercialImage =
-  "/images/gutter/gutter-included-4.webp";
+  "/images/gutter/gutter-commercial.webp";
 
 export const gutterCommercialImageAlt =
-  "Commercial gutter cleaning for London businesses";
+  "Commercial gutter cleaning with boom lift at a London office building";

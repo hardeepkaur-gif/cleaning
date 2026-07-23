@@ -1,3 +1,11 @@
+.section {
+  overflow: hidden;
+}
+
+.grid {
+  align-items: center;
+}
+
 .left {
   justify-content: flex-start;
   text-align: left;
@@ -14,8 +22,125 @@
   max-width: none;
 }
 
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visual {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  margin-left: auto;
+  padding: 18px 18px 28px 0;
+}
+
+.frameOuter {
+  position: absolute;
+  inset: 0 0 12px 28px;
+  border-radius: 28px;
+  border: 2px dashed rgba(226, 106, 76, 0.3);
+  transform: rotate(2.5deg);
+  pointer-events: none;
+}
+
+.imgWrap {
+  position: relative;
+  z-index: 1;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 6px solid var(--white);
+  box-shadow:
+    0 24px 56px rgba(10, 70, 68, 0.14),
+    0 8px 20px rgba(10, 70, 68, 0.08);
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.imgWrap:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 28px 64px rgba(10, 70, 68, 0.18),
+    0 10px 24px rgba(10, 70, 68, 0.1);
+}
+
+.imgWrap img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.badge {
+  position: absolute;
+  z-index: 2;
+  right: 8px;
+  bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 108px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(14, 94, 91, 0.1);
+  box-shadow: 0 14px 32px rgba(10, 70, 68, 0.12);
+  text-align: center;
+}
+
+.badge span {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+
+.badge strong {
+  font-family: var(--font-two);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--cta);
+}
+
+@media (max-width: 991px) {
+  .visual {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 14px;
+  }
+
+  .frameOuter {
+    inset: 0 8px 8px 8px;
+  }
+}
+
 @media (max-width: 767px) {
   .title {
     font-size: clamp(24px, 6.2vw, 32px);
+  }
+
+  .imgWrap img {
+    aspect-ratio: 16 / 11;
+  }
+
+  .badge {
+    min-width: 96px;
+    padding: 10px 12px;
+  }
+
+  .badge strong {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .imgWrap,
+  .imgWrap:hover {
+    transition: none;
+    transform: none;
   }
 }

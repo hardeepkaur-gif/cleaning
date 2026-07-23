@@ -48,10 +48,10 @@ export default function GutterReadyCtaSection() {
               </div>
             </div>
 
-            <div className={styles.phoneCol}>
-              <div className={styles.phone}>
+            <div className={`${styles.phoneCol} ${local.phoneCol}`}>
+              <div className={`${styles.phone} ${local.phone}`}>
                 <div className={styles.phoneNotch} aria-hidden />
-                <div className={styles.phoneScreen}>
+                <div className={`${styles.phoneScreen} ${local.phoneScreen}`}>
                   <div className={styles.screenTop}>
                     <span className={styles.screenBadge}>
                       <PiSparkleFill /> Book today

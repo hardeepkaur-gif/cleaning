@@ -21,6 +21,10 @@
   color: var(--primary-dark);
 }
 
+.content {
+  /* desktop inherits min-height from parent pattern */
+}
+
 @media (max-width: 1199px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
@@ -30,5 +34,19 @@
 @media (max-width: 991px) {
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  .content {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .services :global(h2) {
+    font-size: clamp(24px, 6.2vw, 32px);
+  }
+
+  .cardTitle {
+    font-size: 18px;
   }
 }

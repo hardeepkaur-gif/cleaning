@@ -19,7 +19,7 @@ export default function GutterResidentialSection() {
 
       <div className={styles.container}>
         <div className={`${styles.grid} ${local.grid}`}>
-          <div className={styles.visual}>
+          <div className={`${styles.visual} ${local.visual}`}>
             <div className={styles.frameOuter} aria-hidden />
             <div className={styles.imgWrap}>
               <img

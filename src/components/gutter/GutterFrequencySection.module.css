@@ -11,6 +11,11 @@
 .stage {
   align-items: stretch;
 }
+
+.mobileAccordion {
+  display: none;
+}
+
 @media (min-width: 992px) {
   .rail {
     height: 100%;
@@ -112,17 +117,76 @@
   color: var(--gray);
 }
 
-@media (max-width: 991px) {
-  .rail,
-  .panel {
-    height: auto;
-    min-height: 0;
+@media (max-width: 1200px) and (min-width: 992px) {
+  .rail {
+    grid-template-columns: repeat(4, minmax(140px, 1fr));
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
+  .desktopStage {
+    display: none;
+  }
+
+  .mobileAccordion {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .accItem {
+    border-radius: 16px;
+    background: var(--white);
+    border: 1px solid rgba(14, 94, 91, 0.1);
+    box-shadow: 0 10px 28px rgba(10, 70, 68, 0.06);
+    overflow: hidden;
+  }
+
+  .accItemOpen {
+    border-color: rgba(14, 94, 91, 0.18);
+    box-shadow: 0 14px 32px rgba(10, 70, 68, 0.1);
+  }
+
+  .accBtn {
+    width: 100%;
+    min-width: 0;
+    min-height: 52px;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid transparent;
+    box-shadow: none;
+    transform: none !important;
+    grid-template-columns: 44px 1fr;
+    padding: 12px 14px;
+    gap: 12px;
+  }
+
+  .accItemOpen .accBtn {
+    border-bottom-color: rgba(14, 94, 91, 0.1);
+  }
+
+  .accPanel {
+    display: none;
+    padding: 14px;
+  }
+
+  .accPanelOpen {
+    display: block;
+  }
+
+  .media {
+    min-height: 200px !important;
+    max-height: 220px !important;
+    height: 200px !important;
+    border-radius: 14px;
+  }
+
+  .panelTop {
+    margin-bottom: 14px;
+  }
+
   .panelCopy {
-    margin-bottom: 6px;
+    margin-bottom: 0;
   }
 
   .panelTitle {
@@ -139,5 +203,19 @@
 @media (max-width: 575px) {
   .bestFor {
     padding: 10px 14px;
+  }
+
+  .accBtn {
+    padding: 11px 12px;
+  }
+
+  .accPanel {
+    padding: 12px;
+  }
+
+  .media {
+    min-height: 180px !important;
+    max-height: 200px !important;
+    height: 180px !important;
   }
 }

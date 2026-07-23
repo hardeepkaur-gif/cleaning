@@ -35,8 +35,8 @@ export default function GutterIncludedSection() {
           </div>
         </header>
 
-        <div className={styles.layout}>
-          <div className={styles.visual}>
+        <div className={`${styles.layout} ${local.layout}`}>
+          <div className={`${styles.visual} ${local.visual}`}>
             <div className={styles.frameOuter} aria-hidden />
             <div className={styles.frameInner}>
               <img
@@ -52,7 +52,7 @@ export default function GutterIncludedSection() {
             </div>
           </div>
 
-          <div className={styles.copy}>
+          <div className={`${styles.copy} ${local.copy}`}>
             <div className={`${styles.pointsWrap} ${local.bodyWrap}`}>
               <div className={local.bodyCopy}>
                 <p className={styles.text}>{gutterIncludedEquipment}</p>

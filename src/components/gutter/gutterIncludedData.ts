@@ -13,7 +13,7 @@ export const gutterIncludedMethods =
 export const gutterIncludedClosing =
   "From providing one-off gutter cleaning, through to seasonal gutter cleaning or scheduled cleaning, our professional London local gutter cleaners are on hand to ensure your drainage system continues to function as it should.";
 
-export const gutterIncludedImage = "/images/gutter/gutter-included-1.webp";
+export const gutterIncludedImage = "/images/gutter/gutter-included-service.webp";
 
 export const gutterIncludedImageAlt =
-  "Professional gutter cleaning service in London";
+  "Professional gutter cleaning with SkyVac ground-level vacuum system in London";

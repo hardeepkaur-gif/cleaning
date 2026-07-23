@@ -15,12 +15,12 @@ export const gutterSignsPoints = [
 ];
 
 export const gutterSignsImages = {
-  main: "/images/gutter/gutter-included-1.webp",
-  secondary: "/images/gutter/gutter-included-3.webp",
+  main: "/images/gutter/gutter-signs-main.webp",
+  secondary: "/images/gutter/gutter-signs-secondary.webp",
 };
 
 export const gutterSignsMainAlt =
-  "Signs that London gutters need professional cleaning";
+  "Professional clearing debris from a clogged London gutter";
 
 export const gutterSignsSecondaryAlt =
-  "Blocked gutter debris and overflow warning signs";
+  "Overflowing gutter with moss, plants and blocked drainage";

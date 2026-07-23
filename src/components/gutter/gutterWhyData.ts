@@ -11,12 +11,8 @@ export const gutterWhyPoints = [
   "Routine maintenance is a simple, cost-effective way to keep your property protected throughout the year, especially during heavy rainfall.",
 ];
 
-export const gutterWhyImages = {
-  main: "/images/gutter/gutter-included-1.webp",
-  img2: "/images/gutter/gutter-included-2.webp",
-  img3: "/images/gutter/gutter-included-3.webp",
-  img4: "/images/gutter/gutter-included-4.webp",
-};
+export const gutterWhyImage =
+  "/images/gutter/gutter-why-before-after.webp";
 
-export const gutterWhyMainAlt =
-  "Regular gutter cleaning protecting a London property from water damage";
+export const gutterWhyImageAlt =
+  "Before and after regular gutter cleaning on a London home";

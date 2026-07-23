@@ -152,7 +152,7 @@ export default function GutterCausesSection() {
             </div>
           </aside>
 
-          <div className={styles.scrollWrap} ref={scrollWrapRef}>
+          <div className={`${styles.scrollWrap} ${local.scrollWrap}`} ref={scrollWrapRef}>
             <div
               className={`${styles.scrollPanel} ${local.scrollPanel}`}
               ref={scrollPanelRef}

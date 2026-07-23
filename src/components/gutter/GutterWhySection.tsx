@@ -1,11 +1,10 @@
 import { FaCheck } from "react-icons/fa";
-import { includedImages } from "@/components/included/includedData";
 import styles from "@/components/included/ProfessionalClean.module.css";
 import local from "./GutterWhySection.module.css";
 import {
-  gutterWhyImages,
+  gutterWhyImage,
+  gutterWhyImageAlt,
   gutterWhyIntro,
-  gutterWhyMainAlt,
   gutterWhyPoints,
   gutterWhyTitle,
 } from "./gutterWhyData";
@@ -13,12 +12,12 @@ import {
 export default function GutterWhySection() {
   return (
     <section
-      className={styles.section}
+      className={`${styles.section} ${local.section}`}
       id="gutter-why-important"
       aria-labelledby="gutter-why-title"
     >
       <div className={styles.container}>
-        <div className={styles.grid}>
+        <div className={`${styles.grid} ${local.grid}`}>
           <div className={`${styles.left} ${local.left}`}>
             <h2
               className={`${styles.title} ${local.title}`}
@@ -42,57 +41,19 @@ export default function GutterWhySection() {
             </ul>
           </div>
 
-          <div className={styles.right}>
-            <div className={styles.visualStage}>
-              <div className={styles.rightShape} aria-hidden>
-                <img src={includedImages.rightShape} alt="" />
-              </div>
-
-              <div className={styles.imgBox}>
-                <div className={styles.mainImg}>
-                  <img
-                    src={gutterWhyImages.main}
-                    alt={gutterWhyMainAlt}
-                    loading="lazy"
-                  />
-                </div>
-                <div className={styles.imgShape1} aria-hidden>
-                  <img src={includedImages.shape1} alt="" />
-                </div>
-                <div className={styles.imgShape2} aria-hidden>
-                  <img src={includedImages.shape2} alt="" />
-                </div>
-                <div className={styles.imgShape3} aria-hidden>
-                  <img src={includedImages.shape3} alt="" />
-                </div>
-                <div className={styles.imgShape4} aria-hidden>
-                  <img src={includedImages.shape4} alt="" />
-                </div>
-              </div>
-
-              <div className={styles.img2}>
+          <div className={`${styles.right} ${local.right}`}>
+            <div className={local.visual}>
+              <div className={local.frameOuter} aria-hidden />
+              <div className={local.imgWrap}>
                 <img
-                  src={gutterWhyImages.img2}
-                  alt=""
-                  aria-hidden
+                  src={gutterWhyImage}
+                  alt={gutterWhyImageAlt}
                   loading="lazy"
                 />
               </div>
-              <div className={styles.img3}>
-                <img
-                  src={gutterWhyImages.img3}
-                  alt=""
-                  aria-hidden
-                  loading="lazy"
-                />
-              </div>
-              <div className={styles.img4}>
-                <img
-                  src={gutterWhyImages.img4}
-                  alt=""
-                  aria-hidden
-                  loading="lazy"
-                />
+              <div className={local.badge} aria-hidden>
+                <span>Before</span>
+                <strong>After</strong>
               </div>
             </div>
           </div>

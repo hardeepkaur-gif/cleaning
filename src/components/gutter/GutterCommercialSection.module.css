@@ -15,6 +15,13 @@
   gap: 8px;
 }
 
+@media (max-width: 991px) {
+  .closing {
+    align-items: center;
+    text-align: center;
+  }
+}
+
 @media (max-width: 767px) {
   .ctaBtn:global(.thmBtn) {
     width: 100%;

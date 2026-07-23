@@ -6,7 +6,7 @@ export const gutterResidentialParagraphs = [
 ];
 
 export const gutterResidentialImage =
-  "/images/gutter/gutter-included-3.webp";
+  "/images/gutter/gutter-residential.webp";
 
 export const gutterResidentialImageAlt =
-  "Residential gutter cleaning for London homes";
+  "Residential gutter cleaning on a London home with vacuum system";

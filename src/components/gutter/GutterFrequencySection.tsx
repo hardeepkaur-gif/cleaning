@@ -20,6 +20,32 @@ export default function GutterFrequencySection() {
     setAnimateKey((prev) => prev + 1);
   }, [activeTab]);
 
+  const panelBody = (tab: (typeof gutterFrequencyTabs)[number], Icon: typeof ActiveIcon) => (
+    <>
+      <div className={`${styles.panelTop} ${local.panelTop}`}>
+        <div className={`${styles.media} ${local.media}`}>
+          <img src={tab.image} alt="" loading="lazy" aria-hidden />
+          <div className={styles.mediaGlow} aria-hidden />
+          <div className={styles.content}>
+            <div className={styles.mediaBadge}>
+              <Icon aria-hidden />
+              <strong>{tab.shortLabel}</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={local.panelCopy}>
+        <h3 className={local.panelTitle}>{tab.title}</h3>
+        <p className={local.bestFor}>
+          <span className={local.bestForLabel}>Best For</span>
+          <span className={local.bestForText}>{tab.bestFor}</span>
+        </p>
+        <p className={local.panelIntro}>{tab.description}</p>
+      </div>
+    </>
+  );
+
   return (
     <section
       className={styles.section}
@@ -38,7 +64,8 @@ export default function GutterFrequencySection() {
           <p className={`${styles.intro} ${local.intro}`}>{gutterFrequencyIntro}</p>
         </header>
 
-        <div className={`${styles.stage} ${local.stage}`}>
+        {/* Desktop: side rail + panel */}
+        <div className={`${styles.stage} ${local.stage} ${local.desktopStage}`}>
           <div
             className={`${styles.rail} ${local.rail}`}
             role="tablist"
@@ -80,35 +107,49 @@ export default function GutterFrequencySection() {
             className={`${styles.panel} ${local.panel}`}
             key={animateKey}
           >
-            <div className={`${styles.panelTop} ${local.panelTop}`}>
-              <div className={styles.media}>
-                <img src={active.image} alt="" loading="lazy" aria-hidden />
-                <div className={styles.mediaGlow} aria-hidden />
-                <div className={styles.content}>
-                  <div className={styles.mediaBadge}>
-                    <ActiveIcon aria-hidden />
-                    <strong>{active.shortLabel}</strong>
-                  </div>
-                </div>
-              </div>
-
-              <div className={styles.contentMobile}>
-                <div className={styles.mediaBadge}>
-                  <ActiveIcon aria-hidden />
-                  <strong>{active.shortLabel}</strong>
-                </div>
-              </div>
-            </div>
-
-            <div className={local.panelCopy}>
-              <h3 className={local.panelTitle}>{active.title}</h3>
-              <p className={local.bestFor}>
-                <span className={local.bestForLabel}>Best For</span>
-                <span className={local.bestForText}>{active.bestFor}</span>
-              </p>
-              <p className={local.panelIntro}>{active.description}</p>
-            </div>
+            {panelBody(active, ActiveIcon)}
           </div>
+        </div>
+
+        {/* Mobile: accordion — content + image with open tab */}
+        <div className={local.mobileAccordion}>
+          {gutterFrequencyTabs.map((tab, index) => {
+            const Icon = tab.icon;
+            const isOpen = activeTab === index;
+
+            return (
+              <div
+                key={tab.id}
+                className={`${local.accItem} ${isOpen ? local.accItemOpen : ""}`}
+              >
+                <button
+                  type="button"
+                  className={`${styles.railBtn} ${local.accBtn} ${isOpen ? styles.railBtnActive : ""}`}
+                  aria-expanded={isOpen}
+                  aria-controls={`gutter-frequency-acc-${tab.id}`}
+                  id={`gutter-frequency-acc-tab-${tab.id}`}
+                  onClick={() => setActiveTab(index)}
+                >
+                  <span className={`${styles.railIcon} ${local.railIcon}`} aria-hidden>
+                    <Icon />
+                  </span>
+                  <span className={`${styles.railCopy} ${local.railCopy}`}>
+                    <span className={styles.railLabel}>{tab.shortLabel}</span>
+                  </span>
+                </button>
+
+                <div
+                  id={`gutter-frequency-acc-${tab.id}`}
+                  role="region"
+                  aria-labelledby={`gutter-frequency-acc-tab-${tab.id}`}
+                  className={`${local.accPanel} ${isOpen ? local.accPanelOpen : ""}`}
+                  hidden={!isOpen}
+                >
+                  {isOpen ? panelBody(tab, Icon) : null}
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
