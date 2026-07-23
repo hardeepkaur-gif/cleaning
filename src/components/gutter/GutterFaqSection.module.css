@@ -1,5 +1,6 @@
 .section {
   padding-top: clamp(40px, 5vw, 60px);
+  padding-bottom: clamp(70px, 9vw, 100px);
 }
 
 .itemOpen .answer {
