@@ -1,0 +1,13 @@
+.topHeader {
+  max-width: none;
+  width: 100%;
+}
+
+.intro {
+  margin: clamp(14px, 2vw, 18px) 0 0;
+  max-width: none;
+  width: 100%;
+  font-size: clamp(15px, 1.4vw, 18px);
+  line-height: 1.75;
+  color: var(--gray);
+}

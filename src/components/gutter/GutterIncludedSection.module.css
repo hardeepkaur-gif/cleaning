@@ -1,0 +1,29 @@
+.bodyWrap {
+  gap: clamp(16px, 2vw, 20px);
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.bodyCopy {
+  display: grid;
+  gap: 14px;
+  flex: 1;
+}
+
+.bodyCopy .text {
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .bodyWrap {
+    height: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .bodyWrap {
+    padding: 0;
+  }
+}

@@ -73,7 +73,7 @@ export const servicesList: ServiceData[] = [
     label: "Gutter",
     title: "Gutter Cleaning London",
     text: "Preventative gutter cleaning London service to unclog blockages, enhance drainage, and safeguard properties against unnecessary water damage.",
-    href: "#contact",
+    href: "/gutter-cleaning",
     icon: FaWater,
     tabIcon: PiCloudRainDuotone,
     image: `${imgBase}/services-2-4.png`,

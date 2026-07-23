@@ -23,6 +23,10 @@ export const navItems: NavItem[] = [
         label: "Carpet Cleaning",
         href: "/carpet-cleaning",
       },
+      {
+        label: "Gutter Cleaning",
+        href: "/gutter-cleaning",
+      },
     ],
   },
   { label: "Contact Us", href: "/contact-us" },
@@ -49,6 +53,7 @@ export const footerQuickLinks = [
   { label: "Domestic Cleaning Services", href: "/domestic-cleaning-services" },
   { label: "End of Tenancy Cleaning", href: "/end-of-tenancy-cleaning" },
   { label: "Carpet Cleaning", href: "/carpet-cleaning" },
+  { label: "Gutter Cleaning", href: "/gutter-cleaning" },
   { label: "Contact Us", href: "/contact-us" },
 ];
 

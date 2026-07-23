@@ -1,0 +1,19 @@
+.section {
+  padding-top: clamp(40px, 5vw, 60px);
+}
+
+@media (max-width: 991px) {
+  .itemOpen .answer {
+    max-height: 900px;
+  }
+}
+
+@media (max-width: 575px) {
+  .title {
+    font-size: clamp(24px, 6.2vw, 32px);
+  }
+
+  .itemOpen .answer {
+    max-height: 1100px;
+  }
+}

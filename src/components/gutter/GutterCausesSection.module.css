@@ -1,0 +1,30 @@
+.navChips {
+  gap: 6px;
+}
+
+.chip {
+  width: 36px;
+  height: 36px;
+  font-size: 12px;
+}
+
+@media (max-width: 991px) {
+  .scrollPanel {
+    max-height: none !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: clamp(24px, 6.2vw, 32px);
+  }
+}
+
+@media (max-width: 575px) {
+  .chip {
+    width: 34px;
+    height: 34px;
+    font-size: 11px;
+  }
+}
