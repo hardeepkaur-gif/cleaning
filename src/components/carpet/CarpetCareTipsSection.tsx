@@ -26,9 +26,9 @@ export default function CarpetCareTipsSection() {
           <p className={`${styles.intro} ${local.intro}`}>{carpetCareTipsIntro}</p>
         </div>
 
-        <div className={styles.grid}>
+        <div className={`${styles.grid} ${local.grid}`}>
           <div className={styles.copy}>
-            <ul className={styles.points}>
+            <ul className={`${styles.points} ${local.points}`}>
               {carpetCareTipsPoints.map((text, i) => (
                 <li key={text} style={{ animationDelay: `${i * 0.1}s` }}>
                   <span className={styles.pointIcon} aria-hidden>

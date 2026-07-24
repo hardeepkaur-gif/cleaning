@@ -276,7 +276,13 @@
     grid-template-columns: 1fr;
   }
 
+  .copy {
+    order: 1;
+    min-height: auto;
+  }
+
   .visual {
+    order: 2;
     min-height: 320px;
     max-width: 560px;
     margin: 0 auto;
@@ -285,10 +291,6 @@
 
   .frameInner img {
     min-height: 320px;
-  }
-
-  .copy {
-    min-height: auto;
   }
 
   .pointsWrap {

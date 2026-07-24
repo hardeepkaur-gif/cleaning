@@ -3,6 +3,10 @@
 }
 
 @media (max-width: 991px) {
+  .section {
+    padding-bottom: 60px;
+  }
+
   .itemOpen .answer {
     max-height: 900px;
   }
@@ -11,6 +15,7 @@
 @media (max-width: 575px) {
   .title {
     font-size: clamp(24px, 6.2vw, 32px);
+    text-align: center;
   }
 
   .itemOpen .answer {

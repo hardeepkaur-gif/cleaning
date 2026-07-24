@@ -277,18 +277,23 @@
 /* ============ Responsive ============ */
 @media (max-width: 991px) {
   .grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: clamp(56px, 8vw, 80px);
   }
 
-  .media {
-    max-width: 520px;
-    margin: 0 auto;
-  }
-
   .content {
+    order: 1;
     max-width: 640px;
     margin: 0 auto;
+    width: 100%;
+  }
+
+  .media {
+    order: 2;
+    max-width: 520px;
+    margin: 0 auto;
+    width: 100%;
   }
 }
 

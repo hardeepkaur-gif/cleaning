@@ -8,13 +8,6 @@
   font-size: 12px;
 }
 
-@media (max-width: 991px) {
-  .scrollPanel {
-    max-height: none !important;
-    height: auto !important;
-  }
-}
-
 @media (max-width: 767px) {
   .title {
     font-size: clamp(24px, 6.2vw, 32px);

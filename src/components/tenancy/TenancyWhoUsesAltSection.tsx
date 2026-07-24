@@ -33,9 +33,8 @@ export default function TenancyWhoUsesAltSection() {
       <div className={styles.container}>
         <header className={styles.header}>
           <h2 className={styles.title} id="tenancy-who-uses-title">
-            Who Uses Our End of Tenancy
-            <br />
-            Cleaning Services London
+            Who Uses Our End of Tenancy{" "}
+            <span className={styles.titleLine}>Cleaning Services London</span>
           </h2>
           <p className={styles.intro}>
             Our end of tenancy cleaning service is used by all kinds of customers

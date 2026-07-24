@@ -9,9 +9,3 @@
     justify-content: center;
   }
 }
-
-@media (max-width: 575px) {
-  .mapInner {
-    min-height: 280px;
-  }
-}

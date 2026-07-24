@@ -908,6 +908,7 @@
   font-weight: 800;
   line-height: 1.25;
   color: var(--primary-dark);
+  text-align: center;
 }
 
 .faqList {
@@ -1233,9 +1234,12 @@
 @media (max-width: 767px) {
   .stepsSection,
   .contactSection,
-  .trustStrip,
-  .mapSection {
+  .trustStrip {
     padding: clamp(48px, 10vw, 64px) 0;
+  }
+
+  .mapSection {
+    padding: clamp(48px, 10vw, 64px) 0 60px;
   }
 
   .sectionHead {

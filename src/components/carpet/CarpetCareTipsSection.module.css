@@ -12,9 +12,24 @@
   margin-bottom: 0;
 }
 
+.points {
+  margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+  .topHeader {
+    margin-bottom: 24px;
+  }
+
+  .grid {
+    gap: 20px;
+  }
+}
+
 @media (max-width: 767px) {
   .topHeader {
     text-align: left;
+    margin-bottom: 18px;
   }
 
   .title {
@@ -23,5 +38,15 @@
 
   .intro {
     text-align: left;
+  }
+
+  .grid {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .grid {
+    gap: 14px;
   }
 }

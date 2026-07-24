@@ -1,3 +1,7 @@
+.section {
+  padding-top: 0;
+}
+
 .header {
   text-align: center;
   max-width: none;
@@ -28,6 +32,10 @@
 }
 
 @media (max-width: 767px) {
+  .section {
+    padding-top: 0;
+  }
+
   .header {
     text-align: left;
     margin-bottom: clamp(24px, 4vw, 32px);

@@ -14,7 +14,7 @@ import {
 export default function CarpetIncludedSection() {
   return (
     <section
-      className={styles.section}
+      className={`${styles.section} ${local.section}`}
       id="carpet-included"
       aria-labelledby="carpet-included-title"
     >

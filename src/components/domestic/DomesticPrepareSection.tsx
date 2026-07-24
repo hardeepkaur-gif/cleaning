@@ -5,29 +5,30 @@ import {
   domesticPreparePoints,
   domesticPrepareTitle,
 } from "./domesticPrepareData";
-import styles from "@/components/vetted/VettedSection.module.css";
+import shared from "@/components/vetted/VettedSection.module.css";
+import styles from "./DomesticPrepareSection.module.css";
 
 export default function DomesticPrepareSection() {
   return (
     <section
-      className={styles.section}
+      className={shared.section}
       id="domestic-prepare"
       aria-labelledby="domestic-prepare-title"
     >
-      <div className={styles.container}>
-        <div className={styles.topHeader}>
-          <h2 className={styles.title} id="domestic-prepare-title">
+      <div className={shared.container}>
+        <div className={`${shared.topHeader} ${styles.topHeader}`}>
+          <h2 className={shared.title} id="domestic-prepare-title">
             {domesticPrepareTitle}
           </h2>
-          <p className={styles.intro}>{domesticPrepareIntro}</p>
+          <p className={shared.intro}>{domesticPrepareIntro}</p>
         </div>
 
-        <div className={styles.grid}>
-          <div className={styles.copy}>
-            <ul className={styles.points}>
+        <div className={`${shared.grid} ${styles.grid}`}>
+          <div className={`${shared.copy} ${styles.copy}`}>
+            <ul className={shared.points}>
               {domesticPreparePoints.map((text, i) => (
                 <li key={text} style={{ animationDelay: `${i * 0.1}s` }}>
-                  <span className={styles.pointIcon} aria-hidden>
+                  <span className={shared.pointIcon} aria-hidden>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                       <path
                         d="M13.5 4.5L6.5 11.5L2.5 7.5"
@@ -44,8 +45,8 @@ export default function DomesticPrepareSection() {
             </ul>
           </div>
 
-          <div className={styles.visual}>
-            <div className={styles.imgWrap}>
+          <div className={shared.visual}>
+            <div className={shared.imgWrap}>
               <img
                 src={domesticPrepareImage}
                 alt={domesticPrepareImageAlt}

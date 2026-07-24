@@ -92,7 +92,8 @@
   color: var(--gray);
 }
 
-.compare {
+/* —— Desktop / tablet comparison —— */
+.compareDesktop {
   border-radius: 24px;
   background: var(--white);
   border: 1px solid rgba(14, 94, 91, 0.1);
@@ -100,6 +101,10 @@
     0 4px 10px rgba(10, 70, 68, 0.04),
     0 22px 52px rgba(10, 70, 68, 0.1);
   overflow: hidden;
+}
+
+.compareMobile {
+  display: none;
 }
 
 .columnHeads {
@@ -194,10 +199,6 @@
   padding: clamp(20px, 2.5vw, 26px) clamp(20px, 2.8vw, 28px);
 }
 
-.cellLabel {
-  display: none;
-}
-
 .cellBody {
   display: flex;
   align-items: flex-start;
@@ -259,6 +260,93 @@
   color: var(--gray);
 }
 
+/* —— Mobile stacked cards —— */
+.mobileCard {
+  border-radius: 18px;
+  background: var(--white);
+  border: 1px solid rgba(14, 94, 91, 0.1);
+  box-shadow:
+    0 4px 10px rgba(10, 70, 68, 0.04),
+    0 16px 36px rgba(10, 70, 68, 0.08);
+  overflow: hidden;
+}
+
+.mobileCardDeep {
+  border-color: rgba(226, 106, 76, 0.16);
+}
+
+.mobileHead {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 18px;
+  font-family: var(--font-two);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--white);
+}
+
+.mobileHeadDomestic {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+}
+
+.mobileHeadDeep {
+  background: linear-gradient(135deg, #c95a3f 0%, var(--cta) 55%, #d4785f 100%);
+}
+
+.mobileList {
+  margin: 0;
+  padding: 4px 0;
+  list-style: none;
+}
+
+.mobileItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 16px;
+  border-top: 1px solid rgba(14, 94, 91, 0.08);
+}
+
+.mobileItem:first-child {
+  border-top: none;
+}
+
+.mobileCardDomestic .mobileItem {
+  background: rgba(14, 94, 91, 0.02);
+}
+
+.mobileCardDeep .mobileItem {
+  background: rgba(226, 106, 76, 0.03);
+}
+
+.mobileVs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -4px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.mobileVs span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 2px solid #f7f4f1;
+  box-shadow: 0 6px 18px rgba(10, 70, 68, 0.12);
+  font-family: var(--font-two);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: var(--primary-dark);
+}
+
 @media (max-width: 991px) {
   .header {
     text-align: left;
@@ -266,7 +354,9 @@
   }
 
   .vsBadge {
-    display: none;
+    width: 44px;
+    height: 44px;
+    font-size: 12px;
   }
 
   .columnHead {
@@ -282,67 +372,33 @@
     border-radius: 12px;
   }
 
-  .row {
-    grid-template-columns: 1fr;
-  }
-
-  .rowDivider {
-    display: none;
-  }
-
   .cell {
     padding: 16px 18px;
   }
-
-  .cellDeep {
-    border-top: 1px dashed rgba(226, 106, 76, 0.2);
-    background: rgba(226, 106, 76, 0.04);
-  }
-
-  .cellDomestic {
-    background: rgba(14, 94, 91, 0.04);
-  }
-
-  .cellLabel {
-    display: block;
-    margin-bottom: 10px;
-    font-family: var(--font-two);
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--primary);
-  }
-
-  .cellDeep .cellLabel {
-    color: var(--cta);
-  }
 }
 
-@media (max-width: 575px) {
-  .compare {
-    border-radius: 18px;
+/* Phone: swap to stacked service cards */
+@media (max-width: 767px) {
+  .compareDesktop {
+    display: none;
   }
 
-  .columnHeads {
-    grid-template-columns: 1fr;
-  }
-
-  .columnHeadDeep {
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-  }
-
-  .cell {
-    padding: 14px 16px;
-  }
-
-  .cellBody {
-    gap: 10px;
+  .compareMobile {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
   }
 
   .cellText {
     font-size: 15px;
     line-height: 1.65;
+  }
+
+  .mobileHead .columnIcon {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+    border-radius: 11px;
   }
 }
 

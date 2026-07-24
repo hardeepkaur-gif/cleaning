@@ -1,3 +1,18 @@
+@media (max-width: 991px) {
+  .scrollWrap {
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  .scrollPanel {
+    max-height: none !important;
+    height: auto !important;
+    overflow: visible !important;
+    -webkit-overflow-scrolling: auto;
+  }
+}
+
 @media (max-width: 575px) {
   .navChips {
     gap: 10px;

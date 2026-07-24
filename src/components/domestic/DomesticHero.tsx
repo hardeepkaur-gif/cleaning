@@ -21,7 +21,7 @@ export default function DomesticHero() {
         </div>
         <div className={styles.overlay} aria-hidden />
 
-        <div className={styles.container}>
+        <div className={`${styles.container} ${local.container}`}>
           <div className={`${heroStyles.content} ${styles.content}`}>
             <div className={heroStyles.subTitle}>
               <h4>Domestic Cleaning Services</h4>

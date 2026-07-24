@@ -18,7 +18,7 @@ const trustPoints = [
 export default function CarpetCtaSection() {
   return (
     <section
-      className={styles.cta}
+      className={`${styles.cta} ${local.cta}`}
       id="carpet-cleaning-cta"
       aria-labelledby="carpet-cta-title"
     >

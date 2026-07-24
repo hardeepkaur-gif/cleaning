@@ -35,6 +35,7 @@
   font-weight: 800;
   color: var(--primary-dark);
   margin: 0;
+  text-align: center;
 }
 
 /* Two columns */
@@ -187,6 +188,10 @@
 
 /* ===== Responsive ===== */
 @media (max-width: 991px) {
+  .section {
+    padding-bottom: 60px;
+  }
+
   .columns {
     grid-template-columns: 1fr;
   }
@@ -213,8 +218,9 @@
 }
 
 @media (max-width: 575px) {
-  .topHeader {
-    text-align: left;
+  .topHeader,
+  .title {
+    text-align: center;
   }
 
   .question {

@@ -9,6 +9,7 @@ import {
   domesticServicesTitle,
 } from "./domesticServicesData";
 import styles from "@/components/tenancy/TenancyMattersTimelineSection.module.css";
+import local from "./DomesticServicesTimelineSection.module.css";
 
 const DESKTOP_QUERY = "(min-width: 1201px)";
 
@@ -145,8 +146,11 @@ export default function DomesticServicesTimelineSection() {
             </div>
           </aside>
 
-          <div className={styles.scrollWrap} ref={scrollWrapRef}>
-            <div className={styles.scrollPanel} ref={scrollPanelRef}>
+          <div className={`${styles.scrollWrap} ${local.scrollWrap}`} ref={scrollWrapRef}>
+            <div
+              className={`${styles.scrollPanel} ${local.scrollPanel}`}
+              ref={scrollPanelRef}
+            >
               <ol className={styles.timeline}>
                 {domesticServicesItems.map((item, index) => {
                   const Icon = item.icon;

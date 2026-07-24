@@ -1,0 +1,24 @@
+/* Mobile overrides for Domestic Prepare (shared Vetted styles stay as-is elsewhere) */
+@media (max-width: 991px) {
+  .topHeader {
+    text-align: left;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+
+  .grid {
+    gap: 20px;
+  }
+
+  .copy :global(ul) {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .grid {
+    gap: 16px;
+  }
+}

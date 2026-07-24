@@ -1,16 +1,13 @@
 "use client";
 
-import { useState } from "react";
 import { FaMinus, FaPlus } from "react-icons/fa";
+import { useFaqAccordion } from "@/hooks/useFaqAccordion";
 import { carpetFaqs, carpetFaqTitle } from "./carpetFaqData";
 import styles from "@/components/faq/FaqSection.module.css";
 import local from "./CarpetFaqSection.module.css";
 
 export default function CarpetFaqSection() {
-  const [openLeft, setOpenLeft] = useState<number | null>(0);
-  const [openRight, setOpenRight] = useState<number | null>(0);
-
-  const half = Math.ceil(carpetFaqs.length / 2);
+  const { half, isOpen, toggle } = useFaqAccordion(carpetFaqs.length);
   const leftCol = carpetFaqs.slice(0, half);
   const rightCol = carpetFaqs.slice(half);
 
@@ -30,25 +27,27 @@ export default function CarpetFaqSection() {
         <div className={styles.columns}>
           <div className={styles.col}>
             {leftCol.map((faq, i) => {
-              const isOpen = openLeft === i;
-
+              const open = isOpen("left", i);
               return (
                 <div
                   key={faq.q}
-                  className={`${styles.item} ${isOpen ? styles.itemOpen : ""} ${isOpen ? local.itemOpen : ""}`}
+                  className={`${styles.item} ${open ? styles.itemOpen : ""} ${open ? local.itemOpen : ""}`}
                 >
                   <button
                     type="button"
                     className={styles.question}
-                    onClick={() => setOpenLeft(isOpen ? null : i)}
-                    aria-expanded={isOpen}
+                    onClick={() => toggle("left", i)}
+                    aria-expanded={open}
                   >
                     <span className={styles.qText}>{faq.q}</span>
                     <span className={styles.qIcon}>
-                      {isOpen ? <FaMinus /> : <FaPlus />}
+                      {open ? <FaMinus /> : <FaPlus />}
                     </span>
                   </button>
-                  <div className={`${styles.answer} ${local.answer}`} aria-hidden={!isOpen}>
+                  <div
+                    className={`${styles.answer} ${local.answer}`}
+                    aria-hidden={!open}
+                  >
                     <div className={styles.answerInner}>
                       <div className={styles.answerImg}>
                         <img src={faq.img} alt="" loading="lazy" aria-hidden />
@@ -63,25 +62,27 @@ export default function CarpetFaqSection() {
 
           <div className={styles.col}>
             {rightCol.map((faq, i) => {
-              const isOpen = openRight === i;
-
+              const open = isOpen("right", i);
               return (
                 <div
                   key={faq.q}
-                  className={`${styles.item} ${isOpen ? styles.itemOpen : ""} ${isOpen ? local.itemOpen : ""}`}
+                  className={`${styles.item} ${open ? styles.itemOpen : ""} ${open ? local.itemOpen : ""}`}
                 >
                   <button
                     type="button"
                     className={styles.question}
-                    onClick={() => setOpenRight(isOpen ? null : i)}
-                    aria-expanded={isOpen}
+                    onClick={() => toggle("right", i)}
+                    aria-expanded={open}
                   >
                     <span className={styles.qText}>{faq.q}</span>
                     <span className={styles.qIcon}>
-                      {isOpen ? <FaMinus /> : <FaPlus />}
+                      {open ? <FaMinus /> : <FaPlus />}
                     </span>
                   </button>
-                  <div className={`${styles.answer} ${local.answer}`} aria-hidden={!isOpen}>
+                  <div
+                    className={`${styles.answer} ${local.answer}`}
+                    aria-hidden={!open}
+                  >
                     <div className={styles.answerInner}>
                       <div className={styles.answerImg}>
                         <img src={faq.img} alt="" loading="lazy" aria-hidden />

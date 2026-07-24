@@ -6,7 +6,7 @@ const professionalImage = "/images/domestic/professional-domestic-cleaning.png";
 export default function DomesticProfessionalSection() {
   return (
     <section
-      className={styles.section}
+      className={`${styles.section} ${local.section}`}
       id="professional-domestic-cleaning"
       aria-labelledby="professional-domestic-title"
     >

@@ -10,7 +10,7 @@ import local from "./CarpetChooseSection.module.css";
 export default function CarpetChooseSection() {
   return (
     <section
-      className={styles.services}
+      className={`${styles.services} ${local.services}`}
       id="carpet-choose-cleaner"
       aria-labelledby="carpet-choose-cleaner-title"
     >

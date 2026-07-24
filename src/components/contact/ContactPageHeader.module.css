@@ -154,6 +154,19 @@
 }
 
 @media (max-width: 767px) {
+  .pageHeaderBg {
+    background-position: right center;
+  }
+
+  .pageHeaderBg::before {
+    background: linear-gradient(
+      180deg,
+      rgba(16, 54, 47, 0.72) 0%,
+      rgba(16, 54, 47, 0.55) 55%,
+      rgba(16, 54, 47, 0.68) 100%
+    );
+  }
+
   .pageHeaderInner {
     padding: 128px 0 80px;
   }
@@ -173,6 +186,10 @@
 }
 
 @media (max-width: 575px) {
+  .pageHeaderBg {
+    background-position: 92% center;
+  }
+
   .pageHeaderInner {
     padding: 118px 0 72px;
   }

@@ -144,10 +144,7 @@ export default function CarpetBenefitsSection() {
           </aside>
 
           <div className={styles.scrollWrap} ref={scrollWrapRef}>
-            <div
-              className={`${styles.scrollPanel} ${local.scrollPanel}`}
-              ref={scrollPanelRef}
-            >
+            <div className={styles.scrollPanel} ref={scrollPanelRef}>
               <ol className={styles.timeline}>
                 {carpetBenefitsItems.map((item, index) => {
                   const Icon = item.icon;

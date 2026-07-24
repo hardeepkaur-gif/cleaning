@@ -25,7 +25,7 @@ const preparePoints = [
 export default function TenancyPrepareSection() {
   return (
     <section
-      className={styles.section}
+      className={`${styles.section} ${local.section}`}
       id="tenancy-prepare"
       aria-labelledby="tenancy-prepare-title"
     >

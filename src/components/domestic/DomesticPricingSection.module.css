@@ -355,6 +355,7 @@
   .table tbody td {
     border-top: none;
     border-left: none;
+    padding: 14px 16px;
   }
 
   .table tbody td + td {
@@ -380,11 +381,11 @@
   }
 
   .cell {
-    padding: 14px 16px;
+    padding: 0;
   }
 
   .cellApproach {
-    padding-top: 12px;
+    padding-left: 0;
   }
 
   .footer {
@@ -399,6 +400,10 @@
     border-radius: 16px;
   }
 
+  .table tbody td {
+    padding: 14px 16px;
+  }
+
   .factorIcon {
     width: 38px;
     height: 38px;
@@ -408,7 +413,6 @@
 
   .cell {
     gap: 10px;
-    padding: 12px 14px;
   }
 
   .cellTitle,

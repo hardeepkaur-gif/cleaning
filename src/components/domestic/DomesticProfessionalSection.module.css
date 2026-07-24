@@ -9,12 +9,21 @@
 }
 
 @media (max-width: 991px) {
+  .section {
+    padding-top: 0;
+  }
+
   .imageWrap img {
     aspect-ratio: 16 / 11;
   }
 }
 
 @media (max-width: 575px) {
+  .section {
+    padding-top: 0;
+    padding-bottom: clamp(56px, 8vw, 70px);
+  }
+
   .imageWrap img {
     aspect-ratio: 4 / 3;
   }

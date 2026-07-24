@@ -3,3 +3,13 @@
 .section {
   padding-top: 0;
 }
+
+.title {
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .section {
+    padding-bottom: 60px;
+  }
+}

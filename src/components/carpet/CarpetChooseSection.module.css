@@ -1,3 +1,7 @@
+.services {
+  padding-top: 0;
+}
+
 .cardTitle {
   color: var(--primary-dark);
 }
@@ -12,12 +16,20 @@
 }
 
 @media (max-width: 991px) {
+  .services {
+    padding-top: 0;
+  }
+
   .grid {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 767px) {
+  .services {
+    padding-top: 0;
+  }
+
   .title {
     text-align: left;
     font-size: clamp(24px, 6.2vw, 32px);

@@ -1,5 +1,7 @@
 .section {
   padding-top: clamp(12px, 2vw, 20px);
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .title {
@@ -33,6 +35,7 @@
 @media (max-width: 575px) {
   .section {
     margin-top: 0;
+    padding-bottom: 0;
   }
 
   .title {

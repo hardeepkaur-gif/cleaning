@@ -34,7 +34,7 @@ export default function CarpetAreasSection() {
 
           <div className={styles.mapArea}>
             <div className={styles.mapFrame}>
-              <div className={`${styles.mapInner} ${local.mapInner}`}>
+              <div className={styles.mapInner}>
                 <img
                   src="/images/london-map.webp"
                   alt="Map of Greater London showing carpet cleaning coverage in East London"

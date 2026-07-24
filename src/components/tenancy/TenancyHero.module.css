@@ -74,7 +74,8 @@
 
 @media (max-width: 767px) {
   .container {
-    padding-top: clamp(40px, 6vw, 56px);
+    padding-top: calc(clamp(40px, 6vw, 56px) + 15px);
+    padding-bottom: calc(clamp(24px, 4vw, 40px) + 15px);
   }
 
   .overlay {
@@ -84,8 +85,8 @@
 
 @media (max-width: 575px) {
   .container {
-    padding-top: 36px;
-    padding-bottom: 20px;
+    padding-top: 51px;
+    padding-bottom: 35px;
   }
 }
 

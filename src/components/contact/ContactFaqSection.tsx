@@ -83,7 +83,7 @@ export default function ContactFaqSection() {
   const rightCol = faqs.slice(half);
 
   function handleToggle(index: number) {
-    setOpenIndex(openIndex === index ? -1 : index);
+    setOpenIndex((prev) => (prev === index ? -1 : index));
   }
 
   return (

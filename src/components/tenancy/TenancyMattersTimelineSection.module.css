@@ -487,22 +487,18 @@
   .scrollWrap {
     height: auto !important;
     max-height: none !important;
+    overflow: visible;
   }
 
   .scrollPanel {
-    height: auto;
-    max-height: min(560px, 65vh);
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible;
   }
 
   .navChips {
     margin-top: 0;
     padding-top: 0;
-  }
-}
-
-@media (max-width: 991px) {
-  .scrollPanel {
-    max-height: min(520px, 62vh);
   }
 }
 
@@ -550,7 +546,6 @@
   }
 
   .scrollPanel {
-    max-height: min(460px, 58vh);
     padding: 16px 12px 22px 8px;
   }
 }
