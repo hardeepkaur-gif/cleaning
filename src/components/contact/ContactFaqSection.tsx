@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
 import { FaMinus, FaPlus } from "react-icons/fa";
+import { useFaqAccordion } from "@/hooks/useFaqAccordion";
 import styles from "./ContactUs.module.css";
 
 const faqs = [
@@ -29,37 +29,36 @@ const faqs = [
 
 function FaqColumn({
   items,
-  openIndex,
+  column,
+  isOpen,
   onToggle,
-  offset,
 }: {
   items: typeof faqs;
-  openIndex: number | null;
-  onToggle: (index: number) => void;
-  offset: number;
+  column: "left" | "right";
+  isOpen: (column: "left" | "right", localIndex: number) => boolean;
+  onToggle: (column: "left" | "right", localIndex: number) => void;
 }) {
   return (
     <div className={styles.faqCol}>
       {items.map((faq, index) => {
-        const globalIndex = offset + index;
-        const isOpen = openIndex === globalIndex;
+        const open = isOpen(column, index);
         return (
           <div
             key={faq.q}
-            className={`${styles.faqItem} ${isOpen ? styles.faqItemOpen : ""}`}
+            className={`${styles.faqItem} ${open ? styles.faqItemOpen : ""}`}
           >
             <button
               type="button"
               className={styles.faqQ}
-              aria-expanded={isOpen}
-              onClick={() => onToggle(globalIndex)}
+              aria-expanded={open}
+              onClick={() => onToggle(column, index)}
             >
               <span className={styles.faqQText}>{faq.q}</span>
               <span className={styles.faqIcon}>
-                {isOpen ? <FaMinus /> : <FaPlus />}
+                {open ? <FaMinus /> : <FaPlus />}
               </span>
             </button>
-            {isOpen ? (
+            {open ? (
               <div className={styles.faqA}>
                 <div className={styles.faqAInner}>
                   <div className={styles.faqImg}>
@@ -77,14 +76,9 @@ function FaqColumn({
 }
 
 export default function ContactFaqSection() {
-  const [openIndex, setOpenIndex] = useState(0);
-  const half = Math.ceil(faqs.length / 2);
+  const { half, isOpen, toggle } = useFaqAccordion(faqs.length);
   const leftCol = faqs.slice(0, half);
   const rightCol = faqs.slice(half);
-
-  function handleToggle(index: number) {
-    setOpenIndex((prev) => (prev === index ? -1 : index));
-  }
 
   return (
     <section className={styles.faqSection} aria-labelledby="contact-faq-title">
@@ -96,15 +90,15 @@ export default function ContactFaqSection() {
         <div className={styles.faqColumns}>
           <FaqColumn
             items={leftCol}
-            openIndex={openIndex}
-            onToggle={handleToggle}
-            offset={0}
+            column="left"
+            isOpen={isOpen}
+            onToggle={toggle}
           />
           <FaqColumn
             items={rightCol}
-            openIndex={openIndex}
-            onToggle={handleToggle}
-            offset={half}
+            column="right"
+            isOpen={isOpen}
+            onToggle={toggle}
           />
         </div>
       </div>

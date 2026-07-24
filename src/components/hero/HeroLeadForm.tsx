@@ -53,7 +53,7 @@ export default function HeroLeadForm({
   primaryBtnLabel = "Request a Quote",
   primaryBtnHref = "/contact-us",
   secondaryBtnLabel = "Find Your Cleaner",
-  secondaryBtnHref = "#services",
+  secondaryBtnHref = "/services",
   bgImage = "/images/hero/hero-lead-bg.png",
   formBgImage,
   transparentForm = false,

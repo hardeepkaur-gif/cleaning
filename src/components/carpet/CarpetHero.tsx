@@ -54,7 +54,7 @@ export default function CarpetHero() {
                 <ThmButton href="/contact-us">Contact Now!</ThmButton>
               </div>
               <div className={`${heroStyles.bottomBtn} ${local.bottomBtn}`}>
-                <ThmButton href="/#services" variant="secondary">
+                <ThmButton href="/services" variant="secondary">
                   View All Services
                 </ThmButton>
               </div>

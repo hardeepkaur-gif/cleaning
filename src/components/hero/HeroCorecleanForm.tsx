@@ -123,7 +123,7 @@ export default function HeroCorecleanForm() {
                 <ThmButton href="/contact-us">Request a Quote</ThmButton>
               </div>
               <div className={styles.bottomBtn}>
-                <ThmButton href="#services" variant="secondary">
+                <ThmButton href="/services" variant="secondary">
                   Find Your Cleaner
                 </ThmButton>
               </div>

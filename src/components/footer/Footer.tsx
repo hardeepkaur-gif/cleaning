@@ -20,9 +20,9 @@ import {
   contactInfo,
   footerLegalLinks,
   footerQuickLinks,
+  navServiceLinks,
   socialLinks,
 } from "@/components/menu/menuData";
-import { servicesList } from "@/components/services/servicesData";
 import styles from "./Footer.module.css";
 
 const socialIconMap = {
@@ -126,11 +126,11 @@ export default function Footer() {
           <div className={styles.column}>
             <h3 className={styles.title}>Our Services</h3>
             <ul className={styles.links}>
-              {servicesList.map((service) => (
-                <li key={service.title}>
-                  <a href={service.href}>
+              {navServiceLinks.map((link) => (
+                <li key={link.label}>
+                  <a href={link.href}>
                     <FaArrowRight className={styles.linkArrow} aria-hidden />
-                    {service.label} Cleaning
+                    {link.label}
                   </a>
                 </li>
               ))}

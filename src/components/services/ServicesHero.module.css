@@ -1,0 +1,15 @@
+.pageHeaderBg {
+  background-position: center top;
+}
+
+@media (max-width: 767px) {
+  .pageHeaderBg {
+    background-position: right top;
+  }
+}
+
+@media (max-width: 575px) {
+  .pageHeaderBg {
+    background-position: 92% top;
+  }
+}

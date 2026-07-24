@@ -36,7 +36,7 @@ export default function HeroCoreclean({
   title = defaultTitle,
   description = defaultDescription,
   primaryCta = { href: "/contact-us", label: "Request a Quote" },
-  secondaryCta = { href: "#services", label: "Find Your Cleaner" },
+  secondaryCta = { href: "/services", label: "Find Your Cleaner" },
   imageSrc = `${imgBase}/main-slider-two-1-1.png`,
   imageAlt = "Professional cleaner",
 }: HeroCorecleanProps) {

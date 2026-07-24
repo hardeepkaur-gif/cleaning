@@ -32,7 +32,7 @@ export default function HeroPromo() {
             <ThmButton href="/contact-us" hoverVariant="white">
               Request a Quote
             </ThmButton>
-            <ThmButton href="#services" hoverVariant="white">
+            <ThmButton href="/services" hoverVariant="white">
               Find Your Cleaner
             </ThmButton>
           </div>

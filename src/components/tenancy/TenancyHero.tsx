@@ -49,7 +49,7 @@ export default function TenancyHero() {
                 <ThmButton href="/contact-us">Request a Quote</ThmButton>
               </div>
               <div className={heroStyles.bottomBtn}>
-                <ThmButton href="/#services" variant="secondary">
+                <ThmButton href="/services" variant="secondary">
                   View All Services
                 </ThmButton>
               </div>

@@ -76,7 +76,7 @@ export default function Hero() {
 
           <div className={styles.actions}>
             <ThmButton href="/contact-us">Request a Quote</ThmButton>
-            <ThmButton href="#services">Find Your Cleaner</ThmButton>
+            <ThmButton href="/services">Find Your Cleaner</ThmButton>
           </div>
         </div>
 
