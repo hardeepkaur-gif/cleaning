@@ -41,7 +41,7 @@ export default function CtaSectionFour() {
 
               <div className={styles.actionRow}>
                 <div className={styles.btnWrap}>
-                  <ThmButton href="#contact" className={styles.ctaBtn}>
+                  <ThmButton href="/contact-us" className={styles.ctaBtn}>
                     <FaCalendarCheck aria-hidden />
                     Request a Quote
                   </ThmButton>

@@ -51,7 +51,7 @@ export default function DomesticFinalCtaSection() {
               <div className={styles.actionRow}>
                 <div className={styles.btnWrap}>
                   <ThmButton
-                    href="/#contact"
+                    href="/contact-us"
                     className={`${styles.ctaBtn} ${local.ctaBtn}`}
                   >
                     <FaCalendarCheck aria-hidden />

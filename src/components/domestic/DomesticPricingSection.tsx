@@ -93,7 +93,7 @@ export default function DomesticPricingSection() {
 
         <div className={styles.footer}>
           <p className={styles.footerText}>{domesticPricingFooterText}</p>
-          <ThmButton href="/#contact" className={styles.ctaBtn}>
+          <ThmButton href="/contact-us" className={styles.ctaBtn}>
             <FaPhoneAlt aria-hidden />
             Request a Quote
           </ThmButton>

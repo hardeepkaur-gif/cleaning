@@ -82,7 +82,7 @@ export default function TenancyPricingSection() {
             Need an exact figure for your property? We&apos;ll confirm a fixed
             quotation before work begins.
           </p>
-          <ThmButton href="/#contact" className={styles.ctaBtn}>
+          <ThmButton href="/contact-us" className={styles.ctaBtn}>
             <FaPhoneAlt aria-hidden />
             Request a Quote
           </ThmButton>

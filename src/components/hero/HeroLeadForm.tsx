@@ -51,7 +51,7 @@ export default function HeroLeadForm({
   description =
     "Reliable cleaning services for homes, rental properties, offices, and commercial premises across East London. At Cleaning Services London we have DBS-checked and fully insured cleaners following documented cleaning standards, completion photo procedures, and quality control checks designed to deliver consistent results.",
   primaryBtnLabel = "Request a Quote",
-  primaryBtnHref = "#contact",
+  primaryBtnHref = "/contact-us",
   secondaryBtnLabel = "Find Your Cleaner",
   secondaryBtnHref = "#services",
   bgImage = "/images/hero/hero-lead-bg.png",

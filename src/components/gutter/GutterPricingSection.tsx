@@ -85,7 +85,7 @@ export default function GutterPricingSection() {
             <h3 className={local.ctaTitle}>{gutterPricingCtaTitle}</h3>
             <p className={local.ctaText}>{gutterPricingCtaText}</p>
           </div>
-          <ThmButton href="/#contact" className={local.ctaBtn}>
+          <ThmButton href="/contact-us" className={local.ctaBtn}>
             <FaCalendarCheck aria-hidden />
             Contact Now!
           </ThmButton>

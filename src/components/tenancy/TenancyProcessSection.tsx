@@ -445,7 +445,7 @@ export default function TenancyProcessSection() {
         </div>
 
         <div className={local.ctaWrap}>
-          <ThmButton href="/#contact" className={local.ctaBtn}>
+          <ThmButton href="/contact-us" className={local.ctaBtn}>
             <FaPhoneAlt aria-hidden />
             Contact Our Vetted Team Now!
           </ThmButton>

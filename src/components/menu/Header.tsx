@@ -145,7 +145,7 @@ function MenuBar({
           </div>
 
           <div className={styles.btnBox}>
-            <ThmButton href="#contact">Get a Quote</ThmButton>
+            <ThmButton href="/contact-us">Get a Quote</ThmButton>
           </div>
         </div>
       </div>

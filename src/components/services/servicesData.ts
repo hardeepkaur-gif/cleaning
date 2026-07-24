@@ -62,7 +62,7 @@ export const servicesList: ServiceData[] = [
     label: "Tenancy",
     title: "End of Tenancy Cleaning London",
     text: "Detailed end of tenancy cleaning London service to ensure that properties are ready for inspection, handover and occupancy by the next tenants.",
-    href: "#contact",
+    href: "/end-of-tenancy-cleaning",
     icon: FaKey,
     tabIcon: PiKeyDuotone,
     image: `${imgBase}/services-2-3.png`,

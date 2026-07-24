@@ -42,7 +42,7 @@ export default function HeroHomeThree() {
             </p>
 
             <div className={styles.actions}>
-              <ThmButton href="#contact">Request a Quote</ThmButton>
+              <ThmButton href="/contact-us">Request a Quote</ThmButton>
               <ThmButton href="#services" variant="secondary">
                 Find Your Cleaner
               </ThmButton>

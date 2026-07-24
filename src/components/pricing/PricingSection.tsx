@@ -110,7 +110,7 @@ export default function PricingSection() {
           <p className={styles.footerText}>
             Request to discuss your home area.
           </p>
-          <ThmButton href="#contact" className={styles.ctaBtn}>
+          <ThmButton href="/contact-us" className={styles.ctaBtn}>
             <FaPhoneAlt aria-hidden />
             Request a Quote
           </ThmButton>

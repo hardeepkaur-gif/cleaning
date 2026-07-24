@@ -52,7 +52,7 @@ export default function CarpetReadyCtaSection() {
                   <p className={local.note}>{carpetReadyCtaNote}</p>
                   <div className={local.btnRow}>
                     <ThmButton
-                      href="/#contact"
+                      href="/contact-us"
                       className={`${styles.ctaBtn} ${local.ctaBtn}`}
                     >
                       <FaCalendarCheck aria-hidden />

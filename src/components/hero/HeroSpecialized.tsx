@@ -45,7 +45,7 @@ export default function HeroSpecialized() {
 
             <div className={styles.bottom}>
               <div className={styles.bottomBtn}>
-                <ThmButton href="#contact">Request a Quote</ThmButton>
+                <ThmButton href="/contact-us">Request a Quote</ThmButton>
               </div>
               <div className={styles.bottomBtn}>
                 <ThmButton href="#services" variant="secondary">

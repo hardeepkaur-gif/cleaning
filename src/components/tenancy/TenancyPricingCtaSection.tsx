@@ -47,7 +47,7 @@ export default function TenancyPricingCtaSection() {
 
               <div className={styles.actionRow}>
                 <div className={styles.btnWrap}>
-                  <ThmButton href="/#contact" className={styles.ctaBtn}>
+                  <ThmButton href="/contact-us" className={styles.ctaBtn}>
                     <FaCalendarCheck aria-hidden />
                     Get Your Fixed Price Quote
                   </ThmButton>

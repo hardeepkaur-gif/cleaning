@@ -38,7 +38,7 @@ export default function TenancyAreasSection() {
               with wider London coverage available depending on property type,
               scheduling and availability.
             </p>
-            <ThmButton href="/#contact" className={styles.btnMain}>
+            <ThmButton href="/contact-us" className={styles.btnMain}>
               Contact Our Team <FaArrowRight />
             </ThmButton>
           </div>

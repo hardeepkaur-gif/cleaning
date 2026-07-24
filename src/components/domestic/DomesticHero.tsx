@@ -49,10 +49,10 @@ export default function DomesticHero() {
 
             <div className={heroStyles.bottom}>
               <div className={heroStyles.bottomBtn}>
-                <ThmButton href="/#contact">Request a Quote</ThmButton>
+                <ThmButton href="/contact-us">Request a Quote</ThmButton>
               </div>
               <div className={heroStyles.bottomBtn}>
-                <ThmButton href="/#contact" variant="secondary">
+                <ThmButton href="/contact-us" variant="secondary">
                   Book Your Cleaner
                 </ThmButton>
               </div>

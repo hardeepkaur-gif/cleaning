@@ -39,7 +39,7 @@ export default function CtaSection() {
               </ul>
 
               <div className={styles.btnBox}>
-                <ThmButton href="#contact" className={styles.ctaBtnPrimary}>
+                <ThmButton href="/contact-us" className={styles.ctaBtnPrimary}>
                   <FaCalendarCheck aria-hidden />
                   {ctaButtonLabel}
                 </ThmButton>

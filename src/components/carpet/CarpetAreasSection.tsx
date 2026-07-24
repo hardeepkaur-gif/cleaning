@@ -25,7 +25,7 @@ export default function CarpetAreasSection() {
             </h2>
             <p className={styles.intro}>{carpetAreasIntro}</p>
             <ThmButton
-              href="/#contact"
+              href="/contact-us"
               className={`${styles.btnMain} ${local.btnMain}`}
             >
               Send Message <FaArrowRight aria-hidden />

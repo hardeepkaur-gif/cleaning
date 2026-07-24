@@ -28,7 +28,7 @@ export default function GutterAreasSection() {
               {gutterAreasTitle}
             </h2>
             <p className={styles.intro}>{gutterAreasIntro}</p>
-            <ThmButton href="/#contact" className={styles.btnMain}>
+            <ThmButton href="/contact-us" className={styles.btnMain}>
               Contact Our Team <FaArrowRight />
             </ThmButton>
           </div>

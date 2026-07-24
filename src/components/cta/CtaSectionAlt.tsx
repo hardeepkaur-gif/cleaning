@@ -48,7 +48,7 @@ export default function CtaSectionAlt() {
             </ul>
 
             <div className={styles.actions}>
-              <ThmButton href="#contact" className={styles.btnMain}>
+              <ThmButton href="/contact-us" className={styles.btnMain}>
                 <FaCalendarCheck aria-hidden />
                 {ctaButtonLabel}
               </ThmButton>

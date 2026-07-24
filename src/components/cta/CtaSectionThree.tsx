@@ -24,7 +24,7 @@ export default function CtaSectionThree() {
             </h2>
             <p className={styles.text}>{ctaText}</p>
             <div className={styles.btnBox}>
-              <ThmButton href="#contact" className={styles.ctaBtn}>
+              <ThmButton href="/contact-us" className={styles.ctaBtn}>
                 <FaCalendarCheck aria-hidden />
                 {ctaButtonLabel}
               </ThmButton>

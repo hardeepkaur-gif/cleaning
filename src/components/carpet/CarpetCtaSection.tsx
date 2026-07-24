@@ -51,7 +51,7 @@ export default function CarpetCtaSection() {
               <div className={styles.actionRow}>
                 <div className={`${styles.btnWrap} ${local.btnWrap}`}>
                   <ThmButton
-                    href="/#contact"
+                    href="/contact-us"
                     className={`${styles.ctaBtn} ${local.ctaBtn}`}
                   >
                     <FaCalendarCheck aria-hidden />

@@ -17,7 +17,7 @@ export default function AreasSection() {
               with homeowners, tenants, landlords, students, and businesses
               throughout the region.
             </p>
-            <ThmButton href="#contact" className={styles.btnMain}>
+            <ThmButton href="/contact-us" className={styles.btnMain}>
               Send Message <FaArrowRight />
             </ThmButton>
           </div>

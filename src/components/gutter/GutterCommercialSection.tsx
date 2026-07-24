@@ -37,7 +37,7 @@ export default function GutterCommercialSection() {
 
             <div className={`${styles.closing} ${local.closing}`}>
               <p>{gutterCommercialClosing}</p>
-              <ThmButton href="/#contact" className={local.ctaBtn}>
+              <ThmButton href="/contact-us" className={local.ctaBtn}>
                 <FaCalendarCheck aria-hidden />
                 Contact Now!
               </ThmButton>

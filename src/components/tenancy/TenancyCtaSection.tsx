@@ -28,7 +28,7 @@ export default function TenancyCtaSection() {
             </p>
             <div className={`${styles.btnBox} ${localStyles.btnBox}`}>
               <ThmButton
-                href="/#contact"
+                href="/contact-us"
                 className={`${styles.ctaBtn} ${localStyles.ctaBtn}`}
               >
                 <FaCalendarCheck aria-hidden />
