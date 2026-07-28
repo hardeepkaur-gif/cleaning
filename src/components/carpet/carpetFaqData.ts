@@ -10,11 +10,6 @@ export const carpetFaqTitle = "FAQs";
 
 export const carpetFaqs: CarpetFaqItem[] = [
   {
-    q: "How much does carpet cleaning cost in London?",
-    a: "Carpet cleaning prices in London depend on the number of rooms, carpet size, carpet condition and cleaning method. Small rooms often start from around £30 to £50, while larger jobs are usually priced after assessing your requirements. We provide fixed quotations before work begins, so you know the total cost in advance.",
-    img: `${faqImgBase}/faq-cost.webp`,
-  },
-  {
     q: "How long does carpet cleaning take?",
     a: "Most standard rooms take around 20 to 40 minutes to clean. Larger homes, heavily stained carpets or commercial properties may require additional time depending on the size and condition of the carpets.",
     img: `${faqImgBase}/faq-duration.webp`,
@@ -31,7 +26,7 @@ export const carpetFaqs: CarpetFaqItem[] = [
   },
   {
     q: "Can carpet cleaning remove all stains?",
-    a: "No, many stains can be significantly improved or completely removed, but permanent damage, bleaching, dye transfer or stains that have been left untreated for a long time may not disappear completely. Every carpet is assessed before treatment.",
+    a: "No, many stains can be significantly improved or completely removed, but permanent damage, bleaching, dye transfer or stains that have been left untreated for a long time may not disappear completely.",
     img: `${faqImgBase}/faq-stains.webp`,
   },
   {
@@ -51,12 +46,22 @@ export const carpetFaqs: CarpetFaqItem[] = [
   },
   {
     q: "Do you clean office carpets in London?",
-    a: "Yes, we provide office carpet cleaning for workplaces, retail units and commercial premises across East London and the wider London area. Flexible appointments help minimise disruption to your business.",
+    a: "Yes, we provide office carpet cleaning for workplaces, retail units and commercial premises across London and the wider London area. Flexible appointments help minimise disruption to your business.",
     img: `${faqImgBase}/faq-office.webp`,
   },
   {
     q: "Do you offer carpet and sofa cleaning together?",
     a: "Yes, many customers book carpet and upholstery cleaning during the same visit. Cleaning both together saves time, keeps your home consistently clean and may reduce the overall cost compared with booking separate appointments.",
     img: `${faqImgBase}/faq-sofa.webp`,
+  },
+  {
+    q: "Why Cheap Carpet Cleaning Can Cost More?",
+    a: "Low-cost services use weaker equipment, unsuitable cleaning products or rushed cleaning methods that leave dirt, moisture or detergent residue behind. So, this results in stains to return, unpleasant odours to remain or carpets to wear out more quickly.",
+    img: `${faqImgBase}/faq-cost.webp`,
+  },
+  {
+    q: "What equipment do you use at Cleaning Services London to clean carpet?",
+    a: "We use commercial hot water extraction equipment rather than domestic carpet-cleaning machines. The system injects cleaning solution into the carpet and extracts loosened dirt and moisture in the same process. Before cleaning, we assess fibre type, staining and condition so that temperature, treatment and cleaning method can be adjusted where required.",
+    img: "/images/carpet/professional-carpet-care.webp",
   },
 ];

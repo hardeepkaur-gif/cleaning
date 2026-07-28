@@ -1,5 +1,10 @@
+#carpet-care-tips {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
 .section {
-  padding: clamp(60px, 8vw, 100px) 0 0 !important;
+  padding: 0 !important;
 }
 
 .topHeader {
@@ -27,6 +32,12 @@
 }
 
 @media (max-width: 767px) {
+  #carpet-care-tips,
+  .section {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
   .topHeader {
     text-align: left;
     margin-bottom: 18px;
