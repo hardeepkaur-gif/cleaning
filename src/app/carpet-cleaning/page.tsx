@@ -15,6 +15,7 @@ import CarpetCheapSection from "@/components/carpet/CarpetCheapSection";
 import CarpetMovingSection from "@/components/carpet/CarpetMovingSection";
 import CarpetBenefitsSection from "@/components/carpet/CarpetBenefitsSection";
 import CarpetAreasSection from "@/components/carpet/CarpetAreasSection";
+import CarpetAreasCtaSection from "@/components/carpet/CarpetAreasCtaSection";
 import CarpetProcessSection from "@/components/carpet/CarpetProcessSection";
 import CarpetCareTipsSection from "@/components/carpet/CarpetCareTipsSection";
 import CarpetReadyCtaSection from "@/components/carpet/CarpetReadyCtaSection";
@@ -47,6 +48,7 @@ export default function CarpetCleaningPage() {
       <CarpetMovingSection />
       <CarpetBenefitsSection />
       <CarpetAreasSection />
+      <CarpetAreasCtaSection />
       <CarpetProcessSection />
       <CarpetCareTipsSection />
       <CarpetReadyCtaSection />

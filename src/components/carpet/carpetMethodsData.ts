@@ -42,7 +42,7 @@ export const carpetMethodsGuideTitle =
   "Which Carpet Cleaning Method Should You Choose?";
 
 export const carpetMethodsGuideParagraphs = [
-  "Hot water extraction is the best cleaning for most homes and offices. It cleans dirt, bacteria, allergens and many common stains from deep within the carpet fibres and is used for heavily trafficked carpet and for homes with children, pets and allergists.",
+  "Hot water extraction is the best cleaning for most homes and offices. It cleans dirt, bacteria, allergens and many common stains from deep within the carpet fibres and is used for heavily trafficked carpet and for homes with children, pets and allergy sufferers.",
   "In cases where the material is delicate, and excessive moisture would damage it, dry carpet cleaning is a more appropriate solution, like with some natural fibre carpets. It is also a convenient option when there is a need to use carpet quickly after carpet use as it dries much faster when compared to other options available.",
   "Before we begin the cleaning process at Cleaning Services London, we thoroughly inspect your carpet to ensure the proper cleaning technique is recommended for the carpet material, condition and outcomes you are looking for.",
 ];

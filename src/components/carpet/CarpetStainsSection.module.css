@@ -3,7 +3,7 @@
 .section {
   position: relative;
   padding: clamp(70px, 8vw, 100px) 0;
-  background: #f7f4f1;
+  background: var(--white);
   overflow: hidden;
 }
 

@@ -2,6 +2,19 @@
   align-items: stretch;
 }
 
+.header {
+  max-width: none;
+  width: 100%;
+}
+
+.title {
+  max-width: none;
+}
+
+.intro {
+  max-width: none;
+}
+
 @media (min-width: 992px) {
   .rail {
     height: 100%;

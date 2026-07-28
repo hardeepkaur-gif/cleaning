@@ -1,5 +1,5 @@
 .services {
-  padding-top: 0;
+  padding-top: 0 !important;
 }
 
 .cardTitle {
@@ -17,7 +17,7 @@
 
 @media (max-width: 991px) {
   .services {
-    padding-top: 0;
+    padding-top: 0 !important;
   }
 
   .grid {
@@ -27,7 +27,7 @@
 
 @media (max-width: 767px) {
   .services {
-    padding-top: 0;
+    padding-top: 0 !important;
   }
 
   .title {

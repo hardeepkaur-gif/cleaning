@@ -30,12 +30,15 @@ export default function CarpetServicesSection() {
       <div className={styles.orbTwo} aria-hidden />
 
       <div className={styles.container}>
-        <header className={styles.header}>
+        <header className={`${styles.header} ${local.header}`}>
           <p className={styles.tagline}>{carpetServicesTagline}</p>
-          <h2 className={styles.title} id="carpet-services-title">
+          <h2
+            className={`${styles.title} ${local.title}`}
+            id="carpet-services-title"
+          >
             {carpetServicesTitle}
           </h2>
-          <p className={styles.intro}>{carpetServicesIntro}</p>
+          <p className={`${styles.intro} ${local.intro}`}>{carpetServicesIntro}</p>
         </header>
 
         <div className={`${styles.stage} ${local.stage}`}>

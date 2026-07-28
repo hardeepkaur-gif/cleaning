@@ -2,7 +2,6 @@ import { FaCheck } from "react-icons/fa";
 import { PiSparkleDuotone } from "react-icons/pi";
 import styles from "./CarpetWorthItAltSection.module.css";
 import {
-  carpetWorthItClosing,
   carpetWorthItExtra,
   carpetWorthItImage,
   carpetWorthItImageAlt,
@@ -68,10 +67,6 @@ export default function CarpetWorthItAltSection() {
                   </li>
                 ))}
               </ul>
-
-              <div className={styles.closing}>
-                <p>{carpetWorthItClosing}</p>
-              </div>
             </div>
           </div>
         </div>

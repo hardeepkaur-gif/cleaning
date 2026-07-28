@@ -34,7 +34,7 @@ export const carpetServiceTabs: CarpetServiceTab[] = [
     icon: PiSparkleDuotone,
     image: "/images/carpet/deep-carpet-cleaning.webp",
     description:
-      "For deep carpet cleaning we focus on the dirt, dust and debris that have been trapped deep within the carpet fibres that can't be removed by regular vacuuming. It can be used on heavily trafficked carpet that has become dull, discolored or worn through the use of a person.",
+      "For deep carpet cleaning we focus on the dirt, dust and debris that have been trapped deep within the carpet fibres that can't be removed by regular vacuuming. It is particularly useful for high-traffic carpets that have become dull, discoloured, or visibly worn from everyday use.",
   },
   {
     id: "steam",

@@ -3,6 +3,7 @@ import {
   FaBox,
   FaBuilding,
   FaCalendarAlt,
+  FaCertificate,
   FaMapMarkerAlt,
   FaPoundSign,
   FaShieldAlt,
@@ -20,6 +21,7 @@ export const carpetTrustTitle =
 
 export const carpetTrustItems: CarpetTrustItem[] = [
   { icon: FaUserShield, label: "DBS-checked cleaners" },
+  { icon: FaCertificate, label: "IICRC, NCCA Certified" },
   { icon: FaShieldAlt, label: "Fully insured service" },
   { icon: FaBox, label: "Cleaning materials included" },
   { icon: FaPoundSign, label: "Fixed pricing with no hidden surprises" },

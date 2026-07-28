@@ -49,13 +49,13 @@ export default function CarpetIncludedSection() {
             </ul>
           </div>
 
-          <div className={styles.right}>
-            <div className={styles.visualStage}>
+          <div className={`${styles.right} ${local.rightVisual}`}>
+            <div className={`${styles.visualStage} ${local.visualStage}`}>
               <div className={styles.rightShape} aria-hidden>
                 <img src={includedImages.rightShape} alt="" />
               </div>
 
-              <div className={styles.imgBox}>
+              <div className={`${styles.imgBox} ${local.imgBox}`}>
                 <div className={styles.mainImg}>
                   <img
                     src={carpetIncludedImages.main}
@@ -77,7 +77,7 @@ export default function CarpetIncludedSection() {
                 </div>
               </div>
 
-              <div className={styles.img2}>
+              <div className={`${styles.img2} ${local.img2}`}>
                 <img
                   src={carpetIncludedImages.img2}
                   alt=""
@@ -85,7 +85,7 @@ export default function CarpetIncludedSection() {
                   loading="lazy"
                 />
               </div>
-              <div className={styles.img3}>
+              <div className={`${styles.img3} ${local.img3}`}>
                 <img
                   src={carpetIncludedImages.img3}
                   alt=""
@@ -93,7 +93,7 @@ export default function CarpetIncludedSection() {
                   loading="lazy"
                 />
               </div>
-              <div className={styles.img4}>
+              <div className={`${styles.img4} ${local.img4}`}>
                 <img
                   src={carpetIncludedImages.img4}
                   alt=""

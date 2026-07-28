@@ -36,16 +36,14 @@ export default function CarpetHero() {
 
             <div className={heroStyles.text}>
               <p>
-                If your carpets look dull, smell bad or hold stains that will not
-                go away you are not alone. Many homes and offices in London face
-                the same problem and basic vacuuming is not enough. To fix it at
-                Cleaning Services London we provide professional carpet cleaning
-                London using deep steam cleaning and stain removal to lift dirt,
-                remove odours and refresh your carpets.
+                Deep-clean your carpets with professional hot water extraction,
+                targeted stain treatment and odour removal. At Cleaning Services
+                London, our insured, DBS-checked cleaners serve homes, flats,
+                offices and rental properties in wider London.
               </p>
               <p>
-                Book your carpet cleaning today and receive a fixed quotation
-                based on your property size and cleaning requirements.
+                Book your carpet cleaning services today and receive a fixed
+                quotation based on your property size and cleaning requirements.
               </p>
             </div>
 

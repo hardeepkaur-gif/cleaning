@@ -14,7 +14,7 @@ export const carpetFrequencyTitle =
   "How Often Should Carpets Be Professionally Cleaned";
 
 export const carpetFrequencyIntro =
-  "The best carpet cleaning timetable relies on the way the room is made use of, the quantity of foot site traffic, and the existence of small children, pets or those with allergy symptoms in the home. Carpet Cleaning can prevent the proliferation of deep-seated dirt, allergens and bacteria that tend to accrue over time, leaving carpet cleaner and lasting longer.";
+  "The best carpet cleaning timetable depends on the way the room is made use of, the quantity of foot site traffic, and whether there are children, pets, or people with allergies. Carpet Cleaning can prevent the proliferation of deep-seated dirt, allergens and bacteria that tend to accrue over time, leaving carpet cleaner.";
 
 export type CarpetFrequencyRow = {
   id: string;

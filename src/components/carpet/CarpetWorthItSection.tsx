@@ -1,7 +1,6 @@
 import { FaCheck } from "react-icons/fa";
 import styles from "./CarpetWorthItSection.module.css";
 import {
-  carpetWorthItClosing,
   carpetWorthItExtra,
   carpetWorthItImage,
   carpetWorthItImageAlt,
@@ -64,10 +63,6 @@ export default function CarpetWorthItSection() {
                   </li>
                 ))}
               </ul>
-            </div>
-
-            <div className={styles.callout}>
-              <p>{carpetWorthItClosing}</p>
             </div>
           </div>
         </div>

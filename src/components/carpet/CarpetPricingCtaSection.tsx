@@ -12,7 +12,7 @@ import local from "./CarpetPricingCtaSection.module.css";
 export default function CarpetPricingCtaSection() {
   return (
     <section
-      className={styles.cta}
+      className={`${styles.cta} ${local.cta}`}
       id="carpet-pricing-cta"
       aria-labelledby="carpet-pricing-cta-title"
     >

@@ -1,5 +1,6 @@
 .section {
-  padding-top: 0;
+  padding-top: 0 !important;
+  padding-bottom: clamp(70px, 8vw, 100px) !important;
 }
 
 .header {
@@ -31,9 +32,55 @@
   max-width: none;
 }
 
+.rightVisual {
+  min-height: 400px;
+}
+
+.visualStage {
+  width: min(100%, 460px);
+  min-height: 420px;
+  padding-bottom: 20px;
+}
+
+.imgBox {
+  width: min(100%, 400px);
+}
+
+.img2 {
+  bottom: 8px;
+  left: -28px;
+  width: clamp(130px, 15vw, 185px);
+  height: clamp(130px, 15vw, 185px);
+}
+
+.img3 {
+  bottom: 12px;
+  left: 30%;
+  width: clamp(100px, 11vw, 140px);
+  height: clamp(100px, 11vw, 140px);
+}
+
+.img4 {
+  bottom: 18px;
+  left: 54%;
+  width: clamp(84px, 9vw, 115px);
+  height: clamp(84px, 9vw, 115px);
+}
+
+@media (max-width: 1199px) {
+  .rightVisual {
+    min-height: 380px;
+  }
+
+  .visualStage {
+    min-height: 380px;
+  }
+}
+
 @media (max-width: 767px) {
   .section {
-    padding-top: 0;
+    padding-top: 0 !important;
+    padding-bottom: 48px !important;
   }
 
   .header {
