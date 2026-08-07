@@ -24,7 +24,7 @@ export default function CarpetHero() {
         <div className={styles.container}>
           <div className={`${heroStyles.content} ${styles.content}`}>
             <div className={heroStyles.subTitle}>
-              <h4>Carpet Cleaning</h4>
+              <p>Carpet Cleaning</p>
             </div>
 
             <div className={heroStyles.bigTitle}>

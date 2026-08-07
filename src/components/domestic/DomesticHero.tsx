@@ -24,7 +24,7 @@ export default function DomesticHero() {
         <div className={`${styles.container} ${local.container}`}>
           <div className={`${heroStyles.content} ${styles.content}`}>
             <div className={heroStyles.subTitle}>
-              <h4>Domestic Cleaning Services</h4>
+              <p>Domestic Cleaning Services</p>
             </div>
 
             <div className={heroStyles.bigTitle}>

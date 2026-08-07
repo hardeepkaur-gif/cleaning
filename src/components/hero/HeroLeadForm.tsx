@@ -88,11 +88,11 @@ export default function HeroLeadForm({
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.subTitle}>
-            <h4>{tagline}</h4>
+            <p>{tagline}</p>
           </div>
 
           <div className={styles.bigTitle}>
-            <h2 id={titleId}>{title}</h2>
+            <h1 id={titleId}>{title}</h1>
           </div>
 
           <div className={styles.text}>

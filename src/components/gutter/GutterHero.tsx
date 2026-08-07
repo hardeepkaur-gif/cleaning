@@ -24,7 +24,7 @@ export default function GutterHero() {
         <div className={styles.container}>
           <div className={`${heroStyles.content} ${styles.content}`}>
             <div className={heroStyles.subTitle}>
-              <h4>Gutter Cleaning</h4>
+              <p>Gutter Cleaning</p>
             </div>
 
             <div className={heroStyles.bigTitle}>
