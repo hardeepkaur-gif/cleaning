@@ -1,7 +1,7 @@
 import styles from "@/components/tenancy/TenancyProfessionalSection.module.css";
 import local from "./DomesticProfessionalSection.module.css";
 
-const professionalImage = "/images/domestic/professional-domestic-cleaning.png";
+const professionalImage = "/images/domestic/professional-domestic-cleaning.webp";
 
 export default function DomesticProfessionalSection() {
   return (

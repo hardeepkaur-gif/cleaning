@@ -15,7 +15,7 @@ export default function TenancyProfessionalSection() {
             <div className={styles.imageWrap}>
               <div className={styles.imageOne}>
                 <img
-                  src="/images/tenancy/end-of-tenancy-deposit-concerns.png"
+                  src="/images/tenancy/end-of-tenancy-deposit-concerns.webp"
                   alt="End of tenancy cleaning in London"
                   loading="lazy"
                 />
@@ -23,7 +23,7 @@ export default function TenancyProfessionalSection() {
 
               <div className={styles.imageTwo}>
                 <img
-                  src={`${imgBase}/about-three-img-2.jpg`}
+                  src={`${imgBase}/about-three-img-2.webp`}
                   alt="Professional cleaner preparing for property handover"
                   loading="lazy"
                 />

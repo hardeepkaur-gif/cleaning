@@ -80,7 +80,7 @@ export default function TenancyChecklistSection() {
                     <div
                       className={styles.tabLeftBg}
                       style={{
-                        backgroundImage: `url('${shapeBase}/services-three-tab-left-bg-shape.png')`,
+                        backgroundImage: `url('${shapeBase}/services-three-tab-left-bg-shape.webp')`,
                       }}
                       aria-hidden
                     />
@@ -88,7 +88,7 @@ export default function TenancyChecklistSection() {
                     <div className={styles.tabLeft}>
                       <img
                         className={styles.shape2}
-                        src={`${shapeBase}/services-three-shape-2.png`}
+                        src={`${shapeBase}/services-three-shape-2.webp`}
                         alt=""
                         aria-hidden
                       />
@@ -113,7 +113,7 @@ export default function TenancyChecklistSection() {
 
                         <img
                           className={styles.shape1}
-                          src={`${shapeBase}/services-three-shape-1.png`}
+                          src={`${shapeBase}/services-three-shape-1.webp`}
                           alt=""
                           aria-hidden
                         />

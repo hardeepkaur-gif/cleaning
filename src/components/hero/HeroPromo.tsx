@@ -6,7 +6,7 @@ export default function HeroPromo() {
     <section className={styles.hero} aria-label="Promotional cleaning services">
       <div
         className={styles.bg}
-        style={{ backgroundImage: "url('/images/hero/cleanon/slider-1-1.jpg')" }}
+        style={{ backgroundImage: "url('/images/hero/cleanon/slider-1-1.webp')" }}
         aria-hidden
       />
       <div className={styles.shape1} aria-hidden />
@@ -41,13 +41,13 @@ export default function HeroPromo() {
         <div className={styles.imgBox}>
           <div className={styles.mainImg}>
             <img
-              src="/images/hero/cleanon/main-slider-img-1-1.png"
+              src="/images/hero/cleanon/main-slider-img-1-1.webp"
               alt="Professional cleaner"
             />
           </div>
           <div className={styles.imgShape}>
             <img
-              src="/images/hero/cleanon/main-slider-img-shape-1.png"
+              src="/images/hero/cleanon/main-slider-img-shape-1.webp"
               alt=""
               aria-hidden
             />

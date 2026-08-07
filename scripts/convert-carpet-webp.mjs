@@ -6,8 +6,8 @@ const ROOT = path.resolve("public/images");
 const MAX_BYTES = 60 * 1024;
 const TARGETS = [
   path.join(ROOT, "carpet"),
-  path.join(ROOT, "london-map.png"),
-  path.join(ROOT, "tenancy", "carpet-cleaning.png"),
+  path.join(ROOT, "london-map.webp"),
+  path.join(ROOT, "tenancy", "carpet-cleaning.webp"),
 ];
 
 function collectPngs(target) {

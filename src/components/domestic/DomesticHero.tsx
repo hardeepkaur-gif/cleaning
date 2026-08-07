@@ -3,7 +3,7 @@ import heroStyles from "@/components/hero/HeroLeadForm.module.css";
 import styles from "@/components/tenancy/TenancyHero.module.css";
 import local from "./DomesticHero.module.css";
 
-const heroImage = "/images/domestic/domestic-cleaning-hero.png";
+const heroImage = "/images/domestic/domestic-cleaning-hero.webp";
 
 export default function DomesticHero() {
   return (

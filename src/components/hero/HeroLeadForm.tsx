@@ -54,7 +54,7 @@ export default function HeroLeadForm({
   primaryBtnHref = "/contact-us",
   secondaryBtnLabel = "Find Your Cleaner",
   secondaryBtnHref = "/services",
-  bgImage = "/images/hero/hero-lead-bg.png",
+  bgImage = "/images/hero/hero-lead-bg.webp",
   formBgImage,
   transparentForm = false,
   formPrefix = "lead",

@@ -111,7 +111,7 @@
   bottom: 0;
   width: 1px;
   height: 1px;
-  background: url("/images/shapes/buble.png") no-repeat center center;
+  background: url("/images/shapes/buble.webp") no-repeat center center;
   background-size: cover;
   border-radius: 50%;
   transform: translateX(-50%);

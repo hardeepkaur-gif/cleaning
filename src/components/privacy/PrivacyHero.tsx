@@ -11,7 +11,7 @@ export default function PrivacyHero() {
       <div
         className={styles.pageHeaderBg}
         style={{
-          backgroundImage: "url('/images/privacy/privacy-hero-bg.png')",
+          backgroundImage: "url('/images/privacy/privacy-hero-bg.webp')",
         }}
         aria-hidden
       />

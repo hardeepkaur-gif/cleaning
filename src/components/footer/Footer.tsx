@@ -82,7 +82,7 @@ export default function Footer() {
           <div className={styles.about}>
             <Link href="/#home" className={styles.logo}>
               <img
-                src="/images/logo.png"
+                src="/images/logo.webp"
                 alt="Cleaning Services London"
                 className={styles.logoImg}
               />

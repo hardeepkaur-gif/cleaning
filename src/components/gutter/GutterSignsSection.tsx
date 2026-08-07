@@ -46,12 +46,12 @@ export default function GutterSignsSection() {
                 <div
                   className={styles.sealBg}
                   style={{
-                    backgroundImage: `url('${imgBase}/about-three-cleaning-gurante-bg-shape.png')`,
+                    backgroundImage: `url('${imgBase}/about-three-cleaning-gurante-bg-shape.webp')`,
                   }}
                   aria-hidden
                 />
                 <img
-                  src={`${imgBase}/about-three-cleaning-gurante-icon.png`}
+                  src={`${imgBase}/about-three-cleaning-gurante-icon.webp`}
                   alt=""
                   aria-hidden
                 />

@@ -21,7 +21,7 @@ export default function AboutUs() {
               <span className={styles.frameAccent} aria-hidden />
               <div className={styles.imgMain}>
                 <img
-                  src={`${imgBase}/about-three-img-1.png`}
+                  src={`${imgBase}/about-three-img-1.webp`}
                   alt="Professional cleaners at work in a modern office"
                   loading="lazy"
                 />
@@ -29,7 +29,7 @@ export default function AboutUs() {
 
               <div className={styles.imgSecondary}>
                 <img
-                  src={`${imgBase}/about-three-img-2.jpg`}
+                  src={`${imgBase}/about-three-img-2.webp`}
                   alt="Cleaning team preparing equipment"
                   loading="lazy"
                 />
@@ -47,12 +47,12 @@ export default function AboutUs() {
                 <div
                   className={styles.sealBg}
                   style={{
-                    backgroundImage: `url('${imgBase}/about-three-cleaning-gurante-bg-shape.png')`,
+                    backgroundImage: `url('${imgBase}/about-three-cleaning-gurante-bg-shape.webp')`,
                   }}
                   aria-hidden
                 />
                 <img
-                  src={`${imgBase}/about-three-cleaning-gurante-icon.png`}
+                  src={`${imgBase}/about-three-cleaning-gurante-icon.webp`}
                   alt=""
                   aria-hidden
                 />

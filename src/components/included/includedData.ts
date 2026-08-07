@@ -22,13 +22,13 @@ export const includedExtra =
   "Additional tasks may be included depending on the service. Domestic cleaning services London customers book often focus on routine household maintenance, whilst carpet cleaning London services target stains and deep fibre cleaning. End of tenancy cleaning London appointments follow a more comprehensive property checklist, and gutter cleaning London services focus on external drainage systems and blockage removal.";
 
 export const includedImages = {
-  main: `${imgBase}/why-choose-one-img-1.jpg`,
-  img2: `${imgBase}/why-choose-one-img-2.jpg`,
-  img3: `${imgBase}/why-choose-one-img-3.jpg`,
-  img4: `${imgBase}/why-choose-one-img-4.jpg`,
-  rightShape: `${imgBase}/why-choose-one-right-shape-1.png`,
-  shape1: `${imgBase}/why-choose-one-img-shape-1.png`,
-  shape2: `${imgBase}/why-choose-one-img-shape-2.png`,
-  shape3: `${imgBase}/why-choose-one-img-shape-3.png`,
-  shape4: `${imgBase}/why-choose-one-img-shape-4.png`,
+  main: `${imgBase}/why-choose-one-img-1.webp`,
+  img2: `${imgBase}/why-choose-one-img-2.webp`,
+  img3: `${imgBase}/why-choose-one-img-3.webp`,
+  img4: `${imgBase}/why-choose-one-img-4.webp`,
+  rightShape: `${imgBase}/why-choose-one-right-shape-1.webp`,
+  shape1: `${imgBase}/why-choose-one-img-shape-1.webp`,
+  shape2: `${imgBase}/why-choose-one-img-shape-2.webp`,
+  shape3: `${imgBase}/why-choose-one-img-shape-3.webp`,
+  shape4: `${imgBase}/why-choose-one-img-shape-4.webp`,
 };

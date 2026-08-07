@@ -65,7 +65,7 @@ function ServicePanelContent({
       <div
         className={styles.tabLeftBg}
         style={{
-          backgroundImage: `url('${shapeBase}/services-three-tab-left-bg-shape.png')`,
+          backgroundImage: `url('${shapeBase}/services-three-tab-left-bg-shape.webp')`,
         }}
         aria-hidden
       />
@@ -78,7 +78,7 @@ function ServicePanelContent({
             </div>
             <img
               className={styles.shape2}
-              src={`${shapeBase}/services-three-shape-2.png`}
+              src={`${shapeBase}/services-three-shape-2.webp`}
               alt=""
               aria-hidden
             />
@@ -91,7 +91,7 @@ function ServicePanelContent({
             </ThmButton>
             <img
               className={styles.shape1}
-              src={`${shapeBase}/services-three-shape-1.png`}
+              src={`${shapeBase}/services-three-shape-1.webp`}
               alt=""
               aria-hidden
             />

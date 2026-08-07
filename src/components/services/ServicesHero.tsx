@@ -9,7 +9,7 @@ export default function ServicesHero() {
       <div
         className={`${styles.pageHeaderBg} ${local.pageHeaderBg}`}
         style={{
-          backgroundImage: "url('/images/services/services-hero-bg.png')",
+          backgroundImage: "url('/images/services/services-hero-bg.webp')",
         }}
         aria-hidden
       />

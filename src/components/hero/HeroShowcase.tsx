@@ -51,12 +51,12 @@ export default function HeroShowcase() {
           <div className={styles.circle} aria-hidden />
           <img
             className={styles.cleaner}
-            src="/images/hero/hero-cleaner.png"
+            src="/images/hero/hero-cleaner.webp"
             alt="Professional cleaner with spray bottle"
           />
           <img
             className={styles.supplies}
-            src="/images/hero/hero-supplies.png"
+            src="/images/hero/hero-supplies.webp"
             alt="Cleaning supplies bucket"
           />
         </div>

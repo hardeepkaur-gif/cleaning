@@ -3,7 +3,7 @@ import ThmButton from "@/components/menu/ThmButton";
 import { ctaButtonLabel, ctaText, ctaTitle } from "./ctaData";
 import styles from "./CtaSection.module.css";
 
-const ctaImage = "/images/cta/cleanon/cta-one-img-1.png";
+const ctaImage = "/images/cta/cleanon/cta-one-img-1.webp";
 
 const perks = [
   "Fixed pricing",

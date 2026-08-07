@@ -97,7 +97,7 @@ function MenuBar({
         <div className={styles.left}>
           <Link href="/#home" className={styles.logo} onClick={() => setMobileOpen(false)}>
             <img
-              src="/images/logo.png"
+              src="/images/logo.webp"
               alt="Cleaning Services London"
               className={styles.logoImg}
               width={220}

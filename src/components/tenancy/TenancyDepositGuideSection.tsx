@@ -26,7 +26,7 @@ export default function TenancyDepositGuideSection() {
               <span className={styles.frameAccent} aria-hidden />
               <div className={styles.imgMain}>
                 <img
-                  src={`${depositImgBase}/main.png`}
+                  src={`${depositImgBase}/main.webp`}
                   alt="Professional end of tenancy cleaning in London"
                   loading="lazy"
                 />
@@ -34,7 +34,7 @@ export default function TenancyDepositGuideSection() {
 
               <div className={styles.imgSecondary}>
                 <img
-                  src={`${depositImgBase}/secondary.png`}
+                  src={`${depositImgBase}/secondary.webp`}
                   alt="Cleaning team preparing for property handover"
                   loading="lazy"
                 />
@@ -44,12 +44,12 @@ export default function TenancyDepositGuideSection() {
                 <div
                   className={styles.sealBg}
                   style={{
-                    backgroundImage: `url('${imgBase}/about-three-cleaning-gurante-bg-shape.png')`,
+                    backgroundImage: `url('${imgBase}/about-three-cleaning-gurante-bg-shape.webp')`,
                   }}
                   aria-hidden
                 />
                 <img
-                  src={`${imgBase}/about-three-cleaning-gurante-icon.png`}
+                  src={`${imgBase}/about-three-cleaning-gurante-icon.webp`}
                   alt=""
                   aria-hidden
                 />

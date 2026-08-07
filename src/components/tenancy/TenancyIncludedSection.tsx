@@ -24,14 +24,14 @@ export default function TenancyIncludedSection() {
       <div
         className={styles.bg}
         style={{
-          backgroundImage: `url('${faqImgBase}/faq-bg-1.jpg')`,
+          backgroundImage: `url('${faqImgBase}/faq-bg-1.webp')`,
         }}
         aria-hidden
       >
         <div
           className={styles.bgInner}
           style={{
-            backgroundImage: `url('${faqImgBase}/faq-bg-shape-1-1.png')`,
+            backgroundImage: `url('${faqImgBase}/faq-bg-shape-1-1.webp')`,
           }}
           aria-hidden
         />
@@ -39,7 +39,7 @@ export default function TenancyIncludedSection() {
 
       <img
         className={styles.shape}
-        src={`${faqImgBase}/faq-shape-1-1.png`}
+        src={`${faqImgBase}/faq-shape-1-1.webp`}
         alt=""
         aria-hidden
         loading="lazy"

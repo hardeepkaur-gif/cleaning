@@ -1,5 +1,5 @@
 /**
- * Pin positions (top/left %) relative to public/images/london-map.png
+ * Pin positions (top/left %) relative to public/images/london-map.webp
  * Calibrated for East London boroughs on the Greater London outline map.
  */
 export const areaPins = [

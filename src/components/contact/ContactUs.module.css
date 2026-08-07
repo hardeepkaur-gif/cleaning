@@ -1180,20 +1180,25 @@
 
 /* ── Map ── */
 .mapSection {
-  padding: clamp(70px, 9vw, 100px) 0;
+  padding: clamp(70px, 9vw, 100px) 0 0;
   background: var(--white);
+}
+
+.mapSection .sectionHead {
+  margin-bottom: clamp(28px, 4vw, 40px);
 }
 
 .mapFrame {
   overflow: hidden;
   width: 100%;
   height: clamp(320px, 42vw, 480px);
-  border: 1px solid rgba(14, 94, 91, 0.12);
-  border-radius: 20px;
-  box-shadow: 0 12px 40px rgba(14, 94, 91, 0.1);
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .mapFrame iframe {
+  display: block;
   width: 100%;
   height: 100%;
   border: 0;
@@ -1239,7 +1244,7 @@
   }
 
   .mapSection {
-    padding: clamp(48px, 10vw, 64px) 0 60px;
+    padding: clamp(48px, 10vw, 64px) 0 0;
   }
 
   .sectionHead {
@@ -1343,7 +1348,7 @@
 
   .mapFrame {
     height: clamp(240px, 58vw, 340px);
-    border-radius: 16px;
+    border-radius: 0;
   }
 
   .trustGrid {

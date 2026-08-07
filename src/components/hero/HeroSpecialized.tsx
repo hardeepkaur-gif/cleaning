@@ -10,13 +10,13 @@ export default function HeroSpecialized() {
         <div className={styles.leftSolid} aria-hidden />
         <div
           className={styles.bg}
-          style={{ backgroundImage: `url('${imgBase}/hero-bg-right.jpg')` }}
+          style={{ backgroundImage: `url('${imgBase}/hero-bg-right.webp')` }}
           aria-hidden
         />
         <div className={styles.bgBlend} aria-hidden />
 
         <div className={styles.mainImg}>
-          <img src={`${imgBase}/hero-section.png`} alt="Professional cleaning team" />
+          <img src={`${imgBase}/hero-section.webp`} alt="Professional cleaning team" />
         </div>
 
         <div className={styles.container}>

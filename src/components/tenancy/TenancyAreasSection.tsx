@@ -47,7 +47,7 @@ export default function TenancyAreasSection() {
             <div className={styles.mapFrame}>
               <div className={styles.mapInner}>
                 <img
-                  src="/images/london-map.png"
+                  src="/images/london-map.webp"
                   alt="Map of Greater London showing East London end of tenancy cleaning coverage"
                   className={styles.mapImg}
                 />

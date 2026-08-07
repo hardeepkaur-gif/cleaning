@@ -6,10 +6,10 @@ import local from "./TenancyPrepareSection.module.css";
 const prepareImgBase = "/images/tenancy/prepare";
 
 const prepareImages = {
-  main: `${prepareImgBase}/main.png`,
-  img2: `${prepareImgBase}/img-2.png`,
-  img3: `${prepareImgBase}/img-3.png`,
-  img4: `${prepareImgBase}/img-4.png`,
+  main: `${prepareImgBase}/main.webp`,
+  img2: `${prepareImgBase}/img-2.webp`,
+  img3: `${prepareImgBase}/img-3.webp`,
+  img4: `${prepareImgBase}/img-4.webp`,
 };
 
 const preparePoints = [

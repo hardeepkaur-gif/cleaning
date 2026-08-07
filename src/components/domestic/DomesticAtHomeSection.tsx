@@ -1,7 +1,7 @@
 import styles from "@/components/tenancy/TenancySection.module.css";
 import local from "./DomesticAtHomeSection.module.css";
 
-const atHomeImage = "/images/domestic/domestic-at-home-cleaner.png";
+const atHomeImage = "/images/domestic/domestic-at-home-cleaner.webp";
 
 export default function DomesticAtHomeSection() {
   return (

@@ -34,7 +34,7 @@ export const domesticChecklistTabs: DomesticChecklistTab[] = [
     title: "Kitchen Cleaning Checklist",
     shortLabel: "Kitchen",
     icon: PiCookingPotDuotone,
-    image: "/images/domestic/domestic-kitchen-checklist.png",
+    image: "/images/domestic/domestic-kitchen-checklist.webp",
     intro:
       "Your kitchen is one of the busiest rooms in the home and benefits from regular attention to maintain hygiene and cleanliness. Your domestic cleaner can:",
     items: [
@@ -52,7 +52,7 @@ export const domesticChecklistTabs: DomesticChecklistTab[] = [
     title: "Bathroom Cleaning Checklist",
     shortLabel: "Bathroom",
     icon: PiBathtubDuotone,
-    image: "/images/domestic/domestic-bathroom-checklist.png",
+    image: "/images/domestic/domestic-bathroom-checklist.webp",
     intro:
       "Bathrooms require regular cleaning to reduce limescale, soap residue, and everyday dirt. During your home cleaning service, your cleaner will normally:",
     items: [
@@ -69,7 +69,7 @@ export const domesticChecklistTabs: DomesticChecklistTab[] = [
     title: "Bedroom Cleaning Checklist",
     shortLabel: "Bedroom",
     icon: PiBedDuotone,
-    image: "/images/domestic/domestic-bedroom-checklist.png",
+    image: "/images/domestic/domestic-bedroom-checklist.webp",
     intro:
       "Regular bedroom cleaning helps create a tidy and comfortable space while reducing everyday dust and allergens. Your cleaner can usually:",
     items: [
@@ -86,7 +86,7 @@ export const domesticChecklistTabs: DomesticChecklistTab[] = [
     title: "Living Room Cleaning Checklist",
     shortLabel: "Living Room",
     icon: PiCouchDuotone,
-    image: "/images/domestic/domestic-living-room-checklist.png",
+    image: "/images/domestic/domestic-living-room-checklist.webp",
     intro:
       "Living areas are used every day and often collect dust, fingerprints, and general clutter. A domestic cleaning visit includes:",
     items: [
@@ -103,7 +103,7 @@ export const domesticChecklistTabs: DomesticChecklistTab[] = [
     title: "Hallways and Shared Areas",
     shortLabel: "Hallway",
     icon: PiDoorDuotone,
-    image: "/images/domestic/domestic-hallway-checklist.png",
+    image: "/images/domestic/domestic-hallway-checklist.webp",
     intro:
       "Hallways, stairs, and entrances experience constant foot traffic and help create the first impression of your home. Your cleaner will typically:",
     items: [
@@ -120,7 +120,7 @@ export const domesticChecklistTabs: DomesticChecklistTab[] = [
     title: "Additional Domestic Cleaning Tasks You Can Add",
     shortLabel: "Add-On Tasks",
     icon: PiPlusCircleDuotone,
-    image: "/images/domestic/domestic-addon-tasks-checklist.png",
+    image: "/images/domestic/domestic-addon-tasks-checklist.webp",
     intro:
       "Need a little extra help around the house? Alongside your regular domestic cleaning service, you can request additional household tasks during your booking, subject to the time available.",
     items: [
@@ -139,7 +139,7 @@ export const domesticChecklistTabs: DomesticChecklistTab[] = [
     title: "What Is Not Included in Standard Domestic Cleaning?",
     shortLabel: "Not Included",
     icon: PiProhibitDuotone,
-    image: "/images/domestic/domestic-not-included-checklist.png",
+    image: "/images/domestic/domestic-not-included-checklist.webp",
     intro:
       "To avoid any confusion, some specialist or time-intensive tasks are not normally included in a standard domestic cleaning service unless arranged in advance.",
     items: [

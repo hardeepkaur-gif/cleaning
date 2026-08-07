@@ -14,15 +14,15 @@ export default function ContactMapSection() {
             type, scheduling and availability.
           </p>
         </div>
+      </div>
 
-        <div className={styles.mapFrame}>
-          <iframe
-            src="https://www.google.com/maps?q=London&output=embed"
-            loading="lazy"
-            title="Cleaning Services London service area map"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
-        </div>
+      <div className={styles.mapFrame}>
+        <iframe
+          src="https://www.google.com/maps?q=London&output=embed"
+          loading="lazy"
+          title="Cleaning Services London service area map"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
       </div>
     </section>
   );

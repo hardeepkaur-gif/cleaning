@@ -8,7 +8,7 @@ export default function ContactHero() {
       <div
         className={styles.pageHeaderBg}
         style={{
-          backgroundImage: "url('/images/backgrounds/page-header-bg.jpg')",
+          backgroundImage: "url('/images/backgrounds/page-header-bg.webp')",
         }}
         aria-hidden
       />

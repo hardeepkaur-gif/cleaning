@@ -11,7 +11,7 @@ export default function TenancyHero() {
         <div className={styles.bg} aria-hidden>
           <div
             className={styles.bgInner}
-            style={{ backgroundImage: `url('${imgBase}/slide1.jpg')` }}
+            style={{ backgroundImage: `url('${imgBase}/slide1.webp')` }}
           />
         </div>
         <div className={styles.overlay} aria-hidden />

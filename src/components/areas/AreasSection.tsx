@@ -26,7 +26,7 @@ export default function AreasSection() {
             <div className={styles.mapFrame}>
               <div className={styles.mapInner}>
                 <img
-                  src="/images/london-map.png"
+                  src="/images/london-map.webp"
                   alt="Map of Greater London showing East London service coverage"
                   className={styles.mapImg}
                 />

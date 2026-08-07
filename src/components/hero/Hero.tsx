@@ -85,7 +85,7 @@ export default function Hero() {
           <div className={styles.splash} aria-hidden />
           <img
             className={styles.heroImage}
-            src="/images/hero/hero-bucket.png"
+            src="/images/hero/hero-bucket.webp"
             alt="Professional cleaning supplies"
           />
         </div>

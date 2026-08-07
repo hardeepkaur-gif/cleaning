@@ -51,45 +51,45 @@ export default function HeroCorecleanForm() {
         <div
           className={styles.bgShape}
           style={{
-            backgroundImage: `url('${imgBase}/main-slider-two-bg-shape-1.png')`,
+            backgroundImage: `url('${imgBase}/main-slider-two-bg-shape-1.webp')`,
           }}
           aria-hidden
         />
         <div
           className={styles.bgShapeTwo}
           style={{
-            backgroundImage: `url('${imgBase}/main-slider-two-bg-shape-2.png')`,
+            backgroundImage: `url('${imgBase}/main-slider-two-bg-shape-2.webp')`,
           }}
           aria-hidden
         />
 
         <img
           className={styles.shape1}
-          src={`${imgBase}/main-slider-two-shape-1.png`}
+          src={`${imgBase}/main-slider-two-shape-1.webp`}
           alt=""
           aria-hidden
         />
         <img
           className={styles.shape2}
-          src={`${imgBase}/main-slider-two-shape-2.png`}
+          src={`${imgBase}/main-slider-two-shape-2.webp`}
           alt=""
           aria-hidden
         />
         <img
           className={styles.shape3}
-          src={`${imgBase}/main-slider-two-shape-3.png`}
+          src={`${imgBase}/main-slider-two-shape-3.webp`}
           alt=""
           aria-hidden
         />
         <img
           className={styles.shape4}
-          src={`${imgBase}/main-slider-two-shape-4.png`}
+          src={`${imgBase}/main-slider-two-shape-4.webp`}
           alt=""
           aria-hidden
         />
         <img
           className={styles.shape5}
-          src={`${imgBase}/main-slider-two-shape-5.png`}
+          src={`${imgBase}/main-slider-two-shape-5.webp`}
           alt=""
           aria-hidden
         />

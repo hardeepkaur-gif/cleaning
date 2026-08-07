@@ -8,20 +8,20 @@ export default function HeroHomeThree() {
     <section className={styles.hero} aria-label="Home cleaning packages">
       <div
         className={styles.shapeBg}
-        style={{ backgroundImage: `url('${imgBase}/banner-one-shape-bg.jpg')` }}
+        style={{ backgroundImage: `url('${imgBase}/banner-one-shape-bg.webp')` }}
         aria-hidden
       />
       <div
         className={styles.shapeBgTwo}
-        style={{ backgroundImage: `url('${imgBase}/banner-one-shape-bg-2.png')` }}
+        style={{ backgroundImage: `url('${imgBase}/banner-one-shape-bg-2.webp')` }}
         aria-hidden
       />
 
-      <img className={styles.shape1} src={`${imgBase}/banner-one-shape-1.png`} alt="" aria-hidden />
-      <img className={styles.shape2} src={`${imgBase}/banner-one-shape-2.png`} alt="" aria-hidden />
-      <img className={styles.shape3} src={`${imgBase}/banner-one-shape-3.png`} alt="" aria-hidden />
-      <img className={styles.shape4} src={`${imgBase}/banner-one-shape-4.png`} alt="" aria-hidden />
-      <img className={styles.shape5} src={`${imgBase}/banner-one-shape-5.png`} alt="" aria-hidden />
+      <img className={styles.shape1} src={`${imgBase}/banner-one-shape-1.webp`} alt="" aria-hidden />
+      <img className={styles.shape2} src={`${imgBase}/banner-one-shape-2.webp`} alt="" aria-hidden />
+      <img className={styles.shape3} src={`${imgBase}/banner-one-shape-3.webp`} alt="" aria-hidden />
+      <img className={styles.shape4} src={`${imgBase}/banner-one-shape-4.webp`} alt="" aria-hidden />
+      <img className={styles.shape5} src={`${imgBase}/banner-one-shape-5.webp`} alt="" aria-hidden />
 
       <div className={styles.container}>
         <div className={styles.inner}>
@@ -52,7 +52,7 @@ export default function HeroHomeThree() {
           <div className={styles.right}>
             <div className={styles.imgBox}>
               <img
-                src={`${imgBase}/banner-one-img-1.png`}
+                src={`${imgBase}/banner-one-img-1.webp`}
                 alt="Professional cleaning team"
               />
             </div>

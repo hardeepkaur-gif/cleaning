@@ -37,7 +37,7 @@ export default function GutterAreasSection() {
             <div className={styles.mapFrame}>
               <div className={styles.mapInner}>
                 <img
-                  src="/images/london-map.png"
+                  src="/images/london-map.webp"
                   alt="Map of Greater London showing East London gutter cleaning coverage"
                   className={styles.mapImg}
                 />

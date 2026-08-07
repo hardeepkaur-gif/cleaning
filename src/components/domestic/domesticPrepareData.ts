@@ -12,7 +12,7 @@ export const domesticPreparePoints = [
   "Make sure the cleaner can easily access your property at the agreed time.",
 ];
 
-export const domesticPrepareImage = "/images/domestic/domestic-prepare-cleaner.png";
+export const domesticPrepareImage = "/images/domestic/domestic-prepare-cleaner.webp";
 
 export const domesticPrepareImageAlt =
   "Professional domestic cleaner with cleaning supplies ready for a home visit";

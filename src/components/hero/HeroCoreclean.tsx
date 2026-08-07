@@ -37,7 +37,7 @@ export default function HeroCoreclean({
   description = defaultDescription,
   primaryCta = { href: "/contact-us", label: "Request a Quote" },
   secondaryCta = { href: "/services", label: "Find Your Cleaner" },
-  imageSrc = `${imgBase}/main-slider-two-1-1.png`,
+  imageSrc = `${imgBase}/main-slider-two-1-1.webp`,
   imageAlt = "Professional cleaner",
 }: HeroCorecleanProps) {
   return (
@@ -45,42 +45,42 @@ export default function HeroCoreclean({
       <div className={styles.heroBody}>
         <div
           className={styles.bgShape}
-          style={{ backgroundImage: `url('${imgBase}/main-slider-two-bg-shape-1.png')` }}
+          style={{ backgroundImage: `url('${imgBase}/main-slider-two-bg-shape-1.webp')` }}
           aria-hidden
         />
         <div
           className={styles.bgShapeTwo}
-          style={{ backgroundImage: `url('${imgBase}/main-slider-two-bg-shape-2.png')` }}
+          style={{ backgroundImage: `url('${imgBase}/main-slider-two-bg-shape-2.webp')` }}
           aria-hidden
         />
 
         <img
           className={styles.shape1}
-          src={`${imgBase}/main-slider-two-shape-1.png`}
+          src={`${imgBase}/main-slider-two-shape-1.webp`}
           alt=""
           aria-hidden
         />
         <img
           className={styles.shape2}
-          src={`${imgBase}/main-slider-two-shape-2.png`}
+          src={`${imgBase}/main-slider-two-shape-2.webp`}
           alt=""
           aria-hidden
         />
         <img
           className={styles.shape3}
-          src={`${imgBase}/main-slider-two-shape-3.png`}
+          src={`${imgBase}/main-slider-two-shape-3.webp`}
           alt=""
           aria-hidden
         />
         <img
           className={styles.shape4}
-          src={`${imgBase}/main-slider-two-shape-4.png`}
+          src={`${imgBase}/main-slider-two-shape-4.webp`}
           alt=""
           aria-hidden
         />
         <img
           className={styles.shape5}
-          src={`${imgBase}/main-slider-two-shape-5.png`}
+          src={`${imgBase}/main-slider-two-shape-5.webp`}
           alt=""
           aria-hidden
         />

@@ -6,7 +6,7 @@ export default function HeroLeadFormSecond() {
       id="hero-quote"
       titleId="hero-lead-second-title"
       transparentForm
-      formBgImage="/images/hero/hero-supplies.png"
+      formBgImage="/images/hero/hero-supplies.webp"
       formPrefix="lead-second"
     />
   );
