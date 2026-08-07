@@ -15,7 +15,7 @@ export default function ContactHero() {
 
       <div className={styles.container}>
         <div className={styles.pageHeaderInner}>
-          <h1 id="contact-page-title">Contact</h1>
+          <h1 id="contact-page-title">Contact Us</h1>
           <nav className={styles.breadcrumbWrap} aria-label="Breadcrumb">
             <ol className={styles.breadcrumb}>
               <li>
@@ -24,9 +24,7 @@ export default function ContactHero() {
               <li className={styles.breadcrumbSep} aria-hidden>
                 <FaAngleRight />
               </li>
-              <li aria-current="page">
-                Contact
-              </li>
+              <li aria-current="page">Contact Us</li>
             </ol>
           </nav>
         </div>

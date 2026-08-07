@@ -16,7 +16,7 @@ export default function ServicesHero() {
 
       <div className={styles.container}>
         <div className={styles.pageHeaderInner}>
-          <h1 id="services-page-title">Our Services</h1>
+          <h1 id="services-page-title">Services</h1>
           <nav className={styles.breadcrumbWrap} aria-label="Breadcrumb">
             <ol className={styles.breadcrumb}>
               <li>

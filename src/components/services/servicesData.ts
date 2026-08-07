@@ -28,6 +28,11 @@ export const servicesTagline = "Services";
 
 export const servicesTitle = "Our Cleaning Services in London";
 
+export const servicesPageTitle = "Services in London";
+
+export const servicesPageIntro =
+  "Explore our Services for homes, rental properties and businesses across London. Our Services include domestic cleaning, carpet cleaning, end of tenancy cleaning and gutter cleaning.";
+
 export const servicesIntro =
   "We offer a professional cleaning service for homes, rental properties and businesses throughout London. No matter it's routinely cleaning your home or providing specialist property care and handover preparation, our team is here for you.";
 

@@ -6,9 +6,9 @@ import ContactStepsSection from "@/components/contact/ContactStepsSection";
 import ContactTrustStrip from "@/components/contact/ContactTrustStrip";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Cleaning Services London",
+  title: "Contact Us | Cleaning Services London — Free Quote",
   description:
-    "Get a free, no-obligation cleaning quote in London. Call, email, WhatsApp or fill in our quick contact form — most enquiries answered same day.",
+    "Contact Us for a free, no-obligation cleaning quote in London. Call, email, WhatsApp or fill in our quick form — most enquiries answered same day.",
 };
 
 export default function ContactUsPage() {

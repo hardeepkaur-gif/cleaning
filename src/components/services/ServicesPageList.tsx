@@ -1,8 +1,8 @@
 import ThmButton from "@/components/menu/ThmButton";
 import {
-  servicesIntro,
   servicesList,
-  servicesTitle,
+  servicesPageIntro,
+  servicesPageTitle,
 } from "./servicesData";
 import styles from "./ServicesPageList.module.css";
 
@@ -16,9 +16,9 @@ export default function ServicesPageList() {
       <div className={styles.container}>
         <header className={styles.header}>
           <h2 className={styles.title} id="services-list-title">
-            {servicesTitle}
+            {servicesPageTitle}
           </h2>
-          <p className={styles.intro}>{servicesIntro}</p>
+          <p className={styles.intro}>{servicesPageIntro}</p>
         </header>
 
         <div className={styles.list}>
