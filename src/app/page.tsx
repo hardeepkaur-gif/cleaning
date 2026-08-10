@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import HeroLeadFormSecond from "@/components/hero/HeroLeadFormSecond";
 import AboutUs from "@/components/about/AboutUs";
 import ServicesTabsIcons from "@/components/services/ServicesTabsIcons";
@@ -12,6 +13,12 @@ import VettedSection from "@/components/vetted/VettedSection";
 import ProcessSectionFour from "@/components/process/ProcessSectionFour";
 import AreasSection from "@/components/areas/AreasSection";
 import FaqSection from "@/components/faq/FaqSection";
+
+export const metadata: Metadata = {
+  title: "Cleaning Services London for Homes Landlords and Businesses",
+  description:
+    "Professional cleaning services in London for homes and businesses. DBS-checked, insured cleaners with fixed pricing and completion photo reports.",
+};
 
 export default function HomePage() {
   return (

@@ -4,8 +4,6 @@ import {
   PiChatCircleDuotone,
   PiCloudRainDuotone,
   PiCurrencyGbpDuotone,
-  PiMagnifyingGlassDuotone,
-  PiSealCheckDuotone,
 } from "react-icons/pi";
 
 export type GutterProcessStep = {
@@ -45,18 +43,6 @@ export const gutterProcessSteps: GutterProcessStep[] = [
     icon: PiCloudRainDuotone,
     title: "Professional Gutter Cleaning",
     text: "Our experienced gutter cleaners arrive with the right equipment to remove leaves, moss, dirt and debris from your gutters and downpipes, restoring proper rainwater flow.",
-    accent: "cta",
-  },
-  {
-    icon: PiMagnifyingGlassDuotone,
-    title: "Final Check & Confirmation",
-    text: "Before we leave, we check that gutters and downpipes are clear and rainwater can drain freely again, so you know the system is working as it should.",
-    accent: "primary",
-  },
-  {
-    icon: PiSealCheckDuotone,
-    title: "Enjoy Peace of Mind",
-    text: "With your gutters professionally cleaned, your property is better protected against overflowing gutters, damp, leaks and unnecessary water damage.",
     accent: "cta",
   },
 ];

@@ -28,8 +28,8 @@ type MobileConnector = {
   fullPath: string;
 };
 
-const leftSteps = gutterProcessSteps.slice(0, 3);
-const rightSteps = gutterProcessSteps.slice(3);
+const leftSteps = gutterProcessSteps.slice(0, 2);
+const rightSteps = gutterProcessSteps.slice(2);
 
 function StepCard({
   step,

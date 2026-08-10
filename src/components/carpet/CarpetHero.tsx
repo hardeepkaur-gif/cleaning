@@ -24,26 +24,26 @@ export default function CarpetHero() {
         <div className={styles.container}>
           <div className={`${heroStyles.content} ${styles.content}`}>
             <div className={heroStyles.subTitle}>
-              <p>Carpet Cleaning</p>
+              <p>Carpet Cleaning London</p>
             </div>
 
             <div className={heroStyles.bigTitle}>
               <h1 id="carpet-hero-title">
-                Expert Carpet Cleaning <span>London</span> for Homes, Flats and
-                Offices
+                Carpet Cleaning <span>London</span> for Homes, Flats and Offices
               </h1>
             </div>
 
             <div className={heroStyles.text}>
               <p>
-                Deep-clean your carpets with professional hot water extraction,
+                Carpet Cleaning London with professional hot water extraction,
                 targeted stain treatment and odour removal. At Cleaning Services
                 London, our insured, DBS-checked cleaners serve homes, flats,
-                offices and rental properties in wider London.
+                offices and rental properties across London.
               </p>
               <p>
-                Book your carpet cleaning services today and receive a fixed
-                quotation based on your property size and cleaning requirements.
+                Book your Carpet Cleaning London service today and receive a
+                fixed quotation based on your property size and cleaning
+                requirements.
               </p>
             </div>
 

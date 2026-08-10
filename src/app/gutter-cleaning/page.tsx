@@ -6,7 +6,6 @@ import GutterWhySection from "@/components/gutter/GutterWhySection";
 import GutterCausesSection from "@/components/gutter/GutterCausesSection";
 import GutterCtaSection from "@/components/gutter/GutterCtaSection";
 import GutterSignsSection from "@/components/gutter/GutterSignsSection";
-import GutterFrequencySection from "@/components/gutter/GutterFrequencySection";
 import GutterWarningCtaSection from "@/components/gutter/GutterWarningCtaSection";
 import GutterResidentialSection from "@/components/gutter/GutterResidentialSection";
 import GutterCommercialSection from "@/components/gutter/GutterCommercialSection";
@@ -21,7 +20,7 @@ import GutterReadyCtaSection from "@/components/gutter/GutterReadyCtaSection";
 export const metadata: Metadata = {
   title: "Gutter Cleaning London | Trusted Local Gutter Cleaners",
   description:
-    "Book gutter cleaning London with insured local cleaners. Clear blocked gutters, remove leaves and debris, check downpipes and protect your home from damp.",
+    "Gutter Cleaning London with insured local cleaners. Clear blocked gutters, remove leaves and debris, check downpipes and protect your home from damp.",
 };
 
 export default function GutterCleaningPage() {
@@ -32,7 +31,6 @@ export default function GutterCleaningPage() {
       <GutterIncludedSection />
       <GutterWhySection />
       <GutterReadyCtaSection />
-      <GutterFrequencySection />
       <GutterCausesSection />
       <GutterCtaSection />
       <GutterSignsSection />

@@ -20,9 +20,9 @@ import CarpetFaqSection from "@/components/carpet/CarpetFaqSection";
 import CarpetWorthItAltSection from "@/components/carpet/CarpetWorthItAltSection";
 
 export const metadata: Metadata = {
-  title: "Carpet Cleaning London In £30 | Professional Local Cleaners",
+  title: "Carpet Cleaning London From £30 | Professional Local Cleaners",
   description:
-    "Book carpet cleaning London with DBS-checked, insured cleaners. Steam carpet cleaning, stain removal, fixed pricing and East London coverage.",
+    "Carpet Cleaning London with DBS-checked, insured cleaners. Steam cleaning, stain removal, fixed pricing and coverage across London.",
 };
 
 export default function CarpetCleaningPage() {

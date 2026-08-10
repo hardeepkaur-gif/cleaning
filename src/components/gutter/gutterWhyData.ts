@@ -4,6 +4,7 @@ export const gutterWhyIntro =
   "Regular gutter cleaning helps protect your home or commercial property from preventable water damage.";
 
 export const gutterWhyPoints = [
+  "Regular gutter cleaning helps protect your home or commercial property from preventable water damage.",
   "Blocked gutters filled with leaves, moss and debris stop rainwater from draining properly.",
   "Overflowing water can affect walls, roofs, fascias and foundations and increase the risk of damp, leaks, mould growth and costly repairs.",
   "Clean gutters help extend the lifespan of your guttering system by reducing excess weight and standing water.",

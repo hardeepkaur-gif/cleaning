@@ -24,13 +24,12 @@ export default function GutterHero() {
         <div className={styles.container}>
           <div className={`${heroStyles.content} ${styles.content}`}>
             <div className={heroStyles.subTitle}>
-              <p>Gutter Cleaning</p>
+              <p>Gutter Cleaning London</p>
             </div>
 
             <div className={heroStyles.bigTitle}>
               <h1 id="gutter-hero-title">
-                Professional and Reliable Gutter Cleaning{" "}
-                <span>London</span> for Homes and Businesses
+                Gutter Cleaning <span>London</span> for Homes and Businesses
               </h1>
             </div>
 
@@ -39,21 +38,12 @@ export default function GutterHero() {
                 Blocked gutters causing leaks, damp patches or overflowing water
                 around your property? At Cleaning Services London, we help
                 homeowners, landlords and businesses fix these issues quickly
-                with reliable gutter cleaning across London.
+                with reliable Gutter Cleaning London.
               </p>
               <p>
-                Our local gutter cleaners remove leaves, moss, dirt and debris
-                from gutters and downpipes to improve rainwater flow and help
-                reduce the risk of damp, leaks and water damage. We use safe
-                cleaning methods for properties across London and deliver
-                reliable service with transparent pricing and flexible
-                appointments. Book your gutter cleaning service today and
-                protect your property before small gutter problems become
-                expensive repairs.
-              </p>
-              <p>
-                Book your gutter cleaning today and receive a fixed quotation
-                based on your property size and cleaning requirements.
+                Book your Gutter Cleaning London service today and receive a
+                fixed quotation based on your property size and cleaning
+                requirements.
               </p>
             </div>
 
