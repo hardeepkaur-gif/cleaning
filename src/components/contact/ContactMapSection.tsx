@@ -18,7 +18,7 @@ export default function ContactMapSection() {
 
       <div className={styles.mapFrame}>
         <iframe
-          src="https://www.google.com/maps?q=London&output=embed"
+          src="https://www.google.com/maps?q=68+Granleigh+Road,+London+E11+4RQ&output=embed"
           loading="lazy"
           title="Cleaning Services London service area map"
           referrerPolicy="no-referrer-when-downgrade"

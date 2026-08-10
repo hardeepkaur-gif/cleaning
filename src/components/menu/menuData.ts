@@ -40,7 +40,7 @@ export const contactInfo = {
   email: "info@cleaninglondon.co.uk",
   phone: "+44 12 3456 7890",
   phoneHref: "tel:+441234567890",
-  address: "London, UK",
+  address: "68 Granleigh Road, London E11 4RQ",
 };
 
 export const socialLinks = [
