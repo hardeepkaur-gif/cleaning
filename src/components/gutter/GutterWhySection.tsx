@@ -4,7 +4,6 @@ import local from "./GutterWhySection.module.css";
 import {
   gutterWhyImage,
   gutterWhyImageAlt,
-  gutterWhyIntro,
   gutterWhyPoints,
   gutterWhyTitle,
 } from "./gutterWhyData";
@@ -25,9 +24,6 @@ export default function GutterWhySection() {
             >
               {gutterWhyTitle}
             </h2>
-            <p className={`${styles.intro} ${local.intro}`}>
-              {gutterWhyIntro}
-            </p>
 
             <ul className={styles.points}>
               {gutterWhyPoints.map((item) => (

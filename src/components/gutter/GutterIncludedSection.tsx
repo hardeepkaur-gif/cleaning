@@ -38,7 +38,7 @@ export default function GutterIncludedSection() {
         <div className={`${styles.layout} ${local.layout}`}>
           <div className={`${styles.visual} ${local.visual}`}>
             <div className={styles.frameOuter} aria-hidden />
-            <div className={styles.frameInner}>
+            <div className={`${styles.frameInner} ${local.frameInner}`}>
               <img
                 src={gutterIncludedImage}
                 alt={gutterIncludedImageAlt}

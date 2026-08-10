@@ -1,8 +1,5 @@
 export const gutterWhyTitle = "Why Is Regular Gutter Cleaning Important?";
 
-export const gutterWhyIntro =
-  "Regular gutter cleaning helps protect your home or commercial property from preventable water damage.";
-
 export const gutterWhyPoints = [
   "Regular gutter cleaning helps protect your home or commercial property from preventable water damage.",
   "Blocked gutters filled with leaves, moss and debris stop rainwater from draining properly.",
