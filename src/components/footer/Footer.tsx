@@ -80,7 +80,7 @@ export default function Footer() {
 
         <div className={styles.grid}>
           <div className={styles.about}>
-            <Link href="/#home" className={styles.logo}>
+            <Link href="/" className={styles.logo}>
               <img
                 src="/images/logo.webp"
                 alt="Cleaning Services London"

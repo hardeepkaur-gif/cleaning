@@ -95,7 +95,7 @@ function MenuBar({
     <div className={styles.wrapper}>
       <div className={styles.wrapperInner}>
         <div className={styles.left}>
-          <Link href="/#home" className={styles.logo} onClick={() => setMobileOpen(false)}>
+          <Link href="/" className={styles.logo} onClick={() => setMobileOpen(false)}>
             <img
               src="/images/logo.webp"
               alt="Cleaning Services London"
