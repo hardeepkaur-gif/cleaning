@@ -14,11 +14,6 @@ const faqs = [
     img: `${faqImgBase}/cost.webp`,
   },
   {
-    q: "What is the 20/10 rule in cleaning?",
-    a: "The 20/10 rule is a cleaning method where you clean for 20 minutes and then take a 10-minute break. It is commonly used to make large cleaning tasks feel more manageable and less overwhelming.",
-    img: `${faqImgBase}/cleaning-method.webp`,
-  },
-  {
     q: "What will a cleaner do in 2 hours?",
     a: "In two hours, a cleaner can typically focus on key areas such as kitchens, bathrooms, living spaces and high-touch surfaces. The exact amount completed depends on the property's size, condition and cleaning requirements.",
     img: `${faqImgBase}/two-hours.webp`,
