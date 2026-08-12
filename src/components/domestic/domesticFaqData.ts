@@ -25,9 +25,9 @@ export const domesticFaqs: DomesticFaqItem[] = [
     img: `${faqImgBase}/faq-how-many-hours.webp`,
   },
   {
-    q: "What is the difference between domestic cleaning and deep cleaning?",
-    a: "Domestic cleaning is all about keeping your house clean by using regular cleaning services like dusting, vacuuming, and mopping. Deep cleaning is a more thorough cleaning that deals with areas that are not regularly cleaned and with built-up dirt and neglected areas.",
-    img: `${faqImgBase}/faq-domestic-vs-deep.webp`,
+    q: "Do I Need to Be at Home While the Cleaner Is Working?",
+    a: "No, it is possible to stay in the house during the cleaning or leave home if it's more convenient. There are many customers who opt to do their work while their housekeeper is also at work. In regular domestic cleaning services, you can also ask the same cleaner if feasible, so that each time you are at ease and familiar with the cleaning person.",
+    img: "/images/domestic/domestic-at-home-cleaner.webp",
   },
   {
     q: "Can I request the same cleaner every visit?",

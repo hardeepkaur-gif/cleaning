@@ -7,11 +7,8 @@ import DomesticCtaSection from "@/components/domestic/DomesticCtaSection";
 import DomesticCleaningHoursSection from "@/components/domestic/DomesticCleaningHoursSection";
 import DomesticChecklistSection from "@/components/domestic/DomesticChecklistSection";
 import DomesticAdditionalCtaSection from "@/components/domestic/DomesticAdditionalCtaSection";
-import DomesticVsDeepSection from "@/components/domestic/DomesticVsDeepSection";
-import DomesticAtHomeSection from "@/components/domestic/DomesticAtHomeSection";
 import DomesticPricingSection from "@/components/domestic/DomesticPricingSection";
 import DomesticWhyChooseSection from "@/components/domestic/DomesticWhyChooseSection";
-import DomesticPrepareSection from "@/components/domestic/DomesticPrepareSection";
 import DomesticFinalCtaSection from "@/components/domestic/DomesticFinalCtaSection";
 import DomesticFaqSection from "@/components/domestic/DomesticFaqSection";
 import styles from "./page.module.css";
@@ -33,11 +30,8 @@ export default function DomesticCleaningServicesPage() {
       <DomesticCleaningHoursSection />
       <DomesticChecklistSection />
       <DomesticAdditionalCtaSection />
-      <DomesticVsDeepSection />
-      <DomesticAtHomeSection />
       <DomesticPricingSection />
       <DomesticWhyChooseSection />
-      <DomesticPrepareSection />
       <DomesticFinalCtaSection />
       <DomesticFaqSection />
     </main>
