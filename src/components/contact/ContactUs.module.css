@@ -1205,7 +1205,7 @@
 }
 
 /* ── Responsive ── */
-@media (max-width: 991px) {
+@media(max-width: 991px) {
   .contactGrid {
     grid-template-columns: 1fr;
     gap: clamp(20px, 4vw, 28px);
@@ -1236,7 +1236,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media(max-width: 767px) {
   .stepsSection,
   .contactSection,
   .trustStrip {
@@ -1333,10 +1333,10 @@
 
   .whatsappPanel .btnBox :global(.thmBtn),
   .submitRow .btnBox :global(.thmBtn) {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
+  width: 100%;
+  text-align: center;
+}
+
 
   .responseBanner {
     padding: 14px 16px;
@@ -1386,7 +1386,7 @@
   }
 }
 
-@media (max-width: 575px) {
+@media(max-width: 575px) {
   .wrap {
     padding: 0 16px;
   }
@@ -1414,7 +1414,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media(max-width: 480px) {
   .trustGrid {
     grid-template-columns: 1fr;
   }
@@ -1430,7 +1430,7 @@
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media(prefers-reduced-motion: reduce) {
   .stepsTimeline::after {
     animation: none;
   }

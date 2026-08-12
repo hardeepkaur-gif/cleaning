@@ -8,6 +8,33 @@
   font-size: 12px;
 }
 
+.itemList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.itemList li {
+  position: relative;
+  padding-left: 18px;
+  font-size: clamp(14px, 1.3vw, 16px);
+  line-height: 1.55;
+  color: var(--gray);
+}
+
+.itemList li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--cta);
+}
+
 @media (max-width: 991px) {
   .scrollWrap {
     height: auto !important;

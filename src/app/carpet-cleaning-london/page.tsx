@@ -22,7 +22,7 @@ import CarpetWorthItAltSection from "@/components/carpet/CarpetWorthItAltSection
 export const metadata: Metadata = {
   title: "Carpet Cleaning London From £30 | Professional Local Cleaners",
   description:
-    "Carpet Cleaning London with DBS-checked, insured cleaners. Steam cleaning, stain removal, fixed pricing and coverage across London.",
+    "Book carpet cleaning London with DBS-checked, insured cleaners. Steam carpet cleaning, stain removal, fixed pricing and London wide coverage.",
 };
 
 export default function CarpetCleaningPage() {

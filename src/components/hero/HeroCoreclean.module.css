@@ -122,12 +122,7 @@
   margin-top: clamp(28px, 4vw, 48px);
 }
 
-.bottomBtn :global(.thmBtn) {
-  display: inline-flex;
-  align-items: center;
-  padding: 14px 32px;
-  font-size: 15px;
-}
+
 
 .videoLink {
   text-decoration: none;
@@ -256,7 +251,7 @@
 }
 
 
-@media (max-width: 991px) {
+@media(max-width: 991px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -291,7 +286,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media(max-width: 767px) {
   .mainImg {
     min-height: clamp(260px, 60vw, 340px);
   }
@@ -314,11 +309,12 @@
   }
 }
 
-@media (max-width: 575px) {
+@media(max-width: 575px) {
   .bottomBtn :global(.thmBtn) {
-    width: 100%;
-    justify-content: center;
-  }
+  width: 100%;
+  justify-content: center;
+}
+
 
   .shape1,
   .shape2,

@@ -35,7 +35,7 @@ export const carpetTrustItems: CarpetTrustItem[] = [
   },
   {
     icon: FaMapMarkerAlt,
-    label: "East London specialists with wider London coverage",
+    label: "London specialists with wider London coverage",
   },
   { icon: FaCalendarAlt, label: "Flexible booking appointments" },
 ];

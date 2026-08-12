@@ -13,10 +13,10 @@ export type GutterProcessStep = {
   accent: "primary" | "cta";
 };
 
-export const gutterProcessTitle = "How Do I Book a Gutter Cleaning Service?";
+export const gutterProcessTitle = "Get Clean Gutters in 4 Simple Steps";
 
 export const gutterProcessIntro =
-  "Booking your gutter cleaning in London is quick and straightforward.";
+  "Book your gutter cleaning service in London with us by following these steps.";
 
 export const gutterProcessHubLabel = "Gutter Booking Process";
 

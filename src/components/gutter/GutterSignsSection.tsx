@@ -1,7 +1,11 @@
-import { FaCheck } from "react-icons/fa";
+import { FaCalendarCheck, FaCheck } from "react-icons/fa";
+import ThmButton from "@/components/menu/ThmButton";
 import styles from "@/components/about/AboutUs.module.css";
 import local from "./GutterSignsSection.module.css";
 import {
+  gutterSignsClosing,
+  gutterSignsCtaLabel,
+  gutterSignsCtaNote,
   gutterSignsImages,
   gutterSignsIntro,
   gutterSignsMainAlt,
@@ -83,6 +87,13 @@ export default function GutterSignsSection() {
                 </li>
               ))}
             </ul>
+
+            <p className={local.closing}>{gutterSignsClosing}</p>
+            <p className={local.ctaNote}>{gutterSignsCtaNote}</p>
+            <ThmButton href="/contact-us" className={local.ctaBtn}>
+              <FaCalendarCheck aria-hidden />
+              {gutterSignsCtaLabel}
+            </ThmButton>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { FaLongArrowAltRight, FaStar } from "react-icons/fa";
+import ThmButton from "@/components/menu/ThmButton";
 import {
   servicesIntro,
   servicesList,
@@ -33,10 +34,10 @@ export default function ServicesShowcase() {
                   </h3>
                   <p className={styles.cardText}>{service.text}</p>
                   <div className={styles.btnBox}>
-                    <a href={service.href}>
+                    <ThmButton href={service.href}>
                       Read More
                       <FaLongArrowAltRight aria-hidden />
-                    </a>
+                    </ThmButton>
                   </div>
                   <div className={styles.iconWrap}>
                     <span className={styles.iconMain} aria-hidden>

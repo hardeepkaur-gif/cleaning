@@ -52,7 +52,7 @@ export default function DomesticHero() {
                 <ThmButton href="/contact-us">Request a Quote</ThmButton>
               </div>
               <div className={heroStyles.bottomBtn}>
-                <ThmButton href="/contact-us" variant="secondary">
+                <ThmButton href="/contact-us">
                   Book Your Cleaner
                 </ThmButton>
               </div>

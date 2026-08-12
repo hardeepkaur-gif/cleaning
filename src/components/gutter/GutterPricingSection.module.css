@@ -129,16 +129,7 @@
   color: var(--gray);
 }
 
-.ctaBtn:global(.thmBtn) {
-  position: relative;
-  z-index: 1;
-  flex-shrink: 0;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-
-@media (max-width: 991px) {
+@media(max-width: 991px) {
   .ctaBand {
     flex-direction: column;
     flex-wrap: nowrap;
@@ -154,7 +145,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media(max-width: 767px) {
   .factorsInner {
     padding: 18px 14px 20px;
   }
@@ -165,8 +156,9 @@
   }
 
   .ctaBtn:global(.thmBtn) {
-    width: 100%;
-    max-width: 320px;
-    justify-content: center;
-  }
+  width: 100%;
+  max-width: 320px;
+  justify-content: center;
+}
+
 }

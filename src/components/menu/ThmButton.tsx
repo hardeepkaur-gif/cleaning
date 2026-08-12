@@ -9,6 +9,8 @@ type ThmButtonProps = {
   variant?: "primary" | "secondary";
   target?: string;
   rel?: string;
+  disabled?: boolean;
+  onClick?: () => void;
 };
 
 function buttonClassName({
@@ -46,12 +48,19 @@ export default function ThmButton({
   variant = "primary",
   target,
   rel,
+  disabled,
+  onClick,
 }: ThmButtonProps) {
   const classes = buttonClassName({ className, hoverVariant, variant });
 
   if (type === "button" || type === "submit") {
     return (
-      <button type={type} className={classes}>
+      <button
+        type={type}
+        className={classes}
+        disabled={disabled}
+        onClick={onClick}
+      >
         {children}
         <HoverSpans />
       </button>

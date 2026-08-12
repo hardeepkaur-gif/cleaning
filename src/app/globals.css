@@ -76,7 +76,10 @@ a {
 /* Global theme button — used site-wide via ThmButton */
 .thmBtn {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   color: var(--white);
   font-size: 16px;
   line-height: 26px;
@@ -96,6 +99,16 @@ a {
 
 .thmBtn:hover {
   color: var(--white);
+}
+
+.thmBtn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.thmBtn:disabled:hover .hoverBtn {
+  opacity: 0;
+  transform: scaleX(0);
 }
 
 .hoverBtn {

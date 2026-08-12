@@ -1,9 +1,12 @@
-import { FaCheck } from "react-icons/fa";
+import { FaCalendarCheck, FaCheck } from "react-icons/fa";
+import ThmButton from "@/components/menu/ThmButton";
 import styles from "@/components/included/ProfessionalClean.module.css";
 import local from "./GutterWhySection.module.css";
 import {
+  gutterWhyClosing,
   gutterWhyImage,
   gutterWhyImageAlt,
+  gutterWhyIntro,
   gutterWhyPoints,
   gutterWhyTitle,
 } from "./gutterWhyData";
@@ -12,7 +15,7 @@ export default function GutterWhySection() {
   return (
     <section
       className={`${styles.section} ${local.section}`}
-      id="gutter-why-important"
+      id="gutter-what-we-remove"
       aria-labelledby="gutter-why-title"
     >
       <div className={styles.container}>
@@ -24,6 +27,9 @@ export default function GutterWhySection() {
             >
               {gutterWhyTitle}
             </h2>
+            <p className={`${styles.intro} ${local.intro}`}>
+              {gutterWhyIntro}
+            </p>
 
             <ul className={styles.points}>
               {gutterWhyPoints.map((item) => (
@@ -35,6 +41,12 @@ export default function GutterWhySection() {
                 </li>
               ))}
             </ul>
+
+            <p className={local.closing}>{gutterWhyClosing}</p>
+            <ThmButton href="/contact-us" className={local.ctaBtn}>
+              <FaCalendarCheck aria-hidden />
+              Contact Now!
+            </ThmButton>
           </div>
 
           <div className={`${styles.right} ${local.right}`}>

@@ -24,7 +24,7 @@ export default function ContactCtaBanner() {
                 <ThmButton href={contactInfo.phoneHref}>{contactInfo.phone}</ThmButton>
               </div>
               <div className={styles.btnBox}>
-                <ThmButton href="#quote-form" variant="secondary">
+                <ThmButton href="#quote-form">
                   Use The Form Instead
                 </ThmButton>
               </div>

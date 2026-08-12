@@ -21,11 +21,11 @@ export const navItems: NavItem[] = [
       },
       {
         label: "Carpet Cleaning",
-        href: "/carpet-cleaning",
+        href: "/carpet-cleaning-london",
       },
       {
         label: "Gutter Cleaning",
-        href: "/gutter-cleaning",
+        href: "/gutter-cleaning-london",
       },
     ],
   },

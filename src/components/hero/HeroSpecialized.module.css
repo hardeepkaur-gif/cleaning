@@ -119,13 +119,6 @@
   margin-top: clamp(28px, 4vw, 48px);
 }
 
-.bottomBtn :global(.thmBtn) {
-  display: inline-flex;
-  align-items: center;
-  padding: 14px 32px;
-  font-size: 15px;
-}
-
 .mainImg {
   position: absolute;
   top: 0;
@@ -147,7 +140,7 @@
   transform-origin: right bottom;
 }
 
-@media (max-width: 991px) {
+@media(max-width: 991px) {
   .heroBody {
     display: flex;
     flex-direction: column;
@@ -207,16 +200,16 @@
   }
 }
 
-@media (max-width: 575px) {
+@media(max-width: 575px) {
   .bottom {
     flex-direction: column;
     align-items: stretch;
   }
 
   .bottomBtn :global(.thmBtn) {
-    justify-content: center;
-    width: 100%;
-  }
+  justify-content: center;
+  width: 100%;
+}
 
   .mainImg {
     min-height: clamp(200px, 55vw, 280px);

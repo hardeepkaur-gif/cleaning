@@ -14,18 +14,17 @@
   font-size: 14px;
 }
 
-@media (max-width: 767px) {
+@media(max-width: 767px) {
   .ctaWrap {
     margin-top: 28px;
   }
 
   .ctaBtn:global(.thmBtn) {
-    width: auto;
-    max-width: 100%;
-    padding: 14px 22px;
-    font-size: 14px;
-    white-space: normal;
-    text-align: center;
-    justify-content: center;
-  }
+  width: auto;
+  max-width: 100%;
+  white-space: normal;
+  text-align: center;
+  justify-content: center;
+}
+
 }

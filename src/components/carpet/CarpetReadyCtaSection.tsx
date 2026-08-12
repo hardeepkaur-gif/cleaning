@@ -60,7 +60,7 @@ export default function CarpetReadyCtaSection() {
                     </ThmButton>
                     <ThmButton
                       href={contactInfo.phoneHref}
-                      className={`${styles.ctaBtn} ${local.ctaBtnAlt}`}
+                      className={`${styles.ctaBtn} ${local.ctaBtn}`}
                     >
                       <FaPhoneAlt aria-hidden />
                       {carpetReadyCtaCallLabel}

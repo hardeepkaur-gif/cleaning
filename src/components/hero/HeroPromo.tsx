@@ -29,10 +29,10 @@ export default function HeroPromo() {
           </p>
 
           <div className={styles.actions}>
-            <ThmButton href="/contact-us" hoverVariant="white">
+            <ThmButton href="/contact-us">
               Request a Quote
             </ThmButton>
-            <ThmButton href="/services" hoverVariant="white">
+            <ThmButton href="/services">
               Find Your Cleaner
             </ThmButton>
           </div>

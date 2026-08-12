@@ -169,22 +169,6 @@
   margin-top: auto;
 }
 
-.readMore a {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  font-family: var(--font-two);
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--cta);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.readMore a:hover {
-  color: var(--primary);
-}
-
 .iconWrap {
   position: absolute;
   bottom: -2px;

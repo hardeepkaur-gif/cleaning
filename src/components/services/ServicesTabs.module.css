@@ -320,14 +320,6 @@
   gap: clamp(28px, 5vw, 56px);
 }
 
-.btnBox :global(.thmBtn) {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 14px 28px;
-  font-size: 15px;
-}
-
 .tabBgImage {
   flex: 1;
   position: relative;
@@ -406,7 +398,7 @@
   }
 }
 
-@media (max-width: 991px) {
+@media(max-width: 991px) {
   .tabButtons {
     justify-content: center;
   }
@@ -455,7 +447,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media(max-width: 767px) {
   .tabButtons li {
     flex: 0 0 100%;
     max-width: 100%;
@@ -484,15 +476,15 @@
   }
 }
 
-@media (max-width: 575px) {
+@media(max-width: 575px) {
   .btnBox {
     flex-wrap: wrap;
   }
 
   .btnBox :global(.thmBtn) {
-    width: 100%;
-    justify-content: center;
-  }
+  width: 100%;
+  justify-content: center;
+}
 
   .imageBadge {
     width: 44px;

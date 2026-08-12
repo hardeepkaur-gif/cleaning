@@ -104,7 +104,7 @@ export default function HeroCoreclean({
                 <ThmButton href={primaryCta.href}>{primaryCta.label}</ThmButton>
               </div>
               <div className={styles.bottomBtn}>
-                <ThmButton href={secondaryCta.href} variant="secondary">
+                <ThmButton href={secondaryCta.href}>
                   {secondaryCta.label}
                 </ThmButton>
               </div>

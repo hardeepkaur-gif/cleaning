@@ -197,14 +197,7 @@
   color: var(--gray);
 }
 
-.ctaBtn:global(.thmBtn) {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  flex-shrink: 0;
-}
-
-@media (max-width: 991px) {
+@media(max-width: 991px) {
   .title {
     white-space: normal;
   }
@@ -216,7 +209,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media(max-width: 767px) {
   .header {
     text-align: left;
   }
@@ -278,7 +271,7 @@
   }
 }
 
-@media (max-width: 575px) {
+@media(max-width: 575px) {
   .section {
     padding-bottom: 0 !important;
   }

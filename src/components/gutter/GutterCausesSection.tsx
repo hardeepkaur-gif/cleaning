@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import {
-  gutterCausesHighlights,
+  gutterCausesClosing,
   gutterCausesIntro,
   gutterCausesItems,
   gutterCausesTagline,
@@ -87,7 +87,7 @@ export default function GutterCausesSection() {
   return (
     <section
       className={styles.section}
-      id="gutter-causes-blocked"
+      id="gutter-residential-commercial"
       aria-labelledby="gutter-causes-title"
     >
       <div className={styles.container}>
@@ -102,12 +102,7 @@ export default function GutterCausesSection() {
                 {gutterCausesTitle}
               </h2>
               <p className={styles.intro}>{gutterCausesIntro}</p>
-
-              <ul className={styles.highlights}>
-                {gutterCausesHighlights.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
+              <p className={styles.intro}>{gutterCausesClosing}</p>
 
               <div className={styles.progressBlock}>
                 <div className={styles.progressHead}>
@@ -135,7 +130,7 @@ export default function GutterCausesSection() {
 
               <div
                 className={`${styles.navChips} ${local.navChips}`}
-                aria-label="Jump to cause"
+                aria-label="Jump to service"
               >
                 {gutterCausesItems.map((item, index) => (
                   <button
@@ -179,14 +174,18 @@ export default function GutterCausesSection() {
                       <article className={styles.itemBody}>
                         <div className={styles.itemHead}>
                           <span className={styles.step}>
-                            Cause {String(index + 1).padStart(2, "0")}
+                            Service {String(index + 1).padStart(2, "0")}
                           </span>
                           <span className={styles.itemNum} aria-hidden>
                             {String(index + 1).padStart(2, "0")}
                           </span>
                         </div>
                         <h3 className={styles.itemTitle}>{item.title}</h3>
-                        <p className={styles.itemText}>{item.text}</p>
+                        <ul className={local.itemList}>
+                          {item.items.map((entry) => (
+                            <li key={entry}>{entry}</li>
+                          ))}
+                        </ul>
                       </article>
                     </li>
                   );

@@ -433,7 +433,7 @@
 }
 
 /* ===== Responsive ===== */
-@media (max-width: 767px) {
+@media(max-width: 767px) {
   .ctaBannerInner {
     flex-direction: column;
     flex-wrap: wrap;
@@ -451,7 +451,7 @@
   }
 }
 
-@media (max-width: 991px) {
+@media(max-width: 991px) {
   .trust {
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
@@ -488,11 +488,12 @@
   }
 }
 
-@media (max-width: 575px) {
+@media(max-width: 575px) {
   .ctaBannerActions :global(.thmBtn) {
-    width: 100%;
-    text-align: center;
-  }
+  width: 100%;
+  text-align: center;
+}
+
 
   .trust {
     grid-template-columns: repeat(2, 1fr);

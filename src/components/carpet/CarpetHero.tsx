@@ -29,21 +29,21 @@ export default function CarpetHero() {
 
             <div className={heroStyles.bigTitle}>
               <h1 id="carpet-hero-title">
-                Carpet Cleaning <span>London</span> for Homes, Flats and Offices
+                Expert Carpet Cleaning <span>London</span> for Homes, Flats and
+                Offices
               </h1>
             </div>
 
             <div className={heroStyles.text}>
               <p>
-                Carpet Cleaning London with professional hot water extraction,
+                Deep-clean your carpets with professional hot water extraction,
                 targeted stain treatment and odour removal. At Cleaning Services
-                London, our insured, DBS-checked cleaners serve homes, flats,
-                offices and rental properties across London.
+                London Our insured, DBS-checked cleaners serve homes, flats,
+                offices and rental properties in wider London.
               </p>
               <p>
-                Book your Carpet Cleaning London service today and receive a
-                fixed quotation based on your property size and cleaning
-                requirements.
+                Book your carpet cleaning services today and receive a fixed
+                quotation based on your property size and cleaning requirements.
               </p>
             </div>
 
@@ -52,7 +52,7 @@ export default function CarpetHero() {
                 <ThmButton href="/contact-us">Contact Now!</ThmButton>
               </div>
               <div className={`${heroStyles.bottomBtn} ${local.bottomBtn}`}>
-                <ThmButton href="/services" variant="secondary">
+                <ThmButton href="/services">
                   View All Services
                 </ThmButton>
               </div>

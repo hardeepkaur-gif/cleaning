@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { FaShieldAlt, FaLock, FaUserCheck, FaEnvelope } from "react-icons/fa";
 import ThmButton from "@/components/menu/ThmButton";
 import {
@@ -134,9 +133,7 @@ export default function PrivacyPolicyContent() {
               </div>
               <div className={styles.ctaActions}>
                 <ThmButton href="/contact-us">Contact Us</ThmButton>
-                <Link href="/services" className={styles.ctaLink}>
-                  View Services
-                </Link>
+                <ThmButton href="/services">View Services</ThmButton>
               </div>
             </div>
           </div>

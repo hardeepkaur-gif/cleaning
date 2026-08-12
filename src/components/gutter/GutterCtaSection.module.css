@@ -12,7 +12,7 @@
   height: 96px;
 }
 
-@media (max-width: 991px) {
+@media(max-width: 991px) {
   .screenHero {
     height: 110px;
   }
@@ -29,27 +29,27 @@
   }
 
   .copy .ctaBtn:global(.thmBtn) {
-    width: auto;
-    max-width: 100%;
-    justify-content: center;
-    padding: 14px 28px;
-  }
+  width: auto;
+  max-width: 100%;
+  justify-content: center;
 }
 
-@media (max-width: 767px) {
-  .copy .ctaBtn:global(.thmBtn) {
-    width: 100%;
-    max-width: 320px;
-    padding: 14px 22px;
-    font-size: 14px;
-    white-space: normal;
-    text-align: center;
-  }
 }
 
-@media (max-width: 575px) {
+@media(max-width: 767px) {
   .copy .ctaBtn:global(.thmBtn) {
-    width: 100%;
-    max-width: 320px;
-  }
+  width: 100%;
+  max-width: 320px;
+  white-space: normal;
+  text-align: center;
+}
+
+}
+
+@media(max-width: 575px) {
+  .copy .ctaBtn:global(.thmBtn) {
+  width: 100%;
+  max-width: 320px;
+}
+
 }

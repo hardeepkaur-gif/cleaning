@@ -31,7 +31,7 @@ export const carpetPricingRoomRows: CarpetPricingRoomRow[] = [
 ];
 
 export const carpetPricingNote =
-  "The final price varies based on the number of rooms, carpet type, stain level, furniture movement and property location. Parking fees, congestion charges or specialist stain treatments may also affect the total cost in some London areas.";
+  "The final price variesvary based on the number of rooms, carpet type, stain level, furniture movement and property location. Parking fees, congestion charges or specialist stain treatments may also affect the total cost in some London areas.";
 
 export const carpetPricingFactorHeaders = {
   factor: "Pricing Factor",

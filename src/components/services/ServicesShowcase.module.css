@@ -163,22 +163,6 @@
   margin-top: auto;
 }
 
-.btnBox a {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  font-family: var(--font-two);
-  font-weight: 500;
-  font-size: 14px;
-  color: var(--cta);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.btnBox a:hover {
-  color: var(--primary);
-}
-
 .iconWrap {
   position: absolute;
   bottom: -2px;

@@ -118,12 +118,7 @@
   margin-top: clamp(28px, 4vw, 48px);
 }
 
-.bottomBtn :global(.thmBtn) {
-  display: inline-flex;
-  align-items: center;
-  padding: 14px 32px;
-  font-size: 15px;
-}
+
 
 /* Form — same slot as hero image */
 .formAside {
@@ -351,7 +346,7 @@
   height: auto;
 }
 
-@media (max-width: 991px) {
+@media(max-width: 991px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -386,7 +381,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media(max-width: 767px) {
   .shape1,
   .shape2,
   .shape3,
@@ -401,11 +396,12 @@
   }
 }
 
-@media (max-width: 575px) {
+@media(max-width: 575px) {
   .bottomBtn :global(.thmBtn) {
-    width: 100%;
-    justify-content: center;
-  }
+  width: 100%;
+  justify-content: center;
+}
+
 
   .shape1,
   .shape2,

@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media (max-width: 767px) {
+@media(max-width: 767px) {
   .btnTextDesktop {
     display: none;
   }
@@ -12,18 +12,11 @@
   }
 
   .ctaBtn:global(.thmBtn) {
-    width: 100%;
-    padding: 14px 20px;
-    font-size: 14px;
-    line-height: 1.3;
-    letter-spacing: 0.01em;
-    white-space: nowrap;
-    justify-content: center;
-    gap: 8px;
-  }
+  width: 100%;
+  white-space: nowrap;
+  justify-content: center;
+}
 
-  .ctaBtn:global(.thmBtn svg) {
-    font-size: 15px;
-    flex-shrink: 0;
-  }
+
+  
 }

@@ -157,35 +157,14 @@
 }
 
 .ctaBtn:global(.thmBtn) {
-  display: inline-flex;
-  align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 16px 34px;
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  text-transform: none;
-  border-radius: 999px;
   white-space: nowrap;
-  box-shadow:
-    0 4px 14px rgba(226, 106, 76, 0.35),
-    0 12px 32px rgba(226, 106, 76, 0.28);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
 }
 
-.ctaBtn:global(.thmBtn:hover) {
-  transform: translateY(-3px) scale(1.03);
-  box-shadow:
-    0 8px 20px rgba(226, 106, 76, 0.42),
-    0 18px 44px rgba(226, 106, 76, 0.36);
-}
 
-.ctaBtn:global(.thmBtn svg) {
-  font-size: 16px;
-}
+
+
+
 
 .btnNote {
   font-size: 12px;
@@ -276,7 +255,7 @@
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media(prefers-reduced-motion: reduce) {
   .phone,
   .phone::before {
     animation: none;
@@ -393,16 +372,17 @@
 }
 
 /* Responsive */
-@media (max-width: 991px) {
+@media(max-width: 991px) {
   .bannerInner {
     grid-template-columns: 1fr;
     min-height: auto;
   }
 
   .ctaBtn:global(.thmBtn) {
-    white-space: normal;
-    text-align: center;
-  }
+  white-space: normal;
+  text-align: center;
+}
+
 
   .copy {
     align-items: center;
@@ -446,21 +426,21 @@
   }
 }
 
-@media (max-width: 767px) {
+@media(max-width: 767px) {
   .cta {
     padding: 48px 0;
   }
 }
 
-@media (max-width: 575px) {
+@media(max-width: 575px) {
   .copy {
     padding: 28px 20px 24px;
   }
 
   .ctaBtn:global(.thmBtn) {
-    width: 100%;
-    padding: 16px 24px;
-  }
+  width: 100%;
+}
+
 
   .btnWrap {
     width: 100%;

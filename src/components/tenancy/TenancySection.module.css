@@ -177,13 +177,9 @@
 }
 
 .btnMain:global(.thmBtn) {
-  display: inline-block;
   width: auto;
-  padding: 12px 30px;
-  font-size: 16px;
-  font-weight: 500;
-  border-radius: var(--radius);
 }
+
 
 .learnMore {
   margin: 0;
@@ -193,7 +189,7 @@
   font-style: italic;
 }
 
-@media (max-width: 991px) {
+@media(max-width: 991px) {
   .grid {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -216,7 +212,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media(max-width: 767px) {
   .section {
     padding: 48px 0;
   }
@@ -228,10 +224,11 @@
   }
 }
 
-@media (max-width: 575px) {
+@media(max-width: 575px) {
   .btnMain:global(.thmBtn) {
-    width: auto;
-  }
+  width: auto;
+}
+
 
   .imgWrap img {
     aspect-ratio: 3 / 4;

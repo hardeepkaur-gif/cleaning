@@ -202,14 +202,14 @@
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media(prefers-reduced-motion: reduce) {
   .laptop,
   .laptop::before {
     animation: none;
   }
 }
 
-@media (max-width: 991px) {
+@media(max-width: 991px) {
   .grid {
     grid-template-columns: 1fr;
     gap: 32px;
@@ -232,10 +232,9 @@
   }
 
   .copy .ctaBtn:global(.thmBtn) {
-    width: auto;
-    justify-content: center;
-    padding: 14px 28px;
-  }
+  width: auto;
+  justify-content: center;
+}
 
   .visual {
     justify-content: center;
@@ -252,14 +251,13 @@
   }
 }
 
-@media (max-width: 575px) {
+@media(max-width: 575px) {
   .laptopWrap {
     max-width: 240px;
   }
 
   .copy .ctaBtn:global(.thmBtn) {
-    width: auto;
-    padding: 14px 24px;
-    font-size: 14px;
-  }
+  width: auto;
+}
+
 }

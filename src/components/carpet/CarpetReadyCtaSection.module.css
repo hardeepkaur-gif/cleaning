@@ -31,35 +31,6 @@
   gap: 12px;
 }
 
-.ctaBtnAlt:global(.thmBtn) {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 16px 34px;
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  border-radius: 999px;
-  white-space: nowrap;
-  background: var(--white) !important;
-  color: var(--primary-dark) !important;
-  border: 2px solid var(--primary) !important;
-  box-shadow: 0 8px 24px rgba(10, 70, 68, 0.1);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    background 0.3s ease,
-    color 0.3s ease;
-}
-
-.ctaBtnAlt:global(.thmBtn:hover) {
-  transform: translateY(-3px);
-  background: var(--primary) !important;
-  color: var(--white) !important;
-  box-shadow: 0 12px 28px rgba(10, 70, 68, 0.18);
-}
-
 @media (max-width: 991px) {
   .screenHero {
     height: 110px;
@@ -80,12 +51,10 @@
     justify-content: center;
   }
 
-  .copy .ctaBtn:global(.thmBtn),
-  .ctaBtnAlt:global(.thmBtn) {
+  .copy .ctaBtn:global(.thmBtn) {
     width: auto;
     max-width: 100%;
     justify-content: center;
-    padding: 14px 28px;
   }
 }
 
@@ -100,18 +69,9 @@
     max-width: 320px;
   }
 
-  .copy .ctaBtn:global(.thmBtn),
-  .ctaBtnAlt:global(.thmBtn) {
+  .copy .ctaBtn:global(.thmBtn) {
     width: 100%;
-    padding: 14px 22px;
-    font-size: 14px;
     white-space: normal;
     text-align: center;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .ctaBtnAlt:global(.thmBtn:hover) {
-    transform: none;
   }
 }

@@ -7,28 +7,23 @@
   margin: 2px 0 4px;
 }
 
-@media (max-width: 767px) {
+@media(max-width: 767px) {
   .btnBox {
     width: 100%;
   }
 
   .ctaBtn:global(.thmBtn) {
-    width: 100% !important;
-    max-width: 100%;
-    justify-content: center;
-    white-space: normal;
-    text-align: center;
-    padding: 14px 22px;
-  }
+  width: 100% !important;
+  max-width: 100%;
+  justify-content: center;
+  white-space: normal;
+  text-align: center;
+}
+
 
   .screenImg {
     height: 88px;
   }
 }
 
-@media (max-width: 575px) {
-  .ctaBtn:global(.thmBtn) {
-    padding: 14px 18px;
-    font-size: 14px;
-  }
-}
+

@@ -29,7 +29,8 @@ export default function GutterHero() {
 
             <div className={heroStyles.bigTitle}>
               <h1 id="gutter-hero-title">
-                Gutter Cleaning <span>London</span> for Homes and Businesses
+                Professional and Reliable Gutter Cleaning{" "}
+                <span>London</span> for Homes and Businesses
               </h1>
             </div>
 
@@ -52,7 +53,7 @@ export default function GutterHero() {
                 <ThmButton href="/contact-us">Contact Now!</ThmButton>
               </div>
               <div className={`${heroStyles.bottomBtn} ${local.bottomBtn}`}>
-                <ThmButton href="/services" variant="secondary">
+                <ThmButton href="/services">
                   View All Services
                 </ThmButton>
               </div>

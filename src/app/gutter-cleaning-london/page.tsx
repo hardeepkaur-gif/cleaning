@@ -20,7 +20,7 @@ import GutterReadyCtaSection from "@/components/gutter/GutterReadyCtaSection";
 export const metadata: Metadata = {
   title: "Gutter Cleaning London | Trusted Local Gutter Cleaners",
   description:
-    "Gutter Cleaning London with insured local cleaners. Clear blocked gutters, remove leaves and debris, check downpipes and protect your home from damp.",
+    "Book gutter cleaning London with insured local cleaners. Clear blocked gutters, remove leaves and debris, check downpipes and protect your home from dampness.",
 };
 
 export default function GutterCleaningPage() {

@@ -54,7 +54,11 @@ export default function CarpetPricingSection() {
               </table>
             </div>
           </article>
+        </div>
 
+        <p className={styles.note}>{carpetPricingNote}</p>
+
+        <div className={styles.panel}>
           <article className={`${styles.colCard} ${styles.colCardAlt}`}>
             <div className={styles.tableWrap}>
               <table className={styles.table}>
@@ -80,8 +84,6 @@ export default function CarpetPricingSection() {
             </div>
           </article>
         </div>
-
-        <p className={styles.note}>{carpetPricingNote}</p>
       </div>
     </section>
   );

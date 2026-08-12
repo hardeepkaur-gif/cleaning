@@ -123,7 +123,7 @@ export default function HeroCorecleanForm() {
                 <ThmButton href="/contact-us">Request a Quote</ThmButton>
               </div>
               <div className={styles.bottomBtn}>
-                <ThmButton href="/services" variant="secondary">
+                <ThmButton href="/services">
                   Find Your Cleaner
                 </ThmButton>
               </div>
@@ -143,13 +143,9 @@ export default function HeroCorecleanForm() {
                   <p>
                     Your request has been received. We&apos;ll contact you soon.
                   </p>
-                  <button
-                    type="button"
-                    className={styles.resetBtn}
-                    onClick={() => setSubmitted(false)}
-                  >
+                  <ThmButton type="button" onClick={() => setSubmitted(false)}>
                     Send another request
-                  </button>
+                  </ThmButton>
                 </div>
               ) : (
                 <form
@@ -222,13 +218,9 @@ export default function HeroCorecleanForm() {
                     </select>
                   </div>
 
-                  <button
-                    type="submit"
-                    className={styles.submitBtn}
-                    disabled={loading}
-                  >
-                  {loading ? "Sending..." : "Get My Free Quote"}
-                </button>
+                  <ThmButton type="submit" disabled={loading}>
+                    {loading ? "Sending..." : "Get My Free Quote"}
+                  </ThmButton>
               </form>
               )}
             </div>

@@ -104,7 +104,7 @@ export default function HeroLeadForm({
               <ThmButton href={primaryBtnHref}>{primaryBtnLabel}</ThmButton>
             </div>
             <div className={styles.bottomBtn}>
-              <ThmButton href={secondaryBtnHref} variant="secondary">
+              <ThmButton href={secondaryBtnHref}>
                 {secondaryBtnLabel}
               </ThmButton>
             </div>
@@ -133,13 +133,9 @@ export default function HeroLeadForm({
                 <FaCheckCircle aria-hidden />
                 <strong>Thank you!</strong>
                 <p>Your request has been received. We&apos;ll contact you soon.</p>
-                <button
-                  type="button"
-                  className={styles.resetBtn}
-                  onClick={() => setSubmitted(false)}
-                >
+                <ThmButton type="button" onClick={() => setSubmitted(false)}>
                   Send another request
-                </button>
+                </ThmButton>
               </div>
             ) : (
               <form className={styles.form} onSubmit={handleSubmit} noValidate>
@@ -210,13 +206,9 @@ export default function HeroLeadForm({
                   </div>
                 </div>
 
-                <button
-                  type="submit"
-                  className={styles.submitBtn}
-                  disabled={loading}
-                >
+                <ThmButton type="submit" disabled={loading}>
                   {loading ? "Sending..." : "Get My Free Quote"}
-                </button>
+                </ThmButton>
 
                 <p className={styles.formNote}>
                   Your details are kept private. No spam — ever.
