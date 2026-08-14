@@ -21,7 +21,7 @@ export default function AboutUs() {
               <span className={styles.frameAccent} aria-hidden />
               <div className={styles.imgMain}>
                 <img
-                  src={`${imgBase}/about-three-img-1.webp`}
+                  src={`${imgBase}/professional-cleaners-london-office.webp`}
                   alt="Professional cleaners working in a modern London office space"
                   loading="lazy"
                 />
@@ -29,7 +29,7 @@ export default function AboutUs() {
 
               <div className={styles.imgSecondary}>
                 <img
-                  src={`${imgBase}/about-three-img-2.webp`}
+                  src={`${imgBase}/cleaning-team-preparing-equipment-london.webp`}
                   alt="London cleaning team preparing professional equipment before a service visit"
                   loading="lazy"
                 />
@@ -47,12 +47,12 @@ export default function AboutUs() {
                 <div
                   className={styles.sealBg}
                   style={{
-                    backgroundImage: `url('${imgBase}/about-three-cleaning-gurante-bg-shape.webp')`,
+                    backgroundImage: `url('${imgBase}/decorative-satisfaction-guarantee-badge-bg.webp')`,
                   }}
                   aria-hidden
                 />
                 <img
-                  src={`${imgBase}/about-three-cleaning-gurante-icon.webp`}
+                  src={`${imgBase}/satisfaction-guarantee-badge-icon.webp`}
                   alt="100 percent customer satisfaction guarantee badge icon"
                   loading="lazy"
                 />

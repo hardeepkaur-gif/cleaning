@@ -57,7 +57,7 @@ export default function GutterAreasCtaSection() {
 
                       <img
                         className={local.screenImg}
-                        src="/images/gutter/gutter-included-3.webp"
+                        src="/images/gutter/gutter-cleaning-coverage-london.webp"
                         alt="Gutter cleaning service coverage across London areas"
                         loading="lazy"
                       />

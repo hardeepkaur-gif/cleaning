@@ -8,20 +8,20 @@ export default function HeroHomeThree() {
     <section className={styles.hero} aria-label="Home cleaning packages">
       <div
         className={styles.shapeBg}
-        style={{ backgroundImage: `url('${imgBase}/banner-one-shape-bg.webp')` }}
+        style={{ backgroundImage: `url('${imgBase}/decorative-hero-home3-bg-primary.webp')` }}
         aria-hidden
       />
       <div
         className={styles.shapeBgTwo}
-        style={{ backgroundImage: `url('${imgBase}/banner-one-shape-bg-2.webp')` }}
+        style={{ backgroundImage: `url('${imgBase}/decorative-hero-home3-bg-secondary.webp')` }}
         aria-hidden
       />
 
-      <img className={styles.shape1} src={`${imgBase}/banner-one-shape-1.webp`} alt="" aria-hidden />
-      <img className={styles.shape2} src={`${imgBase}/banner-one-shape-2.webp`} alt="" aria-hidden />
-      <img className={styles.shape3} src={`${imgBase}/banner-one-shape-3.webp`} alt="" aria-hidden />
-      <img className={styles.shape4} src={`${imgBase}/banner-one-shape-4.webp`} alt="" aria-hidden />
-      <img className={styles.shape5} src={`${imgBase}/banner-one-shape-5.webp`} alt="" aria-hidden />
+      <img className={styles.shape1} src={`${imgBase}/decorative-hero-home3-accent-1.webp`} alt="" aria-hidden />
+      <img className={styles.shape2} src={`${imgBase}/decorative-hero-home3-accent-2.webp`} alt="" aria-hidden />
+      <img className={styles.shape3} src={`${imgBase}/decorative-hero-home3-accent-3.webp`} alt="" aria-hidden />
+      <img className={styles.shape4} src={`${imgBase}/decorative-hero-home3-accent-4.webp`} alt="" aria-hidden />
+      <img className={styles.shape5} src={`${imgBase}/decorative-hero-home3-accent-5.webp`} alt="" aria-hidden />
 
       <div className={styles.container}>
         <div className={styles.inner}>
@@ -52,7 +52,7 @@ export default function HeroHomeThree() {
           <div className={styles.right}>
             <div className={styles.imgBox}>
               <img
-                src={`${imgBase}/banner-one-img-1.webp`}
+                src={`${imgBase}/hero-home3-cleaning-team-london.webp`}
                 alt="Professional cleaning team"
               />
             </div>

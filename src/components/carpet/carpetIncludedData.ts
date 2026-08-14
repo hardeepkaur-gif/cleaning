@@ -18,10 +18,10 @@ export const carpetIncludedPoints = [
 ];
 
 export const carpetIncludedImages = {
-  main: "/images/carpet/carpet-included-1.webp",
-  img2: "/images/carpet/carpet-included-2.webp",
-  img3: "/images/carpet/carpet-included-3.webp",
-  img4: "/images/carpet/carpet-included-4.webp",
+  main: "/images/carpet/carpet-cleaning-included-main-london.webp",
+  img2: "/images/carpet/carpet-inspection-pre-treatment-london.webp",
+  img3: "/images/carpet/deep-steam-carpet-cleaning-london.webp",
+  img4: "/images/carpet/carpet-aftercare-advice-london.webp",
 };
 
 export const carpetIncludedMainAlt =

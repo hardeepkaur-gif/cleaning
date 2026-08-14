@@ -52,8 +52,8 @@ export const servicesList: ServiceData[] = [
     ctaLabel: "Explore Domestic Cleaning Service",
     icon: FaHome,
     tabIcon: PiHouseLineDuotone,
-    image: `${imgBase}/services-2-1.webp`,
-    tabImage: `${tabImgBase}/services-three-tab-img-1.webp`,
+    image: `${imgBase}/domestic-cleaning-service-card.webp`,
+    tabImage: `${tabImgBase}/domestic-cleaning-tab-london-home.webp`,
     tabImageAlt:
       "Domestic cleaner providing regular home cleaning services in a London property",
     heroImage: "/images/domestic/domestic-cleaning-hero.webp",
@@ -67,8 +67,8 @@ export const servicesList: ServiceData[] = [
     ctaLabel: "Explore Carpet Cleaning Service",
     icon: FaCouch,
     tabIcon: PiRugDuotone,
-    image: `${imgBase}/services-2-2.webp`,
-    tabImage: `${tabImgBase}/services-three-tab-img-2.webp`,
+    image: `${imgBase}/carpet-cleaning-service-card.webp`,
+    tabImage: `${tabImgBase}/carpet-cleaning-tab-stain-removal.webp`,
     tabImageAlt:
       "Professional carpet cleaning treating stains in a high traffic London living room",
     heroImage: "/images/carpet/carpet-cleaning-hero.webp",
@@ -82,11 +82,11 @@ export const servicesList: ServiceData[] = [
     ctaLabel: "Explore End of Tenancy Cleaning",
     icon: FaKey,
     tabIcon: PiKeyDuotone,
-    image: `${imgBase}/services-2-3.webp`,
-    tabImage: `${tabImgBase}/services-three-tab-img-3.webp`,
+    image: `${imgBase}/end-of-tenancy-cleaning-service-card.webp`,
+    tabImage: `${tabImgBase}/end-of-tenancy-cleaning-tab-rental.webp`,
     tabImageAlt:
       "End of tenancy cleaning team deep cleaning a rental property in London",
-    heroImage: "/images/hero/clean360/slide1.webp",
+    heroImage: "/images/hero/clean360/end-of-tenancy-cleaning-hero-london.webp",
     tabLines: ["End of Tenancy", "Cleaning"],
   },
   {
@@ -97,8 +97,8 @@ export const servicesList: ServiceData[] = [
     ctaLabel: "Explore Gutter Cleaning Service",
     icon: FaWater,
     tabIcon: PiCloudRainDuotone,
-    image: `${imgBase}/services-2-4.webp`,
-    tabImage: `${tabImgBase}/services-three-tab-img-4.webp`,
+    image: `${imgBase}/gutter-cleaning-service-card.webp`,
+    tabImage: `${tabImgBase}/gutter-cleaning-tab-residential.webp`,
     tabImageAlt:
       "Gutter cleaner clearing blocked roof gutters on a London residential property",
     heroImage: "/images/gutter/gutter-cleaning-hero.webp",

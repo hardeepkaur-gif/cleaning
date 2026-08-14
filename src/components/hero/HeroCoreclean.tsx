@@ -37,7 +37,7 @@ export default function HeroCoreclean({
   description = defaultDescription,
   primaryCta = { href: "/contact-us", label: "Request a Quote" },
   secondaryCta = { href: "/services", label: "Find Your Cleaner" },
-  imageSrc = `${imgBase}/main-slider-two-1-1.webp`,
+  imageSrc = `${imgBase}/hero-coreclean-main-cleaner.webp`,
   imageAlt = "Professional cleaner",
 }: HeroCorecleanProps) {
   return (
@@ -45,42 +45,42 @@ export default function HeroCoreclean({
       <div className={styles.heroBody}>
         <div
           className={styles.bgShape}
-          style={{ backgroundImage: `url('${imgBase}/main-slider-two-bg-shape-1.webp')` }}
+          style={{ backgroundImage: `url('${imgBase}/decorative-hero-coreclean-bg-primary.webp')` }}
           aria-hidden
         />
         <div
           className={styles.bgShapeTwo}
-          style={{ backgroundImage: `url('${imgBase}/main-slider-two-bg-shape-2.webp')` }}
+          style={{ backgroundImage: `url('${imgBase}/decorative-hero-coreclean-bg-secondary.webp')` }}
           aria-hidden
         />
 
         <img
           className={styles.shape1}
-          src={`${imgBase}/main-slider-two-shape-1.webp`}
+          src={`${imgBase}/decorative-hero-coreclean-accent-1.webp`}
           alt=""
           aria-hidden
         />
         <img
           className={styles.shape2}
-          src={`${imgBase}/main-slider-two-shape-2.webp`}
+          src={`${imgBase}/decorative-hero-coreclean-accent-2.webp`}
           alt=""
           aria-hidden
         />
         <img
           className={styles.shape3}
-          src={`${imgBase}/main-slider-two-shape-3.webp`}
+          src={`${imgBase}/decorative-hero-coreclean-accent-3.webp`}
           alt=""
           aria-hidden
         />
         <img
           className={styles.shape4}
-          src={`${imgBase}/main-slider-two-shape-4.webp`}
+          src={`${imgBase}/decorative-hero-coreclean-accent-4.webp`}
           alt=""
           aria-hidden
         />
         <img
           className={styles.shape5}
-          src={`${imgBase}/main-slider-two-shape-5.webp`}
+          src={`${imgBase}/decorative-hero-coreclean-accent-5.webp`}
           alt=""
           aria-hidden
         />

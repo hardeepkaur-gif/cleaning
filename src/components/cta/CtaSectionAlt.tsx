@@ -4,7 +4,7 @@ import ThmButton from "@/components/menu/ThmButton";
 import { ctaButtonLabel, ctaText, ctaTitle } from "./ctaData";
 import styles from "./CtaSectionAlt.module.css";
 
-const ctaImage = "/images/cta/cleanon/cta-one-img-1.webp";
+const ctaImage = "/images/cta/cleanon/cta-professional-cleaner-london.webp";
 
 const highlights = [
   { icon: FaRegThumbsUp, text: "Satisfaction guaranteed" },

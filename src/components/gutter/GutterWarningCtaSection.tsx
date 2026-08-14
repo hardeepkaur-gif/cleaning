@@ -56,7 +56,7 @@ export default function GutterWarningCtaSection() {
 
                       <img
                         className={local.screenImg}
-                        src="/images/gutter/gutter-included-2.webp"
+                        src="/images/gutter/gutter-blocked-warning-signs-london.webp"
                         alt="Blocked gutter warning signs needing professional cleaning in London"
                         loading="lazy"
                       />

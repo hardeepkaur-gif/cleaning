@@ -8,22 +8,22 @@ const faqs = [
   {
     q: "How quickly will you respond?",
     a: "Most enquiries get a quote back within a few hours, and always within 24 hours. For urgent same-day requests, calling or WhatsApp is fastest.",
-    img: "/images/about/cleanon/about-three-img-1.webp",
+    img: "/images/about/cleanon/professional-cleaners-london-office.webp",
   },
   {
     q: "Do you bring your own supplies and equipment?",
     a: "Yes, our team arrives fully equipped with eco-friendly products and equipment. Let us know in the form if you'd prefer we use products you already have at home.",
-    img: "/images/services/cleanon/services-2-1.webp",
+    img: "/images/services/cleanon/domestic-cleaning-service-card.webp",
   },
   {
     q: "Is my property insured during the clean?",
     a: "Every visit is covered by our public liability insurance, and all cleaners are DBS-checked before they're placed with clients.",
-    img: "/images/why/cleanon/why-choose-one-img-1.webp",
+    img: "/images/why/cleanon/professional-house-cleaning-london-kitchen.webp",
   },
   {
     q: "Can I book a one-off clean, or only recurring?",
     a: "Both. Choose the frequency that suits you on the form, from a single deep clean to weekly or fortnightly visits, and adjust anytime.",
-    img: "/images/why/cleanon/why-choose-one-img-2.webp",
+    img: "/images/why/cleanon/cleaner-wiping-kitchen-worktops-london.webp",
   },
 ];
 

@@ -24,14 +24,14 @@ export default function TenancyIncludedSection() {
       <div
         className={styles.bg}
         style={{
-          backgroundImage: `url('${faqImgBase}/faq-bg-1.webp')`,
+          backgroundImage: `url('${faqImgBase}/decorative-tenancy-included-section-bg.webp')`,
         }}
         aria-hidden
       >
         <div
           className={styles.bgInner}
           style={{
-            backgroundImage: `url('${faqImgBase}/faq-bg-shape-1-1.webp')`,
+            backgroundImage: `url('${faqImgBase}/decorative-tenancy-included-section-shape.webp')`,
           }}
           aria-hidden
         />
@@ -39,7 +39,7 @@ export default function TenancyIncludedSection() {
 
       <img
         className={styles.shape}
-        src={`${faqImgBase}/faq-shape-1-1.webp`}
+        src={`${faqImgBase}/decorative-tenancy-included-accent.webp`}
         alt="Decorative accent graphic for end of tenancy cleaning section"
         loading="lazy"
       />

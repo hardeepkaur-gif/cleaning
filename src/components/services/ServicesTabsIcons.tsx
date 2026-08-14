@@ -65,7 +65,7 @@ function ServicePanelContent({
       <div
         className={styles.tabLeftBg}
         style={{
-          backgroundImage: `url('${shapeBase}/services-three-tab-left-bg-shape.webp')`,
+          backgroundImage: `url('${shapeBase}/decorative-services-tab-panel-bg.webp')`,
         }}
         aria-hidden
       />
@@ -78,7 +78,7 @@ function ServicePanelContent({
             </div>
             <img
               className={styles.shape2}
-              src={`${shapeBase}/services-three-shape-2.webp`}
+              src={`${shapeBase}/decorative-services-tab-accent-secondary.webp`}
               alt="Decorative accent graphic for London cleaning services tab panel"
               loading="lazy"
             />
@@ -91,7 +91,7 @@ function ServicePanelContent({
             </ThmButton>
             <img
               className={styles.shape1}
-              src={`${shapeBase}/services-three-shape-1.webp`}
+              src={`${shapeBase}/decorative-services-tab-accent-primary.webp`}
               alt="Decorative graphic accent for cleaning services section panel"
               loading="lazy"
             />

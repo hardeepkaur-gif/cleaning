@@ -6,13 +6,13 @@ import local from "./TenancyPrepareSection.module.css";
 const prepareImgBase = "/images/tenancy/prepare";
 
 const prepareImages = {
-  main: `${prepareImgBase}/main.webp`,
+  main: `${prepareImgBase}/tenancy-prepare-rental-property-london.webp`,
   mainAlt: "Preparing a London rental property for end of tenancy cleaning",
-  img2: `${prepareImgBase}/img-2.webp`,
+  img2: `${prepareImgBase}/tenant-removing-belongings-tenancy-clean.webp`,
   img2Alt: "Tenant removing belongings before an end of tenancy clean in London",
-  img3: `${prepareImgBase}/img-3.webp`,
+  img3: `${prepareImgBase}/empty-kitchen-cupboards-tenancy-prep.webp`,
   img3Alt: "Empty kitchen cupboards prepared for a professional move out cleaning",
-  img4: `${prepareImgBase}/img-4.webp`,
+  img4: `${prepareImgBase}/rental-hallway-ready-tenancy-clean.webp`,
   img4Alt: "Rental property hallway ready for end of tenancy cleaning visit",
 };
 

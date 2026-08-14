@@ -23,7 +23,7 @@ export default function TenancyProfessionalSection() {
 
               <div className={styles.imageTwo}>
                 <img
-                  src={`${imgBase}/about-three-img-2.webp`}
+                  src={`${imgBase}/cleaning-team-preparing-equipment-london.webp`}
                   alt="Professional cleaner preparing a rental property for tenancy handover"
                   loading="lazy"
                 />

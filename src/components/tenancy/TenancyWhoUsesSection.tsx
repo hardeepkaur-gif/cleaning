@@ -5,22 +5,22 @@ const audiences = [
   {
     title: "Tenants Moving Out Cleaning Services",
     text: "Moving out of a rented property can be stressful, especially when inspections, inventories, and deposit concerns are involved. Our end of tenancy cleaning service helps tenants to clean their properties for handover with a comprehensive clean that covers the areas mainly the landlord or letting agent will check.",
-    image: "/images/services/cleanon-tabs/services-three-tab-img-1.webp",
+    image: "/images/services/cleanon-tabs/domestic-cleaning-tab-london-home.webp",
   },
   {
     title: "Landlords Preparing Properties",
     text: "A clean property will be easier to market, view and also hand over to new occupants. We are a professional move out cleaning service to help landlords get their houses, flats and rental properties prepared for the next tenant.",
-    image: "/images/services/cleanon-tabs/services-three-tab-img-2.webp",
+    image: "/images/services/cleanon-tabs/carpet-cleaning-tab-stain-removal.webp",
   },
   {
     title: "Letting Agents and Property Managers",
     text: "Managing multiple properties often means working to tight turnaround times. Our end of tenancy cleaning professionals can assist letting agents and property managers with dependable cleaning services that make them prepare their properties for new tenants, inspections and inventory checks.",
-    image: "/images/services/cleanon-tabs/services-three-tab-img-3.webp",
+    image: "/images/services/cleanon-tabs/end-of-tenancy-cleaning-tab-rental.webp",
   },
   {
     title: "New Homeowners Moving In Cleaning Service",
     text: 'Not all properties are delivered "move-in ready." Our move in and end of tenancy cleaning will allow new homeowners to start off with a clean slate before they move in and unpack their belongings.',
-    image: "/images/services/cleanon-tabs/services-three-tab-img-4.webp",
+    image: "/images/services/cleanon-tabs/gutter-cleaning-tab-residential.webp",
   },
 ];
 

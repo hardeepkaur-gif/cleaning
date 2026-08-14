@@ -71,14 +71,14 @@ export default function ServicesTabs() {
                     <div
                       className={styles.tabLeftBg}
                       style={{
-                        backgroundImage: `url('${shapeBase}/services-three-tab-left-bg-shape.webp')`,
+                        backgroundImage: `url('${shapeBase}/decorative-services-tab-panel-bg.webp')`,
                       }}
                       aria-hidden
                     />
                     <div className={styles.tabLeft}>
                       <img
                         className={styles.shape2}
-                        src={`${shapeBase}/services-three-shape-2.webp`}
+                        src={`${shapeBase}/decorative-services-tab-accent-secondary.webp`}
                         alt=""
                         aria-hidden
                       />
@@ -95,7 +95,7 @@ export default function ServicesTabs() {
                           </ThmButton>
                           <img
                             className={styles.shape1}
-                            src={`${shapeBase}/services-three-shape-1.webp`}
+                            src={`${shapeBase}/decorative-services-tab-accent-primary.webp`}
                             alt=""
                             aria-hidden
                           />
