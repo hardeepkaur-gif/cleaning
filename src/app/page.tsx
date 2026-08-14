@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   title: "Cleaning Services London for Homes Landlords and Businesses",
   description:
     "Professional cleaning services in London for homes and businesses. DBS-checked, insured cleaners with fixed pricing and completion photo reports.",
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function HomePage() {

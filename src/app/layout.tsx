@@ -4,6 +4,7 @@ import Footer from "@/components/footer/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://cleaning-one-beryl.vercel.app"),
   title: "Cleaning Services London for Homes Landlords and Businesses",
   description:
     "Professional cleaning services in London for homes and businesses. DBS-checked, insured cleaners with fixed pricing and completion photo reports.",

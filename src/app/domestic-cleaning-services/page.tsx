@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: "Domestic Cleaning Services London DBS Checked Local Cleaners",
   description:
     "Book domestic cleaning services London with DBS-checked, insured cleaners. Weekly, fortnightly, and one-off home cleaning with fixed pricing across London.",
+  alternates: {
+    canonical: "/domestic-cleaning-services",
+  },
 };
 
 export default function DomesticCleaningServicesPage() {

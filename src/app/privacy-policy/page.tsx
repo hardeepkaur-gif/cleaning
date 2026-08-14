@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Privacy Policy | Cleaning Services London",
   description:
     "Read how Cleaning Services London collects, uses and protects your personal information when you enquire about or book cleaning services in London.",
+  alternates: {
+    canonical: "/privacy-policy",
+  },
 };
 
 export default function PrivacyPolicyPage() {

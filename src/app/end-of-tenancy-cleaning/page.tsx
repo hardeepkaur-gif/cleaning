@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   title: "End of Tenancy Cleaning London With 14 Day Re-Clean Guarantee",
   description:
     "Book end of tenancy cleaning in London with fixed pricing, DBS-checked cleaners, oven cleaning included and a 14-day re-clean guarantee.",
+  alternates: {
+    canonical: "/end-of-tenancy-cleaning",
+  },
 };
 
 export default function EndOfTenancyCleaningPage() {

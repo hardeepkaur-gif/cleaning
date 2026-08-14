@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   title: "Gutter Cleaning London | Trusted Local Gutter Cleaners",
   description:
     "Book gutter cleaning London with insured local cleaners. Clear blocked gutters, remove leaves and debris, check downpipes and protect your home from dampness.",
+  alternates: {
+    canonical: "/gutter-cleaning-london",
+  },
 };
 
 export default function GutterCleaningPage() {

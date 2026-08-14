@@ -23,6 +23,9 @@ export const metadata: Metadata = {
   title: "Carpet Cleaning London From £30 | Professional Local Cleaners",
   description:
     "Book carpet cleaning London with DBS-checked, insured cleaners. Steam carpet cleaning, stain removal, fixed pricing and London wide coverage.",
+  alternates: {
+    canonical: "/carpet-cleaning-london",
+  },
 };
 
 export default function CarpetCleaningPage() {
