@@ -11,6 +11,7 @@ import {
   gutterSignsMainAlt,
   gutterSignsPoints,
   gutterSignsSecondaryAlt,
+  gutterSignsSealIconAlt,
   gutterSignsTitle,
 } from "./gutterSignsData";
 
@@ -56,8 +57,8 @@ export default function GutterSignsSection() {
                 />
                 <img
                   src={`${imgBase}/about-three-cleaning-gurante-icon.webp`}
-                  alt=""
-                  aria-hidden
+                  alt={gutterSignsSealIconAlt}
+                  loading="lazy"
                 />
                 <strong>Act</strong>
                 <span>Early</span>

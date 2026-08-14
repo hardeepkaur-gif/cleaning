@@ -32,7 +32,7 @@ export default function VettedSection() {
             <ul className={styles.points}>
               {points.map((text, i) => (
                 <li key={i} style={{ animationDelay: `${i * 0.1}s` }}>
-                  <span className={styles.pointIcon} aria-hidden>
+                  <span className={styles.pointIcon} role="img" aria-label="Vetted cleaner verification check icon">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                       <path
                         d="M13.5 4.5L6.5 11.5L2.5 7.5"
@@ -54,7 +54,8 @@ export default function VettedSection() {
             <div className={styles.imgWrap}>
               <img
                 src="/images/vetted/vetted-cleaner-property.webp"
-                alt="Professional cleaner vetted and verified"
+                alt="Vetted DBS checked cleaner entering a London home with professional equipment"
+                loading="lazy"
               />
             </div>
           </div>

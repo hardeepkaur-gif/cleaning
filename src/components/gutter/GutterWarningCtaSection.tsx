@@ -46,7 +46,7 @@ export default function GutterWarningCtaSection() {
                   <div className={localStyles.laptopBezel}>
                     <div className={localStyles.laptopCam} aria-hidden />
                     <div className={localStyles.laptopScreen}>
-                      <span className={localStyles.screenBadge}>
+                      <span className={localStyles.screenBadge} role="img" aria-label="Blocked gutter warning signs icon">
                         <PiWarningDuotone aria-hidden />
                         Act early
                       </span>
@@ -57,9 +57,8 @@ export default function GutterWarningCtaSection() {
                       <img
                         className={local.screenImg}
                         src="/images/gutter/gutter-included-2.webp"
-                        alt=""
+                        alt="Blocked gutter warning signs needing professional cleaning in London"
                         loading="lazy"
-                        aria-hidden
                       />
 
                       <ul className={localStyles.screenList}>

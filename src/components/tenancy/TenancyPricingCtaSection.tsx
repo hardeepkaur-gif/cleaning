@@ -63,16 +63,16 @@ export default function TenancyPricingCtaSection() {
                 <div className={styles.phoneNotch} aria-hidden />
                 <div className={styles.phoneScreen}>
                   <div className={styles.screenTop}>
-                    <span className={styles.screenBadge}>
-                      <PiSparkleFill /> Fixed quote
+                    <span className={styles.screenBadge} role="img" aria-label="Fixed end of tenancy cleaning quote icon">
+                      <PiSparkleFill aria-hidden /> Fixed quote
                     </span>
                     <strong>End of Tenancy Clean</strong>
                     <span>London · Property handover</span>
                   </div>
 
                   <div className={styles.screenHero}>
-                    <span className={styles.heroIcon} aria-hidden>
-                      <PiHouseLineFill />
+                    <span className={styles.heroIcon} role="img" aria-label="End of tenancy cleaning quote icon">
+                      <PiHouseLineFill aria-hidden />
                     </span>
                     <div className={styles.heroImg} aria-hidden />
                   </div>

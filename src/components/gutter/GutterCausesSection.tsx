@@ -167,8 +167,8 @@ export default function GutterCausesSection() {
                       className={`${styles.item} ${isLast ? styles.itemLast : ""} ${isActive ? styles.itemActive : ""}`}
                     >
                       <div className={styles.marker} aria-hidden>
-                        <span className={styles.dot}>
-                          <Icon />
+                        <span className={styles.dot} role="img" aria-label={item.iconAlt}>
+                          <Icon aria-hidden />
                         </span>
                       </div>
                       <article className={styles.itemBody}>

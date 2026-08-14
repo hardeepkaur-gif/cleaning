@@ -22,7 +22,7 @@ export default function AboutUs() {
               <div className={styles.imgMain}>
                 <img
                   src={`${imgBase}/about-three-img-1.webp`}
-                  alt="Professional cleaners at work in a modern office"
+                  alt="Professional cleaners working in a modern London office space"
                   loading="lazy"
                 />
               </div>
@@ -30,7 +30,7 @@ export default function AboutUs() {
               <div className={styles.imgSecondary}>
                 <img
                   src={`${imgBase}/about-three-img-2.webp`}
-                  alt="Cleaning team preparing equipment"
+                  alt="London cleaning team preparing professional equipment before a service visit"
                   loading="lazy"
                 />
               </div>
@@ -53,8 +53,8 @@ export default function AboutUs() {
                 />
                 <img
                   src={`${imgBase}/about-three-cleaning-gurante-icon.webp`}
-                  alt=""
-                  aria-hidden
+                  alt="100 percent customer satisfaction guarantee badge icon"
+                  loading="lazy"
                 />
                 <strong>100%</strong>
                 <span>Guaranteed</span>

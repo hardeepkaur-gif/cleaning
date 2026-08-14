@@ -106,7 +106,7 @@ function StepCard({
     >
       <div className={styles.cardIconWrap} ref={iconRef}>
         <span className={styles.cardIconArc} aria-hidden />
-        <span className={styles.cardIcon}>
+        <span className={styles.cardIcon} role="img" aria-label={`${step.title} step icon`}>
           <Icon aria-hidden />
         </span>
       </div>

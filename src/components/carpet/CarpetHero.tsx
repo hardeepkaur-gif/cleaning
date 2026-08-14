@@ -13,7 +13,11 @@ export default function CarpetHero() {
       aria-labelledby="carpet-hero-title"
     >
       <div className={styles.item}>
-        <div className={styles.bg} aria-hidden>
+        <div
+          className={styles.bg}
+          role="img"
+          aria-label="Expert carpet cleaning for homes flats and offices in London"
+        >
           <div
             className={`${styles.bgInner} ${local.bgInner}`}
             style={{ backgroundImage: `url('${heroImage}')` }}

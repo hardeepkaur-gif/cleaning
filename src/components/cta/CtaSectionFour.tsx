@@ -58,16 +58,16 @@ export default function CtaSectionFour() {
                 <div className={styles.phoneNotch} aria-hidden />
                 <div className={styles.phoneScreen}>
                   <div className={styles.screenTop}>
-                    <span className={styles.screenBadge}>
-                      <PiSparkleFill /> Spotless
+                    <span className={styles.screenBadge} role="img" aria-label="Spotless home deep clean booking icon">
+                      <PiSparkleFill aria-hidden /> Spotless
                     </span>
                     <strong>Home Deep Clean</strong>
                     <span>Tomorrow · 10:00 AM</span>
                   </div>
 
                   <div className={styles.screenHero}>
-                    <span className={styles.heroIcon} aria-hidden>
-                      <PiSprayBottleFill />
+                    <span className={styles.heroIcon} role="img" aria-label="Home deep clean service icon">
+                      <PiSprayBottleFill aria-hidden />
                     </span>
                     <div className={styles.heroImg} aria-hidden />
                   </div>

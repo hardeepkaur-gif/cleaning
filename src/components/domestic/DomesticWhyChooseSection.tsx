@@ -32,7 +32,7 @@ export default function DomesticWhyChooseSection() {
               <article key={item.title} className={styles.card}>
                 <div className={styles.imgBox}>
                   <div className={styles.imgWrap}>
-                    <img src={item.image} alt={item.title} loading="lazy" />
+                    <img src={item.image} alt={item.imageAlt} loading="lazy" />
                   </div>
                 </div>
                 <div className={styles.content}>
@@ -41,11 +41,11 @@ export default function DomesticWhyChooseSection() {
                   </h3>
                   <p className={styles.cardText}>{item.text}</p>
                   <div className={styles.iconWrap}>
-                    <span className={styles.iconMain} aria-hidden>
-                      <Icon />
+                    <span className={styles.iconMain} role="img" aria-label={item.iconAlt}>
+                      <Icon aria-hidden />
                     </span>
-                    <span className={styles.iconStar} aria-hidden>
-                      <FaStar />
+                    <span className={styles.iconStar} role="img" aria-label="Trusted domestic cleaning service icon">
+                      <FaStar aria-hidden />
                     </span>
                   </div>
                 </div>

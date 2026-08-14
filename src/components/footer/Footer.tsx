@@ -70,8 +70,8 @@ export default function Footer() {
         <div className={styles.trust}>
           {trustBadges.map(({ icon: Icon, label }) => (
             <div key={label} className={styles.trustItem}>
-              <span className={styles.trustIcon} aria-hidden>
-                <Icon />
+              <span className={styles.trustIcon} role="img" aria-label={`${label} icon`}>
+                <Icon aria-hidden />
               </span>
               <span>{label}</span>
             </div>
@@ -141,26 +141,26 @@ export default function Footer() {
             <h3 className={styles.title}>Get in Touch</h3>
             <ul className={styles.contactList}>
               <li>
-                <span className={styles.contactIcon} aria-hidden>
-                  <FaMapMarkerAlt />
+                <span className={styles.contactIcon} role="img" aria-label="Office address location icon">
+                  <FaMapMarkerAlt aria-hidden />
                 </span>
                 <span>{contactInfo.address}</span>
               </li>
               <li>
-                <span className={styles.contactIcon} aria-hidden>
-                  <FaEnvelope />
+                <span className={styles.contactIcon} role="img" aria-label="Email contact icon">
+                  <FaEnvelope aria-hidden />
                 </span>
                 <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
               </li>
               <li>
-                <span className={styles.contactIcon} aria-hidden>
-                  <FaPhoneAlt />
+                <span className={styles.contactIcon} role="img" aria-label="Phone contact icon">
+                  <FaPhoneAlt aria-hidden />
                 </span>
                 <a href={contactInfo.phoneHref}>{contactInfo.phone}</a>
               </li>
               <li>
-                <span className={styles.contactIcon} aria-hidden>
-                  <FaClock />
+                <span className={styles.contactIcon} role="img" aria-label="Business opening hours icon">
+                  <FaClock aria-hidden />
                 </span>
                 <span>Mon – Sun: 8:00 AM – 8:00 PM</span>
               </li>

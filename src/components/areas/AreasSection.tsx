@@ -44,7 +44,7 @@ export default function AreasSection() {
                       title={pin.name}
                       aria-label={pin.name}
                     >
-                      <span className={styles.pinIcon}>
+                      <span className={styles.pinIcon} role="img" aria-label={`${pin.name} service area map pin icon`}>
                         <FaMapMarkerAlt aria-hidden />
                       </span>
                     </div>

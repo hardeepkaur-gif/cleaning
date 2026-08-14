@@ -20,8 +20,8 @@ export default function CarpetTrustStrip() {
         <ul className={`${styles.grid} ${local.grid}`}>
           {carpetTrustItems.map(({ icon: Icon, label }) => (
             <li key={label} className={styles.card}>
-              <span className={styles.iconWrap} aria-hidden>
-                <Icon />
+              <span className={styles.iconWrap} role="img" aria-label={label}>
+                <Icon aria-hidden />
               </span>
               <div className={styles.content}>
                 <span className={styles.label}>{label}</span>

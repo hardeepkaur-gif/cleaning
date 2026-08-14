@@ -29,7 +29,7 @@ export default function GutterAreasSection() {
             </h2>
             <p className={styles.intro}>{gutterAreasIntro}</p>
             <ThmButton href="/contact-us" className={styles.btnMain}>
-              Contact Our Team <FaArrowRight />
+              Contact Our Team <FaArrowRight aria-hidden />
             </ThmButton>
           </div>
 
@@ -55,7 +55,7 @@ export default function GutterAreasSection() {
                       title={pin.name}
                       aria-label={pin.name}
                     >
-                      <span className={styles.pinIcon}>
+                      <span className={styles.pinIcon} role="img" aria-label={`${pin.name} gutter cleaning area pin icon`}>
                         <FaMapMarkerAlt aria-hidden />
                       </span>
                     </div>

@@ -33,13 +33,13 @@ export default function CtaSectionThree() {
 
           <div className={styles.visual}>
             <div className={styles.visualStage}>
-              <span className={styles.decorIcon} aria-hidden>
-                <PiSprayBottleDuotone />
+              <span className={styles.decorIcon} role="img" aria-label="Professional cleaning spray bottle icon">
+                <PiSprayBottleDuotone aria-hidden />
               </span>
 
               <div className={`${styles.floatCard} ${styles.bookingCard}`}>
-                <span className={styles.cardIcon} aria-hidden>
-                  <PiHouseLineDuotone />
+                <span className={styles.cardIcon} role="img" aria-label="Home deep clean booking icon">
+                  <PiHouseLineDuotone aria-hidden />
                 </span>
                 <span className={styles.cardLabel}>Your booking</span>
                 <strong className={styles.cardName}>Home Deep Clean</strong>

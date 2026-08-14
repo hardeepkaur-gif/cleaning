@@ -76,10 +76,8 @@ export default function DomesticTrustStrip() {
 
             <li key={label} className={styles.card}>
 
-              <span className={styles.iconWrap} aria-hidden>
-
-                <Icon />
-
+              <span className={styles.iconWrap} role="img" aria-label={label}>
+                <Icon aria-hidden />
               </span>
 
               <div className={styles.content}>

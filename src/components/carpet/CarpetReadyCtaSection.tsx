@@ -75,26 +75,26 @@ export default function CarpetReadyCtaSection() {
                 <div className={styles.phoneNotch} aria-hidden />
                 <div className={styles.phoneScreen}>
                   <div className={styles.screenTop}>
-                    <span className={styles.screenBadge}>
-                      <PiSparkleFill /> Book today
+                    <span className={styles.screenBadge} role="img" aria-label="Book carpet cleaning today icon">
+                      <PiSparkleFill aria-hidden /> Book today
                     </span>
                     <strong>Carpet Cleaning</strong>
                     <span>London · East &amp; Greater London</span>
                   </div>
 
                   <div className={`${styles.screenHero} ${local.screenHero}`}>
-                    <span className={`${styles.heroIcon} ${local.heroIcon}`} aria-hidden>
-                      <PiRugDuotone />
+                    <span className={`${styles.heroIcon} ${local.heroIcon}`} role="img" aria-label="Carpet cleaning booking icon">
+                      <PiRugDuotone aria-hidden />
                     </span>
                     <div className={`${styles.heroImg} ${local.heroImg}`} aria-hidden />
                   </div>
 
                   <ul className={styles.screenList}>
                     <li>
-                      <PiShieldCheckFill /> DBS-checked team
+                      <PiShieldCheckFill aria-hidden /> DBS-checked team
                     </li>
                     <li>
-                      <PiCalendarCheckFill /> Flexible appointments
+                      <PiCalendarCheckFill aria-hidden /> Flexible appointments
                     </li>
                   </ul>
 

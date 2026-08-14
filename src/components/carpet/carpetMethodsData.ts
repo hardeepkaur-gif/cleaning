@@ -17,6 +17,7 @@ export type CarpetMethodRow = {
   dryingTime: string;
   limitation: string;
   accent: "steam" | "dry";
+  iconAlt: string;
 };
 
 export const carpetMethodsRows: CarpetMethodRow[] = [
@@ -27,6 +28,7 @@ export const carpetMethodsRows: CarpetMethodRow[] = [
     dryingTime: "Usually 3 to 6 hours",
     limitation: "Not suitable for every delicate fibre",
     accent: "steam",
+    iconAlt: "Hot water extraction steam carpet cleaning method icon",
   },
   {
     id: "dry",
@@ -35,6 +37,7 @@ export const carpetMethodsRows: CarpetMethodRow[] = [
     dryingTime: "Usually ready to use much sooner",
     limitation: "Less effective for deep stains and embedded dirt",
     accent: "dry",
+    iconAlt: "Dry carpet cleaning method for delicate fibres icon",
   },
 ];
 

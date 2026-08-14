@@ -16,7 +16,9 @@ export type DomesticChecklistTab = {
   title: string;
   shortLabel: string;
   icon: IconType;
+  iconAlt: string;
   image: string;
+  imageAlt: string;
   intro: string;
   items: string[];
   listVariant?: DomesticChecklistListVariant;
@@ -34,7 +36,9 @@ export const domesticChecklistTabs: DomesticChecklistTab[] = [
     title: "Kitchen Cleaning Checklist",
     shortLabel: "Kitchen",
     icon: PiCookingPotDuotone,
+    iconAlt: "Kitchen domestic cleaning checklist icon",
     image: "/images/domestic/domestic-kitchen-checklist.webp",
+    imageAlt: "Kitchen domestic cleaning checklist with worktops and appliances",
     intro:
       "Your kitchen is one of the busiest rooms in the home and benefits from regular attention to maintain hygiene and cleanliness. Your domestic cleaner can:",
     items: [
@@ -52,7 +56,9 @@ export const domesticChecklistTabs: DomesticChecklistTab[] = [
     title: "Bathroom Cleaning Checklist",
     shortLabel: "Bathroom",
     icon: PiBathtubDuotone,
+    iconAlt: "Bathroom domestic cleaning checklist icon",
     image: "/images/domestic/domestic-bathroom-checklist.webp",
+    imageAlt: "Bathroom domestic cleaning checklist for toilet sink and shower",
     intro:
       "Bathrooms require regular cleaning to reduce limescale, soap residue, and everyday dirt. During your home cleaning service, your cleaner will normally:",
     items: [
@@ -69,7 +75,9 @@ export const domesticChecklistTabs: DomesticChecklistTab[] = [
     title: "Bedroom Cleaning Checklist",
     shortLabel: "Bedroom",
     icon: PiBedDuotone,
+    iconAlt: "Bedroom domestic cleaning checklist icon",
     image: "/images/domestic/domestic-bedroom-checklist.webp",
+    imageAlt: "Bedroom domestic cleaning checklist with dusting and vacuuming",
     intro:
       "Regular bedroom cleaning helps create a tidy and comfortable space while reducing everyday dust and allergens. Your cleaner can usually:",
     items: [
@@ -86,7 +94,9 @@ export const domesticChecklistTabs: DomesticChecklistTab[] = [
     title: "Living Room Cleaning Checklist",
     shortLabel: "Living Room",
     icon: PiCouchDuotone,
+    iconAlt: "Living room domestic cleaning checklist icon",
     image: "/images/domestic/domestic-living-room-checklist.webp",
+    imageAlt: "Living room domestic cleaning checklist for furniture and floors",
     intro:
       "Living areas are used every day and often collect dust, fingerprints, and general clutter. A domestic cleaning visit includes:",
     items: [
@@ -103,7 +113,9 @@ export const domesticChecklistTabs: DomesticChecklistTab[] = [
     title: "Hallways and Shared Areas",
     shortLabel: "Hallway",
     icon: PiDoorDuotone,
+    iconAlt: "Hallway domestic cleaning checklist icon",
     image: "/images/domestic/domestic-hallway-checklist.webp",
+    imageAlt: "Hallway and stairs domestic cleaning checklist for shared areas",
     intro:
       "Hallways, stairs, and entrances experience constant foot traffic and help create the first impression of your home. Your cleaner will typically:",
     items: [
@@ -120,7 +132,9 @@ export const domesticChecklistTabs: DomesticChecklistTab[] = [
     title: "Additional Domestic Cleaning Tasks You Can Add",
     shortLabel: "Add-On Tasks",
     icon: PiPlusCircleDuotone,
+    iconAlt: "Additional domestic cleaning add on tasks icon",
     image: "/images/domestic/domestic-addon-tasks-checklist.webp",
+    imageAlt: "Optional add on domestic cleaning tasks like ironing and laundry",
     intro:
       "Need a little extra help around the house? Alongside your regular domestic cleaning service, you can request additional household tasks during your booking, subject to the time available.",
     items: [
@@ -139,7 +153,9 @@ export const domesticChecklistTabs: DomesticChecklistTab[] = [
     title: "What Is Not Included in Standard Domestic Cleaning?",
     shortLabel: "Not Included",
     icon: PiProhibitDuotone,
+    iconAlt: "Standard domestic cleaning exclusions icon",
     image: "/images/domestic/domestic-not-included-checklist.webp",
+    imageAlt: "Tasks not included in standard domestic cleaning service",
     intro:
       "To avoid any confusion, some specialist or time-intensive tasks are not normally included in a standard domestic cleaning service unless arranged in advance.",
     items: [

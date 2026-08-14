@@ -8,6 +8,7 @@ import local from "./CarpetAreasCtaSection.module.css";
 import {
   carpetAreasCtaButtonLabel,
   carpetAreasCtaScreenImage,
+  carpetAreasCtaScreenImageAlt,
   carpetAreasCtaScreenTitle,
   carpetAreasCtaText,
   carpetAreasCtaTitle,
@@ -52,7 +53,7 @@ export default function CarpetAreasCtaSection() {
                   <div className={localStyles.laptopBezel}>
                     <div className={localStyles.laptopCam} aria-hidden />
                     <div className={localStyles.laptopScreen}>
-                      <span className={localStyles.screenBadge}>
+                      <span className={localStyles.screenBadge} role="img" aria-label="Carpet cleaning London icon">
                         <PiRugDuotone aria-hidden />
                         Carpet cleaning
                       </span>
@@ -63,9 +64,8 @@ export default function CarpetAreasCtaSection() {
                       <img
                         className={local.screenImg}
                         src={carpetAreasCtaScreenImage}
-                        alt=""
+                        alt={carpetAreasCtaScreenImageAlt}
                         loading="lazy"
-                        aria-hidden
                       />
 
                       <ul className={localStyles.screenList}>

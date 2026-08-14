@@ -26,3 +26,12 @@ export const carpetIncludedImages = {
 
 export const carpetIncludedMainAlt =
   "Professional carpet cleaning in a London office";
+
+export const carpetIncludedImg2Alt =
+  "Carpet inspection and pre-treatment before professional cleaning";
+
+export const carpetIncludedImg3Alt =
+  "Deep steam carpet cleaning removing dirt and allergens in London";
+
+export const carpetIncludedImg4Alt =
+  "Carpet aftercare advice following professional cleaning in London";

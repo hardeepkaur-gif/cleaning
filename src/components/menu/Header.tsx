@@ -133,8 +133,8 @@ function MenuBar({
 
         <div className={styles.right}>
           <div className={styles.call}>
-            <div className={styles.callIcon}>
-              <FaPhoneAlt />
+            <div className={styles.callIcon} role="img" aria-label="Call anytime phone icon">
+              <FaPhoneAlt aria-hidden />
             </div>
             <div className={styles.callContent}>
               <p className={styles.callSubTitle}>Call Anytime</p>
@@ -194,8 +194,8 @@ export default function Header() {
             <div className={styles.topInner}>
               <ul className={styles.contactList}>
                 <li>
-                  <span className={styles.contactIcon}>
-                    <FaEnvelope />
+                  <span className={styles.contactIcon} role="img" aria-label="Email contact icon">
+                    <FaEnvelope aria-hidden />
                   </span>
                   <span className={styles.contactText}>
                     <p>
@@ -204,8 +204,8 @@ export default function Header() {
                   </span>
                 </li>
                 <li>
-                  <span className={styles.contactIcon}>
-                    <FaPhoneAlt />
+                  <span className={styles.contactIcon} role="img" aria-label="Phone contact icon">
+                    <FaPhoneAlt aria-hidden />
                   </span>
                   <span className={styles.contactText}>
                     <p>
@@ -214,8 +214,8 @@ export default function Header() {
                   </span>
                 </li>
                 <li>
-                  <span className={styles.contactIcon}>
-                    <FaMapMarkerAlt />
+                  <span className={styles.contactIcon} role="img" aria-label="Office address location icon">
+                    <FaMapMarkerAlt aria-hidden />
                   </span>
                   <span className={styles.contactText}>
                     <p>{contactInfo.address}</p>

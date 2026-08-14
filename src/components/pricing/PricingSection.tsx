@@ -12,24 +12,28 @@ import styles from "./PricingSection.module.css";
 const pricingCards = [
   {
     icon: PiHouseLineDuotone,
+    iconAlt: "Domestic home cleaning service pricing icon",
     service: "Domestic Cleaning",
     basis: "Property size and cleaning frequency",
     bestFor: "Regular home cleaning services and ongoing household maintenance",
   },
   {
     icon: PiRugDuotone,
+    iconAlt: "Carpet cleaning service pricing icon",
     service: "Carpet Cleaning",
     basis: "Carpet size, material, and overall condition",
     bestFor: "Stain removal, odour treatment, and high-traffic areas",
   },
   {
     icon: PiKeyDuotone,
+    iconAlt: "End of tenancy cleaning service pricing icon",
     service: "End of Tenancy Cleaning",
     basis: "Number of bedrooms and property condition",
     bestFor: "Move-out cleans, landlord requirements, and property handovers",
   },
   {
     icon: PiBroomDuotone,
+    iconAlt: "Gutter cleaning service pricing icon",
     service: "Gutter Cleaning",
     basis: "Property access, height, and blockage level",
     bestFor: "Preventative maintenance and reducing the risk of water damage",
@@ -59,8 +63,8 @@ export default function PricingSection() {
         </div>
 
         <div className={styles.callout}>
-          <span className={styles.calloutIcon} aria-hidden>
-            <PiCurrencyGbpDuotone />
+          <span className={styles.calloutIcon} role="img" aria-label="Fixed pricing structure icon">
+            <PiCurrencyGbpDuotone aria-hidden />
           </span>
           <div>
             <p>
@@ -77,14 +81,14 @@ export default function PricingSection() {
         </div>
 
         <div className={styles.cardGrid}>
-          {pricingCards.map(({ icon: Icon, service, basis, bestFor }) => (
+          {pricingCards.map(({ icon: Icon, iconAlt, service, basis, bestFor }) => (
             <article
               key={service}
               className={styles.card}
             >
               <div className={styles.cardTop}>
-                <span className={styles.cardIcon} aria-hidden>
-                  <Icon />
+                <span className={styles.cardIcon} role="img" aria-label={iconAlt}>
+                  <Icon aria-hidden />
                 </span>
                 <h3 className={styles.cardTitle}>{service}</h3>
               </div>

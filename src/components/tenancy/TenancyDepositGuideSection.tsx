@@ -27,7 +27,7 @@ export default function TenancyDepositGuideSection() {
               <div className={styles.imgMain}>
                 <img
                   src={`${depositImgBase}/main.webp`}
-                  alt="Professional end of tenancy cleaning in London"
+                  alt="Professional end of tenancy cleaning helping protect a London tenancy deposit"
                   loading="lazy"
                 />
               </div>
@@ -35,7 +35,7 @@ export default function TenancyDepositGuideSection() {
               <div className={styles.imgSecondary}>
                 <img
                   src={`${depositImgBase}/secondary.webp`}
-                  alt="Cleaning team preparing for property handover"
+                  alt="Cleaning team preparing a rental property for tenancy deposit inspection"
                   loading="lazy"
                 />
               </div>
@@ -50,8 +50,8 @@ export default function TenancyDepositGuideSection() {
                 />
                 <img
                   src={`${imgBase}/about-three-cleaning-gurante-icon.webp`}
-                  alt=""
-                  aria-hidden
+                  alt="100 percent end of tenancy cleaning satisfaction guarantee badge icon"
+                  loading="lazy"
                 />
                 <strong>100%</strong>
                 <span>Guaranteed</span>

@@ -21,8 +21,11 @@ export type CarpetFrequencyRow = {
   propertyType: string;
   frequency: string;
   icon: IconType;
+  iconAlt: string;
   accent: "calm" | "medium" | "active";
 };
+
+export const carpetFrequencyIconAlt = "Recommended carpet cleaning frequency icon";
 
 export const carpetFrequencyRows: CarpetFrequencyRow[] = [
   {
@@ -30,6 +33,7 @@ export const carpetFrequencyRows: CarpetFrequencyRow[] = [
     propertyType: "Family homes",
     frequency: "Every 12 months",
     icon: PiHouseLineDuotone,
+    iconAlt: "Family home carpet cleaning frequency icon",
     accent: "calm",
   },
   {
@@ -37,6 +41,7 @@ export const carpetFrequencyRows: CarpetFrequencyRow[] = [
     propertyType: "Homes with pets or young children",
     frequency: "Every 6 to 12 months",
     icon: PiPawPrintDuotone,
+    iconAlt: "Homes with pets carpet cleaning schedule icon",
     accent: "medium",
   },
   {
@@ -44,6 +49,7 @@ export const carpetFrequencyRows: CarpetFrequencyRow[] = [
     propertyType: "Homes with allergy sufferers",
     frequency: "Every 6 months",
     icon: PiLeafDuotone,
+    iconAlt: "Allergy sufferers carpet cleaning frequency icon",
     accent: "medium",
   },
   {
@@ -51,6 +57,7 @@ export const carpetFrequencyRows: CarpetFrequencyRow[] = [
     propertyType: "Rental properties",
     frequency: "Before new tenants move in or after tenants move out",
     icon: PiKeyDuotone,
+    iconAlt: "Rental property carpet cleaning schedule icon",
     accent: "active",
   },
   {
@@ -58,6 +65,7 @@ export const carpetFrequencyRows: CarpetFrequencyRow[] = [
     propertyType: "Offices and commercial premises",
     frequency: "Every 3 to 6 months, depending on foot traffic",
     icon: PiBriefcaseDuotone,
+    iconAlt: "Office carpet cleaning frequency icon",
     accent: "active",
   },
   {
@@ -65,6 +73,7 @@ export const carpetFrequencyRows: CarpetFrequencyRow[] = [
     propertyType: "High-traffic areas",
     frequency: "Every 3 to 6 months",
     icon: PiFootprintsDuotone,
+    iconAlt: "High traffic area carpet cleaning schedule icon",
     accent: "active",
   },
 ];

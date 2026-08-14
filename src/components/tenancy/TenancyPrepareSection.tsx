@@ -7,9 +7,13 @@ const prepareImgBase = "/images/tenancy/prepare";
 
 const prepareImages = {
   main: `${prepareImgBase}/main.webp`,
+  mainAlt: "Preparing a London rental property for end of tenancy cleaning",
   img2: `${prepareImgBase}/img-2.webp`,
+  img2Alt: "Tenant removing belongings before an end of tenancy clean in London",
   img3: `${prepareImgBase}/img-3.webp`,
+  img3Alt: "Empty kitchen cupboards prepared for a professional move out cleaning",
   img4: `${prepareImgBase}/img-4.webp`,
+  img4Alt: "Rental property hallway ready for end of tenancy cleaning visit",
 };
 
 const preparePoints = [
@@ -43,8 +47,8 @@ export default function TenancyPrepareSection() {
             <ul className={styles.points}>
               {preparePoints.map((item) => (
                 <li key={item}>
-                  <span className={styles.pointIcon} aria-hidden>
-                    <FaCheck />
+                  <span className={styles.pointIcon} role="img" aria-label="Property preparation step icon">
+                    <FaCheck aria-hidden />
                   </span>
                   <h3>{item}</h3>
                 </li>
@@ -55,38 +59,39 @@ export default function TenancyPrepareSection() {
           <div className={styles.right}>
             <div className={styles.visualStage}>
               <div className={styles.rightShape} aria-hidden>
-                <img src={includedImages.rightShape} alt="" />
+                <img src={includedImages.rightShape} alt={includedImages.rightShapeAlt} loading="lazy" />
               </div>
 
               <div className={styles.imgBox}>
                 <div className={styles.mainImg}>
                   <img
                     src={prepareImages.main}
-                    alt="Preparing a London property for end of tenancy cleaning"
+                    alt={prepareImages.mainAlt}
+                    loading="lazy"
                   />
                 </div>
                 <div className={styles.imgShape1} aria-hidden>
-                  <img src={includedImages.shape1} alt="" />
+                  <img src={includedImages.shape1} alt={includedImages.shape1Alt} loading="lazy" />
                 </div>
                 <div className={styles.imgShape2} aria-hidden>
-                  <img src={includedImages.shape2} alt="" />
+                  <img src={includedImages.shape2} alt={includedImages.shape2Alt} loading="lazy" />
                 </div>
                 <div className={styles.imgShape3} aria-hidden>
-                  <img src={includedImages.shape3} alt="" />
+                  <img src={includedImages.shape3} alt={includedImages.shape3Alt} loading="lazy" />
                 </div>
                 <div className={styles.imgShape4} aria-hidden>
-                  <img src={includedImages.shape4} alt="" />
+                  <img src={includedImages.shape4} alt={includedImages.shape4Alt} loading="lazy" />
                 </div>
               </div>
 
               <div className={styles.img2}>
-                <img src={prepareImages.img2} alt="" aria-hidden />
+                <img src={prepareImages.img2} alt={prepareImages.img2Alt} loading="lazy" />
               </div>
               <div className={styles.img3}>
-                <img src={prepareImages.img3} alt="" aria-hidden />
+                <img src={prepareImages.img3} alt={prepareImages.img3Alt} loading="lazy" />
               </div>
               <div className={styles.img4}>
-                <img src={prepareImages.img4} alt="" aria-hidden />
+                <img src={prepareImages.img4} alt={prepareImages.img4Alt} loading="lazy" />
               </div>
             </div>
           </div>

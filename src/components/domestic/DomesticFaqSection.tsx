@@ -49,9 +49,8 @@ export default function DomesticFaqSection() {
                       <div className={styles.answerImg}>
                         <img
                           src={faq.img}
-                          alt=""
+                          alt={faq.alt}
                           loading="lazy"
-                          aria-hidden
                         />
                       </div>
                       <p>{faq.a}</p>
@@ -86,9 +85,8 @@ export default function DomesticFaqSection() {
                       <div className={styles.answerImg}>
                         <img
                           src={faq.img}
-                          alt=""
+                          alt={faq.alt}
                           loading="lazy"
-                          aria-hidden
                         />
                       </div>
                       <p>{faq.a}</p>

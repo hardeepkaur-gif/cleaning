@@ -8,6 +8,7 @@ export type GutterCauseItem = {
   title: string;
   items: string[];
   icon: IconType;
+  iconAlt: string;
 };
 
 export const gutterCausesTagline = "Residential & Commercial";
@@ -34,6 +35,7 @@ export const gutterCausesItems: GutterCauseItem[] = [
       "Flats & apartments",
     ],
     icon: PiHouseLineDuotone,
+    iconAlt: "Residential gutter cleaning service icon",
   },
   {
     title: "Commercial",
@@ -47,5 +49,6 @@ export const gutterCausesItems: GutterCauseItem[] = [
       "Industrial units",
     ],
     icon: PiBuildingsDuotone,
+    iconAlt: "Commercial gutter cleaning service icon",
   },
 ];

@@ -24,7 +24,9 @@ export default function CarpetWorthItAltSection() {
       <div className={styles.container}>
         <header className={styles.header}>
           <span className={styles.tagline}>
-            <PiSparkleDuotone aria-hidden />
+            <span role="img" aria-label="Professional carpet cleaning benefits icon">
+              <PiSparkleDuotone aria-hidden />
+            </span>
             Why Professional Cleaning Pays Off
           </span>
           <h2 className={styles.title} id="carpet-worth-it-alt-title">

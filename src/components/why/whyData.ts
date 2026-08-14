@@ -20,11 +20,13 @@ export type WhyProblem = {
   title: string;
   text: string;
   icon: IconType;
+  iconAlt: string;
 };
 
 export type WhySolution = {
   text: string;
   icon: IconType;
+  iconAlt: string;
 };
 
 export const whyTagline = "Why Choose Us";
@@ -40,31 +42,37 @@ export const whyProblems: WhyProblem[] = [
     title: "Last-Minute Cancellations",
     text: "There are several instances when the customer will find cleaners canceling without any prior notice, leaving them scrambling to find a replacement.",
     icon: PiCalendarSlashDuotone,
+    iconAlt: "Last minute cleaning appointment cancellation icon",
   },
   {
     title: "Different Cleaner Every Visit",
     text: "Having multiple work staff changes can lead to the regular addition of a new cleaner, which can make it hard to trust and maintain standards.",
     icon: PiUsersThreeDuotone,
+    iconAlt: "Different cleaner assigned for each visit icon",
   },
   {
     title: "Unclear or Changing Pricing",
     text: "Some companies may quote a rate, but impose additional charges once a booking is secured.",
     icon: PiCoinVerticalDuotone,
+    iconAlt: "Unclear or changing cleaning service pricing icon",
   },
   {
     title: "Vague Vetting Claims",
     text: "Cleaners are often called ‘fully vetted cleaners' and many will have no documentation for the checks they have performed.",
     icon: PiFileXDuotone,
+    iconAlt: "Unverified cleaner vetting documentation icon",
   },
   {
     title: "No Quality Control After the Job",
     text: "After the cleaning, often there's no evidence, reporting or accountability for the cleaning.",
     icon: PiCameraSlashDuotone,
+    iconAlt: "No post clean quality control or reporting icon",
   },
   {
     title: "Concerns About Property Security",
     text: "Visitors into your home must trust you, and many cleaning companies don't fully consider this.",
     icon: PiLockKeyDuotone,
+    iconAlt: "Home security concerns with unknown cleaners icon",
   },
 ];
 
@@ -75,33 +83,41 @@ export const whySolutions: WhySolution[] = [
   {
     text: "DBS-checked cleaners with identity and right-to-work verification.",
     icon: PiShieldStarDuotone,
+    iconAlt: "DBS checked cleaner verification icon",
   },
   {
     text: "Experienced cleaners assessed before attending any property.",
     icon: PiMedalDuotone,
+    iconAlt: "Experienced assessed cleaner icon",
   },
   {
     text: "Fixed pricing agreed before work begins.",
     icon: PiTagChevronDuotone,
+    iconAlt: "Fixed price cleaning service icon",
   },
   {
     text: "Same-cleaner availability for recurring cleaning service London.",
     icon: PiUserCircleGearDuotone,
+    iconAlt: "Same regular cleaner availability icon",
   },
   {
     text: "Signed cleaning procedures and documented service standards.",
     icon: PiListChecksDuotone,
+    iconAlt: "Signed cleaning procedures and standards icon",
   },
   {
     text: "Completion photos for additional quality assurance.",
     icon: PiCameraRotateDuotone,
+    iconAlt: "Completion photo quality assurance icon",
   },
   {
     text: "Fully insured cleaning professionals.",
     icon: PiUmbrellaDuotone,
+    iconAlt: "Fully insured cleaning professionals icon",
   },
   {
     text: "A satisfaction-focused approach backed by clear accountability.",
     icon: PiHeartDuotone,
+    iconAlt: "Customer satisfaction guarantee icon",
   },
 ];

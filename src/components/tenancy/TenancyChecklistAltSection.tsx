@@ -55,8 +55,8 @@ export default function TenancyChecklistAltSection() {
                   className={`${styles.railBtn} ${isActive ? styles.railBtnActive : ""}`}
                   onClick={() => setActiveTab(index)}
                 >
-                  <span className={styles.railIcon} aria-hidden>
-                    <Icon />
+                  <span className={styles.railIcon} role="img" aria-label={tab.iconAlt}>
+                    <Icon aria-hidden />
                   </span>
                   <span className={styles.railCopy}>
                     <span className={styles.railLabel}>{tab.shortLabel}</span>
@@ -79,11 +79,13 @@ export default function TenancyChecklistAltSection() {
           >
             <div className={styles.panelTop}>
               <div className={styles.media}>
-                <img src={active.image} alt="" loading="lazy" aria-hidden />
+                <img src={active.image} alt={active.imageAlt} loading="lazy" />
                 <div className={styles.mediaGlow} aria-hidden />
                 <div className={styles.content}>
                   <div className={styles.mediaBadge}>
-                    <ActiveIcon aria-hidden />
+                    <span role="img" aria-label={active.iconAlt}>
+                      <ActiveIcon aria-hidden />
+                    </span>
                     <strong>{active.shortLabel}</strong>
                   </div>
                 </div>
@@ -91,7 +93,9 @@ export default function TenancyChecklistAltSection() {
 
               <div className={styles.contentMobile}>
                 <div className={styles.mediaBadge}>
-                  <ActiveIcon aria-hidden />
+                  <span role="img" aria-label={active.iconAlt}>
+                    <ActiveIcon aria-hidden />
+                  </span>
                   <strong>{active.shortLabel}</strong>
                 </div>
               </div>
@@ -104,8 +108,8 @@ export default function TenancyChecklistAltSection() {
                   className={styles.checkItem}
                   style={{ animationDelay: `${index * 45}ms` }}
                 >
-                  <span className={styles.checkMark} aria-hidden>
-                    <FaCheck />
+                  <span className={styles.checkMark} role="img" aria-label="Included checklist task icon">
+                    <FaCheck aria-hidden />
                   </span>
                   <span>{item}</span>
                 </li>

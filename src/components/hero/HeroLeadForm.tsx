@@ -81,7 +81,11 @@ export default function HeroLeadForm({
   return (
     <section className={styles.hero} id={id} aria-labelledby={titleId}>
       <div className={styles.bgLayer} aria-hidden>
-        <img className={styles.bgImage} src={bgImage} alt="" />
+        <img
+          className={styles.bgImage}
+          src={bgImage}
+          alt="Professional DBS checked cleaners providing home cleaning services in London"
+        />
         <div className={styles.overlay} />
       </div>
 
@@ -130,7 +134,9 @@ export default function HeroLeadForm({
 
             {submitted ? (
               <div className={styles.success} role="status">
-                <FaCheckCircle aria-hidden />
+                <span role="img" aria-label="Quote request submitted successfully icon">
+                  <FaCheckCircle aria-hidden />
+                </span>
                 <strong>Thank you!</strong>
                 <p>Your request has been received. We&apos;ll contact you soon.</p>
                 <ThmButton type="button" onClick={() => setSubmitted(false)}>

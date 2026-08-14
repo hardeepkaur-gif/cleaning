@@ -23,12 +23,25 @@ export const includedExtra =
 
 export const includedImages = {
   main: `${imgBase}/why-choose-one-img-1.webp`,
+  mainAlt:
+    "Professional cleaner providing house cleaning services in a London home",
   img2: `${imgBase}/why-choose-one-img-2.webp`,
+  img2Alt:
+    "Cleaner wiping kitchen worktops during a professional home clean in London",
   img3: `${imgBase}/why-choose-one-img-3.webp`,
+  img3Alt:
+    "Cleaner vacuuming living room floors during routine domestic cleaning in London",
   img4: `${imgBase}/why-choose-one-img-4.webp`,
+  img4Alt:
+    "Cleaner sanitising bathroom fixtures as part of a professional house clean",
   rightShape: `${imgBase}/why-choose-one-right-shape-1.webp`,
+  rightShapeAlt: "Decorative background shape for professional cleaning section",
   shape1: `${imgBase}/why-choose-one-img-shape-1.webp`,
+  shape1Alt: "Decorative accent graphic for London cleaning services section",
   shape2: `${imgBase}/why-choose-one-img-shape-2.webp`,
+  shape2Alt: "Decorative cleaning service section accent graphic",
   shape3: `${imgBase}/why-choose-one-img-shape-3.webp`,
+  shape3Alt: "Decorative graphic element for professional house cleaning section",
   shape4: `${imgBase}/why-choose-one-img-shape-4.webp`,
+  shape4Alt: "Decorative accent icon for included professional clean section",
 };

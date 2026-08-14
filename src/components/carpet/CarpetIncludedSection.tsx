@@ -5,6 +5,9 @@ import local from "./CarpetIncludedSection.module.css";
 import {
   carpetIncludedExtra,
   carpetIncludedImages,
+  carpetIncludedImg2Alt,
+  carpetIncludedImg3Alt,
+  carpetIncludedImg4Alt,
   carpetIncludedIntro,
   carpetIncludedMainAlt,
   carpetIncludedPoints,
@@ -52,7 +55,7 @@ export default function CarpetIncludedSection() {
           <div className={`${styles.right} ${local.rightVisual}`}>
             <div className={`${styles.visualStage} ${local.visualStage}`}>
               <div className={styles.rightShape} aria-hidden>
-                <img src={includedImages.rightShape} alt="" />
+                <img src={includedImages.rightShape} alt={includedImages.rightShapeAlt} />
               </div>
 
               <div className={`${styles.imgBox} ${local.imgBox}`}>
@@ -64,40 +67,37 @@ export default function CarpetIncludedSection() {
                   />
                 </div>
                 <div className={styles.imgShape1} aria-hidden>
-                  <img src={includedImages.shape1} alt="" />
+                  <img src={includedImages.shape1} alt={includedImages.shape1Alt} />
                 </div>
                 <div className={styles.imgShape2} aria-hidden>
-                  <img src={includedImages.shape2} alt="" />
+                  <img src={includedImages.shape2} alt={includedImages.shape2Alt} />
                 </div>
                 <div className={styles.imgShape3} aria-hidden>
-                  <img src={includedImages.shape3} alt="" />
+                  <img src={includedImages.shape3} alt={includedImages.shape3Alt} />
                 </div>
                 <div className={styles.imgShape4} aria-hidden>
-                  <img src={includedImages.shape4} alt="" />
+                  <img src={includedImages.shape4} alt={includedImages.shape4Alt} />
                 </div>
               </div>
 
               <div className={`${styles.img2} ${local.img2}`}>
                 <img
                   src={carpetIncludedImages.img2}
-                  alt=""
-                  aria-hidden
+                  alt={carpetIncludedImg2Alt}
                   loading="lazy"
                 />
               </div>
               <div className={`${styles.img3} ${local.img3}`}>
                 <img
                   src={carpetIncludedImages.img3}
-                  alt=""
-                  aria-hidden
+                  alt={carpetIncludedImg3Alt}
                   loading="lazy"
                 />
               </div>
               <div className={`${styles.img4} ${local.img4}`}>
                 <img
                   src={carpetIncludedImages.img4}
-                  alt=""
-                  aria-hidden
+                  alt={carpetIncludedImg4Alt}
                   loading="lazy"
                 />
               </div>

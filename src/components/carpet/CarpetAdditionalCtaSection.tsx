@@ -44,7 +44,7 @@ export default function CarpetAdditionalCtaSection() {
                   <div className={localStyles.laptopBezel}>
                     <div className={localStyles.laptopCam} aria-hidden />
                     <div className={localStyles.laptopScreen}>
-                      <span className={localStyles.screenBadge}>
+                      <span className={localStyles.screenBadge} role="img" aria-label="Carpet cleaning services icon">
                         <PiRugDuotone aria-hidden />
                         Carpet services
                       </span>
@@ -55,9 +55,8 @@ export default function CarpetAdditionalCtaSection() {
                       <img
                         className={local.screenImg}
                         src="/images/carpet/deep-carpet-cleaning.webp"
-                        alt=""
+                        alt="Deep carpet cleaning service for heavily soiled London carpets"
                         loading="lazy"
-                        aria-hidden
                       />
 
                       <ul className={localStyles.screenList}>

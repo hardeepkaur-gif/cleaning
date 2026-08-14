@@ -69,16 +69,16 @@ export default function CarpetCtaSection() {
                 <div className={styles.phoneNotch} aria-hidden />
                 <div className={styles.phoneScreen}>
                   <div className={styles.screenTop}>
-                    <span className={styles.screenBadge}>
-                      <PiSparkleFill /> Book today
+                    <span className={styles.screenBadge} role="img" aria-label="Book carpet cleaning today icon">
+                      <PiSparkleFill aria-hidden /> Book today
                     </span>
                     <strong>Carpet Cleaning</strong>
                     <span>Steam · Stain removal · Deep clean</span>
                   </div>
 
                   <div className={`${styles.screenHero} ${local.screenHero}`}>
-                    <span className={`${styles.heroIcon} ${local.heroIcon}`} aria-hidden>
-                      <PiRugDuotone />
+                    <span className={`${styles.heroIcon} ${local.heroIcon}`} role="img" aria-label="Carpet cleaning booking icon">
+                      <PiRugDuotone aria-hidden />
                     </span>
                     <div
                       className={`${styles.heroImg} ${local.heroImg}`}
@@ -88,10 +88,10 @@ export default function CarpetCtaSection() {
 
                   <ul className={styles.screenList}>
                     <li>
-                      <PiShieldCheckFill /> DBS-checked team
+                      <PiShieldCheckFill aria-hidden /> DBS-checked team
                     </li>
                     <li>
-                      <PiCalendarCheckFill /> Appointment confirmed
+                      <PiCalendarCheckFill aria-hidden /> Appointment confirmed
                     </li>
                   </ul>
 

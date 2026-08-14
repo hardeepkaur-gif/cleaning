@@ -20,6 +20,7 @@ export type ServiceData = {
   tabIcon: IconType;
   image: string;
   tabImage: string;
+  tabImageAlt: string;
   heroImage: string;
   tabLines: [string, string];
 };
@@ -53,6 +54,8 @@ export const servicesList: ServiceData[] = [
     tabIcon: PiHouseLineDuotone,
     image: `${imgBase}/services-2-1.webp`,
     tabImage: `${tabImgBase}/services-three-tab-img-1.webp`,
+    tabImageAlt:
+      "Domestic cleaner providing regular home cleaning services in a London property",
     heroImage: "/images/domestic/domestic-cleaning-hero.webp",
     tabLines: ["Domestic", "Cleaning"],
   },
@@ -66,6 +69,8 @@ export const servicesList: ServiceData[] = [
     tabIcon: PiRugDuotone,
     image: `${imgBase}/services-2-2.webp`,
     tabImage: `${tabImgBase}/services-three-tab-img-2.webp`,
+    tabImageAlt:
+      "Professional carpet cleaning treating stains in a high traffic London living room",
     heroImage: "/images/carpet/carpet-cleaning-hero.webp",
     tabLines: ["Carpet", "Cleaning"],
   },
@@ -79,6 +84,8 @@ export const servicesList: ServiceData[] = [
     tabIcon: PiKeyDuotone,
     image: `${imgBase}/services-2-3.webp`,
     tabImage: `${tabImgBase}/services-three-tab-img-3.webp`,
+    tabImageAlt:
+      "End of tenancy cleaning team deep cleaning a rental property in London",
     heroImage: "/images/hero/clean360/slide1.webp",
     tabLines: ["End of Tenancy", "Cleaning"],
   },
@@ -92,6 +99,8 @@ export const servicesList: ServiceData[] = [
     tabIcon: PiCloudRainDuotone,
     image: `${imgBase}/services-2-4.webp`,
     tabImage: `${tabImgBase}/services-three-tab-img-4.webp`,
+    tabImageAlt:
+      "Gutter cleaner clearing blocked roof gutters on a London residential property",
     heroImage: "/images/gutter/gutter-cleaning-hero.webp",
     tabLines: ["Gutter", "Cleaning"],
   },

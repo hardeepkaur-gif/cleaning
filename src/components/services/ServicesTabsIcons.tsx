@@ -41,10 +41,10 @@ function ServiceTabButton({
       onClick={onSelect}
     >
       <span className={styles.tabBtnInner}>
-        <span className={styles.tabIconWrap} aria-hidden>
-          <Icon className={styles.tabIconMain} />
-          <span className={styles.tabIconStar}>
-            <FaStar />
+        <span className={styles.tabIconWrap} role="img" aria-label={`${service.label} cleaning service icon`}>
+          <Icon className={styles.tabIconMain} aria-hidden />
+          <span className={styles.tabIconStar} aria-hidden>
+            <FaStar aria-hidden />
           </span>
         </span>
         <span className={styles.tabHeading}>{service.title}</span>
@@ -79,8 +79,8 @@ function ServicePanelContent({
             <img
               className={styles.shape2}
               src={`${shapeBase}/services-three-shape-2.webp`}
-              alt=""
-              aria-hidden
+              alt="Decorative accent graphic for London cleaning services tab panel"
+              loading="lazy"
             />
           </div>
           <p className={styles.tabText}>{service.text}</p>
@@ -92,8 +92,8 @@ function ServicePanelContent({
             <img
               className={styles.shape1}
               src={`${shapeBase}/services-three-shape-1.webp`}
-              alt=""
-              aria-hidden
+              alt="Decorative graphic accent for cleaning services section panel"
+              loading="lazy"
             />
           </div>
         </div>
@@ -102,7 +102,7 @@ function ServicePanelContent({
         <span className={styles.imageBadge}>
           {String(index + 1).padStart(2, "0")}
         </span>
-        <img src={service.tabImage} alt={service.title} />
+        <img src={service.tabImage} alt={service.tabImageAlt} loading="lazy" />
       </div>
     </div>
   );

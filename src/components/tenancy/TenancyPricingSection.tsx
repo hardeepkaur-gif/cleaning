@@ -39,8 +39,8 @@ export default function TenancyPricingSection() {
 
         <div className={styles.tableCard}>
           <div className={styles.tableHead}>
-            <span className={styles.tableHeadIcon} aria-hidden>
-              <PiCurrencyGbpDuotone />
+            <span className={styles.tableHeadIcon} role="img" aria-label="Fixed pricing guide icon">
+              <PiCurrencyGbpDuotone aria-hidden />
             </span>
             <div>
               <h3 className={styles.tableHeadTitle}>Fixed price guide</h3>
@@ -55,8 +55,8 @@ export default function TenancyPricingSection() {
               <thead>
                 <tr>
                   <th scope="col">
-                    <span className={styles.thIcon} aria-hidden>
-                      <PiHouseLineDuotone />
+                    <span className={styles.thIcon} role="img" aria-label="Property type icon">
+                      <PiHouseLineDuotone aria-hidden />
                     </span>
                     Property Type
                   </th>

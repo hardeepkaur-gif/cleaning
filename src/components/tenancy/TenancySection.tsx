@@ -14,7 +14,8 @@ export default function TenancySection() {
             <div className={styles.imgWrap}>
               <img
                 src="/images/tenancy/end-of-tenancy-deposit-concerns.webp"
-                alt="End of tenancy cleaning in progress"
+                alt="End of tenancy cleaning preparing a London rental property for handover"
+                loading="lazy"
               />
             </div>
           </div>

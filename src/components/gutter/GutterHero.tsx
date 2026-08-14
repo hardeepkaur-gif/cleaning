@@ -13,7 +13,11 @@ export default function GutterHero() {
       aria-labelledby="gutter-hero-title"
     >
       <div className={styles.item}>
-        <div className={styles.bg} aria-hidden>
+        <div
+          className={styles.bg}
+          role="img"
+          aria-label="Professional gutter cleaning for homes and businesses in London"
+        >
           <div
             className={`${styles.bgInner} ${local.bgInner}`}
             style={{ backgroundImage: `url('${heroImage}')` }}

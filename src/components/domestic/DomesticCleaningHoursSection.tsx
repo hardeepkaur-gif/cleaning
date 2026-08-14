@@ -25,8 +25,8 @@ export default function DomesticCleaningHoursSection() {
 
         <div className={styles.tableCard}>
           <div className={styles.tableHead}>
-            <span className={styles.tableHeadIcon} aria-hidden>
-              <PiClockDuotone />
+            <span className={styles.tableHeadIcon} role="img" aria-label="Domestic cleaning time guide icon">
+              <PiClockDuotone aria-hidden />
             </span>
             <div>
               <h3 className={styles.tableHeadTitle}>Cleaning time guide</h3>

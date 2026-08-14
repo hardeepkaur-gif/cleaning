@@ -50,7 +50,7 @@ export default function GutterFaqSection() {
                   >
                     <div className={styles.answerInner}>
                       <div className={styles.answerImg}>
-                        <img src={faq.img} alt="" loading="lazy" aria-hidden />
+                        <img src={faq.img} alt={faq.alt} loading="lazy" />
                       </div>
                       <p>{faq.a}</p>
                     </div>
@@ -85,7 +85,7 @@ export default function GutterFaqSection() {
                   >
                     <div className={styles.answerInner}>
                       <div className={styles.answerImg}>
-                        <img src={faq.img} alt="" loading="lazy" aria-hidden />
+                        <img src={faq.img} alt={faq.alt} loading="lazy" />
                       </div>
                       <p>{faq.a}</p>
                     </div>

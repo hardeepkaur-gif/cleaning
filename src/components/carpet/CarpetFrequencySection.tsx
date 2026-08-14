@@ -1,5 +1,6 @@
 import { PiCalendarCheckDuotone } from "react-icons/pi";
 import {
+  carpetFrequencyIconAlt,
   carpetFrequencyIntro,
   carpetFrequencyRows,
   carpetFrequencyTagline,
@@ -37,8 +38,8 @@ export default function CarpetFrequencySection() {
                 style={{ animationDelay: `${index * 70}ms` }}
               >
                 <div className={styles.cardTop}>
-                  <span className={styles.iconWrap} aria-hidden>
-                    <Icon />
+                  <span className={styles.iconWrap} role="img" aria-label={row.iconAlt}>
+                    <Icon aria-hidden />
                   </span>
                   <span className={styles.index} aria-hidden>
                     {String(index + 1).padStart(2, "0")}
@@ -48,7 +49,9 @@ export default function CarpetFrequencySection() {
                 <h3 className={styles.cardTitle}>{row.propertyType}</h3>
 
                 <div className={styles.frequency}>
-                  <PiCalendarCheckDuotone aria-hidden />
+                  <span role="img" aria-label={carpetFrequencyIconAlt}>
+                    <PiCalendarCheckDuotone aria-hidden />
+                  </span>
                   <span>{row.frequency}</span>
                 </div>
               </article>

@@ -70,26 +70,26 @@ export default function DomesticCtaSection() {
                 <div className={styles.phoneNotch} aria-hidden />
                 <div className={styles.phoneScreen}>
                   <div className={styles.screenTop}>
-                    <span className={styles.screenBadge}>
-                      <PiSparkleFill /> Book today
+                    <span className={styles.screenBadge} role="img" aria-label="Book domestic cleaning today icon">
+                      <PiSparkleFill aria-hidden /> Book today
                     </span>
                     <strong>Domestic Cleaning</strong>
                     <span>Weekly · Fortnightly · One-off</span>
                   </div>
 
                   <div className={styles.screenHero}>
-                    <span className={styles.heroIcon} aria-hidden>
-                      <PiHouseLineFill />
+                    <span className={styles.heroIcon} role="img" aria-label="Domestic cleaning booking icon">
+                      <PiHouseLineFill aria-hidden />
                     </span>
                     <div className={styles.heroImg} aria-hidden />
                   </div>
 
                   <ul className={styles.screenList}>
                     <li>
-                      <PiShieldCheckFill /> DBS-checked team
+                      <PiShieldCheckFill aria-hidden /> DBS-checked team
                     </li>
                     <li>
-                      <PiCalendarCheckFill /> Schedule confirmed
+                      <PiCalendarCheckFill aria-hidden /> Schedule confirmed
                     </li>
                   </ul>
 

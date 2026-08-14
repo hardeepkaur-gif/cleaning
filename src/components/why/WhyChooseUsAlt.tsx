@@ -30,8 +30,8 @@ export default function WhyChooseUsAlt() {
                 <span className={styles.cardNum} aria-hidden>
                   {String(index + 1).padStart(2, "0")}
                 </span>
-                <span className={styles.cardIcon} aria-hidden>
-                  <Icon />
+                <span className={styles.cardIcon} role="img" aria-label={item.iconAlt}>
+                  <Icon aria-hidden />
                 </span>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
@@ -51,8 +51,8 @@ export default function WhyChooseUsAlt() {
                 const Icon = item.icon;
                 return (
                   <li key={item.text}>
-                    <span className={styles.solutionIcon} aria-hidden>
-                      <Icon />
+                    <span className={styles.solutionIcon} role="img" aria-label={item.iconAlt}>
+                      <Icon aria-hidden />
                     </span>
                     <span>{item.text}</span>
                   </li>

@@ -15,7 +15,9 @@ export type TenancyChecklistTab = {
   shortLabel: string;
   label: string;
   icon: IconType;
+  iconAlt: string;
   image: string;
+  imageAlt: string;
   items: string[];
 };
 
@@ -34,7 +36,9 @@ export const tenancyChecklistTabs: TenancyChecklistTab[] = [
     shortLabel: "Kitchen",
     label: "Kitchen",
     icon: PiCookingPotDuotone,
+    iconAlt: "Kitchen end of tenancy cleaning checklist icon",
     image: "/images/tenancy/kitchen-checklist.webp",
+    imageAlt: "Kitchen deep cleaning checklist for end of tenancy handover in London",
     items: [
       "Clean and degrease kitchen worktops",
       "Wipe and sanitise cupboard doors",
@@ -58,7 +62,9 @@ export const tenancyChecklistTabs: TenancyChecklistTab[] = [
     shortLabel: "Bathroom",
     label: "Bathroom",
     icon: PiBathtubDuotone,
+    iconAlt: "Bathroom end of tenancy cleaning checklist icon",
     image: "/images/tenancy/bathroom-checklist.webp",
+    imageAlt: "Bathroom and toilet cleaning checklist for tenancy handover in London",
     items: [
       "Clean and disinfect toilets",
       "Clean baths and shower trays",
@@ -80,7 +86,9 @@ export const tenancyChecklistTabs: TenancyChecklistTab[] = [
     shortLabel: "Bedroom",
     label: "Bedroom",
     icon: PiBedDuotone,
+    iconAlt: "Bedroom end of tenancy cleaning checklist icon",
     image: "/images/tenancy/bedroom-checklist.webp",
+    imageAlt: "Bedroom cleaning checklist for end of tenancy inspection in London",
     items: [
       "Dust accessible surfaces",
       "Wipe wardrobes and storage units",
@@ -100,7 +108,9 @@ export const tenancyChecklistTabs: TenancyChecklistTab[] = [
     shortLabel: "Living Room",
     label: "Living Room",
     icon: PiCouchDuotone,
+    iconAlt: "Living room end of tenancy cleaning checklist icon",
     image: "/images/tenancy/living-room-checklist.webp",
+    imageAlt: "Living room cleaning checklist for end of tenancy handover in London",
     items: [
       "Dust furniture and accessible surfaces",
       "Clean tables, shelving and storage units",
@@ -120,7 +130,9 @@ export const tenancyChecklistTabs: TenancyChecklistTab[] = [
     shortLabel: "Hallway",
     label: "Hallway",
     icon: PiDoorDuotone,
+    iconAlt: "Hallway end of tenancy cleaning checklist icon",
     image: "/images/tenancy/hallway-checklist.webp",
+    imageAlt: "Hallway and entrance cleaning checklist for tenancy handover in London",
     items: [
       "Clean entrance doors and frames",
       "Wipe skirting boards",

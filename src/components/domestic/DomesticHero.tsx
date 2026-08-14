@@ -13,7 +13,11 @@ export default function DomesticHero() {
       aria-labelledby="domestic-hero-title"
     >
       <div className={styles.item}>
-        <div className={styles.bg} aria-hidden>
+        <div
+          className={styles.bg}
+          role="img"
+          aria-label="Domestic cleaning services for homes and flats across London"
+        >
           <div
             className={`${styles.bgInner} ${local.bgInner}`}
             style={{ backgroundImage: `url('${heroImage}')` }}

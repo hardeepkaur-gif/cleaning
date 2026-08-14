@@ -12,8 +12,8 @@ export default function GutterTrustStrip() {
         <ul className={styles.grid}>
           {gutterTrustItems.map(({ icon: Icon, label }) => (
             <li key={label} className={styles.card}>
-              <span className={styles.iconWrap} aria-hidden>
-                <Icon />
+              <span className={styles.iconWrap} role="img" aria-label={label}>
+                <Icon aria-hidden />
               </span>
               <div className={styles.content}>
                 <span className={styles.label}>{label}</span>

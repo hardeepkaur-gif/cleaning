@@ -12,6 +12,7 @@ export type DomesticPricingRow = {
   factor: string;
   approach: string;
   icon: IconType;
+  iconAlt: string;
 };
 
 export const domesticPricingTitle =
@@ -32,27 +33,32 @@ export const domesticPricingRows: DomesticPricingRow[] = [
     factor: "Property size",
     approach: "Fixed quotation based on your home's size.",
     icon: PiHouseLineDuotone,
+    iconAlt: "Property size affects domestic cleaning price icon",
   },
   {
     factor: "Cleaning frequency",
     approach: "Better value for regular weekly or fortnightly visits.",
     icon: PiCalendarCheckDuotone,
+    iconAlt: "Regular cleaning frequency pricing icon",
   },
   {
     factor: "Property condition",
     approach: "Time is adjusted to match the cleaning required.",
     icon: PiSparkleDuotone,
+    iconAlt: "Property condition affects cleaning time icon",
   },
   {
     factor: "Additional household tasks",
     approach: "Optional extras can be included in your quotation.",
     icon: PiClipboardTextDuotone,
+    iconAlt: "Additional household tasks pricing icon",
   },
   {
     factor: "Hidden charges",
     approach:
       "None. Your price is agreed upon before the booking is confirmed.",
     icon: PiShieldCheckDuotone,
+    iconAlt: "No hidden domestic cleaning charges icon",
   },
 ];
 
@@ -62,4 +68,7 @@ export const domesticPricingFooterText =
 export const domesticPricingHeaderIcons = {
   factor: PiCurrencyGbpDuotone,
   approach: PiShieldCheckDuotone,
+  factorAlt: "Domestic cleaning price factors icon",
+  approachAlt: "Our domestic cleaning pricing approach icon",
+  rateAlt: "Typical domestic cleaning hourly rate icon",
 };

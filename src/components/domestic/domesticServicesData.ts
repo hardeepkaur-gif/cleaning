@@ -5,6 +5,7 @@ export type DomesticServiceItem = {
   title: string;
   text: string;
   icon: IconType;
+  iconAlt: string;
 };
 
 export const domesticServicesTagline = "Domestic Cleaning Options";
@@ -25,15 +26,18 @@ export const domesticServicesItems: DomesticServiceItem[] = [
     title: "Weekly Domestic Cleaning",
     text: "Ideal for families, pet owners, busy homes, and anyone who wants their house to always be clean. By cleaning the home every week, one can prevent the buildup of dust and dirt and keep it fresh and comfortable.",
     icon: FaCalendarAlt,
+    iconAlt: "Weekly domestic cleaning service icon",
   },
   {
     title: "Fortnightly Domestic Cleaning",
     text: "It is best for houses that are kept in good order, but would like to have their residence cleaned professionally on a regular basis. Once-a-week visits allow for more time to attend to other tasks and keep things clean.",
     icon: FaCalendarCheck,
+    iconAlt: "Fortnightly domestic cleaning service icon",
   },
   {
     title: "One-Off Domestic Cleaning",
     text: "Looking for some space convenience before guests arrive, after a hectic period, or just to freshen up your home? Our one-off domestic cleaning service is a commitment-free, thorough clean.",
     icon: FaBroom,
+    iconAlt: "One off domestic cleaning service icon",
   },
 ];

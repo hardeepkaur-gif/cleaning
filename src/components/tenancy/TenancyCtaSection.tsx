@@ -44,7 +44,7 @@ export default function TenancyCtaSection() {
                   <div className={localStyles.laptopBezel}>
                     <div className={localStyles.laptopCam} aria-hidden />
                     <div className={localStyles.laptopScreen}>
-                      <span className={localStyles.screenBadge}>
+                      <span className={localStyles.screenBadge} role="img" aria-label="Optional add on cleaning services icon">
                         <PiSparkleDuotone aria-hidden />
                         Add-on services
                       </span>
@@ -54,11 +54,15 @@ export default function TenancyCtaSection() {
 
                       <ul className={localStyles.screenList}>
                         <li>
-                          <FaPhoneAlt aria-hidden />
+                          <span role="img" aria-label="Phone contact icon">
+                            <FaPhoneAlt aria-hidden />
+                          </span>
                           Call us to discuss add-ons
                         </li>
                         <li>
-                          <FaEnvelope aria-hidden />
+                          <span role="img" aria-label="Email contact icon">
+                            <FaEnvelope aria-hidden />
+                          </span>
                           Email your property details
                         </li>
                       </ul>

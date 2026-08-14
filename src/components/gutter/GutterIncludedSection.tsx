@@ -24,7 +24,9 @@ export default function GutterIncludedSection() {
       <div className={styles.container}>
         <header className={styles.header}>
           <span className={styles.tagline}>
-            <PiCloudRainDuotone aria-hidden />
+            <span role="img" aria-label="Complete gutter care icon">
+              <PiCloudRainDuotone aria-hidden />
+            </span>
             Complete Gutter Care
           </span>
           <h2 className={styles.title} id="gutter-included-title">

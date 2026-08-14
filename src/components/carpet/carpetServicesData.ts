@@ -14,7 +14,9 @@ export type CarpetServiceTab = {
   shortLabel: string;
   bestFor: string;
   icon: IconType;
+  iconAlt: string;
   image: string;
+  imageAlt: string;
   description: string;
 };
 
@@ -32,7 +34,9 @@ export const carpetServiceTabs: CarpetServiceTab[] = [
     shortLabel: "Deep Clean",
     bestFor: "Dirty, dull or heavily used carpets",
     icon: PiSparkleDuotone,
+    iconAlt: "Deep carpet cleaning service icon",
     image: "/images/carpet/deep-carpet-cleaning.webp",
+    imageAlt: "Deep carpet cleaning for heavily used carpets in London homes",
     description:
       "For deep carpet cleaning we focus on the dirt, dust and debris that have been trapped deep within the carpet fibres that can't be removed by regular vacuuming. It is particularly useful for high-traffic carpets that have become dull, discoloured, or visibly worn from everyday use.",
   },
@@ -42,7 +46,9 @@ export const carpetServiceTabs: CarpetServiceTab[] = [
     shortLabel: "Steam Clean",
     bestFor: "Hygiene, allergens and embedded dirt",
     icon: PiDropDuotone,
+    iconAlt: "Steam carpet cleaning service icon",
     image: "/images/carpet/steam-carpet-cleaning.webp",
+    imageAlt: "Steam carpet cleaning for allergens and embedded dirt in London",
     description:
       "When using steam carpet cleaning, the hot water is used to extract dirt, allergens and bacteria from a carpet's fibers. This is an effective way to enhance cleanliness and to revitalize the look of carpets in residences and businesses alike.",
   },
@@ -52,7 +58,9 @@ export const carpetServiceTabs: CarpetServiceTab[] = [
     shortLabel: "Stain Removal",
     bestFor: "Wine, coffee, mud, food and pet stains",
     icon: PiWarningCircleDuotone,
+    iconAlt: "Carpet stain removal service icon",
     image: "/images/carpet/carpet-stain-removal.webp",
+    imageAlt: "Professional carpet stain removal for wine coffee and pet stains",
     description:
       "We remove all common stains on carpet such as food, drinks, mud and pet accidents. Each stain is treated on a case-by-case basis which enables us to choose the best methods for treating the carpet material and type of stain.",
   },
@@ -62,7 +70,9 @@ export const carpetServiceTabs: CarpetServiceTab[] = [
     shortLabel: "Tenancy Clean",
     bestFor: "Tenants and landlords",
     icon: PiKeyDuotone,
+    iconAlt: "End of tenancy carpet cleaning service icon",
     image: "/images/carpet/end-of-tenancy-carpet-cleaning.webp",
+    imageAlt: "End of tenancy carpet cleaning for London rental properties",
     description:
       "At the end of the tenancy we offer a carpet cleaning service for tenants, landlords and letting agents to get the property ready for inspection and new tenants. Built up dirt, stains and odours are eliminated when you do a deep clean, meaning your carpet is now cleaner and more presentable.",
   },
@@ -72,7 +82,9 @@ export const carpetServiceTabs: CarpetServiceTab[] = [
     shortLabel: "Office Clean",
     bestFor: "Workplaces and commercial spaces",
     icon: PiBriefcaseDuotone,
+    iconAlt: "Office carpet cleaning service icon",
     image: "/images/carpet/office-carpet-cleaning.webp",
+    imageAlt: "Office carpet cleaning for London workplaces and commercial spaces",
     description:
       "We clean office carpets professionally at workplaces, retail units and other commercial establishments. This frees up time for appointments, and deep cleaning makes working environments look and feel good while keeping them clean.",
   },
@@ -82,7 +94,9 @@ export const carpetServiceTabs: CarpetServiceTab[] = [
     shortLabel: "Upholstery",
     bestFor: "Sofas, rugs and carpets together",
     icon: PiCouchDuotone,
+    iconAlt: "Carpet and upholstery cleaning service icon",
     image: "/images/carpet/carpet-and-upholstery-cleaning.webp",
+    imageAlt: "Combined carpet and upholstery cleaning in London homes",
     description:
       "If you would like to have your entire home cleaned, we can attend the same day to clean the carpet and any other upholstered furniture such as sofas, armchairs, rugs, etc. Multiple packages can also minimize the disruption by having everything done at once within a single trip.",
   },

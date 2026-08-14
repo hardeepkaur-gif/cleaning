@@ -65,7 +65,7 @@ export default function TenancyAreasSection() {
                       title={pin.name}
                       aria-label={pin.name}
                     >
-                      <span className={styles.pinIcon}>
+                      <span className={styles.pinIcon} role="img" aria-label={`${pin.name} end of tenancy cleaning area pin icon`}>
                         <FaMapMarkerAlt aria-hidden />
                       </span>
                     </div>

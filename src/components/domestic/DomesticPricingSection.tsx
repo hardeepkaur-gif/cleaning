@@ -35,8 +35,8 @@ export default function DomesticPricingSection() {
         </header>
 
         <div className={styles.rateCard}>
-          <span className={styles.rateIcon} aria-hidden>
-            <PiCurrencyGbpDuotone />
+          <span className={styles.rateIcon} role="img" aria-label={domesticPricingHeaderIcons.rateAlt}>
+            <PiCurrencyGbpDuotone aria-hidden />
           </span>
           <div>
             <p className={styles.rateLabel}>Typical hourly rate</p>
@@ -50,16 +50,16 @@ export default function DomesticPricingSection() {
               <tr>
                 <th scope="col">
                   <span className={styles.thInner}>
-                    <span className={styles.thIcon} aria-hidden>
-                      <FactorHeaderIcon />
+                    <span className={styles.thIcon} role="img" aria-label={domesticPricingHeaderIcons.factorAlt}>
+                      <FactorHeaderIcon aria-hidden />
                     </span>
                     {domesticPricingHeaders.factor}
                   </span>
                 </th>
                 <th scope="col">
                   <span className={styles.thInner}>
-                    <span className={`${styles.thIcon} ${styles.thIconAlt}`} aria-hidden>
-                      <ApproachHeaderIcon />
+                    <span className={`${styles.thIcon} ${styles.thIconAlt}`} role="img" aria-label={domesticPricingHeaderIcons.approachAlt}>
+                      <ApproachHeaderIcon aria-hidden />
                     </span>
                     {domesticPricingHeaders.approach}
                   </span>
@@ -73,8 +73,8 @@ export default function DomesticPricingSection() {
                   <tr key={row.factor}>
                     <td data-label={domesticPricingHeaders.factor}>
                       <div className={styles.cell}>
-                        <span className={styles.factorIcon} aria-hidden>
-                          <Icon />
+                        <span className={styles.factorIcon} role="img" aria-label={row.iconAlt}>
+                          <Icon aria-hidden />
                         </span>
                         <span className={styles.cellTitle}>{row.factor}</span>
                       </div>

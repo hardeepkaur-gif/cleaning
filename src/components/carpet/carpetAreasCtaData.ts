@@ -8,3 +8,6 @@ export const carpetAreasCtaButtonLabel = "Call Our Team";
 export const carpetAreasCtaScreenTitle = "Speak to our carpet cleaning team";
 
 export const carpetAreasCtaScreenImage = "/images/carpet/steam-carpet-cleaning.webp";
+
+export const carpetAreasCtaScreenImageAlt =
+  "Steam carpet cleaning service across London homes and offices";

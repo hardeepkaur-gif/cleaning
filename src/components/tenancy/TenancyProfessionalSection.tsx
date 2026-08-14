@@ -16,7 +16,7 @@ export default function TenancyProfessionalSection() {
               <div className={styles.imageOne}>
                 <img
                   src="/images/tenancy/end-of-tenancy-deposit-concerns.webp"
-                  alt="End of tenancy cleaning in London"
+                  alt="Professional end of tenancy cleaning team preparing a London rental property"
                   loading="lazy"
                 />
               </div>
@@ -24,7 +24,7 @@ export default function TenancyProfessionalSection() {
               <div className={styles.imageTwo}>
                 <img
                   src={`${imgBase}/about-three-img-2.webp`}
-                  alt="Professional cleaner preparing for property handover"
+                  alt="Professional cleaner preparing a rental property for tenancy handover"
                   loading="lazy"
                 />
               </div>

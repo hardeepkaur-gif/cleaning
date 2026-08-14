@@ -31,7 +31,7 @@ export default function GutterWhyChooseSection() {
                   <div className={styles.imgWrap}>
                     <img
                       src={item.image}
-                      alt={item.title}
+                      alt={item.imageAlt}
                       loading="lazy"
                     />
                   </div>
@@ -42,11 +42,11 @@ export default function GutterWhyChooseSection() {
                   </h3>
                   <p className={styles.cardText}>{item.text}</p>
                   <div className={styles.iconWrap}>
-                    <span className={styles.iconMain} aria-hidden>
-                      <Icon />
+                    <span className={styles.iconMain} role="img" aria-label={item.iconAlt}>
+                      <Icon aria-hidden />
                     </span>
-                    <span className={styles.iconStar} aria-hidden>
-                      <FaStar />
+                    <span className={styles.iconStar} role="img" aria-label="Trusted gutter cleaning service icon">
+                      <FaStar aria-hidden />
                     </span>
                   </div>
                 </div>

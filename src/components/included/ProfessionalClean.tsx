@@ -28,8 +28,8 @@ export default function ProfessionalClean() {
             <ul className={styles.points}>
               {includedPoints.map((item) => (
                 <li key={item}>
-                  <span className={styles.pointIcon} aria-hidden>
-                    <FaCheck />
+                  <span className={styles.pointIcon} role="img" aria-label="Included professional clean task icon">
+                    <FaCheck aria-hidden />
                   </span>
                   <h3>{item}</h3>
                 </li>
@@ -42,38 +42,39 @@ export default function ProfessionalClean() {
           <div className={styles.right}>
             <div className={styles.visualStage}>
               <div className={styles.rightShape} aria-hidden>
-                <img src={includedImages.rightShape} alt="" />
+                <img src={includedImages.rightShape} alt={includedImages.rightShapeAlt} loading="lazy" />
               </div>
 
               <div className={styles.imgBox}>
                 <div className={styles.mainImg}>
                   <img
                     src={includedImages.main}
-                    alt="Professional cleaner providing house cleaning in London"
+                    alt={includedImages.mainAlt}
+                    loading="lazy"
                   />
                 </div>
                 <div className={styles.imgShape1} aria-hidden>
-                  <img src={includedImages.shape1} alt="" />
+                  <img src={includedImages.shape1} alt={includedImages.shape1Alt} loading="lazy" />
                 </div>
                 <div className={styles.imgShape2} aria-hidden>
-                  <img src={includedImages.shape2} alt="" />
+                  <img src={includedImages.shape2} alt={includedImages.shape2Alt} loading="lazy" />
                 </div>
                 <div className={styles.imgShape3} aria-hidden>
-                  <img src={includedImages.shape3} alt="" />
+                  <img src={includedImages.shape3} alt={includedImages.shape3Alt} loading="lazy" />
                 </div>
                 <div className={styles.imgShape4} aria-hidden>
-                  <img src={includedImages.shape4} alt="" />
+                  <img src={includedImages.shape4} alt={includedImages.shape4Alt} loading="lazy" />
                 </div>
               </div>
 
               <div className={styles.img2}>
-                <img src={includedImages.img2} alt="" aria-hidden />
+                <img src={includedImages.img2} alt={includedImages.img2Alt} loading="lazy" />
               </div>
               <div className={styles.img3}>
-                <img src={includedImages.img3} alt="" aria-hidden />
+                <img src={includedImages.img3} alt={includedImages.img3Alt} loading="lazy" />
               </div>
               <div className={styles.img4}>
-                <img src={includedImages.img4} alt="" aria-hidden />
+                <img src={includedImages.img4} alt={includedImages.img4Alt} loading="lazy" />
               </div>
             </div>
           </div>

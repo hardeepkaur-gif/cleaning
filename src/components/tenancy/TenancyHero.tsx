@@ -8,7 +8,11 @@ export default function TenancyHero() {
   return (
     <section className={styles.hero} id="end-of-tenancy-cleaning" aria-labelledby="tenancy-hero-title">
       <div className={styles.item}>
-        <div className={styles.bg} aria-hidden>
+        <div
+          className={styles.bg}
+          role="img"
+          aria-label="Professional end of tenancy cleaning service for London tenants and landlords"
+        >
           <div
             className={styles.bgInner}
             style={{ backgroundImage: `url('${imgBase}/slide1.webp')` }}

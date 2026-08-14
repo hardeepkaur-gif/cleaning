@@ -40,8 +40,7 @@ export default function TenancyIncludedSection() {
       <img
         className={styles.shape}
         src={`${faqImgBase}/faq-shape-1-1.webp`}
-        alt=""
-        aria-hidden
+        alt="Decorative accent graphic for end of tenancy cleaning section"
         loading="lazy"
       />
 
@@ -71,9 +70,9 @@ export default function TenancyIncludedSection() {
                     onClick={() => setOpenIndex(isOpen ? null : index)}
                     aria-expanded={isOpen}
                   >
-                    <span className={styles.iconBox} aria-hidden>
-                      <span className={styles.iconCircle}>
-                        <FaCheck />
+                    <span className={styles.iconBox} role="img" aria-label={`${item.title} included icon`}>
+                      <span className={styles.iconCircle} aria-hidden>
+                        <FaCheck aria-hidden />
                       </span>
                     </span>
                     <h3 className={styles.itemTitle}>{item.title}</h3>

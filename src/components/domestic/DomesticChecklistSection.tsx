@@ -164,10 +164,8 @@ export default function DomesticChecklistSection() {
 
                 >
 
-                  <span className={styles.railIcon} aria-hidden>
-
-                    <Icon />
-
+                  <span className={styles.railIcon} role="img" aria-label={tab.iconAlt}>
+                    <Icon aria-hidden />
                   </span>
 
                   <span className={styles.railCopy}>
@@ -216,18 +214,17 @@ export default function DomesticChecklistSection() {
 
               <div className={styles.media}>
 
-                <img src={active.image} alt="" loading="lazy" aria-hidden />
+                <img src={active.image} alt={active.imageAlt} loading="lazy" />
 
                 <div className={styles.mediaGlow} aria-hidden />
 
                 <div className={styles.content}>
 
                   <div className={styles.mediaBadge}>
-
-                    <ActiveIcon aria-hidden />
-
+                    <span role="img" aria-label={active.iconAlt}>
+                      <ActiveIcon aria-hidden />
+                    </span>
                     <strong>{active.shortLabel}</strong>
-
                   </div>
 
                 </div>
@@ -239,11 +236,10 @@ export default function DomesticChecklistSection() {
               <div className={styles.contentMobile}>
 
                 <div className={styles.mediaBadge}>
-
-                  <ActiveIcon aria-hidden />
-
+                  <span role="img" aria-label={active.iconAlt}>
+                    <ActiveIcon aria-hidden />
+                  </span>
                   <strong>{active.shortLabel}</strong>
-
                 </div>
 
               </div>

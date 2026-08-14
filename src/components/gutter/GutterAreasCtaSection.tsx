@@ -47,7 +47,7 @@ export default function GutterAreasCtaSection() {
                   <div className={localStyles.laptopBezel}>
                     <div className={localStyles.laptopCam} aria-hidden />
                     <div className={localStyles.laptopScreen}>
-                      <span className={localStyles.screenBadge}>
+                      <span className={localStyles.screenBadge} role="img" aria-label="Gutter cleaning coverage area icon">
                         <PiMapPinAreaDuotone aria-hidden />
                         Check coverage
                       </span>
@@ -58,9 +58,8 @@ export default function GutterAreasCtaSection() {
                       <img
                         className={local.screenImg}
                         src="/images/gutter/gutter-included-3.webp"
-                        alt=""
+                        alt="Gutter cleaning service coverage across London areas"
                         loading="lazy"
-                        aria-hidden
                       />
 
                       <ul className={localStyles.screenList}>

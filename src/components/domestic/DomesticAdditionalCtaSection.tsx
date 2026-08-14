@@ -46,7 +46,7 @@ export default function DomesticAdditionalCtaSection() {
                   <div className={localStyles.laptopBezel}>
                     <div className={localStyles.laptopCam} aria-hidden />
                     <div className={localStyles.laptopScreen}>
-                      <span className={localStyles.screenBadge}>
+                      <span className={localStyles.screenBadge} role="img" aria-label="Extra domestic cleaning tasks icon">
                         <PiSparkleDuotone aria-hidden />
                         Extra tasks
                       </span>

@@ -68,8 +68,8 @@ export default function GutterCtaSection() {
                 <div className={styles.phoneNotch} aria-hidden />
                 <div className={styles.phoneScreen}>
                   <div className={styles.screenTop}>
-                    <span className={styles.screenBadge}>
-                      <PiSparkleFill /> Book today
+                    <span className={styles.screenBadge} role="img" aria-label="Book gutter cleaning today icon">
+                      <PiSparkleFill aria-hidden /> Book today
                     </span>
                     <strong>Gutter Cleaning</strong>
                     <span>Clear · Protect · Prevent damage</span>
@@ -78,9 +78,10 @@ export default function GutterCtaSection() {
                   <div className={`${styles.screenHero} ${local.screenHero}`}>
                     <span
                       className={`${styles.heroIcon} ${local.heroIcon}`}
-                      aria-hidden
+                      role="img"
+                      aria-label="Gutter cleaning booking icon"
                     >
-                      <PiCloudRainDuotone />
+                      <PiCloudRainDuotone aria-hidden />
                     </span>
                     <div
                       className={`${styles.heroImg} ${local.heroImg}`}
@@ -90,10 +91,10 @@ export default function GutterCtaSection() {
 
                   <ul className={styles.screenList}>
                     <li>
-                      <PiShieldCheckFill /> DBS-checked team
+                      <PiShieldCheckFill aria-hidden /> DBS-checked team
                     </li>
                     <li>
-                      <PiCalendarCheckFill /> Flexible appointment
+                      <PiCalendarCheckFill aria-hidden /> Flexible appointment
                     </li>
                   </ul>
 

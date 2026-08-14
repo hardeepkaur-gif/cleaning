@@ -53,26 +53,26 @@ export default function CarpetPricingCtaSection() {
                 <div className={styles.phoneNotch} aria-hidden />
                 <div className={styles.phoneScreen}>
                   <div className={styles.screenTop}>
-                    <span className={styles.screenBadge}>
-                      <PiSparkleFill /> Fixed quote
+                    <span className={styles.screenBadge} role="img" aria-label="Fixed carpet cleaning quote icon">
+                      <PiSparkleFill aria-hidden /> Fixed quote
                     </span>
                     <strong>Carpet Cleaning</strong>
                     <span>London · Room by room pricing</span>
                   </div>
 
                   <div className={`${styles.screenHero} ${local.screenHero}`}>
-                    <span className={`${styles.heroIcon} ${local.heroIcon}`} aria-hidden>
-                      <PiRugDuotone />
+                    <span className={`${styles.heroIcon} ${local.heroIcon}`} role="img" aria-label="Carpet cleaning pricing icon">
+                      <PiRugDuotone aria-hidden />
                     </span>
                     <div className={`${styles.heroImg} ${local.heroImg}`} aria-hidden />
                   </div>
 
                   <ul className={styles.screenList}>
                     <li>
-                      <PiCurrencyGbpDuotone /> Carpet size &amp; rooms
+                      <PiCurrencyGbpDuotone aria-hidden /> Carpet size &amp; rooms
                     </li>
                     <li>
-                      <PiCalendarCheckFill /> Quote confirmed
+                      <PiCalendarCheckFill aria-hidden /> Quote confirmed
                     </li>
                   </ul>
 

@@ -30,3 +30,6 @@ export const gutterSignsMainAlt =
 
 export const gutterSignsSecondaryAlt =
   "Overflowing gutter with moss, plants and blocked drainage";
+
+export const gutterSignsSealIconAlt =
+  "Act early on blocked gutter warning signs icon";

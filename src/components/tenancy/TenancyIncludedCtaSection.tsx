@@ -74,16 +74,16 @@ export default function TenancyIncludedCtaSection() {
                 <div className={styles.phoneNotch} aria-hidden />
                 <div className={styles.phoneScreen}>
                   <div className={styles.screenTop}>
-                    <span className={styles.screenBadge}>
-                      <PiSparkleFill /> Book today
+                    <span className={styles.screenBadge} role="img" aria-label="Book end of tenancy cleaning today icon">
+                      <PiSparkleFill aria-hidden /> Book today
                     </span>
                     <strong>End of Tenancy Clean</strong>
                     <span>East London · Flexible dates</span>
                   </div>
 
                   <div className={styles.screenHero}>
-                    <span className={styles.heroIcon} aria-hidden>
-                      <PiHouseLineFill />
+                    <span className={styles.heroIcon} role="img" aria-label="End of tenancy cleaning booking icon">
+                      <PiHouseLineFill aria-hidden />
                     </span>
                     <div className={styles.heroImg} aria-hidden />
                   </div>

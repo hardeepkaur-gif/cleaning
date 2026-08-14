@@ -10,6 +10,7 @@ import {
 
 export type CarpetProcessStep = {
   icon: IconType;
+  iconAlt: string;
   title: string;
   text: string;
   accent: "primary" | "cta";
@@ -25,36 +26,42 @@ export const carpetProcessHubLabel = "Carpet Cleaning Works";
 export const carpetProcessSteps: CarpetProcessStep[] = [
   {
     icon: PiChatCircleDuotone,
+    iconAlt: "Request a carpet cleaning quote icon",
     title: "Request a Quote",
     text: "Contact our team by phone or through our online enquiry form. Tell us about your property, the number of rooms and the type of carpet cleaning you need.",
     accent: "primary",
   },
   {
     icon: PiMagnifyingGlassDuotone,
+    iconAlt: "Confirm carpet cleaning property details icon",
     title: "Confirm Property Details",
     text: "We confirm the carpet size, carpet condition, property type and any specific concerns such as stains, pet odours or delicate carpet fibres. This helps us recommend the most suitable cleaning method.",
     accent: "cta",
   },
   {
     icon: PiCurrencyGbpDuotone,
+    iconAlt: "Receive fixed carpet cleaning pricing icon",
     title: "Receive Fixed Pricing",
     text: "Once we have your property details, we provide a fixed quotation with no hidden charges. You will know exactly what is included before your appointment is confirmed.",
     accent: "primary",
   },
   {
     icon: PiCalendarCheckDuotone,
+    iconAlt: "Confirm carpet cleaning appointment icon",
     title: "Confirm Your Appointment",
     text: "Choose a suitable date and time for your carpet cleaning. We confirm your booking and provide arrival details so you know exactly when to expect our team.",
     accent: "cta",
   },
   {
     icon: PiRugDuotone,
+    iconAlt: "Professional carpet cleaning visit icon",
     title: "Professional Cleaning Visit",
     text: "Our trained cleaners arrive with professional equipment and all required cleaning products. We carry out the agreed carpet cleaning service, treat stains where possible and clean your carpets using the most appropriate method.",
     accent: "primary",
   },
   {
     icon: PiDropDuotone,
+    iconAlt: "Carpet drying and aftercare guidance icon",
     title: "Drying and Aftercare Guidance",
     text: "After cleaning, we explain the expected drying time and provide simple aftercare advice to help keep your carpets cleaner for longer and achieve the best possible results.",
     accent: "cta",

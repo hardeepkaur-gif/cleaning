@@ -44,8 +44,8 @@ export default function CarpetMethodsSection() {
                 className={`${styles.methodCard} ${styles[`accent${row.accent.charAt(0).toUpperCase()}${row.accent.slice(1)}`]}`}
               >
                 <div className={styles.methodHead}>
-                  <span className={styles.methodIcon} aria-hidden>
-                    <Icon />
+                  <span className={styles.methodIcon} role="img" aria-label={row.iconAlt}>
+                    <Icon aria-hidden />
                   </span>
                   <h3 className={styles.methodTitle}>{row.method}</h3>
                 </div>

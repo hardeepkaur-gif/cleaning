@@ -24,7 +24,7 @@ export default function WhatMakesDifferent() {
           {differentList.map((item) => (
             <article key={item.title} className={styles.card}>
               <div className={styles.imgWrap}>
-                <img src={item.image} alt={item.title} />
+                <img src={item.image} alt={item.imageAlt} loading="lazy" />
               </div>
               <h3 className={styles.cardTitle}>{item.title}</h3>
               <p className={styles.cardText}>{item.text}</p>
