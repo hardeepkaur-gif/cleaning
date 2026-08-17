@@ -53,24 +53,24 @@ export default function ThmButton({
 }: ThmButtonProps) {
   const classes = buttonClassName({ className, hoverVariant, variant });
 
-  if (type === "button" || type === "submit") {
+  if (href) {
     return (
-      <button
-        type={type}
-        className={classes}
-        disabled={disabled}
-        onClick={onClick}
-      >
+      <a href={href} className={classes} target={target} rel={rel}>
         {children}
         <HoverSpans />
-      </button>
+      </a>
     );
   }
 
   return (
-    <a href={href} className={classes} target={target} rel={rel}>
+    <button
+      type={type ?? "button"}
+      className={classes}
+      disabled={disabled}
+      onClick={onClick}
+    >
       {children}
       <HoverSpans />
-    </a>
+    </button>
   );
 }

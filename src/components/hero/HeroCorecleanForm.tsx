@@ -1,8 +1,8 @@
 "use client";
 
-import { type FormEvent, useState } from "react";
-import { FaCheckCircle } from "react-icons/fa";
+import { useState } from "react";
 import ThmButton from "@/components/menu/ThmButton";
+import { THANK_YOU_PATH } from "@/lib/formSubmit";
 import { servicesList } from "@/components/services/servicesData";
 import styles from "./HeroCorecleanForm.module.css";
 
@@ -24,22 +24,9 @@ const initialForm: FormState = {
 
 export default function HeroCorecleanForm() {
   const [form, setForm] = useState<FormState>(initialForm);
-  const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
 
   const updateField = (field: keyof FormState, value: string) => {
     setForm((prev) => ({ ...prev, [field]: value }));
-  };
-
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setLoading(true);
-
-    window.setTimeout(() => {
-      setLoading(false);
-      setSubmitted(true);
-      setForm(initialForm);
-    }, 700);
   };
 
   return (
@@ -136,23 +123,7 @@ export default function HeroCorecleanForm() {
                 <h3>Request a Free Quote</h3>
               </div>
 
-              {submitted ? (
-                <div className={styles.success} role="status">
-                  <FaCheckCircle aria-hidden />
-                  <strong>Thank you!</strong>
-                  <p>
-                    Your request has been received. We&apos;ll contact you soon.
-                  </p>
-                  <ThmButton type="button" onClick={() => setSubmitted(false)}>
-                    Send another request
-                  </ThmButton>
-                </div>
-              ) : (
-                <form
-                  className={styles.form}
-                  onSubmit={handleSubmit}
-                  noValidate
-                >
+              <form className={styles.form} action={THANK_YOU_PATH} method="get">
                   <div className={styles.field}>
                     <label htmlFor="coreclean-lead-name">Full Name</label>
                     <input
@@ -218,11 +189,8 @@ export default function HeroCorecleanForm() {
                     </select>
                   </div>
 
-                  <ThmButton type="submit" disabled={loading}>
-                    {loading ? "Sending..." : "Get My Free Quote"}
-                  </ThmButton>
+                <ThmButton type="submit">Get My Free Quote</ThmButton>
               </form>
-              )}
             </div>
           </div>
         </div>

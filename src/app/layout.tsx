@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/menu/Header";
 import Footer from "@/components/footer/Footer";
 import "./globals.css";
+import "./thank-you/thank-you.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cleaning-one-beryl.vercel.app"),

@@ -1,8 +1,8 @@
 "use client";
 
-import { type CSSProperties, type FormEvent, type ReactNode, useState } from "react";
-import { FaCheckCircle } from "react-icons/fa";
+import { type CSSProperties, type ReactNode, useState } from "react";
 import ThmButton from "@/components/menu/ThmButton";
+import { THANK_YOU_PATH } from "@/lib/formSubmit";
 import { servicesList } from "@/components/services/servicesData";
 import styles from "./HeroLeadForm.module.css";
 
@@ -60,22 +60,9 @@ export default function HeroLeadForm({
   formPrefix = "lead",
 }: HeroLeadFormProps) {
   const [form, setForm] = useState<FormState>(initialForm);
-  const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
 
   const updateField = (field: keyof FormState, value: string) => {
     setForm((prev) => ({ ...prev, [field]: value }));
-  };
-
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setLoading(true);
-
-    window.setTimeout(() => {
-      setLoading(false);
-      setSubmitted(true);
-      setForm(initialForm);
-    }, 700);
   };
 
   return (
@@ -132,19 +119,7 @@ export default function HeroLeadForm({
               <p>Fill in your details — we&apos;ll be in touch shortly.</p>
             </div>
 
-            {submitted ? (
-              <div className={styles.success} role="status">
-                <span role="img" aria-label="Quote request submitted successfully icon">
-                  <FaCheckCircle aria-hidden />
-                </span>
-                <strong>Thank you!</strong>
-                <p>Your request has been received. We&apos;ll contact you soon.</p>
-                <ThmButton type="button" onClick={() => setSubmitted(false)}>
-                  Send another request
-                </ThmButton>
-              </div>
-            ) : (
-              <form className={styles.form} onSubmit={handleSubmit} noValidate>
+            <form className={styles.form} action={THANK_YOU_PATH} method="get">
                 <div className={styles.row}>
                   <div className={styles.field}>
                     <label htmlFor={`${formPrefix}-name`}>Full Name</label>
@@ -212,15 +187,12 @@ export default function HeroLeadForm({
                   </div>
                 </div>
 
-                <ThmButton type="submit" disabled={loading}>
-                  {loading ? "Sending..." : "Get My Free Quote"}
-                </ThmButton>
+                <ThmButton type="submit">Get My Free Quote</ThmButton>
 
                 <p className={styles.formNote}>
                   Your details are kept private. No spam — ever.
                 </p>
               </form>
-            )}
             </div>
           </div>
         </div>

@@ -1,0 +1,393 @@
+.tyHero {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.tyHeroBg {
+  position: absolute;
+  inset: 0;
+  background-image: url("/images/backgrounds/page-header-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.tyHeroBg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(16, 54, 47, 0.976) 0%,
+    rgba(16, 54, 47, 0.85) 60%,
+    rgba(16, 54, 47, 0) 80%
+  );
+}
+
+.tyHeroInner {
+  position: relative;
+  z-index: 2;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: clamp(160px, 22vw, 240px) clamp(16px, 3vw, 24px) clamp(90px, 12vw, 173px);
+  text-align: center;
+}
+
+.tyHeroInner h1 {
+  margin: 0 0 14px;
+  font-family: var(--font-two);
+  font-size: clamp(34px, 5vw, 60px);
+  font-weight: 600;
+  line-height: 1;
+  color: var(--white);
+}
+
+.tyBreadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tyBreadcrumb li {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-two);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: capitalize;
+}
+
+.tyBreadcrumb a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.tyBreadcrumb a:hover {
+  color: var(--cta);
+}
+
+.tyBreadcrumb li[aria-current="page"],
+.tyBreadcrumbSep {
+  color: var(--cta);
+}
+
+.tySection {
+  position: relative;
+  padding: clamp(56px, 7vw, 88px) 0 clamp(72px, 8vw, 100px) !important;
+  background:
+    radial-gradient(circle at 8% 12%, rgba(14, 94, 91, 0.07) 0%, transparent 42%),
+    radial-gradient(circle at 92% 88%, rgba(226, 106, 76, 0.08) 0%, transparent 38%),
+    #f7f4f1;
+  overflow: hidden;
+}
+
+.tyOrbOne,
+.tyOrbTwo {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.tyOrbOne {
+  top: 8%;
+  right: 4%;
+  width: 180px;
+  height: 180px;
+  background: rgba(226, 106, 76, 0.1);
+}
+
+.tyOrbTwo {
+  bottom: 10%;
+  left: 3%;
+  width: 140px;
+  height: 140px;
+  background: rgba(14, 94, 91, 0.08);
+}
+
+.tyContainer {
+  position: relative;
+  z-index: 1;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 3vw, 24px);
+}
+
+.tyLayout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: clamp(28px, 4vw, 48px);
+  align-items: stretch;
+}
+
+.tyCard {
+  position: relative;
+  padding: clamp(28px, 4vw, 40px);
+  border-radius: 24px;
+  background: var(--white);
+  border: 1px solid rgba(14, 94, 91, 0.1);
+  box-shadow: 0 24px 56px rgba(10, 70, 68, 0.1);
+  text-align: center;
+  overflow: hidden;
+}
+
+.tyCard::before {
+  content: "";
+  display: block;
+  height: 5px;
+  margin: -28px -28px 24px;
+  background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+}
+
+.tyIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 22px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--cta) 0%, #c95a3f 100%);
+  color: var(--white);
+  font-size: 44px;
+  box-shadow: 0 18px 40px rgba(226, 106, 76, 0.35);
+}
+
+.tyEyebrow {
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 7px 16px;
+  border-radius: 999px;
+  background: rgba(226, 106, 76, 0.1);
+  font-family: var(--font-two);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cta);
+}
+
+.tyTitle {
+  margin: 0 0 14px;
+  font-family: var(--font-two);
+  font-size: clamp(28px, 3.6vw, 40px);
+  line-height: 1.25;
+  font-weight: 800;
+  color: var(--primary-dark);
+}
+
+.tyIntro {
+  margin: 0 auto 28px;
+  max-width: 560px;
+  font-size: clamp(15px, 1.4vw, 17px);
+  line-height: 1.75;
+  color: var(--gray);
+}
+
+.tyPerks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 14px;
+  margin-bottom: 28px;
+}
+
+.tyPerk {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: var(--tint);
+  border: 1px solid rgba(14, 94, 91, 0.1);
+  font-family: var(--font-two);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+.tyPerk svg {
+  color: var(--primary);
+}
+
+.tyActions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.tySide {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(18px, 2.5vw, 22px);
+}
+
+.tySideCard {
+  position: relative;
+  padding: clamp(22px, 3vw, 28px);
+  border-radius: 22px;
+  background: var(--white);
+  border: 1px solid rgba(14, 94, 91, 0.1);
+  box-shadow: 0 18px 44px rgba(10, 70, 68, 0.08);
+  overflow: hidden;
+}
+
+.tySideCard::before {
+  content: "";
+  display: block;
+  height: 4px;
+  margin: -22px -22px 20px;
+  background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+}
+
+.tySideCardAlt::before {
+  background: linear-gradient(90deg, #c95a3f, var(--cta));
+}
+
+.tyCardTitle {
+  margin: 0 0 18px;
+  font-family: var(--font-two);
+  font-size: clamp(20px, 2.2vw, 24px);
+  font-weight: 800;
+  color: var(--primary-dark);
+}
+
+.tySteps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.tyStep {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.tyStepNum {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  font-family: var(--font-two);
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--white);
+}
+
+.tyStep strong {
+  display: block;
+  margin-bottom: 4px;
+  font-family: var(--font-two);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.tyStep span {
+  display: block;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--gray);
+}
+
+.tyContactText {
+  margin: 0 0 16px;
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--gray);
+}
+
+.tyPhone {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-two);
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 800;
+  color: var(--cta);
+  text-decoration: none;
+}
+
+.tyPhone:hover {
+  color: var(--primary);
+}
+
+.tyPhoneIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(226, 106, 76, 0.12);
+  font-size: 16px;
+}
+
+.tyHours {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(14, 94, 91, 0.08);
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--gray);
+}
+
+@media (max-width: 991px) {
+  .tyLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .tyCard {
+    text-align: left;
+  }
+
+  .tyIntro {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .tyPerks,
+  .tyActions {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 767px) {
+  .tyHeroBg {
+    background-position: right center;
+  }
+
+  .tyHeroBg::before {
+    background: linear-gradient(
+      180deg,
+      rgba(16, 54, 47, 0.72) 0%,
+      rgba(16, 54, 47, 0.55) 55%,
+      rgba(16, 54, 47, 0.68) 100%
+    );
+  }
+
+  .tyHeroInner {
+    padding: 128px 16px 80px;
+  }
+
+  .tyHeroInner h1 {
+    font-size: clamp(26px, 7vw, 34px);
+  }
+}

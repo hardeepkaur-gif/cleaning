@@ -1,9 +1,7 @@
 "use client";
 
-import { type FormEvent, useState } from "react";
 import {
   FaBolt,
-  FaCheckCircle,
   FaChevronRight,
   FaClock,
   FaEnvelope,
@@ -13,15 +11,10 @@ import {
 } from "react-icons/fa";
 import ThmButton from "@/components/menu/ThmButton";
 import { contactInfo } from "@/components/menu/menuData";
+import { THANK_YOU_PATH } from "@/lib/formSubmit";
 import styles from "./ContactUs.module.css";
 
 export default function ContactFormSection() {
-  const [submitted, setSubmitted] = useState(false);
-
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    setSubmitted(true);
-  }
 
   return (
     <section className={styles.contactSection} aria-labelledby="quote-form-title">
@@ -55,81 +48,68 @@ export default function ContactFormSection() {
             </div>
           </div>
 
-          {submitted ? (
-            <div className={styles.successCard} role="status">
-              <span className={styles.successIcon} aria-hidden>
-                <FaCheckCircle />
-              </span>
-              <h3 className={styles.cardTitle}>Request received</h3>
-              <p className={styles.bodyText}>
-                Thank you — we&apos;ll be in touch shortly with your quote and
-                the earliest available slot.
-              </p>
-            </div>
-          ) : (
-            <form className={styles.form} onSubmit={handleSubmit}>
-              <div className={styles.fieldRow}>
-                <div>
-                  <label className={styles.label} htmlFor="contact-name">
-                    Full name
-                  </label>
-                  <input
-                    className={styles.input}
-                    id="contact-name"
-                    name="name"
-                    type="text"
-                    placeholder="Jane Smith"
-                    required
-                  />
-                </div>
-                <div>
-                  <label className={styles.label} htmlFor="contact-phone">
-                    Phone number
-                  </label>
-                  <input
-                    className={styles.input}
-                    id="contact-phone"
-                    name="phone"
-                    type="tel"
-                    placeholder="07xxx xxxxxx"
-                    required
-                  />
-                </div>
-              </div>
-
+          <form className={styles.form} action={THANK_YOU_PATH} method="get">
+            <div className={styles.fieldRow}>
               <div>
-                <label className={styles.label} htmlFor="contact-email">
-                  Email address
+                <label className={styles.label} htmlFor="contact-name">
+                  Full name
                 </label>
                 <input
                   className={styles.input}
-                  id="contact-email"
-                  name="email"
-                  type="email"
-                  placeholder="you@example.com"
+                  id="contact-name"
+                  name="name"
+                  type="text"
+                  placeholder="Jane Smith"
                   required
                 />
               </div>
-
               <div>
-                <label className={styles.label} htmlFor="contact-message">
-                  Anything else we should know?
+                <label className={styles.label} htmlFor="contact-phone">
+                  Phone number
                 </label>
-                <textarea
-                  className={styles.textarea}
-                  id="contact-message"
-                  name="message"
-                  placeholder="Access instructions, specific areas to focus on, allergies to certain products..."
+                <input
+                  className={styles.input}
+                  id="contact-phone"
+                  name="phone"
+                  type="tel"
+                  placeholder="07xxx xxxxxx"
+                  required
                 />
               </div>
+            </div>
 
-              <div className={styles.submitRow}>
-                <div className={styles.btnBox}>
-                  <ThmButton type="submit">Send My Request</ThmButton>
-                </div>
+            <div>
+              <label className={styles.label} htmlFor="contact-email">
+                Email address
+              </label>
+              <input
+                className={styles.input}
+                id="contact-email"
+                name="email"
+                type="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+
+            <div>
+              <label className={styles.label} htmlFor="contact-message">
+                Anything else we should know?
+              </label>
+              <textarea
+                className={styles.textarea}
+                id="contact-message"
+                name="message"
+                placeholder="Access instructions, specific areas to focus on, allergies to certain products..."
+              />
+            </div>
+
+            <div className={styles.submitRow}>
+              <div className={styles.btnBox}>
+                <ThmButton type="submit">Send My Request</ThmButton>
               </div>
-            </form>
-          )}
+            </div>
+          </form>
         </div>
 
         <div className={styles.sideStack}>
