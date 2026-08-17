@@ -6,12 +6,12 @@ const nextConfig: NextConfig = {
       {
         source: "/carpet-cleaning",
         destination: "/carpet-cleaning-london",
-        permanent: true,
+        statusCode: 301,
       },
       {
         source: "/gutter-cleaning",
         destination: "/gutter-cleaning-london",
-        permanent: true,
+        statusCode: 301,
       },
     ];
   },
