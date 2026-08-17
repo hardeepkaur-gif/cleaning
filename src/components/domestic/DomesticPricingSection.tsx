@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaPhoneAlt } from "react-icons/fa";
 import { PiCurrencyGbpDuotone } from "react-icons/pi";
 import ThmButton from "@/components/menu/ThmButton";
@@ -5,7 +6,9 @@ import {
   domesticPricingFooterText,
   domesticPricingHeaderIcons,
   domesticPricingHeaders,
-  domesticPricingIntro,
+  domesticPricingIntroAfter,
+  domesticPricingIntroBefore,
+  domesticPricingIntroLinkLabel,
   domesticPricingRateLabel,
   domesticPricingRows,
   domesticPricingTitle,
@@ -31,7 +34,13 @@ export default function DomesticPricingSection() {
           <h2 className={styles.title} id="domestic-pricing-title">
             {domesticPricingTitle}
           </h2>
-          <p className={styles.intro}>{domesticPricingIntro}</p>
+          <p className={styles.intro}>
+            {domesticPricingIntroBefore}
+            <Link href="/" className={styles.internalLink}>
+              {domesticPricingIntroLinkLabel}
+            </Link>
+            {domesticPricingIntroAfter}
+          </p>
         </header>
 
         <div className={styles.rateCard}>

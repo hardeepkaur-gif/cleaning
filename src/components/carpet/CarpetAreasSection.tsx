@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaArrowRight, FaMapMarkerAlt } from "react-icons/fa";
 import ThmButton from "@/components/menu/ThmButton";
 import styles from "@/components/areas/AreasSection.module.css";
@@ -6,7 +7,9 @@ import {
   carpetAreaNames,
   carpetAreaPins,
   carpetAreasIntro,
-  carpetAreasNote,
+  carpetAreasNoteAfter,
+  carpetAreasNoteBefore,
+  carpetAreasNoteLinkLabel,
   carpetAreasTitle,
 } from "./carpetAreasData";
 
@@ -66,7 +69,13 @@ export default function CarpetAreasSection() {
           </div>
         </div>
 
-        <p className={styles.note}>{carpetAreasNote}</p>
+        <p className={styles.note}>
+          {carpetAreasNoteBefore}
+          <Link href="/domestic-cleaning-services" className={local.internalLink}>
+            {carpetAreasNoteLinkLabel}
+          </Link>
+          {carpetAreasNoteAfter}
+        </p>
 
         <div className={styles.ticker} aria-hidden>
           <div className={styles.tickerTrack}>

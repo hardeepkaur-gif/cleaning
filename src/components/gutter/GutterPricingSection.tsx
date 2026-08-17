@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaCalendarCheck, FaCheck } from "react-icons/fa";
 import ThmButton from "@/components/menu/ThmButton";
 import styles from "@/components/carpet/CarpetPricingSection.module.css";
@@ -10,7 +11,9 @@ import {
   gutterPricingFactorsTitle,
   gutterPricingHeaders,
   gutterPricingIntro,
-  gutterPricingIntroExtra,
+  gutterPricingIntroExtraAfter,
+  gutterPricingIntroExtraBefore,
+  gutterPricingIntroExtraLinkLabel,
   gutterPricingRows,
   gutterPricingTitle,
 } from "./gutterPricingData";
@@ -31,7 +34,13 @@ export default function GutterPricingSection() {
             {gutterPricingTitle}
           </h2>
           <p className={styles.intro}>{gutterPricingIntro}</p>
-          <p className={styles.intro}>{gutterPricingIntroExtra}</p>
+          <p className={styles.intro}>
+            {gutterPricingIntroExtraBefore}
+            <Link href="/" className={local.internalLink}>
+              {gutterPricingIntroExtraLinkLabel}
+            </Link>
+            {gutterPricingIntroExtraAfter}
+          </p>
         </header>
 
         <div className={styles.panel}>

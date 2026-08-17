@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaStar } from "react-icons/fa";
 import {
   domesticWhyChooseIntro,
@@ -39,7 +40,19 @@ export default function DomesticWhyChooseSection() {
                   <h3 className={`${styles.cardTitle} ${local.cardTitle}`}>
                     {item.title}
                   </h3>
-                  <p className={styles.cardText}>{item.text}</p>
+                  <p className={styles.cardText}>
+                    {item.linkLabel && item.linkHref ? (
+                      <>
+                        {item.textBefore}
+                        <Link href={item.linkHref} className={local.internalLink}>
+                          {item.linkLabel}
+                        </Link>
+                        {item.textAfter}
+                      </>
+                    ) : (
+                      item.text
+                    )}
+                  </p>
                   <div className={styles.iconWrap}>
                     <span className={styles.iconMain} role="img" aria-label={item.iconAlt}>
                       <Icon aria-hidden />

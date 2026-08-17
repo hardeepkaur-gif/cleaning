@@ -1,4 +1,5 @@
 import type { IconType } from "react-icons";
+import Link from "next/link";
 import {
   PiCalendarCheckDuotone,
   PiCameraDuotone,
@@ -101,9 +102,12 @@ export default function TenancyWhyChooseAltSection() {
           <p className={styles.intro}>
             Finding a cleaner is easy. Finding a cleaning company that arrives on
             time, follows documented processes and delivers consistent standards is
-            where the real challenge begins. At Cleaning Services London, we focus
-            on reliability, transparency and attention to detail at every stage of
-            the cleaning process.
+            where the real challenge begins. At{" "}
+            <Link href="/" className={local.internalLink}>
+              Cleaning Services London
+            </Link>
+            , we focus on reliability, transparency and attention to detail at every
+            stage of the cleaning process.
           </p>
         </div>
 

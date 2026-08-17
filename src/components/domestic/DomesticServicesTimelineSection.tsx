@@ -1,9 +1,12 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import {
   domesticServicesHighlights,
-  domesticServicesIntro,
+  domesticServicesIntroAfter,
+  domesticServicesIntroBefore,
+  domesticServicesIntroLinkLabel,
   domesticServicesItems,
   domesticServicesTagline,
   domesticServicesTitle,
@@ -98,7 +101,13 @@ export default function DomesticServicesTimelineSection() {
               <h2 className={styles.title} id="domestic-services-timeline-title">
                 {domesticServicesTitle}
               </h2>
-              <p className={styles.intro}>{domesticServicesIntro}</p>
+              <p className={styles.intro}>
+                {domesticServicesIntroBefore}
+                <Link href="/services" className={local.internalLink}>
+                  {domesticServicesIntroLinkLabel}
+                </Link>
+                {domesticServicesIntroAfter}
+              </p>
 
               <ul className={styles.highlights}>
                 {domesticServicesHighlights.map((item) => (

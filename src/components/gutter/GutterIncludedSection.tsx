@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { PiCloudRainDuotone } from "react-icons/pi";
 import styles from "@/components/carpet/CarpetWorthItAltSection.module.css";
 import local from "./GutterIncludedSection.module.css";
@@ -6,7 +7,9 @@ import {
   gutterIncludedEquipment,
   gutterIncludedImage,
   gutterIncludedImageAlt,
-  gutterIncludedIntro,
+  gutterIncludedIntroAfter,
+  gutterIncludedIntroBefore,
+  gutterIncludedIntroLinkLabel,
   gutterIncludedMethods,
   gutterIncludedTitle,
 } from "./gutterIncludedData";
@@ -33,7 +36,13 @@ export default function GutterIncludedSection() {
             {gutterIncludedTitle}
           </h2>
           <div className={styles.introBlock}>
-            <p className={styles.text}>{gutterIncludedIntro}</p>
+            <p className={styles.text}>
+              {gutterIncludedIntroBefore}
+              <Link href="/services" className={local.internalLink}>
+                {gutterIncludedIntroLinkLabel}
+              </Link>
+              {gutterIncludedIntroAfter}
+            </p>
           </div>
         </header>
 

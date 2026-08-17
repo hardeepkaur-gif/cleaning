@@ -4,8 +4,12 @@ export const gutterPricingTitle =
 export const gutterPricingIntro =
   "The cost of gutter cleaning in London depends on the size of your property, the height of the building and how blocked the gutters are. A routine clean for a small property costs much less than clearing heavily blocked gutters on a large commercial building or a multi-storey property.";
 
-export const gutterPricingIntroExtra =
-  "At Cleaning Services London, we provide fixed quotations with no hidden charges. Once we understand your property and the work required, you receive a clear price before any work begins.";
+export const gutterPricingIntroExtraBefore = "At ";
+
+export const gutterPricingIntroExtraLinkLabel = "Cleaning Services London";
+
+export const gutterPricingIntroExtraAfter =
+  ", we provide fixed quotations with no hidden charges. Once we understand your property and the work required, you receive a clear price before any work begins.";
 
 export const gutterPricingHeaders = {
   property: "Property Type",

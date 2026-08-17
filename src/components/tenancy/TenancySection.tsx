@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ThmButton from "@/components/menu/ThmButton";
 import styles from "./TenancySection.module.css";
 
@@ -33,12 +34,18 @@ export default function TenancySection() {
               re-letting the property.
             </p>
             <p className={styles.text}>
-              Our End of Tenancy Cleaning London service is designed to support a
-              smoother handover process through detailed cleaning checklists,
-              documented cleaning procedures, and completion photo reports that
-              help demonstrate what was cleaned during the visit. Whilst no
-              cleaning company can guarantee the outcome of a tenancy dispute, a
-              professionally cleaned property can help reduce unnecessary
+              Our{" "}
+              <Link
+                href="/end-of-tenancy-cleaning"
+                className={styles.internalLink}
+              >
+                End of Tenancy Cleaning London service
+              </Link>{" "}
+              is designed to support a smoother handover process through detailed
+              cleaning checklists, documented cleaning procedures, and completion
+              photo reports that help demonstrate what was cleaned during the visit.
+              Whilst no cleaning company can guarantee the outcome of a tenancy
+              dispute, a professionally cleaned property can help reduce unnecessary
               disagreements and provide greater confidence for everyone involved.
             </p>
 

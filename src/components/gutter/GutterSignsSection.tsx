@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaCalendarCheck, FaCheck } from "react-icons/fa";
 import ThmButton from "@/components/menu/ThmButton";
 import styles from "@/components/about/AboutUs.module.css";
@@ -7,7 +8,9 @@ import {
   gutterSignsCtaLabel,
   gutterSignsCtaNote,
   gutterSignsImages,
-  gutterSignsIntro,
+  gutterSignsIntroAfter,
+  gutterSignsIntroBefore,
+  gutterSignsIntroLinkLabel,
   gutterSignsMainAlt,
   gutterSignsPoints,
   gutterSignsSecondaryAlt,
@@ -75,7 +78,13 @@ export default function GutterSignsSection() {
             </h2>
 
             <blockquote className={styles.callout}>
-              <p>{gutterSignsIntro}</p>
+              <p>
+                {gutterSignsIntroBefore}
+                <Link href="/contact-us" className={styles.internalLink}>
+                  {gutterSignsIntroLinkLabel}
+                </Link>
+                {gutterSignsIntroAfter}
+              </p>
             </blockquote>
 
             <ul className={local.points}>

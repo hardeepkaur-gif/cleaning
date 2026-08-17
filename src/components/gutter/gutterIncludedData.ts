@@ -1,8 +1,12 @@
 export const gutterIncludedTitle =
   "What Does Our Gutter Cleaning London Service Include?";
 
-export const gutterIncludedIntro =
-  "We offer gutter cleaning London services to ensure that your guttering system is clean, flowing and functional throughout the year. A clogged gutter can easily cause water to back up and leak over into your gutters, wet walls and cause damage to your roof line. So it is one of the easiest methods of ensuring that your property won't incur unnecessary repairs as a result of proper maintenance of the gutters.";
+export const gutterIncludedIntroBefore = "We offer gutter cleaning ";
+
+export const gutterIncludedIntroLinkLabel = "London services";
+
+export const gutterIncludedIntroAfter =
+  " to ensure that your guttering system is clean, flowing and functional throughout the year. A clogged gutter can easily cause water to back up and leak over into your gutters, wet walls and cause damage to your roof line. So it is one of the easiest methods of ensuring that your property won't incur unnecessary repairs as a result of proper maintenance of the gutters.";
 
 export const gutterIncludedEquipment =
   "Every gutter cleaning service is completed using professional-grade equipment and proven methods set to your property's height and access requirements. We use high-reach carbon fibre vacuum systems such as SkyVac units with telescopic poles for safe ground-level cleaning, alongside industrial wet and dry vacuums to extract debris efficiently. For properties requiring closer access, we utilise ladder stabilisers, roof ladders and safety harness systems in line with working-at-height regulations.";

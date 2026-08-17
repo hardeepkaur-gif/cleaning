@@ -12,6 +12,10 @@ import { FaBuilding, FaHome } from "react-icons/fa";
 export type CarpetBenefitItem = {
   title: string;
   text: string;
+  textBefore?: string;
+  linkLabel?: string;
+  linkHref?: string;
+  textAfter?: string;
   icon: IconType;
   iconAlt: string;
 };
@@ -32,6 +36,11 @@ export const carpetBenefitsItems: CarpetBenefitItem[] = [
   {
     title: "Tenants",
     text: "Helps leave rental properties clean before moving out and supports end of tenancy cleaning.",
+    textBefore:
+      "Helps leave rental properties clean before moving out and supports ",
+    linkLabel: "end of tenancy cleaning",
+    linkHref: "/end-of-tenancy-cleaning",
+    textAfter: ".",
     icon: PiKeyDuotone,
     iconAlt: "Tenants end of tenancy carpet cleaning benefit icon",
   },

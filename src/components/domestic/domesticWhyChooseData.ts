@@ -13,6 +13,10 @@ import {
 export type DomesticWhyChooseItem = {
   title: string;
   text: string;
+  textBefore?: string;
+  linkLabel?: string;
+  linkHref?: string;
+  textAfter?: string;
   icon: IconType;
   iconAlt: string;
   image: string;
@@ -53,6 +57,11 @@ export const domesticWhyChooseItems: DomesticWhyChooseItem[] = [
   {
     title: "Flexible Weekly and One-Off Appointments",
     text: "If you want your home cleaned regularly or just before your guests are coming in, we will arrange a house cleaning date with you as far as we can.",
+    textBefore: "If you want your ",
+    linkLabel: "home cleaned regularly",
+    linkHref: "/end-of-tenancy-cleaning",
+    textAfter:
+      " or just before your guests are coming in, we will arrange a house cleaning date with you as far as we can.",
     icon: FaCalendarAlt,
     iconAlt: "Flexible domestic cleaning appointments icon",
     image: "/images/domestic/flexible-weekly-appointments.webp",

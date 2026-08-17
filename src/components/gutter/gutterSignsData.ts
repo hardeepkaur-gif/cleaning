@@ -1,7 +1,12 @@
 export const gutterSignsTitle = "Signs Your Gutters Need Cleaning";
 
-export const gutterSignsIntro =
-  "Blocked gutters often show visible warning signs. If you notice any of the following, it's time to book a professional gutter cleaning service.";
+export const gutterSignsIntroBefore =
+  "Blocked gutters often show visible warning signs. If you notice any of the following, it's time to ";
+
+export const gutterSignsIntroLinkLabel =
+  "book a professional gutter cleaning service";
+
+export const gutterSignsIntroAfter = ".";
 
 export const gutterSignsPoints = [
   "Gutters overflowing during rainfall",

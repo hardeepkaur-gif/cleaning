@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import {
   carpetBenefitsIntro,
   carpetBenefitsItems,
@@ -174,7 +175,19 @@ export default function CarpetBenefitsSection() {
                           </span>
                         </div>
                         <h3 className={styles.itemTitle}>{item.title}</h3>
-                        <p className={styles.itemText}>{item.text}</p>
+                        <p className={styles.itemText}>
+                          {item.linkLabel && item.linkHref ? (
+                            <>
+                              {item.textBefore}
+                              <Link href={item.linkHref} className={local.internalLink}>
+                                {item.linkLabel}
+                              </Link>
+                              {item.textAfter}
+                            </>
+                          ) : (
+                            item.text
+                          )}
+                        </p>
                       </article>
                     </li>
                   );

@@ -2,6 +2,20 @@
   align-items: stretch;
 }
 
+.internalLink {
+  color: var(--cta);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(226, 106, 76, 0.35);
+  text-underline-offset: 3px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.internalLink:hover {
+  color: var(--primary);
+  text-decoration-color: rgba(14, 94, 91, 0.45);
+}
+
 .visual {
   height: 100% !important;
   min-height: 100%;

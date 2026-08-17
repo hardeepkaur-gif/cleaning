@@ -18,8 +18,12 @@ export type DomesticPricingRow = {
 export const domesticPricingTitle =
   "How Much Does Domestic Cleaning Cost in London?";
 
-export const domesticPricingIntro =
-  "Our services at Cleaning Services London range from £15 to £30 per hour, but it varies heavily depending on the factors mentioned below.";
+export const domesticPricingIntroBefore = "Our services at ";
+
+export const domesticPricingIntroLinkLabel = "Cleaning Services London";
+
+export const domesticPricingIntroAfter =
+  " range from £15 to £30 per hour, but it varies heavily depending on the factors mentioned below.";
 
 export const domesticPricingRateLabel = "£15 – £30 per hour";
 

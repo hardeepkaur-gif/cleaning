@@ -12,8 +12,12 @@ export const domesticServicesTagline = "Domestic Cleaning Options";
 
 export const domesticServicesTitle = "Choose Your Domestic Cleaning Service";
 
-export const domesticServicesIntro =
-  "Each home requires specific cleaning services as per its timeline, and that is why our domestic cleaning services are flexible. We know that each family has a unique lifestyle, and each family member has different tastes and expectations regarding cleanliness, so services are tailored accordingly. Therefore, you can pick the service that is best suited for your property and suits your requirements.";
+export const domesticServicesIntroBefore = "Each home requires ";
+
+export const domesticServicesIntroLinkLabel = "specific cleaning services";
+
+export const domesticServicesIntroAfter =
+  " as per its timeline, and that is why our domestic cleaning services are flexible. We know that each family has a unique lifestyle, and each family member has different tastes and expectations regarding cleanliness, so services are tailored accordingly. Therefore, you can pick the service that is best suited for your property and suits your requirements.";
 
 export const domesticServicesHighlights = [
   "Weekly & fortnightly visits",

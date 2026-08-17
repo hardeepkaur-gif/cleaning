@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./TenancyProfessionalSection.module.css";
 
 const imgBase = "/images/about/cleanon";
@@ -61,11 +62,14 @@ export default function TenancyProfessionalSection() {
               inspection.
             </p>
             <p className={styles.text}>
-              Unlike regular domestic cleaning, end of tenancy cleaning focuses on the
-              areas most commonly highlighted during inventory checks. Ovens, kitchen
-              cupboards, bathroom limescale, skirting boards, internal glass and
-              appliance cleaning are all given the attention they require to help
-              achieve a smooth property handover.
+              Unlike regular{" "}
+              <Link href="/domestic-cleaning-services" className={styles.internalLink}>
+                domestic cleaning
+              </Link>
+              , end of tenancy cleaning focuses on the areas most commonly highlighted
+              during inventory checks. Ovens, kitchen cupboards, bathroom limescale,
+              skirting boards, internal glass and appliance cleaning are all given the
+              attention they require to help achieve a smooth property handover.
             </p>
           </div>
         </div>

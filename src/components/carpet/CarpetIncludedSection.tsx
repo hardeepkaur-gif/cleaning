@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaCheck } from "react-icons/fa";
 import { includedImages } from "@/components/included/includedData";
 import styles from "@/components/included/ProfessionalClean.module.css";
@@ -8,7 +9,9 @@ import {
   carpetIncludedImg2Alt,
   carpetIncludedImg3Alt,
   carpetIncludedImg4Alt,
-  carpetIncludedIntro,
+  carpetIncludedIntroAfter,
+  carpetIncludedIntroBefore,
+  carpetIncludedIntroLinkLabel,
   carpetIncludedMainAlt,
   carpetIncludedPoints,
   carpetIncludedTitle,
@@ -30,7 +33,11 @@ export default function CarpetIncludedSection() {
             {carpetIncludedTitle}
           </h2>
           <p className={`${styles.intro} ${local.intro}`}>
-            {carpetIncludedIntro}
+            {carpetIncludedIntroBefore}
+            <Link href="/" className={styles.internalLink}>
+              {carpetIncludedIntroLinkLabel}
+            </Link>
+            {carpetIncludedIntroAfter}
           </p>
         </header>
 

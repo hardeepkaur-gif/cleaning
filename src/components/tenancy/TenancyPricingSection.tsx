@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaPhoneAlt } from "react-icons/fa";
 import { PiCurrencyGbpDuotone, PiHouseLineDuotone } from "react-icons/pi";
 import ThmButton from "@/components/menu/ThmButton";
@@ -32,8 +33,12 @@ export default function TenancyPricingSection() {
           </p>
           <p className={styles.intro}>
             Prices are based on standard property sizes and conditions. Other
-            services like carpet cleaning, upholstery cleaning, balcony cleaning or
-            heavily soiled properties can have an impact on the final quote.
+            services like{" "}
+            <Link href="/carpet-cleaning-london" className={styles.internalLink}>
+              carpet cleaning
+            </Link>
+            , upholstery cleaning, balcony cleaning or heavily soiled properties
+            can have an impact on the final quote.
           </p>
         </header>
 

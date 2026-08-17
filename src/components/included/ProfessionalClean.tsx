@@ -1,6 +1,9 @@
+import Link from "next/link";
 import { FaCheck } from "react-icons/fa";
 import {
-  includedExtra,
+  includedExtraAfter,
+  includedExtraBefore,
+  includedExtraLinkLabel,
   includedImages,
   includedIntro,
   includedPoints,
@@ -36,7 +39,16 @@ export default function ProfessionalClean() {
               ))}
             </ul>
 
-            <p className={styles.extra}>{includedExtra}</p>
+            <p className={styles.extra}>
+              {includedExtraBefore}
+              <Link
+                href="/domestic-cleaning-services"
+                className={styles.internalLink}
+              >
+                {includedExtraLinkLabel}
+              </Link>
+              {includedExtraAfter}
+            </p>
           </div>
 
           <div className={styles.right}>

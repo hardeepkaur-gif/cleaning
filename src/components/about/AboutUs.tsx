@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./AboutUs.module.css";
 
 const imgBase = "/images/about/cleanon";
@@ -78,10 +79,17 @@ export default function AboutUs() {
             <p className={styles.text}>
               Cleaning Services London supports homeowners, tenants, landlords, students,
               offices, and commercial premises across East London with reliable cleaning
-              services. You need regular home cleaning, carpet cleaning, end of tenancy
-              cleaning, or gutter cleaning, our team follows documented cleaning standards.
-              Ultimately, it delivers dependable results without the back and forth that
-              often leaves customers lumbered with inconsistent service.
+              services. You need regular home cleaning,{" "}
+              <Link href="/carpet-cleaning-london" className={styles.internalLink}>
+                carpet cleaning
+              </Link>
+              , end of tenancy cleaning, or{" "}
+              <Link href="/gutter-cleaning-london" className={styles.internalLink}>
+                gutter cleaning
+              </Link>
+              , our team follows documented cleaning standards. Ultimately, it delivers
+              dependable results without the back and forth that often leaves customers
+              lumbered with inconsistent service.
             </p>
 
             <p className={styles.text}>
