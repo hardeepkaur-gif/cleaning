@@ -90,7 +90,7 @@ export default function ServicesTabs() {
                         <p className={styles.tabText}>{service.text}</p>
                         <div className={styles.btnBox}>
                           <ThmButton href={service.href}>
-                            Learn More
+                            {service.ctaLabel}
                             <FaLongArrowAltRight aria-hidden />
                           </ThmButton>
                           <img
