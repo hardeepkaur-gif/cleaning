@@ -954,6 +954,7 @@
 .faqQ {
   display: flex;
   width: 100%;
+  min-height: 44px;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
@@ -1383,6 +1384,21 @@
     flex: none;
     width: 100%;
     max-width: none;
+  }
+}
+
+@media(max-width: 767px) {
+  .formPerk,
+  .infoLabel,
+  .infoValue,
+  .responseBanner strong,
+  .faqQText,
+  .faqAnswer p {
+    font-size: 16px;
+  }
+
+  .faqQ {
+    min-height: 44px;
   }
 }
 

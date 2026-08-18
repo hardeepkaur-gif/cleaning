@@ -400,6 +400,7 @@
 
   .tabBtn {
     min-width: 148px;
+    min-height: 44px;
     flex-shrink: 0;
   }
 

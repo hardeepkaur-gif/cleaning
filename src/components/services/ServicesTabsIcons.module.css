@@ -516,10 +516,11 @@
 
   .mobileItem .tabBtn {
     width: 100%;
+    min-height: 44px;
   }
 
   .mobileItem .tabBtnInner {
-    min-height: 58px;
+    min-height: 44px;
     padding: 10px 12px;
     gap: 10px;
   }

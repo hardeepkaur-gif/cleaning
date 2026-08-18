@@ -28,6 +28,7 @@ html {
 
 body {
   font-family: var(--font);
+  font-size: 16px;
   color: var(--gray);
   line-height: 1.7;
   overflow-x: hidden;
@@ -165,4 +166,66 @@ a {
 
 .thmBtnSecondary .hoverBtn {
   background-color: var(--cta);
+}
+
+/* Mobile accessibility — 16px body text & 44px tap targets */
+@media (max-width: 767px) {
+  main p,
+  main li,
+  main td,
+  main th,
+  main label,
+  main input,
+  main select,
+  main textarea,
+  main dd,
+  main dt,
+  footer p,
+  footer li,
+  footer .aboutText,
+  footer .links a,
+  footer .contactList li,
+  footer .legal a,
+  footer .copyright,
+  footer .ctaBannerText p {
+    font-size: 16px !important;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+
+  input:not([type="checkbox"]):not([type="radio"]),
+  select,
+  textarea {
+    min-height: 44px;
+  }
+
+  button:not(.hoverBtn),
+  input[type="submit"],
+  input[type="button"],
+  input[type="reset"],
+  select,
+  .thmBtn {
+    min-height: 44px;
+  }
+
+  header button,
+  header nav a,
+  footer a,
+  footer button,
+  main form button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  header nav a,
+  footer .links a,
+  footer .legal a,
+  footer .contactList a {
+    display: inline-flex;
+    align-items: center;
+  }
 }

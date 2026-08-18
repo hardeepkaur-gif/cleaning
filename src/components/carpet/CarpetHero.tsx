@@ -9,7 +9,7 @@ export default function CarpetHero() {
   return (
     <section
       className={styles.hero}
-      id="carpet-cleaning"
+      id="carpet-cleaning-hero"
       aria-labelledby="carpet-hero-title"
     >
       <div className={styles.item}>

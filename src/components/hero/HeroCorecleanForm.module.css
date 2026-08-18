@@ -382,6 +382,29 @@
 }
 
 @media(max-width: 767px) {
+  .field label,
+  .field input,
+  .field select,
+  .formNote,
+  .success p,
+  .resetBtn {
+    font-size: 16px;
+  }
+
+  .field input,
+  .field select {
+    min-height: 44px;
+  }
+
+  .resetBtn {
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+  }
+
   .shape1,
   .shape2,
   .shape3,

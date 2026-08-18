@@ -9,7 +9,17 @@ const nextConfig: NextConfig = {
         statusCode: 301,
       },
       {
+        source: "/carpet-cleaning/",
+        destination: "/carpet-cleaning-london",
+        statusCode: 301,
+      },
+      {
         source: "/gutter-cleaning",
+        destination: "/gutter-cleaning-london",
+        statusCode: 301,
+      },
+      {
+        source: "/gutter-cleaning/",
         destination: "/gutter-cleaning-london",
         statusCode: 301,
       },

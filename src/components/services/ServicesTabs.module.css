@@ -453,6 +453,14 @@
     max-width: 100%;
   }
 
+  .tabBtn {
+    min-height: 44px;
+  }
+
+  .tabImgWrap {
+    min-height: 44px;
+  }
+
   .tabLeft {
     padding: 16px;
   }

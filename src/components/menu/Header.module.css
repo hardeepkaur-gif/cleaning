@@ -426,11 +426,15 @@
 .mobileToggler {
   display: none;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 5px;
   background: none;
   border: none;
   cursor: pointer;
   padding: 10px;
+  min-width: 44px;
+  min-height: 44px;
 }
 
 .mobileToggler span {
@@ -565,8 +569,21 @@
   }
 
   .list > li {
+    padding: 0;
+    width: 100%;
+  }
+
+  .list > li > a {
+    min-height: 44px;
     padding: 10px 0;
     width: 100%;
+  }
+
+  .list > li > ul li a {
+    min-height: 44px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
   }
 
   .list > li + li {
@@ -612,6 +629,12 @@
     height: 42px;
   }
 
+  .logo {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+
   .wrapperInner {
     padding-left: 16px;
     padding-right: 16px;
@@ -620,5 +643,9 @@
   .list {
     top: 64px;
     padding: 20px 16px 28px;
+  }
+
+  .contactText p {
+    font-size: 16px;
   }
 }

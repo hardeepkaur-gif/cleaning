@@ -224,8 +224,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background: #f7f6f3;
   color: var(--primary);
@@ -271,6 +271,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  min-height: 44px;
   color: var(--gray);
   text-decoration: none;
   font-size: 15px;
@@ -398,6 +399,9 @@
 }
 
 .legal a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   color: var(--gray);
   text-decoration: none;
   font-size: 14px;
@@ -416,8 +420,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background: var(--primary);
   color: var(--white);
@@ -503,7 +507,7 @@
 
   .trustItem {
     padding: 12px 10px;
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .trustIcon {

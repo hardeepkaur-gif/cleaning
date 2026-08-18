@@ -9,7 +9,7 @@ export default function GutterHero() {
   return (
     <section
       className={styles.hero}
-      id="gutter-cleaning"
+      id="gutter-cleaning-hero"
       aria-labelledby="gutter-hero-title"
     >
       <div className={styles.item}>
