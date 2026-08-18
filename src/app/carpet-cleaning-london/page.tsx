@@ -18,6 +18,8 @@ import CarpetProcessSection from "@/components/carpet/CarpetProcessSection";
 import CarpetReadyCtaSection from "@/components/carpet/CarpetReadyCtaSection";
 import CarpetFaqSection from "@/components/carpet/CarpetFaqSection";
 import CarpetWorthItAltSection from "@/components/carpet/CarpetWorthItAltSection";
+import JsonLd from "@/components/seo/JsonLd";
+import { carpetPageSchema } from "@/lib/pageSchemas";
 
 export const metadata: Metadata = {
   title: "Carpet Cleaning London From £30 | Professional Local Cleaners",
@@ -30,7 +32,9 @@ export const metadata: Metadata = {
 
 export default function CarpetCleaningPage() {
   return (
-    <main>
+    <>
+      <JsonLd data={carpetPageSchema} />
+      <main>
       <CarpetHero />
       <CarpetTrustStrip />
       <CarpetCtaSection />
@@ -51,5 +55,6 @@ export default function CarpetCleaningPage() {
       <CarpetReadyCtaSection />
       <CarpetFaqSection />
     </main>
+    </>
   );
 }

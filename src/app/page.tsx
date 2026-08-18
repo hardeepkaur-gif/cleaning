@@ -13,6 +13,9 @@ import VettedSection from "@/components/vetted/VettedSection";
 import ProcessSectionFour from "@/components/process/ProcessSectionFour";
 import AreasSection from "@/components/areas/AreasSection";
 import FaqSection from "@/components/faq/FaqSection";
+import JsonLd from "@/components/seo/JsonLd";
+import { organizationSchema } from "@/lib/organizationSchema";
+import { homePageSchema } from "@/lib/pageSchemas";
 
 export const metadata: Metadata = {
   title: "Cleaning Services London for Homes Landlords and Businesses",
@@ -25,21 +28,25 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   return (
-    <main>
-      <HeroLeadFormSecond />
-      <AboutUs />
-      <ServicesTabsIcons />
-      <CtaSectionThree />
-      <WhyChooseUsAlt />
-      <WhatMakesDifferent />
-      <ProfessionalClean />
-      <CtaSectionFour />
-      <PricingSection />
-      <TenancySection />
-      <VettedSection />
-      <ProcessSectionFour />
-      <AreasSection />
-      <FaqSection />
-    </main>
+    <>
+      <JsonLd data={organizationSchema} />
+      <JsonLd data={homePageSchema} />
+      <main>
+        <HeroLeadFormSecond />
+        <AboutUs />
+        <ServicesTabsIcons />
+        <CtaSectionThree />
+        <WhyChooseUsAlt />
+        <WhatMakesDifferent />
+        <ProfessionalClean />
+        <CtaSectionFour />
+        <PricingSection />
+        <TenancySection />
+        <VettedSection />
+        <ProcessSectionFour />
+        <AreasSection />
+        <FaqSection />
+      </main>
+    </>
   );
 }

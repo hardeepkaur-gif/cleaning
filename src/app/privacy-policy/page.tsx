@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import PrivacyHero from "@/components/privacy/PrivacyHero";
 import PrivacyPolicyContent from "@/components/privacy/PrivacyPolicyContent";
+import JsonLd from "@/components/seo/JsonLd";
+import { privacyPageSchema } from "@/lib/pageSchemas";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Cleaning Services London",
@@ -13,9 +15,12 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
   return (
-    <main>
-      <PrivacyHero />
-      <PrivacyPolicyContent />
-    </main>
+    <>
+      <JsonLd data={privacyPageSchema} />
+      <main>
+        <PrivacyHero />
+        <PrivacyPolicyContent />
+      </main>
+    </>
   );
 }

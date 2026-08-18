@@ -16,6 +16,8 @@ import GutterAreasSection from "@/components/gutter/GutterAreasSection";
 import GutterAreasCtaSection from "@/components/gutter/GutterAreasCtaSection";
 import GutterFaqSection from "@/components/gutter/GutterFaqSection";
 import GutterReadyCtaSection from "@/components/gutter/GutterReadyCtaSection";
+import JsonLd from "@/components/seo/JsonLd";
+import { gutterPageSchema } from "@/lib/pageSchemas";
 
 export const metadata: Metadata = {
   title: "Gutter Cleaning London | Trusted Local Gutter Cleaners",
@@ -28,7 +30,9 @@ export const metadata: Metadata = {
 
 export default function GutterCleaningPage() {
   return (
-    <main>
+    <>
+      <JsonLd data={gutterPageSchema} />
+      <main>
       <GutterHero />
       <GutterTrustStrip />
       <GutterIncludedSection />
@@ -47,5 +51,6 @@ export default function GutterCleaningPage() {
       <GutterAreasCtaSection />
       <GutterFaqSection />
     </main>
+    </>
   );
 }

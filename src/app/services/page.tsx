@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import JsonLd from "@/components/seo/JsonLd";
 import ServicesHero from "@/components/services/ServicesHero";
 import ServicesPageList from "@/components/services/ServicesPageList";
+import { servicesPageSchema } from "@/lib/pageSchemas";
 
 export const metadata: Metadata = {
   title: "Services | Cleaning Services London",
@@ -13,9 +15,12 @@ export const metadata: Metadata = {
 
 export default function ServicesPage() {
   return (
-    <main>
-      <ServicesHero />
-      <ServicesPageList />
-    </main>
+    <>
+      <JsonLd data={servicesPageSchema} />
+      <main>
+        <ServicesHero />
+        <ServicesPageList />
+      </main>
+    </>
   );
 }

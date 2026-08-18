@@ -4,6 +4,8 @@ import ContactHero from "@/components/contact/ContactHero";
 import ContactMapSection from "@/components/contact/ContactMapSection";
 import ContactStepsSection from "@/components/contact/ContactStepsSection";
 import ContactTrustStrip from "@/components/contact/ContactTrustStrip";
+import JsonLd from "@/components/seo/JsonLd";
+import { contactPageSchema } from "@/lib/pageSchemas";
 
 export const metadata: Metadata = {
   title: "Contact Us | Cleaning Services London — Free Quote",
@@ -16,12 +18,15 @@ export const metadata: Metadata = {
 
 export default function ContactUsPage() {
   return (
-    <main>
-      <ContactHero />
-      <ContactStepsSection />
-      <ContactFormSection />
-      <ContactTrustStrip />
-      <ContactMapSection />
-    </main>
+    <>
+      <JsonLd data={contactPageSchema} />
+      <main>
+        <ContactHero />
+        <ContactStepsSection />
+        <ContactFormSection />
+        <ContactTrustStrip />
+        <ContactMapSection />
+      </main>
+    </>
   );
 }

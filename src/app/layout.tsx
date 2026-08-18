@@ -5,7 +5,7 @@ import "./globals.css";
 import "./thank-you/thank-you.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cleaning-one-beryl.vercel.app"),
+  metadataBase: new URL("https://clcleaningserviceslondon.co.uk"),
   title: "Cleaning Services London for Homes Landlords and Businesses",
   description:
     "Professional cleaning services in London for homes and businesses. DBS-checked, insured cleaners with fixed pricing and completion photo reports.",

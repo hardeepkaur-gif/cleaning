@@ -16,6 +16,8 @@ import TenancyOptionalServicesSection from "@/components/tenancy/TenancyOptional
 import TenancyWhyChooseAltSection from "@/components/tenancy/TenancyWhyChooseAltSection";
 import TenancyAreasSection from "@/components/tenancy/TenancyAreasSection";
 import TenancyFaqSection from "@/components/tenancy/TenancyFaqSection";
+import JsonLd from "@/components/seo/JsonLd";
+import { tenancyPageSchema } from "@/lib/pageSchemas";
 
 export const metadata: Metadata = {
   title: "End of Tenancy Cleaning London With 14 Day Re-Clean Guarantee",
@@ -28,7 +30,9 @@ export const metadata: Metadata = {
 
 export default function EndOfTenancyCleaningPage() {
   return (
-    <main>
+    <>
+      <JsonLd data={tenancyPageSchema} />
+      <main>
       <TenancyHero />
       <TenancyProfessionalSection />
       <TenancyMattersTimelineSection />
@@ -47,5 +51,6 @@ export default function EndOfTenancyCleaningPage() {
       <TenancyAreasSection />
       <TenancyFaqSection />
     </main>
+    </>
   );
 }

@@ -11,6 +11,8 @@ import DomesticPricingSection from "@/components/domestic/DomesticPricingSection
 import DomesticWhyChooseSection from "@/components/domestic/DomesticWhyChooseSection";
 import DomesticFinalCtaSection from "@/components/domestic/DomesticFinalCtaSection";
 import DomesticFaqSection from "@/components/domestic/DomesticFaqSection";
+import JsonLd from "@/components/seo/JsonLd";
+import { domesticPageSchema } from "@/lib/pageSchemas";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
@@ -24,7 +26,9 @@ export const metadata: Metadata = {
 
 export default function DomesticCleaningServicesPage() {
   return (
-    <main className={styles.page}>
+    <>
+      <JsonLd data={domesticPageSchema} />
+      <main className={styles.page}>
       <DomesticHero />
       <DomesticTrustStrip />
       <DomesticProfessionalSection />
@@ -38,5 +42,6 @@ export default function DomesticCleaningServicesPage() {
       <DomesticFinalCtaSection />
       <DomesticFaqSection />
     </main>
+    </>
   );
 }
