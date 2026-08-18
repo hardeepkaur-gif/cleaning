@@ -1,3 +1,5 @@
+import { SITE_EMAIL } from "@/lib/site";
+
 export type NavItem = {
   label: string;
   href: string;
@@ -37,7 +39,7 @@ export const navServiceLinks =
   navItems.find((item) => item.label === "Services")?.children ?? [];
 
 export const contactInfo = {
-  email: "info@cleaninglondon.co.uk",
+  email: SITE_EMAIL,
   phone: "+44 12 3456 7890",
   phoneHref: "tel:+441234567890",
   address: "68 Granleigh Road, London E11 4RQ",

@@ -1,3 +1,5 @@
+import { SITE_EMAIL } from "@/lib/site";
+
 export const privacyLastUpdated = "24 July 2026";
 
 export const privacyIntro =
@@ -127,7 +129,7 @@ export const privacySections: PrivacySection[] = [
     summary: "Questions & requests",
     paragraphs: [
       "If you have questions about this Privacy Policy or wish to exercise your data protection rights, please contact Cleaning Services London.",
-      "Email: info@cleaninglondon.co.uk · Phone: +44 12 3456 7890 · Address: 68 Granleigh Road, London E11 4RQ",
+      `Email: ${SITE_EMAIL} · Phone: +44 12 3456 7890 · Address: 68 Granleigh Road, London E11 4RQ`,
     ],
   },
 ];

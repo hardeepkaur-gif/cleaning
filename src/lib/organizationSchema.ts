@@ -2,6 +2,7 @@ import {
   LOGO_ID,
   LOGO_URL,
   ORGANIZATION_ID,
+  SITE_EMAIL,
   SITE_URL,
   WEBSITE_ID,
 } from "./site";
@@ -29,7 +30,7 @@ export const organizationSchema = {
       description:
         "CL Cleaning Services London is a professional cleaning company based in Leytonstone, East London, offering gutter cleaning, carpet cleaning, end of tenancy cleaning and domestic cleaning services across London.",
       telephone: "+44-12-3456-7890",
-      email: "info@clcleaningserviceslondon.co.uk",
+      email: SITE_EMAIL,
       priceRange: "££",
       currenciesAccepted: "GBP",
       paymentAccepted: "Cash, Credit Card, Debit Card, Bank Transfer",
