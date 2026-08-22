@@ -62,4 +62,10 @@ export const tenancyFaqs: TenancyFaqItem[] = [
     img: `${faqImgBase}/same-day.webp`,
     alt: "Same day move out cleaning booking availability across London",
   },
+  {
+    q: "Do I need to prepare anything before the cleaning?",
+    a: "Please defrost fridges/freezers at least 24 hours beforehand; our team takes care of the rest.",
+    img: "/images/tenancy/prepare/empty-kitchen-cupboards-tenancy-prep.webp",
+    alt: "Kitchen preparation before an end of tenancy cleaning visit in London",
+  },
 ];

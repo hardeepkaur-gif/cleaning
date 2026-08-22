@@ -6,12 +6,10 @@ import TenancyIncludedSection from "@/components/tenancy/TenancyIncludedSection"
 import TenancyIncludedCtaSection from "@/components/tenancy/TenancyIncludedCtaSection";
 import TenancyChecklistAltSection from "@/components/tenancy/TenancyChecklistAltSection";
 import TenancyCtaSection from "@/components/tenancy/TenancyCtaSection";
-import TenancyPricingSection from "@/components/tenancy/TenancyPricingSection";
 import TenancyPricingCtaSection from "@/components/tenancy/TenancyPricingCtaSection";
 import TenancyDepositGuideSection from "@/components/tenancy/TenancyDepositGuideSection";
 import TenancyWhoUsesAltSection from "@/components/tenancy/TenancyWhoUsesAltSection";
 import TenancyProcessSection from "@/components/tenancy/TenancyProcessSection";
-import TenancyPrepareSection from "@/components/tenancy/TenancyPrepareSection";
 import TenancyOptionalServicesSection from "@/components/tenancy/TenancyOptionalServicesSection";
 import TenancyWhyChooseAltSection from "@/components/tenancy/TenancyWhyChooseAltSection";
 import TenancyAreasSection from "@/components/tenancy/TenancyAreasSection";
@@ -40,12 +38,10 @@ export default function EndOfTenancyCleaningPage() {
       <TenancyIncludedCtaSection />
       <TenancyChecklistAltSection />
       <TenancyCtaSection />
-      <TenancyPricingSection />
       <TenancyPricingCtaSection />
       <TenancyDepositGuideSection />
       <TenancyWhoUsesAltSection />
       <TenancyProcessSection />
-      <TenancyPrepareSection />
       <TenancyOptionalServicesSection />
       <TenancyWhyChooseAltSection />
       <TenancyAreasSection />

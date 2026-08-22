@@ -62,37 +62,29 @@ export default function TenancyDepositGuideSection() {
           <div className={`${styles.content} ${local.content}`}>
             <blockquote className={styles.callout}>
               <p>
-                The question is often asked by tenants and they are wondering whether
+                The question is often asked by tenants, and they are wondering whether
                 the professional end of tenancy cleaning will ensure that they will be
-                able to get their deposit back. The answer no. There is no way of
-                knowing that a deposit will ever be paid back in a cleaning service as
-                the landlords and letting agents look at the property from various
-                angles such as the damage, maintenance issues, unpaid rent, and the
+                able to get their deposit back. The answer is no. There is no way of
+                knowing that a deposit will ever be paid back in a cleaning service,
+                as the landlords and letting agents look at the property from various
+                angles, such as the damage, maintenance issues, unpaid rent, and the
                 condition of the property.
               </p>
             </blockquote>
 
             <p className={styles.text}>
               But one of the most prevalent reasons for tenancy deposit deductions is
-              cleaning. Ovens, bathrooms, kitchen cupboards, carpet, skirting boards
-              and appliances are common places to be spotted at an inspection that
+              cleaning. Ovens, bathrooms, kitchen cupboards, carpet, skirting boards,
+              and appliances are common places to be spotted at an inspection where
               they have not been cleaned to an acceptable standard.
             </p>
 
             <p className={styles.text}>
               A professional end of tenancy clean will help to prove that reasonable
               steps have been taken to return the property in clean and presentable
-              condition. Our cleaners go through a comprehensive room by room
-              checklist of the areas that are typically reviewed during inventories,
-              inspections and property handovers.
-            </p>
-
-            <p className={styles.text}>
-              Before and after pictures and documented cleaning methods provide the
-              additional proof of work performed when requested. These are not
-              measures that can guarantee a successful tenancy dispute, but they can
-              certainly help to facilitate a smoother handover process and lessen the
-              risk of cleaning issues after a move out.
+              condition. Our cleaners go through a comprehensive room-by-room checklist
+              of the areas that are typically reviewed during inventories, inspections,
+              and property handovers.
             </p>
           </div>
         </div>
