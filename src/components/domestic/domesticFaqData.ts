@@ -17,16 +17,10 @@ export const domesticFaqs: DomesticFaqItem[] = [
     alt: "Standard domestic cleaning tasks included in a London home visit",
   },
   {
-    q: "What will a cleaner do in 3 hours?",
-    a: "Our professional cleaner will clean the kitchen and bathrooms, vacuum and mop floors, dust living areas and bedrooms, wipe accessible surfaces, take out trash cans, and perform other tasks agreed upon in the house in three hours. The extent of work accomplished is based on the size and condition of your home.",
-    img: `${faqImgBase}/faq-3-hours.webp`,
-    alt: "Domestic cleaner completing priority tasks in a three hour home visit",
-  },
-  {
-    q: "How many hours of domestic cleaning do I need?",
-    a: "Around 2-3 hours for smaller flats and 4 hours or more for larger family homes. In the process of quoting, we'll pick a reasonable time for the cleaning process according to the size and layout of your property and its cleaning needs.",
-    img: `${faqImgBase}/faq-how-many-hours.webp`,
-    alt: "Guide to booking the right domestic cleaning hours for your home size",
+    q: "What is the difference between domestic cleaning and deep cleaning?",
+    a: "Domestic cleaning is all about keeping your house clean by using regular cleaning services like dusting, vacuuming, and mopping. Deep cleaning is a more thorough cleaning that deals with areas that are not regularly cleaned and with built-up dirt and neglected areas.",
+    img: `${faqImgBase}/faq-domestic-vs-deep.webp`,
+    alt: "Comparison of regular domestic cleaning and deep cleaning services",
   },
   {
     q: "Do I Need to Be at Home While the Cleaner Is Working?",

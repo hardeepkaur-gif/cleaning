@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import DomesticHero from "@/components/domestic/DomesticHero";
 import DomesticTrustStrip from "@/components/domestic/DomesticTrustStrip";
+import DomesticIntroCtaSection from "@/components/domestic/DomesticIntroCtaSection";
 import DomesticProfessionalSection from "@/components/domestic/DomesticProfessionalSection";
 import DomesticServicesTimelineSection from "@/components/domestic/DomesticServicesTimelineSection";
 import DomesticCtaSection from "@/components/domestic/DomesticCtaSection";
-import DomesticCleaningHoursSection from "@/components/domestic/DomesticCleaningHoursSection";
 import DomesticChecklistSection from "@/components/domestic/DomesticChecklistSection";
 import DomesticAdditionalCtaSection from "@/components/domestic/DomesticAdditionalCtaSection";
 import DomesticPricingSection from "@/components/domestic/DomesticPricingSection";
@@ -31,10 +31,10 @@ export default function DomesticCleaningServicesPage() {
       <main className={styles.page}>
       <DomesticHero />
       <DomesticTrustStrip />
+      <DomesticIntroCtaSection />
       <DomesticProfessionalSection />
       <DomesticServicesTimelineSection />
       <DomesticCtaSection />
-      <DomesticCleaningHoursSection />
       <DomesticChecklistSection />
       <DomesticAdditionalCtaSection />
       <DomesticPricingSection />

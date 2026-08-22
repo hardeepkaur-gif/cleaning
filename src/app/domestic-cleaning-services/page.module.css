@@ -23,6 +23,7 @@
 }
 
 /* Compact CTA banners */
+.page > #domestic-intro-cta,
 .page > #domestic-cleaning-cta,
 .page > #domestic-additional-services,
 .page > #domestic-final-cta {

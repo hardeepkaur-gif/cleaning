@@ -1,0 +1,42 @@
+.heroImg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(10, 70, 68, 0.35) 100%),
+    url("/images/domestic/domestic-at-home-cleaner.webp") center / cover no-repeat;
+}
+
+@media (max-width: 991px) {
+  .copy {
+    text-align: center;
+    align-items: center;
+  }
+
+  .btnWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .copy .ctaBtn:global(.thmBtn) {
+    width: auto;
+    max-width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .copy .ctaBtn:global(.thmBtn) {
+    width: auto;
+    white-space: normal;
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .copy .ctaBtn:global(.thmBtn) {
+    width: 100%;
+    max-width: 320px;
+  }
+}
