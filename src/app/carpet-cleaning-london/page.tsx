@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import CarpetHero from "@/components/carpet/CarpetHero";
 import CarpetTrustStrip from "@/components/carpet/CarpetTrustStrip";
 import CarpetCtaSection from "@/components/carpet/CarpetCtaSection";
-import CarpetIncludedSection from "@/components/carpet/CarpetIncludedSection";
 import CarpetServicesSection from "@/components/carpet/CarpetServicesSection";
 import CarpetAdditionalCtaSection from "@/components/carpet/CarpetAdditionalCtaSection";
 import CarpetStainsSection from "@/components/carpet/CarpetStainsSection";
@@ -17,7 +16,6 @@ import CarpetAreasCtaSection from "@/components/carpet/CarpetAreasCtaSection";
 import CarpetProcessSection from "@/components/carpet/CarpetProcessSection";
 import CarpetReadyCtaSection from "@/components/carpet/CarpetReadyCtaSection";
 import CarpetFaqSection from "@/components/carpet/CarpetFaqSection";
-import CarpetWorthItAltSection from "@/components/carpet/CarpetWorthItAltSection";
 import JsonLd from "@/components/seo/JsonLd";
 import { carpetPageSchema } from "@/lib/pageSchemas";
 
@@ -38,11 +36,9 @@ export default function CarpetCleaningPage() {
       <CarpetHero />
       <CarpetTrustStrip />
       <CarpetCtaSection />
-      <CarpetIncludedSection />
       <CarpetServicesSection />
       <CarpetAdditionalCtaSection />
       <CarpetStainsSection />
-      <CarpetWorthItAltSection />
       <CarpetFrequencySection />
       <CarpetPricingSection />
       <CarpetPricingCtaSection />

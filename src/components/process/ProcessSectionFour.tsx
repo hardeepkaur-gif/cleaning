@@ -54,7 +54,7 @@ const steps: ProcessStep[] = [
   },
   {
     icon: PiCameraDuotone,
-    title: "Completion Photos & Quality Check",
+    title: "Completion Photos and Quality Check",
     text: "Completed work is reviewed against service standards and supported with completion photography where applicable.",
     accent: "primary",
   },

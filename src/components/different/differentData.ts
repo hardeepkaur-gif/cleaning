@@ -1,4 +1,3 @@
-const imgBase = "/images/services/cleanon";
 const differentImgBase = "/images/different";
 
 export const differentTagline = "Why Us";
@@ -6,7 +5,7 @@ export const differentTagline = "Why Us";
 export const differentTitle = "What Makes Cleaning Services London Different?";
 
 export const differentIntro =
-  "Many cleaning companies promise reliability, but few explain the systems they use to maintain it. Clear procedures and accountability for our cleaning staff are our priority at Cleaning Services London. Quality control is also used to provide a consistent customer experience.";
+  "Clear procedures and accountability for our cleaning staff are our priority at Cleaning Services London. Quality control is also used to provide a consistent customer experience.";
 
 export type DifferentItem = {
   title: string;
@@ -18,21 +17,21 @@ export type DifferentItem = {
 export const differentList: DifferentItem[] = [
   {
     title: "DBS Checked Cleaners",
-    text: "Each cleaner completes identity verification, right to work checks and DBS screening prior to going on to a rented property, commercial or office premises or home.",
+    text: "Each cleaner completes identity verification, right-to-work checks, and DBS screening before going on to a rented property, commercial or office premises, or home.",
     image: `${differentImgBase}/dbs-checked-cleaners.webp`,
     imageAlt:
       "DBS checked professional cleaner approved to work in London customer properties",
   },
   {
     title: "Fully Insured Cleaning Company in London",
-    text: "Cleaning Services London is completely insured, offering a further level of reassurance for homeowners, tenants, landlords and businesses before any cleaning work starts.",
+    text: "Cleaning Services London is completely insured, offering a further level of reassurance for homeowners, tenants, landlords, and businesses before any cleaning work starts.",
     image: `${differentImgBase}/fully-insured-cleaning-company.webp`,
     imageAlt:
       "Fully insured London cleaning company team working safely inside a customer home",
   },
   {
     title: "Same Cleaner for Regular Visits",
-    text: "For recurring bookings, we will try to book the same cleaner as they are of the same service, they will appear more familiar, consistent, and easier to manage.",
+    text: "For recurring bookings, we will try to book the same cleaner, as they are providing the same service; they will appear more familiar, consistent, and easier to manage.",
     image: `${differentImgBase}/same-cleaner-regular-visits.webp`,
     imageAlt:
       "Same trusted cleaner returning for regular domestic cleaning at a London home",
@@ -53,30 +52,23 @@ export const differentList: DifferentItem[] = [
   },
   {
     title: "Before and After Photo Standards",
-    text: "Completion photos provide clients with visible proof while minimizing the back and forth after the work is finished and providing the client with details of what has been cleaned.",
+    text: "Completion photos provide clients with visible proof while minimising the back and forth after the work is finished, and providing the client with details of what has been cleaned.",
     image: `${differentImgBase}/before-after-photo-standards.webp`,
     imageAlt:
       "Before and after completion photos showing results of a professional London clean",
   },
   {
     title: "Fixed Pricing Structure",
-    text: "We never leave you with unclear hourly estimates or hidden charges, our prices are agreed in advance before starting work.",
+    text: "We never leave you with unclear hourly estimates or hidden charges; our prices are agreed in advance before starting work.",
     image: `${differentImgBase}/fixed-pricing-structure.webp`,
     imageAlt:
       "Fixed price cleaning agreement confirmed before a London home cleaning booking",
   },
   {
     title: "Flexible Cleaning Support",
-    text: "From one off clean, to regular domestic clean, carpet clean, end of tenancy clean or gutter clean our service is personalised around your property and schedule.",
+    text: "From one-off cleans to regular domestic cleans, carpet clean, end of tenancy clean, or gutter clean, our service is personalised around your property and schedule.",
     image: `${differentImgBase}/flexible-cleaning-support.webp`,
     imageAlt:
       "Flexible cleaning support for homes rentals offices and commercial premises in London",
-  },
-  {
-    title: "Satisfaction Guarantee",
-    text: "If something is of concern after cleaning, we discuss the concern and strive towards a fair resolution.",
-    image: `${differentImgBase}/satisfaction-guarantee.webp`,
-    imageAlt:
-      "Satisfaction focused professional cleaning service trusted by London customers",
   },
 ];

@@ -7,8 +7,6 @@ import GutterCausesSection from "@/components/gutter/GutterCausesSection";
 import GutterCtaSection from "@/components/gutter/GutterCtaSection";
 import GutterSignsSection from "@/components/gutter/GutterSignsSection";
 import GutterWarningCtaSection from "@/components/gutter/GutterWarningCtaSection";
-import GutterResidentialSection from "@/components/gutter/GutterResidentialSection";
-import GutterCommercialSection from "@/components/gutter/GutterCommercialSection";
 import GutterPricingSection from "@/components/gutter/GutterPricingSection";
 import GutterWhyChooseSection from "@/components/gutter/GutterWhyChooseSection";
 import GutterProcessSection from "@/components/gutter/GutterProcessSection";
@@ -42,8 +40,6 @@ export default function GutterCleaningPage() {
       <GutterCtaSection />
       <GutterSignsSection />
       <GutterWarningCtaSection />
-      <GutterResidentialSection />
-      <GutterCommercialSection />
       <GutterProcessSection />
       <GutterPricingSection />
       <GutterWhyChooseSection />

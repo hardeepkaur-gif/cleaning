@@ -34,8 +34,7 @@ export const servicesPageTitle = "Services in London";
 export const servicesPageIntro =
   "Explore our Services for homes, rental properties and businesses across London. Our Services include domestic cleaning, carpet cleaning, end of tenancy cleaning and gutter cleaning.";
 
-export const servicesIntro =
-  "We offer a professional cleaning service for homes, rental properties and businesses throughout London. No matter it's routinely cleaning your home or providing specialist property care and handover preparation, our team is here for you.";
+export const servicesIntro = "The Cleaning Services London offers:";
 
 export const servicesTabsTagline = "Our Services";
 
@@ -47,7 +46,7 @@ export const servicesList: ServiceData[] = [
   {
     label: "Domestic",
     title: "Domestic Cleaning Services London",
-    text: "Available home cleaning in London for house owners, flat renters and hectic professionals. Choose regular cleaning one-off cleaning, weekly cleaning or fortnightly home cleaning to keep your property clean and tidy.",
+    text: "We offer home cleaning in London for homeowners, flat renters, and hectic professionals. Choose regular cleaning, one-off cleaning, weekly cleaning, or fortnightly home cleaning to keep your property clean and tidy.",
     href: "/domestic-cleaning-services",
     ctaLabel: "Explore Domestic Cleaning Service",
     icon: FaHome,
@@ -62,7 +61,7 @@ export const servicesList: ServiceData[] = [
   {
     label: "Carpet",
     title: "Carpet Cleaning London",
-    text: "Carpet cleaning London service not only helps you get rid of stains, lift embedded dirt, but at the same time it helps you protect your carpet investment, especially in high traffic areas.",
+    text: "Get rid of stains and lift embedded dirt with our carpet cleaning services; it’ll protect your carpet investment, especially in high-traffic areas.",
     href: "/carpet-cleaning-london",
     ctaLabel: "Explore Carpet Cleaning Service",
     icon: FaCouch,
@@ -77,7 +76,7 @@ export const servicesList: ServiceData[] = [
   {
     label: "Tenancy",
     title: "End of Tenancy Cleaning London",
-    text: "Detailed end of tenancy cleaning London service to ensure that properties are ready for inspection, handover and occupancy by the next tenants.",
+    text: "Our end of tenancy cleaning London service ensures that properties are ready for inspection, handover, and occupancy by the next tenants.",
     href: "/end-of-tenancy-cleaning",
     ctaLabel: "Explore End Of Tenancy Cleaning Services",
     icon: FaKey,
@@ -92,7 +91,7 @@ export const servicesList: ServiceData[] = [
   {
     label: "Gutter",
     title: "Gutter Cleaning London",
-    text: "Preventative gutter cleaning London service to unclog blockages, enhance drainage, and safeguard properties against unnecessary water damage.",
+    text: "Our gutter cleaning service in London unclogs blockages, helps drainage, and protects the property against unnecessary water damage.",
     href: "/gutter-cleaning-london",
     ctaLabel: "Explore Gutter Cleaning Services",
     icon: FaWater,

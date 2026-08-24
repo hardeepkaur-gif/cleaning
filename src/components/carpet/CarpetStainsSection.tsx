@@ -1,7 +1,6 @@
 import { FaCheck } from "react-icons/fa";
 import styles from "./CarpetStainsSection.module.css";
 import {
-  carpetStainsExtra,
   carpetStainsImage,
   carpetStainsImageAlt,
   carpetStainsIntro,
@@ -28,7 +27,6 @@ export default function CarpetStainsSection() {
         <div className={styles.grid}>
           <div className={styles.copy}>
             <p className={styles.text}>{carpetStainsIntro}</p>
-            <p className={styles.text}>{carpetStainsExtra}</p>
 
             <ul className={styles.points}>
               {carpetStainsItems.map((item) => (

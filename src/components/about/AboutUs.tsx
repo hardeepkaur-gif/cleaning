@@ -15,7 +15,7 @@ export default function AboutUs() {
           </h2>
         </div>
 
-        <div className={styles.grid}>
+        <div className={`${styles.grid} ${styles.gridEqual}`}>
           {/* ---- Media collage ---- */}
           <div className={styles.media}>
             <div className={styles.frame}>
@@ -34,14 +34,6 @@ export default function AboutUs() {
                   alt="London cleaning team preparing professional equipment before a service visit"
                   loading="lazy"
                 />
-              </div>
-
-              <div className={styles.statCard}>
-                <div className={styles.statNum}>
-                  <span>17</span>
-                  <em>%</em>
-                </div>
-                <p>UK Households Employ a Cleaner</p>
               </div>
 
               <div className={styles.seal}>
@@ -68,37 +60,28 @@ export default function AboutUs() {
           <div className={styles.content}>
             <blockquote className={styles.callout}>
               <p>
-                Households and businesses chose to outsource cleaning tasks which has
-                significantly grown the demand for best cleaning services across the UK.
-                Recent industry data shows that approximately 17% of UK households now
-                employ a cleaner, whilst demand among homeowners under 35 is significantly
-                higher.
+                Cleaning Services London supports homeowners, tenants, landlords,
+                students, offices, and commercial premises across London with reliable
+                cleaning.
               </p>
             </blockquote>
 
             <p className={styles.text}>
-              Cleaning Services London supports homeowners, tenants, landlords, students,
-              offices, and commercial premises across East London with reliable cleaning
-              services. You need regular home cleaning,{" "}
+              Whether you need regular home cleaning,{" "}
               <Link href="/carpet-cleaning-london" className={styles.internalLink}>
                 carpet cleaning
               </Link>
-              , end of tenancy cleaning, or{" "}
+              , end-of-tenancy cleaning, or{" "}
               <Link href="/gutter-cleaning-london" className={styles.internalLink}>
                 gutter cleaning
               </Link>
-              , our team follows documented cleaning standards. Ultimately, it delivers
-              dependable results without the back and forth that often leaves customers
-              lumbered with inconsistent service.
+              , our team follows documented cleaning standards.
             </p>
 
             <p className={styles.text}>
-              Many cleaning companies focus solely on completing the job. We with our
-              100% customer satisfaction focus on completing it to a benchmark. Every
-              cleaner follows signed cleaning procedures, quality control measures, and
-              completion reporting standards. This structured approach helps create a
-              more reliable experience for clients who simply want to leave the mundane
-              chores to us and return to a clean, tidy property.
+              Our focus is 100% customer satisfaction, and we strive to meet it as a
+              benchmark. We simply want you to leave the mundane chores to us and return
+              to a clean, tidy property.
             </p>
           </div>
         </div>
