@@ -1,4 +1,4 @@
-import { SITE_EMAIL } from "@/lib/site";
+import { SITE_EMAIL, SITE_PHONE, SITE_PHONE_HREF } from "@/lib/site";
 
 export type NavItem = {
   label: string;
@@ -40,8 +40,8 @@ export const navServiceLinks =
 
 export const contactInfo = {
   email: SITE_EMAIL,
-  phone: "+44 12 3456 7890",
-  phoneHref: "tel:+441234567890",
+  phone: SITE_PHONE,
+  phoneHref: SITE_PHONE_HREF,
   address: "68 Granleigh Road, London E11 4RQ",
 };
 

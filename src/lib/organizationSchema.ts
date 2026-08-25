@@ -3,6 +3,7 @@ import {
   LOGO_URL,
   ORGANIZATION_ID,
   SITE_EMAIL,
+  SITE_PHONE_INTL,
   SITE_URL,
   WEBSITE_ID,
 } from "./site";
@@ -29,7 +30,7 @@ export const organizationSchema = {
       image: { "@id": LOGO_ID },
       description:
         "CL Cleaning Services London is a professional cleaning company based in Leytonstone, East London, offering gutter cleaning, carpet cleaning, end of tenancy cleaning and domestic cleaning services across London.",
-      telephone: "+44-12-3456-7890",
+      telephone: SITE_PHONE_INTL,
       email: SITE_EMAIL,
       priceRange: "££",
       currenciesAccepted: "GBP",
@@ -86,7 +87,7 @@ export const organizationSchema = {
       contactPoint: [
         {
           "@type": "ContactPoint",
-          telephone: "+44-12-3456-7890",
+          telephone: SITE_PHONE_INTL,
           contactType: "customer service",
           areaServed: "GB",
           availableLanguage: ["English"],
