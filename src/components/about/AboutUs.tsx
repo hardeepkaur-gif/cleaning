@@ -22,8 +22,8 @@ export default function AboutUs() {
               <span className={styles.frameAccent} aria-hidden />
               <div className={styles.imgMain}>
                 <img
-                  src={`${imgBase}/professional-cleaners-london-office.webp`}
-                  alt="Professional cleaners working in a modern London office space"
+                  src={`${imgBase}/professional-cleaning-homes-businesses.webp`}
+                  alt="Professional cleaner mopping a modern kitchen floor in a London home"
                   loading="lazy"
                 />
               </div>

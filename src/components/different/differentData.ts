@@ -71,4 +71,11 @@ export const differentList: DifferentItem[] = [
     imageAlt:
       "Flexible cleaning support for homes rentals offices and commercial premises in London",
   },
+  {
+    title: "Guaranteed End-of-Tenancy Cleaning",
+    text: "We offer a 14-day re-clean guarantee for end-of-tenancy cleaning if your landlord or letting agent is not satisfied with the cleaning.",
+    image: `${differentImgBase}/satisfaction-guarantee.webp`,
+    imageAlt:
+      "14-day re-clean guarantee for end of tenancy cleaning in London",
+  },
 ];
