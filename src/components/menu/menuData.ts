@@ -31,6 +31,7 @@ export const navItems: NavItem[] = [
       },
     ],
   },
+  { label: "Case Studies", href: "/case-studies" },
   { label: "Contact Us", href: "/contact-us" },
 ];
 
@@ -55,6 +56,7 @@ export const socialLinks = [
 export const footerQuickLinks = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
+  { label: "Case Studies", href: "/case-studies" },
   { label: "Contact Us", href: "/contact-us" },
 ];
 

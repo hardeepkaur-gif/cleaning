@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&display=swap");
+
+.section {
+  position: relative;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(14, 94, 91, 0.05) 0%, transparent 45%),
+    #f7f4f1;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 3vw, 24px);
+}
+
+.title {
+  margin: 0 0 28px;
+  font-family: var(--font-two);
+  font-size: clamp(26px, 3.2vw, 38px);
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--primary-dark);
+  text-align: center;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  overflow: hidden;
+  border-radius: 18px;
+  border: 1px solid rgba(14, 94, 91, 0.12);
+  background: var(--white);
+  box-shadow: 0 18px 48px rgba(10, 70, 68, 0.07);
+}
+
+.media {
+  position: relative;
+  min-height: 100%;
+  background: var(--tint);
+}
+
+.mediaImg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  object-fit: cover;
+}
+
+.mediaBadge {
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  z-index: 1;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(10, 70, 68, 0.92);
+  color: var(--white);
+  font-family: var(--font-two);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.quoteBody {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(28px, 4vw, 44px);
+}
+
+.quoteBody::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  width: 24px;
+  height: 24px;
+  border-top: 2px solid rgba(226, 106, 76, 0.5);
+  border-left: 2px solid rgba(226, 106, 76, 0.5);
+}
+
+.quoteBody::after {
+  content: "";
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  width: 24px;
+  height: 24px;
+  border-right: 2px solid rgba(226, 106, 76, 0.5);
+  border-bottom: 2px solid rgba(226, 106, 76, 0.5);
+}
+
+.quoteMark {
+  margin: 0 0 14px;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(42px, 5vw, 58px);
+  font-weight: 600;
+  line-height: 0.7;
+  color: var(--cta);
+  opacity: 0.65;
+}
+
+.quoteText {
+  margin: 0 0 24px;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(20px, 2.3vw, 26px);
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--primary-dark);
+}
+
+.authorRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--tint);
+  color: var(--primary);
+  font-family: var(--font-two);
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.authorMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.quoteAuthor {
+  margin: 0;
+  font-family: var(--font-two);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.quoteRole {
+  margin: 0;
+  font-family: var(--font-two);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+
+@media (max-width: 991px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .mediaImg {
+    min-height: 280px;
+  }
+
+  .title {
+    text-align: left;
+  }
+}
+
+@media (max-width: 575px) {
+  .quoteBody {
+    padding: 24px 20px;
+  }
+
+  .mediaImg {
+    min-height: 240px;
+  }
+}

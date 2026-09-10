@@ -19,9 +19,11 @@ CL Cleaning Services London is based at 68 Granleigh Road, London E11 4RQ. Phone
 - [Home](${SITE_URL}/): Overview of professional cleaning services for homes, landlords and businesses in London.
 - [Services](${SITE_URL}/services): Summary of all four core cleaning services offered across London.
 - [Contact Us](${SITE_URL}/contact-us): Free, no-obligation quotes by phone, email, WhatsApp or online form.
+- [Case Studies](${SITE_URL}/case-studies): Real cleaning jobs across East London, including mould removal and deep cleaning.
 
 ## Optional
 
+- [Mould Removal Case Study](${SITE_URL}/case-studies/mould-removal-deep-clean-canning-town): Urgent mould removal and deep clean in a Canning Town HMO bedroom.
 - [Privacy Policy](${SITE_URL}/privacy-policy): How personal information is collected, used and protected.
 - [Sitemap](${SITE_URL}/sitemap.xml): Machine-readable list of indexable pages on this website.
 - [Robots](${SITE_URL}/robots.txt): Crawler rules for search engines and bots.

@@ -172,3 +172,40 @@ export const gutterPageSchema = schemaGraph([
   }),
   faqPageNode("/gutter-cleaning-london", gutterFaqs),
 ]);
+
+export const caseStudiesIndexSchema = schemaGraph([
+  breadcrumbNode("/case-studies", [
+    homeCrumb,
+    { name: "Case Studies", path: "/case-studies" },
+  ]),
+  webPageNode({
+    path: "/case-studies",
+    name: "Case Studies | Cleaning Services London",
+    description:
+      "Read Cleaning Services London case studies from East London — including urgent mould removal and deep cleaning in Canning Town.",
+    type: "CollectionPage",
+  }),
+  itemListNode("/case-studies", "Cleaning Case Studies", [
+    {
+      name: "Mould Removal & Deep Clean In Canning Town, East London",
+      path: "/case-studies/mould-removal-deep-clean-canning-town",
+    },
+  ]),
+]);
+
+export const mouldRemovalCaseStudySchema = schemaGraph([
+  breadcrumbNode("/case-studies/mould-removal-deep-clean-canning-town", [
+    homeCrumb,
+    { name: "Case Studies", path: "/case-studies" },
+    {
+      name: "Mould Removal Canning Town",
+      path: "/case-studies/mould-removal-deep-clean-canning-town",
+    },
+  ]),
+  webPageNode({
+    path: "/case-studies/mould-removal-deep-clean-canning-town",
+    name: "Mould Removal & Deep Clean Case Study | Canning Town, East London",
+    description:
+      "Case study: urgent mould removal and deep clean in a Canning Town HMO bedroom. Contaminated storage unit removed, wall treated and room restored within hours.",
+  }),
+]);
