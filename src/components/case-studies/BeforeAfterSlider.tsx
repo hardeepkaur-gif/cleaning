@@ -9,25 +9,12 @@ import {
 } from "react";
 import defaultStyles from "./CaseStudyV2.module.css";
 
-type SliderStyles = {
-  slider: string;
-  sliderAfter: string;
-  sliderBeforeWrap: string;
-  sliderBefore: string;
-  sliderBadgeBefore: string;
-  sliderBadgeAfter: string;
-  sliderHandle: string;
-  sliderLine: string;
-  sliderKnob: string;
-  sliderRange: string;
-};
-
 type BeforeAfterSliderProps = {
   beforeSrc: string;
   afterSrc: string;
   beforeAlt: string;
   afterAlt: string;
-  styles?: SliderStyles;
+  styles?: Record<string, string>;
   className?: string;
   beforeLabel?: string;
   afterLabel?: string;
@@ -38,11 +25,12 @@ export default function BeforeAfterSlider({
   afterSrc,
   beforeAlt,
   afterAlt,
-  styles = defaultStyles,
+  styles: stylesProp,
   className,
   beforeLabel = "Before",
   afterLabel = "After",
 }: BeforeAfterSliderProps) {
+  const styles = stylesProp ?? (defaultStyles as Record<string, string>);
   const [position, setPosition] = useState(50);
   const [trackWidth, setTrackWidth] = useState(0);
   const trackRef = useRef<HTMLDivElement>(null);
