@@ -137,8 +137,9 @@
 .challengeImgWrap img {
   display: block;
   width: 100%;
-  height: 100%;
-  min-height: 320px;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
 }
 
@@ -169,25 +170,31 @@
   font-weight: 800;
   line-height: 1.25;
   color: var(--primary-dark);
+  text-align: center;
 }
 
 .snapshotGrid {
+  --snapshot-gap: clamp(10px, 1.2vw, 16px);
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(14px, 1.8vw, 20px);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: var(--snapshot-gap);
 }
 
 .snapshotCard {
   position: relative;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 14px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  flex: 1 1 0;
+  min-width: 0;
   min-height: 100%;
-  padding: clamp(18px, 2.2vw, 24px);
+  padding: clamp(16px, 1.6vw, 20px) clamp(12px, 1.2vw, 16px);
   border-radius: 18px;
   background: var(--white);
   border: 1px solid rgba(14, 94, 91, 0.1);
@@ -199,6 +206,7 @@
     transform 0.35s ease,
     box-shadow 0.35s ease,
     border-color 0.35s ease;
+  box-sizing: border-box;
 }
 
 .snapshotCard::before {
@@ -251,16 +259,17 @@
 .snapshotCardContent {
   flex: 1;
   min-width: 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
   gap: 6px;
-  min-height: 48px;
 }
 
 .snapshotCardLabel {
   font-family: var(--font-two);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -269,10 +278,11 @@
 
 .snapshotCardValue {
   font-family: var(--font-two);
-  font-size: clamp(14px, 1.35vw, 16px);
+  font-size: clamp(13px, 1.15vw, 15px);
   font-weight: 700;
-  line-height: 1.45;
+  line-height: 1.4;
   color: var(--primary-dark);
+  overflow-wrap: anywhere;
 }
 
 /* CTA */
@@ -318,6 +328,7 @@
   position: relative;
   z-index: 1;
   max-width: 640px;
+  min-width: 0;
 }
 
 .ctaTitle {
@@ -338,6 +349,7 @@
 .ctaAction {
   position: relative;
   z-index: 1;
+  flex-shrink: 0;
 }
 
 /* Listing card */
@@ -347,6 +359,18 @@
   gap: 24px;
   max-width: 760px;
   margin: 0 auto;
+}
+
+.listingGridTwo {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.listingGridTwo .listingCard {
+  grid-template-columns: 1fr;
 }
 
 .listingCard {
@@ -415,13 +439,26 @@
   color: var(--cta);
 }
 
+@media (max-width: 1199px) {
+  .snapshotGrid {
+    --snapshot-gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .snapshotCard {
+    flex: 0 1 calc((100% - (2 * var(--snapshot-gap))) / 3);
+    max-width: calc((100% - (2 * var(--snapshot-gap))) / 3);
+  }
+}
+
 @media (max-width: 991px) {
   .snapshotSection {
     margin-top: -12px;
   }
 
-  .snapshotGrid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .snapshotCard {
+    flex: 0 1 calc((100% - var(--snapshot-gap)) / 2);
+    max-width: calc((100% - var(--snapshot-gap)) / 2);
   }
 
   .challengeGrid {
@@ -436,10 +473,14 @@
   }
 
   .challengeImgWrap img {
-    min-height: 280px;
+    aspect-ratio: 16 / 10;
   }
 
   .listingCard {
+    grid-template-columns: 1fr;
+  }
+
+  .listingGridTwo {
     grid-template-columns: 1fr;
   }
 
@@ -449,19 +490,41 @@
   }
 }
 
+@media (max-width: 767px) {
+  .snapshotCard {
+    flex: 0 1 100%;
+    max-width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .snapshotCardContent {
+    align-items: flex-start;
+    min-height: 44px;
+    justify-content: center;
+  }
+
+  .ctaBanner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ctaAction :global(.thmBtn) {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 575px) {
   .snapshotSection {
     margin-top: 0;
   }
 
   .snapshotGrid {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-
-  .snapshotCard {
-    padding: 16px;
-    gap: 12px;
+    --snapshot-gap: 12px;
   }
 
   .snapshotIconWrap {
@@ -470,10 +533,6 @@
     min-width: 44px;
     min-height: 44px;
     font-size: 18px;
-  }
-
-  .snapshotCardContent {
-    min-height: 44px;
   }
 
   .snapshotCardValue {
@@ -485,7 +544,7 @@
   }
 
   .challengeImgWrap img {
-    min-height: 240px;
+    aspect-ratio: 16 / 10;
   }
 }
 

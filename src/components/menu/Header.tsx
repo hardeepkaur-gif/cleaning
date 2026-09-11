@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {
   FaEnvelope,
   FaPhoneAlt,
@@ -23,14 +24,29 @@ const socialIconMap = {
   linkedin: FaLinkedinIn,
 } as const;
 
+function isNavItemActive(
+  pathname: string,
+  href: string,
+  children?: { href: string }[],
+) {
+  if (href === "/") return pathname === "/";
+  if (pathname === href || pathname.startsWith(`${href}/`)) return true;
+  return Boolean(
+    children?.some(
+      (child) =>
+        pathname === child.href || pathname.startsWith(`${child.href}/`),
+    ),
+  );
+}
+
 type NavLinksProps = {
-  activeId: string;
+  pathname: string;
   mobileOpen?: boolean;
   onLinkClick?: () => void;
   sticky?: boolean;
 };
 
-function NavLinks({ activeId, mobileOpen, onLinkClick, sticky }: NavLinksProps) {
+function NavLinks({ pathname, mobileOpen, onLinkClick, sticky }: NavLinksProps) {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   return (
@@ -38,9 +54,8 @@ function NavLinks({ activeId, mobileOpen, onLinkClick, sticky }: NavLinksProps) 
       className={`${styles.list} ${mobileOpen ? styles.listOpen : ""} ${sticky ? styles.listSticky : ""}`}
     >
       {navItems.map((item) => {
-        const sectionId = item.href.replace("#", "");
-        const isActive = activeId === sectionId;
         const hasChildren = Boolean(item.children?.length);
+        const isActive = isNavItemActive(pathname, item.href, item.children);
 
         return (
           <li
@@ -53,24 +68,37 @@ function NavLinks({ activeId, mobileOpen, onLinkClick, sticky }: NavLinksProps) 
               onClick={(e) => {
                 if (hasChildren && window.innerWidth <= 991) {
                   e.preventDefault();
-                  setOpenDropdown(openDropdown === item.label ? null : item.label);
+                  setOpenDropdown(
+                    openDropdown === item.label ? null : item.label,
+                  );
                 } else {
                   onLinkClick?.();
                 }
               }}
             >
               {item.label}
-              {hasChildren && <FaChevronDown className={styles.dropdownIcon} aria-hidden />}
+              {hasChildren && (
+                <FaChevronDown className={styles.dropdownIcon} aria-hidden />
+              )}
             </a>
             {hasChildren && (
               <ul>
-                {item.children!.map((child) => (
-                  <li key={child.label}>
-                    <a href={child.href} onClick={onLinkClick}>
-                      {child.label}
-                    </a>
-                  </li>
-                ))}
+                {item.children!.map((child) => {
+                  const childActive =
+                    pathname === child.href ||
+                    pathname.startsWith(`${child.href}/`);
+                  return (
+                    <li key={child.label}>
+                      <a
+                        href={child.href}
+                        className={childActive ? styles.subLinkActive : ""}
+                        onClick={onLinkClick}
+                      >
+                        {child.label}
+                      </a>
+                    </li>
+                  );
+                })}
               </ul>
             )}
           </li>
@@ -81,12 +109,12 @@ function NavLinks({ activeId, mobileOpen, onLinkClick, sticky }: NavLinksProps) 
 }
 
 function MenuBar({
-  activeId,
+  pathname,
   sticky = false,
   mobileOpen,
   setMobileOpen,
 }: {
-  activeId: string;
+  pathname: string;
   sticky?: boolean;
   mobileOpen: boolean;
   setMobileOpen: (v: boolean) => void;
@@ -95,7 +123,11 @@ function MenuBar({
     <div className={styles.wrapper}>
       <div className={styles.wrapperInner}>
         <div className={styles.left}>
-          <Link href="/" className={styles.logo} onClick={() => setMobileOpen(false)}>
+          <Link
+            href="/"
+            className={styles.logo}
+            onClick={() => setMobileOpen(false)}
+          >
             <img
               src="/images/logo.webp"
               alt="Cleaning Services London"
@@ -124,7 +156,7 @@ function MenuBar({
             </button>
           )}
           <NavLinks
-            activeId={activeId}
+            pathname={pathname}
             mobileOpen={mobileOpen}
             onLinkClick={() => setMobileOpen(false)}
             sticky={sticky}
@@ -133,7 +165,11 @@ function MenuBar({
 
         <div className={styles.right}>
           <div className={styles.call}>
-            <div className={styles.callIcon} role="img" aria-label="Call anytime phone icon">
+            <div
+              className={styles.callIcon}
+              role="img"
+              aria-label="Call anytime phone icon"
+            >
               <FaPhoneAlt aria-hidden />
             </div>
             <div className={styles.callContent}>
@@ -154,24 +190,15 @@ function MenuBar({
 }
 
 export default function Header() {
+  const pathname = usePathname() || "/";
   const [sticky, setSticky] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [activeId, setActiveId] = useState("home");
 
   useEffect(() => {
     const onScroll = () => {
       const headerEl = document.getElementById("main-header");
       const threshold = headerEl ? headerEl.offsetHeight + 100 : 200;
       setSticky(window.scrollY > threshold);
-
-      const sections = document.querySelectorAll<HTMLElement>("section[id]");
-      let current = "home";
-      sections.forEach((section) => {
-        if (window.scrollY >= section.offsetTop - 200) {
-          current = section.id;
-        }
-      });
-      setActiveId(current);
     };
 
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -194,17 +221,27 @@ export default function Header() {
             <div className={styles.topInner}>
               <ul className={styles.contactList}>
                 <li>
-                  <span className={styles.contactIcon} role="img" aria-label="Email contact icon">
+                  <span
+                    className={styles.contactIcon}
+                    role="img"
+                    aria-label="Email contact icon"
+                  >
                     <FaEnvelope aria-hidden />
                   </span>
                   <span className={styles.contactText}>
                     <p>
-                      <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
+                      <a href={`mailto:${contactInfo.email}`}>
+                        {contactInfo.email}
+                      </a>
                     </p>
                   </span>
                 </li>
                 <li>
-                  <span className={styles.contactIcon} role="img" aria-label="Phone contact icon">
+                  <span
+                    className={styles.contactIcon}
+                    role="img"
+                    aria-label="Phone contact icon"
+                  >
                     <FaPhoneAlt aria-hidden />
                   </span>
                   <span className={styles.contactText}>
@@ -214,7 +251,11 @@ export default function Header() {
                   </span>
                 </li>
                 <li>
-                  <span className={styles.contactIcon} role="img" aria-label="Office address location icon">
+                  <span
+                    className={styles.contactIcon}
+                    role="img"
+                    aria-label="Office address location icon"
+                  >
                     <FaMapMarkerAlt aria-hidden />
                   </span>
                   <span className={styles.contactText}>
@@ -229,7 +270,11 @@ export default function Header() {
                   {socialLinks.map((link) => {
                     const Icon = socialIconMap[link.icon];
                     return (
-                      <a key={link.label} href={link.href} aria-label={link.label}>
+                      <a
+                        key={link.label}
+                        href={link.href}
+                        aria-label={link.label}
+                      >
                         <Icon />
                       </a>
                     );
@@ -240,16 +285,18 @@ export default function Header() {
           </div>
 
           <MenuBar
-            activeId={activeId}
+            pathname={pathname}
             mobileOpen={mobileOpen}
             setMobileOpen={setMobileOpen}
           />
         </nav>
       </header>
 
-      <div className={`${styles.stickyHeader} ${sticky ? styles.stickyVisible : ""}`}>
+      <div
+        className={`${styles.stickyHeader} ${sticky ? styles.stickyVisible : ""}`}
+      >
         <MenuBar
-          activeId={activeId}
+          pathname={pathname}
           sticky
           mobileOpen={false}
           setMobileOpen={setMobileOpen}

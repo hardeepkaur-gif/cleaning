@@ -5,7 +5,24 @@ import {
   caseStudyPath,
   caseStudySnapshot,
 } from "./caseStudyData";
+import { caseStudyV2Path } from "./caseStudyV2Data";
 import styles from "./CaseStudy.module.css";
+
+const listings = [
+  {
+    href: caseStudyPath,
+    badge: "Design A",
+    title: `${caseStudyHero.titleLead} ${caseStudyHero.titleAccent} ${caseStudyHero.titleTrail}`,
+    description: caseStudyMeta.description,
+  },
+  {
+    href: caseStudyV2Path,
+    badge: "Design B",
+    title: `${caseStudyHero.titleLead} ${caseStudyHero.titleAccent} ${caseStudyHero.titleTrail}`,
+    description:
+      "Same Canning Town mould removal case study in an alternate CleanSpaces-style layout for side-by-side design comparison.",
+  },
+];
 
 export default function CaseStudiesList() {
   return (
@@ -18,31 +35,30 @@ export default function CaseStudiesList() {
           </h2>
           <p className={`${styles.text} ${styles.listingIntro}`}>
             Practical examples of how Cleaning Services London handles urgent
-            domestic cleaning challenges across East London.
+            domestic cleaning challenges across East London. Compare Design A and
+            Design B for the same Canning Town job.
           </p>
         </header>
 
-        <div className={styles.listingGrid}>
-          <Link href={caseStudyPath} className={styles.listingCard}>
-            <img
-              className={styles.listingImg}
-              src="/images/case-studies/case-studies-card-mould.webp"
-              alt="Mould removal and deep clean case study in Canning Town"
-              loading="lazy"
-            />
-            <div className={styles.listingBody}>
-              <p className={styles.listingMeta}>
-                {caseStudySnapshot.items[0].value} ·{" "}
-                {caseStudySnapshot.items[2].value}
-              </p>
-              <h3 className={styles.listingTitle}>
-                {caseStudyHero.titleLead} {caseStudyHero.titleAccent}{" "}
-                {caseStudyHero.titleTrail}
-              </h3>
-              <p className={styles.listingText}>{caseStudyMeta.description}</p>
-              <span className={styles.listingLink}>Read case study →</span>
-            </div>
-          </Link>
+        <div className={styles.listingGridTwo}>
+          {listings.map((item) => (
+            <Link key={item.href} href={item.href} className={styles.listingCard}>
+              <img
+                className={styles.listingImg}
+                src="/images/case-studies/case-studies-card-mould.webp"
+                alt="Mould removal and deep clean case study in Canning Town"
+                loading="lazy"
+              />
+              <div className={styles.listingBody}>
+                <p className={styles.listingMeta}>
+                  {item.badge} · {caseStudySnapshot.items[0].value}
+                </p>
+                <h3 className={styles.listingTitle}>{item.title}</h3>
+                <p className={styles.listingText}>{item.description}</p>
+                <span className={styles.listingLink}>Read case study →</span>
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
     </section>

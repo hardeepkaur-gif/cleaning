@@ -31,7 +31,24 @@ export const navItems: NavItem[] = [
       },
     ],
   },
-  { label: "Case Studies", href: "/case-studies" },
+  {
+    label: "Case Studies",
+    href: "/case-studies",
+    children: [
+      {
+        label: "All Case Studies",
+        href: "/case-studies",
+      },
+      {
+        label: "Mould Removal – Design A",
+        href: "/case-studies/mould-removal-deep-clean-canning-town",
+      },
+      {
+        label: "Mould Removal – Design B",
+        href: "/case-studies/mould-removal-deep-clean-canning-town-v2",
+      },
+    ],
+  },
   { label: "Contact Us", href: "/contact-us" },
 ];
 

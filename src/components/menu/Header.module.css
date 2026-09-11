@@ -274,7 +274,7 @@
   top: 100%;
   left: 0;
   background: var(--white);
-  min-width: 240px;
+  min-width: 280px;
   padding: 20px 25px;
   border-bottom-left-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
@@ -314,6 +314,11 @@
 .list > li > ul li a:hover {
   color: var(--primary);
   padding-left: 8px;
+}
+
+.list > li > ul li a.subLinkActive {
+  color: var(--primary);
+  font-weight: 700;
 }
 
 /* Call box */

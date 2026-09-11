@@ -19,6 +19,11 @@ const publicRoutes: Array<{
     changeFrequency: "yearly",
     priority: 0.6,
   },
+  {
+    path: "/case-studies/mould-removal-deep-clean-canning-town-v2",
+    changeFrequency: "yearly",
+    priority: 0.6,
+  },
   { path: "/privacy-policy", changeFrequency: "yearly", priority: 0.3 },
 ];
 

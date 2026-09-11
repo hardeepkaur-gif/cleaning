@@ -187,8 +187,12 @@ export const caseStudiesIndexSchema = schemaGraph([
   }),
   itemListNode("/case-studies", "Cleaning Case Studies", [
     {
-      name: "Mould Removal & Deep Clean In Canning Town, East London",
+      name: "Mould Removal & Deep Clean In Canning Town, East London (Design A)",
       path: "/case-studies/mould-removal-deep-clean-canning-town",
+    },
+    {
+      name: "Mould Removal & Deep Clean In Canning Town, East London (Design B)",
+      path: "/case-studies/mould-removal-deep-clean-canning-town-v2",
     },
   ]),
 ]);
@@ -207,5 +211,22 @@ export const mouldRemovalCaseStudySchema = schemaGraph([
     name: "Mould Removal & Deep Clean Case Study | Canning Town, East London",
     description:
       "Case study: urgent mould removal and deep clean in a Canning Town HMO bedroom. Contaminated storage unit removed, wall treated and room restored within hours.",
+  }),
+]);
+
+export const mouldRemovalCaseStudyV2Schema = schemaGraph([
+  breadcrumbNode("/case-studies/mould-removal-deep-clean-canning-town-v2", [
+    homeCrumb,
+    { name: "Case Studies", path: "/case-studies" },
+    {
+      name: "Mould Removal Canning Town Design B",
+      path: "/case-studies/mould-removal-deep-clean-canning-town-v2",
+    },
+  ]),
+  webPageNode({
+    path: "/case-studies/mould-removal-deep-clean-canning-town-v2",
+    name: "Mould Removal & Deep Clean Case Study (Design B) | Canning Town",
+    description:
+      "Alternate design: urgent mould removal and deep clean case study in a Canning Town HMO bedroom.",
   }),
 ]);

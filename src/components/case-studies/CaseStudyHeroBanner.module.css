@@ -2,10 +2,10 @@
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  min-height: clamp(420px, 62vh, 560px);
+  min-height: 0;
   display: flex;
   align-items: center;
-  padding: clamp(56px, 8vw, 96px) 0 !important;
+  padding: clamp(48px, 7vw, 88px) 0 !important;
   background: #000000;
 }
 
@@ -186,11 +186,11 @@
 
 @media (max-width: 991px) {
   .hero {
-    min-height: 460px;
+    padding: clamp(44px, 7vw, 64px) 0 !important;
   }
 
   .bgImage {
-    object-position: 65% center;
+    object-position: center center;
   }
 
   .cornerIcon {
@@ -199,12 +199,20 @@
     width: 34px;
     height: 34px;
   }
+
+  .title span::before {
+    bottom: 4px;
+    height: 4px;
+  }
 }
 
 @media (max-width: 575px) {
   .hero {
-    min-height: 420px;
-    padding: 48px 0 !important;
+    padding: 40px 0 !important;
+  }
+
+  .subtitle {
+    max-width: none;
   }
 
   .actions {
@@ -213,5 +221,10 @@
 
   .actions :global(.thmBtn) {
     width: 100%;
+  }
+
+  .bubble,
+  .cornerIcon {
+    display: none;
   }
 }

@@ -25,6 +25,7 @@ import approachStyles from "./CaseStudyApproach.module.css";
 import resultStyles from "./CaseStudyResult.module.css";
 import quoteStyles from "./CaseStudyQuote.module.css";
 import beforeAfterStyles from "./CaseStudyBeforeAfter.module.css";
+import BeforeAfterSlider from "./BeforeAfterSlider";
 
 const snapshotIcons = {
   location: FaMapMarkerAlt,
@@ -187,58 +188,29 @@ export default function CaseStudyContent() {
           </p>
 
           <div className={beforeAfterStyles.heroCompare}>
-            <figure className={beforeAfterStyles.heroFigure}>
-              <span className={beforeAfterStyles.badge}>
-                {caseStudyBeforeAfter.before.label}
-              </span>
-              <img
-                className={beforeAfterStyles.heroImg}
-                src={caseStudyBeforeAfter.before.src}
-                alt={caseStudyBeforeAfter.before.alt}
-                loading="lazy"
-              />
-            </figure>
-            <figure className={beforeAfterStyles.heroFigure}>
-              <span
-                className={`${beforeAfterStyles.badge} ${beforeAfterStyles.badgeAfter}`}
-              >
-                {caseStudyBeforeAfter.after.label}
-              </span>
-              <img
-                className={beforeAfterStyles.heroImg}
-                src={caseStudyBeforeAfter.after.src}
-                alt={caseStudyBeforeAfter.after.alt}
-                loading="lazy"
-              />
-            </figure>
+            <BeforeAfterSlider
+              beforeSrc={caseStudyBeforeAfter.before.src}
+              afterSrc={caseStudyBeforeAfter.after.src}
+              beforeAlt={caseStudyBeforeAfter.before.alt}
+              afterAlt={caseStudyBeforeAfter.after.alt}
+              beforeLabel={caseStudyBeforeAfter.before.label}
+              afterLabel={caseStudyBeforeAfter.after.label}
+              styles={beforeAfterStyles}
+            />
           </div>
 
           <div className={beforeAfterStyles.detailsGrid}>
             {caseStudyBeforeAfter.details.map((item) => (
               <article key={item.title} className={beforeAfterStyles.detailCard}>
                 <div className={beforeAfterStyles.detailPair}>
-                  <figure className={beforeAfterStyles.detailFigure}>
-                    <span className={beforeAfterStyles.detailBadge}>Before</span>
-                    <img
-                      className={beforeAfterStyles.detailImg}
-                      src={item.beforeSrc}
-                      alt={item.beforeAlt}
-                      loading="lazy"
-                    />
-                  </figure>
-                  <figure className={beforeAfterStyles.detailFigure}>
-                    <span
-                      className={`${beforeAfterStyles.detailBadge} ${beforeAfterStyles.detailBadgeAfter}`}
-                    >
-                      After
-                    </span>
-                    <img
-                      className={beforeAfterStyles.detailImg}
-                      src={item.afterSrc}
-                      alt={item.afterAlt}
-                      loading="lazy"
-                    />
-                  </figure>
+                  <BeforeAfterSlider
+                    beforeSrc={item.beforeSrc}
+                    afterSrc={item.afterSrc}
+                    beforeAlt={item.beforeAlt}
+                    afterAlt={item.afterAlt}
+                    styles={beforeAfterStyles}
+                    className={beforeAfterStyles.detailSlider}
+                  />
                 </div>
                 <h3 className={beforeAfterStyles.detailTitle}>{item.title}</h3>
                 <p className={beforeAfterStyles.detailCaption}>{item.caption}</p>

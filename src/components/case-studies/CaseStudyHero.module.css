@@ -151,20 +151,26 @@
 @media (max-width: 991px) {
   .container {
     grid-template-columns: 1fr;
-    gap: 36px;
+    gap: 28px;
   }
 
   .title {
     max-width: none;
   }
 
+  .title span::before {
+    bottom: 4px;
+    height: 4px;
+  }
+
   .visual {
     order: 2;
-    min-height: 320px;
+    min-height: 0;
+    padding-block: 4px 8px;
   }
 
   .phone {
-    width: min(52%, 210px);
+    width: min(48%, 200px);
   }
 
   .copy {
@@ -173,6 +179,10 @@
 }
 
 @media (max-width: 575px) {
+  .hero {
+    padding: clamp(28px, 6vw, 40px) 0 clamp(32px, 6vw, 48px);
+  }
+
   .actions {
     flex-direction: column;
     align-items: stretch;
@@ -184,11 +194,11 @@
   }
 
   .phone {
-    width: min(58%, 200px);
+    width: min(58%, 180px);
   }
 
   .visual {
-    min-height: 300px;
+    min-height: 0;
   }
 }
 
