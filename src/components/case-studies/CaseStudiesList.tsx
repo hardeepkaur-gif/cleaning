@@ -6,6 +6,22 @@ import {
   caseStudySnapshot,
 } from "./caseStudyData";
 import { caseStudyV2Path } from "./caseStudyV2Data";
+import {
+  bathroomCaseStudyDesignA,
+  bathroomCaseStudyPath,
+} from "./bathroomCaseStudyData";
+import {
+  gardenCaseStudyDesignA,
+  gardenCaseStudyPath,
+} from "./gardenCaseStudyData";
+import {
+  gardenCleanupCaseStudyDesignA,
+  gardenCleanupCaseStudyPath,
+} from "./gardenCleanupCaseStudyData";
+import {
+  bathroomMouldCaseStudyDesignA,
+  bathroomMouldCaseStudyPath,
+} from "./bathroomMouldCaseStudyData";
 import styles from "./CaseStudy.module.css";
 
 const listings = [
@@ -14,6 +30,9 @@ const listings = [
     badge: "Design A",
     title: `${caseStudyHero.titleLead} ${caseStudyHero.titleAccent} ${caseStudyHero.titleTrail}`,
     description: caseStudyMeta.description,
+    image: "/images/case-studies/case-studies-card-mould.webp",
+    imageAlt: "Mould removal and deep clean case study in Canning Town",
+    location: caseStudySnapshot.items[0].value,
   },
   {
     href: caseStudyV2Path,
@@ -21,6 +40,49 @@ const listings = [
     title: `${caseStudyHero.titleLead} ${caseStudyHero.titleAccent} ${caseStudyHero.titleTrail}`,
     description:
       "Same Canning Town mould removal case study in an alternate CleanSpaces-style layout for side-by-side design comparison.",
+    image: "/images/case-studies/case-studies-card-mould.webp",
+    imageAlt: "Mould removal case study Design B in Canning Town",
+    location: caseStudySnapshot.items[0].value,
+  },
+  {
+    href: bathroomCaseStudyPath,
+    badge: "Design A",
+    title: `${bathroomCaseStudyDesignA.hero.titleLead} ${bathroomCaseStudyDesignA.hero.titleAccent} ${bathroomCaseStudyDesignA.hero.titleTrail}`,
+    description: bathroomCaseStudyDesignA.meta.description,
+    image: "/images/case-studies/bathroom-deep-clean-hero.webp",
+    imageAlt:
+      "Bathroom deep clean case study after mould inspection in Canning Town",
+    location: bathroomCaseStudyDesignA.snapshot.items[0].value,
+  },
+  {
+    href: gardenCaseStudyPath,
+    badge: "Design A",
+    title: `${gardenCaseStudyDesignA.hero.titleLead} ${gardenCaseStudyDesignA.hero.titleAccent} ${gardenCaseStudyDesignA.hero.titleTrail}`,
+    description: gardenCaseStudyDesignA.meta.description,
+    image: "/images/case-studies/garden-fence-clearance-hero.webp",
+    imageAlt:
+      "Garden and fence-line clearance case study in Canning Town",
+    location: gardenCaseStudyDesignA.snapshot.items[0].value,
+  },
+  {
+    href: gardenCleanupCaseStudyPath,
+    badge: "Design A",
+    title: `${gardenCleanupCaseStudyDesignA.hero.titleLead} ${gardenCleanupCaseStudyDesignA.hero.titleAccent} ${gardenCleanupCaseStudyDesignA.hero.titleTrail}`,
+    description: gardenCleanupCaseStudyDesignA.meta.description,
+    image: "/images/case-studies/garden-cleanup-hero.webp",
+    imageAlt:
+      "Garden clean-up and clothesline case study on Ashford Road, London",
+    location: gardenCleanupCaseStudyDesignA.snapshot.items[0].value,
+  },
+  {
+    href: bathroomMouldCaseStudyPath,
+    badge: "Design A",
+    title: `${bathroomMouldCaseStudyDesignA.hero.titleLead} ${bathroomMouldCaseStudyDesignA.hero.titleAccent} ${bathroomMouldCaseStudyDesignA.hero.titleTrail}`,
+    description: bathroomMouldCaseStudyDesignA.meta.description,
+    image: "/images/case-studies/bathroom-mould-blackwall-hero.webp",
+    imageAlt:
+      "Bathroom mould treatment case study in Blackwall, Canary Wharf",
+    location: bathroomMouldCaseStudyDesignA.snapshot.items[0].value,
   },
 ];
 
@@ -34,9 +96,9 @@ export default function CaseStudiesList() {
             Recent Cleaning Case Studies
           </h2>
           <p className={`${styles.text} ${styles.listingIntro}`}>
-            Practical examples of how Cleaning Services London handles urgent
-            domestic cleaning challenges across East London. Compare Design A and
-            Design B for the same Canning Town job.
+            Practical examples of how Cleaning Services London handles domestic
+            cleaning challenges across London — from mould treatment and bathroom
+            deep cleans to garden clearance and clothesline installs.
           </p>
         </header>
 
@@ -45,13 +107,13 @@ export default function CaseStudiesList() {
             <Link key={item.href} href={item.href} className={styles.listingCard}>
               <img
                 className={styles.listingImg}
-                src="/images/case-studies/case-studies-card-mould.webp"
-                alt="Mould removal and deep clean case study in Canning Town"
+                src={item.image}
+                alt={item.imageAlt}
                 loading="lazy"
               />
               <div className={styles.listingBody}>
                 <p className={styles.listingMeta}>
-                  {item.badge} · {caseStudySnapshot.items[0].value}
+                  {item.badge} · {item.location}
                 </p>
                 <h3 className={styles.listingTitle}>{item.title}</h3>
                 <p className={styles.listingText}>{item.description}</p>

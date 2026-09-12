@@ -1,3 +1,98 @@
+export type CaseStudySnapshotIcon =
+  | "location"
+  | "property"
+  | "services"
+  | "team"
+  | "duration";
+
+export type CaseStudyDesignAData = {
+  path: string;
+  meta: {
+    title: string;
+    description: string;
+  };
+  hero: {
+    badge: string;
+    titleLead: string;
+    titleAccent: string;
+    titleTrail: string;
+    primaryCta: { label: string; href: string };
+    phoneImage: string;
+    phoneImageAlt: string;
+  };
+  heroBanner: {
+    badge: string;
+    titleLead: string;
+    titleAccent: string;
+    titleTrail: string;
+    subtitle: string;
+    primaryCta: { label: string; href: string };
+    backgroundImage: string;
+    backgroundImageAlt: string;
+  };
+  snapshot: {
+    title: string;
+    items: {
+      label: string;
+      value: string;
+      icon: CaseStudySnapshotIcon;
+    }[];
+  };
+  challenge: {
+    title: string;
+    paragraphs: string[];
+    image?: { src: string; alt: string };
+  };
+  approach: {
+    title: string;
+    intro: string;
+    steps: string[];
+    sealValue: string;
+    sealLabel: string;
+    sealAlt: string;
+    image?: { src: string; alt: string };
+    imageSecondary?: { src: string; alt: string };
+  };
+  beforeAfter: {
+    title: string;
+    subtitle: string;
+    before: { label: string; src: string; alt: string };
+    after: { label: string; src: string; alt: string };
+    details: {
+      title: string;
+      caption: string;
+      beforeSrc: string;
+      afterSrc: string;
+      beforeAlt: string;
+      afterAlt: string;
+    }[];
+  };
+  result: {
+    badge: string;
+    title: string;
+    description: string;
+    image: { src: string; alt: string };
+    cta: { label: string; href: string };
+    highlight: { value: string; label: string };
+    satisfaction: { value: string; label: string };
+    experience: { label: string; value: string };
+    extras: { value: string; label: string }[];
+  };
+  quote: {
+    title: string;
+    text: string;
+    author: string;
+    role: string;
+    image: { src: string; alt: string };
+  };
+  cta: {
+    title: string;
+    button: string;
+    href: string;
+    text: string;
+  };
+};
+
 export const caseStudyPath =
   "/case-studies/mould-removal-deep-clean-canning-town";
 
@@ -80,6 +175,9 @@ export const caseStudyApproach = {
     "Wall photographed and filmed for the landlord's records.",
     "Final inspection and checklist sign-off",
   ],
+  sealValue: "3h",
+  sealLabel: "Done",
+  sealAlt: "Job completed within approximately 3 hours",
 };
 
 export const caseStudyBeforeAfter = {
@@ -168,4 +266,19 @@ export const caseStudyCta = {
   title: "Facing a Similar Issue?",
   button: "Get a Free Quote",
   href: "/contact-us",
+  text: "Speak with our team for a free quotation if you need urgent mould removal, deep cleaning or domestic cleaning support in East London.",
+};
+
+export const mouldCaseStudyDesignA: CaseStudyDesignAData = {
+  path: caseStudyPath,
+  meta: caseStudyMeta,
+  hero: caseStudyHero,
+  heroBanner: caseStudyHeroBanner,
+  snapshot: caseStudySnapshot,
+  challenge: caseStudyChallenge,
+  approach: caseStudyApproach,
+  beforeAfter: caseStudyBeforeAfter,
+  result: caseStudyResult,
+  quote: caseStudyQuote,
+  cta: caseStudyCta,
 };

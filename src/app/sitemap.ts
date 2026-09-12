@@ -24,6 +24,26 @@ const publicRoutes: Array<{
     changeFrequency: "yearly",
     priority: 0.6,
   },
+  {
+    path: "/case-studies/bathroom-deep-clean-canning-town",
+    changeFrequency: "yearly",
+    priority: 0.6,
+  },
+  {
+    path: "/case-studies/garden-fence-line-clearance-canning-town",
+    changeFrequency: "yearly",
+    priority: 0.6,
+  },
+  {
+    path: "/case-studies/garden-cleanup-clothesline-ashford-road",
+    changeFrequency: "yearly",
+    priority: 0.6,
+  },
+  {
+    path: "/case-studies/bathroom-mould-treatment-blackwall",
+    changeFrequency: "yearly",
+    priority: 0.6,
+  },
   { path: "/privacy-policy", changeFrequency: "yearly", priority: 0.3 },
 ];
 

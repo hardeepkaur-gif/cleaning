@@ -47,6 +47,22 @@ export const navItems: NavItem[] = [
         label: "Mould Removal – Design B",
         href: "/case-studies/mould-removal-deep-clean-canning-town-v2",
       },
+      {
+        label: "Bathroom Deep Clean",
+        href: "/case-studies/bathroom-deep-clean-canning-town",
+      },
+      {
+        label: "Garden Fence-Line Clearance",
+        href: "/case-studies/garden-fence-line-clearance-canning-town",
+      },
+      {
+        label: "Garden Clean-up & Clothesline",
+        href: "/case-studies/garden-cleanup-clothesline-ashford-road",
+      },
+      {
+        label: "Bathroom Mould Treatment",
+        href: "/case-studies/bathroom-mould-treatment-blackwall",
+      },
     ],
   },
   { label: "Contact Us", href: "/contact-us" },

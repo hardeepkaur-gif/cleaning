@@ -1,18 +1,27 @@
 import { FaArrowRight, FaSprayCan } from "react-icons/fa";
 import ThmButton from "@/components/menu/ThmButton";
-import { caseStudyHeroBanner } from "./caseStudyData";
+import {
+  mouldCaseStudyDesignA,
+  type CaseStudyDesignAData,
+} from "./caseStudyData";
 import styles from "./CaseStudyHeroBanner.module.css";
 
-export default function CaseStudyHeroBanner() {
+type CaseStudyHeroBannerProps = {
+  data?: CaseStudyDesignAData["heroBanner"];
+};
+
+export default function CaseStudyHeroBanner({
+  data = mouldCaseStudyDesignA.heroBanner,
+}: CaseStudyHeroBannerProps) {
   return (
     <section
       className={styles.hero}
-      aria-labelledby="case-study-banner-title"
+      aria-labelledby="case-study-page-title"
     >
       <div className={styles.media} aria-hidden>
         <img
           className={styles.bgImage}
-          src={caseStudyHeroBanner.backgroundImage}
+          src={data.backgroundImage}
           alt=""
         />
         <div className={styles.overlay} />
@@ -30,20 +39,18 @@ export default function CaseStudyHeroBanner() {
             <span className={styles.badgeIcon} aria-hidden>
               <FaSprayCan />
             </span>
-            {caseStudyHeroBanner.badge}
+            {data.badge}
           </span>
 
-          <h2 className={styles.title} id="case-study-banner-title">
-            {caseStudyHeroBanner.titleLead}{" "}
-            <span>{caseStudyHeroBanner.titleAccent}</span>{" "}
-            {caseStudyHeroBanner.titleTrail}
-          </h2>
+          <h1 className={styles.title} id="case-study-page-title">
+            {data.titleLead} <span>{data.titleAccent}</span> {data.titleTrail}
+          </h1>
 
-          <p className={styles.subtitle}>{caseStudyHeroBanner.subtitle}</p>
+          <p className={styles.subtitle}>{data.subtitle}</p>
 
           <div className={styles.actions}>
-            <ThmButton href={caseStudyHeroBanner.primaryCta.href}>
-              {caseStudyHeroBanner.primaryCta.label}
+            <ThmButton href={data.primaryCta.href}>
+              {data.primaryCta.label}
               <FaArrowRight aria-hidden />
             </ThmButton>
           </div>

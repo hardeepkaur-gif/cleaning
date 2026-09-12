@@ -182,7 +182,7 @@ export const caseStudiesIndexSchema = schemaGraph([
     path: "/case-studies",
     name: "Case Studies | Cleaning Services London",
     description:
-      "Read Cleaning Services London case studies from East London — including urgent mould removal and deep cleaning in Canning Town.",
+      "Read Cleaning Services London case studies from East London — including urgent mould removal, bathroom deep cleaning, garden clearance and inspection follow-ups in Canning Town.",
     type: "CollectionPage",
   }),
   itemListNode("/case-studies", "Cleaning Case Studies", [
@@ -193,6 +193,22 @@ export const caseStudiesIndexSchema = schemaGraph([
     {
       name: "Mould Removal & Deep Clean In Canning Town, East London (Design B)",
       path: "/case-studies/mould-removal-deep-clean-canning-town-v2",
+    },
+    {
+      name: "Mould Inspection & Bathroom Deep Clean In Canning Town, East London",
+      path: "/case-studies/bathroom-deep-clean-canning-town",
+    },
+    {
+      name: "Garden and Fence-Line Clearance In Canning Town, East London",
+      path: "/case-studies/garden-fence-line-clearance-canning-town",
+    },
+    {
+      name: "Garden Clean-up & Clothesline on Ashford Road, London",
+      path: "/case-studies/garden-cleanup-clothesline-ashford-road",
+    },
+    {
+      name: "Bathroom Mould Treatment in Blackwall, Canary Wharf, London",
+      path: "/case-studies/bathroom-mould-treatment-blackwall",
     },
   ]),
 ]);
@@ -228,5 +244,73 @@ export const mouldRemovalCaseStudyV2Schema = schemaGraph([
     name: "Mould Removal & Deep Clean Case Study (Design B) | Canning Town",
     description:
       "Alternate design: urgent mould removal and deep clean case study in a Canning Town HMO bedroom.",
+  }),
+]);
+
+export const bathroomDeepCleanCaseStudySchema = schemaGraph([
+  breadcrumbNode("/case-studies/bathroom-deep-clean-canning-town", [
+    homeCrumb,
+    { name: "Case Studies", path: "/case-studies" },
+    {
+      name: "Bathroom Deep Clean Canning Town",
+      path: "/case-studies/bathroom-deep-clean-canning-town",
+    },
+  ]),
+  webPageNode({
+    path: "/case-studies/bathroom-deep-clean-canning-town",
+    name: "Bathroom Deep Clean Case Study | Mould Inspection, Canning Town",
+    description:
+      "Case study: mould inspection findings and bathroom deep clean in a Canning Town flat. Bathroom cleaned to standard with photographic proof within about 2 hours.",
+  }),
+]);
+
+export const gardenFenceClearanceCaseStudySchema = schemaGraph([
+  breadcrumbNode("/case-studies/garden-fence-line-clearance-canning-town", [
+    homeCrumb,
+    { name: "Case Studies", path: "/case-studies" },
+    {
+      name: "Garden Fence-Line Clearance Canning Town",
+      path: "/case-studies/garden-fence-line-clearance-canning-town",
+    },
+  ]),
+  webPageNode({
+    path: "/case-studies/garden-fence-line-clearance-canning-town",
+    name: "Garden and Fence-Line Clearance Case Study | Canning Town, East London",
+    description:
+      "Case study: same-day garden and fence-line clearance in Canning Town. Overgrown brambles cleared from the fence line, bike shed roof and bin store to restore safe access.",
+  }),
+]);
+
+export const gardenCleanupClotheslineCaseStudySchema = schemaGraph([
+  breadcrumbNode("/case-studies/garden-cleanup-clothesline-ashford-road", [
+    homeCrumb,
+    { name: "Case Studies", path: "/case-studies" },
+    {
+      name: "Garden Clean-up Ashford Road",
+      path: "/case-studies/garden-cleanup-clothesline-ashford-road",
+    },
+  ]),
+  webPageNode({
+    path: "/case-studies/garden-cleanup-clothesline-ashford-road",
+    name: "Garden Clean-up & Clothesline Case Study | Ashford Road, London",
+    description:
+      "Case study: front and back garden clean-up on Ashford Road, London, with rubbish cleared and a new PVC-coated steel clothes-drying line installed before re-letting.",
+  }),
+]);
+
+export const bathroomMouldTreatmentCaseStudySchema = schemaGraph([
+  breadcrumbNode("/case-studies/bathroom-mould-treatment-blackwall", [
+    homeCrumb,
+    { name: "Case Studies", path: "/case-studies" },
+    {
+      name: "Bathroom Mould Treatment Blackwall",
+      path: "/case-studies/bathroom-mould-treatment-blackwall",
+    },
+  ]),
+  webPageNode({
+    path: "/case-studies/bathroom-mould-treatment-blackwall",
+    name: "Bathroom Mould Treatment Case Study | Blackwall, Canary Wharf, London",
+    description:
+      "Case study: black mould treatment in a Blackwall bathroom near Canary Wharf. Same-day mould cleaning, tenant guidance, and a noted faulty extractor fan for follow-up.",
   }),
 ]);

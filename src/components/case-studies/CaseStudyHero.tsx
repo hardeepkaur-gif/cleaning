@@ -1,24 +1,31 @@
 import { FaArrowRight } from "react-icons/fa";
 import ThmButton from "@/components/menu/ThmButton";
-import { caseStudyHero } from "./caseStudyData";
+import {
+  mouldCaseStudyDesignA,
+  type CaseStudyDesignAData,
+} from "./caseStudyData";
 import styles from "./CaseStudyHero.module.css";
 
-export default function CaseStudyHero() {
+type CaseStudyHeroProps = {
+  data?: CaseStudyDesignAData["hero"];
+};
+
+export default function CaseStudyHero({
+  data = mouldCaseStudyDesignA.hero,
+}: CaseStudyHeroProps) {
   return (
     <section className={styles.hero} aria-labelledby="case-study-page-title">
       <div className={styles.container}>
         <div className={styles.copy}>
-          <span className={styles.badge}>{caseStudyHero.badge}</span>
+          <span className={styles.badge}>{data.badge}</span>
 
           <h1 className={styles.title} id="case-study-page-title">
-            {caseStudyHero.titleLead}{" "}
-            <span>{caseStudyHero.titleAccent}</span>{" "}
-            {caseStudyHero.titleTrail}
+            {data.titleLead} <span>{data.titleAccent}</span> {data.titleTrail}
           </h1>
 
           <div className={styles.actions}>
-            <ThmButton href={caseStudyHero.primaryCta.href}>
-              {caseStudyHero.primaryCta.label}
+            <ThmButton href={data.primaryCta.href}>
+              {data.primaryCta.label}
               <FaArrowRight aria-hidden />
             </ThmButton>
           </div>
@@ -29,10 +36,7 @@ export default function CaseStudyHero() {
           <div className={styles.phone}>
             <div className={styles.notch} aria-hidden />
             <div className={styles.screen}>
-              <img
-                src={caseStudyHero.phoneImage}
-                alt={caseStudyHero.phoneImageAlt}
-              />
+              <img src={data.phoneImage} alt={data.phoneImageAlt} />
             </div>
           </div>
         </div>

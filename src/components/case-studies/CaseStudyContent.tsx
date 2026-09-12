@@ -11,13 +11,8 @@ import {
 } from "react-icons/fa";
 import ThmButton from "@/components/menu/ThmButton";
 import {
-  caseStudyApproach,
-  caseStudyBeforeAfter,
-  caseStudyChallenge,
-  caseStudyCta,
-  caseStudyQuote,
-  caseStudyResult,
-  caseStudySnapshot,
+  mouldCaseStudyDesignA,
+  type CaseStudyDesignAData,
 } from "./caseStudyData";
 import styles from "./CaseStudy.module.css";
 import aboutStyles from "@/components/about/AboutUs.module.css";
@@ -37,7 +32,23 @@ const snapshotIcons = {
 
 const imgBase = "/images/about/cleanon";
 
-export default function CaseStudyContent() {
+type CaseStudyContentProps = {
+  data?: CaseStudyDesignAData;
+};
+
+export default function CaseStudyContent({
+  data = mouldCaseStudyDesignA,
+}: CaseStudyContentProps) {
+  const {
+    snapshot,
+    challenge,
+    approach,
+    beforeAfter,
+    result,
+    quote,
+    cta,
+  } = data;
+
   return (
     <>
       <section
@@ -46,11 +57,11 @@ export default function CaseStudyContent() {
       >
         <div className={styles.snapshotContainer}>
           <h2 className={styles.snapshotTitle} id="job-snapshot-title">
-            {caseStudySnapshot.title}
+            {snapshot.title}
           </h2>
 
           <ul className={styles.snapshotGrid}>
-            {caseStudySnapshot.items.map((item) => {
+            {snapshot.items.map((item) => {
               const Icon = snapshotIcons[item.icon];
               return (
                 <li key={item.label} className={styles.snapshotCard}>
@@ -77,9 +88,9 @@ export default function CaseStudyContent() {
             <div className={styles.challengeGrid}>
               <div className={styles.challengeCopy}>
                 <h2 className={styles.title} id="challenge-title">
-                  {caseStudyChallenge.title}
+                  {challenge.title}
                 </h2>
-                {caseStudyChallenge.paragraphs.map((paragraph) => (
+                {challenge.paragraphs.map((paragraph) => (
                   <p key={paragraph.slice(0, 40)} className={styles.challengeText}>
                     {paragraph}
                   </p>
@@ -89,8 +100,8 @@ export default function CaseStudyContent() {
               <div className={styles.challengeVisual}>
                 <div className={styles.challengeImgWrap}>
                   <img
-                    src={caseStudyBeforeAfter.before.src}
-                    alt={caseStudyBeforeAfter.before.alt}
+                    src={challenge.image?.src ?? beforeAfter.before.src}
+                    alt={challenge.image?.alt ?? beforeAfter.before.alt}
                     loading="lazy"
                   />
                 </div>
@@ -115,16 +126,20 @@ export default function CaseStudyContent() {
                 <span className={aboutStyles.frameAccent} aria-hidden />
                 <div className={aboutStyles.imgMain}>
                   <img
-                    src={caseStudyBeforeAfter.after.src}
-                    alt={caseStudyBeforeAfter.after.alt}
+                    src={approach.image?.src ?? beforeAfter.after.src}
+                    alt={approach.image?.alt ?? beforeAfter.after.alt}
                     loading="lazy"
                   />
                 </div>
 
                 <div className={aboutStyles.imgSecondary}>
                   <img
-                    src={caseStudyBeforeAfter.before.src}
-                    alt={caseStudyBeforeAfter.before.alt}
+                    src={
+                      approach.imageSecondary?.src ?? beforeAfter.before.src
+                    }
+                    alt={
+                      approach.imageSecondary?.alt ?? beforeAfter.before.alt
+                    }
                     loading="lazy"
                   />
                 </div>
@@ -139,11 +154,11 @@ export default function CaseStudyContent() {
                   />
                   <img
                     src={`${imgBase}/satisfaction-guarantee-badge-icon.webp`}
-                    alt="Job completed within approximately 3 hours"
+                    alt={approach.sealAlt}
                     loading="lazy"
                   />
-                  <strong>3h</strong>
-                  <span>Done</span>
+                  <strong>{approach.sealValue}</strong>
+                  <span>{approach.sealLabel}</span>
                 </div>
               </div>
             </div>
@@ -153,15 +168,15 @@ export default function CaseStudyContent() {
                 className={`${aboutStyles.title} ${approachStyles.title}`}
                 id="approach-title"
               >
-                {caseStudyApproach.title}
+                {approach.title}
               </h2>
 
               <blockquote className={aboutStyles.callout}>
-                <p>{caseStudyApproach.intro}</p>
+                <p>{approach.intro}</p>
               </blockquote>
 
               <ul className={approachStyles.points}>
-                {caseStudyApproach.steps.map((step) => (
+                {approach.steps.map((step) => (
                   <li key={step}>
                     <span className={approachStyles.pointIcon} aria-hidden>
                       <FaCheck />
@@ -181,26 +196,26 @@ export default function CaseStudyContent() {
       >
         <div className={beforeAfterStyles.container}>
           <h2 className={beforeAfterStyles.title} id="before-after-title">
-            {caseStudyBeforeAfter.title}
+            {beforeAfter.title}
           </h2>
           <p className={beforeAfterStyles.subtitle}>
-            {caseStudyBeforeAfter.subtitle}
+            {beforeAfter.subtitle}
           </p>
 
           <div className={beforeAfterStyles.heroCompare}>
             <BeforeAfterSlider
-              beforeSrc={caseStudyBeforeAfter.before.src}
-              afterSrc={caseStudyBeforeAfter.after.src}
-              beforeAlt={caseStudyBeforeAfter.before.alt}
-              afterAlt={caseStudyBeforeAfter.after.alt}
-              beforeLabel={caseStudyBeforeAfter.before.label}
-              afterLabel={caseStudyBeforeAfter.after.label}
+              beforeSrc={beforeAfter.before.src}
+              afterSrc={beforeAfter.after.src}
+              beforeAlt={beforeAfter.before.alt}
+              afterAlt={beforeAfter.after.alt}
+              beforeLabel={beforeAfter.before.label}
+              afterLabel={beforeAfter.after.label}
               styles={beforeAfterStyles}
             />
           </div>
 
           <div className={beforeAfterStyles.detailsGrid}>
-            {caseStudyBeforeAfter.details.map((item) => (
+            {beforeAfter.details.map((item) => (
               <article key={item.title} className={beforeAfterStyles.detailCard}>
                 <div className={beforeAfterStyles.detailPair}>
                   <BeforeAfterSlider
@@ -229,14 +244,14 @@ export default function CaseStudyContent() {
             <div className={resultStyles.headerCopy}>
               <span className={resultStyles.badge}>
                 <span className={resultStyles.badgeDot} aria-hidden />
-                {caseStudyResult.badge}
+                {result.badge}
               </span>
               <h2 className={resultStyles.title} id="result-title">
-                {caseStudyResult.title}
+                {result.title}
               </h2>
             </div>
             <p className={resultStyles.description}>
-              {caseStudyResult.description}
+              {result.description}
             </p>
           </header>
 
@@ -244,27 +259,24 @@ export default function CaseStudyContent() {
             <div className={resultStyles.media}>
               <img
                 className={resultStyles.mediaImg}
-                src={caseStudyResult.image.src}
-                alt={caseStudyResult.image.alt}
+                src={result.image.src}
+                alt={result.image.alt}
                 loading="lazy"
               />
 
               <div className={resultStyles.floatCard}>
-                <a
-                  href={caseStudyResult.cta.href}
-                  className={resultStyles.ctaBtn}
-                >
-                  {caseStudyResult.cta.label}
+                <a href={result.cta.href} className={resultStyles.ctaBtn}>
+                  {result.cta.label}
                   <span className={resultStyles.ctaIcon} aria-hidden>
                     <FaArrowUp style={{ transform: "rotate(45deg)" }} />
                   </span>
                 </a>
                 <div className={resultStyles.highlight}>
                   <strong className={resultStyles.highlightValue}>
-                    {caseStudyResult.highlight.value}
+                    {result.highlight.value}
                   </strong>
                   <span className={resultStyles.highlightLabel}>
-                    {caseStudyResult.highlight.label}
+                    {result.highlight.label}
                   </span>
                 </div>
               </div>
@@ -274,10 +286,10 @@ export default function CaseStudyContent() {
               <div className={resultStyles.satisfactionCard}>
                 <div className={resultStyles.satisfactionCopy}>
                   <strong className={resultStyles.satisfactionValue}>
-                    {caseStudyResult.satisfaction.value}
+                    {result.satisfaction.value}
                   </strong>
                   <p className={resultStyles.satisfactionLabel}>
-                    {caseStudyResult.satisfaction.label}
+                    {result.satisfaction.label}
                   </p>
                 </div>
                 <span className={resultStyles.satisfactionIcon} aria-hidden>
@@ -287,14 +299,14 @@ export default function CaseStudyContent() {
 
               <div className={resultStyles.experienceCard}>
                 <p className={resultStyles.experienceLabel}>
-                  {caseStudyResult.experience.label}
+                  {result.experience.label}
                 </p>
                 <strong className={resultStyles.experienceValue}>
-                  {caseStudyResult.experience.value}
+                  {result.experience.value}
                 </strong>
 
                 <ul className={resultStyles.extrasGrid}>
-                  {caseStudyResult.extras.map((item) => (
+                  {result.extras.map((item) => (
                     <li key={item.label} className={resultStyles.extraItem}>
                       <strong>{item.value}</strong>
                       <span>{item.label}</span>
@@ -313,15 +325,15 @@ export default function CaseStudyContent() {
       >
         <div className={quoteStyles.container}>
           <h2 className={quoteStyles.title} id="client-quote-title">
-            {caseStudyQuote.title}
+            {quote.title}
           </h2>
 
           <div className={quoteStyles.card}>
             <div className={quoteStyles.media}>
               <img
                 className={quoteStyles.mediaImg}
-                src={caseStudyQuote.image.src}
-                alt={caseStudyQuote.image.alt}
+                src={quote.image.src}
+                alt={quote.image.alt}
                 loading="lazy"
               />
               <span className={quoteStyles.mediaBadge}>After Clean</span>
@@ -331,18 +343,18 @@ export default function CaseStudyContent() {
               <div className={quoteStyles.quoteMark} aria-hidden>
                 “
               </div>
-              <p className={quoteStyles.quoteText}>{caseStudyQuote.text}</p>
+              <p className={quoteStyles.quoteText}>{quote.text}</p>
               <div className={quoteStyles.authorRow}>
                 <span className={quoteStyles.avatar} aria-hidden>
-                  {caseStudyQuote.author
+                  {quote.author
                     .split(" ")
                     .map((part) => part[0])
                     .slice(0, 2)
                     .join("")}
                 </span>
                 <div className={quoteStyles.authorMeta}>
-                  <p className={quoteStyles.quoteAuthor}>{caseStudyQuote.author}</p>
-                  <p className={quoteStyles.quoteRole}>{caseStudyQuote.role}</p>
+                  <p className={quoteStyles.quoteAuthor}>{quote.author}</p>
+                  <p className={quoteStyles.quoteRole}>{quote.role}</p>
                 </div>
               </div>
             </blockquote>
@@ -358,17 +370,14 @@ export default function CaseStudyContent() {
           <div className={styles.ctaBanner}>
             <div className={styles.ctaCopy}>
               <h2 className={styles.ctaTitle} id="case-study-cta-title">
-                {caseStudyCta.title}
+                {cta.title}
               </h2>
-              <p className={styles.ctaText}>
-                Speak with our team for a free quotation if you need urgent mould
-                removal, deep cleaning or domestic cleaning support in East London.
-              </p>
+              <p className={styles.ctaText}>{cta.text}</p>
             </div>
             <div className={styles.ctaAction}>
-              <ThmButton href={caseStudyCta.href}>
+              <ThmButton href={cta.href}>
                 <FaCalendarCheck aria-hidden />
-                {caseStudyCta.button}
+                {cta.button}
               </ThmButton>
             </div>
           </div>

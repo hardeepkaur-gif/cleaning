@@ -19,12 +19,16 @@ CL Cleaning Services London is based at 68 Granleigh Road, London E11 4RQ. Phone
 - [Home](${SITE_URL}/): Overview of professional cleaning services for homes, landlords and businesses in London.
 - [Services](${SITE_URL}/services): Summary of all four core cleaning services offered across London.
 - [Contact Us](${SITE_URL}/contact-us): Free, no-obligation quotes by phone, email, WhatsApp or online form.
-- [Case Studies](${SITE_URL}/case-studies): Real cleaning jobs across East London, including mould removal and deep cleaning.
+- [Case Studies](${SITE_URL}/case-studies): Real cleaning jobs across London, including mould removal, bathroom deep cleaning, garden clearance and clothesline installs.
 
 ## Optional
 
 - [Mould Removal Case Study – Design A](${SITE_URL}/case-studies/mould-removal-deep-clean-canning-town): Urgent mould removal and deep clean in a Canning Town HMO bedroom.
 - [Mould Removal Case Study – Design B](${SITE_URL}/case-studies/mould-removal-deep-clean-canning-town-v2): Same Canning Town case study in an alternate layout.
+- [Bathroom Deep Clean Case Study](${SITE_URL}/case-studies/bathroom-deep-clean-canning-town): Mould inspection follow-up and bathroom deep clean in a Canning Town flat.
+- [Garden Fence-Line Clearance Case Study](${SITE_URL}/case-studies/garden-fence-line-clearance-canning-town): Same-day garden and fence-line clearance restoring bike shed and bin store access in Canning Town.
+- [Garden Clean-up & Clothesline Case Study](${SITE_URL}/case-studies/garden-cleanup-clothesline-ashford-road): Front and back garden clean-up with new clothesline install on Ashford Road, London.
+- [Bathroom Mould Treatment Case Study](${SITE_URL}/case-studies/bathroom-mould-treatment-blackwall): Same-day black mould treatment in a Blackwall bathroom near Canary Wharf.
 - [Privacy Policy](${SITE_URL}/privacy-policy): How personal information is collected, used and protected.
 - [Sitemap](${SITE_URL}/sitemap.xml): Machine-readable list of indexable pages on this website.
 - [Robots](${SITE_URL}/robots.txt): Crawler rules for search engines and bots.
