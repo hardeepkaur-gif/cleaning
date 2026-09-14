@@ -89,6 +89,10 @@ export default function Footer() {
                 src="/images/logo.webp"
                 alt="Cleaning Services London"
                 className={styles.logoImg}
+                width={180}
+                height={48}
+                loading="lazy"
+                decoding="async"
               />
             </Link>
             <p className={styles.aboutText}>

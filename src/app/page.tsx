@@ -1,17 +1,23 @@
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 import HeroLeadFormSecond from "@/components/hero/HeroLeadFormSecond";
 import AboutUs from "@/components/about/AboutUs";
-import ServicesTabsIcons from "@/components/services/ServicesTabsIcons";
 import CtaSectionThree from "@/components/cta/CtaSectionThree";
 import WhatMakesDifferent from "@/components/different/WhatMakesDifferent";
 import ProfessionalClean from "@/components/included/ProfessionalClean";
 import CtaSectionFour from "@/components/cta/CtaSectionFour";
-import ProcessSectionFour from "@/components/process/ProcessSectionFour";
 import AreasSection from "@/components/areas/AreasSection";
-import FaqSection from "@/components/faq/FaqSection";
 import JsonLd from "@/components/seo/JsonLd";
 import { organizationSchema } from "@/lib/organizationSchema";
 import { homePageSchema } from "@/lib/pageSchemas";
+
+const ServicesTabsIcons = dynamic(
+  () => import("@/components/services/ServicesTabsIcons"),
+);
+const ProcessSectionFour = dynamic(
+  () => import("@/components/process/ProcessSectionFour"),
+);
+const FaqSection = dynamic(() => import("@/components/faq/FaqSection"));
 
 export const metadata: Metadata = {
   title: "Cleaning Services London for Homes Landlords and Businesses",

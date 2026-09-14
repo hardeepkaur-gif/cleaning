@@ -16,6 +16,7 @@ export type HeroLeadFormProps = {
   secondaryBtnLabel?: string;
   secondaryBtnHref?: string;
   bgImage?: string;
+  mobileBgImage?: string;
   formBgImage?: string;
   transparentForm?: boolean;
   formPrefix?: string;
@@ -40,6 +41,7 @@ export default function HeroLeadForm({
   secondaryBtnLabel = "Find Your Cleaner",
   secondaryBtnHref = "/services",
   bgImage = "/images/hero/hero-lead-bg.webp",
+  mobileBgImage,
   formBgImage,
   transparentForm = false,
   formPrefix = "lead",
@@ -47,13 +49,28 @@ export default function HeroLeadForm({
   return (
     <section className={styles.hero} id={id} aria-labelledby={titleId}>
       <div className={styles.bgLayer} aria-hidden>
-        <img
-          className={styles.bgImage}
-          src={bgImage}
-          alt=""
-          fetchPriority="high"
-          decoding="async"
-        />
+        {mobileBgImage ? (
+          <picture>
+            <source media="(max-width: 767px)" srcSet={mobileBgImage} />
+            <img
+              className={styles.bgImage}
+              src={bgImage}
+              alt=""
+              width={1000}
+              height={667}
+              fetchPriority="high"
+              decoding="async"
+            />
+          </picture>
+        ) : (
+          <img
+            className={styles.bgImage}
+            src={bgImage}
+            alt=""
+            fetchPriority="high"
+            decoding="async"
+          />
+        )}
         <div className={styles.overlay} />
       </div>
 
