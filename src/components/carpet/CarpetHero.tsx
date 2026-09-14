@@ -1,3 +1,4 @@
+import { preload } from "react-dom";
 import ThmButton from "@/components/menu/ThmButton";
 import HeroQuoteForm from "@/components/hero/HeroQuoteForm";
 import heroStyles from "@/components/hero/HeroLeadForm.module.css";
@@ -7,6 +8,7 @@ import local from "./CarpetHero.module.css";
 const heroImage = "/images/carpet/carpet-cleaning-hero.webp";
 
 export default function CarpetHero() {
+  preload(heroImage, { as: "image", fetchPriority: "high" });
   return (
     <section
       className={styles.hero}

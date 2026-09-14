@@ -1,11 +1,14 @@
+import { preload } from "react-dom";
 import ThmButton from "@/components/menu/ThmButton";
 import HeroQuoteForm from "@/components/hero/HeroQuoteForm";
 import heroStyles from "@/components/hero/HeroLeadForm.module.css";
 import styles from "./TenancyHero.module.css";
 
 const imgBase = "/images/hero/clean360";
+const heroImage = `${imgBase}/end-of-tenancy-cleaning-hero-london.webp`;
 
 export default function TenancyHero() {
+  preload(heroImage, { as: "image", fetchPriority: "high" });
   return (
     <section className={styles.hero} id="end-of-tenancy-cleaning" aria-labelledby="tenancy-hero-title">
       <div className={styles.item}>
@@ -16,7 +19,7 @@ export default function TenancyHero() {
         >
           <div
             className={styles.bgInner}
-            style={{ backgroundImage: `url('${imgBase}/end-of-tenancy-cleaning-hero-london.webp')` }}
+            style={{ backgroundImage: `url('${heroImage}')` }}
           />
         </div>
         <div className={styles.overlay} aria-hidden />

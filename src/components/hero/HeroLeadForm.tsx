@@ -50,7 +50,9 @@ export default function HeroLeadForm({
         <img
           className={styles.bgImage}
           src={bgImage}
-          alt="Professional DBS checked cleaners providing home cleaning services in London"
+          alt=""
+          fetchPriority="high"
+          decoding="async"
         />
         <div className={styles.overlay} />
       </div>

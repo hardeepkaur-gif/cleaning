@@ -1,3 +1,4 @@
+import { preload } from "react-dom";
 import ThmButton from "@/components/menu/ThmButton";
 import HeroQuoteForm from "@/components/hero/HeroQuoteForm";
 import heroStyles from "@/components/hero/HeroLeadForm.module.css";
@@ -7,6 +8,7 @@ import local from "./GutterHero.module.css";
 const heroImage = "/images/gutter/gutter-cleaning-hero.webp";
 
 export default function GutterHero() {
+  preload(heroImage, { as: "image", fetchPriority: "high" });
   return (
     <section
       className={styles.hero}

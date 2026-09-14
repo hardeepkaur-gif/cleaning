@@ -1,9 +1,23 @@
 import type { Metadata } from "next";
+import { Poppins, Rubik } from "next/font/google";
 import Header from "@/components/menu/Header";
 import Footer from "@/components/footer/Footer";
 import { SITE_INDEXABLE } from "@/lib/site";
 import "./globals.css";
-import "./thank-you/thank-you.css";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-poppins",
+  display: "swap",
+});
+
+const rubik = Rubik({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-rubik",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://clcleaningserviceslondon.co.uk"),
@@ -38,7 +52,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html
+      lang="en"
+      className={`${poppins.variable} ${rubik.variable}`}
+      suppressHydrationWarning
+    >
       <body suppressHydrationWarning>
         <Header />
         {children}

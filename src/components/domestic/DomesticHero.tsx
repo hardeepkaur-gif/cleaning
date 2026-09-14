@@ -1,3 +1,4 @@
+import { preload } from "react-dom";
 import ThmButton from "@/components/menu/ThmButton";
 import HeroQuoteForm from "@/components/hero/HeroQuoteForm";
 import heroStyles from "@/components/hero/HeroLeadForm.module.css";
@@ -7,6 +8,7 @@ import local from "./DomesticHero.module.css";
 const heroImage = "/images/domestic/domestic-cleaning-hero.webp";
 
 export default function DomesticHero() {
+  preload(heroImage, { as: "image", fetchPriority: "high" });
   return (
     <section
       className={styles.hero}
