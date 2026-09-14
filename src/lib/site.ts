@@ -11,3 +11,38 @@ export const ORGANIZATION_ID = `${SITE_URL}/#organization`;
 export const WEBSITE_ID = `${SITE_URL}/#website`;
 export const LOGO_ID = `${SITE_URL}/#logo`;
 export const LOGO_URL = `${SITE_URL}/images/logo.webp`;
+
+export const socialProfiles = [
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/CLcleaningserviceslondon",
+    icon: "facebook",
+  },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/clcleaningserviceslondon/",
+    icon: "instagram",
+  },
+  {
+    label: "Pinterest",
+    href: "https://www.pinterest.com/CLcleaningserviceslondon/",
+    icon: "pinterest",
+  },
+  {
+    label: "X",
+    href: "https://x.com/CLcleaningLDN",
+    icon: "x",
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/company/cl-cleaning-services-london/",
+    icon: "linkedin",
+  },
+  {
+    label: "YouTube",
+    href: "https://www.youtube.com/@CLCleaningServicesLondon",
+    icon: "youtube",
+  },
+] as const;
+
+export const socialProfileUrls = socialProfiles.map((profile) => profile.href);

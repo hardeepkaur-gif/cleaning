@@ -6,6 +6,7 @@ import {
   SITE_PHONE_INTL,
   SITE_URL,
   WEBSITE_ID,
+  socialProfileUrls,
 } from "./site";
 
 export const organizationSchema = {
@@ -93,14 +94,7 @@ export const organizationSchema = {
           availableLanguage: ["English"],
         },
       ],
-      sameAs: [
-        "https://www.facebook.com/CLcleaningserviceslondon",
-        "https://www.instagram.com/clcleaningserviceslondon/",
-        "https://www.pinterest.com/CLcleaningserviceslondon/",
-        "https://x.com/CLcleaningLDN",
-        "https://www.linkedin.com/company/cl-cleaning-services-london/",
-        "https://www.youtube.com/@CLCleaningServicesLondon",
-      ],
+      sameAs: [...socialProfileUrls],
       hasOfferCatalog: {
         "@type": "OfferCatalog",
         name: "Cleaning Services in London",

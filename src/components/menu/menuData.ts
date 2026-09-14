@@ -1,4 +1,4 @@
-import { SITE_EMAIL, SITE_PHONE, SITE_PHONE_HREF } from "@/lib/site";
+import { SITE_EMAIL, SITE_PHONE, SITE_PHONE_HREF, socialProfiles } from "@/lib/site";
 
 export type NavItem = {
   label: string;
@@ -79,12 +79,7 @@ export const contactInfo = {
   address: "68 Granleigh Road, London E11 4RQ",
 };
 
-export const socialLinks = [
-  { label: "Facebook", href: "#", icon: "facebook" as const },
-  { label: "Twitter", href: "#", icon: "twitter" as const },
-  { label: "Instagram", href: "#", icon: "instagram" as const },
-  { label: "LinkedIn", href: "#", icon: "linkedin" as const },
-];
+export const socialLinks = socialProfiles;
 
 export const footerQuickLinks = [
   { label: "Home", href: "/" },

@@ -9,12 +9,14 @@ import {
   FaLinkedinIn,
   FaMapMarkerAlt,
   FaPhoneAlt,
+  FaPinterestP,
   FaPoundSign,
   FaShieldAlt,
   FaStar,
-  FaTwitter,
   FaUserShield,
+  FaYoutube,
 } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import ThmButton from "@/components/menu/ThmButton";
 import {
   contactInfo,
@@ -27,9 +29,11 @@ import styles from "./Footer.module.css";
 
 const socialIconMap = {
   facebook: FaFacebookF,
-  twitter: FaTwitter,
   instagram: FaInstagram,
+  pinterest: FaPinterestP,
+  x: FaXTwitter,
   linkedin: FaLinkedinIn,
+  youtube: FaYoutube,
 } as const;
 
 const trustBadges = [
@@ -101,6 +105,8 @@ export default function Footer() {
                     href={link.href}
                     className={styles.socialLink}
                     aria-label={link.label}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <Icon aria-hidden />
                   </a>

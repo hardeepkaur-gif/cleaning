@@ -1,4 +1,4 @@
-import { SITE_EMAIL, SITE_PHONE_INTL, SITE_URL } from "./site";
+import { SITE_EMAIL, SITE_PHONE_INTL, SITE_URL, socialProfiles } from "./site";
 
 export function getLlmsTxt(): string {
   return `# CL Cleaning Services London
@@ -6,6 +6,8 @@ export function getLlmsTxt(): string {
 > Professional cleaning company in London offering domestic cleaning, carpet cleaning, end of tenancy cleaning, and gutter cleaning. DBS-checked, insured cleaners with fixed pricing across Greater London.
 
 CL Cleaning Services London is based at 68 Granleigh Road, London E11 4RQ. Phone: ${SITE_PHONE_INTL}. Email: ${SITE_EMAIL}. Service area: Greater London including East, North, South and West London.
+
+Social: ${socialProfiles.map((profile) => `[${profile.label}](${profile.href})`).join(", ")}.
 
 ## Services
 

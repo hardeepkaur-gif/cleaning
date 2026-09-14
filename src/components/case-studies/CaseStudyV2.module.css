@@ -35,7 +35,7 @@
 }
 
 .h2Light {
-  color: #fff;
+  color: var(--primary-dark);
 }
 
 .heroTitle span,
@@ -341,7 +341,7 @@
 
 /* ========== COMPARE ========== */
 .compare {
-  background: var(--primary-dark);
+  background: #ebedea;
   padding-top: clamp(56px, 7vw, 88px) !important;
   padding-bottom: clamp(56px, 7vw, 88px) !important;
 }
@@ -357,7 +357,7 @@
   margin: 0;
   font-size: 15px;
   line-height: 1.75;
-  color: rgba(255, 255, 255, 0.82);
+  color: var(--gray);
 }
 
 .slider {
@@ -537,7 +537,7 @@
 
 /* ========== TRANSFORM ========== */
 .transform {
-  background: #fff;
+  background: #ebedea;
   padding-top: clamp(64px, 8vw, 96px) !important;
   padding-bottom: clamp(64px, 8vw, 96px) !important;
 }

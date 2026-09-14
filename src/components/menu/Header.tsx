@@ -8,20 +8,24 @@ import {
   FaPhoneAlt,
   FaMapMarkerAlt,
   FaFacebookF,
-  FaTwitter,
   FaInstagram,
   FaLinkedinIn,
+  FaPinterestP,
+  FaYoutube,
   FaChevronDown,
 } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import ThmButton from "./ThmButton";
 import { contactInfo, navItems, socialLinks } from "./menuData";
 import styles from "./Header.module.css";
 
 const socialIconMap = {
   facebook: FaFacebookF,
-  twitter: FaTwitter,
   instagram: FaInstagram,
+  pinterest: FaPinterestP,
+  x: FaXTwitter,
   linkedin: FaLinkedinIn,
+  youtube: FaYoutube,
 } as const;
 
 function isNavItemActive(
@@ -274,6 +278,8 @@ export default function Header() {
                         key={link.label}
                         href={link.href}
                         aria-label={link.label}
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <Icon />
                       </a>
