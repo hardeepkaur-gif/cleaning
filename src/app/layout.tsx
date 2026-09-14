@@ -9,14 +9,14 @@ const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-poppins",
-  display: "swap",
+  display: "optional",
 });
 
 const rubik = Rubik({
   subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-rubik",
-  display: "swap",
+  display: "optional",
 });
 
 export const metadata: Metadata = {

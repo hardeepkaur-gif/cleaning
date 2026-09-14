@@ -37,8 +37,6 @@ body {
 main > section:not(:first-child) {
   padding-top: 70px !important;
   padding-bottom: 70px !important;
-  content-visibility: auto;
-  contain-intrinsic-size: auto 720px;
 }
 
 @media (max-width: 767px) {

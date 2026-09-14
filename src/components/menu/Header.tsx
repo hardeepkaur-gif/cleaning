@@ -138,6 +138,8 @@ function MenuBar({
               className={styles.logoImg}
               width={220}
               height={56}
+              fetchPriority="high"
+              decoding="async"
               onError={(e) => {
                 e.currentTarget.src = "/images/logo-dark.svg";
               }}

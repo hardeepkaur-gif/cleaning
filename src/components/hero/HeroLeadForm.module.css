@@ -5,6 +5,12 @@
   min-height: clamp(520px, 72vh, 720px);
 }
 
+@media (max-width: 767px) {
+  .hero {
+    min-height: 100svh;
+  }
+}
+
 .bgLayer {
   position: absolute;
   inset: 0;
