@@ -45,6 +45,9 @@ const publicRoutes: Array<{
     priority: 0.6,
   },
   { path: "/privacy-policy", changeFrequency: "yearly", priority: 0.3 },
+  { path: "/terms-and-conditions", changeFrequency: "yearly", priority: 0.3 },
+  { path: "/disclaimer", changeFrequency: "yearly", priority: 0.3 },
+  { path: "/cookies-policy", changeFrequency: "yearly", priority: 0.3 },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

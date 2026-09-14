@@ -735,8 +735,8 @@
 /* ========== FINAL CTA ========== */
 .finalCta {
   background: #f7f3ee;
-  padding-top: clamp(48px, 6vw, 72px) !important;
-  padding-bottom: clamp(48px, 6vw, 72px) !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .finalCard {

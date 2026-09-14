@@ -272,6 +272,30 @@ export default function CaseStudyV2() {
         </div>
       </section>
 
+      <section className={styles.finalCta} aria-labelledby="cta-v2-title">
+        <div className={styles.container}>
+          <div className={styles.finalCard}>
+            <div className={styles.finalCopy}>
+              <span className={styles.finalIcon} aria-hidden>
+                <FaHome />
+              </span>
+              <div>
+                <h2 id="cta-v2-title">{caseStudyCta.title}</h2>
+                <p>
+                  Speak with our team for a free quotation if you need urgent mould
+                  removal, deep cleaning or domestic cleaning support in East London.
+                </p>
+              </div>
+            </div>
+            <ThmButton href={caseStudyCta.href}>
+              {caseStudyCta.button}
+              <FaArrowRight aria-hidden />
+            </ThmButton>
+            <span className={styles.leaf} aria-hidden />
+          </div>
+        </div>
+      </section>
+
       <section className={styles.result} aria-labelledby="result-v2-title">
         <div className={styles.container}>
           <div className={styles.resultGrid}>
@@ -340,30 +364,6 @@ export default function CaseStudyV2() {
                 loading="lazy"
               />
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className={styles.finalCta} aria-labelledby="cta-v2-title">
-        <div className={styles.container}>
-          <div className={styles.finalCard}>
-            <div className={styles.finalCopy}>
-              <span className={styles.finalIcon} aria-hidden>
-                <FaHome />
-              </span>
-              <div>
-                <h2 id="cta-v2-title">{caseStudyCta.title}</h2>
-                <p>
-                  Speak with our team for a free quotation if you need urgent mould
-                  removal, deep cleaning or domestic cleaning support in East London.
-                </p>
-              </div>
-            </div>
-            <ThmButton href={caseStudyCta.href}>
-              {caseStudyCta.button}
-              <FaArrowRight aria-hidden />
-            </ThmButton>
-            <span className={styles.leaf} aria-hidden />
           </div>
         </div>
       </section>

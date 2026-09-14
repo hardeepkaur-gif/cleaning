@@ -288,7 +288,8 @@
 /* CTA */
 .ctaSection {
   position: relative;
-  padding: clamp(48px, 6vw, 80px) 0;
+  padding-top: 0;
+  padding-bottom: 0;
   background: var(--white);
 }
 

@@ -1,4 +1,5 @@
 import ThmButton from "@/components/menu/ThmButton";
+import HeroQuoteForm from "@/components/hero/HeroQuoteForm";
 import heroStyles from "@/components/hero/HeroLeadForm.module.css";
 import styles from "@/components/tenancy/TenancyHero.module.css";
 import local from "./CarpetHero.module.css";
@@ -25,7 +26,7 @@ export default function CarpetHero() {
         </div>
         <div className={styles.overlay} aria-hidden />
 
-        <div className={styles.container}>
+        <div className={`${styles.container} ${styles.containerWithForm}`}>
           <div className={`${heroStyles.content} ${styles.content}`}>
             <div className={heroStyles.subTitle}>
               <p>Carpet Cleaning London</p>
@@ -62,6 +63,7 @@ export default function CarpetHero() {
               </div>
             </div>
           </div>
+          <HeroQuoteForm formPrefix="carpet" defaultService="Carpet" transparent clear />
         </div>
       </div>
     </section>

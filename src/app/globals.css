@@ -102,6 +102,18 @@ a {
   color: var(--white);
 }
 
+@media (min-width: 768px) {
+  .thmBtnMobileCall {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .thmBtnDesktopContact {
+    display: none !important;
+  }
+}
+
 .thmBtn:disabled {
   opacity: 0.65;
   cursor: not-allowed;

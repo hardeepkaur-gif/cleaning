@@ -80,6 +80,45 @@ export const privacyPageSchema = schemaGraph([
   }),
 ]);
 
+export const termsPageSchema = schemaGraph([
+  breadcrumbNode("/terms-and-conditions", [
+    homeCrumb,
+    { name: "Terms & Conditions", path: "/terms-and-conditions" },
+  ]),
+  webPageNode({
+    path: "/terms-and-conditions",
+    name: "Terms & Conditions | Cleaning Services London",
+    description:
+      "Terms that apply when you book or purchase cleaning services from CL Cleaning Services London.",
+  }),
+]);
+
+export const disclaimerPageSchema = schemaGraph([
+  breadcrumbNode("/disclaimer", [
+    homeCrumb,
+    { name: "Disclaimer", path: "/disclaimer" },
+  ]),
+  webPageNode({
+    path: "/disclaimer",
+    name: "Disclaimer | Cleaning Services London",
+    description:
+      "Disclaimer for clcleaningserviceslondon.co.uk and the cleaning services provided by CL Cleaning Services London.",
+  }),
+]);
+
+export const cookiesPageSchema = schemaGraph([
+  breadcrumbNode("/cookies-policy", [
+    homeCrumb,
+    { name: "Cookies Policy", path: "/cookies-policy" },
+  ]),
+  webPageNode({
+    path: "/cookies-policy",
+    name: "Cookies Policy | Cleaning Services London",
+    description:
+      "How CL Cleaning Services London uses cookies and similar technologies on clcleaningserviceslondon.co.uk.",
+  }),
+]);
+
 export const domesticPageSchema = schemaGraph([
   breadcrumbNode("/domestic-cleaning-services", [
     homeCrumb,

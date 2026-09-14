@@ -30,6 +30,9 @@ CL Cleaning Services London is based at 68 Granleigh Road, London E11 4RQ. Phone
 - [Garden Clean-up & Clothesline Case Study](${SITE_URL}/case-studies/garden-cleanup-clothesline-ashford-road): Front and back garden clean-up with new clothesline install on Ashford Road, London.
 - [Bathroom Mould Treatment Case Study](${SITE_URL}/case-studies/bathroom-mould-treatment-blackwall): Same-day black mould treatment in a Blackwall bathroom near Canary Wharf.
 - [Privacy Policy](${SITE_URL}/privacy-policy): How personal information is collected, used and protected.
+- [Terms & Conditions](${SITE_URL}/terms-and-conditions): Terms that apply when you book or purchase cleaning services.
+- [Disclaimer](${SITE_URL}/disclaimer): Limits that apply to website content and cleaning services, without affecting statutory consumer rights.
+- [Cookies Policy](${SITE_URL}/cookies-policy): How cookies and similar technologies are used on the website.
 - [Sitemap](${SITE_URL}/sitemap.xml): Machine-readable list of indexable pages on this website.
 - [Robots](${SITE_URL}/robots.txt): Crawler rules for search engines and bots.
 `;

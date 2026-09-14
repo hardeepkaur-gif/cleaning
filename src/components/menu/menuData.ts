@@ -94,7 +94,9 @@ export const footerQuickLinks = [
 ];
 
 export const footerLegalLinks = [
-  { label: "Terms of Service", href: "#" },
+  { label: "Terms & Conditions", href: "/terms-and-conditions" },
   { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Disclaimer", href: "/disclaimer" },
+  { label: "Cookies Policy", href: "/cookies-policy" },
   { label: "Support", href: "/contact-us" },
 ];

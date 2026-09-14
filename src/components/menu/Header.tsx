@@ -173,7 +173,7 @@ function MenuBar({
               <FaPhoneAlt aria-hidden />
             </div>
             <div className={styles.callContent}>
-              <p className={styles.callSubTitle}>Call Anytime</p>
+              <p className={styles.callSubTitle}>Get A Call</p>
               <p className={styles.callNumber}>
                 <a href={contactInfo.phoneHref}>{contactInfo.phone}</a>
               </p>

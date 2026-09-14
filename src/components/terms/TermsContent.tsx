@@ -1,37 +1,21 @@
-import { FaShieldAlt, FaLock, FaUserCheck, FaEnvelope } from "react-icons/fa";
-import ThmButton from "@/components/menu/ThmButton";
 import {
-  privacyIntro,
-  privacyLastUpdated,
-  privacySections,
-} from "./privacyPolicyData";
-import styles from "./PrivacyPolicyContent.module.css";
+  FaBalanceScale,
+  FaCalendarCheck,
+  FaEnvelope,
+  FaFileAlt,
+} from "react-icons/fa";
+import ThmButton from "@/components/menu/ThmButton";
+import { termsIntro, termsLastUpdated, termsSections } from "./termsData";
+import styles from "@/components/privacy/PrivacyPolicyContent.module.css";
 
 function RichText({ text }: { text: string }) {
   const parts = text.split(
-    /(\[[^\]]+\]\([^)]+\)|https?:\/\/[^\s]+|[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}|020\s?3475\s?5539|02034755539)/gi
+    /(https?:\/\/[^\s]+|[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}|020\s?3475\s?5539|02034755539)/gi
   );
 
   return (
     <>
       {parts.map((part, index) => {
-        const markdownLink = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
-        if (markdownLink) {
-          const [, label, href] = markdownLink;
-          const external = /^https?:\/\//i.test(href);
-          return (
-            <a
-              key={`${part}-${index}`}
-              href={href}
-              {...(external
-                ? { target: "_blank", rel: "noopener noreferrer" }
-                : {})}
-            >
-              {label}
-            </a>
-          );
-        }
-
         if (/^https?:\/\//i.test(part)) {
           const href = part.replace(/[.,)]+$/, "");
           const trailing = part.slice(href.length);
@@ -69,37 +53,37 @@ function RichText({ text }: { text: string }) {
 
 const highlights = [
   {
-    icon: FaShieldAlt,
-    title: "Protected",
-    text: "We handle booking and enquiry details with care.",
+    icon: FaFileAlt,
+    title: "Clear booking terms",
+    text: "These terms apply when you request, book or use our cleaning services.",
   },
   {
-    icon: FaLock,
-    title: "Not sold",
-    text: "Your personal information is never sold to third parties.",
+    icon: FaCalendarCheck,
+    title: "Agreed scope",
+    text: "Your quotation or booking confirmation sets out the work included.",
   },
   {
-    icon: FaUserCheck,
-    title: "Your rights",
-    text: "You can ask to access, update or delete your data.",
+    icon: FaBalanceScale,
+    title: "Consumer rights",
+    text: "Nothing here removes rights that cannot legally be excluded.",
   },
 ];
 
-export default function PrivacyPolicyContent() {
+export default function TermsContent() {
   return (
     <section
       className={styles.section}
-      id="privacy-policy"
-      aria-label="Privacy Policy"
+      id="terms-and-conditions"
+      aria-label="Terms and Conditions"
     >
       <div className={styles.container}>
         <div className={styles.layout}>
           <aside className={styles.aside}>
             <div className={styles.asideCard}>
               <p className={styles.asideLabel}>On this page</p>
-              <nav aria-label="Privacy policy sections">
+              <nav aria-label="Terms and conditions sections">
                 <ol className={styles.toc}>
-                  {privacySections.map((section, index) => (
+                  {termsSections.map((section, index) => (
                     <li key={section.id}>
                       <a href={`#${section.id}`}>
                         <span className={styles.tocNum}>
@@ -117,12 +101,12 @@ export default function PrivacyPolicyContent() {
           <div className={styles.main}>
             <header className={styles.introBlock}>
               <div className={styles.metaRow}>
-                <span className={styles.pill}>UK GDPR aligned</span>
+                <span className={styles.pill}>Booking terms</span>
                 <span className={styles.updated}>
-                  Last updated {privacyLastUpdated}
+                  Last updated {termsLastUpdated}
                 </span>
               </div>
-              {privacyIntro.map((paragraph) => (
+              {termsIntro.map((paragraph) => (
                 <p key={paragraph} className={styles.intro}>
                   <RichText text={paragraph} />
                 </p>
@@ -144,7 +128,7 @@ export default function PrivacyPolicyContent() {
             </header>
 
             <div className={styles.sections}>
-              {privacySections.map((section, index) => (
+              {termsSections.map((section, index) => (
                 <article
                   key={section.id}
                   id={section.id}
@@ -163,10 +147,10 @@ export default function PrivacyPolicyContent() {
                   </div>
 
                   {section.chunks.map((chunk, chunkIndex) => (
-                    <div key={`${section.id}-${chunkIndex}`} className={styles.chunk}>
-                      {chunk.subtitle ? (
-                        <h4 className={styles.subTitle}>{chunk.subtitle}</h4>
-                      ) : null}
+                    <div
+                      key={`${section.id}-${chunkIndex}`}
+                      className={styles.chunk}
+                    >
                       {chunk.paragraphs?.map((paragraph) => (
                         <p key={paragraph} className={styles.blockText}>
                           <RichText text={paragraph} />
@@ -198,10 +182,10 @@ export default function PrivacyPolicyContent() {
                   <FaEnvelope />
                 </span>
                 <div>
-                  <h3>Need help with a privacy request?</h3>
+                  <h3>Questions about a booking?</h3>
                   <p>
-                    Reach out and our team will guide you through your enquiry
-                    as quickly as possible.
+                    Contact us and we will help with your enquiry, appointment
+                    or these terms.
                   </p>
                 </div>
               </div>

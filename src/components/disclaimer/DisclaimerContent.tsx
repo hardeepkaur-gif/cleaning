@@ -1,11 +1,12 @@
-import { FaShieldAlt, FaLock, FaUserCheck, FaEnvelope } from "react-icons/fa";
-import ThmButton from "@/components/menu/ThmButton";
 import {
-  privacyIntro,
-  privacyLastUpdated,
-  privacySections,
-} from "./privacyPolicyData";
-import styles from "./PrivacyPolicyContent.module.css";
+  FaEnvelope,
+  FaExclamationCircle,
+  FaHome,
+  FaShieldAlt,
+} from "react-icons/fa";
+import ThmButton from "@/components/menu/ThmButton";
+import { disclaimerLastUpdated, disclaimerSections } from "./disclaimerData";
+import styles from "@/components/privacy/PrivacyPolicyContent.module.css";
 
 function RichText({ text }: { text: string }) {
   const parts = text.split(
@@ -69,37 +70,37 @@ function RichText({ text }: { text: string }) {
 
 const highlights = [
   {
+    icon: FaExclamationCircle,
+    title: "General guidance",
+    text: "Website details are confirmed at the point of booking.",
+  },
+  {
+    icon: FaHome,
+    title: "Service limits",
+    text: "Results can depend on the condition of surfaces, carpets and the property.",
+  },
+  {
     icon: FaShieldAlt,
-    title: "Protected",
-    text: "We handle booking and enquiry details with care.",
-  },
-  {
-    icon: FaLock,
-    title: "Not sold",
-    text: "Your personal information is never sold to third parties.",
-  },
-  {
-    icon: FaUserCheck,
-    title: "Your rights",
-    text: "You can ask to access, update or delete your data.",
+    title: "Statutory rights",
+    text: "This page does not remove rights under the Consumer Rights Act 2015.",
   },
 ];
 
-export default function PrivacyPolicyContent() {
+export default function DisclaimerContent() {
   return (
     <section
       className={styles.section}
-      id="privacy-policy"
-      aria-label="Privacy Policy"
+      id="disclaimer"
+      aria-label="Disclaimer"
     >
       <div className={styles.container}>
         <div className={styles.layout}>
           <aside className={styles.aside}>
             <div className={styles.asideCard}>
               <p className={styles.asideLabel}>On this page</p>
-              <nav aria-label="Privacy policy sections">
+              <nav aria-label="Disclaimer sections">
                 <ol className={styles.toc}>
-                  {privacySections.map((section, index) => (
+                  {disclaimerSections.map((section, index) => (
                     <li key={section.id}>
                       <a href={`#${section.id}`}>
                         <span className={styles.tocNum}>
@@ -117,16 +118,11 @@ export default function PrivacyPolicyContent() {
           <div className={styles.main}>
             <header className={styles.introBlock}>
               <div className={styles.metaRow}>
-                <span className={styles.pill}>UK GDPR aligned</span>
+                <span className={styles.pill}>Website and services</span>
                 <span className={styles.updated}>
-                  Last updated {privacyLastUpdated}
+                  Last updated {disclaimerLastUpdated}
                 </span>
               </div>
-              {privacyIntro.map((paragraph) => (
-                <p key={paragraph} className={styles.intro}>
-                  <RichText text={paragraph} />
-                </p>
-              ))}
 
               <div className={styles.highlights}>
                 {highlights.map(({ icon: Icon, title, text }) => (
@@ -144,7 +140,7 @@ export default function PrivacyPolicyContent() {
             </header>
 
             <div className={styles.sections}>
-              {privacySections.map((section, index) => (
+              {disclaimerSections.map((section, index) => (
                 <article
                   key={section.id}
                   id={section.id}
@@ -163,7 +159,10 @@ export default function PrivacyPolicyContent() {
                   </div>
 
                   {section.chunks.map((chunk, chunkIndex) => (
-                    <div key={`${section.id}-${chunkIndex}`} className={styles.chunk}>
+                    <div
+                      key={`${section.id}-${chunkIndex}`}
+                      className={styles.chunk}
+                    >
                       {chunk.subtitle ? (
                         <h4 className={styles.subTitle}>{chunk.subtitle}</h4>
                       ) : null}
@@ -198,16 +197,16 @@ export default function PrivacyPolicyContent() {
                   <FaEnvelope />
                 </span>
                 <div>
-                  <h3>Need help with a privacy request?</h3>
+                  <h3>Questions about this disclaimer?</h3>
                   <p>
-                    Reach out and our team will guide you through your enquiry
-                    as quickly as possible.
+                    Contact us if you need a copy of our insurance details or
+                    help with a booking.
                   </p>
                 </div>
               </div>
               <div className={styles.ctaActions}>
                 <ThmButton href="/contact-us">Contact Us</ThmButton>
-                <ThmButton href="/services">View Services</ThmButton>
+                <ThmButton href="/privacy-policy">Privacy Policy</ThmButton>
               </div>
             </div>
           </div>

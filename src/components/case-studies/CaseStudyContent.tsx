@@ -236,6 +236,28 @@ export default function CaseStudyContent({
       </section>
 
       <section
+        className={styles.ctaSection}
+        aria-labelledby="case-study-cta-title"
+      >
+        <div className={styles.container}>
+          <div className={styles.ctaBanner}>
+            <div className={styles.ctaCopy}>
+              <h2 className={styles.ctaTitle} id="case-study-cta-title">
+                {cta.title}
+              </h2>
+              <p className={styles.ctaText}>{cta.text}</p>
+            </div>
+            <div className={styles.ctaAction}>
+              <ThmButton href={cta.href}>
+                <FaCalendarCheck aria-hidden />
+                {cta.button}
+              </ThmButton>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
         className={resultStyles.section}
         aria-labelledby="result-title"
       >
@@ -358,28 +380,6 @@ export default function CaseStudyContent({
                 </div>
               </div>
             </blockquote>
-          </div>
-        </div>
-      </section>
-
-      <section
-        className={styles.ctaSection}
-        aria-labelledby="case-study-cta-title"
-      >
-        <div className={styles.container}>
-          <div className={styles.ctaBanner}>
-            <div className={styles.ctaCopy}>
-              <h2 className={styles.ctaTitle} id="case-study-cta-title">
-                {cta.title}
-              </h2>
-              <p className={styles.ctaText}>{cta.text}</p>
-            </div>
-            <div className={styles.ctaAction}>
-              <ThmButton href={cta.href}>
-                <FaCalendarCheck aria-hidden />
-                {cta.button}
-              </ThmButton>
-            </div>
           </div>
         </div>
       </section>

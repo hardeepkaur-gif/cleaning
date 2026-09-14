@@ -1,4 +1,5 @@
 import ThmButton from "@/components/menu/ThmButton";
+import HeroQuoteForm from "@/components/hero/HeroQuoteForm";
 import heroStyles from "@/components/hero/HeroLeadForm.module.css";
 import styles from "./TenancyHero.module.css";
 
@@ -20,7 +21,7 @@ export default function TenancyHero() {
         </div>
         <div className={styles.overlay} aria-hidden />
 
-        <div className={styles.container}>
+        <div className={`${styles.container} ${styles.containerWithForm}`}>
           <div className={`${heroStyles.content} ${styles.content}`}>
             <div className={heroStyles.subTitle}>
               <p>End of Tenancy Cleaning</p>
@@ -42,10 +43,6 @@ export default function TenancyHero() {
                 a smooth handover with a detailed move-out clean completed to
                 inspection-ready standards.
               </p>
-              <p>
-                Book your end of tenancy cleaning today and receive a fixed
-                quotation based on your property size and requirements.
-              </p>
             </div>
 
             <div className={heroStyles.bottom}>
@@ -59,6 +56,7 @@ export default function TenancyHero() {
               </div>
             </div>
           </div>
+          <HeroQuoteForm formPrefix="tenancy" defaultService="Tenancy" transparent clear />
         </div>
       </div>
     </section>
