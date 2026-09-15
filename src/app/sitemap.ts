@@ -20,11 +20,6 @@ const publicRoutes: Array<{
     priority: 0.6,
   },
   {
-    path: "/case-studies/mould-removal-deep-clean-canning-town-v2",
-    changeFrequency: "yearly",
-    priority: 0.6,
-  },
-  {
     path: "/case-studies/bathroom-deep-clean-canning-town",
     changeFrequency: "yearly",
     priority: 0.6,
@@ -41,6 +36,21 @@ const publicRoutes: Array<{
   },
   {
     path: "/case-studies/bathroom-mould-treatment-blackwall",
+    changeFrequency: "yearly",
+    priority: 0.6,
+  },
+  {
+    path: "/case-studies/24-hr-deep-clean-to-re-let-flat",
+    changeFrequency: "yearly",
+    priority: 0.6,
+  },
+  {
+    path: "/case-studies/full-flat-end-of-tenancy-clean-barking-road",
+    changeFrequency: "yearly",
+    priority: 0.6,
+  },
+  {
+    path: "/case-studies/full-deposit-recovery-claremont-close",
     changeFrequency: "yearly",
     priority: 0.6,
   },

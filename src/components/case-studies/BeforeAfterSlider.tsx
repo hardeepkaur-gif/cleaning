@@ -7,7 +7,7 @@ import {
   useState,
   type PointerEvent as ReactPointerEvent,
 } from "react";
-import defaultStyles from "./CaseStudyV2.module.css";
+import defaultStyles from "./CaseStudyBeforeAfter.module.css";
 
 type BeforeAfterSliderProps = {
   beforeSrc: string;

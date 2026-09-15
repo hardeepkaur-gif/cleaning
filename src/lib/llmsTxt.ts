@@ -25,12 +25,14 @@ Social: ${socialProfiles.map((profile) => `[${profile.label}](${profile.href})`)
 
 ## Optional
 
-- [Mould Removal Case Study – Design A](${SITE_URL}/case-studies/mould-removal-deep-clean-canning-town): Urgent mould removal and deep clean in a Canning Town HMO bedroom.
-- [Mould Removal Case Study – Design B](${SITE_URL}/case-studies/mould-removal-deep-clean-canning-town-v2): Same Canning Town case study in an alternate layout.
+- [Mould Removal Case Study](${SITE_URL}/case-studies/mould-removal-deep-clean-canning-town): Urgent mould removal and deep clean in a Canning Town HMO bedroom.
 - [Bathroom Deep Clean Case Study](${SITE_URL}/case-studies/bathroom-deep-clean-canning-town): Mould inspection follow-up and bathroom deep clean in a Canning Town flat.
 - [Garden Fence-Line Clearance Case Study](${SITE_URL}/case-studies/garden-fence-line-clearance-canning-town): Same-day garden and fence-line clearance restoring bike shed and bin store access in Canning Town.
 - [Garden Clean-up & Clothesline Case Study](${SITE_URL}/case-studies/garden-cleanup-clothesline-ashford-road): Front and back garden clean-up with new clothesline install on Ashford Road, London.
 - [Bathroom Mould Treatment Case Study](${SITE_URL}/case-studies/bathroom-mould-treatment-blackwall): Same-day black mould treatment in a Blackwall bathroom near Canary Wharf.
+- [24-Hour Deep Clean to Re-Let Flat](${SITE_URL}/case-studies/24-hr-deep-clean-to-re-let-flat): Post-works deep clean turnaround that got a Canning Town flat back on the market in 4 days.
+- [Full-Flat End-of-Tenancy Clean – Barking Road](${SITE_URL}/case-studies/full-flat-end-of-tenancy-clean-barking-road): Full-flat end-of-tenancy clean and re-let programme with deposit-claim evidence on Barking Road, Canning Town.
+- [Full Deposit Recovery – Claremont Close](${SITE_URL}/case-studies/full-deposit-recovery-claremont-close): End-of-tenancy clean and re-let turnaround with full £1,160 deposit recovery on Claremont Close, Canning Town.
 - [Privacy Policy](${SITE_URL}/privacy-policy): How personal information is collected, used and protected.
 - [Terms & Conditions](${SITE_URL}/terms-and-conditions): Terms that apply when you book or purchase cleaning services.
 - [Disclaimer](${SITE_URL}/disclaimer): Limits that apply to website content and cleaning services, without affecting statutory consumer rights.

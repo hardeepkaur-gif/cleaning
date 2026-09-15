@@ -1,8 +1,8 @@
 "use client";
 
-import { type CSSProperties, useState } from "react";
+import { type CSSProperties, type FormEvent, useState } from "react";
 import ThmButton from "@/components/menu/ThmButton";
-import { THANK_YOU_PATH } from "@/lib/formSubmit";
+import { SITE_FORM_IDS, redirectToThankYou, submitLead } from "@/lib/formSubmit";
 import { servicesList } from "@/components/services/servicesData";
 import styles from "./HeroLeadForm.module.css";
 
@@ -34,10 +34,33 @@ export default function HeroQuoteForm({
     email: "",
     service: defaultService,
   });
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const updateField = (field: keyof FormState, value: string) => {
     setForm((prev) => ({ ...prev, [field]: value }));
   };
+
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    if (loading) return;
+    setLoading(true);
+    setError("");
+
+    try {
+      await submitLead({
+        name: form.name,
+        phone: form.phone,
+        email: form.email,
+        service: form.service,
+        formId: SITE_FORM_IDS.quoteByPrefix(formPrefix),
+      });
+      redirectToThankYou();
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Something went wrong.");
+      setLoading(false);
+    }
+  }
 
   return (
     <div className={styles.formWrap}>
@@ -57,7 +80,11 @@ export default function HeroQuoteForm({
             <p>Fill in your details — we&apos;ll be in touch shortly.</p>
           </div>
 
-          <form className={styles.form} action={THANK_YOU_PATH} method="get">
+          <form
+            id={SITE_FORM_IDS.quoteByPrefix(formPrefix)}
+            className={styles.form}
+            onSubmit={handleSubmit}
+          >
             <div className={styles.row}>
               <div className={styles.field}>
                 <label htmlFor={`${formPrefix}-name`}>Full Name</label>
@@ -125,7 +152,15 @@ export default function HeroQuoteForm({
               </div>
             </div>
 
-            <ThmButton type="submit">Get My Free Quote</ThmButton>
+            <ThmButton type="submit" disabled={loading}>
+              {loading ? "Sending..." : "Get My Free Quote"}
+            </ThmButton>
+
+            {error ? (
+              <p className={styles.formNote} role="alert" style={{ color: "#b42318" }}>
+                {error}
+              </p>
+            ) : null}
 
             <p className={styles.formNote}>
               Your details are kept private. No spam — ever.

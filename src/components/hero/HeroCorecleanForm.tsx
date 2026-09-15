@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { type FormEvent, useState } from "react";
 import ThmButton from "@/components/menu/ThmButton";
-import { THANK_YOU_PATH } from "@/lib/formSubmit";
+import { SITE_FORM_IDS, redirectToThankYou, submitLead } from "@/lib/formSubmit";
 import { servicesList } from "@/components/services/servicesData";
 import styles from "./HeroCorecleanForm.module.css";
 
@@ -24,10 +24,33 @@ const initialForm: FormState = {
 
 export default function HeroCorecleanForm() {
   const [form, setForm] = useState<FormState>(initialForm);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const updateField = (field: keyof FormState, value: string) => {
     setForm((prev) => ({ ...prev, [field]: value }));
   };
+
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    if (loading) return;
+    setLoading(true);
+    setError("");
+
+    try {
+      await submitLead({
+        name: form.name,
+        phone: form.phone,
+        email: form.email,
+        service: form.service,
+        formId: SITE_FORM_IDS.corecleanQuote,
+      });
+      redirectToThankYou();
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Something went wrong.");
+      setLoading(false);
+    }
+  }
 
   return (
     <section
@@ -123,7 +146,11 @@ export default function HeroCorecleanForm() {
                 <h3>Request a Free Quote</h3>
               </div>
 
-              <form className={styles.form} action={THANK_YOU_PATH} method="get">
+              <form
+                id={SITE_FORM_IDS.corecleanQuote}
+                className={styles.form}
+                onSubmit={handleSubmit}
+              >
                   <div className={styles.field}>
                     <label htmlFor="coreclean-lead-name">Full Name</label>
                     <input
@@ -189,7 +216,14 @@ export default function HeroCorecleanForm() {
                     </select>
                   </div>
 
-                <ThmButton type="submit">Get My Free Quote</ThmButton>
+                <ThmButton type="submit" disabled={loading}>
+                  {loading ? "Sending..." : "Get My Free Quote"}
+                </ThmButton>
+                {error ? (
+                  <p role="alert" style={{ color: "#b42318", marginTop: 12 }}>
+                    {error}
+                  </p>
+                ) : null}
               </form>
             </div>
           </div>

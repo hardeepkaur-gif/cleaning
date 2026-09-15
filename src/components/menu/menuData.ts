@@ -36,16 +36,8 @@ export const navItems: NavItem[] = [
     href: "/case-studies",
     children: [
       {
-        label: "All Case Studies",
-        href: "/case-studies",
-      },
-      {
-        label: "Mould Removal – Design A",
+        label: "Mould Removal",
         href: "/case-studies/mould-removal-deep-clean-canning-town",
-      },
-      {
-        label: "Mould Removal – Design B",
-        href: "/case-studies/mould-removal-deep-clean-canning-town-v2",
       },
       {
         label: "Bathroom Deep Clean",
@@ -62,6 +54,18 @@ export const navItems: NavItem[] = [
       {
         label: "Bathroom Mould Treatment",
         href: "/case-studies/bathroom-mould-treatment-blackwall",
+      },
+      {
+        label: "24-Hr Deep Clean to Re-Let",
+        href: "/case-studies/24-hr-deep-clean-to-re-let-flat",
+      },
+      {
+        label: "EOT Clean – Barking Road",
+        href: "/case-studies/full-flat-end-of-tenancy-clean-barking-road",
+      },
+      {
+        label: "Deposit Recovery – Claremont Close",
+        href: "/case-studies/full-deposit-recovery-claremont-close",
       },
     ],
   },

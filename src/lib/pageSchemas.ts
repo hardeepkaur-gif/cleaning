@@ -226,12 +226,8 @@ export const caseStudiesIndexSchema = schemaGraph([
   }),
   itemListNode("/case-studies", "Cleaning Case Studies", [
     {
-      name: "Mould Removal & Deep Clean In Canning Town, East London (Design A)",
+      name: "Mould Removal & Deep Clean In Canning Town, East London",
       path: "/case-studies/mould-removal-deep-clean-canning-town",
-    },
-    {
-      name: "Mould Removal & Deep Clean In Canning Town, East London (Design B)",
-      path: "/case-studies/mould-removal-deep-clean-canning-town-v2",
     },
     {
       name: "Mould Inspection & Bathroom Deep Clean In Canning Town, East London",
@@ -248,6 +244,18 @@ export const caseStudiesIndexSchema = schemaGraph([
     {
       name: "Bathroom Mould Treatment in Blackwall, Canary Wharf, London",
       path: "/case-studies/bathroom-mould-treatment-blackwall",
+    },
+    {
+      name: "24-Hour Deep Clean Turnaround That Got a Canning Town Flat Back on the Market",
+      path: "/case-studies/24-hr-deep-clean-to-re-let-flat",
+    },
+    {
+      name: "Full-Flat End-of-Tenancy Clean and Re-Let Programme, Barking Road, Canning Town",
+      path: "/case-studies/full-flat-end-of-tenancy-clean-barking-road",
+    },
+    {
+      name: "Full Deposit Recovery on Claremont Close, Canning Town Re-Let Turnaround",
+      path: "/case-studies/full-deposit-recovery-claremont-close",
     },
   ]),
 ]);
@@ -266,23 +274,6 @@ export const mouldRemovalCaseStudySchema = schemaGraph([
     name: "Mould Removal & Deep Clean Case Study | Canning Town, East London",
     description:
       "Case study: urgent mould removal and deep clean in a Canning Town HMO bedroom. Contaminated storage unit removed, wall treated and room restored within hours.",
-  }),
-]);
-
-export const mouldRemovalCaseStudyV2Schema = schemaGraph([
-  breadcrumbNode("/case-studies/mould-removal-deep-clean-canning-town-v2", [
-    homeCrumb,
-    { name: "Case Studies", path: "/case-studies" },
-    {
-      name: "Mould Removal Canning Town Design B",
-      path: "/case-studies/mould-removal-deep-clean-canning-town-v2",
-    },
-  ]),
-  webPageNode({
-    path: "/case-studies/mould-removal-deep-clean-canning-town-v2",
-    name: "Mould Removal & Deep Clean Case Study (Design B) | Canning Town",
-    description:
-      "Alternate design: urgent mould removal and deep clean case study in a Canning Town HMO bedroom.",
   }),
 ]);
 
@@ -351,5 +342,56 @@ export const bathroomMouldTreatmentCaseStudySchema = schemaGraph([
     name: "Bathroom Mould Treatment Case Study | Blackwall, Canary Wharf, London",
     description:
       "Case study: black mould treatment in a Blackwall bathroom near Canary Wharf. Same-day mould cleaning, tenant guidance, and a noted faulty extractor fan for follow-up.",
+  }),
+]);
+
+export const reletDeepCleanCaseStudySchema = schemaGraph([
+  breadcrumbNode("/case-studies/24-hr-deep-clean-to-re-let-flat", [
+    homeCrumb,
+    { name: "Case Studies", path: "/case-studies" },
+    {
+      name: "24-Hour Deep Clean to Re-Let Flat",
+      path: "/case-studies/24-hr-deep-clean-to-re-let-flat",
+    },
+  ]),
+  webPageNode({
+    path: "/case-studies/24-hr-deep-clean-to-re-let-flat",
+    name: "24-Hour Deep Clean to Re-Let Flat | Canning Town Case Study",
+    description:
+      "Case study: post-works deep clean in a Canning Town multi-occupancy flat. Quote approved 25 August, cleaned 26 August, completion confirmed 29 August — ready to re-let.",
+  }),
+]);
+
+export const eotBarkingRoadCaseStudySchema = schemaGraph([
+  breadcrumbNode("/case-studies/full-flat-end-of-tenancy-clean-barking-road", [
+    homeCrumb,
+    { name: "Case Studies", path: "/case-studies" },
+    {
+      name: "End-of-Tenancy Clean Barking Road",
+      path: "/case-studies/full-flat-end-of-tenancy-clean-barking-road",
+    },
+  ]),
+  webPageNode({
+    path: "/case-studies/full-flat-end-of-tenancy-clean-barking-road",
+    name: "Full-Flat End-of-Tenancy Clean & Re-Let | Barking Road, Canning Town",
+    description:
+      "Case study: full-flat end-of-tenancy clean and re-let programme on Barking Road, Canning Town. Cleaning, flooring, damp repairs and deposit-claim evidence completed in 3 weeks.",
+  }),
+]);
+
+export const eotClaremontCaseStudySchema = schemaGraph([
+  breadcrumbNode("/case-studies/full-deposit-recovery-claremont-close", [
+    homeCrumb,
+    { name: "Case Studies", path: "/case-studies" },
+    {
+      name: "Full Deposit Recovery Claremont Close",
+      path: "/case-studies/full-deposit-recovery-claremont-close",
+    },
+  ]),
+  webPageNode({
+    path: "/case-studies/full-deposit-recovery-claremont-close",
+    name: "Full Deposit Recovery | Claremont Close, Canning Town Re-Let Turnaround",
+    description:
+      "Case study: full deposit recovery on Claremont Close, Canning Town. End-of-tenancy clean, clearance and re-let works with £1,160 recovered from outgoing tenants.",
   }),
 ]);

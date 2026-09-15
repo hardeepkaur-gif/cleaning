@@ -5,7 +5,6 @@ import {
   caseStudyPath,
   caseStudySnapshot,
 } from "./caseStudyData";
-import { caseStudyV2Path } from "./caseStudyV2Data";
 import {
   bathroomCaseStudyDesignA,
   bathroomCaseStudyPath,
@@ -22,26 +21,28 @@ import {
   bathroomMouldCaseStudyDesignA,
   bathroomMouldCaseStudyPath,
 } from "./bathroomMouldCaseStudyData";
+import {
+  reletDeepCleanCaseStudyDesignA,
+  reletDeepCleanCaseStudyPath,
+} from "./reletDeepCleanCaseStudyData";
+import {
+  eotBarkingRoadCaseStudyDesignA,
+  eotBarkingRoadCaseStudyPath,
+} from "./eotBarkingRoadCaseStudyData";
+import {
+  eotClaremontCaseStudyDesignA,
+  eotClaremontCaseStudyPath,
+} from "./eotClaremontCaseStudyData";
 import styles from "./CaseStudy.module.css";
 
 const listings = [
   {
     href: caseStudyPath,
-    badge: "Design A",
+    badge: "Case Study",
     title: `${caseStudyHero.titleLead} ${caseStudyHero.titleAccent} ${caseStudyHero.titleTrail}`,
     description: caseStudyMeta.description,
     image: "/images/case-studies/case-studies-card-mould.webp",
     imageAlt: "Mould removal and deep clean case study in Canning Town",
-    location: caseStudySnapshot.items[0].value,
-  },
-  {
-    href: caseStudyV2Path,
-    badge: "Design B",
-    title: `${caseStudyHero.titleLead} ${caseStudyHero.titleAccent} ${caseStudyHero.titleTrail}`,
-    description:
-      "Same Canning Town mould removal case study in an alternate CleanSpaces-style layout for side-by-side design comparison.",
-    image: "/images/case-studies/case-studies-card-mould.webp",
-    imageAlt: "Mould removal case study Design B in Canning Town",
     location: caseStudySnapshot.items[0].value,
   },
   {
@@ -83,6 +84,36 @@ const listings = [
     imageAlt:
       "Bathroom mould treatment case study in Blackwall, Canary Wharf",
     location: bathroomMouldCaseStudyDesignA.snapshot.items[0].value,
+  },
+  {
+    href: reletDeepCleanCaseStudyPath,
+    badge: "Design A",
+    title: `${reletDeepCleanCaseStudyDesignA.hero.titleLead} ${reletDeepCleanCaseStudyDesignA.hero.titleAccent} ${reletDeepCleanCaseStudyDesignA.hero.titleTrail}`,
+    description: reletDeepCleanCaseStudyDesignA.meta.description,
+    image: "/images/case-studies/24hr-deep-clean-relet-hero.webp",
+    imageAlt:
+      "24-hour deep clean to re-let flat case study in Canning Town",
+    location: reletDeepCleanCaseStudyDesignA.snapshot.items[0].value,
+  },
+  {
+    href: eotBarkingRoadCaseStudyPath,
+    badge: "Design A",
+    title: `${eotBarkingRoadCaseStudyDesignA.hero.titleLead} ${eotBarkingRoadCaseStudyDesignA.hero.titleAccent} ${eotBarkingRoadCaseStudyDesignA.hero.titleTrail}`,
+    description: eotBarkingRoadCaseStudyDesignA.meta.description,
+    image: "/images/case-studies/eot-barking-road-hero.webp",
+    imageAlt:
+      "Full-flat end-of-tenancy clean and re-let case study on Barking Road, Canning Town",
+    location: eotBarkingRoadCaseStudyDesignA.snapshot.items[0].value,
+  },
+  {
+    href: eotClaremontCaseStudyPath,
+    badge: "Design A",
+    title: `${eotClaremontCaseStudyDesignA.hero.titleLead} ${eotClaremontCaseStudyDesignA.hero.titleAccent} ${eotClaremontCaseStudyDesignA.hero.titleTrail}`,
+    description: eotClaremontCaseStudyDesignA.meta.description,
+    image: "/images/case-studies/case-studies-card-eot-claremont.webp",
+    imageAlt:
+      "Full deposit recovery and re-let turnaround case study on Claremont Close, Canning Town",
+    location: eotClaremontCaseStudyDesignA.snapshot.items[0].value,
   },
 ];
 

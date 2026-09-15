@@ -1,5 +1,6 @@
 "use client";
 
+import { type FormEvent, useState } from "react";
 import {
   FaBolt,
   FaChevronRight,
@@ -11,10 +12,39 @@ import {
 } from "react-icons/fa";
 import ThmButton from "@/components/menu/ThmButton";
 import { contactInfo } from "@/components/menu/menuData";
-import { THANK_YOU_PATH } from "@/lib/formSubmit";
+import {
+  SITE_FORM_IDS,
+  redirectToThankYou,
+  submitLead,
+} from "@/lib/formSubmit";
 import styles from "./ContactUs.module.css";
 
 export default function ContactFormSection() {
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    if (loading) return;
+    setLoading(true);
+    setError("");
+
+    const data = new FormData(event.currentTarget);
+
+    try {
+      await submitLead({
+        name: String(data.get("name") ?? ""),
+        phone: String(data.get("phone") ?? ""),
+        email: String(data.get("email") ?? ""),
+        message: String(data.get("message") ?? ""),
+        formId: SITE_FORM_IDS.contactQuote,
+      });
+      redirectToThankYou();
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Something went wrong.");
+      setLoading(false);
+    }
+  }
 
   return (
     <section className={styles.contactSection} aria-labelledby="quote-form-title">
@@ -48,7 +78,11 @@ export default function ContactFormSection() {
             </div>
           </div>
 
-          <form className={styles.form} action={THANK_YOU_PATH} method="get">
+          <form
+            id={SITE_FORM_IDS.contactQuote}
+            className={styles.form}
+            onSubmit={handleSubmit}
+          >
             <div className={styles.fieldRow}>
               <div>
                 <label className={styles.label} htmlFor="contact-name">
@@ -106,9 +140,16 @@ export default function ContactFormSection() {
 
             <div className={styles.submitRow}>
               <div className={styles.btnBox}>
-                <ThmButton type="submit">Send My Request</ThmButton>
+                <ThmButton type="submit" disabled={loading}>
+                  {loading ? "Sending..." : "Send My Request"}
+                </ThmButton>
               </div>
             </div>
+            {error ? (
+              <p role="alert" style={{ color: "#b42318", marginTop: 12 }}>
+                {error}
+              </p>
+            ) : null}
           </form>
         </div>
 
