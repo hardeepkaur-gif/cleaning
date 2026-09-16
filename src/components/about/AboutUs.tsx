@@ -1,7 +1,38 @@
 import Link from "next/link";
+import {
+  FaBroom,
+  FaStar,
+  FaUsers,
+  FaCalendarWeek,
+} from "react-icons/fa";
 import styles from "./AboutUs.module.css";
 
-const imgBase = "/images/about/cleanon";
+const stats = [
+  {
+    value: "10,000+",
+    label: "Cleans delivered",
+    icon: FaBroom,
+    accent: "coral" as const,
+  },
+  {
+    value: "10,000+",
+    label: "Customers served",
+    icon: FaUsers,
+    accent: "teal" as const,
+  },
+  {
+    value: "2,000+",
+    label: "Cleans every week",
+    icon: FaCalendarWeek,
+    accent: "coral" as const,
+  },
+  {
+    value: "4.8/5.0",
+    label: "Verified online reviews",
+    icon: FaStar,
+    accent: "teal" as const,
+  },
+] as const;
 
 export default function AboutUs() {
   return (
@@ -15,48 +46,32 @@ export default function AboutUs() {
           </h2>
         </div>
 
-        <div className={`${styles.grid} ${styles.gridEqual}`}>
-          {/* ---- Media collage ---- */}
-          <div className={styles.media}>
-            <div className={styles.frame}>
-              <span className={styles.frameAccent} aria-hidden />
-              <div className={styles.imgMain}>
-                <img
-                  src={`${imgBase}/professional-cleaning-homes-businesses.webp`}
-                  alt="Professional cleaner mopping a modern kitchen floor in a London home"
-                  loading="lazy"
-                />
-              </div>
+        <div className={`${styles.grid} ${styles.gridStats}`}>
+          <div className={styles.statsPanel} aria-label="Company trust statistics">
+            <ul className={styles.statsGrid}>
+              {stats.map(({ value, label, icon: Icon, accent }) => (
+                <li
+                  key={label}
+                  className={`${styles.statCard} ${
+                    accent === "coral" ? styles.statAccentCoral : styles.statAccentTeal
+                  }`}
+                >
+                  <div className={styles.statTopBar} aria-hidden />
 
-              <div className={styles.imgSecondary}>
-                <img
-                  src={`${imgBase}/cleaning-team-preparing-equipment-london.webp`}
-                  alt="London cleaning team preparing professional equipment before a service visit"
-                  loading="lazy"
-                />
-              </div>
+                  <div className={styles.statIconWrap}>
+                    <span className={styles.statIconArc} aria-hidden />
+                    <span className={styles.statIcon}>
+                      <Icon aria-hidden />
+                    </span>
+                  </div>
 
-              <div className={styles.seal}>
-                <div
-                  className={styles.sealBg}
-                  style={{
-                    backgroundImage: `url('${imgBase}/decorative-satisfaction-guarantee-badge-bg.webp')`,
-                  }}
-                  aria-hidden
-                />
-                <img
-                  src={`${imgBase}/satisfaction-guarantee-badge-icon.webp`}
-                  alt="100 percent customer satisfaction guarantee badge icon"
-                  loading="lazy"
-                />
-                <strong>100%</strong>
-                <span>Guaranteed</span>
-              </div>
-            </div>
-
+                  <strong className={styles.statValue}>{value}</strong>
+                  <span className={styles.statLabel}>{label}</span>
+                </li>
+              ))}
+            </ul>
           </div>
 
-          {/* ---- Content ---- */}
           <div className={styles.content}>
             <blockquote className={styles.callout}>
               <p>

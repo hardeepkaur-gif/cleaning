@@ -15,6 +15,7 @@ export default function HeroLeadFormSecond() {
       <HeroLeadForm
         id="hero-quote"
         titleId="hero-lead-second-title"
+        title="Professional Cleaning Services in London"
         transparentForm
         formBgImage="/images/hero/hero-supplies.webp"
         formPrefix="lead-second"

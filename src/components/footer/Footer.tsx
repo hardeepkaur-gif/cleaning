@@ -10,10 +10,6 @@ import {
   FaMapMarkerAlt,
   FaPhoneAlt,
   FaPinterestP,
-  FaPoundSign,
-  FaShieldAlt,
-  FaStar,
-  FaUserShield,
   FaYoutube,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -35,13 +31,6 @@ const socialIconMap = {
   linkedin: FaLinkedinIn,
   youtube: FaYoutube,
 } as const;
-
-const trustBadges = [
-  { icon: FaUserShield, label: "DBS-Checked Cleaners" },
-  { icon: FaShieldAlt, label: "Fully Insured" },
-  { icon: FaPoundSign, label: "Fixed, Upfront Pricing" },
-  { icon: FaStar, label: "Satisfaction Focused" },
-];
 
 const currentYear = new Date().getFullYear();
 
@@ -69,18 +58,6 @@ export default function Footer() {
       </div>
 
       <div className={styles.container}>
-        {/* Trust strip */}
-        <div className={styles.trust}>
-          {trustBadges.map(({ icon: Icon, label }) => (
-            <div key={label} className={styles.trustItem}>
-              <span className={styles.trustIcon} role="img" aria-label={`${label} icon`}>
-                <Icon aria-hidden />
-              </span>
-              <span>{label}</span>
-            </div>
-          ))}
-        </div>
-
         <div className={styles.grid}>
           <div className={styles.about}>
             <Link href="/" className={styles.logo}>

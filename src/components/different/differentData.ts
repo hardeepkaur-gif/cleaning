@@ -1,81 +1,72 @@
-const differentImgBase = "/images/different";
-
-export const differentTagline = "Why Us";
+import type { IconType } from "react-icons";
+import {
+  PiCameraDuotone,
+  PiClipboardTextDuotone,
+  PiClockDuotone,
+  PiCurrencyGbpDuotone,
+  PiShieldCheckDuotone,
+  PiSparkleDuotone,
+  PiTrophyDuotone,
+  PiUserCheckDuotone,
+  PiUsersThreeDuotone,
+} from "react-icons/pi";
 
 export const differentTitle = "What Makes Cleaning Services London Different?";
 
-export const differentIntro =
-  "Clear procedures and accountability for our cleaning staff are our priority at Cleaning Services London. Quality control is also used to provide a consistent customer experience.";
+export const differentButtonLabel = "Find a Cleaner";
+
+export const differentButtonHref = "/services";
 
 export type DifferentItem = {
-  title: string;
   text: string;
-  image: string;
-  imageAlt: string;
+  icon: IconType;
+  iconAlt: string;
 };
 
 export const differentList: DifferentItem[] = [
   {
-    title: "DBS Checked Cleaners",
-    text: "Each cleaner completes identity verification, right-to-work checks, and DBS screening before going on to a rented property, commercial or office premises, or home.",
-    image: `${differentImgBase}/dbs-checked-cleaners.webp`,
-    imageAlt:
-      "DBS checked professional cleaner approved to work in London customer properties",
+    text: "DBS-checked cleaners with identity and right-to-work verification",
+    icon: PiUserCheckDuotone,
+    iconAlt: "DBS-checked cleaners icon",
   },
   {
-    title: "Fully Insured Cleaning Company in London",
-    text: "Cleaning Services London is completely insured, offering a further level of reassurance for homeowners, tenants, landlords, and businesses before any cleaning work starts.",
-    image: `${differentImgBase}/fully-insured-cleaning-company.webp`,
-    imageAlt:
-      "Fully insured London cleaning company team working safely inside a customer home",
+    text: "Fully insured cleaners for homes, rentals, offices and commercial properties",
+    icon: PiShieldCheckDuotone,
+    iconAlt: "Fully insured cleaners icon",
   },
   {
-    title: "Same Cleaner for Regular Visits",
-    text: "For recurring bookings, we will try to book the same cleaner, as they are providing the same service; they will appear more familiar, consistent, and easier to manage.",
-    image: `${differentImgBase}/same-cleaner-regular-visits.webp`,
-    imageAlt:
-      "Same trusted cleaner returning for regular domestic cleaning at a London home",
+    text: "100+ cleaning jobs completed by each member of our cleaning team",
+    icon: PiTrophyDuotone,
+    iconAlt: "100 plus cleaning jobs completed icon",
   },
   {
-    title: "100+ Cleaning Jobs Completed",
-    text: "Each of our team members has completed more than 100 cleaning jobs across homes, rental properties, offices, and commercial premises in London.",
-    image: `${differentImgBase}/cleaning-jobs-completed.webp`,
-    imageAlt:
-      "Experienced cleaning professionals after completing 100 plus jobs across London",
+    text: "Signed cleaning SOPs followed on every job",
+    icon: PiClipboardTextDuotone,
+    iconAlt: "Signed cleaning SOPs icon",
   },
   {
-    title: "Signed Cleaning SOPs",
-    text: "All cleaners are carrying out signed cleaning procedures, giving a clear benchmark for the quality of the cleaning work rather than relying on assumptions.",
-    image: `${differentImgBase}/signed-cleaning-sops.webp`,
-    imageAlt:
-      "Cleaner following signed standard operating procedures during a professional clean",
+    text: "Before-and-after completion photos available as proof of work",
+    icon: PiCameraDuotone,
+    iconAlt: "Before and after completion photos icon",
   },
   {
-    title: "Before and After Photo Standards",
-    text: "Completion photos provide clients with visible proof while minimising the back and forth after the work is finished, and providing the client with details of what has been cleaned.",
-    image: `${differentImgBase}/before-after-photo-standards.webp`,
-    imageAlt:
-      "Before and after completion photos showing results of a professional London clean",
+    text: "Fixed prices agreed before the cleaning starts, with no hidden charges",
+    icon: PiCurrencyGbpDuotone,
+    iconAlt: "Fixed prices icon",
   },
   {
-    title: "Fixed Pricing Structure",
-    text: "We never leave you with unclear hourly estimates or hidden charges; our prices are agreed in advance before starting work.",
-    image: `${differentImgBase}/fixed-pricing-structure.webp`,
-    imageAlt:
-      "Fixed price cleaning agreement confirmed before a London home cleaning booking",
+    text: "24/7 availability, including weekends, late hours and ad hoc cleaning requests",
+    icon: PiClockDuotone,
+    iconAlt: "24/7 availability icon",
   },
   {
-    title: "Flexible Cleaning Support",
-    text: "From one-off cleans to regular domestic cleans, carpet clean, end of tenancy clean, or gutter clean, our service is personalised around your property and schedule.",
-    image: `${differentImgBase}/flexible-cleaning-support.webp`,
-    imageAlt:
-      "Flexible cleaning support for homes rentals offices and commercial premises in London",
+    text: "Same cleaner arranged for regular bookings wherever possible",
+    icon: PiUsersThreeDuotone,
+    iconAlt: "Same cleaner for regular bookings icon",
   },
   {
-    title: "Guaranteed End-of-Tenancy Cleaning",
-    text: "We offer a 14-day re-clean guarantee for end-of-tenancy cleaning if your landlord or letting agent is not satisfied with the cleaning.",
-    image: `${differentImgBase}/satisfaction-guarantee.webp`,
-    imageAlt:
-      "14-day re-clean guarantee for end of tenancy cleaning in London",
+    text: "14-day free re-clean guarantee on end-of-tenancy cleaning",
+    icon: PiSparkleDuotone,
+    iconAlt: "14-day free re-clean guarantee icon",
   },
 ];

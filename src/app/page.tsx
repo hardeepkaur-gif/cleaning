@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import HeroLeadFormSecond from "@/components/hero/HeroLeadFormSecond";
+import HomeTrustLogos from "@/components/trust/HomeTrustLogos";
 import AboutUs from "@/components/about/AboutUs";
-import CtaSectionThree from "@/components/cta/CtaSectionThree";
 import WhatMakesDifferent from "@/components/different/WhatMakesDifferent";
 import ProfessionalClean from "@/components/included/ProfessionalClean";
 import CtaSectionFour from "@/components/cta/CtaSectionFour";
@@ -20,7 +20,7 @@ const ProcessSectionFour = dynamic(
 const FaqSection = dynamic(() => import("@/components/faq/FaqSection"));
 
 export const metadata: Metadata = {
-  title: "Cleaning Services London for Homes Landlords and Businesses",
+  title: "Cleaning Services London | Certified Home Cleaners",
   description:
     "Professional cleaning services in London for homes and businesses. DBS-checked, insured cleaners with fixed pricing and completion photo reports.",
   alternates: {
@@ -35,9 +35,9 @@ export default function HomePage() {
       <JsonLd data={homePageSchema} />
       <main>
         <HeroLeadFormSecond />
+        <HomeTrustLogos />
         <AboutUs />
         <ServicesTabsIcons />
-        <CtaSectionThree />
         <WhatMakesDifferent />
         <ProfessionalClean />
         <CtaSectionFour />

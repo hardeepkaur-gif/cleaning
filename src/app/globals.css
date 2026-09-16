@@ -84,6 +84,11 @@ main > section#gutter-why-choose {
   padding-bottom: 0 !important;
 }
 
+main > section#home-trust-logos {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
 @media (max-width: 767px) {
   main > section:not(:first-child) {
     padding-top: 48px !important;
@@ -132,6 +137,11 @@ main > section#gutter-why-choose {
   }
 
   main > section#gutter-why-choose {
+    padding-bottom: 0 !important;
+  }
+
+  main > section#home-trust-logos {
+    padding-top: 0 !important;
     padding-bottom: 0 !important;
   }
 }

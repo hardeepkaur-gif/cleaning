@@ -1,15 +1,141 @@
-/* 4 cards — same WhatMakesDifferent card styles, 2×2 on desktop */
+/* Who uses — self-contained (was shared with WhatMakesDifferent) */
 
-.gridFour {
-  grid-template-columns: repeat(2, 1fr);
+.section {
+  position: relative;
+  padding: clamp(56px, 7vw, 90px) 0;
+  background:
+    radial-gradient(
+      circle at 12% 18%,
+      rgba(14, 94, 91, 0.1) 0%,
+      transparent 68%
+    ),
+    radial-gradient(
+      circle at 88% 82%,
+      rgba(226, 106, 76, 0.1) 0%,
+      transparent 65%
+    ),
+    #f7f4f1;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 3vw, 24px);
+}
+
+.header {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto clamp(36px, 5vw, 52px);
+}
+
+.title {
+  margin: 0 0 16px;
+  font-family: var(--font-two);
+  font-size: clamp(26px, 3.4vw, 42px);
+  line-height: 1.22;
+  font-weight: 800;
+  color: var(--primary-dark);
+}
+
+.intro {
+  margin: 0;
+  font-size: clamp(15px, 1.35vw, 17px);
+  line-height: 1.7;
+  color: var(--gray);
+}
+
+.grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(14px, 2vw, 20px);
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 100%;
+  padding: clamp(20px, 2.4vw, 26px);
+  background: var(--white);
+  border-radius: 16px;
+  border: 1px solid rgba(14, 94, 91, 0.08);
+  box-shadow: 0 10px 28px rgba(10, 70, 68, 0.06);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(14, 94, 91, 0.16);
+  box-shadow: 0 16px 36px rgba(10, 70, 68, 0.1);
+}
+
+.imgWrap {
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+}
+
+.imgWrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cardTitle {
+  margin: 0;
+  font-family: var(--font-two);
+  font-size: clamp(15px, 1.4vw, 18px);
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--primary-dark);
+}
+
+.cardText {
+  margin: 0;
+  font-size: clamp(14px, 1.25vw, 15px);
+  line-height: 1.6;
+  color: var(--gray);
+}
+
 @media (max-width: 991px) {
-  .gridFour {
+  .grid {
     grid-template-columns: 1fr;
     max-width: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .card {
+    gap: 10px;
+    padding: 16px;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
+  }
+
+  .card:hover {
+    transform: none;
   }
 }

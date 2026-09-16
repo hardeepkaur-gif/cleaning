@@ -1,5 +1,4 @@
-import styles from "@/components/different/WhatMakesDifferent.module.css";
-import local from "./TenancyWhoUsesSection.module.css";
+import styles from "./TenancyWhoUsesSection.module.css";
 
 const audiences = [
   {
@@ -46,7 +45,7 @@ export default function TenancyWhoUsesSection() {
           </p>
         </div>
 
-        <div className={`${styles.grid} ${local.gridFour}`}>
+        <div className={styles.grid}>
           {audiences.map((item) => (
             <article key={item.title} className={styles.card}>
               <div className={styles.imgWrap}>

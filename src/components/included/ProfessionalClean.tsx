@@ -1,92 +1,87 @@
 import Link from "next/link";
 import { FaCheck } from "react-icons/fa";
+import { PiBroomDuotone } from "react-icons/pi";
+import styles from "@/components/carpet/CarpetWorthItAltSection.module.css";
+import local from "./ProfessionalCleanSimple.module.css";
 import {
   includedExtraAfter,
   includedExtraBefore,
   includedExtraLinkLabel,
-  includedImages,
+  includedImage,
+  includedImageAlt,
   includedIntro,
   includedPoints,
+  includedTagline,
   includedTitle,
 } from "./includedData";
-import styles from "./ProfessionalClean.module.css";
 
 export default function ProfessionalClean() {
   return (
     <section
-      className={`${styles.section} ${styles.sectionTightTop}`}
+      className={styles.section}
       id="professional-clean"
       aria-labelledby="included-title"
     >
+      <div className={styles.glowOne} aria-hidden />
+      <div className={styles.glowTwo} aria-hidden />
+
       <div className={styles.container}>
-        <div className={styles.topHeader}>
+        <header className={styles.header}>
+          <span className={styles.tagline}>
+            <span role="img" aria-label="Professional clean icon">
+              <PiBroomDuotone aria-hidden />
+            </span>
+            {includedTagline}
+          </span>
           <h2 className={styles.title} id="included-title">
             {includedTitle}
           </h2>
-          <p className={styles.intro}>{includedIntro}</p>
-        </div>
+          <div className={styles.introBlock}>
+            <p className={styles.text}>{includedIntro}</p>
+          </div>
+        </header>
 
-        <div className={styles.grid}>
-          <div className={styles.left}>
-            <ul className={styles.points}>
-              {includedPoints.map((item) => (
-                <li key={item}>
-                  <span className={styles.pointIcon} role="img" aria-label="Included professional clean task icon">
-                    <FaCheck aria-hidden />
-                  </span>
-                  <h3>{item}</h3>
-                </li>
-              ))}
-            </ul>
-
-            <p className={styles.extra}>
-              {includedExtraBefore}
-              <Link
-                href="/domestic-cleaning-services"
-                className={styles.internalLink}
-              >
-                {includedExtraLinkLabel}
-              </Link>
-              {includedExtraAfter}
-            </p>
+        <div className={`${styles.layout} ${local.layout}`}>
+          <div className={`${styles.visual} ${local.visual}`}>
+            <div className={styles.frameOuter} aria-hidden />
+            <div className={`${styles.frameInner} ${local.frameInner}`}>
+              <img
+                src={includedImage}
+                alt={includedImageAlt}
+                loading="lazy"
+              />
+            </div>
+            <div className={styles.visualTag}>
+              <span>Clean</span>
+              <strong>Thorough</strong>
+              <span>Reliable</span>
+            </div>
           </div>
 
-          <div className={styles.right}>
-            <div className={styles.visualStage}>
-              <div className={styles.rightShape} aria-hidden>
-                <img src={includedImages.rightShape} alt={includedImages.rightShapeAlt} loading="lazy" />
-              </div>
+          <div className={`${styles.copy} ${local.copy}`}>
+            <div className={`${styles.pointsWrap} ${local.pointsWrap}`}>
+              <ul className={styles.points}>
+                {includedPoints.map((item) => (
+                  <li key={item}>
+                    <span className={styles.pointIcon} aria-hidden>
+                      <FaCheck />
+                    </span>
+                    <span className={styles.pointText}>{item}</span>
+                  </li>
+                ))}
+              </ul>
 
-              <div className={styles.imgBox}>
-                <div className={styles.mainImg}>
-                  <img
-                    src={includedImages.main}
-                    alt={includedImages.mainAlt}
-                    loading="lazy"
-                  />
-                </div>
-                <div className={styles.imgShape1} aria-hidden>
-                  <img src={includedImages.shape1} alt={includedImages.shape1Alt} loading="lazy" />
-                </div>
-                <div className={styles.imgShape2} aria-hidden>
-                  <img src={includedImages.shape2} alt={includedImages.shape2Alt} loading="lazy" />
-                </div>
-                <div className={styles.imgShape3} aria-hidden>
-                  <img src={includedImages.shape3} alt={includedImages.shape3Alt} loading="lazy" />
-                </div>
-                <div className={styles.imgShape4} aria-hidden>
-                  <img src={includedImages.shape4} alt={includedImages.shape4Alt} loading="lazy" />
-                </div>
-              </div>
-
-              <div className={styles.img2}>
-                <img src={includedImages.img2} alt={includedImages.img2Alt} loading="lazy" />
-              </div>
-              <div className={styles.img3}>
-                <img src={includedImages.img3} alt={includedImages.img3Alt} loading="lazy" />
-              </div>
-              <div className={styles.img4}>
-                <img src={includedImages.img4} alt={includedImages.img4Alt} loading="lazy" />
+              <div className={styles.closing}>
+                <p>
+                  {includedExtraBefore}
+                  <Link
+                    href="/domestic-cleaning-services"
+                    className={local.internalLink}
+                  >
+                    {includedExtraLinkLabel}
+                  </Link>
+                  {includedExtraAfter}
+                </p>
               </div>
             </div>
           </div>

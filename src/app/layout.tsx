@@ -21,7 +21,7 @@ const rubik = Rubik({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://clcleaningserviceslondon.co.uk"),
-  title: "Cleaning Services London for Homes Landlords and Businesses",
+  title: "Cleaning Services London | Certified Home Cleaners",
   description:
     "Professional cleaning services in London for homes and businesses. DBS-checked, insured cleaners with fixed pricing and completion photo reports.",
   icons: {

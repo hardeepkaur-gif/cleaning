@@ -3,6 +3,13 @@ import ThmButton from "@/components/menu/ThmButton";
 import { areaNames, areaPins } from "./areasData";
 import styles from "./AreasSection.module.css";
 
+const sideClass = {
+  top: styles.pinTop,
+  bottom: styles.pinBottom,
+  left: styles.pinLeft,
+  right: styles.pinRight,
+} as const;
+
 export default function AreasSection() {
   return (
     <section className={styles.section} aria-labelledby="areas-title">
@@ -35,18 +42,24 @@ export default function AreasSection() {
                   {areaPins.map((pin, i) => (
                     <div
                       key={pin.name}
-                      className={styles.pin}
+                      className={`${styles.pin} ${sideClass[pin.side]}`}
                       style={{
                         top: `${pin.top}%`,
                         left: `${pin.left}%`,
-                        animationDelay: `${i * 0.12}s`,
+                        animationDelay: `${i * 0.1}s`,
+                        zIndex: i + 1,
                       }}
-                      title={pin.name}
                       aria-label={pin.name}
                     >
-                      <span className={styles.pinIcon} role="img" aria-label={`${pin.name} service area map pin icon`}>
+                      <span
+                        className={styles.pinIcon}
+                        role="img"
+                        aria-label={`${pin.name} service area map pin icon`}
+                      >
                         <FaMapMarkerAlt aria-hidden />
                       </span>
+                      <span className={styles.pinStem} aria-hidden />
+                      <span className={styles.pinLabel}>{pin.name}</span>
                     </div>
                   ))}
                 </div>

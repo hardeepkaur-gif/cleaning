@@ -85,7 +85,7 @@
   border-radius: 8px;
 }
 
-/* Pins */
+/* Pins — marker on map, label fanned out with stem */
 .pins {
   position: absolute;
   inset: 0;
@@ -95,9 +95,8 @@
 
 .pin {
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 0;
+  height: 0;
   pointer-events: auto;
   opacity: 0;
   transform: translate(-50%, -50%) scale(0.85);
@@ -112,24 +111,126 @@
 }
 
 .pinIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 34px;
-  height: 34px;
+  width: 28px;
+  height: 28px;
+  margin: -14px 0 0 -14px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--primary), #2a9d8f);
   color: var(--white);
-  font-size: 15px;
-  box-shadow: 0 4px 14px rgba(14, 94, 91, 0.35);
+  font-size: 12px;
+  box-shadow: 0 4px 12px rgba(14, 94, 91, 0.35);
   border: 2px solid var(--white);
   transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  z-index: 2;
+}
+
+.pinStem {
+  position: absolute;
+  background: rgba(14, 94, 91, 0.45);
+  z-index: 1;
+}
+
+.pinLabel {
+  position: absolute;
+  z-index: 2;
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 8px;
+  background: var(--white);
+  border: 1px solid rgba(14, 94, 91, 0.16);
+  box-shadow: 0 6px 16px rgba(10, 70, 68, 0.14);
+  font-family: var(--font-two);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--primary-dark);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+/* Right fan */
+.pinRight .pinStem {
+  top: 50%;
+  left: 14px;
+  width: 22px;
+  height: 2px;
+  margin-top: -1px;
+}
+
+.pinRight .pinLabel {
+  top: 50%;
+  left: 36px;
+  transform: translateY(-50%);
+}
+
+/* Left fan */
+.pinLeft .pinStem {
+  top: 50%;
+  right: 14px;
+  width: 22px;
+  height: 2px;
+  margin-top: -1px;
+}
+
+.pinLeft .pinLabel {
+  top: 50%;
+  right: 36px;
+  transform: translateY(-50%);
+}
+
+/* Top fan */
+.pinTop .pinStem {
+  left: 50%;
+  bottom: 14px;
+  width: 2px;
+  height: 22px;
+  margin-left: -1px;
+}
+
+.pinTop .pinLabel {
+  left: 50%;
+  bottom: 36px;
+  transform: translateX(-50%);
+}
+
+/* Bottom fan */
+.pinBottom .pinStem {
+  left: 50%;
+  top: 14px;
+  width: 2px;
+  height: 22px;
+  margin-left: -1px;
+}
+
+.pinBottom .pinLabel {
+  left: 50%;
+  top: 36px;
+  transform: translateX(-50%);
+}
+
+.pin:hover {
+  z-index: 20 !important;
 }
 
 .pin:hover .pinIcon {
-  transform: scale(1.15);
+  transform: scale(1.12);
   background: var(--cta);
-  box-shadow: 0 8px 22px rgba(226, 106, 76, 0.4);
+  box-shadow: 0 8px 20px rgba(226, 106, 76, 0.4);
+}
+
+.pin:hover .pinLabel {
+  border-color: rgba(226, 106, 76, 0.3);
+  box-shadow: 0 8px 20px rgba(10, 70, 68, 0.18);
+}
+
+.pin:hover .pinStem {
+  background: var(--cta);
 }
 
 
@@ -204,6 +305,37 @@
   .pin {
     pointer-events: none;
   }
+
+  .pinLabel {
+    font-size: 10px;
+    padding: 4px 7px;
+  }
+
+  .pinRight .pinStem,
+  .pinLeft .pinStem {
+    width: 16px;
+  }
+
+  .pinTop .pinStem,
+  .pinBottom .pinStem {
+    height: 16px;
+  }
+
+  .pinRight .pinLabel {
+    left: 30px;
+  }
+
+  .pinLeft .pinLabel {
+    right: 30px;
+  }
+
+  .pinTop .pinLabel {
+    bottom: 30px;
+  }
+
+  .pinBottom .pinLabel {
+    top: 30px;
+  }
 }
 
 @media(max-width: 575px) {
@@ -217,8 +349,15 @@
   }
 
   .pinIcon {
-    width: 28px;
-    height: 28px;
-    font-size: 12px;
+    width: 22px;
+    height: 22px;
+    margin: -11px 0 0 -11px;
+    font-size: 10px;
+  }
+
+  .pinLabel {
+    font-size: 9px;
+    padding: 3px 6px;
+    border-radius: 6px;
   }
 }

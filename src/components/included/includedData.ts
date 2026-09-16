@@ -26,10 +26,16 @@ export const includedExtraLinkLabel = "Domestic cleaning services London";
 export const includedExtraAfter =
   " customers book often focus on routine household maintenance, whilst carpet cleaning London services target stains and deep fibre cleaning. End of tenancy cleaning London appointments follow a more comprehensive property checklist, and gutter cleaning London services focus on external drainage systems and blockage removal.";
 
+export const includedImage =
+  `${imgBase}/professional-house-cleaning-london-kitchen.webp`;
+
+export const includedImageAlt =
+  "Professional cleaner providing house cleaning services in a London home";
+
+/** Kept for collage layouts still used on carpet / tenancy / gutter sections */
 export const includedImages = {
-  main: `${imgBase}/professional-house-cleaning-london-kitchen.webp`,
-  mainAlt:
-    "Professional cleaner providing house cleaning services in a London home",
+  main: includedImage,
+  mainAlt: includedImageAlt,
   img2: `${imgBase}/cleaner-wiping-kitchen-worktops-london.webp`,
   img2Alt:
     "Cleaner wiping kitchen worktops during a professional home clean in London",

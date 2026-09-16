@@ -41,13 +41,6 @@ export default function FaqSection() {
                   </button>
                   <div className={styles.answer} aria-hidden={!open}>
                     <div className={styles.answerInner}>
-                      <div className={styles.answerImg}>
-                        <img
-                          src={faq.img}
-                          alt={faq.alt}
-                          loading="lazy"
-                        />
-                      </div>
                       <p>{faq.a}</p>
                     </div>
                   </div>
@@ -76,13 +69,6 @@ export default function FaqSection() {
                   </button>
                   <div className={styles.answer} aria-hidden={!open}>
                     <div className={styles.answerInner}>
-                      <div className={styles.answerImg}>
-                        <img
-                          src={faq.img}
-                          alt={faq.alt}
-                          loading="lazy"
-                        />
-                      </div>
                       <p>{faq.a}</p>
                     </div>
                   </div>
