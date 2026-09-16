@@ -7,13 +7,13 @@
   background:
     radial-gradient(
       circle at 10% 15%,
-      rgba(14, 94, 91, 0.07) 0%,
-      transparent 42%
+      rgba(14, 94, 91, 0.11) 0%,
+      transparent 68%
     ),
     radial-gradient(
       circle at 90% 85%,
-      rgba(226, 106, 76, 0.08) 0%,
-      transparent 40%
+      rgba(226, 106, 76, 0.15) 0%,
+      transparent 65%
     ),
     #f7f4f1;
 }
@@ -43,7 +43,7 @@
   margin-bottom: 12px;
   padding: 7px 14px;
   border-radius: 999px;
-  background: rgba(226, 106, 76, 0.12);
+  background: rgba(226, 106, 76, 0.15);
 }
 
 .taglineIcon {
@@ -151,7 +151,7 @@
   height: clamp(56px, 5.8vw, 68px);
   border-radius: 16px;
   background: linear-gradient(145deg, #eaf3f2 0%, #f7f4f1 100%);
-  border: 1px solid rgba(14, 94, 91, 0.12);
+  border: 1px solid rgba(14, 94, 91, 0.15);
   color: var(--primary);
   font-size: clamp(20px, 2.2vw, 26px);
   transition:
@@ -179,7 +179,7 @@
   margin-bottom: 6px;
   padding: 4px 10px;
   border-radius: 999px;
-  background: rgba(226, 106, 76, 0.12);
+  background: rgba(226, 106, 76, 0.15);
   font-family: var(--font-two);
   font-size: 12px;
   font-weight: 700;
@@ -233,7 +233,7 @@
 }
 
 .item:hover .watermark {
-  color: rgba(226, 106, 76, 0.12);
+  color: rgba(226, 106, 76, 0.15);
 }
 
 @media (max-width: 1200px) {

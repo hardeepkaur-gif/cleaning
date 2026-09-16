@@ -1,0 +1,7 @@
+.section {
+  padding-top: clamp(56px, 7vw, 80px);
+  padding-bottom: clamp(70px, 9vw, 100px);
+  background:
+    radial-gradient(circle at 12% 20%, rgba(14, 94, 91, 0.13) 0%, transparent 65%),
+    var(--white);
+}

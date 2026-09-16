@@ -19,6 +19,7 @@ Social: ${socialProfiles.map((profile) => `[${profile.label}](${profile.href})`)
 ## Pages
 
 - [Home](${SITE_URL}/): Overview of professional cleaning services for homes, landlords and businesses in London.
+- [About Us](${SITE_URL}/about-us): Who Cleaning Services London is and the domestic, end-of-tenancy, carpet and gutter services we offer.
 - [Services](${SITE_URL}/services): Summary of all four core cleaning services offered across London.
 - [Contact Us](${SITE_URL}/contact-us): Free, no-obligation quotes by phone, email, WhatsApp or online form.
 - [Case Studies](${SITE_URL}/case-studies): Real cleaning jobs across London, including mould removal, bathroom deep cleaning, garden clearance and clothesline installs.

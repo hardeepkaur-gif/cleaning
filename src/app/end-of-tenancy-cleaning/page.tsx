@@ -38,10 +38,10 @@ export default function EndOfTenancyCleaningPage() {
       <TenancyIncludedCtaSection />
       <TenancyChecklistAltSection />
       <TenancyCtaSection />
-      <TenancyPricingCtaSection />
       <TenancyDepositGuideSection />
       <TenancyWhoUsesAltSection />
       <TenancyProcessSection />
+      <TenancyPricingCtaSection />
       <TenancyOptionalServicesSection />
       <TenancyWhyChooseAltSection />
       <TenancyAreasSection />

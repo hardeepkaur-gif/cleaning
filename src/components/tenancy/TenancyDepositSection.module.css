@@ -7,13 +7,13 @@
   background:
     radial-gradient(
       circle at 8% 20%,
-      rgba(14, 94, 91, 0.09) 0%,
+      rgba(14, 94, 91, 0.13) 0%,
       transparent 44%
     ),
     radial-gradient(
       circle at 92% 78%,
-      rgba(226, 106, 76, 0.1) 0%,
-      transparent 40%
+      rgba(226, 106, 76, 0.14) 0%,
+      transparent 65%
     ),
     #f7f4f1;
 }
@@ -63,7 +63,7 @@
   margin: 0 0 14px;
   padding: 7px 14px;
   border-radius: 999px;
-  background: rgba(226, 106, 76, 0.12);
+  background: rgba(226, 106, 76, 0.15);
   font-family: var(--font-two);
   font-size: clamp(12px, 1.2vw, 14px);
   font-weight: 600;
@@ -216,7 +216,7 @@
   padding: 16px 18px;
   border-radius: 18px;
   background: var(--white);
-  border: 1px solid rgba(14, 94, 91, 0.12);
+  border: 1px solid rgba(14, 94, 91, 0.15);
   box-shadow: 0 14px 34px rgba(10, 70, 68, 0.1);
   animation: cardIn 0.7s ease 0.15s both;
 }
@@ -264,7 +264,7 @@
   background: var(--white);
   border: 1px solid rgba(226, 106, 76, 0.22);
   box-shadow:
-    0 16px 40px rgba(226, 106, 76, 0.12),
+    0 16px 40px rgba(226, 106, 76, 0.15),
     0 4px 12px rgba(10, 70, 68, 0.05);
   overflow: hidden;
 }
@@ -284,7 +284,7 @@
   margin-bottom: 12px;
   padding: 6px 12px;
   border-radius: 999px;
-  background: rgba(226, 106, 76, 0.12);
+  background: rgba(226, 106, 76, 0.15);
   font-family: var(--font-two);
   font-size: 12px;
   font-weight: 700;

@@ -37,7 +37,7 @@ export default function GutterHero() {
             <div className={heroStyles.bigTitle}>
               <h1 id="gutter-hero-title">
                 Professional and Reliable Gutter Cleaning{" "}
-                <span>London</span> for Homes and Businesses
+                <span>London</span> for Homes
               </h1>
             </div>
 

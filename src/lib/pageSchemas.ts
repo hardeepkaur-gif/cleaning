@@ -67,6 +67,19 @@ export const contactPageSchema = schemaGraph([
   }),
 ]);
 
+export const aboutPageSchema = schemaGraph([
+  breadcrumbNode("/about-us", [
+    homeCrumb,
+    { name: "About Us", path: "/about-us" },
+  ]),
+  webPageNode({
+    path: "/about-us",
+    name: "About Us | Cleaning Services London",
+    description:
+      "Cleaning Services London is a UK-based professional cleaning company providing dependable domestic, end-of-tenancy, carpet and gutter cleaning across London.",
+  }),
+]);
+
 export const privacyPageSchema = schemaGraph([
   breadcrumbNode("/privacy-policy", [
     homeCrumb,

@@ -4,7 +4,7 @@
   position: relative;
   padding: clamp(64px, 8vw, 110px) 0;
   background:
-    radial-gradient(circle at 100% 0%, rgba(14, 94, 91, 0.06) 0%, transparent 38%),
+    radial-gradient(circle at 100% 0%, rgba(14, 94, 91, 0.14) 0%, transparent 62%),
     var(--white);
   overflow: hidden;
   z-index: 1;

@@ -14,7 +14,6 @@ import CarpetBenefitsSection from "@/components/carpet/CarpetBenefitsSection";
 import CarpetAreasSection from "@/components/carpet/CarpetAreasSection";
 import CarpetAreasCtaSection from "@/components/carpet/CarpetAreasCtaSection";
 import CarpetProcessSection from "@/components/carpet/CarpetProcessSection";
-import CarpetReadyCtaSection from "@/components/carpet/CarpetReadyCtaSection";
 import CarpetFaqSection from "@/components/carpet/CarpetFaqSection";
 import JsonLd from "@/components/seo/JsonLd";
 import { carpetPageSchema } from "@/lib/pageSchemas";
@@ -48,7 +47,6 @@ export default function CarpetCleaningPage() {
       <CarpetAreasSection />
       <CarpetAreasCtaSection />
       <CarpetProcessSection />
-      <CarpetReadyCtaSection />
       <CarpetFaqSection />
     </main>
     </>

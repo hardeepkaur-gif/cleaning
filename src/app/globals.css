@@ -39,15 +39,115 @@ main > section:not(:first-child) {
   padding-bottom: 70px !important;
 }
 
+main > section#about-final-cta {
+  padding-bottom: 0 !important;
+}
+
+main > section#domestic-intro-cta {
+  padding-bottom: 0 !important;
+}
+
+main > section#domestic-why-choose {
+  padding-top: 0 !important;
+}
+
+main > section#domestic-final-cta {
+  padding-top: 0 !important;
+}
+
+main > section#tenancy-pricing-cta {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+main > section#carpet-stains {
+  padding-bottom: 0 !important;
+}
+
+main > section#carpet-pricing-cta {
+  padding-bottom: 0 !important;
+}
+
+main > section#carpet-choose-cleaner {
+  padding-top: 0 !important;
+}
+
+main > section#carpet-areas-cta {
+  padding-top: 0 !important;
+}
+
+main > section#gutter-ready-cta {
+  padding-top: 0 !important;
+}
+
+main > section#gutter-why-choose {
+  padding-bottom: 0 !important;
+}
+
 @media (max-width: 767px) {
   main > section:not(:first-child) {
     padding-top: 48px !important;
     padding-bottom: 48px !important;
   }
+
+  main > section#about-final-cta {
+    padding-bottom: 0 !important;
+  }
+
+  main > section#domestic-intro-cta {
+    padding-bottom: 0 !important;
+  }
+
+  main > section#domestic-why-choose {
+    padding-top: 0 !important;
+  }
+
+  main > section#domestic-final-cta {
+    padding-top: 0 !important;
+  }
+
+  main > section#tenancy-pricing-cta {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  main > section#carpet-stains {
+    padding-bottom: 0 !important;
+  }
+
+  main > section#carpet-pricing-cta {
+    padding-bottom: 0 !important;
+  }
+
+  main > section#carpet-choose-cleaner {
+    padding-top: 0 !important;
+  }
+
+  main > section#carpet-areas-cta {
+    padding-top: 0 !important;
+  }
+
+  main > section#gutter-ready-cta {
+    padding-top: 0 !important;
+  }
+
+  main > section#gutter-why-choose {
+    padding-bottom: 0 !important;
+  }
 }
 
 a {
   color: inherit;
+}
+
+/* Site-wide headings — capitalize each word’s first letter */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: capitalize;
 }
 
 .section {

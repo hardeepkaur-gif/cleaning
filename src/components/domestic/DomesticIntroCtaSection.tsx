@@ -12,7 +12,7 @@ import local from "./DomesticIntroCtaSection.module.css";
 export default function DomesticIntroCtaSection() {
   return (
     <section
-      className={styles.cta}
+      className={`${styles.cta} ${local.cta}`}
       id="domestic-intro-cta"
       aria-labelledby="domestic-intro-cta-title"
     >

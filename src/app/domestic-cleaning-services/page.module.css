@@ -23,10 +23,22 @@
 }
 
 /* Compact CTA banners */
-.page > #domestic-intro-cta,
-.page > #domestic-cleaning-cta,
-.page > #domestic-additional-services,
+.page > #domestic-intro-cta {
+  padding-top: calc(var(--domestic-section-y-md) / 2) !important;
+  padding-bottom: 0 !important;
+}
+
+.page > #domestic-why-choose {
+  padding-top: 0 !important;
+}
+
 .page > #domestic-final-cta {
+  padding-top: 0 !important;
+  padding-bottom: calc(var(--domestic-section-y-md) / 2) !important;
+}
+
+.page > #domestic-cleaning-cta,
+.page > #domestic-additional-services {
   padding-top: calc(var(--domestic-section-y-md) / 2) !important;
   padding-bottom: calc(var(--domestic-section-y-md) / 2) !important;
 }

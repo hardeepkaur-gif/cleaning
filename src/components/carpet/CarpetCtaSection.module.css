@@ -19,12 +19,16 @@
 }
 
 .screenHero {
-  height: 96px;
+  flex: 1 1 auto;
+  min-height: 96px;
+  height: auto;
 }
 
 @media(max-width: 991px) {
   .screenHero {
-    height: 110px;
+    flex: 0 0 auto;
+    height: 48px;
+    min-height: 48px;
   }
 
   .copy {

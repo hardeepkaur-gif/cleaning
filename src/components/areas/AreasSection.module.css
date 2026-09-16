@@ -200,6 +200,12 @@
   }
 }
 
+@media(max-width: 767px) {
+  .pin {
+    pointer-events: none;
+  }
+}
+
 @media(max-width: 575px) {
   .grid {
     gap: 20px;

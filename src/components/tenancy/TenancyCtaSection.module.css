@@ -106,7 +106,7 @@
   width: fit-content;
   padding: 4px 8px;
   border-radius: 999px;
-  background: rgba(226, 106, 76, 0.12);
+  background: rgba(226, 106, 76, 0.15);
   color: var(--cta);
   font-family: var(--font-two);
   font-size: 8px;

@@ -8,7 +8,6 @@ export type NavItem = {
 
 export const navItems: NavItem[] = [
   { label: "Home", href: "/" },
-  { label: "About Us", href: "/#about" },
   {
     label: "Services",
     href: "/services",
@@ -69,7 +68,6 @@ export const navItems: NavItem[] = [
       },
     ],
   },
-  { label: "Contact Us", href: "/contact-us" },
 ];
 
 /** Same service list as header Services dropdown */
@@ -87,6 +85,7 @@ export const socialLinks = socialProfiles;
 
 export const footerQuickLinks = [
   { label: "Home", href: "/" },
+  { label: "About Us", href: "/about-us" },
   { label: "Services", href: "/services" },
   { label: "Case Studies", href: "/case-studies" },
   { label: "Contact Us", href: "/contact-us" },
@@ -97,5 +96,4 @@ export const footerLegalLinks = [
   { label: "Privacy Policy", href: "/privacy-policy" },
   { label: "Disclaimer", href: "/disclaimer" },
   { label: "Cookies Policy", href: "/cookies-policy" },
-  { label: "Support", href: "/contact-us" },
 ];

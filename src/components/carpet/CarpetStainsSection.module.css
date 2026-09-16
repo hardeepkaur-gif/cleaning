@@ -2,7 +2,7 @@
 
 .section {
   position: relative;
-  padding: clamp(70px, 8vw, 100px) 0;
+  padding: clamp(70px, 8vw, 100px) 0 0;
   background: var(--white);
   overflow: hidden;
 }
@@ -31,12 +31,12 @@
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
   gap: clamp(32px, 5vw, 56px);
-  align-items: center;
+  align-items: start;
 }
 
 .header {
-  text-align: center;
-  margin: 0 0 clamp(32px, 4vw, 44px);
+  text-align: left;
+  margin: 0 0 clamp(16px, 2vw, 22px);
 }
 
 .copy {
@@ -151,10 +151,6 @@
 }
 
 @media (max-width: 767px) {
-  .header {
-    text-align: left;
-  }
-
   .title {
     font-size: clamp(24px, 6.2vw, 32px);
   }
@@ -167,7 +163,7 @@
 
 @media (max-width: 575px) {
   .section {
-    padding: clamp(56px, 8vw, 70px) 0;
+    padding: clamp(56px, 8vw, 70px) 0 0;
   }
 
   .pointIcon {

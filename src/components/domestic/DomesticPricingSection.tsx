@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { FaPhoneAlt } from "react-icons/fa";
-import { PiCurrencyGbpDuotone } from "react-icons/pi";
 import ThmButton from "@/components/menu/ThmButton";
 import {
   domesticPricingFooterText,
@@ -9,7 +8,6 @@ import {
   domesticPricingIntroAfter,
   domesticPricingIntroBefore,
   domesticPricingIntroLinkLabel,
-  domesticPricingRateLabel,
   domesticPricingRows,
   domesticPricingTitle,
 } from "./domesticPricingData";
@@ -25,9 +23,6 @@ export default function DomesticPricingSection() {
       id="domestic-pricing"
       aria-labelledby="domestic-pricing-title"
     >
-      <div className={styles.orbOne} aria-hidden />
-      <div className={styles.orbTwo} aria-hidden />
-
       <div className={styles.container}>
         <header className={styles.header}>
           <span className={styles.eyebrow}>Transparent pricing</span>
@@ -42,16 +37,6 @@ export default function DomesticPricingSection() {
             {domesticPricingIntroAfter}
           </p>
         </header>
-
-        <div className={styles.rateCard}>
-          <span className={styles.rateIcon} role="img" aria-label={domesticPricingHeaderIcons.rateAlt}>
-            <PiCurrencyGbpDuotone aria-hidden />
-          </span>
-          <div>
-            <p className={styles.rateLabel}>Typical hourly rate</p>
-            <p className={styles.rateValue}>{domesticPricingRateLabel}</p>
-          </div>
-        </div>
 
         <div className={styles.tableWrap}>
           <table className={styles.table}>

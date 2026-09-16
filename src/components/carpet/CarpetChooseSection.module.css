@@ -1,7 +1,3 @@
-#carpet-choose-cleaner {
-  padding-top: 0 !important;
-}
-
 .services {
   padding-top: 0 !important;
 }
@@ -30,7 +26,6 @@
 }
 
 @media (max-width: 767px) {
-  #carpet-choose-cleaner,
   .services {
     padding-top: 0 !important;
   }

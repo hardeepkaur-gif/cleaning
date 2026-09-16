@@ -3,13 +3,13 @@
   background:
     radial-gradient(
       circle at 88% 12%,
-      rgba(226, 106, 76, 0.06) 0%,
-      transparent 38%
+      rgba(226, 106, 76, 0.14) 0%,
+      transparent 62%
     ),
     radial-gradient(
       circle at 8% 88%,
-      rgba(14, 94, 91, 0.06) 0%,
-      transparent 40%
+      rgba(14, 94, 91, 0.14) 0%,
+      transparent 65%
     ),
     var(--white);
   overflow: hidden;
@@ -31,7 +31,7 @@
   margin-bottom: 14px;
   padding: 6px 14px;
   border-radius: 999px;
-  background: rgba(226, 106, 76, 0.12);
+  background: rgba(226, 106, 76, 0.15);
   font-family: var(--font-two);
   font-size: clamp(12px, 1.2vw, 13px);
   font-weight: 700;
@@ -164,7 +164,7 @@
   min-width: 88px;
   padding: 10px 14px;
   border-radius: 12px;
-  background: rgba(226, 106, 76, 0.12);
+  background: rgba(226, 106, 76, 0.15);
   font-family: var(--font-two);
   font-size: clamp(15px, 1.4vw, 17px);
   font-weight: 800;

@@ -17,15 +17,15 @@ export default function CarpetStainsSection() {
       aria-labelledby="carpet-stains-title"
     >
       <div className={styles.container}>
-        <header className={styles.header}>
-          <span className={styles.tagline}>{carpetStainsTagline}</span>
-          <h2 className={styles.title} id="carpet-stains-title">
-            {carpetStainsTitle}
-          </h2>
-        </header>
-
         <div className={styles.grid}>
           <div className={styles.copy}>
+            <header className={styles.header}>
+              <span className={styles.tagline}>{carpetStainsTagline}</span>
+              <h2 className={styles.title} id="carpet-stains-title">
+                {carpetStainsTitle}
+              </h2>
+            </header>
+
             <p className={styles.text}>{carpetStainsIntro}</p>
 
             <ul className={styles.points}>

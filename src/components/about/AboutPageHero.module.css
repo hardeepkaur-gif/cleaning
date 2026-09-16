@@ -1,0 +1,102 @@
+/* Compact hero so full left content fits on screen */
+
+.hero {
+  overflow: visible !important;
+}
+
+.bg {
+  background-position: right center;
+  background-size: cover;
+}
+
+.bg::before {
+  background: linear-gradient(
+    90deg,
+    rgba(16, 54, 47, 0.94) 0%,
+    rgba(16, 54, 47, 0.82) 42%,
+    rgba(16, 54, 47, 0.35) 68%,
+    rgba(16, 54, 47, 0.12) 100%
+  ) !important;
+}
+
+.inner {
+  max-width: min(760px, 62%);
+  width: 100%;
+  margin-left: 0;
+  margin-right: auto;
+  text-align: left;
+  padding: clamp(108px, 12vw, 128px) 0 clamp(40px, 5vw, 56px) !important;
+}
+
+.title {
+  margin: 0 0 14px !important;
+  font-size: clamp(26px, 3.6vw, 42px) !important;
+  line-height: 1.2 !important;
+  text-align: left;
+}
+
+.intro {
+  margin: 0 0 16px;
+  max-width: none;
+  font-size: clamp(14px, 1.3vw, 16px);
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.92);
+  text-align: left;
+}
+
+.breadcrumb {
+  text-align: left;
+}
+
+.breadcrumbList {
+  justify-content: flex-start !important;
+}
+
+@media (max-width: 991px) {
+  .inner {
+    max-width: min(700px, 80%);
+    padding: clamp(100px, 14vw, 120px) 0 clamp(36px, 5vw, 48px) !important;
+  }
+
+  .bg::before {
+    background: linear-gradient(
+      90deg,
+      rgba(16, 54, 47, 0.94) 0%,
+      rgba(16, 54, 47, 0.78) 55%,
+      rgba(16, 54, 47, 0.28) 100%
+    ) !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    overflow: hidden !important;
+  }
+
+  .inner {
+    max-width: none;
+    padding: 100px 0 36px !important;
+  }
+
+  .title {
+    font-size: clamp(24px, 6.5vw, 32px) !important;
+  }
+
+  .intro {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .bg {
+    background-position: 70% center;
+  }
+
+  .bg::before {
+    background: linear-gradient(
+      180deg,
+      rgba(16, 54, 47, 0.72) 0%,
+      rgba(16, 54, 47, 0.55) 50%,
+      rgba(16, 54, 47, 0.7) 100%
+    ) !important;
+  }
+}

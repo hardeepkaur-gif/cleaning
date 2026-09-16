@@ -1,6 +1,5 @@
 import { FaCalendarCheck } from "react-icons/fa";
 import {
-  PiCalendarCheckFill,
   PiCloudRainDuotone,
   PiShieldCheckFill,
   PiSparkleFill,
@@ -77,9 +76,6 @@ export default function GutterReadyCtaSection() {
                   <ul className={styles.screenList}>
                     <li>
                       <PiShieldCheckFill aria-hidden /> Trusted local team
-                    </li>
-                    <li>
-                      <PiCalendarCheckFill aria-hidden /> Convenient appointment
                     </li>
                   </ul>
 

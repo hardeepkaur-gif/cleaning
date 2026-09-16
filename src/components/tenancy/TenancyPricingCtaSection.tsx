@@ -6,6 +6,7 @@ import {
 } from "react-icons/pi";
 import ThmButton from "@/components/menu/ThmButton";
 import styles from "@/components/cta/CtaSectionFour.module.css";
+import local from "./TenancyPricingCtaSection.module.css";
 
 const trustPoints = [
   "Fixed pricing",
@@ -16,7 +17,7 @@ const trustPoints = [
 export default function TenancyPricingCtaSection() {
   return (
     <section
-      className={styles.cta}
+      className={`${styles.cta} ${local.cta}`}
       id="tenancy-pricing-cta"
       aria-labelledby="tenancy-pricing-cta-title"
     >

@@ -6,13 +6,13 @@
   background:
     radial-gradient(
       circle at 12% 18%,
-      rgba(14, 94, 91, 0.07) 0%,
-      transparent 42%
+      rgba(14, 94, 91, 0.11) 0%,
+      transparent 68%
     ),
     radial-gradient(
       circle at 88% 78%,
-      rgba(226, 106, 76, 0.08) 0%,
-      transparent 40%
+      rgba(226, 106, 76, 0.15) 0%,
+      transparent 65%
     ),
     #faf8f5;
   overflow: hidden;
@@ -57,7 +57,7 @@
   margin: 0 0 14px;
   padding: 7px 14px;
   border-radius: 999px;
-  background: rgba(226, 106, 76, 0.12);
+  background: rgba(226, 106, 76, 0.15);
   font-family: var(--font-two);
   font-size: clamp(12px, 1.2vw, 13px);
   font-weight: 600;
@@ -112,7 +112,7 @@
   border-radius: 50%;
   transform: translateY(-50%);
   background: var(--primary);
-  box-shadow: 0 0 0 4px rgba(14, 94, 91, 0.12);
+  box-shadow: 0 0 0 4px rgba(14, 94, 91, 0.15);
 }
 
 .progressBlock {
@@ -285,7 +285,7 @@
   background: #ece8e3;
   color: var(--primary);
   font-size: 16px;
-  border: 2px solid rgba(14, 94, 91, 0.12);
+  border: 2px solid rgba(14, 94, 91, 0.15);
   transition:
     background 0.3s ease,
     color 0.3s ease,
@@ -361,7 +361,7 @@
   font-size: 28px;
   font-weight: 800;
   line-height: 1;
-  color: rgba(14, 94, 91, 0.12);
+  color: rgba(14, 94, 91, 0.15);
 }
 
 .itemActive .itemNum {

@@ -52,6 +52,10 @@
   color: var(--white);
 }
 
+.pageHeaderInner h1 span {
+  color: var(--cta);
+}
+
 .breadcrumbWrap {
   position: relative;
   display: block;

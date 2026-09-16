@@ -25,8 +25,6 @@ export const domesticPricingIntroLinkLabel = "Cleaning Services London";
 export const domesticPricingIntroAfter =
   " range from £15 to £30 per hour, but it varies heavily depending on the factors mentioned below.";
 
-export const domesticPricingRateLabel = "£15 – £30 per hour";
-
 export const domesticPricingHeaders = {
   factor: "What Affects the Price?",
   approach: "Our Approach",
@@ -74,5 +72,4 @@ export const domesticPricingHeaderIcons = {
   approach: PiShieldCheckDuotone,
   factorAlt: "Domestic cleaning price factors icon",
   approachAlt: "Our domestic cleaning pricing approach icon",
-  rateAlt: "Typical domestic cleaning hourly rate icon",
 };

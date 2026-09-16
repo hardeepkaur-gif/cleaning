@@ -17,7 +17,7 @@ import {
 export default function CarpetAreasCtaSection() {
   return (
     <section
-      className={styles.cta}
+      className={`${styles.cta} ${local.cta}`}
       id="carpet-areas-cta"
       aria-labelledby="carpet-areas-cta-title"
     >

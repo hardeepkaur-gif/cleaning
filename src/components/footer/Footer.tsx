@@ -52,7 +52,6 @@ export default function Footer() {
       <div className={styles.ctaBanner}>
         <div className={styles.ctaBannerInner}>
           <div className={styles.ctaBannerText}>
-            <span className={styles.ctaBadge}>Trusted London Cleaners</span>
             <h2>
               Book Professional Cleaning Services{" "}
               <span>London</span>
@@ -119,7 +118,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className={styles.column}>
+          <div className={`${styles.column} ${styles.quickLinksColumn}`}>
             <h3 className={styles.title}>Quick Links</h3>
             <ul className={styles.links}>
               {footerQuickLinks.map((link) => (
@@ -133,7 +132,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className={styles.column}>
+          <div className={`${styles.column} ${styles.servicesColumn}`}>
             <h3 className={styles.title}>Our Services</h3>
             <ul className={styles.links}>
               {navServiceLinks.map((link) => (
@@ -147,7 +146,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className={styles.column}>
+          <div className={`${styles.column} ${styles.contactColumn}`}>
             <h3 className={styles.title}>Get in Touch</h3>
             <ul className={styles.contactList}>
               <li>
@@ -172,7 +171,7 @@ export default function Footer() {
                 <span className={styles.contactIcon} role="img" aria-label="Business opening hours icon">
                   <FaClock aria-hidden />
                 </span>
-                <span>Mon – Sun: 8:00 AM – 8:00 PM</span>
+                <span>Mon – Sun: Available 24/7</span>
               </li>
             </ul>
           </div>

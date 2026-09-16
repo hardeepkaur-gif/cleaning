@@ -4,13 +4,13 @@
   background:
     radial-gradient(
       circle at 8% 20%,
-      rgba(14, 94, 91, 0.07) 0%,
-      transparent 42%
+      rgba(14, 94, 91, 0.11) 0%,
+      transparent 68%
     ),
     radial-gradient(
       circle at 92% 80%,
-      rgba(226, 106, 76, 0.08) 0%,
-      transparent 38%
+      rgba(226, 106, 76, 0.15) 0%,
+      transparent 62%
     ),
     var(--white);
   overflow: hidden;

@@ -1,10 +1,5 @@
 import { FaCalendarCheck } from "react-icons/fa";
-import {
-  PiCalendarCheckFill,
-  PiCurrencyGbpDuotone,
-  PiRugDuotone,
-  PiSparkleFill,
-} from "react-icons/pi";
+import { PiRugDuotone, PiSparkleFill } from "react-icons/pi";
 import ThmButton from "@/components/menu/ThmButton";
 import styles from "@/components/cta/CtaSectionFour.module.css";
 import local from "./CarpetPricingCtaSection.module.css";
@@ -53,7 +48,11 @@ export default function CarpetPricingCtaSection() {
                 <div className={styles.phoneNotch} aria-hidden />
                 <div className={styles.phoneScreen}>
                   <div className={styles.screenTop}>
-                    <span className={styles.screenBadge} role="img" aria-label="Fixed carpet cleaning quote icon">
+                    <span
+                      className={styles.screenBadge}
+                      role="img"
+                      aria-label="Fixed carpet cleaning quote icon"
+                    >
                       <PiSparkleFill aria-hidden /> Fixed quote
                     </span>
                     <strong>Carpet Cleaning</strong>
@@ -61,20 +60,18 @@ export default function CarpetPricingCtaSection() {
                   </div>
 
                   <div className={`${styles.screenHero} ${local.screenHero}`}>
-                    <span className={`${styles.heroIcon} ${local.heroIcon}`} role="img" aria-label="Carpet cleaning pricing icon">
+                    <span
+                      className={`${styles.heroIcon} ${local.heroIcon}`}
+                      role="img"
+                      aria-label="Carpet cleaning pricing icon"
+                    >
                       <PiRugDuotone aria-hidden />
                     </span>
-                    <div className={`${styles.heroImg} ${local.heroImg}`} aria-hidden />
+                    <div
+                      className={`${styles.heroImg} ${local.heroImg}`}
+                      aria-hidden
+                    />
                   </div>
-
-                  <ul className={styles.screenList}>
-                    <li>
-                      <PiCurrencyGbpDuotone aria-hidden /> Carpet size &amp; rooms
-                    </li>
-                    <li>
-                      <PiCalendarCheckFill aria-hidden /> Quote confirmed
-                    </li>
-                  </ul>
 
                   <div className={styles.screenFooter}>
                     <span>Fixed price quote</span>

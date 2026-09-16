@@ -7,6 +7,7 @@ const publicRoutes: Array<{
   priority: number;
 }> = [
   { path: "/", changeFrequency: "weekly", priority: 1 },
+  { path: "/about-us", changeFrequency: "monthly", priority: 0.85 },
   { path: "/services", changeFrequency: "monthly", priority: 0.9 },
   { path: "/domestic-cleaning-services", changeFrequency: "monthly", priority: 0.9 },
   { path: "/carpet-cleaning-london", changeFrequency: "monthly", priority: 0.9 },

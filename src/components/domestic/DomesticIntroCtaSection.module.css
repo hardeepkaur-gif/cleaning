@@ -1,3 +1,7 @@
+.cta {
+  padding-bottom: 0 !important;
+}
+
 .heroImg {
   position: absolute;
   inset: 0;

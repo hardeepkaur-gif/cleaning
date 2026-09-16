@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
   background:
-    radial-gradient(circle at 88% 18%, rgba(226, 106, 76, 0.12) 0%, transparent 42%),
+    radial-gradient(circle at 88% 18%, rgba(226, 106, 76, 0.15) 0%, transparent 68%),
     linear-gradient(180deg, #fff8f5 0%, #ffffff 55%, #f7fbfa 100%);
   padding: clamp(40px, 6vw, 72px) 0 clamp(48px, 7vw, 88px);
 }
@@ -31,7 +31,7 @@
   margin: 0 0 18px;
   padding: 8px 14px;
   border-radius: 999px;
-  background: rgba(226, 106, 76, 0.12);
+  background: rgba(226, 106, 76, 0.15);
   color: var(--cta);
   font-family: var(--font-two);
   font-size: 12px;

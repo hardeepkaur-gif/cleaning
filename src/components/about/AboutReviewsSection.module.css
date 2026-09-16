@@ -1,0 +1,247 @@
+.section {
+  position: relative;
+  background:
+    radial-gradient(circle at 10% 0%, rgba(14, 94, 91, 0.14) 0%, transparent 68%),
+    radial-gradient(circle at 90% 100%, rgba(226, 106, 76, 0.11) 0%, transparent 65%),
+    #f8f9fa;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 3vw, 24px);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(260px, 0.7fr);
+  gap: clamp(24px, 4vw, 40px);
+  align-items: end;
+  margin-bottom: clamp(28px, 4vw, 40px);
+}
+
+.tagline {
+  margin: 0 0 12px;
+  font-family: var(--font-two);
+  font-size: clamp(12px, 1.2vw, 14px);
+  font-weight: 600;
+  color: var(--cta);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.title {
+  margin: 0 0 14px;
+  font-family: var(--font-two);
+  font-size: clamp(28px, 3.6vw, 44px);
+  line-height: 1.22;
+  font-weight: 800;
+  color: var(--primary-dark);
+}
+
+.intro {
+  margin: 0;
+  max-width: 560px;
+  font-size: clamp(15px, 1.4vw, 17px);
+  line-height: 1.7;
+  color: var(--gray);
+}
+
+.summaryCard {
+  background: var(--white);
+  border: 1px solid rgba(60, 64, 67, 0.12);
+  border-radius: 16px;
+  padding: 18px 18px 16px;
+  box-shadow: 0 1px 2px rgba(60, 64, 67, 0.08), 0 8px 24px rgba(60, 64, 67, 0.06);
+}
+
+.summaryTop {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.summaryLabel {
+  margin: 0 0 4px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #5f6368;
+}
+
+.summaryScoreRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.summaryScore {
+  font-family: var(--font-two);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  color: #202124;
+}
+
+.summaryCount {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: #5f6368;
+}
+
+.summaryLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 4px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.summaryLink:hover {
+  text-decoration: underline;
+}
+
+.summaryLink svg {
+  font-size: 11px;
+}
+
+.googleMark {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px;
+  background: var(--white);
+  border: 1px solid rgba(60, 64, 67, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 1px 2px rgba(60, 64, 67, 0.08);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 28px rgba(60, 64, 67, 0.12);
+  transform: translateY(-2px);
+}
+
+.cardHead {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-family: var(--font-two);
+  font-size: 16px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.meta {
+  min-width: 0;
+  flex: 1;
+}
+
+.nameRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #202124;
+  line-height: 1.3;
+}
+
+.metaLine {
+  margin: 3px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #5f6368;
+}
+
+.dot {
+  opacity: 0.7;
+}
+
+.stars {
+  display: inline-flex;
+  gap: 2px;
+}
+
+.starOn {
+  color: #fbbc04;
+  font-size: 14px;
+}
+
+.starOff {
+  color: #dadce0;
+  font-size: 14px;
+}
+
+.reviewText {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #3c4043;
+}
+
+@media (max-width: 991px) {
+  .header {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .summaryCard {
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 767px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .summaryCard {
+    max-width: none;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
+  }
+}

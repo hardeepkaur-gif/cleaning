@@ -1,4 +1,5 @@
 .cta {
+  padding-top: 0 !important;
   padding-bottom: clamp(48px, 6vw, 72px);
 }
 
@@ -7,7 +8,9 @@
 }
 
 .phoneCol .phone {
-  width: clamp(140px, 72%, 178px);
+  width: clamp(140px, calc(100% - 32px), 178px);
+  top: clamp(18px, 2.2vw, 28px);
+  bottom: clamp(18px, 2.2vw, 28px);
   border-radius: 22px;
   padding: 8px 7px 10px;
 }
@@ -30,16 +33,25 @@
 }
 
 .screenHero {
-  height: 72px;
+  flex: 1 1 auto;
+  min-height: 72px;
+  height: auto;
 }
 
 @media(max-width: 991px) {
   .phoneCol .phone {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    transform: none;
     width: clamp(140px, 42vw, 178px);
   }
 
   .screenHero {
-    height: 84px;
+    flex: 0 0 auto;
+    height: 48px;
+    min-height: 48px;
   }
 
   .copy {

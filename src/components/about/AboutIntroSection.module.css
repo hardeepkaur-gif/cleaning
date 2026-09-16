@@ -1,0 +1,91 @@
+/* About services — Contact steps layout, 4-card grid */
+
+.head {
+  max-width: none !important;
+  width: 100%;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.intro {
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+}
+
+.timeline {
+  left: 8% !important;
+  right: 8% !important;
+}
+
+.cardLink {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.cardLink:hover {
+  color: var(--cta);
+}
+
+.notice {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  max-width: 760px;
+  margin: clamp(28px, 4vw, 36px) auto 0;
+  padding: 16px 18px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(14, 94, 91, 0.1);
+  box-shadow: 0 8px 24px rgba(14, 94, 91, 0.05);
+}
+
+.noticeIcon {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: var(--white);
+  font-size: 14px;
+}
+
+.notice p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--primary-dark);
+  font-weight: 500;
+}
+
+@media (max-width: 1199px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .timeline {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .notice {
+    margin-top: 24px;
+  }
+}

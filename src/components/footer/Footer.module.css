@@ -48,7 +48,7 @@
     135deg,
     rgba(14, 94, 91, 0.45) 0%,
     rgba(226, 106, 76, 0.35) 45%,
-    rgba(14, 94, 91, 0.12) 100%
+    rgba(14, 94, 91, 0.15) 100%
   );
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
@@ -66,7 +66,7 @@
   width: 240px;
   height: 240px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(226, 106, 76, 0.1) 0%, transparent 68%);
+  background: radial-gradient(circle, rgba(226, 106, 76, 0.14) 0%, transparent 68%);
   pointer-events: none;
 }
 
@@ -75,32 +75,6 @@
   z-index: 1;
   flex: 1 1 auto;
   min-width: 0;
-}
-
-.ctaBadge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 14px;
-  padding: 7px 14px;
-  border-radius: 999px;
-  font-family: var(--font-two);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--primary);
-  background: var(--tint);
-  border: 1px solid rgba(14, 94, 91, 0.14);
-}
-
-.ctaBadge::before {
-  content: "";
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--cta);
-  box-shadow: 0 0 0 4px rgba(226, 106, 76, 0.18);
 }
 
 .ctaBannerText h2 {
@@ -188,12 +162,13 @@
 /* ===== Main grid ===== */
 .grid {
   display: grid;
-  grid-template-columns: 1.5fr 0.9fr 1fr 1.1fr;
-  gap: clamp(32px, 4vw, 56px);
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.7fr) minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: clamp(18px, 2.4vw, 28px);
+  align-items: start;
 }
 
 .about {
-  max-width: 360px;
+  max-width: 320px;
 }
 
 .logo {
@@ -249,12 +224,34 @@
   position: relative;
 }
 
+.quickLinksColumn {
+  margin-left: clamp(12px, 1.8vw, 24px);
+}
+
+.servicesColumn {
+  margin-left: clamp(16px, 2.2vw, 28px);
+  min-width: 0;
+}
+
+.servicesColumn .links a {
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.contactColumn {
+  margin-left: clamp(-20px, -2vw, -10px);
+}
+
+.contactColumn .contactList {
+  margin-left: -4px;
+}
+
 .title {
   font-family: var(--font-two);
   font-size: 18px;
   font-weight: 600;
   color: var(--primary-dark);
-  margin: 0 0 22px;
+  margin: 0 0 12px;
   letter-spacing: 0.2px;
 }
 
@@ -265,14 +262,15 @@
 }
 
 .links li + li {
-  margin-top: 12px;
+  margin-top: 2px;
 }
 
 .links a {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  min-height: 44px;
+  min-height: 32px;
+  padding: 2px 0;
   color: var(--gray);
   text-decoration: none;
   font-size: 15px;
@@ -300,18 +298,18 @@
 /* ===== Contact ===== */
 .contactList {
   list-style: none;
-  margin: 0 0 0 -12px;
+  margin: 0 0 0 -8px;
   padding: 0;
 }
 
 .contactList li {
   display: flex;
   align-items: center;
-  gap: 14px;
-  padding: 10px 12px;
-  border-radius: 12px;
-  font-size: 15px;
-  line-height: 1.5;
+  gap: 10px;
+  padding: 5px 6px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.45;
   color: var(--gray);
   border: 1px solid transparent;
   transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease,
@@ -319,7 +317,7 @@
 }
 
 .contactList li + li {
-  margin-top: 8px;
+  margin-top: 4px;
 }
 
 .contactList li:hover {
@@ -333,13 +331,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   flex-shrink: 0;
-  border-radius: 10px;
+  border-radius: 8px;
   background: var(--tint);
   color: var(--primary);
-  font-size: 14px;
+  font-size: 12px;
   transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
@@ -454,6 +452,11 @@
     margin-left: 0;
     justify-content: flex-start;
   }
+
+  .ctaBannerActions :global(.thmBtn) {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 @media(max-width: 991px) {
@@ -520,7 +523,23 @@
 
   .grid {
     grid-template-columns: 1fr;
-    gap: 34px;
+    gap: 22px;
+  }
+
+  .servicesColumn {
+    margin-left: 0;
+  }
+
+  .servicesColumn .links a {
+    white-space: normal;
+  }
+
+  .quickLinksColumn {
+    margin-left: 0;
+  }
+
+  .contactColumn {
+    margin-left: 0;
   }
 
   .bottomInner {
