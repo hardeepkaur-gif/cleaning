@@ -86,7 +86,7 @@ main > section#gutter-why-choose {
 
 main > section#home-trust-logos {
   padding-top: 0 !important;
-  padding-bottom: 0 !important;
+  padding-bottom: clamp(28px, 4vw, 48px) !important;
 }
 
 @media (max-width: 767px) {
@@ -142,7 +142,7 @@ main > section#home-trust-logos {
 
   main > section#home-trust-logos {
     padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    padding-bottom: 40px !important;
   }
 }
 

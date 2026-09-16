@@ -15,7 +15,7 @@ type OptionalService = {
 const optionalServices: OptionalService[] = [
   {
     title: "Carpet Cleaning",
-    text: "Professional carpet cleaning is a great way to get rid of stains, odours, dust and daily wear and tear that normal vacuuming won't get. This service is especially helpful in high traffic areas, or for homes and properties that require pet care services and have tenancy agreements that recommend professional carpet cleaning.",
+    text: "Professional carpet cleaning is a great way to get rid of stains, odours, dust and daily wear and tear that normal vacuuming won't get.",
     href: "/contact-us",
     icon: FaCouch,
     iconAlt: "Optional carpet cleaning add on service icon",
@@ -24,7 +24,7 @@ const optionalServices: OptionalService[] = [
   },
   {
     title: "Oven Cleaning",
-    text: "One of the most popular places that the property is checked at handovers is the oven. The Oven Cleaning Service not only cleans the oven, but also helps to remove grease, burnt-on residue and foods that have accumulated in it, leaving the oven clean and ready for the next people.",
+    text: "The Oven Cleaning Service helps to remove grease, burnt-on residue and foods that have accumulated in it, leaving the oven clean and ready for the next people.",
     href: "/contact-us",
     icon: FaFire,
     iconAlt: "Optional oven cleaning add on service icon",

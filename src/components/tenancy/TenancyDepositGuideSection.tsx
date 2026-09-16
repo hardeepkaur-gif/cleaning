@@ -20,11 +20,39 @@ export default function TenancyDepositGuideSection() {
           </h2>
         </div>
 
-        <div className={`${styles.grid} ${local.grid}`}>
+        <div className={`${styles.grid} ${styles.gridEqual} ${local.grid}`}>
+          <div className={`${styles.content} ${local.content}`}>
+            <blockquote className={styles.callout}>
+              <p>
+                There is no way of knowing that a deposit will ever be paid back
+                in a cleaning service, as the landlords and letting agents look
+                at the property from various angles, such as the damage,
+                maintenance issues, unpaid rent, and the condition of the
+                property.
+              </p>
+            </blockquote>
+
+            <p className={styles.text}>
+              A professional end of tenancy clean helps prove that you took
+              reasonable steps to return the property in a clean, presentable
+              condition.
+            </p>
+
+            <p className={styles.text}>
+              According to the Deposit Protection Service, cleaning accounted for
+              29.38% of deposit claims in 2025. Separate research by SpareRoom
+              found that 63% of renters had experienced a cleaning-related deposit
+              deduction, while only 17% paid for professional cleaning before
+              moving out. The research estimated that cleaning-related deductions
+              cost UK renters around £724 million a year, averaging about £250
+              per tenancy.
+            </p>
+          </div>
+
           <div className={`${styles.media} ${local.media}`}>
-            <div className={styles.frame}>
+            <div className={`${styles.frame} ${local.frame}`}>
               <span className={styles.frameAccent} aria-hidden />
-              <div className={styles.imgMain}>
+              <div className={`${styles.imgMain} ${local.imgMain}`}>
                 <img
                   src={`${depositImgBase}/tenancy-deposit-cleaning-protection-london.webp`}
                   alt="Professional end of tenancy cleaning helping protect a London tenancy deposit"
@@ -32,7 +60,7 @@ export default function TenancyDepositGuideSection() {
                 />
               </div>
 
-              <div className={styles.imgSecondary}>
+              <div className={`${styles.imgSecondary} ${local.imgSecondary}`}>
                 <img
                   src={`${depositImgBase}/tenancy-deposit-cleaning-team-london.webp`}
                   alt="Cleaning team preparing a rental property for tenancy deposit inspection"
@@ -40,7 +68,7 @@ export default function TenancyDepositGuideSection() {
                 />
               </div>
 
-              <div className={styles.seal}>
+              <div className={`${styles.seal} ${local.seal}`}>
                 <div
                   className={styles.sealBg}
                   style={{
@@ -48,44 +76,10 @@ export default function TenancyDepositGuideSection() {
                   }}
                   aria-hidden
                 />
-                <img
-                  src={`${imgBase}/satisfaction-guarantee-badge-icon.webp`}
-                  alt="100 percent end of tenancy cleaning satisfaction guarantee badge icon"
-                  loading="lazy"
-                />
-                <strong>100%</strong>
-                <span>Guaranteed</span>
+                <strong>29.38%</strong>
+                <span>of deposit claims</span>
               </div>
             </div>
-          </div>
-
-          <div className={`${styles.content} ${local.content}`}>
-            <blockquote className={styles.callout}>
-              <p>
-                The question is often asked by tenants, and they are wondering whether
-                the professional end of tenancy cleaning will ensure that they will be
-                able to get their deposit back. The answer is no. There is no way of
-                knowing that a deposit will ever be paid back in a cleaning service,
-                as the landlords and letting agents look at the property from various
-                angles, such as the damage, maintenance issues, unpaid rent, and the
-                condition of the property.
-              </p>
-            </blockquote>
-
-            <p className={styles.text}>
-              But one of the most prevalent reasons for tenancy deposit deductions is
-              cleaning. Ovens, bathrooms, kitchen cupboards, carpet, skirting boards,
-              and appliances are common places to be spotted at an inspection where
-              they have not been cleaned to an acceptable standard.
-            </p>
-
-            <p className={styles.text}>
-              A professional end of tenancy clean will help to prove that reasonable
-              steps have been taken to return the property in clean and presentable
-              condition. Our cleaners go through a comprehensive room-by-room checklist
-              of the areas that are typically reviewed during inventories, inspections,
-              and property handovers.
-            </p>
           </div>
         </div>
       </div>

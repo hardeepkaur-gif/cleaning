@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import TenancyHero from "@/components/tenancy/TenancyHero";
+import HomeTrustLogos from "@/components/trust/HomeTrustLogos";
 import TenancyProfessionalSection from "@/components/tenancy/TenancyProfessionalSection";
 import TenancyMattersTimelineSection from "@/components/tenancy/TenancyMattersTimelineSection";
 import TenancyIncludedSection from "@/components/tenancy/TenancyIncludedSection";
 import TenancyIncludedCtaSection from "@/components/tenancy/TenancyIncludedCtaSection";
 import TenancyChecklistAltSection from "@/components/tenancy/TenancyChecklistAltSection";
 import TenancyCtaSection from "@/components/tenancy/TenancyCtaSection";
-import TenancyPricingCtaSection from "@/components/tenancy/TenancyPricingCtaSection";
 import TenancyDepositGuideSection from "@/components/tenancy/TenancyDepositGuideSection";
 import TenancyWhoUsesAltSection from "@/components/tenancy/TenancyWhoUsesAltSection";
 import TenancyProcessSection from "@/components/tenancy/TenancyProcessSection";
@@ -31,22 +31,22 @@ export default function EndOfTenancyCleaningPage() {
     <>
       <JsonLd data={tenancyPageSchema} />
       <main>
-      <TenancyHero />
-      <TenancyProfessionalSection />
-      <TenancyMattersTimelineSection />
-      <TenancyIncludedSection />
-      <TenancyIncludedCtaSection />
-      <TenancyChecklistAltSection />
-      <TenancyCtaSection />
-      <TenancyDepositGuideSection />
-      <TenancyWhoUsesAltSection />
-      <TenancyProcessSection />
-      <TenancyPricingCtaSection />
-      <TenancyOptionalServicesSection />
-      <TenancyWhyChooseAltSection />
-      <TenancyAreasSection />
-      <TenancyFaqSection />
-    </main>
+        <TenancyHero />
+        <HomeTrustLogos />
+        <TenancyMattersTimelineSection />
+        <TenancyIncludedSection />
+        <TenancyIncludedCtaSection />
+        <TenancyChecklistAltSection />
+        <TenancyCtaSection />
+        <TenancyProfessionalSection />
+        <TenancyDepositGuideSection />
+        <TenancyWhoUsesAltSection />
+        <TenancyProcessSection />
+        <TenancyOptionalServicesSection />
+        <TenancyWhyChooseAltSection />
+        <TenancyAreasSection />
+        <TenancyFaqSection />
+      </main>
     </>
   );
 }

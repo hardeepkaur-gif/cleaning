@@ -48,28 +48,20 @@ export default function TenancyProfessionalSection() {
             </div>
 
             <p className={styles.text}>
-              Cleaning is one of the most common causes of tenancy deposit disputes
-              in the UK. According to the Tenancy Deposit Scheme, cleaning-related
-              issues regularly form the largest category of deposit disagreements
-              between tenants and landlords. A thorough end of tenancy clean can help
-              reduce the risk of disputes or delays.
-            </p>
-            <p className={styles.text}>
-              Our professional End of Tenancy Cleaning London service is designed for
-              tenants who need a property cleaned to a high handover standard. We
-              follow a detailed room-by-room checklist covering kitchens, bathrooms,
-              bedrooms, and living areas to ensure the property is ready for
-              inspection.
+              Cleaning is one of the most common causes of tenancy deposit
+              disputes in the UK. A thorough end of tenancy clean can help reduce
+              the risk of disputes or delays.
             </p>
             <p className={styles.text}>
               Unlike regular{" "}
               <Link href="/domestic-cleaning-services" className={styles.internalLink}>
                 domestic cleaning
               </Link>
-              , end of tenancy cleaning focuses on the areas most commonly highlighted
-              during inventory checks. Ovens, kitchen cupboards, bathroom limescale,
-              skirting boards, internal glass and appliance cleaning are all given the
-              attention they require to help achieve a smooth property handover.
+              , end of tenancy cleaning focuses on the areas most commonly
+              highlighted during inventory checks. Ovens, kitchen cupboards,
+              bathroom limescale, skirting boards, internal glass and appliance
+              cleaning are all given the attention they require to help achieve a
+              smooth property handover.
             </p>
           </div>
         </div>

@@ -4,8 +4,8 @@
   position: relative;
   z-index: 5;
   margin-top: -48px;
-  margin-bottom: clamp(8px, 2vw, 20px);
-  padding: 0 clamp(16px, 3vw, 24px) 0;
+  margin-bottom: 0;
+  padding: 0 clamp(16px, 3vw, 24px) clamp(28px, 4vw, 48px);
   background: transparent;
 }
 

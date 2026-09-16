@@ -1,13 +1,66 @@
+/* Content left, image right; image height matches content */
+
+.grid {
+  align-items: stretch;
+  grid-template-columns: 1.05fr 1fr;
+}
+
+.media {
+  height: 0;
+  min-height: 100%;
+}
+
+.frame {
+  padding-bottom: 0;
+}
+
+.imgMain img {
+  aspect-ratio: auto;
+}
+
+.imgSecondary {
+  bottom: clamp(12px, 2vw, 24px);
+}
+
+.seal {
+  width: clamp(112px, 13vw, 136px);
+  height: clamp(112px, 13vw, 136px);
+  padding: 12px;
+}
+
+.seal strong {
+  margin-top: 0;
+  font-size: clamp(18px, 2vw, 22px);
+}
+
+.seal span {
+  max-width: 11ch;
+  font-size: 11px;
+  line-height: 1.25;
+}
+
 @media (max-width: 991px) {
   .grid {
     display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
   }
 
   .content {
-    order: -1;
+    order: 1;
   }
 
   .media {
-    order: 1;
+    order: 2;
+    height: auto;
+    min-height: 0;
+  }
+
+  .frame {
+    padding-bottom: clamp(40px, 5vw, 60px);
+  }
+
+  .imgMain img {
+    aspect-ratio: 4 / 4.4;
   }
 }

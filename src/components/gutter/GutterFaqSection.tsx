@@ -49,9 +49,6 @@ export default function GutterFaqSection() {
                     aria-hidden={!open}
                   >
                     <div className={styles.answerInner}>
-                      <div className={styles.answerImg}>
-                        <img src={faq.img} alt={faq.alt} loading="lazy" />
-                      </div>
                       <p>{faq.a}</p>
                     </div>
                   </div>
@@ -84,9 +81,6 @@ export default function GutterFaqSection() {
                     aria-hidden={!open}
                   >
                     <div className={styles.answerInner}>
-                      <div className={styles.answerImg}>
-                        <img src={faq.img} alt={faq.alt} loading="lazy" />
-                      </div>
                       <p>{faq.a}</p>
                     </div>
                   </div>

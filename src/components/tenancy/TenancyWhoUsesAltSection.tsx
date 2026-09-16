@@ -1,31 +1,24 @@
-import styles from "./TenancyWhoUsesAltSection.module.css";
+import { FaCheck } from "react-icons/fa";
+import { PiHouseDuotone } from "react-icons/pi";
+import styles from "@/components/carpet/CarpetWorthItAltSection.module.css";
+import local from "@/components/included/ProfessionalCleanSimple.module.css";
+import whoStyles from "./TenancyWhoUsesAltSection.module.css";
 
-const audiences = [
-  {
-    title: "Tenants Moving Out Cleaning Services",
-    text: "Moving out of a rented property can be stressful, especially when inspections, inventories, and deposit concerns are involved. Our end of tenancy cleaning service helps tenants to clean their properties for handover with a comprehensive clean that covers the areas mainly the landlord or letting agent will check.",
-    image: "/images/tenancy/tenants-moving-out.webp",
-    imageAlt: "Tenants moving out booking end of tenancy cleaning in London",
-  },
-  {
-    title: "Landlords Preparing Properties",
-    text: "A clean property will be easier to market, view and also hand over to new occupants. We are a professional move out cleaning service to help landlords get their houses, flats and rental properties prepared for the next tenant.",
-    image: "/images/tenancy/landlords-preparing.webp",
-    imageAlt: "Landlord preparing a rental property with professional tenancy cleaning",
-  },
-  {
-    title: "Letting Agents and Property Managers",
-    text: "Managing multiple properties often means working to tight turnaround times. Our end of tenancy cleaning professionals can assist letting agents and property managers with dependable cleaning services that make them prepare their properties for new tenants, inspections and inventory checks.",
-    image: "/images/tenancy/letting-agents.webp",
-    imageAlt: "Letting agent arranging move out cleaning for a London rental property",
-  },
-  {
-    title: "New Homeowners Moving In Cleaning Service",
-    text: 'Not all properties are delivered "move-in ready." Our move in and end of tenancy cleaning will allow new homeowners to start off with a clean slate before they move in and unpack their belongings.',
-    image: "/images/tenancy/new-homeowners-moving-in.webp",
-    imageAlt: "New homeowners booking move in cleaning before unpacking in London",
-  },
-];
+const whoUsesTitle = "Who Uses Our End of Tenancy Cleaning Services London";
+
+const whoUsesIntro =
+  "Our end of tenancy cleaning service is used by all kinds of customers in London including tenants getting ready to move out and letting agents and landlords needing a property cleaned and refreshed for its next phase.";
+
+const whoUsesPoints = [
+  "Tenants Moving Out Cleaning Services",
+  "Landlords Preparing Properties",
+  "Letting Agents and Property Managers",
+  "New Homeowners Moving In Cleaning Service",
+] as const;
+
+const whoUsesImage = "/images/tenancy/tenants-moving-out.webp";
+const whoUsesImageAlt =
+  "Customers using end of tenancy cleaning services across London";
 
 export default function TenancyWhoUsesAltSection() {
   return (
@@ -34,35 +27,57 @@ export default function TenancyWhoUsesAltSection() {
       id="tenancy-who-uses"
       aria-labelledby="tenancy-who-uses-title"
     >
-      <div className={styles.container}>
-        <header className={styles.header}>
-          <h2 className={styles.title} id="tenancy-who-uses-title">
-            Who Uses Our End of Tenancy{" "}
-            <span className={styles.titleLine}>Cleaning Services London</span>
-          </h2>
-          <p className={styles.intro}>
-            Our end of tenancy cleaning service is used by all kinds of customers
-            in London including tenants getting ready to move out and letting
-            agents and landlords needing a property cleaned and refreshed for its
-            next phase.
-          </p>
-        </header>
+      <div className={styles.glowOne} aria-hidden />
+      <div className={styles.glowTwo} aria-hidden />
 
-        <div className={styles.list}>
-          {audiences.map((item, index) => (
-            <article key={item.title} className={styles.box}>
-              <div className={styles.media}>
-                <img src={item.image} alt={item.imageAlt} loading="lazy" />
-                <span className={styles.badge} aria-hidden>
-                  {String(index + 1).padStart(2, "0")}
+      <div className={styles.container}>
+        <div className={`${styles.layout} ${local.layout}`}>
+          <div className={`${styles.visual} ${local.visual}`}>
+            <div className={styles.frameOuter} aria-hidden />
+            <div className={`${styles.frameInner} ${local.frameInner}`}>
+              <img
+                src={whoUsesImage}
+                alt={whoUsesImageAlt}
+                loading="lazy"
+              />
+            </div>
+            <div className={styles.visualTag}>
+              <span>Tenants</span>
+              <strong>Landlords</strong>
+              <span>Agents</span>
+            </div>
+          </div>
+
+          <div className={`${styles.copy} ${local.copy}`}>
+            <div className={`${styles.pointsWrap} ${local.pointsWrap} ${whoStyles.copyBlock}`}>
+              <span className={`${styles.tagline} ${whoStyles.copyTagline}`}>
+                <span role="img" aria-label="End of tenancy customers icon">
+                  <PiHouseDuotone aria-hidden />
                 </span>
-              </div>
-              <div className={styles.content}>
-                <h3 className={styles.boxTitle}>{item.title}</h3>
-                <p className={styles.boxText}>{item.text}</p>
-              </div>
-            </article>
-          ))}
+                Who We Help
+              </span>
+              <h2
+                className={`${styles.title} ${whoStyles.copyTitle}`}
+                id="tenancy-who-uses-title"
+              >
+                {whoUsesTitle}
+              </h2>
+              <p className={`${styles.text} ${whoStyles.copyIntro}`}>
+                {whoUsesIntro}
+              </p>
+
+              <ul className={styles.points}>
+                {whoUsesPoints.map((item) => (
+                  <li key={item}>
+                    <span className={styles.pointIcon} aria-hidden>
+                      <FaCheck />
+                    </span>
+                    <span className={styles.pointText}>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
