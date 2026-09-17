@@ -34,4 +34,16 @@ export const gutterFaqs: GutterFaqItem[] = [
     q: "How long does gutter cleaning take?",
     a: "Most residential gutter cleaning appointments take between one and three hours, depending on the property's size, the amount of debris and whether downpipe clearing or additional inspections are required.",
   },
+  {
+    q: "Does your gutter cleaning service come with a guarantee?",
+    a: "Yes, we provide a one-month no-blockage guarantee on the gutter sections we clean. The guarantee also covers connected downpipes where downpipe cleaning is included in your booked service.",
+  },
+  {
+    q: "Are you available on weekends and bank holidays?",
+    a: "Yes, our gutter cleaning service is available 7 days a week, including weekends and bank holidays, subject to appointment availability.",
+  },
+  {
+    q: "What areas do you cover for gutter cleaning?",
+    a: "We provide gutter cleaning across East London and can arrange appointments throughout Greater London depending on availability and property access. Our main service areas include Canning Town, Canary Wharf, Ilford, Stratford, Plaistow, East Ham, Barking, Dagenham, Beckton and the Docklands.",
+  },
 ];

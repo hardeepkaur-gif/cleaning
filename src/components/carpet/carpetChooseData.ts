@@ -1,43 +1,25 @@
-import type { IconType } from "react-icons";
-import { FaCamera, FaPoundSign, FaShieldAlt } from "react-icons/fa";
+export const carpetChooseTagline = "Buying Guide";
 
-export type CarpetChooseItem = {
-  title: string;
-  text: string;
-  icon: IconType;
-  iconAlt: string;
-  image: string;
-  imageAlt: string;
-};
-
-export const carpetChooseTitle = "How to Choose a Carpet Cleaner in London";
+export const carpetChooseTitle =
+  "How to Choose a Carpet Cleaning Company in London";
 
 export const carpetChooseIntro =
-  "Not every carpet cleaning company offers the same level of service. Looking beyond the price can help you avoid poor cleaning results, hidden charges and unnecessary damage to your carpets. Before booking, compare a few important factors to make a more informed decision.";
+  "Before booking a carpet cleaner, check what you're actually getting for the price.";
 
-export const carpetChooseItems: CarpetChooseItem[] = [
-  {
-    title: "Ask About Insurance and Cleaner Vetting",
-    text: "Select a company that is fully insured and has trained and vetted cleaners. Insurance will give extra coverage in case of accidental damage, and experienced professionals will be more likely to determine the right type of cleaning for various carpet fibres, which will minimize the chance of shrinkage, fading or damage.",
-    icon: FaShieldAlt,
-    iconAlt: "Insured and vetted carpet cleaners icon",
-    image: "/images/carpet/insurance-and-cleaner-vetting.webp",
-    imageAlt: "Insured and vetted carpet cleaners working safely in London homes",
-  },
-  {
-    title: "Avoid Choosing on Price Alone",
-    text: "The cheapest quotation is not always the best value. Very low prices may exclude stain treatments, deodorising, specialist equipment or necessary cleaning materials. A fixed quotation that clearly explains what is included often provides better value than a low headline price with additional charges later.",
-    icon: FaPoundSign,
-    iconAlt: "Carpet cleaning pricing comparison icon",
-    image: "/images/carpet/avoid-choosing-on-price-alone.webp",
-    imageAlt: "Avoid choosing carpet cleaning on price alone in London",
-  },
-  {
-    title: "Ask for Before and After Photos",
-    text: "Before and after photos can help you assess the quality of a company's previous work. They provide a realistic indication of stain removal, carpet restoration and overall cleaning standards. You can also read recent customer reviews to understand how the company performs across different types of properties and cleaning requirements.",
-    icon: FaCamera,
-    iconAlt: "Before and after carpet cleaning photos icon",
-    image: "/images/carpet/before-and-after-photos.webp",
-    imageAlt: "Before and after carpet cleaning photos showing stain removal results",
-  },
-];
+export const carpetChoosePoints = [
+  "Check insurance and experience: Choose insured carpet cleaners who understand how different carpet fibres and materials should be treated.",
+  "Check what's included in the quote: Don't compare prices alone. Ask whether stain treatment, cleaning products, equipment and other required treatments are included.",
+  "Look for proof of previous work: Check recent reviews, case studies and before-and-after photos rather than relying only on claims made by the company.",
+  "Ask about the cleaning method: A professional cleaner should be able to explain whether hot water extraction, steam cleaning or another method is appropriate for your carpet.",
+  "Check drying expectations: Ask how long the carpet is likely to take to dry and when the room can normally be used again.",
+  "Get the price confirmed first: A clear quotation before work starts helps avoid unexpected extras after the cleaner arrives.",
+] as const;
+
+export const carpetChooseClosing =
+  "At Cleaning Services London, we provide insured cleaners, clear quotations and professional carpet cleaning equipment, with before-and-after evidence available where applicable.";
+
+export const carpetChooseImage =
+  "/images/carpet/insurance-and-cleaner-vetting.webp";
+
+export const carpetChooseImageAlt =
+  "Professional insured carpet cleaners working in a London home";

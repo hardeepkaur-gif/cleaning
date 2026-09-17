@@ -1,58 +1,79 @@
-import { FaStar } from "react-icons/fa";
-import styles from "@/components/tenancy/TenancyOptionalServicesSection.module.css";
-import local from "./GutterWhyChooseSection.module.css";
+import { FaCheck } from "react-icons/fa";
+import { PiSealCheckDuotone } from "react-icons/pi";
 import {
+  gutterWhyChooseImage,
+  gutterWhyChooseImageAlt,
   gutterWhyChooseIntro,
-  gutterWhyChooseItems,
+  gutterWhyChoosePoints,
+  gutterWhyChooseTagline,
   gutterWhyChooseTitle,
 } from "./gutterWhyChooseData";
+import styles from "@/components/carpet/CarpetWorthItAltSection.module.css";
+import local from "@/components/included/ProfessionalCleanSimple.module.css";
+import whoStyles from "./GutterWhyChooseSection.module.css";
 
 export default function GutterWhyChooseSection() {
   return (
     <section
-      className={`${styles.services} ${local.services}`}
+      className={styles.section}
       id="gutter-why-choose"
       aria-labelledby="gutter-why-choose-title"
     >
-      <div className={styles.container}>
-        <div className={styles.sectionTitle}>
-          <h2 className={styles.title} id="gutter-why-choose-title">
-            {gutterWhyChooseTitle}
-          </h2>
-          <p className={styles.intro}>{gutterWhyChooseIntro}</p>
-        </div>
+      <div className={styles.glowOne} aria-hidden />
+      <div className={styles.glowTwo} aria-hidden />
 
-        <div className={`${styles.grid} ${local.grid}`}>
-          {gutterWhyChooseItems.map((item) => {
-            const Icon = item.icon;
-            return (
-              <article key={item.title} className={styles.card}>
-                <div className={styles.imgBox}>
-                  <div className={styles.imgWrap}>
-                    <img
-                      src={item.image}
-                      alt={item.imageAlt}
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-                <div className={`${styles.content} ${local.content}`}>
-                  <h3 className={`${styles.cardTitle} ${local.cardTitle}`}>
-                    {item.title}
-                  </h3>
-                  <p className={styles.cardText}>{item.text}</p>
-                  <div className={styles.iconWrap}>
-                    <span className={styles.iconMain} role="img" aria-label={item.iconAlt}>
-                      <Icon aria-hidden />
+      <div className={styles.container}>
+        <div className={`${styles.layout} ${local.layout}`}>
+          <div className={`${styles.visual} ${local.visual}`}>
+            <div className={styles.frameOuter} aria-hidden />
+            <div className={`${styles.frameInner} ${local.frameInner}`}>
+              <img
+                src={gutterWhyChooseImage}
+                alt={gutterWhyChooseImageAlt}
+                loading="lazy"
+              />
+            </div>
+            <div className={styles.visualTag}>
+              <span>Safe</span>
+              <strong>Fixed Quotes</strong>
+              <span>Clear Results</span>
+            </div>
+          </div>
+
+          <div className={`${styles.copy} ${local.copy}`}>
+            <div
+              className={`${styles.pointsWrap} ${local.pointsWrap} ${whoStyles.copyBlock}`}
+            >
+              <span className={`${styles.tagline} ${whoStyles.copyTagline}`}>
+                <span role="img" aria-label="Why choose gutter cleaning icon">
+                  <PiSealCheckDuotone aria-hidden />
+                </span>
+                {gutterWhyChooseTagline}
+              </span>
+
+              <h2
+                className={`${styles.title} ${whoStyles.copyTitle}`}
+                id="gutter-why-choose-title"
+              >
+                {gutterWhyChooseTitle}
+              </h2>
+
+              <p className={`${styles.text} ${whoStyles.copyIntro}`}>
+                {gutterWhyChooseIntro}
+              </p>
+
+              <ul className={whoStyles.points}>
+                {gutterWhyChoosePoints.map((item) => (
+                  <li key={item}>
+                    <span className={whoStyles.pointIcon} aria-hidden>
+                      <FaCheck />
                     </span>
-                    <span className={styles.iconStar} role="img" aria-label="Trusted gutter cleaning service icon">
-                      <FaStar aria-hidden />
-                    </span>
-                  </div>
-                </div>
-              </article>
-            );
-          })}
+                    <span className={whoStyles.pointText}>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>

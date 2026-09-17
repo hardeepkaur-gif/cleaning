@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import GutterHero from "@/components/gutter/GutterHero";
-import GutterTrustStrip from "@/components/gutter/GutterTrustStrip";
+import HomeTrustLogos from "@/components/trust/HomeTrustLogos";
 import GutterIncludedSection from "@/components/gutter/GutterIncludedSection";
 import GutterWhySection from "@/components/gutter/GutterWhySection";
 import GutterCausesSection from "@/components/gutter/GutterCausesSection";
@@ -11,8 +11,8 @@ import GutterWhyChooseSection from "@/components/gutter/GutterWhyChooseSection";
 import GutterProcessSection from "@/components/gutter/GutterProcessSection";
 import GutterAreasSection from "@/components/gutter/GutterAreasSection";
 import GutterAreasCtaSection from "@/components/gutter/GutterAreasCtaSection";
+import AboutReviewsSection from "@/components/about/AboutReviewsSection";
 import GutterFaqSection from "@/components/gutter/GutterFaqSection";
-import GutterReadyCtaSection from "@/components/gutter/GutterReadyCtaSection";
 import JsonLd from "@/components/seo/JsonLd";
 import { gutterPageSchema } from "@/lib/pageSchemas";
 
@@ -30,21 +30,21 @@ export default function GutterCleaningPage() {
     <>
       <JsonLd data={gutterPageSchema} />
       <main>
-      <GutterHero />
-      <GutterTrustStrip />
-      <GutterIncludedSection />
-      <GutterWhySection />
-      <GutterReadyCtaSection />
-      <GutterCausesSection />
-      <GutterCtaSection />
-      <GutterSignsSection />
-      <GutterProcessSection />
-      <GutterPricingSection />
-      <GutterWhyChooseSection />
-      <GutterAreasSection />
-      <GutterAreasCtaSection />
-      <GutterFaqSection />
-    </main>
+        <GutterHero />
+        <HomeTrustLogos />
+        <GutterIncludedSection />
+        <GutterWhySection />
+        <GutterCausesSection />
+        <GutterCtaSection />
+        <GutterSignsSection />
+        <GutterProcessSection />
+        <GutterPricingSection />
+        <GutterWhyChooseSection />
+        <GutterAreasSection />
+        <GutterAreasCtaSection />
+        <AboutReviewsSection />
+        <GutterFaqSection />
+      </main>
     </>
   );
 }

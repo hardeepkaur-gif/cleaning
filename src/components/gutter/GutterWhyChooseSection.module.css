@@ -1,53 +1,70 @@
-.services {
-  padding-bottom: 0 !important;
-  background:
-    radial-gradient(
-      ellipse 55% 40% at 10% 12%,
-      rgba(14, 94, 91, 0.04),
-      transparent 72%
-    ),
-    radial-gradient(
-      ellipse 45% 35% at 90% 88%,
-      rgba(232, 93, 74, 0.04),
-      transparent 70%
-    ),
-    var(--white);
+/* Same layout as carpet choose — simple checklist, no box cards */
+
+.copyBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
 }
 
-.grid {
-  grid-template-columns: repeat(3, 1fr);
+.copyTagline {
+  margin-bottom: 12px;
 }
 
-.cardTitle {
+.copyTitle {
+  text-align: left;
+  margin: 0 0 14px;
+  font-size: clamp(24px, 2.8vw, 34px);
+}
+
+.copyIntro {
+  margin: 0 0 18px;
+}
+
+.points {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  width: 100%;
+}
+
+.points li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.pointIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  margin-top: 2px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  font-size: 10px;
+}
+
+.pointText {
+  font-family: var(--font-two);
+  font-size: clamp(14px, 1.25vw, 15px);
+  font-weight: 600;
+  line-height: 1.55;
   color: var(--primary-dark);
 }
 
-.content {
-  /* desktop inherits min-height from parent pattern */
-}
-
-@media (max-width: 1199px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 991px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .content {
-    min-height: auto;
-  }
-}
-
 @media (max-width: 767px) {
-  .services :global(h2) {
-    font-size: clamp(24px, 6.2vw, 32px);
-  }
-
-  .cardTitle {
-    font-size: 18px;
+  .copyTitle {
+    font-size: clamp(22px, 5.8vw, 28px);
   }
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import CarpetHero from "@/components/carpet/CarpetHero";
+import HomeTrustLogos from "@/components/trust/HomeTrustLogos";
 import CarpetTrustStrip from "@/components/carpet/CarpetTrustStrip";
 import CarpetCtaSection from "@/components/carpet/CarpetCtaSection";
 import CarpetServicesSection from "@/components/carpet/CarpetServicesSection";
@@ -7,13 +8,11 @@ import CarpetAdditionalCtaSection from "@/components/carpet/CarpetAdditionalCtaS
 import CarpetStainsSection from "@/components/carpet/CarpetStainsSection";
 import CarpetFrequencySection from "@/components/carpet/CarpetFrequencySection";
 import CarpetPricingSection from "@/components/carpet/CarpetPricingSection";
-import CarpetPricingCtaSection from "@/components/carpet/CarpetPricingCtaSection";
 import CarpetMethodsSection from "@/components/carpet/CarpetMethodsSection";
 import CarpetChooseSection from "@/components/carpet/CarpetChooseSection";
-import CarpetBenefitsSection from "@/components/carpet/CarpetBenefitsSection";
 import CarpetAreasSection from "@/components/carpet/CarpetAreasSection";
-import CarpetAreasCtaSection from "@/components/carpet/CarpetAreasCtaSection";
 import CarpetProcessSection from "@/components/carpet/CarpetProcessSection";
+import AboutReviewsSection from "@/components/about/AboutReviewsSection";
 import CarpetFaqSection from "@/components/carpet/CarpetFaqSection";
 import JsonLd from "@/components/seo/JsonLd";
 import { carpetPageSchema } from "@/lib/pageSchemas";
@@ -32,23 +31,22 @@ export default function CarpetCleaningPage() {
     <>
       <JsonLd data={carpetPageSchema} />
       <main>
-      <CarpetHero />
-      <CarpetTrustStrip />
-      <CarpetCtaSection />
-      <CarpetServicesSection />
-      <CarpetAdditionalCtaSection />
-      <CarpetStainsSection />
-      <CarpetFrequencySection />
-      <CarpetPricingSection />
-      <CarpetPricingCtaSection />
-      <CarpetMethodsSection />
-      <CarpetChooseSection />
-      <CarpetBenefitsSection />
-      <CarpetAreasSection />
-      <CarpetAreasCtaSection />
-      <CarpetProcessSection />
-      <CarpetFaqSection />
-    </main>
+        <CarpetHero />
+        <HomeTrustLogos />
+        <CarpetTrustStrip />
+        <CarpetCtaSection />
+        <CarpetServicesSection />
+        <CarpetAdditionalCtaSection />
+        <CarpetStainsSection />
+        <CarpetFrequencySection />
+        <CarpetPricingSection />
+        <CarpetMethodsSection />
+        <CarpetChooseSection />
+        <CarpetAreasSection />
+        <CarpetProcessSection />
+        <AboutReviewsSection />
+        <CarpetFaqSection />
+      </main>
     </>
   );
 }

@@ -3,18 +3,17 @@ import TenancyHero from "@/components/tenancy/TenancyHero";
 import HomeTrustLogos from "@/components/trust/HomeTrustLogos";
 import TenancyProfessionalSection from "@/components/tenancy/TenancyProfessionalSection";
 import TenancyMattersTimelineSection from "@/components/tenancy/TenancyMattersTimelineSection";
-import TenancyIncludedSection from "@/components/tenancy/TenancyIncludedSection";
 import TenancyIncludedCtaSection from "@/components/tenancy/TenancyIncludedCtaSection";
 import TenancyChecklistAltSection from "@/components/tenancy/TenancyChecklistAltSection";
 import TenancyChecklistCardsSection from "@/components/tenancy/TenancyChecklistCardsSection";
 import TenancyChecklistAccordionSection from "@/components/tenancy/TenancyChecklistAccordionSection";
-import TenancyCtaSection from "@/components/tenancy/TenancyCtaSection";
 import TenancyDepositGuideSection from "@/components/tenancy/TenancyDepositGuideSection";
 import TenancyWhoUsesAltSection from "@/components/tenancy/TenancyWhoUsesAltSection";
 import TenancyProcessSection from "@/components/tenancy/TenancyProcessSection";
 import TenancyOptionalServicesSection from "@/components/tenancy/TenancyOptionalServicesSection";
 import TenancyWhyChooseAltSection from "@/components/tenancy/TenancyWhyChooseAltSection";
 import TenancyAreasSection from "@/components/tenancy/TenancyAreasSection";
+import AboutReviewsSection from "@/components/about/AboutReviewsSection";
 import TenancyFaqSection from "@/components/tenancy/TenancyFaqSection";
 import JsonLd from "@/components/seo/JsonLd";
 import { tenancyPageSchema } from "@/lib/pageSchemas";
@@ -36,12 +35,10 @@ export default function EndOfTenancyCleaningPage() {
         <TenancyHero />
         <HomeTrustLogos />
         <TenancyMattersTimelineSection />
-        <TenancyIncludedSection />
-        <TenancyIncludedCtaSection />
         <TenancyChecklistAltSection />
         <TenancyChecklistCardsSection />
+        <TenancyIncludedCtaSection />
         <TenancyChecklistAccordionSection />
-        <TenancyCtaSection />
         <TenancyProfessionalSection />
         <TenancyDepositGuideSection />
         <TenancyWhoUsesAltSection />
@@ -49,6 +46,7 @@ export default function EndOfTenancyCleaningPage() {
         <TenancyOptionalServicesSection />
         <TenancyWhyChooseAltSection />
         <TenancyAreasSection />
+        <AboutReviewsSection />
         <TenancyFaqSection />
       </main>
     </>

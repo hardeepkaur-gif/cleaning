@@ -24,7 +24,7 @@ export type TenancyChecklistTab = {
 export const tenancyChecklistTitle = "End of Tenancy Cleaning Checklist";
 
 export const tenancyChecklistIntro =
-  "Our end of tenancy cleaning checklist is designed to cover the areas most commonly reviewed by landlords, letting agents and inventory clerks during property inspections.";
+  "Our end of tenancy cleaning service can clean all of the main areas in the house or apartment, like the bathroom, bedrooms, living area, hallways and common surfaces. Each of it is completed with professional cleaning equipment and eco-friendly cleaning products to help in the removal of dirt, grease, limescale and daily deposition prior to handover.";
 
 export const tenancyChecklistNote =
   "The exact checklist may vary depending on the property's size, condition, furnishings and any additional services requested.";

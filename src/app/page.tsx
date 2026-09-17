@@ -7,6 +7,7 @@ import WhatMakesDifferent from "@/components/different/WhatMakesDifferent";
 import ProfessionalClean from "@/components/included/ProfessionalClean";
 import CtaSectionFour from "@/components/cta/CtaSectionFour";
 import AreasSection from "@/components/areas/AreasSection";
+import AboutReviewsSection from "@/components/about/AboutReviewsSection";
 import JsonLd from "@/components/seo/JsonLd";
 import { organizationSchema } from "@/lib/organizationSchema";
 import { homePageSchema } from "@/lib/pageSchemas";
@@ -43,6 +44,7 @@ export default function HomePage() {
         <CtaSectionFour />
         <ProcessSectionFour />
         <AreasSection />
+        <AboutReviewsSection />
         <FaqSection />
       </main>
     </>

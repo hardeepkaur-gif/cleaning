@@ -1,9 +1,6 @@
 .section {
   position: relative;
-  background:
-    radial-gradient(circle at 10% 0%, rgba(14, 94, 91, 0.14) 0%, transparent 68%),
-    radial-gradient(circle at 90% 100%, rgba(226, 106, 76, 0.11) 0%, transparent 65%),
-    #f8f9fa;
+  background: #fff;
   overflow: hidden;
 }
 

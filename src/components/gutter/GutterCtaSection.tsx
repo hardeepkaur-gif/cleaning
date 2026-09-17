@@ -12,7 +12,7 @@ import local from "./GutterCtaSection.module.css";
 export default function GutterCtaSection() {
   return (
     <section
-      className={styles.cta}
+      className={`${styles.cta} ${local.cta}`}
       id="gutter-cleaning-cta"
       aria-labelledby="gutter-cta-title"
     >

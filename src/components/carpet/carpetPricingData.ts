@@ -1,9 +1,6 @@
 export const carpetPricingTitle =
   "How Much Does Carpet Cleaning Cost in London?";
 
-export const carpetPricingIntro =
-  "Carpet cleaning in London usually costs between £30 and £75 per room, depending on the room size, carpet condition, cleaning method and any extra treatments required. For a full house clean, many homeowners may pay around £230 to £260, while most companies apply a minimum call-out or booking charge of around £75 to £100.";
-
 export const carpetPricingIntroExtra =
   "At Cleaning Services London, we provide fixed quotations before any work begins, thereby helping you understand the total cost before you book.";
 
@@ -29,9 +26,6 @@ export const carpetPricingRoomRows: CarpetPricingRoomRow[] = [
   { room: "3-bedroom house", price: "£220 to £290" },
   { room: "4-bedroom house", price: "£360 to £540+" },
 ];
-
-export const carpetPricingNote =
-  "The final price varies based on the number of rooms, carpet type, stain level, furniture movement and property location. Parking fees, congestion charges or specialist stain treatments may also affect the total cost in some London areas.";
 
 export const carpetPricingFactorHeaders = {
   factor: "Pricing Factor",
@@ -72,3 +66,14 @@ export const carpetPricingFactorRows: CarpetPricingFactorRow[] = [
       "Charges may apply in some parts of London depending on the location.",
   },
 ];
+
+export const carpetPricingCtaTitle = "Want an Exact Price?";
+
+export const carpetPricingCtaText =
+  "Every property is different. Request a fixed quotation based on your carpet size, number of rooms and cleaning requirements.";
+
+export const carpetPricingCtaButton = "Get My Fixed Quote";
+
+export const carpetPricingCtaNote = "Free quote · No obligation";
+
+export const carpetPricingCtaHref = "/contact-us";

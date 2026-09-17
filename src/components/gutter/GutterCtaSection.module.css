@@ -1,3 +1,7 @@
+.cta {
+  padding-bottom: 0 !important;
+}
+
 .heroImg {
   background-image: url("/images/gutter/gutter-cleaning-hero.webp");
   background-size: cover;

@@ -1,9 +1,15 @@
+import { FaCalendarCheck } from "react-icons/fa";
+import { PiSparkleFill } from "react-icons/pi";
+import ThmButton from "@/components/menu/ThmButton";
 import {
+  carpetPricingCtaButton,
+  carpetPricingCtaHref,
+  carpetPricingCtaNote,
+  carpetPricingCtaText,
+  carpetPricingCtaTitle,
   carpetPricingFactorHeaders,
   carpetPricingFactorRows,
-  carpetPricingIntro,
   carpetPricingIntroExtra,
-  carpetPricingNote,
   carpetPricingRoomHeaders,
   carpetPricingRoomRows,
   carpetPricingTitle,
@@ -25,7 +31,6 @@ export default function CarpetPricingSection() {
           <h2 className={styles.title} id="carpet-pricing-title">
             {carpetPricingTitle}
           </h2>
-          <p className={styles.intro}>{carpetPricingIntro}</p>
           <p className={styles.intro}>{carpetPricingIntroExtra}</p>
         </header>
 
@@ -81,7 +86,24 @@ export default function CarpetPricingSection() {
           </article>
         </div>
 
-        <p className={styles.note}>{carpetPricingNote}</p>
+        <div className={styles.ctaBand} id="carpet-pricing-cta">
+          <div className={styles.ctaIcon} aria-hidden>
+            <PiSparkleFill />
+          </div>
+
+          <div className={styles.ctaCopy}>
+            <h3 className={styles.ctaTitle}>{carpetPricingCtaTitle}</h3>
+            <p className={styles.ctaText}>{carpetPricingCtaText}</p>
+          </div>
+
+          <div className={styles.ctaAction}>
+            <ThmButton href={carpetPricingCtaHref} className={styles.ctaBtn}>
+              <FaCalendarCheck aria-hidden />
+              {carpetPricingCtaButton}
+            </ThmButton>
+            <span className={styles.ctaNote}>{carpetPricingCtaNote}</span>
+          </div>
+        </div>
       </div>
     </section>
   );

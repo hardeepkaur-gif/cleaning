@@ -9,6 +9,7 @@ import DomesticAdditionalCtaSection from "@/components/domestic/DomesticAddition
 import DomesticPricingSection from "@/components/domestic/DomesticPricingSection";
 import DomesticWhyChooseSection from "@/components/domestic/DomesticWhyChooseSection";
 import DomesticFinalCtaSection from "@/components/domestic/DomesticFinalCtaSection";
+import AboutReviewsSection from "@/components/about/AboutReviewsSection";
 import DomesticFaqSection from "@/components/domestic/DomesticFaqSection";
 import JsonLd from "@/components/seo/JsonLd";
 import { domesticPageSchema } from "@/lib/pageSchemas";
@@ -38,6 +39,7 @@ export default function DomesticCleaningServicesPage() {
         <DomesticPricingSection />
         <DomesticWhyChooseSection />
         <DomesticFinalCtaSection />
+        <AboutReviewsSection />
         <DomesticFaqSection />
       </main>
     </>

@@ -1,51 +1,77 @@
-.services {
-  padding-top: 0 !important;
+/* Match Who Uses layout — title + intro sit with the checklist */
+
+.copyBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
 }
 
-.cardTitle {
-  color: var(--primary-dark);
+.copyTagline {
+  margin-bottom: 12px;
 }
 
-.intro {
-  max-width: none;
+.copyTitle {
+  text-align: left;
+  margin: 0 0 14px;
+  font-size: clamp(24px, 2.8vw, 34px);
+}
+
+.copyIntro {
+  margin: 0 0 20px;
+}
+
+.points {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
   width: 100%;
 }
 
-.grid {
-  grid-template-columns: repeat(3, 1fr);
+.points li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 11px 12px;
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    rgba(14, 94, 91, 0.04) 0%,
+    rgba(226, 106, 76, 0.04) 100%
+  );
+  border: 1px solid rgba(14, 94, 91, 0.06);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
 }
 
-@media (max-width: 991px) {
-  .services {
-    padding-top: 0 !important;
+.points li:hover {
+  transform: translateY(-2px);
+  border-color: rgba(226, 106, 76, 0.18);
+  box-shadow: 0 10px 22px rgba(10, 70, 68, 0.07);
+}
+
+.pointText {
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .points li {
+    transition: none;
   }
 
-  .grid {
-    grid-template-columns: 1fr;
+  .points li:hover {
+    transform: none;
   }
 }
 
 @media (max-width: 767px) {
-  .services {
-    padding-top: 0 !important;
-  }
-
-  .title {
-    text-align: left;
-    font-size: clamp(24px, 6.2vw, 32px);
-  }
-
-  .intro {
-    text-align: left;
-  }
-
-  .content {
-    min-height: 0;
-    padding-bottom: 24px;
-  }
-
-  .iconWrap {
-    width: 52px;
-    height: 52px;
+  .copyTitle {
+    font-size: clamp(22px, 5.8vw, 28px);
   }
 }

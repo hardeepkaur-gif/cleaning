@@ -1,58 +1,86 @@
-import { FaStar } from "react-icons/fa";
+import { FaCheck } from "react-icons/fa";
+import { PiSealCheckDuotone } from "react-icons/pi";
 import {
+  carpetChooseClosing,
+  carpetChooseImage,
+  carpetChooseImageAlt,
   carpetChooseIntro,
-  carpetChooseItems,
+  carpetChoosePoints,
+  carpetChooseTagline,
   carpetChooseTitle,
 } from "./carpetChooseData";
-import styles from "@/components/tenancy/TenancyOptionalServicesSection.module.css";
-import local from "./CarpetChooseSection.module.css";
+import styles from "@/components/carpet/CarpetWorthItAltSection.module.css";
+import local from "@/components/included/ProfessionalCleanSimple.module.css";
+import whoStyles from "./CarpetChooseSection.module.css";
 
 export default function CarpetChooseSection() {
   return (
     <section
-      className={`${styles.services} ${local.services}`}
+      className={styles.section}
       id="carpet-choose-cleaner"
       aria-labelledby="carpet-choose-cleaner-title"
     >
+      <div className={styles.glowOne} aria-hidden />
+      <div className={styles.glowTwo} aria-hidden />
+
       <div className={styles.container}>
-        <div className={styles.sectionTitle}>
-          <h2
-            className={`${styles.title} ${local.title}`}
-            id="carpet-choose-cleaner-title"
-          >
-            {carpetChooseTitle}
-          </h2>
-          <p className={`${styles.intro} ${local.intro}`}>{carpetChooseIntro}</p>
-        </div>
+        <div className={`${styles.layout} ${local.layout}`}>
+          <div className={`${styles.visual} ${local.visual}`}>
+            <div className={styles.frameOuter} aria-hidden />
+            <div className={`${styles.frameInner} ${local.frameInner}`}>
+              <img
+                src={carpetChooseImage}
+                alt={carpetChooseImageAlt}
+                loading="lazy"
+              />
+            </div>
+            <div className={styles.visualTag}>
+              <span>Insured</span>
+              <strong>Clear Quotes</strong>
+              <span>Proven Work</span>
+            </div>
+          </div>
 
-        <div className={`${styles.grid} ${local.grid}`}>
-          {carpetChooseItems.map((item) => {
-            const Icon = item.icon;
+          <div className={`${styles.copy} ${local.copy}`}>
+            <div
+              className={`${styles.pointsWrap} ${local.pointsWrap} ${whoStyles.copyBlock}`}
+            >
+              <span className={`${styles.tagline} ${whoStyles.copyTagline}`}>
+                <span role="img" aria-label="Carpet cleaning buying guide icon">
+                  <PiSealCheckDuotone aria-hidden />
+                </span>
+                {carpetChooseTagline}
+              </span>
 
-            return (
-              <article key={item.title} className={styles.card}>
-                <div className={styles.imgBox}>
-                  <div className={styles.imgWrap}>
-                    <img src={item.image} alt={item.imageAlt} loading="lazy" />
-                  </div>
-                </div>
-                <div className={`${styles.content} ${local.content}`}>
-                  <h3 className={`${styles.cardTitle} ${local.cardTitle}`}>
-                    {item.title}
-                  </h3>
-                  <p className={styles.cardText}>{item.text}</p>
-                  <div className={`${styles.iconWrap} ${local.iconWrap}`}>
-                    <span className={styles.iconMain} role="img" aria-label={item.iconAlt}>
-                      <Icon aria-hidden />
+              <h2
+                className={`${styles.title} ${whoStyles.copyTitle}`}
+                id="carpet-choose-cleaner-title"
+              >
+                {carpetChooseTitle}
+              </h2>
+
+              <p className={`${styles.text} ${whoStyles.copyIntro}`}>
+                {carpetChooseIntro}
+              </p>
+
+              <ul className={whoStyles.points}>
+                {carpetChoosePoints.map((item) => (
+                  <li key={item}>
+                    <span className={styles.pointIcon} aria-hidden>
+                      <FaCheck />
                     </span>
-                    <span className={styles.iconStar} role="img" aria-label="Trusted carpet cleaning service icon">
-                      <FaStar aria-hidden />
+                    <span className={`${styles.pointText} ${whoStyles.pointText}`}>
+                      {item}
                     </span>
-                  </div>
-                </div>
-              </article>
-            );
-          })}
+                  </li>
+                ))}
+              </ul>
+
+              <div className={styles.closing}>
+                <p>{carpetChooseClosing}</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

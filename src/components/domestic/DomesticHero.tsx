@@ -1,8 +1,6 @@
 import { preload } from "react-dom";
 import {
   FaAward,
-  FaPoundSign,
-  FaRegSmile,
   FaShieldAlt,
   FaUserCheck,
   FaUserShield,
@@ -16,20 +14,13 @@ import local from "./DomesticHero.module.css";
 const heroImage = "/images/domestic/domestic-cleaning-hero.webp";
 
 const trustBadges = [
-  { icon: FaUserShield, label: "DBS-Checked Local Cleaners", featured: false },
-  { icon: FaShieldAlt, label: "Fully Insured Cleaning Company", featured: false },
-  { icon: FaAward, label: "Experienced Local Cleaners", featured: false },
+  { icon: FaUserShield, label: "DBS-Checked Local Cleaners" },
+  { icon: FaShieldAlt, label: "Fully Insured Cleaning Company" },
+  { icon: FaAward, label: "Experienced Local Cleaners" },
   {
     icon: FaUserCheck,
     label: "Same Cleaner Available for Regular Visits",
-    featured: false,
   },
-  {
-    icon: FaPoundSign,
-    label: "Regular home cleaning from £18/h",
-    featured: true,
-  },
-  { icon: FaRegSmile, label: "Satisfaction Guarantee", featured: false },
 ] as const;
 
 export default function DomesticHero() {
@@ -76,18 +67,10 @@ export default function DomesticHero() {
               </p>
             </div>
 
-            <ul
-              className={local.trustList}
-              aria-label="Domestic cleaning trust points"
-            >
-              {trustBadges.map(({ icon: Icon, label, featured }) => (
-                <li
-                  key={label}
-                  className={`${local.trustItem}${
-                    featured ? ` ${local.featured}` : ""
-                  }`}
-                >
-                  <span className={local.trustIcon} aria-hidden>
+            <ul className={styles.trustList} aria-label="Domestic cleaning trust points">
+              {trustBadges.map(({ icon: Icon, label }) => (
+                <li key={label} className={styles.trustItem}>
+                  <span className={styles.trustIcon} aria-hidden>
                     <Icon />
                   </span>
                   <span>{label}</span>

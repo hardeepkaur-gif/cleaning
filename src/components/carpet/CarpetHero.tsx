@@ -36,8 +36,8 @@ export default function CarpetHero() {
 
             <div className={heroStyles.bigTitle}>
               <h1 id="carpet-hero-title">
-                Expert Carpet Cleaning <span>London</span> for Homes, Flats and
-                Offices
+                Carpet Cleaning in <span>London</span>: Tough on Stains, Easy on
+                Your Budget
               </h1>
             </div>
 

@@ -1,3 +1,7 @@
+.section {
+  background: #fff;
+}
+
 .internalLink {
   color: var(--cta);
   font-weight: 600;

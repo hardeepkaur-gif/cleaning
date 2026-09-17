@@ -14,7 +14,7 @@ export type GutterCauseItem = {
 export const gutterCausesTagline = "Residential & Commercial";
 
 export const gutterCausesTitle =
-  "We Offer Residential And Commercial Gutter Cleaning Services In London";
+  "We Offer Residential And Commercial Gutter Cleaning Services";
 
 export const gutterCausesIntro =
   "We provide residential and commercial gutter cleaning across London for homes, offices, schools, retail units and apartment blocks.";
