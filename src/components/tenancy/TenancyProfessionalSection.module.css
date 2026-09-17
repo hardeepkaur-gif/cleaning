@@ -259,11 +259,6 @@
   .imageTwo {
     bottom: -18px;
   }
-
-  .experience {
-    position: relative;
-    margin-top: 16px;
-  }
 }
 
 @media (max-width: 767px) {
@@ -279,21 +274,6 @@
   .imageTwo img {
     width: clamp(100px, 26vw, 150px);
   }
-
-  .experience {
-    gap: 16px;
-    padding: 10px 10px 10px 16px;
-  }
-
-  .experience::before {
-    right: -40px;
-    width: 40px;
-  }
-
-  .experience::after {
-    right: -32px;
-    width: 32px;
-  }
 }
 
 @media (max-width: 575px) {
@@ -307,21 +287,6 @@
 
   .imageTwo {
     display: none;
-  }
-
-  .experience {
-    margin-top: 16px;
-    gap: 12px;
-    max-width: 100%;
-  }
-
-  .experience::before,
-  .experience::after {
-    display: none;
-  }
-
-  .experienceText {
-    font-size: 12px;
   }
 }
 

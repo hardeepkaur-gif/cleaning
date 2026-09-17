@@ -6,7 +6,7 @@
 }
 
 .container {
-  max-width: 1240px;
+  max-width: 920px;
   margin: 0 auto;
   padding: 0 clamp(16px, 3vw, 24px);
 }
@@ -171,6 +171,8 @@
 .cardVisual {
   position: relative;
   min-height: 220px;
+  height: 100%;
+  align-self: stretch;
   background: var(--tint);
   overflow: hidden;
 }
@@ -194,7 +196,7 @@
   color: var(--gray);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .card,
   .cardAlt {
     grid-template-columns: 1fr;
@@ -202,18 +204,53 @@
 
   .cardVisual,
   .cardAlt .cardVisual {
-    min-height: 180px;
+    min-height: 200px;
+    height: 200px;
     order: -1;
   }
 }
 
+@media (max-width: 767px) {
+  .section {
+    padding: 48px 0;
+  }
+
+  .title {
+    font-size: clamp(24px, 6.2vw, 32px);
+  }
+
+  .cardVisual,
+  .cardAlt .cardVisual {
+    min-height: 180px;
+    height: 180px;
+  }
+}
+
 @media (max-width: 575px) {
+  .section {
+    padding: clamp(56px, 8vw, 70px) 0;
+  }
+
   .cardBody {
     padding: 16px;
   }
 
+  .cardTitle {
+    font-size: 18px;
+  }
+
   .checklist li {
     font-size: 13px;
+  }
+
+  .cardVisual,
+  .cardAlt .cardVisual {
+    min-height: 160px;
+    height: 160px;
+  }
+
+  .note {
+    font-size: 12px;
   }
 }
 
