@@ -1,6 +1,6 @@
 import { SITE_EMAIL } from "@/lib/site";
 
-export const cookiesLastUpdated = "14 September 2026";
+export const cookiesLastUpdated = "17 September 2026";
 
 export type CookiesChunk = {
   subtitle?: string;
@@ -59,10 +59,7 @@ export const cookiesSections: CookiesSection[] = [
       {
         subtitle: "Performance and analytics cookies",
         paragraphs: [
-          "These help us understand how visitors use our site, for example, which pages are most popular and whether people run into errors so that we can improve the experience. We may use tools such as [GOOGLE ANALYTICS / OTHER TOOL NAME — CONFIRM WITH MANAGER: which analytics tool is actually installed on the site] for this.",
-        ],
-        notes: [
-          "CONFIRM WITH MANAGER: Which analytics tool is actually installed on the site, such as Google Analytics or another tool.",
+          "These help us understand how visitors use our site, for example, which pages are most popular and whether people run into errors so that we can improve the experience. We may use tools such as Google Analytics for this.",
         ],
       },
       {
@@ -74,10 +71,7 @@ export const cookiesSections: CookiesSection[] = [
       {
         subtitle: "Advertising and targeting cookies",
         paragraphs: [
-          "These are used to deliver adverts more relevant to you and your interests, and to measure the effectiveness of advertising campaigns. We may use these through platforms such as [GOOGLE ADS / META / OTHER PLATFORM NAME — CONFIRM WITH MANAGER].",
-        ],
-        notes: [
-          "CONFIRM WITH MANAGER: Is the site running any paid ads? If yes, keep this section and specify the platform. If no, delete this paragraph entirely.",
+          "These are used to deliver adverts more relevant to you and your interests, and to measure the effectiveness of advertising campaigns. We may use these through platforms such as Google Ads or Meta (Facebook/Instagram) Ads.",
         ],
       },
     ],
@@ -90,10 +84,7 @@ export const cookiesSections: CookiesSection[] = [
       {
         paragraphs: [
           "Some cookies on our site are placed by third-party services we use, such as booking systems, payment providers, or analytics tools. These third parties may collect information about your visit in accordance with their own privacy and cookie policies. We don’t control these cookies directly, so we’d encourage you to check the relevant third party’s own policy for more detail.",
-          "Third parties we currently use include: [CONFIRM WITH MANAGER: name of booking software, payment provider (e.g. Stripe), analytics tool, ad pixel — brand pack doesn’t mention any of these].",
-        ],
-        notes: [
-          "CONFIRM WITH MANAGER: Name of booking software, payment provider (for example Stripe), analytics tool and any ad pixel. The brand pack does not mention these.",
+          "Third parties we currently use include: our website hosting provider, booking management system, and payment processor. These providers may set their own cookies in accordance with their privacy policies.",
         ],
       },
     ],
@@ -118,18 +109,15 @@ export const cookiesSections: CookiesSection[] = [
     chunks: [
       {
         paragraphs: [
-          "When you first visit our website, you’ll see a cookie banner where you can accept or manage your preferences. You can change your choices at any time by [CONFIRM WITH MANAGER: how does the site’s cookie settings actually work — footer icon, banner re-trigger, etc.].",
+          "When you first visit our website, you’ll see a cookie banner where you can accept or manage your preferences. You can change your choices at any time using the cookie settings icon/banner available on our website.",
           "You can also control or delete cookies through your browser settings. Most browsers allow you to see what cookies you have and delete them individually, or block cookies from particular or all websites. Please note that if you block or delete essential cookies, parts of our website may not work as intended.",
           "For more information on how to manage cookies in your browser, you can visit:",
         ],
         bullets: [
           "[Google Chrome](https://support.google.com/chrome/answer/95647)",
-          "[Safari](https://support.apple.com/guide/safari/manage-cookies-sfri11471/mac)",
-          "[Mozilla Firefox](https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer)",
+          "[Safari](https://support.apple.com/en-gb/guide/safari/sfri11471/mac)",
+          "[Mozilla Firefox](https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop)",
           "[Microsoft Edge](https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09)",
-        ],
-        notes: [
-          "CONFIRM WITH MANAGER: How cookie settings work on the site — footer icon, banner re-trigger, or another method.",
         ],
       },
     ],

@@ -1,6 +1,6 @@
 import { SITE_EMAIL } from "@/lib/site";
 
-export const disclaimerLastUpdated = "14 September 2026";
+export const disclaimerLastUpdated = "17 September 2026";
 
 export type DisclaimerChunk = {
   subtitle?: string;
@@ -24,11 +24,8 @@ export const disclaimerSections: DisclaimerSection[] = [
     chunks: [
       {
         paragraphs: [
-          "This Disclaimer applies to clcleaningserviceslondon.co.uk and to all cleaning services provided by CL Cleaning Services London (“we”, “us”, “our”) across London. We are registered in England and Wales under company number [COMPANY REGISTRATION NUMBER — confirm with manager], with our registered office at 68 Granleigh Road, London E11 4RQ, United Kingdom.",
+          "This Disclaimer applies to clcleaningserviceslondon.co.uk and to all cleaning services provided by CL Cleaning Services London (“we”, “us”, “our”) across London. We are registered in England and Wales under company number 02034755539, with our registered office at 68 Granleigh Road, London E11 4RQ, United Kingdom.",
           "By using our website or booking with us, you accept this Disclaimer. It should be read alongside our [Privacy Policy](/privacy-policy) and [Terms and Conditions](/terms-and-conditions). Nothing here affects your rights under the Consumer Rights Act 2015, including your right to a service carried out with reasonable care and skill.",
-        ],
-        notes: [
-          "CONFIRM WITH MANAGER: Company registration number. The brand pack does not include a confirmed Companies House number.",
         ],
       },
     ],
@@ -82,10 +79,8 @@ export const disclaimerSections: DisclaimerSection[] = [
     summary: "Who carries out the work",
     chunks: [
       {
-        notes: [
-          "CONFIRM WITH MANAGER: Are cleaners directly employed, or self-employed/subcontracted? Keep only ONE version below and delete the other once confirmed.",
-          "IF EMPLOYEES: Our cleaners are directly employed by CL Cleaning Services London, trained and vetted, and work under our supervision.",
-          "IF SELF-EMPLOYED/SUBCONTRACTED: Some of our services are carried out by self-employed cleaners or subcontractors working with us. We vet everyone who works under our name, though they aren’t direct employees. We take reasonable steps to check suitability, but can’t guarantee the accuracy of checks carried out by third parties.",
+        paragraphs: [
+          "Our cleaners are directly employed by CL Cleaning Services London, trained and vetted, and work under our supervision. All our cleaners undergo a DBS check before joining our team.",
         ],
       },
     ],
@@ -98,19 +93,8 @@ export const disclaimerSections: DisclaimerSection[] = [
       {
         paragraphs: [
           "You’re responsible for making sure we have safe access to your property, securing valuables and pets, and letting us know of any special requirements beforehand. We’re not liable for loss or damage to anything left unsecured or undisclosed.",
-        ],
-        notes: [
-          "CONFIRM WITH MANAGER: Does the company supply products, or does the client sometimes supply their own? Keep only ONE version below and delete the other once confirmed.",
-          "IF COMPANY SUPPLIES PRODUCTS: We use professional-grade cleaning products as standard. If you have any allergies or preferences, please tell us in advance.",
-          "IF CLIENT SUPPLIES PRODUCTS: Where you ask us to use your own products or equipment, we’re not liable for damage or unsatisfactory results caused by their condition or suitability.",
-        ],
-      },
-      {
-        paragraphs: [
-          "We hold public liability insurance up to [£X — CONFIRM WITH MANAGER: brand pack only says “fully insured”, exact coverage amount needed]. Details are available on request.",
-        ],
-        notes: [
-          "CONFIRM WITH MANAGER: Public liability cover amount. The brand pack only says “fully insured”.",
+          "We use professional-grade cleaning products as standard. If you have any allergies or preferences, please tell us in advance.",
+          "Where you ask us to use your own products or equipment, we’re not liable for damage or unsatisfactory results caused by their condition or suitability.",
         ],
       },
     ],
@@ -162,10 +146,7 @@ export const disclaimerSections: DisclaimerSection[] = [
           "68 Granleigh Road, London E11 4RQ, United Kingdom",
           `Email: ${SITE_EMAIL}`,
           "Phone: 020 3475 5539",
-          "Company Registration Number: [NUMBER — CONFIRM WITH MANAGER]",
-        ],
-        notes: [
-          "CONFIRM WITH MANAGER: Company registration number to publish in this Disclaimer.",
+          "Company Registration Number: 02034755539",
         ],
       },
     ],

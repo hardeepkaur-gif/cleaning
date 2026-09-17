@@ -1,6 +1,6 @@
 import { SITE_EMAIL, SITE_PHONE_HREF } from "@/lib/site";
 
-export const privacyLastUpdated = "14 September 2026";
+export const privacyLastUpdated = "17 September 2026";
 
 export const privacyIntro = [
   "At CL Cleaning Services London, trading as Cleaning Services London, we respect your privacy and are committed to protecting your personal information.",
@@ -42,7 +42,6 @@ export const privacySections: PrivacySection[] = [
           "CL Cleaning Services London (“we”, “us” or “our”) provides professional cleaning services in London.",
           "Company registration number: 02034755539",
           "Registered office: 68 Granleigh Road, London E11 4RQ",
-          "VAT number: Pending",
           `Email: ${SITE_EMAIL}`,
           "Telephone: 020 3475 5539",
           "For data protection purposes, CL Cleaning Services London is the data controller responsible for the personal information covered by this Privacy Policy.",
@@ -99,9 +98,6 @@ export const privacySections: PrivacySection[] = [
           "Referring website or source",
           "Website interactions",
           "Approximate location derived from technical information",
-        ],
-        notes: [
-          "TO CONFIRM: Exact analytics, advertising and tracking technologies currently installed on the website.",
         ],
       },
     ],
@@ -226,9 +222,6 @@ export const privacySections: PrivacySection[] = [
           "Respond to service-related enquiries",
           "Maintain appropriate customer and business records",
         ],
-        notes: [
-          "TO CONFIRM: Booking system/CRM used and where customer booking information is stored.",
-        ],
       },
     ],
   },
@@ -240,16 +233,9 @@ export const privacySections: PrivacySection[] = [
       {
         paragraphs: [
           "Payments for our services may be processed through third-party payment providers.",
-        ],
-        notes: ["TO CONFIRM: Payment provider(s)"],
-      },
-      {
-        paragraphs: [
           "Where a third-party payment provider processes your payment, that provider may process your personal information in accordance with its own privacy policy and terms.",
           "We will only retain payment information where necessary and permitted for legitimate business, legal or accounting purposes.",
-        ],
-        notes: [
-          "TO CONFIRM: Payment methods accepted and whether the business stores any payment/card information directly.",
+          "We only accept card, bank transfer, or cash (at the office) as payment methods.",
         ],
       },
     ],
@@ -273,17 +259,10 @@ export const privacySections: PrivacySection[] = [
       },
       {
         paragraphs: [
-          "The exact cookies and technologies used on the website will depend on the services and tools currently installed.",
-        ],
-        notes: [
-          "TO CONFIRM: Google Analytics / Google Ads / Meta Pixel / other analytics or advertising tools.",
-        ],
-      },
-      {
-        paragraphs: [
+          "We use standard website analytics tools (such as Google Analytics) to understand how visitors use our site, and may use cookies for this purpose.",
           "Where consent is required for non-essential cookies, we will request your consent before using them.",
           "You can manage your cookie preferences through our cookie consent mechanism and, where applicable, through your browser settings.",
-          "For further information about the cookies used on this website, please see our [Cookies Policy](/cookies-policy).",
+          "For further information about the cookies used on this website, please see our [Cookie Policy](/cookies-policy).",
         ],
       },
     ],
@@ -312,10 +291,7 @@ export const privacySections: PrivacySection[] = [
       },
       {
         paragraphs: [
-          "Where a third party processes personal information on our behalf, we take appropriate steps to ensure that your information is handled in accordance with applicable data protection requirements.",
-        ],
-        notes: [
-          "TO CONFIRM: Exact third-party providers currently receiving or processing customer data.",
+          "We do not share your data with third parties. Where a third party processes personal information on our behalf, we take appropriate steps to ensure that your information is handled in accordance with applicable data protection requirements.",
         ],
       },
     ],
@@ -329,9 +305,6 @@ export const privacySections: PrivacySection[] = [
         paragraphs: [
           "Some of the third-party providers we use may process personal information outside the United Kingdom.",
           "Where your information is transferred outside the UK, we will take appropriate steps to ensure that the transfer is lawful and that suitable safeguards are in place where required under applicable data protection law.",
-        ],
-        notes: [
-          "TO CONFIRM: Whether any current website, booking, payment, CRM, email or analytics providers process data outside the UK, and the relevant countries.",
         ],
       },
     ],
@@ -354,9 +327,6 @@ export const privacySections: PrivacySection[] = [
           "Resolving complaints or disputes",
           "Establishing or defending legal claims",
           "Maintaining appropriate records of our services",
-        ],
-        notes: [
-          "TO CONFIRM: Specific retention periods for enquiries, customer records, booking records, payment records and marketing data.",
         ],
       },
       {
@@ -463,7 +433,7 @@ export const privacySections: PrivacySection[] = [
       {
         paragraphs: [
           "Our website may contain links to websites or services operated by third parties.",
-          "These websites have their own privacy policies and terms. We are not responsible for the privacy practices, security or content of third-party websites.",
+          "These websites have their own privacy policies and terms. We are not responsible for the privacy practices, security, or content of third-party websites.",
           "We recommend reviewing the privacy policy of any third-party website before providing personal information.",
         ],
       },

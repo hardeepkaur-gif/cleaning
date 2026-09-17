@@ -1,6 +1,6 @@
 import { SITE_EMAIL } from "@/lib/site";
 
-export const termsLastUpdated = "14 September 2026";
+export const termsLastUpdated = "17 September 2026";
 
 export const termsIntro = [
   "These Terms & Conditions set out the terms that apply when you book or purchase cleaning services from CL Cleaning Services London, trading as Cleaning Services London.",
@@ -74,9 +74,6 @@ export const termsSections: TermsSection[] = [
           "Property details relevant to the service",
           "Any specific cleaning requirements",
         ],
-        notes: [
-          "TO CONFIRM: Exact booking process and whether bookings are confirmed by email, telephone, online booking system or another method.",
-        ],
       },
       {
         paragraphs: [
@@ -97,9 +94,6 @@ export const termsSections: TermsSection[] = [
           "If the actual condition, size or requirements of the property differ materially from the information provided, we may discuss an adjustment to the quoted price before carrying out additional work.",
           "Any additional charge will be communicated to you before the additional work is carried out wherever reasonably possible.",
         ],
-        notes: [
-          "TO CONFIRM: Whether prices shown on the website include VAT and whether VAT is applicable.",
-        ],
       },
     ],
   },
@@ -109,15 +103,11 @@ export const termsSections: TermsSection[] = [
     summary: "When and how to pay",
     chunks: [
       {
-        paragraphs: ["Payment must be made using an accepted payment method."],
-        notes: [
-          "TO CONFIRM: Accepted payment methods — card / bank transfer / cash / other.",
-          "TO CONFIRM: When payment is due — at booking / before service / after service / other.",
-          "TO CONFIRM: Whether a deposit is required and, if so, the amount or percentage.",
-        ],
-      },
-      {
         paragraphs: [
+          "Payment must be made using an accepted payment method.",
+          "Accepted payment methods are card, bank transfer, or cash at the office.",
+          "Advance payment is required at the time of booking.",
+          "A deposit is also required.",
           "If payment is not received when due, we may suspend or cancel the relevant service, subject to any rights you may have under applicable law.",
         ],
       },
@@ -131,24 +121,11 @@ export const termsSections: TermsSection[] = [
       {
         paragraphs: [
           "If you need to cancel or reschedule a booking, please contact us as soon as possible.",
-        ],
-        notes: [
-          "TO CONFIRM: Required cancellation/rescheduling notice — e.g. 24 or 48 hours.",
-          "TO CONFIRM: Late cancellation fee, if applicable.",
-          "TO CONFIRM: Whether deposits are refundable following cancellation.",
-        ],
-      },
-      {
-        paragraphs: [
-          "Any cancellation charges will be communicated before or at the time of booking where applicable.",
-          "If we need to cancel or reschedule a service, we will contact you as soon as reasonably possible and discuss an alternative appointment where available.",
-        ],
-        notes: [
-          "TO CONFIRM: Exact procedure/remedy if the company cancels — full refund/rebooking / other.",
-        ],
-      },
-      {
-        paragraphs: [
+          "Cancellation charges apply immediately; no advance notice period.",
+          "The late cancellation fee of £70 is applicable.",
+          "We do not accept cancellations; if you inform the company in advance, a cancellation fee of £70 will apply. If you request cancellation after the cleaners reach the property, you will not receive a refund of the full advance payment.",
+          "Where applicable, we will communicate before or at the time of booking.",
+          "The company will not cancel on you.",
           "Nothing in this section affects any cancellation or refund rights that cannot legally be excluded or restricted.",
         ],
       },
@@ -163,15 +140,8 @@ export const termsSections: TermsSection[] = [
         paragraphs: [
           "You are responsible for providing safe and reasonable access to the property at the agreed time.",
           "Where keys, access codes or other entry arrangements are required, you must provide accurate instructions before the appointment.",
-          "If our cleaner cannot access the property because the required access arrangements have not been provided, this may result in a delay, cancellation or applicable charge.",
-        ],
-        notes: [
-          "TO CONFIRM: Exact lockout/no-access policy and whether a charge applies.",
-        ],
-      },
-      {
-        paragraphs: [
-          "You should tell us in advance about any access restrictions, parking restrictions, security procedures or other circumstances that could affect the service.",
+          "If our cleaner cannot access the property because the required access arrangements have not been provided, this may result in a delay, cancellation, or applicable charge.",
+          "You should tell us in advance about any access restrictions, parking restrictions, security procedures, or other circumstances that could affect the service.",
         ],
       },
     ],
@@ -208,9 +178,6 @@ export const termsSections: TermsSection[] = [
     summary: "What we use",
     chunks: [
       {
-        notes: [
-          "TO CONFIRM: Whether the company supplies all cleaning products/equipment or customers are required to provide anything.",
-        ],
         paragraphs: [
           "Where we supply cleaning products or equipment, we will use products and methods reasonably appropriate for the agreed service.",
           "Certain materials, surfaces or items may require specialist cleaning methods or products.",
@@ -272,7 +239,6 @@ export const termsSections: TermsSection[] = [
           "If you believe that an agreed cleaning task has not been completed to the expected standard, please contact us promptly with details of the issue.",
           "We may ask for photographs, descriptions or other reasonable information to help us assess the complaint.",
         ],
-        notes: ["TO CONFIRM: Time limit for reporting cleaning-quality complaints."],
       },
     ],
   },
@@ -284,15 +250,7 @@ export const termsSections: TermsSection[] = [
       {
         paragraphs: [
           "If a service does not meet the agreed cleaning standard, we may offer an opportunity to return and address the relevant issue where appropriate.",
-        ],
-        notes: [
-          "TO CONFIRM: Whether the company offers a satisfaction guarantee.",
-          "TO CONFIRM: Number of days/hours within which a complaint must be made.",
-          "TO CONFIRM: Whether re-cleaning is provided free of charge and whether any exclusions apply.",
-        ],
-      },
-      {
-        paragraphs: [
+          "The company does not offer a satisfaction guarantee.",
           "A re-cleaning opportunity does not automatically mean that a refund is due.",
           "Any refund will be considered in accordance with the circumstances of the complaint and applicable consumer law.",
         ],
@@ -306,7 +264,7 @@ export const termsSections: TermsSection[] = [
     chunks: [
       {
         paragraphs: [
-          "We take reasonable care when providing our services.",
+          "We take reasonable care when providing our services. No damage is expected; claims are discussed only after proof is provided.",
           "If you believe that our team has caused damage to your property or belongings during a service, please notify us as soon as reasonably possible.",
           "We may ask you to provide:",
         ],
@@ -321,15 +279,6 @@ export const termsSections: TermsSection[] = [
       {
         paragraphs: [
           "We will review reported incidents and, where appropriate, investigate them in accordance with our procedures.",
-        ],
-        notes: [
-          "TO CONFIRM: Exact damage-claim process.",
-          "TO CONFIRM: Insurance provider and public liability cover.",
-          "TO CONFIRM: Specific exclusions and policy limits that can appropriately be referred to in these Terms.",
-        ],
-      },
-      {
-        paragraphs: [
           "Nothing in these Terms excludes or limits liability where doing so would be unlawful.",
         ],
       },
@@ -358,7 +307,7 @@ export const termsSections: TermsSection[] = [
         paragraphs: [
           "You should inform us before the service if pets or other animals are present at the property.",
           "For safety reasons, we may ask you to keep animals away from areas where cleaning is taking place.",
-          "We are not responsible for animals that escape, move freely around the property or interfere with the cleaning service where this results from circumstances outside our reasonable control.",
+          "We are not responsible for animals that escape, move freely around the property, or interfere with the cleaning service where this results from circumstances outside our reasonable control.",
         ],
       },
     ],
@@ -447,9 +396,6 @@ export const termsSections: TermsSection[] = [
           "Results from your failure to follow reasonable instructions",
           "Results from items or surfaces requiring specialist treatment that were not disclosed to us beforehand",
         ],
-        notes: [
-          "TO CONFIRM: Any additional lawful liability limitations recommended by the business/legal adviser.",
-        ],
       },
     ],
   },
@@ -488,9 +434,6 @@ export const termsSections: TermsSection[] = [
       {
         paragraphs: [
           "The remedy available will depend on the circumstances and applicable law.",
-        ],
-        notes: [
-          "TO CONFIRM: Internal complaints procedure and response timeframe.",
         ],
       },
     ],
@@ -532,9 +475,6 @@ export const termsSections: TermsSection[] = [
         paragraphs: [
           "If you need to change the date, time, property address or scope of a booking, please contact us as soon as possible.",
           "Changes may be subject to availability and, where applicable, additional charges.",
-        ],
-        notes: [
-          "TO CONFIRM: Exact rules for booking changes and additional charges.",
         ],
       },
     ],
