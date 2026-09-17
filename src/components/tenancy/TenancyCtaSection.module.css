@@ -1,13 +1,15 @@
 /* Tenancy CTA visual — laptop mockup with contact message */
 
 .grid {
-  gap: clamp(16px, 2.5vw, 28px);
-  grid-template-columns: minmax(0, 1.2fr) minmax(200px, 280px);
+  display: grid;
+  gap: clamp(24px, 4vw, 48px);
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 320px);
   align-items: center;
 }
 
 .copy {
-  max-width: min(100%, 680px);
+  max-width: none;
+  width: 100%;
 }
 
 .text {
@@ -18,26 +20,35 @@
 
 .visual {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  min-width: 0;
+  overflow: visible;
 }
 
 .stage {
   aspect-ratio: auto;
+  width: 100%;
+  height: auto;
   min-height: auto;
   animation: none;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
 
 .laptopWrap {
   width: 100%;
-  max-width: 280px;
+  max-width: 300px;
   margin: 0;
+  padding: 10px 12px 6px;
+  box-sizing: border-box;
 }
 
 .laptop {
   position: relative;
+  width: 100%;
   animation: laptopFloat 5s ease-in-out infinite;
 }
 
@@ -159,7 +170,9 @@
 .laptopBase {
   position: relative;
   height: 9px;
-  margin: 0 -10px;
+  margin: 0;
+  width: calc(100% + 20px);
+  left: -10px;
   border-radius: 0 0 11px 11px;
   background: linear-gradient(
     180deg,
@@ -246,14 +259,14 @@
   }
 
   .laptopWrap {
-    max-width: 260px;
+    max-width: 280px;
     margin: 0 auto;
   }
 }
 
 @media(max-width: 575px) {
   .laptopWrap {
-    max-width: 240px;
+    max-width: 260px;
   }
 
   .copy .ctaBtn:global(.thmBtn) {

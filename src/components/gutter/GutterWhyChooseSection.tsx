@@ -23,6 +23,19 @@ export default function GutterWhyChooseSection() {
       <div className={styles.glowTwo} aria-hidden />
 
       <div className={styles.container}>
+        <header className={whoStyles.header}>
+          <span className={`${styles.tagline} ${whoStyles.headerTagline}`}>
+            <span role="img" aria-label="Why choose gutter cleaning icon">
+              <PiSealCheckDuotone aria-hidden />
+            </span>
+            {gutterWhyChooseTagline}
+          </span>
+          <h2 className={whoStyles.headerTitle} id="gutter-why-choose-title">
+            {gutterWhyChooseTitle}
+          </h2>
+          <p className={whoStyles.headerIntro}>{gutterWhyChooseIntro}</p>
+        </header>
+
         <div className={`${styles.layout} ${local.layout}`}>
           <div className={`${styles.visual} ${local.visual}`}>
             <div className={styles.frameOuter} aria-hidden />
@@ -44,24 +57,6 @@ export default function GutterWhyChooseSection() {
             <div
               className={`${styles.pointsWrap} ${local.pointsWrap} ${whoStyles.copyBlock}`}
             >
-              <span className={`${styles.tagline} ${whoStyles.copyTagline}`}>
-                <span role="img" aria-label="Why choose gutter cleaning icon">
-                  <PiSealCheckDuotone aria-hidden />
-                </span>
-                {gutterWhyChooseTagline}
-              </span>
-
-              <h2
-                className={`${styles.title} ${whoStyles.copyTitle}`}
-                id="gutter-why-choose-title"
-              >
-                {gutterWhyChooseTitle}
-              </h2>
-
-              <p className={`${styles.text} ${whoStyles.copyIntro}`}>
-                {gutterWhyChooseIntro}
-              </p>
-
               <ul className={whoStyles.points}>
                 {gutterWhyChoosePoints.map((item) => (
                   <li key={item}>
