@@ -1,4 +1,4 @@
-import { FaCalendarCheck, FaCheckCircle } from "react-icons/fa";
+import { FaCalendarCheck } from "react-icons/fa";
 import {
   PiCalendarCheckFill,
   PiHouseLineFill,
@@ -7,12 +7,6 @@ import {
 import ThmButton from "@/components/menu/ThmButton";
 import styles from "@/components/cta/CtaSectionFour.module.css";
 import local from "./TenancyPricingCtaSection.module.css";
-
-const trustPoints = [
-  "Fixed pricing",
-  "No hidden charges",
-  "London coverage",
-];
 
 export default function TenancyPricingCtaSection() {
   return (
@@ -36,15 +30,6 @@ export default function TenancyPricingCtaSection() {
                 Contact our team today for a fixed end of tenancy cleaning quote
                 based on your property size, location and cleaning requirements.
               </p>
-
-              <ul className={styles.trustList}>
-                {trustPoints.map((item) => (
-                  <li key={item}>
-                    <FaCheckCircle aria-hidden />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
 
               <div className={styles.actionRow}>
                 <div className={styles.btnWrap}>

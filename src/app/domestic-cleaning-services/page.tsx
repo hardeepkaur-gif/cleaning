@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import DomesticHero from "@/components/domestic/DomesticHero";
-import DomesticTrustStrip from "@/components/domestic/DomesticTrustStrip";
-import DomesticIntroCtaSection from "@/components/domestic/DomesticIntroCtaSection";
+import HomeTrustLogos from "@/components/trust/HomeTrustLogos";
 import DomesticProfessionalSection from "@/components/domestic/DomesticProfessionalSection";
 import DomesticServicesTimelineSection from "@/components/domestic/DomesticServicesTimelineSection";
 import DomesticCtaSection from "@/components/domestic/DomesticCtaSection";
@@ -29,19 +28,18 @@ export default function DomesticCleaningServicesPage() {
     <>
       <JsonLd data={domesticPageSchema} />
       <main className={styles.page}>
-      <DomesticHero />
-      <DomesticTrustStrip />
-      <DomesticIntroCtaSection />
-      <DomesticProfessionalSection />
-      <DomesticServicesTimelineSection />
-      <DomesticCtaSection />
-      <DomesticChecklistSection />
-      <DomesticAdditionalCtaSection />
-      <DomesticPricingSection />
-      <DomesticWhyChooseSection />
-      <DomesticFinalCtaSection />
-      <DomesticFaqSection />
-    </main>
+        <DomesticHero />
+        <HomeTrustLogos />
+        <DomesticServicesTimelineSection />
+        <DomesticProfessionalSection />
+        <DomesticCtaSection />
+        <DomesticChecklistSection />
+        <DomesticAdditionalCtaSection />
+        <DomesticPricingSection />
+        <DomesticWhyChooseSection />
+        <DomesticFinalCtaSection />
+        <DomesticFaqSection />
+      </main>
     </>
   );
 }

@@ -1,4 +1,4 @@
-import { FaCalendarCheck, FaCheckCircle } from "react-icons/fa";
+import { FaCalendarCheck } from "react-icons/fa";
 import {
   PiCalendarCheckFill,
   PiHouseLineFill,
@@ -7,8 +7,6 @@ import {
 } from "react-icons/pi";
 import ThmButton from "@/components/menu/ThmButton";
 import styles from "./CtaSectionFour.module.css";
-
-const trustPoints = ["DBS-checked", "Fully insured", "Trained cleaners"];
 
 export default function CtaSectionFour() {
   return (
@@ -29,15 +27,6 @@ export default function CtaSectionFour() {
                 and trained cleaners take care of your property with structure,
                 care, and accountability.
               </p>
-
-              <ul className={styles.trustList}>
-                {trustPoints.map((item) => (
-                  <li key={item}>
-                    <FaCheckCircle aria-hidden />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
 
               <div className={styles.actionRow}>
                 <div className={styles.btnWrap}>

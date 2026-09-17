@@ -1,4 +1,4 @@
-import { FaCalendarCheck, FaCheckCircle, FaPhoneAlt } from "react-icons/fa";
+import { FaCalendarCheck, FaPhoneAlt } from "react-icons/fa";
 import {
   PiCalendarCheckFill,
   PiRugDuotone,
@@ -13,7 +13,6 @@ import {
   carpetReadyCtaQuoteLabel,
   carpetReadyCtaText,
   carpetReadyCtaTitle,
-  carpetReadyCtaTrustPoints,
 } from "./carpetReadyCtaData";
 import styles from "@/components/cta/CtaSectionFour.module.css";
 import local from "./CarpetReadyCtaSection.module.css";
@@ -37,15 +36,6 @@ export default function CarpetReadyCtaSection() {
               </h2>
 
               <p className={styles.text}>{carpetReadyCtaText}</p>
-
-              <ul className={styles.trustList}>
-                {carpetReadyCtaTrustPoints.map((item) => (
-                  <li key={item}>
-                    <FaCheckCircle aria-hidden />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
 
               <div className={styles.actionRow}>
                 <div className={`${styles.btnWrap} ${local.btnWrap}`}>

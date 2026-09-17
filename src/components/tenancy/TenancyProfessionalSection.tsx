@@ -30,11 +30,6 @@ export default function TenancyProfessionalSection() {
                 />
               </div>
             </div>
-
-            <div className={styles.experience}>
-              <p className={styles.experienceYear}>100%</p>
-              <p className={styles.experienceText}>Handover Standard</p>
-            </div>
           </div>
 
           <div className={styles.copy}>

@@ -1,0 +1,224 @@
+.section {
+  position: relative;
+  padding: clamp(56px, 7vw, 88px) 0;
+  background: #faf8f5;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 3vw, 24px);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: clamp(28px, 4vw, 40px);
+}
+
+.eyebrow {
+  display: inline-flex;
+  margin: 0 0 12px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(226, 106, 76, 0.12);
+  border: 1px solid rgba(226, 106, 76, 0.18);
+  font-family: var(--font-two);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cta);
+}
+
+.title {
+  margin: 0 0 12px;
+  font-family: var(--font-two);
+  font-size: clamp(26px, 3.4vw, 40px);
+  font-weight: 800;
+  line-height: 1.22;
+  color: var(--primary-dark);
+}
+
+.intro {
+  margin: 0 auto;
+  max-width: 640px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--gray);
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(180px, 0.85fr);
+  min-height: 220px;
+  border-radius: 22px;
+  overflow: hidden;
+  background: var(--white);
+  border: 1px solid rgba(14, 94, 91, 0.08);
+  box-shadow: 0 14px 34px rgba(10, 70, 68, 0.07);
+}
+
+.cardAlt {
+  grid-template-columns: minmax(180px, 0.85fr) minmax(0, 1.15fr);
+}
+
+.cardAlt .cardVisual {
+  order: -1;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: clamp(18px, 2.4vw, 26px);
+}
+
+.cardHead {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cardIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(14, 94, 91, 0.08);
+  color: var(--primary-dark);
+  font-size: 22px;
+}
+
+.cardTitle {
+  margin: 0;
+  font-family: var(--font-two);
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--primary-dark);
+}
+
+.cardMeta {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: var(--gray);
+}
+
+.checklist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--primary-dark);
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: 1px;
+  border-radius: 50%;
+  background: var(--primary-dark);
+  color: var(--white);
+  font-size: 9px;
+}
+
+.expandBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  padding: 0;
+  border: none;
+  background: none;
+  font-family: var(--font-two);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--cta);
+  cursor: pointer;
+}
+
+.expandBtn svg {
+  font-size: 11px;
+  transition: transform 0.2s ease;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+.cardVisual {
+  position: relative;
+  min-height: 220px;
+  background: var(--tint);
+  overflow: hidden;
+}
+
+.visualImg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.note {
+  margin: clamp(24px, 3vw, 32px) auto 0;
+  max-width: 680px;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 1.65;
+  text-align: center;
+  color: var(--gray);
+}
+
+@media (max-width: 767px) {
+  .card,
+  .cardAlt {
+    grid-template-columns: 1fr;
+  }
+
+  .cardVisual,
+  .cardAlt .cardVisual {
+    min-height: 180px;
+    order: -1;
+  }
+}
+
+@media (max-width: 575px) {
+  .cardBody {
+    padding: 16px;
+  }
+
+  .checklist li {
+    font-size: 13px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .expandBtn svg {
+    transition: none;
+  }
+}

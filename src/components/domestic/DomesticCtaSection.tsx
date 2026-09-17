@@ -1,4 +1,4 @@
-import { FaCalendarCheck, FaCheckCircle } from "react-icons/fa";
+import { FaCalendarCheck } from "react-icons/fa";
 import {
   PiCalendarCheckFill,
   PiHouseLineFill,
@@ -8,12 +8,6 @@ import {
 import ThmButton from "@/components/menu/ThmButton";
 import styles from "@/components/cta/CtaSectionFour.module.css";
 import local from "./DomesticCtaSection.module.css";
-
-const trustPoints = [
-  "DBS-checked cleaners",
-  "Fully insured service",
-  "Flexible scheduling",
-];
 
 export default function DomesticCtaSection() {
   return (
@@ -39,15 +33,6 @@ export default function DomesticCtaSection() {
                 preferred cleaning schedule today and enjoy a cleaner home
                 without the ongoing effort.
               </p>
-
-              <ul className={styles.trustList}>
-                {trustPoints.map((item) => (
-                  <li key={item}>
-                    <FaCheckCircle aria-hidden />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
 
               <div className={styles.actionRow}>
                 <div className={`${styles.btnWrap} ${local.btnWrap}`}>

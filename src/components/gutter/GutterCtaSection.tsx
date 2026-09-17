@@ -1,4 +1,4 @@
-import { FaCalendarCheck, FaCheckCircle } from "react-icons/fa";
+import { FaCalendarCheck } from "react-icons/fa";
 import {
   PiCalendarCheckFill,
   PiCloudRainDuotone,
@@ -8,12 +8,6 @@ import {
 import ThmButton from "@/components/menu/ThmButton";
 import styles from "@/components/cta/CtaSectionFour.module.css";
 import local from "./GutterCtaSection.module.css";
-
-const trustPoints = [
-  "Fixed quote with no hidden charges",
-  "Flexible appointments across London",
-  "DBS-checked and fully insured cleaners",
-];
 
 export default function GutterCtaSection() {
   return (
@@ -37,15 +31,6 @@ export default function GutterCtaSection() {
                 Book your professional gutter cleaning service today for a fixed
                 quote and flexible appointment across London.
               </p>
-
-              <ul className={styles.trustList}>
-                {trustPoints.map((item) => (
-                  <li key={item}>
-                    <FaCheckCircle aria-hidden />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
 
               <div className={styles.actionRow}>
                 <div className={`${styles.btnWrap} ${local.btnWrap}`}>

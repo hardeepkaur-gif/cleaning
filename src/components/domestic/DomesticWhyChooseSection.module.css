@@ -1,34 +1,16 @@
-/* 8-card grid override */
-
-.cardTitle {
-  color: var(--primary-dark);
-}
-
-.internalLink {
-  color: var(--cta);
-  font-weight: 600;
-  text-decoration: underline;
-  text-decoration-color: rgba(226, 106, 76, 0.35);
-  text-underline-offset: 3px;
-  transition: color 0.2s ease, text-decoration-color 0.2s ease;
-}
-
-.internalLink:hover {
-  color: var(--primary);
-  text-decoration-color: rgba(14, 94, 91, 0.45);
-}
+/* Domestic why-choose — 4 cards per row */
 
 .grid {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-@media (max-width: 1199px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 @media (max-width: 991px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 575px) {
   .grid {
     grid-template-columns: 1fr;
   }

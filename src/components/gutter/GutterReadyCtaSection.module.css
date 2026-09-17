@@ -34,7 +34,7 @@
 
 .screenHero {
   flex: 1 1 auto;
-  min-height: 72px;
+  min-height: 44px;
   height: auto;
 }
 
@@ -50,8 +50,8 @@
 
   .screenHero {
     flex: 0 0 auto;
-    height: 48px;
-    min-height: 48px;
+    height: 36px;
+    min-height: 36px;
   }
 
   .copy {

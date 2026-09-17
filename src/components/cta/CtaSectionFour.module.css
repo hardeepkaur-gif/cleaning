@@ -275,7 +275,7 @@
 .screenHero {
   position: relative;
   flex: 1 1 auto;
-  min-height: 72px;
+  min-height: 44px;
   height: auto;
   border-radius: 12px;
   overflow: hidden;
@@ -296,7 +296,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 34px;
+  font-size: 18px;
   color: var(--cta);
   z-index: 1;
 }
@@ -422,12 +422,12 @@
 
   .screenHero {
     flex: 0 0 auto;
-    height: 48px;
-    min-height: 48px;
+    height: 36px;
+    min-height: 36px;
   }
 
   .heroIcon {
-    font-size: 26px;
+    font-size: 16px;
   }
 }
 

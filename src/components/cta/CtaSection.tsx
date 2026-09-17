@@ -1,15 +1,9 @@
-import { FaCalendarCheck, FaCheckCircle } from "react-icons/fa";
+import { FaCalendarCheck } from "react-icons/fa";
 import ThmButton from "@/components/menu/ThmButton";
 import { ctaButtonLabel, ctaText, ctaTitle } from "./ctaData";
 import styles from "./CtaSection.module.css";
 
 const ctaImage = "/images/cta/cleanon/cta-professional-cleaner-london.webp";
-
-const perks = [
-  "Fixed pricing",
-  "DBS-checked team",
-  "Same-day quotes",
-];
 
 export default function CtaSection() {
   return (
@@ -28,15 +22,6 @@ export default function CtaSection() {
                 Cleaning Services in <span>London?</span>
               </h2>
               <p className={styles.text}>{ctaText}</p>
-
-              <ul className={styles.perks}>
-                {perks.map((item) => (
-                  <li key={item}>
-                    <FaCheckCircle aria-hidden />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
 
               <div className={styles.btnBox}>
                 <ThmButton href="/contact-us" className={styles.ctaBtnPrimary}>

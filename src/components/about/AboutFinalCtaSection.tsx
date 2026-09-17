@@ -1,4 +1,4 @@
-import { FaCalendarCheck, FaCheckCircle } from "react-icons/fa";
+import { FaCalendarCheck } from "react-icons/fa";
 import {
   PiCalendarCheckFill,
   PiHouseLineFill,
@@ -7,8 +7,6 @@ import {
 } from "react-icons/pi";
 import ThmButton from "@/components/menu/ThmButton";
 import styles from "@/components/cta/CtaSectionFour.module.css";
-
-const trustPoints = ["Free quote", "No obligation", "Clear scope included"];
 
 export default function AboutFinalCtaSection() {
   return (
@@ -33,15 +31,6 @@ export default function AboutFinalCtaSection() {
                 no-obligation quote. We&apos;ll walk you through exactly
                 what&apos;s included.
               </p>
-
-              <ul className={styles.trustList}>
-                {trustPoints.map((item) => (
-                  <li key={item}>
-                    <FaCheckCircle aria-hidden />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
 
               <div className={styles.actionRow}>
                 <div className={styles.btnWrap}>

@@ -1,16 +1,9 @@
-import { FaCalendarCheck, FaRegClock, FaRegThumbsUp } from "react-icons/fa";
-import { PiSparkleDuotone } from "react-icons/pi";
+import { FaCalendarCheck } from "react-icons/fa";
 import ThmButton from "@/components/menu/ThmButton";
 import { ctaButtonLabel, ctaText, ctaTitle } from "./ctaData";
 import styles from "./CtaSectionAlt.module.css";
 
 const ctaImage = "/images/cta/cleanon/cta-professional-cleaner-london.webp";
-
-const highlights = [
-  { icon: FaRegThumbsUp, text: "Satisfaction guaranteed" },
-  { icon: FaRegClock, text: "Flexible booking slots" },
-  { icon: PiSparkleDuotone, text: "Spotless every visit" },
-];
 
 export default function CtaSectionAlt() {
   return (
@@ -37,15 +30,6 @@ export default function CtaSectionAlt() {
               <span>London?</span>
             </h2>
             <p className={styles.text}>{ctaText}</p>
-
-            <ul className={styles.highlights}>
-              {highlights.map(({ icon: Icon, text }) => (
-                <li key={text}>
-                  <Icon aria-hidden />
-                  <span>{text}</span>
-                </li>
-              ))}
-            </ul>
 
             <div className={styles.actions}>
               <ThmButton href="/contact-us" className={styles.btnMain}>

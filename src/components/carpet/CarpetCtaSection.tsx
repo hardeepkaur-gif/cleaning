@@ -1,4 +1,4 @@
-import { FaCalendarCheck, FaCheckCircle } from "react-icons/fa";
+import { FaCalendarCheck } from "react-icons/fa";
 import {
   PiCalendarCheckFill,
   PiRugDuotone,
@@ -8,12 +8,6 @@ import {
 import ThmButton from "@/components/menu/ThmButton";
 import styles from "@/components/cta/CtaSectionFour.module.css";
 import local from "./CarpetCtaSection.module.css";
-
-const trustPoints = [
-  "Fixed pricing with no hidden surprises",
-  "Professional steam cleaning equipment",
-  "Flexible appointments across London",
-];
 
 export default function CarpetCtaSection() {
   return (
@@ -38,15 +32,6 @@ export default function CarpetCtaSection() {
                 across London. Tell us about your property and we&apos;ll
                 recommend the right carpet cleaning service.
               </p>
-
-              <ul className={styles.trustList}>
-                {trustPoints.map((item) => (
-                  <li key={item}>
-                    <FaCheckCircle aria-hidden />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
 
               <div className={styles.actionRow}>
                 <div className={`${styles.btnWrap} ${local.btnWrap}`}>

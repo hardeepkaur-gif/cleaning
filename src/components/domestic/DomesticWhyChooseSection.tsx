@@ -1,71 +1,54 @@
-import Link from "next/link";
-import { FaStar } from "react-icons/fa";
 import {
-  domesticWhyChooseIntro,
+  domesticWhyChooseEyebrow,
   domesticWhyChooseItems,
-  domesticWhyChooseTitleLine1,
-  domesticWhyChooseTitleLine2,
+  domesticWhyChooseTitle,
 } from "./domesticWhyChooseData";
-import styles from "@/components/tenancy/TenancyOptionalServicesSection.module.css";
+import styles from "@/components/different/WhatMakesDifferent.module.css";
 import local from "./DomesticWhyChooseSection.module.css";
 
 export default function DomesticWhyChooseSection() {
   return (
     <section
-      className={styles.services}
+      className={styles.section}
       id="domestic-why-choose"
       aria-labelledby="domestic-why-choose-title"
     >
-      <div className={styles.container}>
-        <div className={styles.sectionTitle}>
-          <h2 className={styles.title} id="domestic-why-choose-title">
-            {domesticWhyChooseTitleLine1}
-            <br />
-            {domesticWhyChooseTitleLine2}
-          </h2>
-          <p className={styles.intro}>{domesticWhyChooseIntro}</p>
-        </div>
+      <div className={styles.glowOne} aria-hidden />
+      <div className={styles.glowTwo} aria-hidden />
 
-        <div className={`${styles.grid} ${local.grid}`}>
-          {domesticWhyChooseItems.map((item) => {
+      <div className={styles.container}>
+        <header className={styles.header}>
+          <span className={styles.eyebrow}>{domesticWhyChooseEyebrow}</span>
+          <h2 className={styles.title} id="domestic-why-choose-title">
+            {domesticWhyChooseTitle}
+          </h2>
+        </header>
+
+        <ul className={`${styles.grid} ${local.grid}`}>
+          {domesticWhyChooseItems.map((item, index) => {
             const Icon = item.icon;
+            const num = String(index + 1).padStart(2, "0");
+
             return (
-              <article key={item.title} className={styles.card}>
-                <div className={styles.imgBox}>
-                  <div className={styles.imgWrap}>
-                    <img src={item.image} alt={item.imageAlt} loading="lazy" />
-                  </div>
+              <li key={item.text} className={styles.card}>
+                <span className={styles.accent} aria-hidden />
+                <div className={styles.cardHead}>
+                  <span
+                    className={styles.iconWrap}
+                    role="img"
+                    aria-label={item.iconAlt}
+                  >
+                    <Icon aria-hidden />
+                  </span>
+                  <span className={styles.index} aria-hidden>
+                    {num}
+                  </span>
                 </div>
-                <div className={styles.content}>
-                  <h3 className={`${styles.cardTitle} ${local.cardTitle}`}>
-                    {item.title}
-                  </h3>
-                  <p className={styles.cardText}>
-                    {item.linkLabel && item.linkHref ? (
-                      <>
-                        {item.textBefore}
-                        <Link href={item.linkHref} className={local.internalLink}>
-                          {item.linkLabel}
-                        </Link>
-                        {item.textAfter}
-                      </>
-                    ) : (
-                      item.text
-                    )}
-                  </p>
-                  <div className={styles.iconWrap}>
-                    <span className={styles.iconMain} role="img" aria-label={item.iconAlt}>
-                      <Icon aria-hidden />
-                    </span>
-                    <span className={styles.iconStar} role="img" aria-label="Trusted domestic cleaning service icon">
-                      <FaStar aria-hidden />
-                    </span>
-                  </div>
-                </div>
-              </article>
+                <p className={styles.statement}>{item.text}</p>
+              </li>
             );
           })}
-        </div>
+        </ul>
       </div>
     </section>
   );
