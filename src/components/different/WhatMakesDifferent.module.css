@@ -79,7 +79,7 @@
 .itemText {
   font-family: var(--font-two);
   font-size: clamp(14px, 1.25vw, 16px);
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.45;
   color: var(--primary-dark);
 }

@@ -21,4 +21,4 @@ export const gutterWhyChoosePoints = [
 export const gutterWhyChooseImage = "/images/gutter/gutter-why-equipment.webp";
 
 export const gutterWhyChooseImageAlt =
-  "Professional high-reach gutter cleaning equipment used across London properties";
+  "Technician on a ladder clearing leaves and debris from residential gutters";

@@ -12,9 +12,7 @@ import {
 import {
   teamMembers,
   teamSocialLinks,
-  teamTagline,
-  teamTitleAccent,
-  teamTitleLead,
+  teamTitle,
   type TeamMember,
 } from "./teamData";
 import styles from "./TeamSection.module.css";
@@ -86,6 +84,7 @@ function TeamCard({
                     rel="noopener noreferrer"
                     className={styles.socialLink}
                     aria-label={`${member.name} on ${profile.label}`}
+                    tabIndex={isActive ? 0 : -1}
                   >
                     <Icon aria-hidden />
                   </a>
@@ -103,7 +102,7 @@ function TeamCard({
 }
 
 export default function TeamSection() {
-  const [activeIndex, setActiveIndex] = useState<number | null>(0);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
     <section
@@ -113,13 +112,8 @@ export default function TeamSection() {
     >
       <div className={styles.container}>
         <header className={styles.header}>
-          <span className={styles.tagline}>
-            <span className={styles.tagDot} aria-hidden />
-            {teamTagline}
-          </span>
           <h2 className={styles.title} id="team-title">
-            {teamTitleLead}{" "}
-            <span className={styles.titleAccent}>{teamTitleAccent}</span>
+            {teamTitle}
           </h2>
         </header>
 

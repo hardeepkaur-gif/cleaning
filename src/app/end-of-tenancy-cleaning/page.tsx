@@ -4,7 +4,6 @@ import HomeTrustLogos from "@/components/trust/HomeTrustLogos";
 import TenancyProfessionalSection from "@/components/tenancy/TenancyProfessionalSection";
 import TenancyMattersTimelineSection from "@/components/tenancy/TenancyMattersTimelineSection";
 import TenancyIncludedCtaSection from "@/components/tenancy/TenancyIncludedCtaSection";
-import TenancyChecklistAltSection from "@/components/tenancy/TenancyChecklistAltSection";
 import TenancyChecklistCardsSection from "@/components/tenancy/TenancyChecklistCardsSection";
 import TenancyDepositGuideSection from "@/components/tenancy/TenancyDepositGuideSection";
 import TenancyWhoUsesAltSection from "@/components/tenancy/TenancyWhoUsesAltSection";
@@ -34,7 +33,6 @@ export default function EndOfTenancyCleaningPage() {
         <TenancyHero />
         <HomeTrustLogos />
         <TenancyMattersTimelineSection />
-        <TenancyChecklistAltSection />
         <TenancyChecklistCardsSection />
         <TenancyIncludedCtaSection />
         <TenancyProfessionalSection />

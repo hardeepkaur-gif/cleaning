@@ -63,7 +63,7 @@ export default function TenancyDepositGuideSection() {
               <div className={`${styles.imgSecondary} ${local.imgSecondary}`}>
                 <img
                   src={`${depositImgBase}/tenancy-deposit-cleaning-team-london.webp`}
-                  alt="Cleaning team preparing a rental property for tenancy deposit inspection"
+                  alt="Professional cleaner wiping kitchen cabinets during end of tenancy cleaning"
                   loading="lazy"
                 />
               </div>

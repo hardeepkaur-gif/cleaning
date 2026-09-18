@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import CarpetHero from "@/components/carpet/CarpetHero";
 import HomeTrustLogos from "@/components/trust/HomeTrustLogos";
-import CarpetTrustStrip from "@/components/carpet/CarpetTrustStrip";
 import CarpetCtaSection from "@/components/carpet/CarpetCtaSection";
 import CarpetServicesSection from "@/components/carpet/CarpetServicesSection";
 import CarpetAdditionalCtaSection from "@/components/carpet/CarpetAdditionalCtaSection";
@@ -33,8 +32,6 @@ export default function CarpetCleaningPage() {
       <main>
         <CarpetHero />
         <HomeTrustLogos />
-        <CarpetTrustStrip />
-        <CarpetCtaSection />
         <CarpetServicesSection />
         <CarpetAdditionalCtaSection />
         <CarpetStainsSection />
@@ -43,6 +40,7 @@ export default function CarpetCleaningPage() {
         <CarpetMethodsSection />
         <CarpetChooseSection />
         <CarpetAreasSection />
+        <CarpetCtaSection />
         <CarpetProcessSection />
         <AboutReviewsSection />
         <CarpetFaqSection />

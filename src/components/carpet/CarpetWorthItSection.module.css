@@ -230,7 +230,7 @@
   padding-right: 28px;
   font-size: clamp(14px, 1.25vw, 15px);
   line-height: 1.55;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--primary-dark);
 }
 

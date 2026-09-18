@@ -8,7 +8,7 @@ import local from "./CarpetAdditionalCtaSection.module.css";
 export default function CarpetAdditionalCtaSection() {
   return (
     <section
-      className={styles.cta}
+      className={`${styles.cta} ${local.cta}`}
       id="carpet-additional-cta"
       aria-labelledby="carpet-additional-cta-title"
     >

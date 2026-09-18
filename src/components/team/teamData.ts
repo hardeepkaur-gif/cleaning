@@ -1,10 +1,6 @@
 import { socialProfiles } from "@/lib/site";
 
-export const teamTagline = "Our Team";
-
-export const teamTitleLead = "The People";
-
-export const teamTitleAccent = "Who Do The Work.";
+export const teamTitle = "The People Who Do The Work.";
 
 export type TeamMember = {
   name: string;
@@ -34,7 +30,7 @@ export const teamMembers: TeamMember[] = [
   },
 ];
 
-/** Social icons shown on team card hover — company profiles */
+/** Social icons shown on team card hover / click — company profiles */
 export const teamSocialLinks = socialProfiles.filter((p) =>
   ["Facebook", "Pinterest", "X", "Instagram"].includes(p.label),
 );

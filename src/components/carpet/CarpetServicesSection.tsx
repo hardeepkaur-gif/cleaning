@@ -21,12 +21,12 @@ export default function CarpetServicesSection() {
 
   return (
     <section
-      className={styles.section}
+      className={`${styles.section} ${local.section}`}
       id="carpet-services"
       aria-labelledby="carpet-services-title"
     >
-      <div className={styles.orbOne} aria-hidden />
-      <div className={styles.orbTwo} aria-hidden />
+      <div className={`${styles.orbOne} ${local.orbOne}`} aria-hidden />
+      <div className={`${styles.orbTwo} ${local.orbTwo}`} aria-hidden />
 
       <div className={styles.container}>
         <header className={`${styles.header} ${local.header}`}>

@@ -22,6 +22,13 @@ export default function CarpetChooseSection() {
       <div className={styles.glowTwo} aria-hidden />
 
       <div className={styles.container}>
+        <header className={whoStyles.header}>
+          <h2 className={whoStyles.headerTitle} id="carpet-choose-cleaner-title">
+            {carpetChooseTitle}
+          </h2>
+          <p className={whoStyles.headerIntro}>{carpetChooseIntro}</p>
+        </header>
+
         <div className={`${styles.layout} ${local.layout}`}>
           <div className={`${styles.visual} ${local.visual}`}>
             <div className={styles.frameOuter} aria-hidden />
@@ -43,17 +50,6 @@ export default function CarpetChooseSection() {
             <div
               className={`${styles.pointsWrap} ${local.pointsWrap} ${whoStyles.copyBlock}`}
             >
-              <h2
-                className={`${styles.title} ${whoStyles.copyTitle}`}
-                id="carpet-choose-cleaner-title"
-              >
-                {carpetChooseTitle}
-              </h2>
-
-              <p className={`${styles.text} ${whoStyles.copyIntro}`}>
-                {carpetChooseIntro}
-              </p>
-
               <ul className={whoStyles.points}>
                 {carpetChoosePoints.map((item) => (
                   <li key={item}>

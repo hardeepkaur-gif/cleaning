@@ -201,7 +201,7 @@
 .problemList h4 {
   font-family: var(--font-two);
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 400;
   color: var(--primary-dark);
   margin: 0 0 6px;
   line-height: 1.35;
@@ -267,7 +267,7 @@
   border: 1px solid #ebe6df;
   font-size: 13px;
   line-height: 1.55;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--primary-dark);
   transition: border-color 0.3s ease, background 0.3s ease;
 }
