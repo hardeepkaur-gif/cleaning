@@ -85,7 +85,7 @@ export default function GutterCausesSection() {
 
   return (
     <section
-      className={styles.section}
+      className={`${styles.section} ${local.section}`}
       id="gutter-residential-commercial"
       aria-labelledby="gutter-causes-title"
     >

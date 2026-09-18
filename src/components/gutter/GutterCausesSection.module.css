@@ -1,3 +1,7 @@
+.section {
+  background: #f7f4f1;
+}
+
 .navChips {
   gap: 6px;
 }

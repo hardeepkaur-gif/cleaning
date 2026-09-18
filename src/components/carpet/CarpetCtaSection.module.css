@@ -1,10 +1,10 @@
 .cta {
-  padding-top: 0;
+  padding: 0 0 clamp(50px, 7vw, 80px) !important;
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .cta {
-    padding-top: 0;
+    padding: 0 0 48px !important;
   }
 }
 

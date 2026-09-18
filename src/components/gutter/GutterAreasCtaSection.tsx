@@ -8,7 +8,7 @@ import local from "./GutterAreasCtaSection.module.css";
 export default function GutterAreasCtaSection() {
   return (
     <section
-      className={styles.cta}
+      className={`${styles.cta} ${local.cta}`}
       id="gutter-areas-cta"
       aria-labelledby="gutter-areas-cta-title"
     >

@@ -22,4 +22,4 @@ export const carpetChooseImage =
   "/images/carpet/insurance-and-cleaner-vetting.webp";
 
 export const carpetChooseImageAlt =
-  "Professional insured carpet cleaners working in a London home";
+  "Professional cleaner vacuuming a bright home while smiling";
