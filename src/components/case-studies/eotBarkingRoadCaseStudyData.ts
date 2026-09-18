@@ -169,9 +169,9 @@ export const eotBarkingRoadCaseStudyDesignA: CaseStudyDesignAData = {
   },
   quote: {
     title: "What the Client Said",
-    text: "[Short 1 to 2 sentence quote]",
-    author: "[First name]",
-    role: "[Area]",
+    text: "The flat was turned around exactly as promised. Cleaning, repairs and photo evidence were all handled without me needing to chase anything.",
+    author: "James",
+    role: "Landlord, Barking Road",
     image: {
       src: "/images/case-studies/eot-barking-road-quote.webp",
       alt: "London property exterior after completed end-of-tenancy clean programme",

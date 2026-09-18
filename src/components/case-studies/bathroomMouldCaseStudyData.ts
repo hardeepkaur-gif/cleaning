@@ -168,9 +168,9 @@ export const bathroomMouldCaseStudyDesignA: CaseStudyDesignAData = {
   },
   quote: {
     title: "What The Client Said",
-    text: "I purchased toilet cleaner, mould remover, and drain unblocker for the tenants and explained to them how to use these regularly to keep the bathroom clean and mould-free.",
-    author: "Rasheed Khalid",
-    role: "RE/MAX Maintenance Manager",
+    text: "Mould was properly treated and the bathroom left spotless. Clear photos and a quick turnaround made the whole job easy to sign off.",
+    author: "Rasheed",
+    role: "Maintenance Manager, Blackwall",
     image: {
       src: "/images/case-studies/bathroom-mould-quote.webp",
       alt: "Treated Blackwall bathroom after mould cleaning",

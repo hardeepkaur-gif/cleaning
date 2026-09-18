@@ -71,6 +71,8 @@ export type CaseStudyDesignAData = {
     badge: string;
     title: string;
     description: string;
+    /** Stack heading above description instead of side-by-side */
+    headerStacked?: boolean;
     image: { src: string; alt: string };
     cta: { label: string; href: string };
     highlight: { value: string; label: string };
@@ -162,6 +164,10 @@ export const caseStudyChallenge = {
   paragraphs: [
     "The tenants of a room in a tenanted HMO in Canning Town moved their storage unit from the bedroom and noticed large amounts of mould on the wall behind it. This mould had grown inside the storage unit, which meant that it had to be removed from the property as soon as possible in order to prevent any further spread. With the room out of use, the tenants were sleeping in the living room until it was sorted.",
   ],
+  image: {
+    src: "/images/case-studies/mould-removal-canning-town-challenge.webp",
+    alt: "Bedroom in Canning Town after mould removal and deep clean behind storage unit",
+  },
 };
 
 export const caseStudyApproach = {
@@ -253,9 +259,9 @@ export const caseStudyResult = {
 
 export const caseStudyQuote = {
   title: "What The Client Said",
-  text: "Following our discussion, please confirm in writing the next steps: RE/MAX will send someone asap to fix the mould issue.",
-  author: "Danilo de Barros",
-  role: "Landlord",
+  text: "Mould removed and the room restored the same day. Tenants could move back in quickly without any further disruption.",
+  author: "Danilo",
+  role: "Landlord, Canning Town",
   image: {
     src: "/images/case-studies/mould-removal-canning-town-after.webp",
     alt: "Restored Canning Town bedroom after mould removal and deep clean",

@@ -137,6 +137,7 @@ export const eotClaremontCaseStudyDesignA: CaseStudyDesignAData = {
   result: {
     badge: "Case Study",
     title: "The Results",
+    headerStacked: true,
     description:
       "The forensic check-in versus check-out comparison supported a recommended deduction of £1,160 for tenant-responsible items, and the full amount was recovered from the tenants. The landlord was then given a genuine choice: take the recovered funds and use his own contractors, or have the works run through approved contractors with the tenant-responsible costs offset directly against the £1,160 and any balance adjusted against the next rental payment. Either way, the re-letting programme moved without waiting on a cash transfer.",
     image: {
@@ -165,9 +166,9 @@ export const eotClaremontCaseStudyDesignA: CaseStudyDesignAData = {
   },
   quote: {
     title: "What the Client Said",
-    text: "[Short 1 to 2 sentence quote]",
-    author: "[First name]",
-    role: "[Area]",
+    text: "Deposit recovery went smoothly thanks to the clear before-and-after photos and the re-let standard they left the property in.",
+    author: "Sarah",
+    role: "Landlord, Claremont Close",
     image: {
       src: "/images/case-studies/eot-claremont-quote.webp",
       alt: "Well-kept residential property exterior after Claremont Close end-of-tenancy turnaround",

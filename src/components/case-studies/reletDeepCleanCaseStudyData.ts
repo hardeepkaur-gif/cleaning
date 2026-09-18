@@ -170,9 +170,9 @@ export const reletDeepCleanCaseStudyDesignA: CaseStudyDesignAData = {
   },
   quote: {
     title: "What the Client Said",
-    text: "Thank you. Please proceed with the cleaning as quoted.",
-    author: "Landlord",
-    role: 'On approving the upgraded deep-clean specification. Following completion: "Both invoices have been cleared."',
+    text: "Quote approved, cleaned the next day, and the flat was ready to re-let. Fast communication and a proper deep-clean finish.",
+    author: "David",
+    role: "Landlord, Canning Town",
     image: {
       src: "/images/case-studies/24hr-deep-clean-relet-quote.webp",
       alt: "Residential property exterior after deep clean sign-off in Canning Town",

@@ -170,9 +170,9 @@ export const bathroomCaseStudyDesignA: CaseStudyDesignAData = {
   },
   quote: {
     title: "What The Client Said",
-    text: "I have seen it, and I appreciate the cleaning you have done properly.",
-    author: "Usama Wajib",
-    role: "RE/MAX Maintenance Team",
+    text: "The bathroom looked brand new after the deep clean. Inspection-ready and exactly what we needed for the tenant handover.",
+    author: "Usama",
+    role: "Property Manager, Canning Town",
     image: {
       src: "/images/case-studies/bathroom-deep-clean-quote.webp",
       alt: "Luxury bathroom after deep clean verified for Canning Town inspection",

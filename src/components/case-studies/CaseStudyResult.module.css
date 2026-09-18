@@ -20,6 +20,16 @@
   border-bottom: 1px solid rgba(14, 94, 91, 0.15);
 }
 
+.headerStacked {
+  grid-template-columns: 1fr;
+  align-items: start;
+  gap: 16px;
+}
+
+.headerStacked .title {
+  max-width: none;
+}
+
 .headerCopy {
   min-width: 0;
 }

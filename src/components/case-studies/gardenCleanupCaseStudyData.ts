@@ -162,9 +162,9 @@ export const gardenCleanupCaseStudyDesignA: CaseStudyDesignAData = {
   },
   quote: {
     title: "What The Client Said",
-    text: "Please find all the media attached, thanks.",
-    author: "RE/MAX Maintenance Team",
-    role: "On completion",
+    text: "Garden cleared, clothesline fitted and photos sent the same day. Exactly the tidy finish we needed for the landlord.",
+    author: "Priya",
+    role: "Maintenance Team, Ashford Road",
     image: {
       src: "/images/case-studies/garden-cleanup-quote.webp",
       alt: "Completed Ashford Road garden clean-up shared with the landlord",

@@ -164,9 +164,9 @@ export const gardenCaseStudyDesignA: CaseStudyDesignAData = {
   },
   quote: {
     title: "What The Client Said",
-    text: "Based on the before-and-after photos and videos, it is evident that the root originates from your side.",
-    author: "Maggie Cai",
-    role: "Property Manager",
+    text: "Fence line cleared and the garden usable again. Before-and-after photos made it simple to confirm the work with the neighbour.",
+    author: "Maggie",
+    role: "Property Manager, Canning Town",
     image: {
       src: "/images/case-studies/garden-fence-clearance-quote.webp",
       alt: "Cleared garden with shed and bin store after fence-line clearance in Canning Town",

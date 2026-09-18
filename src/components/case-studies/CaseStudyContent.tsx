@@ -262,7 +262,11 @@ export default function CaseStudyContent({
         aria-labelledby="result-title"
       >
         <div className={resultStyles.container}>
-          <header className={resultStyles.header}>
+          <header
+            className={`${resultStyles.header}${
+              result.headerStacked ? ` ${resultStyles.headerStacked}` : ""
+            }`}
+          >
             <div className={resultStyles.headerCopy}>
               <span className={resultStyles.badge}>
                 <span className={resultStyles.badgeDot} aria-hidden />
