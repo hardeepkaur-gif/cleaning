@@ -3,11 +3,12 @@ import { PiSparkleDuotone } from "react-icons/pi";
 import ThmButton from "@/components/menu/ThmButton";
 import styles from "@/components/cta/CtaSectionThree.module.css";
 import localStyles from "@/components/tenancy/TenancyCtaSection.module.css";
+import local from "./DomesticAdditionalCtaSection.module.css";
 
 export default function DomesticAdditionalCtaSection() {
   return (
     <section
-      className={styles.cta}
+      className={`${styles.cta} ${local.cta}`}
       id="domestic-additional-services"
       aria-labelledby="domestic-additional-cta-title"
     >
@@ -31,7 +32,7 @@ export default function DomesticAdditionalCtaSection() {
             <div className={`${styles.btnBox} ${localStyles.btnBox}`}>
               <ThmButton
                 href="/contact-us"
-                className={`${styles.ctaBtn} ${localStyles.ctaBtn}`}
+                className={`${styles.ctaBtn} ${localStyles.ctaBtn} ${local.ctaBtn}`}
               >
                 <FaCalendarCheck aria-hidden />
                 Request a Quote

@@ -278,8 +278,9 @@
   }
 
   .laptopWrap {
-    max-width: 280px;
+    max-width: 300px;
     margin: 0 auto;
+    padding: 10px 14px 8px;
   }
 }
 
@@ -289,23 +290,23 @@
   }
 
   .laptopWrap {
-    max-width: 260px;
-    padding: 10px 12px 6px;
+    max-width: 300px;
+    padding: 10px 14px 8px;
   }
 
   .screenTitle {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .screenList li {
-    font-size: 9px;
-    padding: 5px 7px;
+    font-size: 10px !important;
+    padding: 6px 8px;
   }
 }
 
 @media (max-width: 575px) {
   .laptopWrap {
-    max-width: min(240px, 100%);
+    max-width: 300px;
   }
 
   .copy .ctaBtn:global(.thmBtn) {

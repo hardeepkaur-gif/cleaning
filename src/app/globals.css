@@ -128,6 +128,30 @@ h6 {
   text-transform: capitalize;
 }
 
+/* Section H1s — fixed sizes by viewport */
+main h1 {
+  font-size: 46px !important;
+  line-height: 1.2 !important;
+}
+
+@media (max-width: 767px) {
+  main h1 {
+    font-size: 34px !important;
+  }
+}
+
+/* Section H2s — fixed sizes by viewport */
+main h2 {
+  font-size: 38px !important;
+  line-height: 1.3;
+}
+
+@media (max-width: 767px) {
+  main h2 {
+    font-size: 28px !important;
+  }
+}
+
 .section {
   padding: 80px 20px;
   max-width: 1200px;

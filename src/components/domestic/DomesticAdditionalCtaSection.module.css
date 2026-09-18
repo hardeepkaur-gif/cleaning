@@ -1,8 +1,13 @@
-@media(max-width: 575px) {
-  .ctaBtn:global(.thmBtn) {
-  width: 100%;
-  max-width: 320px;
-  justify-content: center;
+@media (max-width: 767px) {
+  .cta {
+    padding-bottom: 0 !important;
+  }
 }
 
+@media (max-width: 575px) {
+  .ctaBtn:global(.thmBtn) {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+  }
 }

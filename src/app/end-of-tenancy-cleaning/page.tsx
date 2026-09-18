@@ -6,7 +6,6 @@ import TenancyMattersTimelineSection from "@/components/tenancy/TenancyMattersTi
 import TenancyIncludedCtaSection from "@/components/tenancy/TenancyIncludedCtaSection";
 import TenancyChecklistAltSection from "@/components/tenancy/TenancyChecklistAltSection";
 import TenancyChecklistCardsSection from "@/components/tenancy/TenancyChecklistCardsSection";
-import TenancyChecklistAccordionSection from "@/components/tenancy/TenancyChecklistAccordionSection";
 import TenancyDepositGuideSection from "@/components/tenancy/TenancyDepositGuideSection";
 import TenancyWhoUsesAltSection from "@/components/tenancy/TenancyWhoUsesAltSection";
 import TenancyProcessSection from "@/components/tenancy/TenancyProcessSection";
@@ -38,7 +37,6 @@ export default function EndOfTenancyCleaningPage() {
         <TenancyChecklistAltSection />
         <TenancyChecklistCardsSection />
         <TenancyIncludedCtaSection />
-        <TenancyChecklistAccordionSection />
         <TenancyProfessionalSection />
         <TenancyDepositGuideSection />
         <TenancyWhoUsesAltSection />
