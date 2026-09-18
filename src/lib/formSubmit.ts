@@ -11,7 +11,8 @@ export const THANK_YOU_PATH = "/thank-you";
  * | Coreclean hero quote | `cl-coreclean-quote-form` |
  * | Contact Us quote | `cl-contact-quote-form` |
  *
- * Leads currently email to SITE_EMAIL via FormSubmit.
+ * Leads email to SITE_EMAIL (info@…) via FormSubmit, and the submitter
+ * receives an automatic confirmation via FormSubmit `_autoresponse`.
  */
 export const SITE_FORM_IDS = {
   quoteByPrefix: (prefix: string) => `cl-quote-form-${prefix}`,
@@ -28,7 +29,22 @@ export type LeadPayload = {
   formId: string;
 };
 
-/** Send lead details to info@… then caller redirects to thank-you. */
+const customerAutoresponse = (name: string) =>
+  [
+    `Hi ${name},`,
+    "",
+    "Thank you for contacting CL Cleaning Services London. We have received your enquiry and will get back to you shortly.",
+    "",
+    `If you need us sooner, email ${SITE_EMAIL} or call 020 3475 5539.`,
+    "",
+    "Kind regards,",
+    "CL Cleaning Services London",
+  ].join("\n");
+
+/**
+ * Sends lead to info@… (business inbox) and FormSubmit also emails
+ * an autoresponse to the customer’s address from the form.
+ */
 export async function submitLead(payload: LeadPayload): Promise<void> {
   const name = payload.name.trim();
   const phone = payload.phone.trim();
@@ -40,6 +56,7 @@ export async function submitLead(payload: LeadPayload): Promise<void> {
 
   const page =
     typeof window !== "undefined" ? window.location.href : SITE_EMAIL;
+  const service = payload.service?.trim() || "Not specified";
 
   const response = await fetch(
     `https://formsubmit.co/ajax/${encodeURIComponent(SITE_EMAIL)}`,
@@ -53,14 +70,15 @@ export async function submitLead(payload: LeadPayload): Promise<void> {
         name,
         email,
         phone,
-        service: payload.service?.trim() || "Not specified",
+        service,
         message: payload.message?.trim() || "",
         formId: payload.formId,
         page,
-        _subject: `New cleaning quote — ${payload.formId}`,
+        _subject: `New cleaning quote — ${name} (${service})`,
         _template: "table",
         _captcha: "false",
         _replyto: email,
+        _autoresponse: customerAutoresponse(name),
       }),
     },
   );
