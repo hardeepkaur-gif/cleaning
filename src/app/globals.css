@@ -136,7 +136,7 @@ main h1 {
 
 @media (max-width: 767px) {
   main h1 {
-    font-size: 34px !important;
+    font-size: 32px !important;
   }
 }
 
@@ -148,7 +148,7 @@ main h2 {
 
 @media (max-width: 767px) {
   main h2 {
-    font-size: 28px !important;
+    font-size: 26px !important;
   }
 }
 
