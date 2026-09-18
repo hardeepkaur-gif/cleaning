@@ -133,7 +133,7 @@
 @media (max-width: 767px) {
   .container {
     padding-top: calc(clamp(40px, 6vw, 56px) + 12px);
-    padding-bottom: 36px;
+    padding-bottom: 56px;
   }
 
   .overlay {
@@ -155,7 +155,7 @@
 @media (max-width: 575px) {
   .container {
     padding-top: 48px;
-    padding-bottom: 32px;
+    padding-bottom: 52px;
   }
 
   .trustItem {

@@ -33,9 +33,10 @@
 }
 
 .screenHero {
-  flex: 1 1 auto;
-  min-height: 44px;
+  flex: 0 0 auto;
+  min-height: 0;
   height: auto;
+  padding: 10px;
 }
 
 @media(max-width: 991px) {
@@ -45,13 +46,15 @@
     bottom: auto;
     left: auto;
     transform: none;
-    width: clamp(140px, 42vw, 178px);
+    width: 230px;
+    min-height: 0;
   }
 
   .screenHero {
     flex: 0 0 auto;
-    height: 36px;
-    min-height: 36px;
+    height: auto;
+    min-height: 0;
+    padding: 10px;
   }
 
   .copy {

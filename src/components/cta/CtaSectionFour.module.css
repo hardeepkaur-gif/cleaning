@@ -405,7 +405,16 @@
     transform: none;
     width: 230px;
     height: auto;
-    min-height: 340px;
+    min-height: 0;
+  }
+
+  .phoneScreen {
+    flex: 0 1 auto;
+    min-height: 0;
+  }
+
+  .screenFooter {
+    margin-top: 8px;
   }
 }
 
