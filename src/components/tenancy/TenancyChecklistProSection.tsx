@@ -21,7 +21,6 @@ export default function TenancyChecklistProSection() {
     >
       <div className={styles.container}>
         <header className={styles.header}>
-          <p className={styles.eyebrow}>Room-by-room coverage</p>
           <h2 className={styles.title} id="tenancy-checklist-pro-title">
             {tenancyChecklistTitle}
           </h2>

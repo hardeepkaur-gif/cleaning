@@ -1,5 +1,4 @@
 import { FaCheck } from "react-icons/fa";
-import { PiHouseDuotone } from "react-icons/pi";
 import styles from "@/components/carpet/CarpetWorthItAltSection.module.css";
 import local from "@/components/included/ProfessionalCleanSimple.module.css";
 import whoStyles from "./TenancyWhoUsesAltSection.module.css";
@@ -50,12 +49,6 @@ export default function TenancyWhoUsesAltSection() {
 
           <div className={`${styles.copy} ${local.copy}`}>
             <div className={`${styles.pointsWrap} ${local.pointsWrap} ${whoStyles.copyBlock}`}>
-              <span className={`${styles.tagline} ${whoStyles.copyTagline}`}>
-                <span role="img" aria-label="End of tenancy customers icon">
-                  <PiHouseDuotone aria-hidden />
-                </span>
-                Who We Help
-              </span>
               <h2
                 className={`${styles.title} ${whoStyles.copyTitle}`}
                 id="tenancy-who-uses-title"

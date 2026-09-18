@@ -21,10 +21,6 @@ export default function HeroSpecialized() {
 
         <div className={styles.container}>
           <div className={styles.content}>
-            <div className={styles.subTitle}>
-              <h4>Professional Cleaning Services</h4>
-            </div>
-
             <div className={styles.bigTitle}>
               <h2>
                 Cleaning Services London With{" "}

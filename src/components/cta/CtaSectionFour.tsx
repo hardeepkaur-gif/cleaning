@@ -72,7 +72,7 @@ export default function CtaSectionFour() {
 
                   <div className={styles.screenFooter}>
                     <span>DBS-checked cleaner</span>
-                    <strong>£89 fixed</strong>
+                    <strong>Call us</strong>
                   </div>
                 </div>
               </div>

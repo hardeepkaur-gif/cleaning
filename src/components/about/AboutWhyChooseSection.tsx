@@ -5,7 +5,6 @@ import { FaCheck, FaChevronDown } from "react-icons/fa";
 import {
   aboutWhyChooseIntro,
   aboutWhyChooseItems,
-  aboutWhyChooseTagline,
   aboutWhyChooseTitle,
 } from "./aboutWhyChooseData";
 import styles from "@/components/tenancy/TenancyIncludedSection.module.css";
@@ -48,7 +47,6 @@ export default function AboutWhyChooseSection() {
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.secTitle}>
-            <p className={styles.tagline}>{aboutWhyChooseTagline}</p>
             <h2 className={styles.title} id="about-why-choose-title">
               {aboutWhyChooseTitle}
             </h2>

@@ -1,5 +1,4 @@
 import {
-  domesticWhyChooseEyebrow,
   domesticWhyChooseItems,
   domesticWhyChooseTitle,
 } from "./domesticWhyChooseData";
@@ -18,7 +17,6 @@ export default function DomesticWhyChooseSection() {
 
       <div className={styles.container}>
         <header className={styles.header}>
-          <span className={styles.eyebrow}>{domesticWhyChooseEyebrow}</span>
           <h2 className={styles.title} id="domestic-why-choose-title">
             {domesticWhyChooseTitle}
           </h2>

@@ -10,8 +10,6 @@ import {
   gutterIncludedMethods,
   gutterIncludedProtectIcon,
   gutterIncludedProtectLabel,
-  gutterIncludedTagline,
-  gutterIncludedTaglineIcon,
   gutterIncludedTitleAccent,
   gutterIncludedTitleAfter,
   gutterIncludedTitleBefore,
@@ -19,7 +17,6 @@ import {
 import styles from "./GutterIncludedSection.module.css";
 
 export default function GutterIncludedSection() {
-  const TagIcon = gutterIncludedTaglineIcon;
   const ProtectIcon = gutterIncludedProtectIcon;
   const HighlightIcon = gutterIncludedHighlightIcon;
 
@@ -31,12 +28,6 @@ export default function GutterIncludedSection() {
     >
       <div className={styles.container}>
         <header className={styles.header}>
-          <span className={styles.tagline}>
-            <span role="img" aria-label="Complete gutter care icon">
-              <TagIcon aria-hidden />
-            </span>
-            {gutterIncludedTagline}
-          </span>
           <h2 className={styles.title} id="gutter-included-title">
             {gutterIncludedTitleBefore}
             <span className={styles.titleAccent}>{gutterIncludedTitleAccent}</span>

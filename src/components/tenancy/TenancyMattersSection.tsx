@@ -1,7 +1,6 @@
 import {
   tenancyMattersIntro,
-  tenancyMattersItems,
-  tenancyMattersTagline,
+  tenancyMattersItems,
   tenancyMattersTitle,
 } from "./tenancyMattersData";
 import styles from "./TenancyMattersSection.module.css";
@@ -14,9 +13,7 @@ export default function TenancyMattersSection() {
       aria-labelledby="tenancy-matters-title"
     >
       <div className={styles.container}>
-        <header className={styles.header}>
-          <p className={styles.tagline}>{tenancyMattersTagline}</p>
-          <h2 className={styles.title} id="tenancy-matters-title">
+        <header className={styles.header}>          <h2 className={styles.title} id="tenancy-matters-title">
             {tenancyMattersTitle}
           </h2>
           <p className={styles.intro}>{tenancyMattersIntro}</p>

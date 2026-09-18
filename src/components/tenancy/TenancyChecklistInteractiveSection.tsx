@@ -43,7 +43,6 @@ export default function TenancyChecklistInteractiveSection() {
     >
       <div className={styles.container}>
         <header className={styles.header}>
-          <span className={styles.eyebrow}>End of tenancy cleaning</span>
           <h2
             className={styles.title}
             id="tenancy-checklist-interactive-title"

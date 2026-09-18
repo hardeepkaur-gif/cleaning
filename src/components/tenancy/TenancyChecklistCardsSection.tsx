@@ -22,9 +22,7 @@ export default function TenancyChecklistCardsSection() {
       aria-labelledby="tenancy-checklist-cards-title"
     >
       <div className={styles.container}>
-        <header className={styles.header}>
-          <p className={styles.eyebrow}>Room-by-Room Guide</p>
-          <h2 className={styles.title} id="tenancy-checklist-cards-title">
+        <header className={styles.header}>          <h2 className={styles.title} id="tenancy-checklist-cards-title">
             {tenancyChecklistTitle}
           </h2>
           <p className={styles.intro}>{tenancyChecklistIntro}</p>

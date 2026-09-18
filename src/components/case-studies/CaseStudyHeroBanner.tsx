@@ -1,4 +1,4 @@
-import { FaArrowRight, FaSprayCan } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import ThmButton from "@/components/menu/ThmButton";
 import {
   mouldCaseStudyDesignA,
@@ -35,13 +35,6 @@ export default function CaseStudyHeroBanner({
 
       <div className={styles.container}>
         <div className={styles.copy}>
-          <span className={styles.badge}>
-            <span className={styles.badgeIcon} aria-hidden>
-              <FaSprayCan />
-            </span>
-            {data.badge}
-          </span>
-
           <h1 className={styles.title} id="case-study-page-title">
             {data.titleLead} <span>{data.titleAccent}</span> {data.titleTrail}
           </h1>

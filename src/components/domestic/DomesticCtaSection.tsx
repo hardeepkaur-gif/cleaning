@@ -79,7 +79,7 @@ export default function DomesticCtaSection() {
                   </ul>
 
                   <div className={styles.screenFooter}>
-                    <span>Quick quote ready</span>
+                    <span>Always open</span>
                     <strong>Book now</strong>
                   </div>
                 </div>

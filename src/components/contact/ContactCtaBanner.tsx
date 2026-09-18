@@ -37,8 +37,8 @@ export default function ContactCtaBanner() {
               <span>quotes on most enquiries</span>
             </div>
             <div className={styles.ctaStat}>
-              <strong>Fixed price</strong>
-              <span>no hourly surprises</span>
+              <strong>Always open</strong>
+              <span>Call or email</span>
             </div>
             <div className={styles.ctaStat}>
               <strong>DBS checked</strong>

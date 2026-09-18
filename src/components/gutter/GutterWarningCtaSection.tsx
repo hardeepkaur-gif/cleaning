@@ -64,7 +64,7 @@ export default function GutterWarningCtaSection() {
                       <ul className={localStyles.screenList}>
                         <li>
                           <FaPhoneAlt aria-hidden />
-                          Call for a fixed quote
+                          Call anytime
                         </li>
                         <li>
                           <FaEnvelope aria-hidden />

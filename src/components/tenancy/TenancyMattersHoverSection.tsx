@@ -1,8 +1,7 @@
 import { FaStar } from "react-icons/fa";
 import {
   tenancyMattersIntro,
-  tenancyMattersItems,
-  tenancyMattersTagline,
+  tenancyMattersItems,
   tenancyMattersTitle,
 } from "./tenancyMattersData";
 import styles from "./TenancyMattersHoverSection.module.css";
@@ -18,10 +17,6 @@ export default function TenancyMattersHoverSection() {
 
       <div className={styles.container}>
         <header className={styles.header}>
-          <div className={styles.taglineBox}>
-            <FaStar className={styles.taglineIcon} aria-hidden />
-            <p className={styles.tagline}>{tenancyMattersTagline}</p>
-          </div>
           <h2 className={styles.title} id="tenancy-matters-hover-title">
             {tenancyMattersTitle}
           </h2>

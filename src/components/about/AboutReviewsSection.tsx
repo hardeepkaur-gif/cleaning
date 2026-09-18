@@ -3,7 +3,6 @@ import {
   aboutReviews,
   aboutReviewsIntro,
   aboutReviewsSummary,
-  aboutReviewsTagline,
   aboutReviewsTitle,
 } from "./aboutReviewsData";
 import styles from "./AboutReviewsSection.module.css";
@@ -60,7 +59,6 @@ export default function AboutReviewsSection() {
       <div className={styles.container}>
         <div className={styles.header}>
           <div className={styles.headerCopy}>
-            <p className={styles.tagline}>{aboutReviewsTagline}</p>
             <h2 className={styles.title} id="about-reviews-title">
               {aboutReviewsTitle}
             </h2>

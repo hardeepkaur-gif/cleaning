@@ -81,7 +81,7 @@ export default function CarpetCtaSection() {
                   </ul>
 
                   <div className={styles.screenFooter}>
-                    <span>Quick quote ready</span>
+                    <span>Always open</span>
                     <strong>Book now</strong>
                   </div>
                 </div>

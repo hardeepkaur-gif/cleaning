@@ -1,35 +1,35 @@
 import Link from "next/link";
 import {
-  FaBroom,
-  FaStar,
-  FaUsers,
-  FaCalendarWeek,
+  FaAward,
+  FaClipboardCheck,
+  FaShieldAlt,
+  FaUserTie,
 } from "react-icons/fa";
 import styles from "./AboutUs.module.css";
 
 const stats = [
   {
-    value: "10,000+",
-    label: "Cleans delivered",
-    icon: FaBroom,
+    value: "12",
+    label: "No. of contractors",
+    icon: FaUserTie,
     accent: "coral" as const,
   },
   {
-    value: "10,000+",
-    label: "Customers served",
-    icon: FaUsers,
+    value: "10",
+    label: "Years of experience",
+    icon: FaAward,
     accent: "teal" as const,
   },
   {
-    value: "2,000+",
-    label: "Cleans every week",
-    icon: FaCalendarWeek,
+    value: "700",
+    label: "Jobs completed",
+    icon: FaClipboardCheck,
     accent: "coral" as const,
   },
   {
-    value: "4.8/5.0",
-    label: "Verified online reviews",
-    icon: FaStar,
+    value: "100%",
+    label: "Fully insured team",
+    icon: FaShieldAlt,
     accent: "teal" as const,
   },
 ] as const;

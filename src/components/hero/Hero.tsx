@@ -59,8 +59,6 @@ export default function Hero() {
 
       <div className={styles.inner}>
         <div className={styles.content}>
-          <span className={styles.badge}>Professional Cleaning Services</span>
-
           <h1 className={styles.title}>
             Cleaning Services London With{" "}
             <span>DBS Checked Professional Cleaners</span>

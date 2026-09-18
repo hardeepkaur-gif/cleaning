@@ -23,11 +23,6 @@ export default function DomesticIntroCtaSection() {
             <div className={styles.blobCoral} aria-hidden />
 
             <div className={`${styles.copy} ${local.copy}`}>
-              <span className={styles.badge}>
-                <PiSparkleFill aria-hidden />
-                More time for what matters
-              </span>
-
               <h2 className={styles.title} id="domestic-intro-cta-title">
                 Leave the Housework to Us
               </h2>
@@ -86,7 +81,7 @@ export default function DomesticIntroCtaSection() {
                       <PiClockFill aria-hidden /> Flexible scheduling
                     </li>
                     <li>
-                      <PiCalendarCheckFill aria-hidden /> Fixed quotation
+                      <PiCalendarCheckFill aria-hidden /> Call us
                     </li>
                   </ul>
 

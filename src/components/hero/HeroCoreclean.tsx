@@ -10,8 +10,7 @@ type HeroCta = {
 };
 
 type HeroCorecleanProps = {
-  id?: string;
-  eyebrow?: string;
+  id?: string;
   title?: ReactNode;
   description?: ReactNode;
   primaryCta?: HeroCta;
@@ -31,8 +30,7 @@ const defaultDescription =
   "Reliable cleaning services for homes, rental properties, offices, and commercial premises across East London. At Cleaning Services London we have DBS-checked and fully insured cleaners following documented cleaning standards, completion photo procedures, and quality control checks designed to deliver consistent results.";
 
 export default function HeroCoreclean({
-  id = "home",
-  eyebrow = "Professional Cleaning Services",
+  id = "home",
   title = defaultTitle,
   description = defaultDescription,
   primaryCta = { href: "/contact-us", label: "Request a Quote" },
@@ -87,10 +85,6 @@ export default function HeroCoreclean({
 
         <div className={styles.container}>
           <div className={styles.content}>
-            <div className={styles.subTitle}>
-              <h4>{eyebrow}</h4>
-            </div>
-
             <div className={styles.bigTitle}>
               <h2>{title}</h2>
             </div>

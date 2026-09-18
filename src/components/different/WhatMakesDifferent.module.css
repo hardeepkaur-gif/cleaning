@@ -1,15 +1,16 @@
-/* What makes us different — compact unique 3-col grid */
+/* What makes us different — list + image with review */
 
 .section {
   position: relative;
   padding: clamp(56px, 7vw, 88px) 0;
-  background: var(--white);
+  background:
+    radial-gradient(
+      circle at 92% 18%,
+      rgba(14, 94, 91, 0.07) 0%,
+      transparent 55%
+    ),
+    var(--white);
   overflow: hidden;
-}
-
-.glowOne,
-.glowTwo {
-  display: none;
 }
 
 .container {
@@ -20,140 +21,72 @@
   padding: 0 clamp(16px, 3vw, 24px);
 }
 
-.header {
-  text-align: center;
-  max-width: 780px;
-  margin: 0 auto clamp(28px, 3.5vw, 40px);
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: clamp(28px, 4vw, 48px);
+  align-items: center;
 }
 
-.eyebrow {
-  display: inline-flex;
-  margin-bottom: 12px;
-  padding: 6px 12px;
-  border-radius: 999px;
-  background: rgba(226, 106, 76, 0.1);
-  border: 1px solid rgba(226, 106, 76, 0.18);
-  font-family: var(--font-two);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--cta);
+.copy {
+  min-width: 0;
 }
 
 .title {
-  margin: 0;
+  margin: 0 0 clamp(22px, 2.8vw, 28px);
   font-family: var(--font-two);
-  font-size: clamp(26px, 3.4vw, 40px);
+  font-size: clamp(26px, 3.2vw, 38px);
   line-height: 1.22;
   font-weight: 800;
   color: var(--primary-dark);
+  text-align: left;
 }
 
-.grid {
+.list {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 14px;
 }
 
-.card {
-  position: relative;
+.item {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  min-height: 100%;
-  padding: 18px 18px 18px 20px;
-  border-radius: 16px;
-  background: var(--white);
-  border: 1px solid rgba(14, 94, 91, 0.09);
-  box-shadow: 0 8px 22px rgba(10, 70, 68, 0.05);
-  overflow: hidden;
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-    border-color 0.25s ease;
+  align-items: flex-start;
+  gap: 12px;
 }
 
-.accent {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 4px;
-  background: linear-gradient(180deg, var(--primary), var(--cta));
-}
-
-.card:nth-child(even) .accent {
-  background: linear-gradient(180deg, var(--cta), var(--primary));
-}
-
-.card:hover {
-  transform: translateY(-3px);
-  border-color: rgba(14, 94, 91, 0.16);
-  box-shadow: 0 14px 30px rgba(10, 70, 68, 0.1);
-}
-
-.cardHead {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.iconWrap {
+.icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 12px;
-  background: linear-gradient(
-    145deg,
-    rgba(14, 94, 91, 0.12) 0%,
-    rgba(226, 106, 76, 0.1) 100%
-  );
-  border: 1px solid rgba(14, 94, 91, 0.12);
-  color: var(--primary-dark);
-  font-size: 20px;
-  transition:
-    background 0.25s ease,
-    color 0.25s ease;
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  margin-top: 1px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--primary) 0%, #3d8f8c 100%);
+  color: #fff;
+  font-size: 11px;
 }
 
-.iconWrap svg {
+.icon svg {
   width: 1em;
   height: 1em;
 }
 
-.card:hover .iconWrap {
-  background: linear-gradient(145deg, var(--primary), var(--primary-dark));
-  color: var(--white);
-}
-
-.index {
+.itemText {
   font-family: var(--font-two);
-  font-size: 22px;
-  font-weight: 800;
-  line-height: 1;
-  color: rgba(14, 94, 91, 0.14);
-}
-
-.statement {
-  margin: 0;
-  font-family: var(--font-two);
-  font-size: clamp(14px, 1.25vw, 15px);
-  font-weight: 600;
-  line-height: 1.4;
+  font-size: clamp(14px, 1.25vw, 16px);
+  font-weight: 500;
+  line-height: 1.45;
   color: var(--primary-dark);
 }
 
 .actions {
   display: flex;
-  justify-content: center;
-  margin-top: clamp(24px, 3vw, 32px);
+  margin-top: clamp(22px, 3vw, 30px);
 }
 
 .ctaBtn:global(.thmBtn) {
@@ -161,54 +94,150 @@
   justify-content: center;
 }
 
+.visual {
+  min-width: 0;
+}
+
+.imageWrap {
+  position: relative;
+  border-radius: 24px;
+  overflow: visible;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  max-height: 620px;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: 24px;
+  box-shadow: 0 18px 40px rgba(10, 70, 68, 0.12);
+}
+
+.shirtLogo {
+  display: none;
+}
+
+.review {
+  position: absolute;
+  left: clamp(12px, 2vw, 20px);
+  top: clamp(14px, 2.4vw, 24px);
+  right: auto;
+  bottom: auto;
+  z-index: 3;
+  width: min(250px, calc(100% - 28px));
+  padding: 14px 16px 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.97);
+  border: 1px solid rgba(14, 94, 91, 0.08);
+  box-shadow: 0 14px 32px rgba(10, 70, 68, 0.16);
+}
+
+.reviewLabel {
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--gray);
+}
+
+.reviewHead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, var(--primary), var(--primary-dark));
+  color: var(--white);
+  font-family: var(--font-two);
+  font-size: 14px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.reviewMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.reviewName {
+  font-family: var(--font-two);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  line-height: 1.2;
+}
+
+.stars {
+  display: inline-flex;
+  gap: 2px;
+  color: #f5b301;
+  font-size: 11px;
+}
+
+.reviewText {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.55;
+  font-style: italic;
+  color: var(--gray);
+}
+
 @media (max-width: 991px) {
-  .grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .visual {
+    order: 2;
+    max-width: 520px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .image {
+    aspect-ratio: 4 / 5;
+    max-height: 480px;
   }
 }
 
 @media (max-width: 575px) {
-  .grid {
-    grid-template-columns: 1fr;
+  .title {
+    font-size: 26px;
+  }
+
+  .item {
     gap: 10px;
   }
 
-  .card {
-    padding: 14px 14px 14px 16px;
-    gap: 8px;
+  .icon {
+    width: 26px;
+    height: 26px;
+    font-size: 11px;
   }
 
-  .iconWrap {
-    width: 38px;
-    height: 38px;
-    font-size: 18px;
-  }
-
-  .index {
-    font-size: 18px;
-  }
-
-  .statement {
+  .itemText {
     font-size: 14px;
   }
 
-  .card:hover {
-    transform: none;
+  .review {
+    width: min(220px, calc(100% - 24px));
+    padding: 12px 14px;
   }
 
   .ctaBtn:global(.thmBtn) {
     width: 100%;
     max-width: 320px;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .card,
-  .iconWrap {
-    transition: none;
-  }
-
-  .card:hover {
-    transform: none;
   }
 }

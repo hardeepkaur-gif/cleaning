@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 import {
   tenancyMattersIntro,
   tenancyMattersItems,
-  tenancyMattersTagline,
   tenancyMattersTitle,
 } from "./tenancyMattersData";
 import styles from "./TenancyMattersTimelineSection.module.css";
@@ -98,7 +97,6 @@ export default function TenancyMattersTimelineSection() {
         <div className={styles.layout}>
           <aside className={styles.aside}>
             <div className={styles.asideCard} ref={asideCardRef}>
-              <p className={styles.tagline}>{tenancyMattersTagline}</p>
               <h2 className={styles.title} id="tenancy-matters-timeline-title">
                 {tenancyMattersTitle}
               </h2>

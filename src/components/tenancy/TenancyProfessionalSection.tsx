@@ -35,7 +35,6 @@ export default function TenancyProfessionalSection() {
           <div className={styles.copy}>
             <div className={styles.secTitle}>
               <div className={styles.secTop}>
-                <span className={styles.secTagline}>Professional Tenancy Cleaning</span>
               </div>
               <h2 className={styles.title} id="professional-tenancy-title">
                 Professional End of Tenancy Cleaning London

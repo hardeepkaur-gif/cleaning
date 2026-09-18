@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { FaCheck } from "react-icons/fa";
-import { PiBroomDuotone } from "react-icons/pi";
 import styles from "@/components/carpet/CarpetWorthItAltSection.module.css";
 import local from "./ProfessionalCleanSimple.module.css";
 import {
@@ -11,7 +10,6 @@ import {
   includedImageAlt,
   includedIntro,
   includedPoints,
-  includedTagline,
   includedTitle,
 } from "./includedData";
 
@@ -26,21 +24,6 @@ export default function ProfessionalClean() {
       <div className={styles.glowTwo} aria-hidden />
 
       <div className={styles.container}>
-        <header className={styles.header}>
-          <span className={styles.tagline}>
-            <span role="img" aria-label="Professional clean icon">
-              <PiBroomDuotone aria-hidden />
-            </span>
-            {includedTagline}
-          </span>
-          <h2 className={styles.title} id="included-title">
-            {includedTitle}
-          </h2>
-          <div className={styles.introBlock}>
-            <p className={styles.text}>{includedIntro}</p>
-          </div>
-        </header>
-
         <div className={`${styles.layout} ${local.layout}`}>
           <div className={`${styles.visual} ${local.visual}`}>
             <div className={styles.frameOuter} aria-hidden />
@@ -60,13 +43,24 @@ export default function ProfessionalClean() {
 
           <div className={`${styles.copy} ${local.copy}`}>
             <div className={`${styles.pointsWrap} ${local.pointsWrap}`}>
+              <header className={local.copyHeader}>
+                <h2 className={`${styles.title} ${local.copyTitle}`} id="included-title">
+                  {includedTitle}
+                </h2>
+                <p className={`${styles.text} ${local.copyIntro}`}>
+                  {includedIntro}
+                </p>
+              </header>
+
               <ul className={styles.points}>
                 {includedPoints.map((item) => (
                   <li key={item}>
                     <span className={styles.pointIcon} aria-hidden>
                       <FaCheck />
                     </span>
-                    <span className={styles.pointText}>{item}</span>
+                    <span className={`${styles.pointText} ${local.pointText}`}>
+                      {item}
+                    </span>
                   </li>
                 ))}
               </ul>

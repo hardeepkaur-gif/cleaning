@@ -106,10 +106,6 @@ export default function HeroCorecleanForm() {
 
         <div className={styles.container}>
           <div className={styles.content}>
-            <div className={styles.subTitle}>
-              <h4>Professional Cleaning Services</h4>
-            </div>
-
             <div className={styles.bigTitle}>
               <h2 id="hero-coreclean-form-title">
                 Cleaning Services London With{" "}

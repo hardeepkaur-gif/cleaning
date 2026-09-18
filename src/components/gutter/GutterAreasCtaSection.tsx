@@ -69,7 +69,7 @@ export default function GutterAreasCtaSection() {
                         </li>
                         <li>
                           <FaEnvelope aria-hidden />
-                          Fixed quote reply
+                          Call us
                         </li>
                       </ul>
                     </div>

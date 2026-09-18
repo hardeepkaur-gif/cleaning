@@ -25,7 +25,6 @@ export default function DomesticPricingSection() {
     >
       <div className={styles.container}>
         <header className={styles.header}>
-          <span className={styles.eyebrow}>Transparent pricing</span>
           <h2 className={styles.title} id="domestic-pricing-title">
             {domesticPricingTitle}
           </h2>

@@ -50,8 +50,8 @@ export default function CtaSectionThree() {
                     <span>Confirmed</span>
                   </div>
                   <div>
-                    <small>Fixed price</small>
-                    <span>£89.00</span>
+                    <small>Available</small>
+                    <span>24/7</span>
                   </div>
                 </div>
               </div>

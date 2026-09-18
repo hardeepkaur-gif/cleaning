@@ -22,7 +22,6 @@ export default function CarpetWorthItSection() {
 
       <div className={styles.container}>
         <header className={styles.header}>
-          <span className={styles.eyebrow}>Professional Carpet Care</span>
           <h2 className={styles.title} id="carpet-worth-it-title">
             {carpetWorthItTitle}
           </h2>

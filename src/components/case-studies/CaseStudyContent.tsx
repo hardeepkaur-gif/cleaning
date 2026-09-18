@@ -268,10 +268,6 @@ export default function CaseStudyContent({
             }`}
           >
             <div className={resultStyles.headerCopy}>
-              <span className={resultStyles.badge}>
-                <span className={resultStyles.badgeDot} aria-hidden />
-                {result.badge}
-              </span>
               <h2 className={resultStyles.title} id="result-title">
                 {result.title}
               </h2>

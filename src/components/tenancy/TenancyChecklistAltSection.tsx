@@ -31,7 +31,6 @@ export default function TenancyChecklistAltSection() {
 
       <div className={styles.container}>
         <header className={styles.header}>
-          <p className={styles.tagline}>Room-by-Room Guide</p>
           <h2 className={styles.title} id="tenancy-checklist-title">
             {tenancyChecklistTitle}
           </h2>

@@ -42,7 +42,7 @@ export default function GutterCtaSection() {
                     Contact Now!
                   </ThmButton>
                   <span className={styles.btnNote}>
-                    Fixed quote · Flexible booking
+                    Always open · Flexible booking
                   </span>
                 </div>
               </div>
@@ -84,7 +84,7 @@ export default function GutterCtaSection() {
                   </ul>
 
                   <div className={styles.screenFooter}>
-                    <span>Fixed price quote</span>
+                    <span>Always open</span>
                     <strong>Book now</strong>
                   </div>
                 </div>

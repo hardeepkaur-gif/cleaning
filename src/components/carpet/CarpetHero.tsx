@@ -30,10 +30,6 @@ export default function CarpetHero() {
 
         <div className={`${styles.container} ${styles.containerWithForm}`}>
           <div className={`${heroStyles.content} ${styles.content}`}>
-            <div className={heroStyles.subTitle}>
-              <p>Carpet Cleaning London</p>
-            </div>
-
             <div className={heroStyles.bigTitle}>
               <h1 id="carpet-hero-title">
                 Carpet Cleaning in <span>London</span>: Tough on Stains, Easy on

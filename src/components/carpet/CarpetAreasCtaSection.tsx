@@ -75,7 +75,7 @@ export default function CarpetAreasCtaSection() {
                         </li>
                         <li>
                           <FaEnvelope aria-hidden />
-                          Fixed quote available
+                          Call us
                         </li>
                       </ul>
                     </div>

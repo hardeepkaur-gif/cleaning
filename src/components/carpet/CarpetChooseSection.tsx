@@ -1,12 +1,10 @@
 import { FaCheck } from "react-icons/fa";
-import { PiSealCheckDuotone } from "react-icons/pi";
 import {
   carpetChooseClosing,
   carpetChooseImage,
   carpetChooseImageAlt,
   carpetChooseIntro,
   carpetChoosePoints,
-  carpetChooseTagline,
   carpetChooseTitle,
 } from "./carpetChooseData";
 import styles from "@/components/carpet/CarpetWorthItAltSection.module.css";
@@ -45,13 +43,6 @@ export default function CarpetChooseSection() {
             <div
               className={`${styles.pointsWrap} ${local.pointsWrap} ${whoStyles.copyBlock}`}
             >
-              <span className={`${styles.tagline} ${whoStyles.copyTagline}`}>
-                <span role="img" aria-label="Carpet cleaning buying guide icon">
-                  <PiSealCheckDuotone aria-hidden />
-                </span>
-                {carpetChooseTagline}
-              </span>
-
               <h2
                 className={`${styles.title} ${whoStyles.copyTitle}`}
                 id="carpet-choose-cleaner-title"

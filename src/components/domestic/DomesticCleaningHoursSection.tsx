@@ -2,7 +2,6 @@ import { PiClockDuotone } from "react-icons/pi";
 import {
   domesticHoursIntro,
   domesticHoursRows,
-  domesticHoursTagline,
   domesticHoursTitle,
 } from "./domesticHoursData";
 import styles from "./DomesticCleaningHoursSection.module.css";
@@ -16,7 +15,6 @@ export default function DomesticCleaningHoursSection() {
     >
       <div className={styles.container}>
         <header className={styles.header}>
-          <span className={styles.tagline}>{domesticHoursTagline}</span>
           <h2 className={styles.title} id="domestic-hours-title">
             {domesticHoursTitle}
           </h2>

@@ -76,9 +76,7 @@ export default function ContactFaqSection() {
   return (
     <section className={styles.faqSection} aria-labelledby="contact-faq-title">
       <div className={styles.wrap}>
-        <div className={styles.faqHead}>
-          <span className={styles.eyebrow}>Before you send that form</span>
-          <h2 id="contact-faq-title">A few things people usually ask</h2>
+        <div className={styles.faqHead}>          <h2 id="contact-faq-title">A few things people usually ask</h2>
         </div>
         <div className={styles.faqColumns}>
           <FaqColumn

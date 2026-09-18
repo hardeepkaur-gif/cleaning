@@ -30,10 +30,6 @@ export default function GutterHero() {
 
         <div className={`${styles.container} ${styles.containerWithForm}`}>
           <div className={`${heroStyles.content} ${styles.content}`}>
-            <div className={heroStyles.subTitle}>
-              <p>Gutter Cleaning London</p>
-            </div>
-
             <div className={heroStyles.bigTitle}>
               <h1 id="gutter-hero-title">
                 Professional and Reliable Gutter Cleaning{" "}

@@ -8,7 +8,6 @@ import styles from "./HeroLeadForm.module.css";
 export type HeroLeadFormProps = {
   id?: string;
   titleId?: string;
-  tagline?: string;
   title?: ReactNode;
   description?: string;
   primaryBtnLabel?: string;
@@ -31,7 +30,6 @@ const defaultTitle = (
 export default function HeroLeadForm({
   id = "home",
   titleId = "hero-lead-title",
-  tagline = "Professional Cleaning Services",
   title = defaultTitle,
   description =
     "Reliable cleaning services for homes, rental properties, offices, and commercial premises across East London. At Cleaning Services London we have DBS-checked and fully insured cleaners following documented cleaning standards, completion photo procedures, and quality control checks designed to deliver consistent results.",
@@ -60,10 +58,6 @@ export default function HeroLeadForm({
 
       <div className={styles.container}>
         <div className={styles.content}>
-          <div className={styles.subTitle}>
-            <p>{tagline}</p>
-          </div>
-
           <div className={styles.bigTitle}>
             <h1 id={titleId}>{title}</h1>
           </div>

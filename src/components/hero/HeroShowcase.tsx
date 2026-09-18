@@ -1,4 +1,3 @@
-import { FaHome } from "react-icons/fa";
 import ThmButton from "@/components/menu/ThmButton";
 import styles from "./HeroShowcase.module.css";
 
@@ -13,11 +12,6 @@ export default function HeroShowcase() {
     <section className={styles.hero} aria-label="Featured cleaning services">
       <div className={styles.inner}>
         <div className={styles.content}>
-          <div className={styles.tagline}>
-            <FaHome className={styles.homeIcon} aria-hidden />
-            <span>Professional Cleaning Services</span>
-          </div>
-
           <h2 className={styles.title}>
             Cleaning Services London With{" "}
             <span className={styles.locationPill}>DBS Checked Professional Cleaners</span>

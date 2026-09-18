@@ -1,11 +1,9 @@
 import { FaCheck } from "react-icons/fa";
-import { PiSealCheckDuotone } from "react-icons/pi";
 import {
   gutterWhyChooseImage,
   gutterWhyChooseImageAlt,
   gutterWhyChooseIntro,
   gutterWhyChoosePoints,
-  gutterWhyChooseTagline,
   gutterWhyChooseTitle,
 } from "./gutterWhyChooseData";
 import styles from "@/components/carpet/CarpetWorthItAltSection.module.css";
@@ -24,12 +22,6 @@ export default function GutterWhyChooseSection() {
 
       <div className={styles.container}>
         <header className={whoStyles.header}>
-          <span className={`${styles.tagline} ${whoStyles.headerTagline}`}>
-            <span role="img" aria-label="Why choose gutter cleaning icon">
-              <PiSealCheckDuotone aria-hidden />
-            </span>
-            {gutterWhyChooseTagline}
-          </span>
           <h2 className={whoStyles.headerTitle} id="gutter-why-choose-title">
             {gutterWhyChooseTitle}
           </h2>

@@ -4,9 +4,7 @@ export default function ContactMapSection() {
   return (
     <section className={styles.mapSection} aria-labelledby="contact-map-title">
       <div className={styles.wrap}>
-        <div className={styles.sectionHead}>
-          <span className={styles.tagline}>Service area</span>
-          <h2 id="contact-map-title" className={styles.title}>
+        <div className={styles.sectionHead}>          <h2 id="contact-map-title" className={styles.title}>
             Cleaning Services Across London
           </h2>
           <p className={styles.intro}>

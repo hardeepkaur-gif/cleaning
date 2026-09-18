@@ -1,4 +1,3 @@
-import { PiBroomDuotone } from "react-icons/pi";
 import styles from "@/components/carpet/CarpetWorthItAltSection.module.css";
 import local from "./DomesticProfessionalSection.module.css";
 import whoStyles from "@/components/tenancy/TenancyWhoUsesAltSection.module.css";
@@ -40,12 +39,6 @@ export default function DomesticProfessionalSection() {
             <div
               className={`${styles.pointsWrap} ${local.pointsWrap} ${whoStyles.copyBlock}`}
             >
-              <span className={`${styles.tagline} ${whoStyles.copyTagline}`}>
-                <span role="img" aria-label="Professional domestic cleaning icon">
-                  <PiBroomDuotone aria-hidden />
-                </span>
-                Professional Domestic Cleaning
-              </span>
               <h2
                 className={`${styles.title} ${whoStyles.copyTitle}`}
                 id="professional-domestic-title"

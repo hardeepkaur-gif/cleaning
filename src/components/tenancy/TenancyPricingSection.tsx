@@ -21,7 +21,6 @@ export default function TenancyPricingSection() {
     >
       <div className={styles.container}>
         <header className={styles.header}>
-          <span className={styles.eyebrow}>Transparent pricing</span>
           <h2 className={styles.title} id="tenancy-pricing-title">
             End of Tenancy Cleaning London Prices
           </h2>

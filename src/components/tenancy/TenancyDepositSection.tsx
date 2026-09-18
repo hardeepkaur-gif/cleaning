@@ -32,9 +32,7 @@ export default function TenancyDepositSection() {
       <div className={styles.orbTwo} aria-hidden />
 
       <div className={styles.container}>
-        <div className={styles.header}>
-          <span className={styles.tagline}>Deposit Guidance</span>
-          <h2 className={styles.title} id="tenancy-deposit-title">
+        <div className={styles.header}>          <h2 className={styles.title} id="tenancy-deposit-title">
             Does End of Tenancy Cleaning London Help Get Your Deposit Back?
           </h2>
         </div>

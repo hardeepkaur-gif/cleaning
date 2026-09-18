@@ -8,7 +8,6 @@ import {
   domesticServicesIntroBefore,
   domesticServicesIntroLinkLabel,
   domesticServicesItems,
-  domesticServicesTagline,
   domesticServicesTitle,
 } from "./domesticServicesData";
 import styles from "@/components/tenancy/TenancyMattersTimelineSection.module.css";
@@ -97,7 +96,6 @@ export default function DomesticServicesTimelineSection() {
         <div className={styles.layout}>
           <aside className={styles.aside}>
             <div className={styles.asideCard} ref={asideCardRef}>
-              <p className={styles.tagline}>{domesticServicesTagline}</p>
               <h2 className={styles.title} id="domestic-services-timeline-title">
                 {domesticServicesTitle}
               </h2>

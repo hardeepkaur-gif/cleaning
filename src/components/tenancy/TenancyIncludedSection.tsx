@@ -4,8 +4,7 @@ import { useState } from "react";
 import { FaCheck, FaChevronDown } from "react-icons/fa";
 import {
   tenancyIncludedIntro,
-  tenancyIncludedItems,
-  tenancyIncludedTagline,
+  tenancyIncludedItems,
   tenancyIncludedTitle,
 } from "./tenancyIncludedData";
 import styles from "./TenancyIncludedSection.module.css";
@@ -46,9 +45,7 @@ export default function TenancyIncludedSection() {
 
       <div className={styles.container}>
         <div className={styles.content}>
-          <div className={styles.secTitle}>
-            <p className={styles.tagline}>{tenancyIncludedTagline}</p>
-            <h2 className={styles.title} id="tenancy-included-title">
+          <div className={styles.secTitle}>            <h2 className={styles.title} id="tenancy-included-title">
               {tenancyIncludedTitle}
             </h2>
           </div>

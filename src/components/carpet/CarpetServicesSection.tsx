@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import {
   carpetServiceTabs,
   carpetServicesIntro,
-  carpetServicesTagline,
   carpetServicesTitle,
 } from "./carpetServicesData";
 import styles from "@/components/tenancy/TenancyChecklistAltSection.module.css";
@@ -31,7 +30,6 @@ export default function CarpetServicesSection() {
 
       <div className={styles.container}>
         <header className={`${styles.header} ${local.header}`}>
-          <p className={styles.tagline}>{carpetServicesTagline}</p>
           <h2
             className={`${styles.title} ${local.title}`}
             id="carpet-services-title"

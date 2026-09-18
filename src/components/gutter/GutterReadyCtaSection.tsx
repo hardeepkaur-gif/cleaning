@@ -41,7 +41,7 @@ export default function GutterReadyCtaSection() {
                     Contact Now!
                   </ThmButton>
                   <span className={styles.btnNote}>
-                    Fixed quote · London-wide booking
+                    Always open · London-wide
                   </span>
                 </div>
               </div>
@@ -56,7 +56,7 @@ export default function GutterReadyCtaSection() {
                       <PiSparkleFill aria-hidden /> Book today
                     </span>
                     <strong>Gutter Cleaning</strong>
-                    <span>London · Fixed quote</span>
+                    <span>London · Call us</span>
                   </div>
 
                   <div className={`${styles.screenHero} ${local.screenHero}`}>
@@ -80,7 +80,7 @@ export default function GutterReadyCtaSection() {
                   </ul>
 
                   <div className={styles.screenFooter}>
-                    <span>Fixed price quote</span>
+                    <span>Always open</span>
                     <strong>Book now</strong>
                   </div>
                 </div>

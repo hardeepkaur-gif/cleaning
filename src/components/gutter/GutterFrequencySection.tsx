@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import {
   gutterFrequencyIntro,
   gutterFrequencyTabs,
-  gutterFrequencyTagline,
   gutterFrequencyTitle,
 } from "./gutterFrequencyData";
 import styles from "@/components/tenancy/TenancyChecklistAltSection.module.css";
@@ -57,7 +56,6 @@ export default function GutterFrequencySection() {
 
       <div className={styles.container}>
         <header className={`${styles.header} ${local.header}`}>
-          <p className={styles.tagline}>{gutterFrequencyTagline}</p>
           <h2 className={styles.title} id="gutter-frequency-title">
             {gutterFrequencyTitle}
           </h2>

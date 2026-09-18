@@ -1,5 +1,24 @@
 /* Home included — single-image layout overrides (shared collage CSS stays intact) */
 
+.pointsWrap .pointText {
+  font-weight: 400;
+}
+
+.copyHeader {
+  margin: 0 0 18px;
+  text-align: left;
+}
+
+.copyTitle {
+  margin: 0 0 12px;
+  text-align: left;
+}
+
+.copyIntro {
+  margin: 0;
+  text-align: left;
+}
+
 .layout {
   align-items: stretch;
 }

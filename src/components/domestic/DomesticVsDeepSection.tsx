@@ -19,7 +19,6 @@ export default function DomesticVsDeepSection() {
 
       <div className={styles.container}>
         <header className={styles.header}>
-          <span className={styles.eyebrow}>Which Service Suits You?</span>
           <h2 className={styles.title} id="domestic-vs-deep-title">
             Domestic Cleaning{" "}
             <span className={styles.vsWord}>vs</span> Deep Cleaning

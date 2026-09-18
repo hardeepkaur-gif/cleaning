@@ -48,7 +48,6 @@ export default function DomesticChecklistSection() {
     >
       <div className={styles.container}>
         <header className={styles.header}>
-          <p className={styles.eyebrow}>Room-by-Room Guide</p>
           <h2 className={styles.title} id="domestic-checklist-title">
             {domesticChecklistTitle}
           </h2>

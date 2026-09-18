@@ -14,9 +14,6 @@ export default function AboutServingSection() {
       <div className={styles.container}>
         <div className={styles.grid}>
           <div className={styles.copy}>
-            <p className={styles.tagline}>
-              <FaMapMarkerAlt aria-hidden /> Across London
-            </p>
             <h2 className={styles.title} id="about-serving-title">
               Serving Homes and Businesses Across London
             </h2>

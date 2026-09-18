@@ -63,7 +63,6 @@ export default function TenancyChecklistRoomsSection() {
     >
       <div className={styles.container}>
         <header className={styles.header}>
-          <span className={styles.eyebrow}>End of tenancy cleaning</span>
           <h2 className={styles.title} id="tenancy-checklist-rooms-title">
             {tenancyChecklistTitle}
           </h2>

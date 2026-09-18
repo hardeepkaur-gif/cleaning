@@ -50,7 +50,7 @@ export default function TenancyPricingCtaSection() {
                 <div className={styles.phoneScreen}>
                   <div className={styles.screenTop}>
                     <span className={styles.screenBadge} role="img" aria-label="Fixed end of tenancy cleaning quote icon">
-                      <PiSparkleFill aria-hidden /> Fixed quote
+                      <PiSparkleFill aria-hidden /> Call us
                     </span>
                     <strong>End of Tenancy Clean</strong>
                     <span>London · Property handover</span>
@@ -73,8 +73,8 @@ export default function TenancyPricingCtaSection() {
                   </ul>
 
                   <div className={styles.screenFooter}>
-                    <span>Fixed price quote</span>
-                    <strong>No hidden fees</strong>
+                    <span>Always open</span>
+                    <strong>Call us</strong>
                   </div>
                 </div>
               </div>

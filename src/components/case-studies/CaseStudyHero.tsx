@@ -17,8 +17,6 @@ export default function CaseStudyHero({
     <section className={styles.hero} aria-labelledby="case-study-page-title">
       <div className={styles.container}>
         <div className={styles.copy}>
-          <span className={styles.badge}>{data.badge}</span>
-
           <h1 className={styles.title} id="case-study-page-title">
             {data.titleLead} <span>{data.titleAccent}</span> {data.titleTrail}
           </h1>

@@ -122,7 +122,6 @@ export default function CaseStudiesList() {
     <section className={styles.section} aria-labelledby="case-studies-list-title">
       <div className={styles.container}>
         <header className={styles.listingHeader}>
-          <span className={styles.eyebrow}>Real Jobs</span>
           <h2 className={styles.title} id="case-studies-list-title">
             Recent Cleaning Case Studies
           </h2>

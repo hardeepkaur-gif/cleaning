@@ -36,9 +36,7 @@ export default function ContactTrustStrip() {
       <div className={styles.trustBlobTwo} aria-hidden />
 
       <div className={styles.wrap}>
-        <div className={`${styles.sectionHead} ${styles.trustStripHead}`}>
-          <span className={styles.tagline}>Why customers choose us</span>
-          <h2 id="contact-trust-title" className={styles.title}>
+        <div className={`${styles.sectionHead} ${styles.trustStripHead}`}>          <h2 id="contact-trust-title" className={styles.title}>
             Trusted, Insured &amp; Highly Rated
           </h2>
           <p className={styles.intro}>

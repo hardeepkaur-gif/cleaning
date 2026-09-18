@@ -5,8 +5,7 @@ import {
   carpetFrequencyColumns,
   carpetFrequencyIntro,
   carpetFrequencyNeedHigh,
-  carpetFrequencyNeedLow,
-  carpetFrequencyTagline,
+  carpetFrequencyNeedLow,
   carpetFrequencyTitleAccent,
   carpetFrequencyTitleBefore,
 } from "./carpetFrequencyData";
@@ -60,7 +59,6 @@ export default function CarpetFrequencySection() {
     >
       <div className={styles.container}>
         <header className={styles.header}>
-          <p className={styles.tagline}>{carpetFrequencyTagline}</p>
           <h2 className={styles.title} id="carpet-frequency-title">
             {carpetFrequencyTitleBefore}
             <span className={styles.titleAccent}>{carpetFrequencyTitleAccent}</span>

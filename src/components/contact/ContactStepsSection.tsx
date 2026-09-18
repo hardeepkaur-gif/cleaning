@@ -39,9 +39,7 @@ export default function ContactStepsSection() {
       <div className={styles.stepsBlobTwo} aria-hidden />
 
       <div className={styles.wrap}>
-        <div className={styles.sectionHead}>
-          <span className={styles.tagline}>Simple process</span>
-          <h2 id="contact-steps-title" className={styles.title}>
+        <div className={styles.sectionHead}>          <h2 id="contact-steps-title" className={styles.title}>
             Getting a Quote Takes Three Easy Steps
           </h2>
           <p className={styles.intro}>

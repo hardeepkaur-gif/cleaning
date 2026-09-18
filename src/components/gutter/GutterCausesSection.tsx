@@ -5,7 +5,6 @@ import {
   gutterCausesClosing,
   gutterCausesIntro,
   gutterCausesItems,
-  gutterCausesTagline,
   gutterCausesTitle,
 } from "./gutterCausesData";
 import styles from "@/components/tenancy/TenancyMattersTimelineSection.module.css";
@@ -94,7 +93,6 @@ export default function GutterCausesSection() {
         <div className={styles.layout}>
           <aside className={styles.aside}>
             <div className={styles.asideCard} ref={asideCardRef}>
-              <p className={styles.tagline}>{gutterCausesTagline}</p>
               <h2
                 className={`${styles.title} ${local.title}`}
                 id="gutter-causes-title"

@@ -13,8 +13,6 @@ export default function HeroPromo() {
 
       <div className={styles.container}>
         <div className={styles.content}>
-          <p className={styles.subTitle}>Professional Cleaning Services</p>
-
           <h2 className={styles.title}>
             Cleaning Services London With{" "}
             <span>DBS Checked Professional Cleaners</span>

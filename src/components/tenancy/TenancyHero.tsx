@@ -43,10 +43,6 @@ export default function TenancyHero() {
 
         <div className={`${styles.container} ${styles.containerWithForm}`}>
           <div className={`${heroStyles.content} ${styles.content}`}>
-            <div className={heroStyles.subTitle}>
-              <p>End of Tenancy Cleaning</p>
-            </div>
-
             <div className={heroStyles.bigTitle}>
               <h1 id="tenancy-hero-title">
                 End of Tenancy Cleaning <span>London</span> for Tenants and

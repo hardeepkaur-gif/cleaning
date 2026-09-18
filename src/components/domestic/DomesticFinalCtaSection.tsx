@@ -83,7 +83,7 @@ export default function DomesticFinalCtaSection() {
                   </ul>
 
                   <div className={styles.screenFooter}>
-                    <span>Fixed price quote</span>
+                    <span>Always open</span>
                     <strong>Book now</strong>
                   </div>
                 </div>

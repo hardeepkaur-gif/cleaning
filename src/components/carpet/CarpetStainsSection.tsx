@@ -5,7 +5,6 @@ import {
   carpetStainsImageAlt,
   carpetStainsIntro,
   carpetStainsItems,
-  carpetStainsTagline,
   carpetStainsTitle,
 } from "./carpetStainsData";
 
@@ -20,7 +19,6 @@ export default function CarpetStainsSection() {
         <div className={styles.grid}>
           <div className={styles.copy}>
             <header className={styles.header}>
-              <span className={styles.tagline}>{carpetStainsTagline}</span>
               <h2 className={styles.title} id="carpet-stains-title">
                 {carpetStainsTitle}
               </h2>

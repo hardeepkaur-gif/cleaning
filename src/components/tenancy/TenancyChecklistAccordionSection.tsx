@@ -43,9 +43,7 @@ export default function TenancyChecklistAccordionSection() {
       aria-labelledby="tenancy-checklist-accordion-title"
     >
       <div className={styles.container}>
-        <header className={styles.header}>
-          <p className={styles.eyebrow}>Room-by-Room Guide</p>
-          <h2 className={styles.title} id="tenancy-checklist-accordion-title">
+        <header className={styles.header}>          <h2 className={styles.title} id="tenancy-checklist-accordion-title">
             {tenancyChecklistTitle}
           </h2>
           <p className={styles.intro}>{tenancyChecklistIntro}</p>

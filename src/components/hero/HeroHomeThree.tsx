@@ -26,8 +26,6 @@ export default function HeroHomeThree() {
       <div className={styles.container}>
         <div className={styles.inner}>
           <div className={styles.left}>
-            <p className={styles.subTitle}>Professional Cleaning Services</p>
-
             <h2 className={styles.title}>
               Cleaning Services London With{" "}
               <span>DBS Checked Professional Cleaners</span>
