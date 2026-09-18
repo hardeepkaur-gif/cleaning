@@ -2,13 +2,10 @@
 
 import { type FormEvent, useState } from "react";
 import {
-  FaBolt,
   FaChevronRight,
   FaClock,
   FaEnvelope,
-  FaLock,
   FaPhoneAlt,
-  FaUserCheck,
 } from "react-icons/fa";
 import ThmButton from "@/components/menu/ThmButton";
 import { contactInfo } from "@/components/menu/menuData";
@@ -62,21 +59,6 @@ export default function ContactFormSection() {
             </p>
           </div>
           <div className={styles.formHeaderDivider} aria-hidden />
-
-          <div className={styles.formPerks}>
-            <div className={styles.formPerk}>
-              <FaBolt aria-hidden />
-              Same-day quotes
-            </div>
-            <div className={styles.formPerk}>
-              <FaLock aria-hidden />
-              Secure &amp; private
-            </div>
-            <div className={styles.formPerk}>
-              <FaUserCheck aria-hidden />
-              No obligation
-            </div>
-          </div>
 
           <form
             id={SITE_FORM_IDS.contactQuote}
