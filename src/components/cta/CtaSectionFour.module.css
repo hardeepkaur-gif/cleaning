@@ -274,12 +274,16 @@
 
 .screenHero {
   position: relative;
-  flex: 1 1 auto;
-  min-height: 44px;
+  flex: 0 0 auto;
+  min-height: 0;
   height: auto;
+  padding: 10px;
   border-radius: 12px;
   overflow: hidden;
   background: var(--tint);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .heroImg {
@@ -291,14 +295,14 @@
 }
 
 .heroIcon {
-  position: absolute;
-  inset: 0;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 18px;
   color: var(--cta);
   z-index: 1;
+  line-height: 1;
 }
 
 .screenList {
@@ -387,7 +391,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 24px 24px;
+    padding: 28px 24px 32px;
     border-left: none;
     border-top: 1px solid rgba(14, 94, 91, 0.06);
     min-height: auto;
@@ -399,41 +403,45 @@
     bottom: auto;
     left: auto;
     transform: none;
-    width: clamp(140px, 42vw, 180px);
+    width: 230px;
     height: auto;
-    min-height: 0;
-    padding: 8px 7px 10px;
-    border-radius: 22px;
-  }
-
-  .phoneNotch {
-    width: 40px;
-    height: 5px;
-    margin: 0 auto 7px;
-  }
-
-  .phoneScreen {
-    flex: 0 1 auto;
-    min-height: 0;
-    padding: 10px 8px;
-    gap: 8px;
-    border-radius: 14px;
-  }
-
-  .screenHero {
-    flex: 0 0 auto;
-    height: 36px;
-    min-height: 36px;
-  }
-
-  .heroIcon {
-    font-size: 16px;
+    min-height: 340px;
   }
 }
 
 @media(max-width: 767px) {
   .cta {
     padding: 48px 0;
+  }
+
+  /* Keep phone mockup microcopy at desktop size (override global main li 16px) */
+  .screenList li {
+    font-size: 9px !important;
+    line-height: 1.3;
+  }
+
+  .screenList li svg {
+    font-size: 13px;
+  }
+
+  .screenBadge {
+    font-size: 9px;
+  }
+
+  .screenTop strong {
+    font-size: 13px;
+  }
+
+  .screenTop span {
+    font-size: 9px;
+  }
+
+  .screenFooter span {
+    font-size: 8px;
+  }
+
+  .screenFooter strong {
+    font-size: 12px;
   }
 }
 

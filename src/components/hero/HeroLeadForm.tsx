@@ -23,7 +23,7 @@ export type HeroLeadFormProps = {
 
 const defaultTitle = (
   <>
-    Cleaning Services London With <span>DBS Checked</span> <br />
+    Cleaning Services London With <span>DBS Checked</span>{" "}
     Professional Cleaners
   </>
 );
@@ -47,17 +47,14 @@ export default function HeroLeadForm({
   return (
     <section className={styles.hero} id={id} aria-labelledby={titleId}>
       <div className={styles.bgLayer} aria-hidden>
-        <picture>
-          <source media="(min-width: 768px)" srcSet={bgImage} />
-          <img
-            className={styles.bgImage}
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            alt=""
-            width={1000}
-            height={667}
-            decoding="async"
-          />
-        </picture>
+        <img
+          className={styles.bgImage}
+          src={bgImage}
+          alt=""
+          width={1000}
+          height={667}
+          decoding="async"
+        />
         <div className={styles.overlay} />
       </div>
 

@@ -9,7 +9,6 @@ export default function HeroLeadFormSecond() {
         rel="preload"
         as="image"
         href={heroImage}
-        media="(min-width: 768px)"
         fetchPriority="high"
       />
       <HeroLeadForm

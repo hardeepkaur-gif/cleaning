@@ -50,11 +50,11 @@ export default function GutterHero() {
               </p>
             </div>
 
-            <div className={`${heroStyles.bottom} ${local.bottom}`}>
-              <div className={`${heroStyles.bottomBtn} ${local.bottomBtn}`}>
+            <div className={heroStyles.bottom}>
+              <div className={heroStyles.bottomBtn}>
                 <ThmButton href="/contact-us">Contact Now!</ThmButton>
               </div>
-              <div className={`${heroStyles.bottomBtn} ${local.bottomBtn}`}>
+              <div className={heroStyles.bottomBtn}>
                 <ThmButton href="/services">
                   View All Services
                 </ThmButton>

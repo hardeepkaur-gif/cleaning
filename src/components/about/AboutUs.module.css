@@ -479,7 +479,7 @@
 
 @media (max-width: 767px) {
   .about {
-    padding: 48px 0;
+    padding: 0 0 48px;
   }
 
   .header {

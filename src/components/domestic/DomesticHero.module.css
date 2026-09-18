@@ -5,28 +5,28 @@
 
 @media (max-width: 991px) {
   .bgInner {
-    background-position: 82% 8%;
+    background-position: 75% center;
   }
 }
 
 @media (max-width: 767px) {
   .bgInner {
-    background-position: 88% 5%;
+    background-position: center center;
   }
 
   .container {
-    padding-top: calc(clamp(40px, 6vw, 56px) + 25px);
-    padding-bottom: calc(clamp(24px, 4vw, 40px) + 25px);
+    padding-top: calc(clamp(40px, 6vw, 56px) + 12px);
+    padding-bottom: 36px;
   }
 }
 
 @media (max-width: 575px) {
   .bgInner {
-    background-position: 90% top;
+    background-position: center top;
   }
 
   .container {
-    padding-top: 61px;
-    padding-bottom: 45px;
+    padding-top: 48px;
+    padding-bottom: 32px;
   }
 }
