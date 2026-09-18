@@ -307,12 +307,24 @@
     grid-template-columns: 1fr;
   }
 
+  .copyCol {
+    order: 1;
+  }
+
+  .mediaCol {
+    order: 2;
+  }
+
   .mediaStage {
     min-height: 0;
+    height: auto;
   }
 
   .mediaImg {
-    min-height: 460px;
+    min-height: 0;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
   }
 
   .mediaFade {
@@ -360,22 +372,39 @@
   .header {
     text-align: left;
     max-width: none;
+    margin-bottom: 20px;
   }
 
   .title {
     font-size: clamp(24px, 6.2vw, 32px);
   }
 
-  .mediaImg {
-    min-height: 320px;
+  .layout {
+    gap: 18px;
   }
 
-  .protectBadge {
-    max-width: calc(100% - 28px);
+  .mediaImg {
+    aspect-ratio: 16 / 9;
+    min-height: 0;
+    max-height: 220px;
+  }
+
+  .mediaStage {
+    border-radius: 20px;
+  }
+
+  .protectBadge,
+  .featureRail {
+    display: none;
   }
 
   .copyCard {
     padding: 22px 18px;
+    height: auto;
+  }
+
+  .highlight {
+    margin-top: 8px;
   }
 }
 

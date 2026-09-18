@@ -683,22 +683,11 @@
   color: var(--cta);
 }
 
-.hoursTable {
-  width: 100%;
-  margin-top: 4px;
-  border-collapse: collapse;
-  font-size: 15px;
-}
-
-.hoursTable td {
-  padding: 5px 0;
-  color: var(--gray);
-}
-
-.hoursTable td:last-child {
+.hoursText {
+  margin: 4px 0 0;
+  font-size: 17px;
   font-weight: 600;
   color: var(--primary-dark);
-  text-align: right;
 }
 
 .whatsappPanel {
@@ -1420,8 +1409,8 @@
     font-size: 15px;
   }
 
-  .hoursTable {
-    font-size: 14px;
+  .hoursText {
+    font-size: 15px;
   }
 
   .tagline {

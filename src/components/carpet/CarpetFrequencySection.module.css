@@ -312,13 +312,11 @@
   }
 
   .needRow {
-    margin-bottom: 14px;
+    display: none;
   }
 
-  .needLow,
-  .needHigh {
-    font-size: 10px;
-    padding: 6px 10px;
+  .node {
+    display: none;
   }
 
   .columns {

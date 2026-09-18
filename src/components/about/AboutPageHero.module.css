@@ -71,11 +71,12 @@
 @media (max-width: 767px) {
   .hero {
     overflow: hidden !important;
+    padding-top: 64px;
   }
 
   .inner {
     max-width: none;
-    padding: 100px 0 36px !important;
+    padding: 36px 0 !important;
   }
 
   .title {

@@ -158,6 +158,10 @@
 }
 
 @media (max-width: 767px) {
+  .pageHeader {
+    padding-top: 64px;
+  }
+
   .pageHeaderBg {
     background-position: right center;
   }
@@ -172,7 +176,7 @@
   }
 
   .pageHeaderInner {
-    padding: 128px 0 80px;
+    padding: 80px 0;
   }
 
   .pageHeaderInner h1 {
@@ -195,7 +199,7 @@
   }
 
   .pageHeaderInner {
-    padding: 118px 0 72px;
+    padding: 72px 0;
   }
 
   .pageHeaderInner h1 {
@@ -205,7 +209,7 @@
 
 @media (max-width: 480px) {
   .pageHeaderInner {
-    padding: 108px 0 64px;
+    padding: 64px 0;
   }
 }
 

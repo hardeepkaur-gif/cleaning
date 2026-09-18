@@ -158,7 +158,7 @@ export default function ContactFormSection() {
             <span className={styles.responseDot} aria-hidden />
             <div>
               <strong>Average response time: under 3 hours</strong>
-              <span>Mon–Sat during business hours</span>
+              <span>Mon–Sun · Available 24/7</span>
             </div>
           </div>
 
@@ -194,22 +194,7 @@ export default function ContactFormSection() {
                 </span>
                 <div className={styles.infoLinkBody}>
                   <div className={styles.infoLabel}>Opening hours</div>
-                  <table className={styles.hoursTable}>
-                    <tbody>
-                      <tr>
-                        <td>Mon – Fri</td>
-                        <td>07:00 – 19:00</td>
-                      </tr>
-                      <tr>
-                        <td>Saturday</td>
-                        <td>08:00 – 16:00</td>
-                      </tr>
-                      <tr>
-                        <td>Sunday</td>
-                        <td>Closed</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <p className={styles.hoursText}>Mon – Sun: Available 24/7</p>
                 </div>
               </div>
             </div>

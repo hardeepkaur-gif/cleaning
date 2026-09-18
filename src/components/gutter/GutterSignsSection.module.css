@@ -1,5 +1,6 @@
 .title {
   max-width: none;
+  width: 100%;
   text-align: left;
   margin: 0 0 clamp(16px, 2vw, 22px);
 }
@@ -61,25 +62,40 @@
   max-width: none;
 }
 
-@media(max-width: 991px) {
+/* Mobile: heading + text/button full column, then image full column */
+@media (max-width: 991px) {
   .grid {
-    display: grid;
+    display: flex !important;
+    flex-direction: column;
+    gap: 28px;
   }
 
   .content {
-    order: -1;
+    order: 1 !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
   }
 
   .media {
-    order: 1;
+    order: 2 !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
   }
-}
 
-@media(max-width: 767px) {
   .title {
-    font-size: clamp(24px, 6.2vw, 32px);
+    width: 100%;
   }
-
-  
 }
 
+@media (max-width: 767px) {
+  .grid {
+    gap: 24px;
+  }
+
+  .ctaBtn:global(.thmBtn) {
+    width: 100%;
+    justify-content: center;
+  }
+}
