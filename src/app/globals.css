@@ -73,6 +73,14 @@ main > section#tenancy-optional-services {
   padding-top: 0 !important;
 }
 
+main > section#carpet-cleaning-cta {
+  padding-bottom: 0 !important;
+}
+
+main > section#gutter-what-we-remove {
+  padding-top: 0 !important;
+}
+
 main > section#home-trust-logos {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
@@ -115,6 +123,14 @@ main > section#home-trust-logos {
   }
 
   main > section#tenancy-optional-services {
+    padding-top: 0 !important;
+  }
+
+  main > section#carpet-cleaning-cta {
+    padding-bottom: 0 !important;
+  }
+
+  main > section#gutter-what-we-remove {
     padding-top: 0 !important;
   }
 

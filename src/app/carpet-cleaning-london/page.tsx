@@ -40,8 +40,8 @@ export default function CarpetCleaningPage() {
         <CarpetMethodsSection />
         <CarpetChooseSection />
         <CarpetAreasSection />
-        <CarpetCtaSection />
         <CarpetProcessSection />
+        <CarpetCtaSection />
         <AboutReviewsSection />
         <CarpetFaqSection />
       </main>

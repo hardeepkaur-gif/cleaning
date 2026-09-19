@@ -221,7 +221,7 @@ export default function CarpetProcessSection() {
 
   return (
     <section
-      className={styles.section}
+      className={`${styles.section} ${local.section}`}
       id="carpet-cleaning-process"
       aria-labelledby="carpet-process-title"
     >

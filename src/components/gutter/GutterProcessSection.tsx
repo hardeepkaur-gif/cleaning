@@ -222,7 +222,7 @@ export default function GutterProcessSection() {
 
   return (
     <section
-      className={styles.section}
+      className={`${styles.section} ${local.section}`}
       id="gutter-how-to-book"
       aria-labelledby="gutter-process-title"
     >

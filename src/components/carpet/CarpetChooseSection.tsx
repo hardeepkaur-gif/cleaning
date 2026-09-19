@@ -14,12 +14,12 @@ import whoStyles from "./CarpetChooseSection.module.css";
 export default function CarpetChooseSection() {
   return (
     <section
-      className={styles.section}
+      className={`${styles.section} ${whoStyles.section}`}
       id="carpet-choose-cleaner"
       aria-labelledby="carpet-choose-cleaner-title"
     >
-      <div className={styles.glowOne} aria-hidden />
-      <div className={styles.glowTwo} aria-hidden />
+      <div className={`${styles.glowOne} ${whoStyles.glowOne}`} aria-hidden />
+      <div className={`${styles.glowTwo} ${whoStyles.glowTwo}`} aria-hidden />
 
       <div className={styles.container}>
         <header className={whoStyles.header}>

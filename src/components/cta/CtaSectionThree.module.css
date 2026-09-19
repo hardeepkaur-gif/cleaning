@@ -3,7 +3,7 @@
 .cta {
   position: relative;
   padding: 70px 0;
-  background: var(--white);
+  background: #edf1f1;
   overflow: hidden;
   z-index: 1;
 }

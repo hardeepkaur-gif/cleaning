@@ -13,12 +13,12 @@ import whoStyles from "./GutterWhyChooseSection.module.css";
 export default function GutterWhyChooseSection() {
   return (
     <section
-      className={styles.section}
+      className={`${styles.section} ${whoStyles.section}`}
       id="gutter-why-choose"
       aria-labelledby="gutter-why-choose-title"
     >
-      <div className={styles.glowOne} aria-hidden />
-      <div className={styles.glowTwo} aria-hidden />
+      <div className={`${styles.glowOne} ${whoStyles.glowOne}`} aria-hidden />
+      <div className={`${styles.glowTwo} ${whoStyles.glowTwo}`} aria-hidden />
 
       <div className={styles.container}>
         <header className={whoStyles.header}>
