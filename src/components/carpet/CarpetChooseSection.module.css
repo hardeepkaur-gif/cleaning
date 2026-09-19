@@ -1,4 +1,4 @@
-/* Title + intro centered at top; checklist stays with image */
+/* Title + intro centered at top; image height matches content column */
 
 .section {
   background:
@@ -41,6 +41,40 @@
   line-height: 1.75;
   color: var(--gray);
   text-align: center;
+}
+
+.layout {
+  align-items: stretch;
+}
+
+.visual {
+  height: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.frameInner {
+  flex: 1 1 auto;
+  height: 100%;
+  min-height: 0;
+}
+
+.frameInnerImg {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  object-fit: cover;
+}
+
+.copy {
+  height: 100%;
+}
+
+.pointsWrap {
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .copyBlock {
@@ -99,8 +133,49 @@
   }
 }
 
+@media (max-width: 991px) {
+  .layout {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .copy {
+    order: 1;
+    height: auto;
+  }
+
+  .visual {
+    order: 2;
+    max-width: 560px;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+  }
+
+  .frameInner {
+    height: auto;
+  }
+
+  .frameInnerImg {
+    height: auto;
+    max-height: 360px;
+  }
+
+  .pointsWrap {
+    height: auto;
+  }
+}
+
 @media (max-width: 767px) {
   .headerTitle {
     font-size: clamp(22px, 5.8vw, 28px);
+  }
+}
+
+@media (max-width: 575px) {
+  .frameInnerImg {
+    max-height: 280px;
   }
 }

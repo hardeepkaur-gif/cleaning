@@ -1,3 +1,7 @@
+.cta {
+  background: #ffffff;
+}
+
 @media (max-width: 767px) {
   .cta {
     padding-bottom: 0 !important;

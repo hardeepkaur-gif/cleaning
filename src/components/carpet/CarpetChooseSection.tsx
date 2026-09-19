@@ -29,11 +29,12 @@ export default function CarpetChooseSection() {
           <p className={whoStyles.headerIntro}>{carpetChooseIntro}</p>
         </header>
 
-        <div className={`${styles.layout} ${local.layout}`}>
-          <div className={`${styles.visual} ${local.visual}`}>
+        <div className={`${styles.layout} ${local.layout} ${whoStyles.layout}`}>
+          <div className={`${styles.visual} ${local.visual} ${whoStyles.visual}`}>
             <div className={styles.frameOuter} aria-hidden />
-            <div className={`${styles.frameInner} ${local.frameInner}`}>
+            <div className={`${styles.frameInner} ${local.frameInner} ${whoStyles.frameInner}`}>
               <img
+                className={whoStyles.frameInnerImg}
                 src={carpetChooseImage}
                 alt={carpetChooseImageAlt}
                 loading="lazy"
@@ -46,9 +47,9 @@ export default function CarpetChooseSection() {
             </div>
           </div>
 
-          <div className={`${styles.copy} ${local.copy}`}>
+          <div className={`${styles.copy} ${local.copy} ${whoStyles.copy}`}>
             <div
-              className={`${styles.pointsWrap} ${local.pointsWrap} ${whoStyles.copyBlock}`}
+              className={`${styles.pointsWrap} ${local.pointsWrap} ${whoStyles.copyBlock} ${whoStyles.pointsWrap}`}
             >
               <ul className={whoStyles.points}>
                 {carpetChoosePoints.map((item) => (
