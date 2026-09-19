@@ -47,12 +47,9 @@ main > section#domestic-intro-cta {
   padding-bottom: 0 !important;
 }
 
-main > section#domestic-why-choose {
-  padding-top: 0 !important;
-}
-
 main > section#domestic-final-cta {
   padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 main > section#tenancy-pricing-cta {
@@ -66,6 +63,14 @@ main > section#carpet-stains {
 
 main > section#gutter-cleaning-cta {
   padding-bottom: 0 !important;
+}
+
+main > section#tenancy-areas {
+  padding-bottom: 0 !important;
+}
+
+main > section#tenancy-optional-services {
+  padding-top: 0 !important;
 }
 
 main > section#home-trust-logos {
@@ -87,12 +92,9 @@ main > section#home-trust-logos {
     padding-bottom: 0 !important;
   }
 
-  main > section#domestic-why-choose {
-    padding-top: 0 !important;
-  }
-
   main > section#domestic-final-cta {
     padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
 
   main > section#tenancy-pricing-cta {
@@ -106,6 +108,14 @@ main > section#home-trust-logos {
 
   main > section#gutter-cleaning-cta {
     padding-bottom: 0 !important;
+  }
+
+  main > section#tenancy-areas {
+    padding-bottom: 0 !important;
+  }
+
+  main > section#tenancy-optional-services {
+    padding-top: 0 !important;
   }
 
   main > section#home-trust-logos {

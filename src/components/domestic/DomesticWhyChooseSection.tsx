@@ -1,4 +1,7 @@
+import { FaCheck } from "react-icons/fa";
 import {
+  domesticWhyChooseImage,
+  domesticWhyChooseImageAlt,
   domesticWhyChooseItems,
   domesticWhyChooseTitle,
 } from "./domesticWhyChooseData";
@@ -12,41 +15,36 @@ export default function DomesticWhyChooseSection() {
       id="domestic-why-choose"
       aria-labelledby="domestic-why-choose-title"
     >
-      <div className={styles.glowOne} aria-hidden />
-      <div className={styles.glowTwo} aria-hidden />
-
       <div className={styles.container}>
-        <header className={styles.header}>
-          <h2 className={styles.title} id="domestic-why-choose-title">
-            {domesticWhyChooseTitle}
-          </h2>
-        </header>
+        <div className={`${styles.layout} ${local.layout}`}>
+          <div className={`${styles.copy} ${local.copy}`}>
+            <h2 className={styles.title} id="domestic-why-choose-title">
+              {domesticWhyChooseTitle}
+            </h2>
 
-        <ul className={`${styles.grid} ${local.grid}`}>
-          {domesticWhyChooseItems.map((item, index) => {
-            const Icon = item.icon;
-            const num = String(index + 1).padStart(2, "0");
+            <ul className={styles.list}>
+              {domesticWhyChooseItems.map((item) => (
+                <li key={item.text} className={styles.item}>
+                  <span className={styles.icon} aria-hidden>
+                    <FaCheck />
+                  </span>
+                  <span className={styles.itemText}>{item.text}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-            return (
-              <li key={item.text} className={styles.card}>
-                <span className={styles.accent} aria-hidden />
-                <div className={styles.cardHead}>
-                  <span
-                    className={styles.iconWrap}
-                    role="img"
-                    aria-label={item.iconAlt}
-                  >
-                    <Icon aria-hidden />
-                  </span>
-                  <span className={styles.index} aria-hidden>
-                    {num}
-                  </span>
-                </div>
-                <p className={styles.statement}>{item.text}</p>
-              </li>
-            );
-          })}
-        </ul>
+          <div className={`${styles.visual} ${local.visual}`}>
+            <div className={`${styles.imageWrap} ${local.imageWrap}`}>
+              <img
+                className={`${styles.image} ${local.image}`}
+                src={domesticWhyChooseImage}
+                alt={domesticWhyChooseImageAlt}
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

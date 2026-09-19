@@ -42,7 +42,7 @@ export default function DomesticChecklistSection() {
 
   return (
     <section
-      className={styles.section}
+      className={`${styles.section} ${local.section}`}
       id="domestic-cleaning-checklist"
       aria-labelledby="domestic-checklist-title"
     >

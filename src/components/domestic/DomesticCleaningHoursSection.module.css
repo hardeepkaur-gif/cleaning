@@ -1,17 +1,6 @@
 .section {
   position: relative;
-  background:
-    radial-gradient(
-      circle at 88% 12%,
-      rgba(226, 106, 76, 0.14) 0%,
-      transparent 62%
-    ),
-    radial-gradient(
-      circle at 8% 88%,
-      rgba(14, 94, 91, 0.14) 0%,
-      transparent 65%
-    ),
-    var(--white);
+  background: var(--section-soft-bg);
   overflow: hidden;
 }
 

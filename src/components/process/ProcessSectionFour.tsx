@@ -268,7 +268,10 @@ export default function ProcessSectionFour() {
     };
 
   return (
-    <section className={styles.section} aria-labelledby="process-four-title">
+    <section
+      className={`${styles.section} ${styles.sectionTeamBg}`}
+      aria-labelledby="process-four-title"
+    >
       <div className={styles.container}>
         <div className={styles.topHeader}>
           <h2 className={styles.title} id="process-four-title">

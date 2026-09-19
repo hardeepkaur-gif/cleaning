@@ -1,9 +1,6 @@
 .section {
   position: relative;
-  background:
-    radial-gradient(circle at 10% 0%, rgba(14, 94, 91, 0.13) 0%, transparent 65%),
-    radial-gradient(circle at 90% 100%, rgba(226, 106, 76, 0.13) 0%, transparent 68%),
-    #f7f4f1;
+  background: var(--section-soft-bg);
   padding: clamp(56px, 7vw, 88px) clamp(16px, 3vw, 24px);
 }
 

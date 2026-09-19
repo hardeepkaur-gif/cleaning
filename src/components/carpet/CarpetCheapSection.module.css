@@ -1,18 +1,7 @@
 .section {
   position: relative;
   padding: clamp(72px, 8vw, 100px) 0;
-  background:
-    radial-gradient(
-      circle at 10% 18%,
-      rgba(226, 106, 76, 0.15) 0%,
-      transparent 68%
-    ),
-    radial-gradient(
-      circle at 90% 82%,
-      rgba(14, 94, 91, 0.11) 0%,
-      transparent 62%
-    ),
-    #f7f4f1;
+  background: var(--section-soft-bg);
   overflow: hidden;
 }
 

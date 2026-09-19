@@ -3,7 +3,7 @@
 .services {
   position: relative;
   display: block;
-  padding: 70px 0;
+  padding: 0 0 70px;
   background: var(--white);
   z-index: 1;
 }

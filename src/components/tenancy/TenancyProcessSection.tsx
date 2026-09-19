@@ -270,7 +270,7 @@ export default function TenancyProcessSection() {
 
   return (
     <section
-      className={styles.section}
+      className={`${styles.section} ${local.section}`}
       id="tenancy-how-it-works"
       aria-labelledby="tenancy-process-title"
     >

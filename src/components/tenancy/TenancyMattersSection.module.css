@@ -4,18 +4,7 @@
   position: relative;
   overflow: hidden;
   padding: clamp(70px, 8vw, 100px) 0;
-  background:
-    radial-gradient(
-      circle at top right,
-      rgba(14, 94, 91, 0.15) 0%,
-      transparent 68%
-    ),
-    radial-gradient(
-      circle at bottom left,
-      rgba(226, 106, 76, 0.11) 0%,
-      transparent 62%
-    ),
-    #f7f4f1;
+  background: var(--section-soft-bg);
 }
 
 .container {

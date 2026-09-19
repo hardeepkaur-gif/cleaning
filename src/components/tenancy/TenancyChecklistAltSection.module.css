@@ -4,10 +4,7 @@
   position: relative;
   overflow: hidden;
   padding: clamp(70px, 8vw, 100px) 0;
-  background:
-    radial-gradient(circle at 15% 20%, rgba(14, 94, 91, 0.15) 0%, transparent 68%),
-    radial-gradient(circle at 85% 75%, rgba(226, 106, 76, 0.15) 0%, transparent 65%),
-    #f7f4f1;
+  background: var(--section-soft-bg);
 }
 
 .orbOne,

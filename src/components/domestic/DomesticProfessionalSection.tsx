@@ -14,12 +14,12 @@ const imageAlt =
 export default function DomesticProfessionalSection() {
   return (
     <section
-      className={styles.section}
+      className={`${styles.section} ${local.section}`}
       id="professional-domestic-cleaning"
       aria-labelledby="professional-domestic-title"
     >
-      <div className={styles.glowOne} aria-hidden />
-      <div className={styles.glowTwo} aria-hidden />
+      <div className={`${styles.glowOne} ${local.glowOne}`} aria-hidden />
+      <div className={`${styles.glowTwo} ${local.glowTwo}`} aria-hidden />
 
       <div className={styles.container}>
         <div className={`${styles.layout} ${local.layout}`}>
