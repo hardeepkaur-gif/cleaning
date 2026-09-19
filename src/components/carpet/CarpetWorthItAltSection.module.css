@@ -51,7 +51,6 @@
 .header {
   text-align: center;
   width: 100%;
-  max-width: none;
   margin: 0 auto clamp(32px, 4vw, 40px);
 }
 

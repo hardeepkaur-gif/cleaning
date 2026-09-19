@@ -15,7 +15,6 @@
 
 .header {
   text-align: center;
-  max-width: 900px;
   margin: 0 auto clamp(40px, 5vw, 56px);
 }
 

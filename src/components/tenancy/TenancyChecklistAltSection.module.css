@@ -42,7 +42,6 @@
 }
 
 .header {
-  max-width: 920px;
   margin: 0 auto clamp(36px, 5vw, 48px);
   text-align: center;
 }
@@ -72,7 +71,6 @@
 
 .intro {
   margin: 0 auto;
-  max-width: 72ch;
   font-size: clamp(15px, 1.4vw, 18px);
   line-height: 1.7;
   color: var(--gray);

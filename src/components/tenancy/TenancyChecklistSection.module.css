@@ -29,7 +29,6 @@
 }
 
 .intro {
-  max-width: 900px;
   margin: 0 auto;
   font-size: clamp(15px, 1.4vw, 18px);
   line-height: 1.75;

@@ -42,7 +42,6 @@
 
 .intro {
   margin: 0 auto;
-  max-width: 62ch;
   font-size: clamp(15px, 1.4vw, 18px);
   line-height: 1.75;
   color: var(--gray);

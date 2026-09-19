@@ -27,7 +27,6 @@
 .header {
   text-align: center;
   margin: 0 auto clamp(36px, 4.5vw, 52px);
-  max-width: 720px;
 }
 
 .title {

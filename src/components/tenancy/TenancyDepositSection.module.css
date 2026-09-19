@@ -42,7 +42,6 @@
 }
 
 .header {
-  max-width: 920px;
   margin: 0 auto clamp(36px, 5vw, 52px);
   text-align: center;
 }

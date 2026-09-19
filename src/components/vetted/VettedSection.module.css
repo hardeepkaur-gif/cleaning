@@ -14,7 +14,6 @@
 /* Top centered header */
 .topHeader {
   text-align: center;
-  max-width: 800px;
   margin: 0 auto clamp(40px, 4vw, 60px);
 }
 

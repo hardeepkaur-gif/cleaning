@@ -5,20 +5,17 @@
 
 .header {
   text-align: center;
-  max-width: none;
   margin: 0 0 clamp(32px, 4vw, 44px);
 }
 
 .title {
   text-align: center;
   margin: 0 0 clamp(14px, 1.8vw, 18px);
-  max-width: none;
 }
 
 .intro {
   text-align: center;
   margin: 0;
-  max-width: none;
 }
 
 .left {
