@@ -52,6 +52,10 @@ main > section#domestic-final-cta {
   padding-bottom: 0 !important;
 }
 
+main > section#domestic-additional-services {
+  padding-top: 0 !important;
+}
+
 main > section#tenancy-pricing-cta {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
@@ -103,6 +107,10 @@ main > section#home-trust-logos {
   main > section#domestic-final-cta {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
+  }
+
+  main > section#domestic-additional-services {
+    padding-top: 0 !important;
   }
 
   main > section#tenancy-pricing-cta {

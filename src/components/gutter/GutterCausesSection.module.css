@@ -18,9 +18,17 @@
 }
 
 .chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 36px;
   height: 36px;
-  font-size: 12px;
+  font-size: 16px;
+}
+
+.chip svg {
+  width: 1em;
+  height: 1em;
 }
 
 .itemList {
@@ -73,8 +81,8 @@
 
 @media (max-width: 575px) {
   .chip {
-    width: 34px;
-    height: 34px;
-    font-size: 11px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
   }
 }

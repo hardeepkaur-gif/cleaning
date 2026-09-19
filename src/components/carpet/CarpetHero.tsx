@@ -1,4 +1,10 @@
 import { preload } from "react-dom";
+import {
+  FaPaw,
+  FaSprayCan,
+  FaTag,
+  FaUserShield,
+} from "react-icons/fa";
 import ThmButton from "@/components/menu/ThmButton";
 import HeroQuoteForm from "@/components/hero/HeroQuoteForm";
 import heroStyles from "@/components/hero/HeroLeadForm.module.css";
@@ -6,6 +12,13 @@ import styles from "@/components/tenancy/TenancyHero.module.css";
 import local from "./CarpetHero.module.css";
 
 const heroImage = "/images/carpet/carpet-cleaning-hero.webp";
+
+const trustBadges = [
+  { icon: FaUserShield, label: "DBS-checked cleaners" },
+  { icon: FaSprayCan, label: "Cleaning materials included" },
+  { icon: FaPaw, label: "Child- and pet-friendly solutions" },
+  { icon: FaTag, label: "Fixed pricing upfront" },
+] as const;
 
 export default function CarpetHero() {
   preload(heroImage, { as: "image", fetchPriority: "high" });
@@ -40,28 +53,37 @@ export default function CarpetHero() {
             <div className={heroStyles.text}>
               <p>
                 Deep-clean your carpets with professional hot water extraction,
-                targeted stain treatment and odour removal. At Cleaning Services
-                London Our insured, DBS-checked cleaners serve homes, flats,
-                offices and rental properties in wider London.
-              </p>
-              <p>
-                Book your carpet cleaning services today and receive a fixed
-                quotation based on your property size and cleaning requirements.
+                targeted stain treatment, and odour removal at CL Cleaning
+                Services London.
               </p>
             </div>
+
+            <ul className={styles.trustList} aria-label="Carpet cleaning trust points">
+              {trustBadges.map(({ icon: Icon, label }) => (
+                <li key={label} className={styles.trustItem}>
+                  <span className={styles.trustIcon} aria-hidden>
+                    <Icon />
+                  </span>
+                  <span>{label}</span>
+                </li>
+              ))}
+            </ul>
 
             <div className={heroStyles.bottom}>
               <div className={heroStyles.bottomBtn}>
                 <ThmButton href="/contact-us">Contact Now!</ThmButton>
               </div>
               <div className={heroStyles.bottomBtn}>
-                <ThmButton href="/services">
-                  View All Services
-                </ThmButton>
+                <ThmButton href="/services">View All Services</ThmButton>
               </div>
             </div>
           </div>
-          <HeroQuoteForm formPrefix="carpet" defaultService="Carpet" transparent clear />
+          <HeroQuoteForm
+            formPrefix="carpet"
+            defaultService="Carpet"
+            transparent
+            clear
+          />
         </div>
       </div>
     </section>

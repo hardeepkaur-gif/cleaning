@@ -46,12 +46,12 @@ export default function DomesticChecklistSection() {
       id="domestic-cleaning-checklist"
       aria-labelledby="domestic-checklist-title"
     >
-      <div className={styles.container}>
+      <div className={`${styles.container} ${local.container}`}>
         <header className={styles.header}>
           <h2 className={styles.title} id="domestic-checklist-title">
             {domesticChecklistTitle}
           </h2>
-          <p className={styles.intro}>{domesticChecklistIntro}</p>
+          <p className={`${styles.intro} ${local.intro}`}>{domesticChecklistIntro}</p>
         </header>
 
         <div className={styles.cards}>
@@ -63,17 +63,11 @@ export default function DomesticChecklistSection() {
               ? tab.items
               : tab.items.slice(0, PREVIEW_COUNT);
             const hiddenCount = Math.max(tab.items.length - PREVIEW_COUNT, 0);
-            const metaLabel =
-              listVariant === "exclude"
-                ? `${tab.items.length} exclusions`
-                : listVariant === "plus"
-                  ? `${tab.items.length} add-ons`
-                  : `${tab.items.length} tasks`;
 
             return (
               <article
                 key={tab.id}
-                className={`${styles.card}${index % 2 === 1 ? ` ${styles.cardAlt}` : ""}${
+                className={`${styles.card} ${local.card}${index % 2 === 1 ? ` ${styles.cardAlt}` : ""}${
                   listVariant === "exclude" ? ` ${local.excludeCard}` : ""
                 }`}
               >
@@ -90,7 +84,6 @@ export default function DomesticChecklistSection() {
                     </span>
                     <div>
                       <h3 className={styles.cardTitle}>{tab.shortLabel}</h3>
-                      <p className={styles.cardMeta}>{metaLabel}</p>
                     </div>
                   </div>
 
@@ -119,9 +112,7 @@ export default function DomesticChecklistSection() {
                         setOpenId((prev) => (prev === tab.id ? null : tab.id))
                       }
                     >
-                      {isOpen
-                        ? "Show fewer tasks"
-                        : `See all ${tab.items.length} tasks (+${hiddenCount})`}
+                      {isOpen ? "Show fewer" : "See all"}
                       <FaChevronDown
                         className={isOpen ? styles.chevronOpen : undefined}
                         aria-hidden

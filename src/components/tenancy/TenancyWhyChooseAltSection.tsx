@@ -1,136 +1,87 @@
-import type { IconType } from "react-icons";
-import Link from "next/link";
-import {
-  PiCalendarCheckDuotone,
-  PiCameraDuotone,
-  PiCurrencyGbpDuotone,
-  PiLeafDuotone,
-  PiListChecksDuotone,
-  PiMapPinAreaDuotone,
-  PiMedalDuotone,
-  PiSealCheckDuotone,
-  PiShieldStarDuotone,
-  PiUmbrellaDuotone,
-} from "react-icons/pi";
-import styles from "@/components/why/WhyChooseUsAlt.module.css";
-import local from "./TenancyWhyChooseAltSection.module.css";
+import { FaCheck } from "react-icons/fa";
+import styles from "@/components/carpet/CarpetWorthItAltSection.module.css";
+import local from "@/components/included/ProfessionalCleanSimple.module.css";
+import whoStyles from "@/components/carpet/CarpetChooseSection.module.css";
+import sectionStyles from "./TenancyWhyChooseAltSection.module.css";
 
-type WhyItem = {
-  title: string;
-  text: string;
-  icon: IconType;
-  iconAlt: string;
-};
+const whyChooseTitle = "Why Choose Us for End of Tenancy Cleaning";
 
-const items: WhyItem[] = [
-  {
-    title: "DBS-Checked Cleaners",
-    text: "Trusted professionals working inside your property.",
-    icon: PiShieldStarDuotone,
-    iconAlt: "DBS checked end of tenancy cleaners icon",
-  },
-  {
-    title: "Fully Insured Service",
-    text: "Additional peace of mind throughout the cleaning process.",
-    icon: PiUmbrellaDuotone,
-    iconAlt: "Fully insured tenancy cleaning service icon",
-  },
-  {
-    title: "Fixed Pricing",
-    text: "Clear quotations with no hidden charges.",
-    icon: PiCurrencyGbpDuotone,
-    iconAlt: "Fixed price end of tenancy cleaning icon",
-  },
-  {
-    title: "Detailed Cleaning Checklists",
-    text: "Consistent cleaning standards across every booking.",
-    icon: PiListChecksDuotone,
-    iconAlt: "Detailed tenancy cleaning checklist icon",
-  },
-  {
-    title: "Eco-Friendly Cleaning Products",
-    text: "Effective cleaning without unnecessarily harsh chemicals.",
-    icon: PiLeafDuotone,
-    iconAlt: "Eco friendly tenancy cleaning products icon",
-  },
-  {
-    title: "Before & After Photos",
-    text: "Additional transparency where requested.",
-    icon: PiCameraDuotone,
-    iconAlt: "Before and after tenancy cleaning photos icon",
-  },
-  {
-    title: "14-Day Re-Clean Guarantee",
-    text: "Added confidence following your property handover.",
-    icon: PiSealCheckDuotone,
-    iconAlt: "14 day re clean guarantee icon for tenancy cleaning",
-  },
-  {
-    title: "Experienced End of Tenancy Cleaners",
-    text: "Familiar with the areas commonly checked during inspections.",
-    icon: PiMedalDuotone,
-    iconAlt: "Experienced end of tenancy cleaners icon",
-  },
-  {
-    title: "East London Specialists",
-    text: "Local knowledge with wider London coverage available.",
-    icon: PiMapPinAreaDuotone,
-    iconAlt: "East London end of tenancy cleaning coverage icon",
-  },
-  {
-    title: "Flexible Booking Availability",
-    text: "Convenient appointments to fit around your moving schedule.",
-    icon: PiCalendarCheckDuotone,
-    iconAlt: "Flexible tenancy cleaning booking availability icon",
-  },
-];
+const whyChooseIntro =
+  "Finding a cleaner is easy. Finding a cleaning company that arrives on time, follows documented processes and delivers consistent standards is where the real challenge begins. So here we are:";
+
+const whyChoosePoints = [
+  "DBS-Checked Cleaners",
+  "Fully Insured Service",
+  "Fixed Pricing",
+  "Detailed Cleaning Checklists",
+  "Eco-Friendly Cleaning Products",
+  "Before & After Photos",
+  "14-Day Re-Clean Guarantee",
+  "Experienced End of Tenancy Cleaners",
+  "East London Specialists",
+  "Flexible Booking Availability",
+] as const;
+
+const whyChooseImage = "/images/tenancy/why-choose-end-of-tenancy-cleaning.webp";
+const whyChooseImageAlt =
+  "Professional end of tenancy cleaner with cleaning supplies in a London home";
 
 export default function TenancyWhyChooseAltSection() {
   return (
     <section
-      className={`${styles.why} ${local.section}`}
+      className={`${styles.section} ${whoStyles.section}`}
       id="tenancy-why-choose"
       aria-labelledby="tenancy-why-choose-title"
     >
-      <div className={styles.container}>
-        <div className={styles.header}>
-          <h2 className={styles.title} id="tenancy-why-choose-title">
-            Why Choose Cleaning Services London
-            <br />
-            for End of Tenancy Cleaning
-          </h2>
-          <p className={styles.intro}>
-            Finding a cleaner is easy. Finding a cleaning company that arrives on
-            time, follows documented processes and delivers consistent standards is
-            where the real challenge begins. At{" "}
-            <Link href="/" className={local.internalLink}>
-              Cleaning Services London
-            </Link>
-            , we focus on reliability, transparency and attention to detail at every
-            stage of the cleaning process.
-          </p>
-        </div>
+      <div className={`${styles.glowOne} ${whoStyles.glowOne}`} aria-hidden />
+      <div className={`${styles.glowTwo} ${whoStyles.glowTwo}`} aria-hidden />
 
-        <div className={`${styles.problemGrid} ${local.grid}`}>
-          {items.map((item) => {
-            const Icon = item.icon;
-            return (
-              <article
-                key={item.title}
-                className={`${styles.problemCard} ${local.card}`}
-              >
-                <span
-                  className={`${styles.cardIcon} ${local.icon}`}
-                  role="img"
-                  aria-label={item.iconAlt}
-                >
-                  <Icon aria-hidden />
-                </span>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-              </article>
-            );
-          })}
+      <div className={styles.container}>
+        <header className={whoStyles.header}>
+          <h2 className={whoStyles.headerTitle} id="tenancy-why-choose-title">
+            {whyChooseTitle}
+          </h2>
+          <p className={whoStyles.headerIntro}>{whyChooseIntro}</p>
+        </header>
+
+        <div className={`${styles.layout} ${local.layout} ${whoStyles.layout}`}>
+          <div className={`${styles.visual} ${local.visual} ${whoStyles.visual}`}>
+            <div className={styles.frameOuter} aria-hidden />
+            <div
+              className={`${styles.frameInner} ${local.frameInner} ${whoStyles.frameInner}`}
+            >
+              <img
+                className={whoStyles.frameInnerImg}
+                src={whyChooseImage}
+                alt={whyChooseImageAlt}
+                loading="lazy"
+              />
+            </div>
+            <div className={styles.visualTag}>
+              <span>DBS-Checked</span>
+              <strong>Fixed Pricing</strong>
+              <span>Guaranteed</span>
+            </div>
+          </div>
+
+          <div className={`${styles.copy} ${local.copy} ${whoStyles.copy}`}>
+            <div
+              className={`${styles.pointsWrap} ${local.pointsWrap} ${whoStyles.copyBlock} ${whoStyles.pointsWrap}`}
+            >
+              <ul className={`${whoStyles.points} ${sectionStyles.points}`}>
+                {whyChoosePoints.map((item) => (
+                  <li key={item}>
+                    <span className={styles.pointIcon} aria-hidden>
+                      <FaCheck />
+                    </span>
+                    <span className={`${styles.pointText} ${whoStyles.pointText}`}>
+                      {item}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>

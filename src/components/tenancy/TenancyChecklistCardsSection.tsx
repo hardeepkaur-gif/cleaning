@@ -4,7 +4,6 @@ import { useState } from "react";
 import { FaCheck, FaChevronDown } from "react-icons/fa";
 import {
   tenancyChecklistIntro,
-  tenancyChecklistNote,
   tenancyChecklistTabs,
   tenancyChecklistTitle,
 } from "./tenancyChecklistData";
@@ -22,7 +21,8 @@ export default function TenancyChecklistCardsSection() {
       aria-labelledby="tenancy-checklist-cards-title"
     >
       <div className={styles.container}>
-        <header className={styles.header}>          <h2 className={styles.title} id="tenancy-checklist-cards-title">
+        <header className={styles.header}>
+          <h2 className={styles.title} id="tenancy-checklist-cards-title">
             {tenancyChecklistTitle}
           </h2>
           <p className={styles.intro}>{tenancyChecklistIntro}</p>
@@ -53,7 +53,6 @@ export default function TenancyChecklistCardsSection() {
                     </span>
                     <div>
                       <h3 className={styles.cardTitle}>{tab.shortLabel}</h3>
-                      <p className={styles.cardMeta}>{tab.items.length} tasks</p>
                     </div>
                   </div>
 
@@ -77,9 +76,7 @@ export default function TenancyChecklistCardsSection() {
                         setOpenId((prev) => (prev === tab.id ? null : tab.id))
                       }
                     >
-                      {isOpen
-                        ? "Show fewer tasks"
-                        : `See all ${tab.items.length} tasks (+${hiddenCount})`}
+                      {isOpen ? "Show fewer" : "See all"}
                       <FaChevronDown
                         className={isOpen ? styles.chevronOpen : undefined}
                         aria-hidden
@@ -100,8 +97,6 @@ export default function TenancyChecklistCardsSection() {
             );
           })}
         </div>
-
-        <p className={styles.note}>{tenancyChecklistNote}</p>
       </div>
     </section>
   );

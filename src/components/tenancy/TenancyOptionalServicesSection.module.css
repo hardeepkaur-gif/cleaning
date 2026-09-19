@@ -138,16 +138,7 @@
   font-weight: 600;
   line-height: 1.45;
   margin: 0;
-}
-
-.cardTitle a {
   color: var(--primary-dark);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.cardTitle a:hover {
-  color: var(--cta);
 }
 
 .cardText {

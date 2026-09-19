@@ -137,18 +137,22 @@ export default function DomesticServicesTimelineSection() {
                 </div>
               </div>
 
-              <div className={styles.navChips} aria-label="Jump to service">
-                {domesticServicesItems.map((item, index) => (
-                  <button
-                    key={item.title}
-                    type="button"
-                    className={`${styles.chip} ${activeIndex === index ? styles.chipActive : ""}`}
-                    onClick={() => selectItem(index)}
-                    aria-current={activeIndex === index ? "true" : undefined}
-                  >
-                    {String(index + 1).padStart(2, "0")}
-                  </button>
-                ))}
+              <div className={`${styles.navChips} ${local.navChips}`} aria-label="Jump to service">
+                {domesticServicesItems.map((item, index) => {
+                  const ChipIcon = item.icon;
+                  return (
+                    <button
+                      key={item.title}
+                      type="button"
+                      className={`${styles.chip} ${local.chip} ${activeIndex === index ? styles.chipActive : ""}`}
+                      onClick={() => selectItem(index)}
+                      aria-label={item.title}
+                      aria-current={activeIndex === index ? "true" : undefined}
+                    >
+                      <ChipIcon aria-hidden />
+                    </button>
+                  );
+                })}
               </div>
             </div>
           </aside>
@@ -178,14 +182,6 @@ export default function DomesticServicesTimelineSection() {
                         </span>
                       </div>
                       <article className={styles.itemBody}>
-                        <div className={styles.itemHead}>
-                          <span className={styles.step}>
-                            Service {String(index + 1).padStart(2, "0")}
-                          </span>
-                          <span className={styles.itemNum} aria-hidden>
-                            {String(index + 1).padStart(2, "0")}
-                          </span>
-                        </div>
                         <h3 className={styles.itemTitle}>{item.title}</h3>
                         <p className={styles.itemText}>{item.text}</p>
                       </article>

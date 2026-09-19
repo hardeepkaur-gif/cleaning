@@ -7,7 +7,6 @@ import DomesticCtaSection from "@/components/domestic/DomesticCtaSection";
 import DomesticChecklistSection from "@/components/domestic/DomesticChecklistSection";
 import DomesticAdditionalCtaSection from "@/components/domestic/DomesticAdditionalCtaSection";
 import DomesticPricingSection from "@/components/domestic/DomesticPricingSection";
-import DomesticWhyChooseSection from "@/components/domestic/DomesticWhyChooseSection";
 import DomesticFinalCtaSection from "@/components/domestic/DomesticFinalCtaSection";
 import AboutReviewsSection from "@/components/about/AboutReviewsSection";
 import DomesticFaqSection from "@/components/domestic/DomesticFaqSection";
@@ -37,7 +36,6 @@ export default function DomesticCleaningServicesPage() {
         <DomesticChecklistSection />
         <DomesticAdditionalCtaSection />
         <DomesticPricingSection />
-        <DomesticWhyChooseSection />
         <DomesticFinalCtaSection />
         <AboutReviewsSection />
         <DomesticFaqSection />

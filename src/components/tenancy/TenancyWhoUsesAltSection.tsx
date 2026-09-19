@@ -3,10 +3,9 @@ import styles from "@/components/carpet/CarpetWorthItAltSection.module.css";
 import local from "@/components/included/ProfessionalCleanSimple.module.css";
 import whoStyles from "./TenancyWhoUsesAltSection.module.css";
 
-const whoUsesTitle = "Who Uses Our End of Tenancy Cleaning Services London";
+const whoUsesTitle = "Our End of Tenancy Cleaning Services Helps";
 
-const whoUsesIntro =
-  "Our end of tenancy cleaning service is used by all kinds of customers in London including tenants getting ready to move out and letting agents and landlords needing a property cleaned and refreshed for its next phase.";
+const whoUsesIntro = "All kinds of customers in London including:";
 
 const whoUsesPoints = [
   "Tenants Moving Out Cleaning Services",

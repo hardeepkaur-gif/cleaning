@@ -28,9 +28,8 @@ export default function TenancyIncludedCtaSection() {
               </h2>
 
               <p className={styles.text}>
-                Get a fixed quote based on your property size and requirements.
-                Our DBS-checked and insured cleaners cover East London and
-                surrounding areas with flexible booking availability.
+                Book with us and we&apos;ll help you get your deposit back with
+                our cleaning and flexible booking availability.
               </p>
 
               <div className={styles.actionRow}>
@@ -40,12 +39,7 @@ export default function TenancyIncludedCtaSection() {
                     className={`${styles.ctaBtn} ${local.ctaBtn}`}
                   >
                     <FaCalendarCheck aria-hidden />
-                    <span className={local.btnTextDesktop}>
-                      Book Your End of Tenancy Cleaning Today
-                    </span>
-                    <span className={local.btnTextMobile}>
-                      Book Tenancy Cleaning Today
-                    </span>
+                    <span>Book Your Services Today</span>
                   </ThmButton>
                   <span className={styles.btnNote}>
                     Free quote · No obligation

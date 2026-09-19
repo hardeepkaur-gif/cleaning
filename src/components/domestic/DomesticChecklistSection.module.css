@@ -13,6 +13,20 @@
     #eef3f3;
 }
 
+.container {
+  max-width: none;
+  width: 100%;
+}
+
+.intro {
+  max-width: none;
+  width: 100%;
+}
+
+.card {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+}
+
 .cardIntro {
   margin: 0;
   font-size: 14px;

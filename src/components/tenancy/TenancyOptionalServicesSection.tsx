@@ -1,11 +1,10 @@
 import type { IconType } from "react-icons";
-import { FaCouch, FaFire, FaHome, FaSprayCan, FaStar } from "react-icons/fa";
+import { FaFire, FaHome, FaSprayCan, FaStar, FaWindowMaximize } from "react-icons/fa";
 import styles from "./TenancyOptionalServicesSection.module.css";
 
 type OptionalService = {
   title: string;
   text: string;
-  href: string;
   icon: IconType;
   iconAlt: string;
   image: string;
@@ -14,18 +13,16 @@ type OptionalService = {
 
 const optionalServices: OptionalService[] = [
   {
-    title: "Carpet Cleaning",
-    text: "Professional carpet cleaning is a great way to get rid of stains, odours, dust and daily wear and tear that normal vacuuming won't get.",
-    href: "/contact-us",
-    icon: FaCouch,
-    iconAlt: "Optional carpet cleaning add on service icon",
+    title: "Window Cleaning",
+    text: "We use specialised hand tools to give you clean, dry, and streak-free windows with a clear view of the outside beauty",
+    icon: FaWindowMaximize,
+    iconAlt: "Optional window cleaning add on service icon",
     image: "/images/tenancy/carpet-cleaning.webp",
-    imageAlt: "Optional carpet cleaning add on for end of tenancy bookings in London",
+    imageAlt: "Optional window cleaning add on for end of tenancy bookings in London",
   },
   {
     title: "Oven Cleaning",
     text: "The Oven Cleaning Service helps to remove grease, burnt-on residue and foods that have accumulated in it, leaving the oven clean and ready for the next people.",
-    href: "/contact-us",
     icon: FaFire,
     iconAlt: "Optional oven cleaning add on service icon",
     image: "/images/tenancy/oven-cleaning.webp",
@@ -33,17 +30,15 @@ const optionalServices: OptionalService[] = [
   },
   {
     title: "Deep Cleaning",
-    text: "For properties that need extra care and attention, we provide deep cleaning services providing attention to heavily used areas, areas that tend to get built up, and hard to get at spaces.",
-    href: "/contact-us",
+    text: "For properties that need extra care and attention, we provide deep cleaning services for heavily used areas with years of buildup, and hard-to-reach spaces.",
     icon: FaSprayCan,
     iconAlt: "Optional deep cleaning add on service icon",
     image: "/images/tenancy/deep-cleaning.webp",
     imageAlt: "Deep cleaning add on for heavily used rental properties in London",
   },
   {
-    title: "Move In Cleaning Services",
+    title: "Move In Cleaning",
     text: "Moving into a new property? Our move-in cleaning service will make sure that the home is clean, fresh and ready for you to unpack and settle in.",
-    href: "/contact-us",
     icon: FaHome,
     iconAlt: "Move in cleaning add on service icon",
     image: "/images/tenancy/move-in-cleaning.webp",
@@ -80,9 +75,7 @@ export default function TenancyOptionalServicesSection() {
                   </div>
                 </div>
                 <div className={styles.content}>
-                  <h3 className={styles.cardTitle}>
-                    <a href={service.href}>{service.title}</a>
-                  </h3>
+                  <h3 className={styles.cardTitle}>{service.title}</h3>
                   <p className={styles.cardText}>{service.text}</p>
                   <div className={styles.iconWrap}>
                     <span className={styles.iconMain} role="img" aria-label={service.iconAlt}>

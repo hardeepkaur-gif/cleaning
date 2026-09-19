@@ -12,6 +12,18 @@
   text-decoration-color: rgba(14, 94, 91, 0.45);
 }
 
+.chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.chip svg {
+  width: 1em;
+  height: 1em;
+}
+
 @media (max-width: 991px) {
   .scrollWrap {
     height: auto !important;
@@ -35,6 +47,6 @@
   .chip {
     width: 44px;
     height: 44px;
-    font-size: 13px;
+    font-size: 18px;
   }
 }
